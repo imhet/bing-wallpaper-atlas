@@ -83,6 +83,7 @@ crawler/ (Python)  ──写──▶  data/ (JSON 分片，git 提交)      web
   "id": "zh-cn-20231005",                  // 主键 = 市场 + 日期（同市场一天一图）
   "market": "zh-cn",
   "date": "2023-10-05",                     // 来自接口 startdate（当地时间）
+  "urlbase": "/th?id=OHR.ZhangjiajieMist_ZH-CN1234567890",  // Bing 相对路径，不含分辨率后缀
   "imageKey": "ZhangjiajieMist",            // 从 urlbase 提取，跨市场关联同一张图
   "title": "云海仙境",
   "desc": "张家界云海 (© Li Hua/Getty Images)",  // 原始 copyright 字符串，解析兜底
@@ -106,8 +107,8 @@ crawler/ (Python)  ──写──▶  data/ (JSON 分片，git 提交)      web
    - 地点链：中文市场按 `，`/`,` 切分括号外文本；尾部若匹配日期模式（如 `2022年6月15日`）先剥离
    - region：地点链末项匹配国家/地区词表（`crawler/regions.py`，中文+英文对照）；非中文市场对括号外全文做词表匹配（英文 copyright 是句子不是逗号链）；都失败则 region 置空
    - 任何一步失败都**不丢数据**：保留原始 `desc`，对应字段置空并记日志
-4. **分辨率验证**：候选后缀清单 `[_UHD, _1920x1080, _1366x768]`（映射 uhd/fhd/hd，配置驱动）。对每个候选发 HEAD 请求，200 才置 true。回填一次性约 1 万个请求（限速 5 req/s，约 35 分钟，失败清单可重跑）；每日增量约 10 个
-5. **aggregations.json**：每次写数据后重新生成 `{photographers: [], regions: [], years: [], markets: []}`（photographers/regions 带出现次数），前端筛选下拉直接消费
+4. **分辨率验证**：候选后缀清单 `[_UHD, _1920x1080, _1366x768, _400x240]`（映射 uhd/fhd/hd/thumb，配置驱动；thumb 是列表缩略图尺寸，不作为用户可选分辨率展示）。对每个候选发 HEAD 请求，200 才置 true。回填一次性约 1.4 万个请求（限速 5 req/s，约 45 分钟，失败清单可重跑）；每日增量约 12 个
+5. **aggregations.json**：每次写数据后重新生成 `{photographers: [], regions: [], years: [], markets: [], years_by_market: {}}`（photographers/regions 带出现次数；years_by_market 供前端定位待加载的分片文件），前端筛选下拉直接消费。**不得含时间戳字段**——无变化时保证零 git diff，Actions 以 `data/` 的 diff 判断是否部署
 
 ## 7. 抓取流程
 
