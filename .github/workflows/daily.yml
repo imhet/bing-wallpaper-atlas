@@ -1,0 +1,67 @@
+name: daily-fetch
+on:
+  schedule:
+    - cron: "0 22 * * *"   # UTC 22:00 = 北京时间次日 06:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: bing-wallpaper-deploy
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: 每日增量抓取（核心市场失败则红灯）
+        run: python -m crawler.fetch_daily
+      - name: 判断数据是否有变化（先暂存再看 diff——git diff 看不见未跟踪的新文件，年切换日靠它兜底）
+        id: diff
+        run: |
+          git add -A data/
+          if git diff --cached --quiet -- data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: 提交数据
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "data: daily wallpaper update $(date -u +%F)"
+          git pull --rebase origin main
+          git push
+      - uses: actions/setup-node@v4
+        if: steps.diff.outputs.changed == 'true'
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        if: steps.diff.outputs.changed == 'true'
+        working-directory: web
+      - run: npm run build
+        if: steps.diff.outputs.changed == 'true'
+        working-directory: web
+      - run: cp -r data web/dist/data
+        if: steps.diff.outputs.changed == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.diff.outputs.changed == 'true'
+        with:
+          path: web/dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        if: steps.diff.outputs.changed == 'true'
