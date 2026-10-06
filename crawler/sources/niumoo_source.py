@@ -44,18 +44,21 @@ class NiumooSource:
         out = []
         seen = set()  # (market, date) 去重：源数据有 51 组同日重复条目
         for item in data:
+            region = item.get("region")
+            if not isinstance(region, str) or not region:  # 坏条目丢自己，不能让整源报废
+                continue
             m = _OHR_RE.search(item.get("url", "") or "")
             if not m:
                 continue
             date = _shift_date(item.get("date"))
             if not date or date > today:  # 坏日期 / 未来日期丢弃
                 continue
-            key = (item["region"].lower(), date)
+            key = (region.lower(), date)
             if key in seen:
                 continue
             seen.add(key)
             out.append({
-                "market": item["region"].lower(),
+                "market": region.lower(),
                 "date": date,
                 "urlbase": f"/th?id={m.group(0)}",
                 "title": None,

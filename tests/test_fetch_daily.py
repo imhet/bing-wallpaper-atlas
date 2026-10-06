@@ -10,6 +10,7 @@ def raw(market, date, key):
 def test_daily_inserts_new_and_reports_changed(tmp_path, monkeypatch):
     monkeypatch.setattr(fd, "fetch_market",
                         lambda market, idx=0, n=8: [raw(market, "2026-10-06", "NewOne")] if market == "zh-cn" else [])
+    monkeypatch.setattr(fd, "verify_mkt", lambda markets: list(markets))
     monkeypatch.setattr(fd, "check_resolutions", lambda urlbase, **kw: {"uhd": True, "fhd": True, "hd": True, "thumb": True})
     changed, core_failed = fd.run_daily(data_dir=tmp_path)
     assert changed is True and core_failed is False
@@ -18,6 +19,7 @@ def test_daily_inserts_new_and_reports_changed(tmp_path, monkeypatch):
 
 def test_daily_idempotent_no_change(tmp_path, monkeypatch):
     monkeypatch.setattr(fd, "fetch_market", lambda market, idx=0, n=8: [raw(market, "2026-10-06", "NewOne")])
+    monkeypatch.setattr(fd, "verify_mkt", lambda markets: list(markets))
     monkeypatch.setattr(fd, "check_resolutions", lambda urlbase, **kw: {"uhd": True, "fhd": True, "hd": True, "thumb": True})
     fd.run_daily(data_dir=tmp_path)
     changed, core_failed = fd.run_daily(data_dir=tmp_path)
@@ -51,6 +53,7 @@ def test_bad_record_in_daily_does_not_poison_market(tmp_path, monkeypatch):
         ]
 
     monkeypatch.setattr(fd, "fetch_market", fetch)
+    monkeypatch.setattr(fd, "verify_mkt", lambda markets: list(markets))
     monkeypatch.setattr(fd, "check_resolutions", lambda urlbase, **kw: {"uhd": True, "fhd": True, "hd": True, "thumb": True})
     changed, core_failed = fd.run_daily(data_dir=tmp_path)
     assert core_failed is False
@@ -64,9 +67,21 @@ def test_extended_failure_is_not_fatal(tmp_path, monkeypatch):
         return [raw(market, "2026-10-06", "K")] if market == "zh-cn" else []
 
     monkeypatch.setattr(fd, "fetch_market", flaky)
+    monkeypatch.setattr(fd, "verify_mkt", lambda markets: list(markets))
     monkeypatch.setattr(fd, "check_resolutions", lambda urlbase, **kw: {"uhd": True})
     changed, core_failed = fd.run_daily(data_dir=tmp_path)
     assert core_failed is False and changed is True
+
+
+def test_extended_preflight_blocks_polluted_market(tmp_path, monkeypatch):
+    # 本地（中国出口）网络下扩展市场拿到 zh-CN feed：verify_mkt 剔除后绝不落盘张冠李戴记录
+    monkeypatch.setattr(fd, "fetch_market", lambda market, idx=0, n=8: [raw(market, "2026-10-06", "K")])
+    monkeypatch.setattr(fd, "verify_mkt", lambda markets: [])  # 模拟扩展市场全部未过预检
+    monkeypatch.setattr(fd, "check_resolutions", lambda urlbase, **kw: {"uhd": True})
+    changed, core_failed = fd.run_daily(data_dir=tmp_path)
+    assert core_failed is False
+    assert load_year(tmp_path, "ja-jp", 2026) == []  # 被剔除的市场零落盘
+    assert load_year(tmp_path, "zh-cn", 2026) != []  # 核心市场不预检、正常入库
 
 
 def test_main_exits_1_on_core_failure(tmp_path, monkeypatch, capsys):

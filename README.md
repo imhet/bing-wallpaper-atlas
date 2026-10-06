@@ -24,7 +24,7 @@
     python3 -m venv .venv && source .venv/bin/activate
     pip install -r requirements-dev.txt
     python -m pytest tests/ -v          # 后端测试
-    python -m crawler.fetch_daily       # 手动跑一次增量
+    python -m crawler.fetch_daily       # 手动跑一次增量（扩展市场会先做 mkt 预检，本地网络受限时自动跳过未通过的市场）
 
     cd web && npm install && npm test   # 前端测试
     npm run dev                         # 本地预览（需先 cp -r data web/dist/data 或配代理）

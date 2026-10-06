@@ -54,6 +54,22 @@ def test_niumoo_skips_bad_urls():
     assert records == []
 
 
+def test_niumoo_one_bad_item_does_not_kill_source():
+    # 一条缺 region/坏结构的条目只能丢自己，绝不能让整个 1341 条的历史源报废
+    payload = [
+        {"date": "2026-10-06", "region": "zh-cn", "url": "https://cn.bing.com/th?id=OHR.Good_ZH-CN1111111111_UHD.jpg", "desc": "ok"},
+        {"date": "2026-10-05", "url": "https://cn.bing.com/th?id=OHR.NoRegion_ZH-CN2222222222_UHD.jpg", "desc": "缺 region"},
+        {"date": "2026-10-04", "region": None, "url": "https://cn.bing.com/th?id=OHR.NullRegion_ZH-CN3333333333_UHD.jpg", "desc": "region 为 null"},
+        {"date": "2026-10-03", "region": "", "url": "https://cn.bing.com/th?id=OHR.EmptyRegion_ZH-CN4444444444_UHD.jpg", "desc": "region 为空串"},
+        {"date": "2026-10-02", "region": "zh-cn", "url": "https://cn.bing.com/th?id=OHR.Good2_ZH-CN5555555555_UHD.jpg", "desc": "ok2"},
+    ]
+    records = NiumooSource().fetch(session=FakeSession(payload))
+    assert [r["urlbase"] for r in records] == [
+        "/th?id=OHR.Good_ZH-CN1111111111",
+        "/th?id=OHR.Good2_ZH-CN5555555555",
+    ]
+
+
 def test_bing_api_source_covers_all_markets(monkeypatch):
     seen = []
     monkeypatch.setattr("crawler.sources.bing_api_source.fetch_market",

@@ -33,3 +33,10 @@ def test_continent_phrases_do_not_become_countries():
 def test_no_match_returns_none():
     assert extract_region(["神秘湖泊风光"], "神秘湖泊风光") is None
     assert extract_region([], "") is None
+
+
+def test_english_china_aliases():
+    # en-us copyright 是英文句子：'..., China (© ...)' 必须命中中国（en-us 回填前必须修复）
+    assert extract_region([], "Zhangjiakou, China (© John Doe)") == "中国"
+    assert extract_region([], "Victoria Harbour in Hong Kong") == "中国"
+    assert extract_region([], "Ruins of St. Paul's in Macau") == "中国"

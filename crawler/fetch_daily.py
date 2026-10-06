@@ -7,7 +7,7 @@ import argparse
 import logging
 import sys
 
-from .backfill import build_record
+from .backfill import build_record, verify_mkt
 from .bing_api import BingApiError, fetch_market
 from .markets import CORE_MARKETS, EXTENDED_ENABLED, EXTENDED_MARKETS
 from .resolutions import check_resolutions
@@ -47,7 +47,8 @@ def run_daily(data_dir="data"):
         log.error("skipping extended markets because a core market failed")
         return changed, core_failed
     if EXTENDED_ENABLED:
-        for market in EXTENDED_MARKETS:
+        # 与回填同一条纪律：mkt 预检不过的扩展市场绝不落盘（防本地网络把各市场路由到 zh-CN feed）
+        for market in verify_mkt(EXTENDED_MARKETS):
             try:
                 n = ingest_market(market, data_dir)
                 changed = changed or n > 0
