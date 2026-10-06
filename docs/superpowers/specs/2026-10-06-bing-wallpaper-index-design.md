@@ -123,6 +123,7 @@ crawler/ (Python)  ──写──▶  data/ (JSON 分片，git 提交)      web
 - 按 `市场+日期` 合并去重，**字段级互补合并**：逐字段取非空值；冲突时以 Bing API 源为准
 - 合并结果同样走 copyright 解析 + 分辨率验证 + schema 校验后落盘
 - 更早历史（2009–2021）：本期不做；后续新增 adapter（如 Wayback Machine）即可增量灌入，不破坏已有数据
+- **已知风险**：`mkt` 参数会被请求方的网络位置覆盖（实测中国出口网络下所有市场都返回 zh-CN feed）。多市场抓取必须在 GitHub Actions（美国出口）环境验证——首个 workflow 手动触发一次，核对各市场返回的图 ID 含各自市场后缀（如 `_JA-JP`、`_DE-DE`）再纳入每日任务
 
 ## 8. 前端（Vue 3 + Vite）
 
