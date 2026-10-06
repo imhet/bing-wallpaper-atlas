@@ -30,7 +30,10 @@ spec 隐含但单测之外最可能咬人的五类输入（每条已钉进对应
 2. **接口异常响应**（images 空数组、缺字段、startdate 格式坏）→ 跳过或明确报错，不产出脏数据 — Task 5
 3. **重复运行回填/抓取** → 幂等：同 id 记录不重复、内容不变不产生 diff — Task 7、10、11
 4. **中文连续关键词**（「中国雪山」无空格）→ 单字切分 AND 命中，AND 无结果回退 OR — Task 13
-5. **图片链接 404** → 该分辨率记 false，前端只展示/下载 true 的 — Task 6、15
+5. **图片链接 404** → 该分辨率记 false，前端只展示/下载 true 的（thumb 不作为可选档位）— Task 6、15
+6. **niumoo `date` 比 Bing `startdate` 系统性 +1 天**（真实数据 8/8 实证）→ 源头归一化减一天 + 回填自检断言「同 (market, imageKey) 零重复、零未来日期」— Task 9、12
+7. **本地（中国出口）网络把所有市场的请求路由到 zh-CN feed** → 回填前 `verify_mkt` 预检剔除未通过市场，预检不过禁止无限定回填 — Task 10、12
+8. **年切换日的新分片文件是未跟踪状态，`git diff` 看不见** → Actions 先 `git add -A data/` 再 `git diff --cached --quiet` 判断 — Task 16
 
 ---
 
@@ -41,6 +44,13 @@ spec 隐含但单测之外最可能咬人的五类输入（每条已钉进对应
 
 **Interfaces:**
 - Produces: `crawler/markets.py` 导出 `CORE_MARKETS: list[str]`、`EXTENDED_MARKETS: list[str]`、`EXTENDED_ENABLED: bool`、`all_markets() -> list[str]`、`to_api_mkt(market: str) -> str`
+
+- [ ] **Step 0: 确认在 git 仓库内**
+
+```bash
+git rev-parse --is-inside-work-tree || git init -b main
+```
+Expected: `true`（若目录从未 git init 则此步完成初始化）
 
 - [ ] **Step 1: 写脚手架文件**
 
@@ -190,6 +200,18 @@ def test_no_bracket_keeps_text_as_location():
 def test_empty_and_none_never_raise():
     assert parse_copyright("") == {"photographer": None, "gallery": None, "location": []}
     assert parse_copyright(None) == {"photographer": None, "gallery": None, "location": []}
+
+
+def test_nested_brackets_in_photographer_field():
+    r = parse_copyright("湖上日出 (© 张三(李四)/Getty Images)")
+    assert r["photographer"] == "张三"
+    assert r["gallery"] == "Getty Images"
+
+
+def test_pure_date_desc_location_empty():
+    r = parse_copyright("2022年6月15日 (© 张三)")
+    assert r["photographer"] == "张三"
+    assert r["location"] == []
 ```
 
 `tests/test_image_key.py`:
@@ -223,7 +245,8 @@ Expected: FAIL（ModuleNotFoundError: crawler.copyright_parser）
 import re
 
 _DATE_RE = re.compile(r"^(\d{4}年)?\d{1,2}月\d{1,2}日$")
-_BRACKET_RE = re.compile(r"[（(]\s*©\s*(?P<inner>[^)）]*)[)）]")
+# inner 用贪婪匹配吃到字符串最外层闭括号，兼容摄影师名内嵌套的括号（Bing desc 至多一个 © 括号块）
+_BRACKET_RE = re.compile(r"[（(]\s*©\s*(?P<inner>.*)[)）]")
 
 
 def _empty_result():
@@ -238,6 +261,7 @@ def parse_copyright(desc):
     m = _BRACKET_RE.search(desc)
     if m:
         inner = m.group("inner").strip()
+        inner = re.sub(r"[（(][^)）]*[)）]", "", inner).strip()  # 剥掉摄影师名内嵌套的配对括号
         if "/" in inner:
             photographer, _, gallery = inner.partition("/")
             result["photographer"] = photographer.strip() or None
@@ -247,7 +271,7 @@ def parse_copyright(desc):
         text = (desc[: m.start()] + " " + desc[m.end() :]).strip()
     text = text.strip(" ,，、-–—")
     parts = [p.strip() for p in re.split(r"[,，]", text) if p.strip()]
-    if len(parts) > 1 and _DATE_RE.match(parts[-1]):
+    if parts and _DATE_RE.match(parts[-1]):
         parts = parts[:-1]
     result["location"] = parts
     return result
@@ -272,7 +296,7 @@ def extract_image_key(urlbase):
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `python -m pytest tests/test_copyright_parser.py tests/test_image_key.py -v`
-Expected: 8 passed
+Expected: 10 passed
 
 - [ ] **Step 5: Commit**
 
@@ -318,6 +342,17 @@ def test_short_latin_alias_needs_word_boundary():
     # 'us' 不能因子串出现在 'russia' 里而误判
     assert extract_region([], "Kaliningrad, Russia") == "俄罗斯"
     assert extract_region([], "russett landscape") is None
+
+
+def test_long_latin_alias_needs_word_boundary():
+    # 'america' 不能因子串出现在 'American' 里而压过 canada
+    assert extract_region(["Canadian Rockies"], "American robin perched in Canada") == "加拿大"
+
+
+def test_continent_phrases_do_not_become_countries():
+    # 南美/北美是地理区域不是国家；'South America' 不应命中 america→美国
+    assert extract_region(["Amazon rainforest"], "Amazon rainforest in South America") is None
+    assert extract_region([], "Seoul, South Korea") == "韩国"  # 负向短语只挡特定别名
 
 
 def test_no_match_returns_none():
@@ -421,11 +456,22 @@ COUNTRY_ALIASES = {
 
 _LOWERED = {k.lower(): v for k, v in COUNTRY_ALIASES.items()}
 
+# 含这些短语时，对应别名的全文匹配作废（大洲/地区名不是国家）
+_NEGATIVE_PHRASES = {
+    "america": ["south america", "north america", "latin america"],
+    "korea": ["north korea"],
+}
+
 
 def _contains(alias, text):
-    # 短拉丁别名（us/uk/usa）必须按词边界匹配，防止 'russia' 误命中 'us'
-    if alias.isascii() and len(alias) <= 3:
-        return re.search(rf"\b{re.escape(alias)}\b", text) is not None
+    # 拉丁别名一律按词边界匹配：'us' 不能命中 'russia'，'america' 不能命中 'American'
+    if alias.isascii():
+        if not re.search(rf"\b{re.escape(alias)}\b", text):
+            return False
+        for phrase in _NEGATIVE_PHRASES.get(alias, []):
+            if phrase in text:
+                return False
+        return True
     return alias in text
 
 
@@ -444,7 +490,7 @@ def extract_region(location, full_text):
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `python -m pytest tests/test_regions.py -v`
-Expected: 5 passed
+Expected: 7 passed
 
 - [ ] **Step 5: Commit**
 
@@ -718,6 +764,16 @@ def test_retries_then_raises(monkeypatch):
     session = FakeSession([RuntimeError("boom")] * 3)
     with pytest.raises(BingApiError):
         fetch_market("zh-cn", session=session, max_retries=3)
+
+
+def test_bad_record_skipped_not_fatal(monkeypatch):
+    monkeypatch.setattr("crawler.bing_api.time.sleep", lambda s: None)
+    bad = dict(FIXTURE["images"][0])
+    bad["startdate"] = "202610"  # 坏日期
+    payload = {"images": [bad, FIXTURE["images"][1]]}
+    session = FakeSession([FakeResponse(payload)])
+    records = fetch_market("zh-cn", session=session)
+    assert [r["date"] for r in records] == ["2026-10-04"]  # 坏记录跳过，好记录保留
 ```
 
 - [ ] **Step 3: 跑测试确认失败**
@@ -745,9 +801,10 @@ class BingApiError(RuntimeError):
 
 
 def _normalize(img, market):
+    """返回 raw 记录；单条坏数据（如 startdate 缺失）返回 None，由调用方跳过。"""
     sd = str(img.get("startdate", ""))
     if len(sd) != 8 or not sd.isdigit():
-        raise ValueError(f"bad startdate: {img!r}")
+        return None
     return {
         "market": market,
         "date": f"{sd[0:4]}-{sd[4:6]}-{sd[6:8]}",
@@ -767,8 +824,8 @@ def fetch_market(market, idx=0, n=8, timeout=15, max_retries=3, session=None):
         try:
             resp = session.get(API_URL, params=params, timeout=timeout)
             resp.raise_for_status()
-            images = resp.json().get("images", [])
-            return [_normalize(img, market) for img in images]
+            records = (_normalize(img, market) for img in resp.json().get("images", []))
+            return [r for r in records if r]  # 坏记录跳过，重试只留给网络类错误
         except (requests.RequestException, ValueError, RuntimeError) as e:
             last_err = e
             time.sleep(2 ** attempt)
@@ -778,7 +835,7 @@ def fetch_market(market, idx=0, n=8, timeout=15, max_retries=3, session=None):
 - [ ] **Step 5: 跑测试确认通过**
 
 Run: `python -m pytest tests/test_bing_api.py -v`
-Expected: 4 passed
+Expected: 5 passed
 
 - [ ] **Step 6: Commit**
 
@@ -798,7 +855,7 @@ Co-Authored-By: Claude Code <noreply@anthropic.com>"
 - Test: `tests/test_resolutions.py`
 
 **Interfaces:**
-- Produces: `RESOLUTION_SUFFIXES: list[tuple[str, str]]`（key→后缀）、`check_resolutions(urlbase: str, session=None, interval: float = 0.2) -> dict[str, bool]`
+- Produces: `RESOLUTION_SUFFIXES: list[tuple[str, str]]`（key→后缀）、`check_resolutions(urlbase: str, session=None, interval: float = 0.2) -> dict[str, bool]`（单档 404 记 false；**全部请求网络级失败时返回 `{}`**，表示系统性故障、留待重试）
 
 - [ ] **Step 1: 写失败测试**
 
@@ -808,8 +865,8 @@ from crawler.resolutions import RESOLUTION_SUFFIXES, check_resolutions
 
 
 class FakeResponse:
-    def __init__(self, status):
-        self.status = status
+    def __init__(self, status_code):
+        self.status_code = status_code
 
 
 class FakeSession:
@@ -828,7 +885,7 @@ class FakeSession:
 def test_suffix_list():
     keys = [k for k, _ in RESOLUTION_SUFFIXES]
     assert keys == ["uhd", "fhd", "hd", "thumb"]
-    assert dict(RESOLUTION_SUFFIXES)["_UHD.jpg"] is not None
+    assert dict(RESOLUTION_SUFFIXES)["uhd"] == "_UHD.jpg"
 
 
 def test_check(monkeypatch):
@@ -840,14 +897,33 @@ def test_check(monkeypatch):
     assert session.urls[0] == "https://www.bing.com/th?id=OHR.Test_ZH-CN1234567890_UHD.jpg"
 
 
-def test_network_error_means_false(monkeypatch):
+def test_single_network_error_means_false(monkeypatch):
+    monkeypatch.setattr("crawler.resolutions.time.sleep", lambda s: None)
+
+    class Flaky:
+        def __init__(self):
+            self.n = 0
+
+        def head(self, url, timeout=None, allow_redirects=True):
+            self.n += 1
+            if self.n == 1:
+                raise ConnectionError("down")  # 单次网络错误
+            return FakeResponse(200)
+
+    result = check_resolutions("/th?id=OHR.X_ZH-CN1", session=Flaky())
+    assert result["uhd"] is False  # 单档失败记 false
+    assert result["fhd"] is True
+
+
+def test_all_network_errors_return_empty(monkeypatch):
+    # 系统性网络故障返回 {}：与"图链 404 是真实状态"区分，让回填下轮重试
     monkeypatch.setattr("crawler.resolutions.time.sleep", lambda s: None)
 
     class Dead:
         def head(self, url, timeout=None, allow_redirects=True):
             raise ConnectionError("down")
 
-    assert check_resolutions("/th?id=OHR.X_ZH-CN1", session=Dead())["uhd"] is False
+    assert check_resolutions("/th?id=OHR.X_ZH-CN1", session=Dead()) == {}
 ```
 
 - [ ] **Step 2: 跑测试确认失败**
@@ -878,21 +954,26 @@ REQUEST_INTERVAL = 0.2
 def check_resolutions(urlbase, session=None, interval=REQUEST_INTERVAL):
     session = session or requests
     out = {}
+    errors = 0
     for key, suffix in RESOLUTION_SUFFIXES:
         url = f"{BASE}{urlbase}{suffix}"
         try:
             resp = session.head(url, timeout=10, allow_redirects=True)
             out[key] = resp.status_code == 200
-        except requests.RequestException:
+        except (requests.RequestException, OSError):
+            # OSError 兜底裸 ConnectionError（内置异常与 requests 异常是兄弟类）
             out[key] = False
+            errors += 1
         time.sleep(interval)
+    if errors == len(RESOLUTION_SUFFIXES):
+        return {}  # 全部网络级失败视为系统性故障：返回空让下轮回填重试，不固化 false
     return out
 ```
 
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `python -m pytest tests/test_resolutions.py -v`
-Expected: 3 passed
+Expected: 4 passed
 
 - [ ] **Step 5: Commit**
 
@@ -1177,16 +1258,18 @@ Co-Authored-By: Claude Code <noreply@anthropic.com>"
 
 **Interfaces:**
 - Consumes: `fetch_market`（Task 5）、`CORE_MARKETS/EXTENDED_MARKETS/EXTENDED_ENABLED`（Task 1）
-- Produces: `NiumooSource().fetch(session=None) -> list[dict]`、`BingApiSource().fetch() -> list[dict]`；两者产出与 Task 5 raw 记录同构的 dict（`market, date, urlbase, title, desc, copyrightlink, quiz`），niumoo 的 `url` 剥离分辨率后缀成 `/th?id=OHR.xxx_XX-XX123` 形式
+- Produces: `NiumooSource().fetch(session=None) -> list[dict]`、`BingApiSource().fetch() -> list[dict]`；两者产出与 Task 5 raw 记录同构的 dict（`market, date, urlbase, title, desc, copyrightlink, quiz`），niumoo 的 `url` 剥离分辨率后缀成 `/th?id=OHR.xxx_XX-XX123` 形式，且 niumoo 的 `date` 统一减一天对齐 Bing startdate 语义、按 (market, date) 去重、丢弃未来日期
 
 - [ ] **Step 1: 录制 fixture**
 
-`tests/fixtures/niumoo_images.json`（真实数据节选）:
+`tests/fixtures/niumoo_images.json`（真实数据节选；注意 niumoo 的 date 比 Bing startdate 系统性 +1 天，见实现里的归一化）:
 ```json
 [
   {"date": "2026-10-06", "region": "zh-cn", "url": "https://cn.bing.com/th?id=OHR.DanxiaLandform_ZH-CN2386060246_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4", "desc": "丹霞地貌，张掖国家地质公园，甘肃省，中国 (© Weiquan Lin/Getty Images)"},
   {"date": "2026-10-05", "region": "zh-cn", "url": "https://cn.bing.com/th?id=OHR.AdelieTeacher_ZH-CN2201820679_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4", "desc": "南极洲的阿德利企鹅 (© Otto Plantema/Minden Pictures)"},
-  {"date": "2024-10-31", "region": "en-us", "url": "https://cn.bing.com/th?id=OHR.HauntedEdinburgh_EN-US3906244993_UHD.jpg", "desc": "View of Edinburgh Castle from a churchyard in Scotland (© Chris Dorney/Alamy)"}
+  {"date": "2024-10-31", "region": "en-us", "url": "https://cn.bing.com/th?id=OHR.HauntedEdinburgh_EN-US3906244993_UHD.jpg", "desc": "View of Edinburgh Castle from a churchyard in Scotland (© Chris Dorney/Alamy)"},
+  {"date": "2026-10-06", "region": "zh-cn", "url": "https://cn.bing.com/th?id=OHR.GrizzlySwim_ZH-CN1005455737_UHD.jpg", "desc": "美国阿拉斯加州棕熊 (© Danny Green/Nature Picture Library)"},
+  {"date": "2099-01-01", "region": "zh-cn", "url": "https://cn.bing.com/th?id=OHR.FuturePic_ZH-CN9999999999_UHD.jpg", "desc": "未来日期条目应被丢弃"}
 ]
 ```
 
@@ -1226,13 +1309,15 @@ class FakeSession:
 def test_niumoo_fetch_normalizes():
     session = FakeSession(FIXTURE)
     records = NiumooSource().fetch(session=session)
+    # 5 条原始数据：Danxia/Adelie/Edinburgh 保留，GrizzlySwim 归一化后与 Danxia 同日去重，2099 未来条目丢弃
     assert len(records) == 3
     first = records[0]
     assert first["market"] == "zh-cn"
-    assert first["date"] == "2026-10-06"
+    assert first["date"] == "2026-10-05"  # 2026-10-06 - 1 天，对齐 Bing startdate（真实配对实证）
     assert first["urlbase"] == "/th?id=OHR.DanxiaLandform_ZH-CN2386060246"
     assert first["title"] is None and first["copyrightlink"] is None
     assert "丹霞地貌" in first["desc"]
+    assert [r["date"] for r in records] == ["2026-10-05", "2026-10-04", "2024-10-30"]
 
 
 def test_niumoo_accepts_github_api_base64(monkeypatch):
@@ -1277,6 +1362,7 @@ import base64
 import json
 import os
 import re
+from datetime import datetime, timedelta
 
 import requests
 
@@ -1285,6 +1371,14 @@ NIUMOO_URL = os.environ.get(
     "https://raw.githubusercontent.com/niumoo/bing-wallpaper/main/docs/images.json",
 )
 _OHR_RE = re.compile(r"OHR\.[A-Za-z0-9]+?_[A-Z]{2}-[A-Z]{2}\d+")
+
+
+def _shift_date(date_str):
+    """niumoo 的 date 比 Bing startdate 系统性 +1 天（真实数据 8/8 实证），统一减一天对齐。坏值返回 None。"""
+    try:
+        return (datetime.strptime(date_str, "%Y-%m-%d") - timedelta(days=1)).strftime("%Y-%m-%d")
+    except (ValueError, TypeError):
+        return None
 
 
 class NiumooSource:
@@ -1299,14 +1393,23 @@ class NiumooSource:
             data = json.loads(base64.b64decode(data["content"]))
         if not isinstance(data, list):
             raise ValueError(f"unexpected niumoo payload type: {type(data)}")
+        today = datetime.now().strftime("%Y-%m-%d")
         out = []
+        seen = set()  # (market, date) 去重：源数据有 51 组同日重复条目
         for item in data:
             m = _OHR_RE.search(item.get("url", "") or "")
             if not m:
                 continue
+            date = _shift_date(item.get("date"))
+            if not date or date > today:  # 坏日期 / 未来日期丢弃
+                continue
+            key = (item["region"].lower(), date)
+            if key in seen:
+                continue
+            seen.add(key)
             out.append({
                 "market": item["region"].lower(),
-                "date": item["date"],
+                "date": date,
                 "urlbase": f"/th?id={m.group(0)}",
                 "title": None,
                 "desc": item.get("desc", "") or "",
@@ -1359,7 +1462,7 @@ Co-Authored-By: Claude Code <noreply@anthropic.com>"
 
 **Interfaces:**
 - Consumes: Task 2/3/4/6/7/8/9 全部
-- Produces: `build_record(merged: dict) -> dict`（raw 合并记录 → 含 id/location/region/photographer/gallery/imageKey/tags 的最终记录，resolutions 为空 dict）；`run_backfill(data_dir="data", check_res=True) -> None`；CLI `python -m crawler.backfill [--data-dir DIR] [--skip-resolution-check]`
+- Produces: `build_record(merged: dict) -> dict`（raw 合并记录 → 含 id/location/region/photographer/gallery/imageKey/tags 的最终记录，resolutions 为空 dict）；`verify_mkt(markets: list[str], session=None) -> list[str]`（逐市场预检 mkt 生效性，返回通过列表）；`run_backfill(data_dir="data", check_res=True, markets=None) -> None`（单条记录失败只记日志不中断）；CLI `python -m crawler.backfill [--data-dir DIR] [--skip-resolution-check] [--markets zh-cn,en-us]`
 
 - [ ] **Step 1: 写失败测试**
 
@@ -1367,7 +1470,7 @@ Co-Authored-By: Claude Code <noreply@anthropic.com>"
 ```python
 import json
 
-from crawler.backfill import build_record, run_backfill
+from crawler.backfill import build_record, run_backfill, verify_mkt
 from crawler.storage import load_year
 
 
@@ -1425,6 +1528,7 @@ def test_run_backfill_end_to_end(tmp_path, monkeypatch):
                         lambda urlbase, **kw: {"uhd": True, "fhd": True, "hd": True, "thumb": True})
     monkeypatch.setattr("crawler.backfill.NiumooSource", lambda: _StubNiumoo(niumoo_payload))
     monkeypatch.setattr("crawler.backfill.BingApiSource", lambda: _StubBing(bing_payload))
+    monkeypatch.setattr("crawler.backfill.verify_mkt", lambda markets, session=None: list(markets))
 
     run_backfill(data_dir=tmp_path, check_res=False)
 
@@ -1436,6 +1540,36 @@ def test_run_backfill_end_to_end(tmp_path, monkeypatch):
     us = load_year(tmp_path, "en-us", 2026)
     assert us[0]["photographer"] == "Chris Dorney"
     assert json.loads((tmp_path / "aggregations.json").read_text("utf-8"))["total"] == 2
+
+
+def test_verify_mkt_excludes_polluted_market(monkeypatch):
+    # 本地（中国出口）网络下 ja-jp 请求实际拿到 zh-CN feed，必须被预检剔除
+    def fake_fetch(market, idx=0, n=1, session=None):
+        return [{"market": market, "date": "2026-10-06",
+                 "urlbase": "/th?id=OHR.KasilofRiver_ZH-CN2394091052",
+                 "title": None, "desc": "", "copyrightlink": None, "quiz": None}]
+
+    monkeypatch.setattr("crawler.backfill.fetch_market", fake_fetch)
+    assert verify_mkt(["zh-cn", "ja-jp"]) == ["zh-cn"]
+
+
+def test_run_backfill_one_bad_record_does_not_abort(tmp_path, monkeypatch):
+    class _RawStub:
+        def fetch(self, session=None):
+            return [
+                {"market": "zh-cn", "date": "2026-10-05", "urlbase": "/th?id=OHR.Good1_ZH-CN1111111111",
+                 "title": None, "desc": "ok", "copyrightlink": None, "quiz": None},
+                # urlbase 不满足 schema 的 ^/th → validate_record 在落盘循环里抛错，必须只跳过不中断
+                {"market": "zh-cn", "date": "2026-10-06", "urlbase": "BAD",
+                 "title": None, "desc": "bad urlbase", "copyrightlink": None, "quiz": None},
+            ]
+
+    monkeypatch.setattr("crawler.backfill.NiumooSource", lambda: _RawStub())
+    monkeypatch.setattr("crawler.backfill.BingApiSource", lambda: _StubBing([]))
+    monkeypatch.setattr("crawler.backfill.verify_mkt", lambda markets, session=None: list(markets))
+
+    run_backfill(data_dir=tmp_path, check_res=False)  # 不抛异常即通过
+    assert len(load_year(tmp_path, "zh-cn", 2026)) == 1
 
 
 class _StubNiumoo:
@@ -1476,7 +1610,9 @@ Expected: FAIL（ModuleNotFoundError）
 
 import argparse
 import logging
+import re
 
+from .bing_api import fetch_market
 from .copyright_parser import parse_copyright
 from .image_key import extract_image_key
 from .merge import merge_records
@@ -1488,6 +1624,23 @@ from .sources.niumoo_source import NiumooSource
 from .storage import load_year, upsert_record, write_aggregations
 
 log = logging.getLogger(__name__)
+
+
+def verify_mkt(markets, session=None):
+    """逐市场预检 mkt 参数是否生效（防止本地网络把所有市场路由到 zh-CN feed）。返回通过的市场。"""
+    ok = []
+    for market in markets:
+        try:
+            recs = fetch_market(market, idx=0, n=1, session=session)
+        except Exception as e:
+            log.warning("mkt preflight failed (api error): %s: %s", market, e)
+            continue
+        expected = market.upper()  # zh-cn -> ZH-CN
+        if recs and re.search(rf"_{expected}\d+", recs[0]["urlbase"] or ""):
+            ok.append(market)
+        else:
+            log.warning("mkt preflight failed: %s 未返回本市场数据（疑似被网络位置覆盖），已剔除", market)
+    return ok
 
 
 def build_record(merged):
@@ -1512,7 +1665,7 @@ def build_record(merged):
     }
 
 
-def run_backfill(data_dir="data", check_res=True):
+def run_backfill(data_dir="data", check_res=True, markets=None):
     sources = [NiumooSource(), BingApiSource()]
     by_key = {}
     for src in sources:
@@ -1522,33 +1675,45 @@ def run_backfill(data_dir="data", check_res=True):
             log.warning("source %s failed: %s", src.name, e)
             continue
         for r in items:
+            if markets and r["market"] not in markets:
+                continue
             by_key.setdefault((r["market"], r["date"]), []).append(r)
 
-    added = skipped = 0
+    valid_markets = set(verify_mkt(sorted({m for m, _ in by_key})))
+    added = skipped = failed = 0
     for (market, date), recs in sorted(by_key.items()):
-        merged = merge_records(*recs)
-        rec = build_record(merged)
-        year = int(date[:4])
-        existing = [r for r in load_year(data_dir, market, year) if r["id"] == rec["id"]]
-        if existing and existing[0].get("resolutions"):
-            skipped += 1
+        if market not in valid_markets:
             continue
-        if check_res:
-            rec["resolutions"] = check_resolutions(rec["urlbase"])
-        validate_record(rec)
+        try:
+            merged = merge_records(*recs)
+            rec = build_record(merged)
+            year = int(date[:4])
+            existing = [r for r in load_year(data_dir, market, year) if r["id"] == rec["id"]]
+            if existing and existing[0].get("resolutions"):
+                skipped += 1
+                continue
+            if check_res:
+                rec["resolutions"] = check_resolutions(rec["urlbase"])
+            validate_record(rec)
+        except Exception as e:  # 单条坏记录只跳过，不中断整个回填
+            failed += 1
+            log.warning("record %s-%s failed: %s", market, date, e)
+            continue
         if upsert_record(data_dir, rec):
             added += 1
     write_aggregations(data_dir)
-    log.info("backfill done: added=%d skipped=%d", added, skipped)
+    log.info("backfill done: added=%d skipped=%d failed=%d", added, skipped, failed)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Bing 壁纸历史回填")
     parser.add_argument("--data-dir", default="data")
     parser.add_argument("--skip-resolution-check", action="store_true")
+    parser.add_argument("--markets", default="", help="逗号分隔，仅回填这些市场（空=全部）")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
-    run_backfill(data_dir=args.data_dir, check_res=not args.skip_resolution_check)
+    markets = [m.strip() for m in args.markets.split(",") if m.strip()] or None
+    run_backfill(data_dir=args.data_dir, check_res=not args.skip_resolution_check, markets=markets)
 
 
 if __name__ == "__main__":
@@ -1558,7 +1723,7 @@ if __name__ == "__main__":
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `python -m pytest tests/test_backfill.py -v`
-Expected: 3 passed
+Expected: 5 passed
 
 - [ ] **Step 5: Commit**
 
@@ -1612,14 +1777,36 @@ def test_daily_idempotent_no_change(tmp_path, monkeypatch):
 
 
 def test_core_failure_sets_flag_and_skips_extended(tmp_path, monkeypatch):
+    calls = []
+
     def boom(market, idx=0, n=8):
+        calls.append(market)
         if market == "zh-cn":
             raise fd.BingApiError("down")
-        raise AssertionError("extended should not be fetched")
+        return []
 
     monkeypatch.setattr(fd, "fetch_market", boom)
     changed, core_failed = fd.run_daily(data_dir=tmp_path)
     assert core_failed is True
+    assert "ja-jp" not in calls  # 核心失败后扩展市场确实未被请求
+
+
+def test_bad_record_in_daily_does_not_poison_market(tmp_path, monkeypatch):
+    def fetch(market, idx=0, n=8):
+        if market != "zh-cn":
+            return []
+        return [
+            {"market": "zh-cn", "date": "2026-10-06", "urlbase": "/th?id=OHR.Good_ZH-CN1111111111",
+             "title": None, "desc": "ok", "copyrightlink": None, "quiz": None},
+            {"market": "zh-cn", "date": "2026-10-07", "urlbase": "BAD",  # schema 校验会失败
+             "title": None, "desc": "x", "copyrightlink": None, "quiz": None},
+        ]
+
+    monkeypatch.setattr(fd, "fetch_market", fetch)
+    monkeypatch.setattr(fd, "check_resolutions", lambda urlbase, **kw: {"uhd": True, "fhd": True, "hd": True, "thumb": True})
+    changed, core_failed = fd.run_daily(data_dir=tmp_path)
+    assert core_failed is False
+    assert len(load_year(tmp_path, "zh-cn", 2026)) == 1  # 坏记录跳过，好记录入库
 
 
 def test_extended_failure_is_not_fatal(tmp_path, monkeypatch):
@@ -1676,9 +1863,13 @@ log = logging.getLogger(__name__)
 def ingest_market(market, data_dir):
     added = 0
     for rawrec in fetch_market(market, idx=0, n=8):
-        rec = build_record(rawrec)
-        rec["resolutions"] = check_resolutions(rec["urlbase"])
-        validate_record(rec)
+        try:
+            rec = build_record(rawrec)
+            rec["resolutions"] = check_resolutions(rec["urlbase"])
+            validate_record(rec)
+        except Exception as e:  # 单条坏记录跳过，不毒化整个市场
+            log.warning("skip bad record %s/%s: %s", market, rawrec.get("date"), e)
+            continue
         if upsert_record(data_dir, rec):
             added += 1
     return added
@@ -1727,12 +1918,12 @@ if __name__ == "__main__":
 - [ ] **Step 4: 跑测试确认通过**
 
 Run: `python -m pytest tests/test_fetch_daily.py -v`
-Expected: 5 passed
+Expected: 6 passed
 
 - [ ] **Step 5: 全量测试回归**
 
 Run: `python -m pytest tests/ -v`
-Expected: 全部通过（累计约 40 个用例）
+Expected: 全部通过（累计约 60 个用例）
 
 - [ ] **Step 6: Commit**
 
@@ -1751,59 +1942,99 @@ Co-Authored-By: Claude Code <noreply@anthropic.com>"
 - Create: `data/`（脚本产物，git 提交）
 
 **Interfaces:**
-- Consumes: `python -m crawler.backfill`
-- Produces: `data/zh-cn/2023..2026.json`、`data/en-us/2021..2026.json`、`data/aggregations.json`（真实历史数据，约 3400+ 条）
+- Consumes: `python -m crawler.backfill`、`crawler.backfill.verify_mkt`
+- Produces: `data/zh-cn/2023..2026.json`、`data/en-us/2021..2026.json`、`data/aggregations.json`（真实历史数据，约 3400 条；扩展市场数据从 Task 17 首次 Actions run 开始积累，本地不回填）
+
+- [ ] **Step 0: mkt 生效性预检（必须最先做，防止污染数据入库）**
+
+```bash
+source .venv/bin/activate
+python - <<'EOF'
+import logging
+logging.basicConfig(level=logging.INFO)
+from crawler.backfill import verify_mkt
+ok = verify_mkt(["zh-cn", "en-us", "ja-jp"])
+print("preflight ok:", ok)
+EOF
+```
+Expected: 至少 `zh-cn` 通过。判断规则：`ja-jp` 也在通过列表 → 本网络 mkt 生效，后续步骤可全量回填（去掉 `--markets` 参数）；`ja-jp` 未通过（本地网络被路由到 zh-CN feed，中国出口常见）→ 后续所有回填命令必须带 `--markets zh-cn,en-us`，扩展市场数据等 Task 17 首次 Actions run（美国出口）自然积累。**预检不过就不允许无限定回填。**
 
 - [ ] **Step 1: 先跑小样本验证（跳过分辨率验证，秒级）**
 
 ```bash
-source .venv/bin/activate
-python -m crawler.backfill --data-dir /tmp/bw-smoke --skip-resolution-check
+python -m crawler.backfill --data-dir /tmp/bw-smoke --skip-resolution-check --markets zh-cn,en-us
 python - <<'EOF'
 import json
+from collections import defaultdict
+from datetime import date
 from pathlib import Path
 agg = json.loads(Path("/tmp/bw-smoke/aggregations.json").read_text())
 print("markets:", agg["markets"], "total:", agg["total"])
 print("years_by_market:", agg["years_by_market"])
-zh = json.loads(Path("/tmp/bw-smoke/zh-cn/2026.json").read_text())
-print("sample:", json.dumps(zh[-1], ensure_ascii=False)[:300])
-filled = sum(1 for m in agg["markets"] for y in agg["years_by_market"].get(m, [])
-             for r in json.loads(Path(f"/tmp/bw-smoke/{m}/{y}.json").read_text()) if r["photographer"])
-print("photographer filled:", filled)
+today = date.today().isoformat()
+by_key = defaultdict(set)
+future = 0
+n = 0
+for f in Path("/tmp/bw-smoke").glob("*/*.json"):
+    for r in json.loads(f.read_text()):
+        n += 1
+        if r["imageKey"]:
+            by_key[(r["market"], r["imageKey"])].add(r["date"])
+        if r["date"] > today:
+            future += 1
+dupes = {k: sorted(v) for k, v in by_key.items() if len(v) > 1}
+print("同(market,imageKey)多日期记录组:", len(dupes), list(dupes.items())[:5])
+print("未来日期记录数:", future)
+filled_ph = sum(1 for f in Path("/tmp/bw-smoke").glob("*/*.json") for r in json.loads(f.read_text()) if r["photographer"])
+print(f"photographer 填充率: {filled_ph}/{n}")
+assert not dupes, f"日期体系未对齐，同图出现多日期重复: {list(dupes.items())[:3]}"
+assert future == 0, "存在未来日期记录"
+print("SMOKE OK")
 EOF
 ```
-Expected: total ≈ 3460+；zh-cn 覆盖 2023-2026、en-us 覆盖 2021-2026；sample 记录含解析出的 photographer/gallery；photographer 填充率 > 95%
+Expected: `SMOKE OK`；total ≈ 3400+；zh-cn 覆盖 2023-2026、en-us 覆盖 2021-2026；photographer 填充率 > 95%。**若重复断言失败，说明 niumoo 日期偏移假设有问题——停下来向需求方报告，不得带病继续。**
 ⚠️ 若本地网络拉不到 raw.githubusercontent（返回空），改用：
-`NIUMOO_JSON_URL=https://api.github.com/repos/niumoo/bing-wallpaper/contents/docs/images.json python -m crawler.backfill --data-dir /tmp/bw-smoke --skip-resolution-check`
+`NIUMOO_JSON_URL=https://api.github.com/repos/niumoo/bing-wallpaper/contents/docs/images.json python -m crawler.backfill --data-dir /tmp/bw-smoke --skip-resolution-check --markets zh-cn,en-us`
 
 - [ ] **Step 2: 正式回填到 data/（含分辨率验证，约 45 分钟，后台运行）**
 
 ```bash
-source .venv/bin/activate
-nohup python -m crawler.backfill --data-dir data > backfill.log 2>&1 &
+nohup python -m crawler.backfill --data-dir data --markets zh-cn,en-us > backfill.log 2>&1 &
 echo "backfill started, monitor: tail -f backfill.log"
 ```
-中途可用 `wc -l data/*/*.json` 观察进度。脚本幂等，中断后重跑即可续传。
+（Step 0 预检全通过时可去掉 `--markets` 全量回填。）中途可用 `wc -l data/*/*.json` 观察进度。脚本幂等，中断后重跑即可续传。
 
-- [ ] **Step 3: 验证产物**
+- [ ] **Step 3: 验证产物（含对抗式审查要求的全部自检）**
 
 ```bash
 python - <<'EOF'
 import json
+from collections import defaultdict
+from datetime import date
 from pathlib import Path
 agg = json.loads(Path("data/aggregations.json").read_text())
 print("total:", agg["total"])
 print("regions top5:", agg["regions"][:5])
 print("photographers top3:", agg["photographers"][:3])
-bad = 0
+today = date.today().isoformat()
+by_key = defaultdict(set)
+no_res = future = n = 0
 for f in Path("data").glob("*/*.json"):
     for r in json.loads(f.read_text()):
+        n += 1
+        if r["imageKey"]:
+            by_key[(r["market"], r["imageKey"])].add(r["date"])
         if not r["resolutions"]:
-            bad += 1
-print("records without resolutions:", bad)
+            no_res += 1
+        if r["date"] > today:
+            future += 1
+dupes = {k: sorted(v) for k, v in by_key.items() if len(v) > 1}
+print("重复组:", len(dupes), "| 未来日期:", future, "| resolutions 为空:", no_res, "| 总数:", n)
+assert not dupes and future == 0 and no_res == 0
+print("DATA OK")
 EOF
 ```
-Expected: total 与 smoke 一致；resolutions 全部非空（bad=0）；regions 有真实国家名
+Expected: `DATA OK`；regions 有真实国家名
 
 - [ ] **Step 4: 抽查一条真实记录**
 
@@ -1915,6 +2146,14 @@ export async function fetchJSON(url) {
 export const loadAggregations = () => fetchJSON('./data/aggregations.json')
 export const loadShard = (market, year) => fetchJSON(`./data/${market}/${year}.json`)
 
+export async function loadYearShards(aggregations, year) {
+  const jobs = []
+  for (const [market, years] of Object.entries(aggregations.years_by_market || {}))
+    if (years.includes(Number(year))) jobs.push(loadShard(market, Number(year)))
+  const shards = await Promise.all(jobs)
+  return shards.flat()
+}
+
 export async function loadAllRecords(aggregations) {
   const jobs = []
   for (const [market, years] of Object.entries(aggregations.years_by_market || {}))
@@ -1946,11 +2185,13 @@ export function searchRecords(index, records, query, filters) {
   let result = records
   const q = (query || '').trim()
   if (q) {
-    const ids = new Set(index.search(q, { combineWith: 'AND' }).map((h) => h.id))
-    result = result.filter((r) => ids.has(r.id))
-    if (result.length === 0) {
-      const loose = new Set(index.search(q, { combineWith: 'OR' }).map((h) => h.id))
-      result = result.filter((r) => loose.has(r.id))
+    const andIds = new Set(index.search(q, { combineWith: 'AND' }).map((h) => h.id))
+    if (andIds.size > 0) {
+      result = result.filter((r) => andIds.has(r.id))
+    } else {
+      // AND 无命中才回退 OR——注意必须从原始 records 过滤，不能在空结果上继续过滤
+      const orIds = new Set(index.search(q, { combineWith: 'OR' }).map((h) => h.id))
+      result = result.filter((r) => orIds.has(r.id))
     }
   }
   return result.filter(
@@ -2002,8 +2243,9 @@ describe('searchRecords', () => {
   })
 
   it('falls back to OR when AND finds nothing', () => {
-    const hits = searchRecords(index, records, '张家界雪山', {})
-    expect(hits.length).toBe(1)
+    // '瑞士张家界'：没有任何记录同时含这两组词 → AND 空 → OR 回退应命中两条
+    const hits = searchRecords(index, records, '瑞士张家界', {})
+    expect(hits.map((r) => r.id).sort()).toEqual(['en-us-2024-01-01', 'zh-cn-2023-10-05'])
   })
 
   it('filters by market/year/resolution', () => {
@@ -2130,8 +2372,8 @@ const emit = defineEmits(['select'])
 `web/src/App.vue`:
 ```vue
 <script setup>
-import { computed, onMounted, ref } from 'vue'
-import { loadAggregations, loadAllRecords } from './api'
+import { computed, onMounted, ref, watch } from 'vue'
+import { loadAggregations, loadAllRecords, loadYearShards } from './api'
 import { buildIndex, searchRecords } from './search'
 import FilterBar from './components/FilterBar.vue'
 import WallpaperGrid from './components/WallpaperGrid.vue'
@@ -2141,15 +2383,48 @@ const aggregations = ref(null)
 const records = ref([])
 const error = ref('')
 const loading = ref(true)
+const loadingMore = ref(false)
+const loadedYears = new Set()
 const filters = ref({ query: '', market: '', year: '', month: '', region: '', photographer: '', resolution: '' })
 const selected = ref(null)
 const index = computed(() => buildIndex(records.value))
 const results = computed(() => searchRecords(index.value, records.value, filters.value.query, filters.value))
 
+// spec §8 惰性加载：首屏只载最新年份分片，切到其他年份增量加载，「全部年份」才全量
+async function ensureYear(year) {
+  const key = String(year)
+  if (!aggregations.value || !key || loadedYears.has(key)) return
+  loadingMore.value = true
+  try {
+    const shards = await loadYearShards(aggregations.value, year)
+    records.value = records.value.concat(shards)
+    loadedYears.add(key)
+  } finally {
+    loadingMore.value = false
+  }
+}
+
+async function ensureAllYears() {
+  loadingMore.value = true
+  try {
+    records.value = await loadAllRecords(aggregations.value)
+    for (const y of aggregations.value.years || []) loadedYears.add(String(y))
+  } finally {
+    loadingMore.value = false
+  }
+}
+
+watch(
+  () => filters.value.year,
+  (y) => (y ? ensureYear(y) : ensureAllYears()),
+)
+
 onMounted(async () => {
   try {
     aggregations.value = await loadAggregations()
-    records.value = await loadAllRecords(aggregations.value)
+    const latest = (aggregations.value.years || []).at(-1)
+    // 只改 filters.year，由上面的 watch 统一触发加载（避免显式调用导致同分片重复载入）
+    filters.value.year = latest ? String(latest) : ''
   } catch (e) {
     error.value = `数据加载失败：${e.message}`
   } finally {
@@ -2165,6 +2440,7 @@ onMounted(async () => {
   </header>
   <FilterBar :aggregations="aggregations" v-model:filters="filters" />
   <p v-if="loading" class="status">加载中…</p>
+  <p v-if="loadingMore" class="status">正在加载更多年份…</p>
   <p v-if="error" class="status error">{{ error }}</p>
   <WallpaperGrid :records="results" @select="selected = $event" />
   <WallpaperDetail v-if="selected" :record="selected" :records="records" @close="selected = null" />
@@ -2254,12 +2530,12 @@ import { RES_SUFFIX, imageUrl } from '../api'
 const props = defineProps({ record: Object, records: Array })
 const emit = defineEmits(['close'])
 
-const viewRes = ref('fhd')
+const picked = ref('')
+// 只暴露用户可选档位（thumb 是列表缩略图专用，spec §6.4 禁止展示），并按 uhd>fhd>hd 排序
+const available = computed(() => Object.keys(RES_SUFFIX).filter((k) => props.record.resolutions?.[k] === true))
+const viewRes = computed(() => picked.value || available.value[0] || 'fhd')
 const siblings = computed(() =>
   props.records.filter((r) => r.imageKey && r.imageKey === props.record.imageKey && r.id !== props.record.id),
-)
-const available = computed(() =>
-  Object.entries(props.record.resolutions || {}).filter(([, ok]) => ok).map(([k]) => k),
 )
 const viewSrc = computed(() => imageUrl(props.record.urlbase, RES_SUFFIX[viewRes.value] || '_1920x1080.jpg'))
 const RES_LABEL = { uhd: '4K UHD (3840×2160)', fhd: '1920×1080', hd: '1366×768' }
@@ -2277,7 +2553,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
       <button class="close" aria-label="关闭" @click="emit('close')">✕</button>
       <img class="hero" :src="viewSrc" :alt="record.title || record.desc" />
       <div class="res-switch" v-if="available.length">
-        <button v-for="k in available" :key="k" :class="{ active: k === viewRes }" @click="viewRes = k">
+        <button v-for="k in available" :key="k" :class="{ active: k === viewRes }" @click="picked = k">
           {{ RES_LABEL[k] || k }}
         </button>
       </div>
@@ -2346,9 +2622,10 @@ cd web && nohup npm run preview -- --port 4173 > /tmp/preview.log 2>&1 & sleep 2
 ```
 用 Playwright 浏览器打开 `http://localhost:4173/`：
 1. snapshot 点击第一张卡片 → snapshot 确认弹层出现：大图 img、日期/摄影师字段、下载链接 `https://www.bing.com/th?id=...`、「背后故事」链接存在（有 copyrightlink 时）
-2. 点击「4K UHD」切换 → 用 `browser_network_requests` 确认发起了 `_UHD.jpg` 请求且返回 200
-3. 按 Esc → snapshot 确认弹层关闭
-4. 搜「张家界」→ 点开一张 → 确认无 JS console 错误（`browser_console_messages` level=error 应为空）
+2. snapshot 确认 res-switch 按钮只含 4K UHD / 1920×1080 / 1366×768 档，**无 thumb 档**
+3. 点击「4K UHD」切换 → 用 `browser_network_requests` 确认发起了 `_UHD.jpg` 请求且返回 200
+4. 按 Esc → snapshot 确认弹层关闭
+5. 搜「张家界」→ 点开一张 → 确认无 JS console 错误（`browser_console_messages` level=error 应为空）
 验证完 `kill %1`
 
 - [ ] **Step 4: Commit**
@@ -2404,10 +2681,11 @@ jobs:
       - run: pip install -r requirements.txt
       - name: 每日增量抓取（核心市场失败则红灯）
         run: python -m crawler.fetch_daily
-      - name: 判断数据是否有变化
+      - name: 判断数据是否有变化（先暂存再看 diff——git diff 看不见未跟踪的新文件，年切换日靠它兜底）
         id: diff
         run: |
-          if git diff --quiet -- data/; then
+          git add -A data/
+          if git diff --cached --quiet -- data/; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -2417,8 +2695,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
           git commit -m "data: daily wallpaper update $(date -u +%F)"
+          git pull --rebase origin main
           git push
       - uses: actions/setup-node@v4
         if: steps.diff.outputs.changed == 'true'
@@ -2456,26 +2734,68 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: bing-wallpaper-deploy   # 与 daily.yml 共用，避免同时 push 冲突
+  cancel-in-progress: false
 
 jobs:
-  backfill:
+  backfill-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: |
+      - name: 历史回填（含 mkt 预检，预检不过的市场自动剔除）
+        run: |
           FLAG=""
           if [ "${{ inputs.check_resolutions }}" != "true" ]; then FLAG="--skip-resolution-check"; fi
           python -m crawler.backfill --data-dir data $FLAG
-      - run: |
+      - name: 判断数据是否有变化
+        id: diff
+        run: |
+          git add -A data/
+          if git diff --cached --quiet -- data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: 提交数据
+        if: steps.diff.outputs.changed == 'true'
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --cached --quiet || git commit -m "data: backfill $(date -u +%F)"
+          git commit -m "data: backfill $(date -u +%F)"
+          git pull --rebase origin main
           git push
+      - uses: actions/setup-node@v4
+        if: steps.diff.outputs.changed == 'true'
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        if: steps.diff.outputs.changed == 'true'
+        working-directory: web
+      - run: npm run build
+        if: steps.diff.outputs.changed == 'true'
+        working-directory: web
+      - run: cp -r data web/dist/data
+        if: steps.diff.outputs.changed == 'true'
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.diff.outputs.changed == 'true'
+        with:
+          path: web/dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        if: steps.diff.outputs.changed == 'true'
 ```
 
 - [ ] **Step 2: 校验 YAML 语法**
@@ -2614,7 +2934,21 @@ Expected: title 正常；aggregations total 与仓库一致；zh-cn 2023 分片 
 
 ## 计划自审记录（写计划时已核）
 
-1. **Spec 覆盖**：§5 市场分级→Task 1/11；§6 数据模型→Task 4/7；§6.3 解析→Task 2/3；§6.4 分辨率→Task 6；§7.1 增量→Task 11；§7.2 回填+source-adapter+mkt 风险→Task 9/10/12/17；§8 前端→Task 13/14/15；§9 Actions→Task 16/17；§10 错误处理→Task 5/11 内嵌；§11 测试→各任务 TDD；§12 YAGNI 边界未越界（未下载图片、未做用户系统、tags 恒空）
+1. **Spec 覆盖**：§5 市场分级→Task 1/11；§6 数据模型→Task 4/7；§6.3 解析→Task 2/3；§6.4 分辨率→Task 6；§7.1 增量→Task 11；§7.2 回填+source-adapter+mkt 风险+日期基准+mkt 预检→Task 9/10/12/17；§8 前端（含惰性加载）→Task 13/14/15；§9 Actions→Task 16/17；§10 错误处理→Task 5/6/10/11 内嵌；§11 测试→各任务 TDD；§12 YAGNI 边界未越界（未下载图片、未做用户系统、tags 恒空）
 2. **占位符扫描**：无 TBD/TODO；所有代码步骤含完整代码
 3. **类型一致性**：`build_record`（Task 10 定义，Task 11 消费）；raw 记录 7 字段（Task 5 定义，Task 9/10/11 消费）；`years_by_market`（Task 7 生成，Task 13 消费）；`make_record` fixture（Task 4 入 conftest，Task 7 复用）；`RESOLUTION_SUFFIXES` 四键（Task 6/13/15 一致）
-4. **Review Focus**：五类输入均已钉进对应任务测试（见首节标注）
+4. **Review Focus**：八类输入均已钉进对应任务测试（见首节标注）
+
+## 对抗式审查修订记录（2026-10-06）
+
+独立审查代理以真实执行方式（计划代码原样组装跑 pytest/vitest、真实回填 smoke、真实数据对比）发现 6 P1 + 12 P2，已全部修订入计划：
+
+| # | 级别 | 缺陷 | 修订 |
+|---|---|---|---|
+| 1 | P1 | niumoo date 与 Bing startdate 系统性 +1 天，合并永不交集、产出重复/未来日期记录 | Task 9 源头归一化 `date-1`+去重+丢未来；Task 12 smoke 加零重复/零未来断言；spec §7.2 补条款 |
+| 2 | P1 | mkt 污染数据先 commit 后验证 | Task 12 新增 Step 0 `verify_mkt` 预检，未过则强制 `--markets zh-cn,en-us`；Task 10 实现 verify_mkt + `--markets` |
+| 3 | P1 | Task 6 测试三处自相矛盾（KeyError/status_code/异常类型） | 测试与实现同步修正，补 OSError 兜底 |
+| 4 | P1 | 搜索 OR 回退在空结果上过滤（死代码） | 回退分支改从原始 records 过滤；测试改用真正 AND-miss 的查询 |
+| 5 | P1 | `git diff --quiet` 看不见未跟踪文件，年切换日静默丢数据 | daily/backfill 均改 `git add -A` + `git diff --cached --quiet` |
+| 6 | P1 | 详情弹层混入 thumb 档（404 按钮） | `available` 改按 `RES_SUFFIX` 白名单生成，默认档取可用优先级 |
+| 7-18 | P2 | git 未 init 兜底、坏记录毒化市场/回填、HEAD 网络抖动固化 false、region 词边界+否定短语、解析器嵌套括号/纯日期、空转测试、backfill 不部署+并发保护、全量加载违背惰性 spec、niumoo 数据清洗、smoke 指标不足 | 分别落入 Task 1/2/3/5/6/9/10/11/13/14/16 修订 |

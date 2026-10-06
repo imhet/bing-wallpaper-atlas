@@ -127,6 +127,8 @@ crawler/ (Python)  ──写──▶  data/ (JSON 分片，git 提交)      web
   - `BingApiSource`：接口本身（补 title/copyrightlink 等富字段）
 - 按 `市场+日期` 合并去重，**字段级互补合并**：逐字段取非空值；冲突时以 Bing API 源为准
 - 合并结果同样走 copyright 解析 + 分辨率验证 + schema 校验后落盘
+- **日期基准统一**（对抗式审查实测发现）：niumoo 的 `date` 与 Bing API `startdate` 对同一张图系统性相差 +1 天。NiumooSource 产出前统一 `date -= 1 天` 对齐 startdate 语义，并按 (region, date) 去重、丢弃未来日期条目；回填自检必须包含「同 (market, imageKey) 重复记录数 == 0」与「未来日期记录数 == 0」两条断言
+- **mkt 生效性预检先于任何落盘**：回填开始前对每个市场用单条请求验证返回的 urlbase 含该市场后缀（如 `_JA-JP`），不通过的市场从本次回填剔除并告警——防止本地（中国出口）网络把扩展市场数据污染成 zh-CN
 - 更早历史（2009–2021）：本期不做；后续新增 adapter（如 Wayback Machine）即可增量灌入，不破坏已有数据
 - **已知风险**：`mkt` 参数会被请求方的网络位置覆盖（实测中国出口网络下所有市场都返回 zh-CN feed）。多市场抓取必须在 GitHub Actions（美国出口）环境验证——首个 workflow 手动触发一次，核对各市场返回的图 ID 含各自市场后缀（如 `_JA-JP`、`_DE-DE`）再纳入每日任务
 
