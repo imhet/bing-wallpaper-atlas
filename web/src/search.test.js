@@ -12,6 +12,10 @@ const records = [
     desc: '拱门国家公园的北窗框景中的炮塔拱门, 犹他州, 美国 (© John Doe)',
     location: ['拱门国家公园'], region: '美国',
     photographer: 'John Doe', gallery: null, tags: [], resolutions: { uhd: false, thumb: true } },
+  { id: 'ja-jp-2024-03-01', market: 'ja-jp', date: '2024-03-01', title: '桜と塔',
+    desc: '東京の春 (© Yuki Sato)', location: ['東京タワー'], region: '日本',
+    photographer: 'Yuki Sato', gallery: null,
+    tags: ['东京', 'tokyo', '東京', 'とうきょう'], resolutions: { uhd: false, thumb: true } },
 ]
 
 const index = buildIndex(records)
@@ -20,6 +24,10 @@ describe('tokenize', () => {
   it('splits CJK into single chars plus bigrams', () => {
     // 单字负责模糊回退，二元组负责词语精确匹配（「中国」不能再靠 中+国 字符共现命中）
     expect(tokenize('中国雪山')).toEqual(['中', '中国', '国', '国雪', '雪', '雪山', '山'])
+  })
+  it('splits kana like CJK (tags bridge to katakana aliases)', () => {
+    // 片假名曾是盲区（被 tokenizer 丢弃 → 查询变空）；现与汉字同等待遇
+    expect(tokenize('アルプス')).toEqual(['ア', 'アル', 'ル', 'ルプ', 'プ', 'プス', 'ス'])
   })
   it('keeps latin words whole and lowercases', () => {
     expect(tokenize('Alaska 2024')).toEqual(['alaska', '2024'])
@@ -53,6 +61,12 @@ describe('searchRecords', () => {
     // '瑞士张家界'：没有任何记录同时含这两组词 → AND 空 → OR 回退应命中两条
     const hits = searchRecords(index, records, '瑞士张家界', {})
     expect(hits.map((r) => r.id).sort()).toEqual(['en-us-2024-01-01', 'zh-cn-2023-10-05'])
+  })
+
+  it('cross-language: 中文 tags 命中英文查询，英文 tags 命中中文查询', () => {
+    // 词典方案的核心闭环：ja-jp 日文记录靠 tags 被中文/英文查询命中
+    expect(searchRecords(index, records, '东京', {}).map((r) => r.id)).toEqual(['ja-jp-2024-03-01'])
+    expect(searchRecords(index, records, 'tokyo', {}).map((r) => r.id)).toEqual(['ja-jp-2024-03-01'])
   })
 
   it('filters by market/year/resolution', () => {

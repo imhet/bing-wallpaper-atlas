@@ -2,8 +2,9 @@ import MiniSearch from 'minisearch'
 
 // 中文单字 + 相邻二元组双重切分（拉丁词整体）：'中国雪山' → ['中','中国','国','国雪','雪','雪山','山']。
 // 单字负责字面召回，二元组让 AND 匹配到「连续词语」——搜「中国」不再被「国家公园+框景中」这类字符共现误报。
+// 假名（ぁ-ヿ）与汉字同等待遇：片假名别名（ヨセミテ等）靠 tags 参与跨语言匹配。
 export function tokenize(text) {
-  const parts = String(text).toLowerCase().match(/[a-z0-9]+|[一-鿿]/g) || []
+  const parts = String(text).toLowerCase().match(/[a-z0-9]+|[ぁ-ヿ一-鿿]/g) || []
   const out = []
   for (let i = 0; i < parts.length; i++) {
     out.push(parts[i])

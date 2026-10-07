@@ -48,7 +48,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "巴黎",
+   "paris",
+   "パリ"
+  ]
  },
  {
   "id": "fr-fr-2026-10-01",
@@ -99,7 +103,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "アラスカ"
+  ]
  },
  {
   "id": "fr-fr-2026-10-03",
@@ -125,7 +134,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "fr-fr-2026-10-04",
@@ -177,7 +192,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "张掖",
+   "zhangye",
+   "張掖"
+  ]
  },
  {
   "id": "fr-fr-2026-10-06",

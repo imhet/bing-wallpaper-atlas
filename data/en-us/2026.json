@@ -21,7 +21,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "北极",
+   "arctic",
+   "北極"
+  ]
  },
  {
   "id": "en-us-2026-01-02",
@@ -46,7 +50,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "ヴェネツィア",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-01-03",
@@ -72,7 +88,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "广州",
+   "guangzhou",
+   "canton",
+   "廣州",
+   "伯尔尼",
+   "bern",
+   "berne",
+   "伯爾尼",
+   "瑞士",
+   "switzerland",
+   "schweiz",
+   "suisse"
+  ]
  },
  {
   "id": "en-us-2026-01-04",
@@ -98,7 +127,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "アラスカ"
+  ]
  },
  {
   "id": "en-us-2026-01-05",
@@ -124,7 +158,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "南非",
+   "south africa",
+   "african"
+  ]
  },
  {
   "id": "en-us-2026-01-06",
@@ -149,7 +187,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "格陵兰",
+   "greenland",
+   "格陵蘭"
+  ]
  },
  {
   "id": "en-us-2026-01-07",
@@ -174,7 +216,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "拱门",
+   "arches",
+   "拱門",
+   "犹他",
+   "utah",
+   "猶他"
+  ]
  },
  {
   "id": "en-us-2026-01-08",
@@ -199,7 +248,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-01-09",
@@ -224,7 +283,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "红木",
+   "redwood",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-01-10",
@@ -250,7 +316,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "采尔马特",
+   "zermatt",
+   "策馬特",
+   "瑞士",
+   "switzerland",
+   "schweiz",
+   "suisse",
+   "swiss",
+   "马特洪峰",
+   "matterhorn",
+   "馬特洪峰",
+   "スイス"
+  ]
  },
  {
   "id": "en-us-2026-01-11",
@@ -275,7 +354,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "摩洛哥",
+   "morocco",
+   "moroccan",
+   "モロッコ"
+  ]
  },
  {
   "id": "en-us-2026-01-12",
@@ -351,7 +435,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ"
+  ]
  },
  {
   "id": "en-us-2026-01-15",
@@ -376,7 +466,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "挪威",
+   "norway",
+   "norsk",
+   "norwegian",
+   "ノルウェー"
+  ]
  },
  {
   "id": "en-us-2026-01-16",
@@ -401,7 +497,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纳米比亚",
+   "namibia",
+   "納米比亞"
+  ]
  },
  {
   "id": "en-us-2026-01-17",
@@ -427,7 +527,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "那不勒斯",
+   "naples",
+   "napoli",
+   "拿坡里",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-01-18",
@@ -452,7 +563,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ]
  },
  {
   "id": "en-us-2026-01-19",
@@ -504,7 +619,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-01-21",
@@ -554,7 +678,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "捷克",
+   "czech",
+   "czechia"
+  ]
  },
  {
   "id": "en-us-2026-01-23",
@@ -579,7 +707,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-01-24",
@@ -604,7 +737,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "瑞士",
+   "switzerland",
+   "schweiz",
+   "suisse",
+   "swiss",
+   "スイス",
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山"
+  ]
  },
  {
   "id": "en-us-2026-01-25",
@@ -631,7 +776,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "苏格兰",
+   "scotland",
+   "scottish",
+   "蘇格蘭"
+  ]
  },
  {
   "id": "en-us-2026-01-26",
@@ -657,7 +807,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "新天鹅堡",
+   "neuschwanstein",
+   "新天鵝堡",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ]
  },
  {
   "id": "en-us-2026-01-27",
@@ -683,7 +842,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ"
+  ]
  },
  {
   "id": "en-us-2026-01-28",
@@ -709,7 +874,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "新西兰",
+   "new zealand",
+   "紐西蘭",
+   "ニュージーランド"
+  ]
  },
  {
   "id": "en-us-2026-01-29",
@@ -760,7 +930,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-01-31",
@@ -786,7 +966,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纳米比亚",
+   "namibia",
+   "納米比亞"
+  ]
  },
  {
   "id": "en-us-2026-02-01",
@@ -812,7 +996,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "苏格兰",
+   "scotland",
+   "scottish",
+   "蘇格蘭"
+  ]
  },
  {
   "id": "en-us-2026-02-02",
@@ -838,7 +1027,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "奥地利",
+   "austria",
+   "österreich",
+   "austrian",
+   "奧地利",
+   "オーストリア"
+  ]
  },
  {
   "id": "en-us-2026-02-03",
@@ -864,7 +1060,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-02-04",
@@ -890,7 +1095,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "南非",
+   "south africa",
+   "african"
+  ]
  },
  {
   "id": "en-us-2026-02-05",
@@ -915,7 +1124,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-02-06",
@@ -941,7 +1155,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-02-07",
@@ -965,7 +1186,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "乌尤尼",
+   "uyuni",
+   "ウユニ"
+  ]
  },
  {
   "id": "en-us-2026-02-08",
@@ -990,7 +1215,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ"
+  ]
  },
  {
   "id": "en-us-2026-02-09",
@@ -1041,7 +1272,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-02-11",
@@ -1067,7 +1304,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "死亡谷",
+   "death valley",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-02-12",
@@ -1117,7 +1361,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "泰国",
+   "thailand",
+   "thai"
+  ]
  },
  {
   "id": "en-us-2026-02-14",
@@ -1166,7 +1414,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-02-16",
@@ -1216,7 +1469,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese"
+  ]
  },
  {
   "id": "en-us-2026-02-18",
@@ -1265,7 +1522,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "挪威",
+   "norway",
+   "norsk",
+   "norwegian",
+   "ノルウェー"
+  ]
  },
  {
   "id": "en-us-2026-02-20",
@@ -1290,7 +1553,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "优胜美地",
+   "yosemite",
+   "優勝美地",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "ヨセミテ"
+  ]
  },
  {
   "id": "en-us-2026-02-21",
@@ -1342,7 +1614,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-02-23",
@@ -1368,7 +1650,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ]
  },
  {
   "id": "en-us-2026-02-24",
@@ -1394,7 +1682,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ]
  },
  {
   "id": "en-us-2026-02-25",
@@ -1419,7 +1711,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "アラスカ"
+  ]
  },
  {
   "id": "en-us-2026-02-26",
@@ -1444,7 +1741,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "大峡谷",
+   "grand canyon",
+   "大峽谷",
+   "亚利桑那",
+   "arizona",
+   "亞利桑那",
+   "グランドキャニオン"
+  ]
  },
  {
   "id": "en-us-2026-02-27",
@@ -1470,7 +1775,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "北极",
+   "arctic",
+   "北極",
+   "アラスカ"
+  ]
  },
  {
   "id": "en-us-2026-02-28",
@@ -1496,7 +1809,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "アイスランド",
+   "ハワイ"
+  ]
  },
  {
   "id": "en-us-2026-03-01",
@@ -1523,7 +1845,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク"
+  ]
  },
  {
   "id": "en-us-2026-03-02",
@@ -1548,7 +1876,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "泰国",
+   "thailand",
+   "thai"
+  ]
  },
  {
   "id": "en-us-2026-03-03",
@@ -1574,7 +1906,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "马赛马拉",
+   "masai mara",
+   "馬賽馬拉",
+   "南非",
+   "south africa",
+   "african",
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞"
+  ]
  },
  {
   "id": "en-us-2026-03-04",
@@ -1626,7 +1969,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "卡帕多奇亚",
+   "cappadocia",
+   "卡帕多西亞"
+  ]
  },
  {
   "id": "en-us-2026-03-06",
@@ -1652,7 +1999,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "丹麦",
+   "denmark",
+   "danish",
+   "丹麥"
+  ]
  },
  {
   "id": "en-us-2026-03-07",
@@ -1678,7 +2030,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ]
  },
  {
   "id": "en-us-2026-03-08",
@@ -1703,7 +2061,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ]
  },
  {
   "id": "en-us-2026-03-09",
@@ -1729,7 +2093,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "苏格兰",
+   "scotland",
+   "scottish",
+   "蘇格蘭"
+  ]
  },
  {
   "id": "en-us-2026-03-10",
@@ -1754,7 +2123,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-03-11",
@@ -1781,7 +2155,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-03-12",
@@ -1832,7 +2212,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-03-14",
@@ -1858,7 +2244,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-03-15",
@@ -1884,7 +2280,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "温哥华",
+   "vancouver",
+   "溫哥華",
+   "加拿大",
+   "canada",
+   "canadian",
+   "アイスランド",
+   "カナダ"
+  ]
  },
  {
   "id": "en-us-2026-03-16",
@@ -1909,7 +2317,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese"
+  ]
  },
  {
   "id": "en-us-2026-03-17",
@@ -1935,7 +2347,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "爱尔兰",
+   "ireland",
+   "irish",
+   "愛爾蘭"
+  ]
  },
  {
   "id": "en-us-2026-03-18",
@@ -1987,7 +2404,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア"
+  ]
  },
  {
   "id": "en-us-2026-03-20",
@@ -2088,7 +2511,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "亚利桑那",
+   "arizona",
+   "亞利桑那"
+  ]
  },
  {
   "id": "en-us-2026-03-24",
@@ -2114,7 +2541,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "武汉",
+   "wuhan",
+   "武漢"
+  ]
  },
  {
   "id": "en-us-2026-03-25",
@@ -2140,7 +2574,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達"
+  ]
  },
  {
   "id": "en-us-2026-03-26",
@@ -2166,7 +2604,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ]
  },
  {
   "id": "en-us-2026-03-27",
@@ -2190,7 +2633,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク"
+  ]
  },
  {
   "id": "en-us-2026-03-28",
@@ -2216,7 +2665,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "南非",
+   "south africa",
+   "african",
+   "坦桑尼亚",
+   "tanzania",
+   "坦桑尼亞"
+  ]
  },
  {
   "id": "en-us-2026-03-29",
@@ -2243,7 +2699,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ]
  },
  {
   "id": "en-us-2026-03-30",
@@ -2268,7 +2729,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度",
+   "india",
+   "indian",
+   "インド"
+  ]
  },
  {
   "id": "en-us-2026-03-31",
@@ -2294,7 +2760,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "越南",
+   "vietnam",
+   "vietnamese"
+  ]
  },
  {
   "id": "en-us-2026-04-01",
@@ -2318,7 +2788,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ]
  },
  {
   "id": "en-us-2026-04-02",
@@ -2344,7 +2819,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-04-03",
@@ -2370,7 +2850,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿姆斯特丹",
+   "amsterdam",
+   "荷兰",
+   "netherlands",
+   "holland",
+   "dutch",
+   "アムステルダム",
+   "オランダ"
+  ]
  },
  {
   "id": "en-us-2026-04-04",
@@ -2447,7 +2936,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ]
  },
  {
   "id": "en-us-2026-04-07",
@@ -2472,7 +2966,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ]
  },
  {
   "id": "en-us-2026-04-08",
@@ -2497,7 +2997,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西雅图",
+   "seattle",
+   "西雅圖",
+   "シアトル"
+  ]
  },
  {
   "id": "en-us-2026-04-09",
@@ -2575,7 +3080,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-04-12",
@@ -2625,7 +3136,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-04-14",
@@ -2651,7 +3167,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian"
+  ]
  },
  {
   "id": "en-us-2026-04-15",
@@ -2677,7 +3197,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "普罗旺斯",
+   "provence",
+   "普羅旺斯",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-04-16",
@@ -2728,7 +3257,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア"
+  ]
  },
  {
   "id": "en-us-2026-04-18",
@@ -2755,7 +3290,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-04-19",
@@ -2780,7 +3320,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク"
+  ]
  },
  {
   "id": "en-us-2026-04-20",
@@ -2806,7 +3352,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "犹他",
+   "utah",
+   "猶他"
+  ]
  },
  {
   "id": "en-us-2026-04-21",
@@ -2831,7 +3381,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-04-22",
@@ -2882,7 +3438,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-04-24",
@@ -2908,7 +3474,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達"
+  ]
  },
  {
   "id": "en-us-2026-04-25",
@@ -2960,7 +3530,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-04-27",
@@ -2986,7 +3561,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "米兰",
+   "milan",
+   "milano",
+   "米蘭",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "ミラノ",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-04-28",
@@ -3037,7 +3624,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "里斯本",
+   "lisbon",
+   "lisboa",
+   "葡萄牙",
+   "portugal",
+   "portuguese",
+   "ポルトガル"
+  ]
  },
  {
   "id": "en-us-2026-04-30",
@@ -3064,7 +3659,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "荷兰",
+   "netherlands",
+   "holland",
+   "dutch",
+   "オランダ"
+  ]
  },
  {
   "id": "en-us-2026-05-01",
@@ -3091,7 +3692,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese"
+  ]
  },
  {
   "id": "en-us-2026-05-02",
@@ -3116,7 +3721,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ]
  },
  {
   "id": "en-us-2026-05-03",
@@ -3142,7 +3752,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "马赛马拉",
+   "masai mara",
+   "馬賽馬拉",
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞"
+  ]
  },
  {
   "id": "en-us-2026-05-04",
@@ -3193,7 +3811,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ]
  },
  {
   "id": "en-us-2026-05-06",
@@ -3243,7 +3865,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "亚利桑那",
+   "arizona",
+   "亞利桑那"
+  ]
  },
  {
   "id": "en-us-2026-05-08",
@@ -3268,7 +3894,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-05-09",
@@ -3293,7 +3925,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "克罗地亚",
+   "croatia",
+   "hrvatska",
+   "克羅地亞"
+  ]
  },
  {
   "id": "en-us-2026-05-10",
@@ -3319,7 +3956,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ]
  },
  {
   "id": "en-us-2026-05-11",
@@ -3345,7 +3987,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "大堡礁",
+   "great barrier reef",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア"
+  ]
  },
  {
   "id": "en-us-2026-05-12",
@@ -3397,7 +4047,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-05-14",
@@ -3423,7 +4078,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "托斯卡纳",
+   "tuscany",
+   "toskana",
+   "托斯卡納",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-05-15",
@@ -3448,7 +4114,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度",
+   "india",
+   "indian",
+   "インド"
+  ]
  },
  {
   "id": "en-us-2026-05-16",
@@ -3524,7 +4195,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "伦敦",
+   "london",
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "ロンドン",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-05-19",
@@ -3551,7 +4235,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-05-20",
@@ -3577,7 +4267,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-05-21",
@@ -3602,7 +4302,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese"
+  ]
  },
  {
   "id": "en-us-2026-05-22",
@@ -3628,7 +4332,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-05-23",
@@ -3678,7 +4388,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-05-25",
@@ -3729,7 +4446,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-05-27",
@@ -3756,7 +4478,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "アラスカ"
+  ]
  },
  {
   "id": "en-us-2026-05-28",
@@ -3782,7 +4509,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "韩国",
+   "korea",
+   "korean",
+   "hangug",
+   "韓国"
+  ]
  },
  {
   "id": "en-us-2026-05-29",
@@ -3808,7 +4541,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "尼泊尔",
+   "nepal",
+   "nepali"
+  ]
  },
  {
   "id": "en-us-2026-05-30",
@@ -3833,7 +4570,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纳米比亚",
+   "namibia",
+   "納米比亞"
+  ]
  },
  {
   "id": "en-us-2026-05-31",
@@ -3858,7 +4599,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達"
+  ]
  },
  {
   "id": "en-us-2026-06-01",
@@ -3884,7 +4629,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク"
+  ]
  },
  {
   "id": "en-us-2026-06-02",
@@ -3910,7 +4661,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese"
+  ]
  },
  {
   "id": "en-us-2026-06-03",
@@ -3936,7 +4691,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-06-04",
@@ -3962,7 +4723,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-06-05",
@@ -3990,7 +4762,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "瑞典",
+   "sweden",
+   "swedish"
+  ]
  },
  {
   "id": "en-us-2026-06-06",
@@ -4017,7 +4793,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-06-07",
@@ -4094,7 +4878,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "五渔村",
+   "cinque terre",
+   "五漁村",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-06-10",
@@ -4121,7 +4915,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-06-11",
@@ -4146,7 +4945,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "葡萄牙",
+   "portugal",
+   "portuguese",
+   "ポルトガル"
+  ]
  },
  {
   "id": "en-us-2026-06-12",
@@ -4173,7 +4977,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-06-13",
@@ -4199,7 +5009,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-06-14",
@@ -4301,7 +5119,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "瑞士",
+   "switzerland",
+   "schweiz",
+   "suisse",
+   "swiss",
+   "スイス"
+  ]
  },
  {
   "id": "en-us-2026-06-18",
@@ -4353,7 +5178,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "南非",
+   "south africa",
+   "african",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-06-20",
@@ -4378,7 +5214,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極"
+  ]
  },
  {
   "id": "en-us-2026-06-21",
@@ -4453,7 +5294,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "富士山",
+   "fuji",
+   "fujisan",
+   "mt fuji",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-06-24",
@@ -4502,7 +5356,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "布鲁塞尔",
+   "brussels",
+   "bruxelles",
+   "布魯塞爾",
+   "比利时",
+   "belgium",
+   "belgian",
+   "比利時"
+  ]
  },
  {
   "id": "en-us-2026-06-26",
@@ -4528,7 +5391,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "伦敦",
+   "london",
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "ロンドン",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-06-27",
@@ -4554,7 +5430,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-06-28",
@@ -4581,7 +5462,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "亚利桑那",
+   "arizona",
+   "亞利桑那",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-06-29",
@@ -4607,7 +5499,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-06-30",
@@ -4632,7 +5530,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "马赛马拉",
+   "masai mara",
+   "馬賽馬拉",
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞"
+  ]
  },
  {
   "id": "en-us-2026-07-01",
@@ -4658,7 +5564,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ]
  },
  {
   "id": "en-us-2026-07-02",
@@ -4683,7 +5594,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト"
+  ]
  },
  {
   "id": "en-us-2026-07-03",
@@ -4709,7 +5625,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冈山",
+   "okayama",
+   "岡山",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ]
  },
  {
   "id": "en-us-2026-07-04",
@@ -4763,7 +5687,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "普罗旺斯",
+   "provence",
+   "普羅旺斯",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-07-06",
@@ -4789,7 +5722,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-07-07",
@@ -4865,7 +5805,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "越南",
+   "vietnam",
+   "vietnamese"
+  ]
  },
  {
   "id": "en-us-2026-07-10",
@@ -4891,7 +5835,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア"
+  ]
  },
  {
   "id": "en-us-2026-07-11",
@@ -4918,7 +5868,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-07-12",
@@ -4969,7 +5925,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "羚羊谷",
+   "antelope canyon",
+   "羚羊峽谷",
+   "亚利桑那",
+   "arizona",
+   "亞利桑那"
+  ]
  },
  {
   "id": "en-us-2026-07-14",
@@ -5021,7 +5984,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-07-16",
@@ -5047,7 +6015,10 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "芝加哥",
+   "chicago"
+  ]
  },
  {
   "id": "en-us-2026-07-17",
@@ -5073,7 +6044,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ"
+  ]
  },
  {
   "id": "en-us-2026-07-18",
@@ -5099,7 +6076,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ]
  },
  {
   "id": "en-us-2026-07-19",
@@ -5198,7 +6181,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian"
+  ]
  },
  {
   "id": "en-us-2026-07-23",
@@ -5249,7 +6236,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アイスランド",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-07-25",
@@ -5275,7 +6274,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-07-26",
@@ -5326,7 +6331,10 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "芝加哥",
+   "chicago"
+  ]
  },
  {
   "id": "en-us-2026-07-28",
@@ -5352,7 +6360,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-07-29",
@@ -5378,7 +6395,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度",
+   "india",
+   "indian",
+   "インド"
+  ]
  },
  {
   "id": "en-us-2026-07-30",
@@ -5404,7 +6426,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纪念碑谷",
+   "monument valley",
+   "紀念碑谷",
+   "亚利桑那",
+   "arizona",
+   "亞利桑那"
+  ]
  },
  {
   "id": "en-us-2026-07-31",
@@ -5456,7 +6485,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "アイスランド",
+   "ハワイ"
+  ]
  },
  {
   "id": "en-us-2026-08-02",
@@ -5482,7 +6520,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "赫尔辛基",
+   "helsinki",
+   "赫爾辛基",
+   "芬兰",
+   "finland",
+   "finnish",
+   "芬蘭"
+  ]
  },
  {
   "id": "en-us-2026-08-03",
@@ -5534,7 +6580,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-08-05",
@@ -5559,7 +6616,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "摩洛哥",
+   "morocco",
+   "moroccan",
+   "モロッコ"
+  ]
  },
  {
   "id": "en-us-2026-08-06",
@@ -5584,7 +6646,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "马赛马拉",
+   "masai mara",
+   "馬賽馬拉",
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞"
+  ]
  },
  {
   "id": "en-us-2026-08-07",
@@ -5609,7 +6679,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-08-08",
@@ -5634,7 +6709,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-08-09",
@@ -5684,7 +6769,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-08-11",
@@ -5710,7 +6800,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "哥本哈根",
+   "copenhagen",
+   "københavn",
+   "丹麦",
+   "denmark",
+   "danish",
+   "丹麥"
+  ]
  },
  {
   "id": "en-us-2026-08-12",
@@ -5736,7 +6834,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞"
+  ]
  },
  {
   "id": "en-us-2026-08-13",
@@ -5762,7 +6865,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-08-14",
@@ -5787,7 +6896,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "波兰",
+   "poland",
+   "polish",
+   "波蘭"
+  ]
  },
  {
   "id": "en-us-2026-08-15",
@@ -5812,7 +6926,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ]
  },
  {
   "id": "en-us-2026-08-16",
@@ -5838,7 +6956,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "爱尔兰",
+   "ireland",
+   "irish",
+   "愛爾蘭"
+  ]
  },
  {
   "id": "en-us-2026-08-17",
@@ -5865,7 +6988,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "菲律宾",
+   "philippines",
+   "filipino",
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-08-18",
@@ -5891,7 +7022,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
  },
  {
   "id": "en-us-2026-08-19",
@@ -5943,7 +7081,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "アラスカ"
+  ]
  },
  {
   "id": "en-us-2026-08-21",
@@ -5968,7 +7111,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "瑞士",
+   "switzerland",
+   "schweiz",
+   "suisse",
+   "swiss",
+   "スイス"
+  ]
  },
  {
   "id": "en-us-2026-08-22",
@@ -5994,7 +7144,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-08-23",
@@ -6020,7 +7180,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "アラスカ"
+  ]
  },
  {
   "id": "en-us-2026-08-24",
@@ -6045,7 +7210,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク"
+  ]
  },
  {
   "id": "en-us-2026-08-25",
@@ -6070,7 +7241,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "红木",
+   "redwood",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-08-26",
@@ -6095,7 +7273,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "冰岛",
+   "iceland",
+   "island",
+   "アイスランド"
+  ]
  },
  {
   "id": "en-us-2026-08-27",
@@ -6121,7 +7304,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞"
+  ]
  },
  {
   "id": "en-us-2026-08-28",
@@ -6148,7 +7336,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-08-29",
@@ -6201,7 +7395,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian"
+  ]
  },
  {
   "id": "en-us-2026-08-31",
@@ -6279,7 +7477,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-09-03",
@@ -6305,7 +7513,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "亚利桑那",
+   "arizona",
+   "亞利桑那"
+  ]
  },
  {
   "id": "en-us-2026-09-04",
@@ -6331,7 +7543,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ]
  },
  {
   "id": "en-us-2026-09-05",
@@ -6383,7 +7601,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア"
+  ]
  },
  {
   "id": "en-us-2026-09-07",
@@ -6409,7 +7633,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "旧金山",
+   "san francisco",
+   "舊金山",
+   "三藩市",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "サンフランシスコ"
+  ]
  },
  {
   "id": "en-us-2026-09-08",
@@ -6437,7 +7671,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-09-09",
@@ -6463,7 +7707,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度",
+   "india",
+   "indian",
+   "インド"
+  ]
  },
  {
   "id": "en-us-2026-09-10",
@@ -6489,7 +7738,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-09-11",
@@ -6540,7 +7795,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ]
  },
  {
   "id": "en-us-2026-09-13",
@@ -6567,7 +7830,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "多洛米蒂",
+   "dolomites",
+   "dolomiti",
+   "イタリア",
+   "ドロミテ"
+  ]
  },
  {
   "id": "en-us-2026-09-14",
@@ -6592,7 +7866,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese"
+  ]
  },
  {
   "id": "en-us-2026-09-15",
@@ -6617,7 +7895,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ]
  },
  {
   "id": "en-us-2026-09-16",
@@ -6642,7 +7924,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "挪威",
+   "norway",
+   "norsk",
+   "norwegian",
+   "ノルウェー"
+  ]
  },
  {
   "id": "en-us-2026-09-17",
@@ -6670,7 +7958,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-09-18",
@@ -6696,7 +7990,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-09-19",
@@ -6722,7 +8026,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ]
  },
  {
   "id": "en-us-2026-09-20",
@@ -6748,7 +8058,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "巴黎",
+   "paris",
+   "法国",
+   "france",
+   "french",
+   "français",
+   "パリ",
+   "フランス"
+  ]
  },
  {
   "id": "en-us-2026-09-21",
@@ -6774,7 +8093,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞"
+  ]
  },
  {
   "id": "en-us-2026-09-22",
@@ -6800,7 +8124,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "犹他",
+   "utah",
+   "猶他",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-09-23",
@@ -6826,7 +8161,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "新西兰",
+   "new zealand",
+   "紐西蘭",
+   "ニュージーランド"
+  ]
  },
  {
   "id": "en-us-2026-09-24",
@@ -6854,7 +8194,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "spanish",
+   "スペイン"
+  ]
  },
  {
   "id": "en-us-2026-09-25",
@@ -6878,7 +8224,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese"
+  ]
  },
  {
   "id": "en-us-2026-09-26",
@@ -6904,7 +8254,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "犹他",
+   "utah",
+   "猶他",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-09-27",
@@ -6930,7 +8291,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian"
+  ]
  },
  {
   "id": "en-us-2026-09-28",
@@ -6956,7 +8321,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度",
+   "india",
+   "indian",
+   "インド"
+  ]
  },
  {
   "id": "en-us-2026-09-29",
@@ -6983,7 +8353,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アラスカ",
+   "アメリカ"
+  ]
  },
  {
   "id": "en-us-2026-09-30",
@@ -7009,7 +8391,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "en-us-2026-10-01",
@@ -7036,7 +8428,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "优胜美地",
+   "yosemite",
+   "優勝美地",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american"
+  ]
  },
  {
   "id": "en-us-2026-10-02",
@@ -7087,7 +8492,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "アラスカ"
+  ]
  },
  {
   "id": "en-us-2026-10-04",
@@ -7115,7 +8525,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達"
+  ]
  },
  {
   "id": "en-us-2026-10-05",
@@ -7140,7 +8554,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極"
+  ]
  },
  {
   "id": "en-us-2026-10-06",
@@ -7167,7 +8586,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "张掖",
+   "zhangye",
+   "張掖"
+  ]
  },
  {
   "id": "en-us-2026-10-07",
@@ -7194,6 +8620,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  }
 ]

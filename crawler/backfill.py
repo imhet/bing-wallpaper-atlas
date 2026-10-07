@@ -9,6 +9,7 @@ import re
 
 from .bing_api import fetch_market
 from .copyright_parser import parse_copyright
+from .geo_enrich import enrich_tags
 from .image_key import extract_image_key
 from .merge import merge_records
 from .regions import extract_region
@@ -58,6 +59,7 @@ def build_record(merged):
         "resolutions": {},
         "tags": [],
     }
+    return enrich_tags(rec)
 
 
 def run_backfill(data_dir="data", check_res=True, markets=None):
