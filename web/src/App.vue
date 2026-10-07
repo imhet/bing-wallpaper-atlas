@@ -35,7 +35,7 @@ async function ensureAllYears() {
   loadingMore.value = true
   try {
     records.value = await loadAllRecords(aggregations.value)
-    for (const y of aggregations.value.years || []) loadedYears.add(String(y))
+    for (const y of aggregations.value.years || []) loadedYears.add(String(y.name))
   } finally {
     loadingMore.value = false
   }
@@ -49,7 +49,7 @@ watch(
 onMounted(async () => {
   try {
     aggregations.value = await loadAggregations()
-    const latest = (aggregations.value.years || []).at(-1)
+    const latest = (aggregations.value.years || []).at(-1)?.name
     // 只改 filters.year，由上面的 watch 统一触发加载（避免显式调用导致同分片重复载入）
     filters.value.year = latest ? String(latest) : ''
   } catch (e) {
@@ -63,7 +63,7 @@ onMounted(async () => {
 <template>
   <header class="site-header">
     <h1>Bing 壁纸图集</h1>
-    <span v-if="aggregations" class="total">{{ aggregations.total }} 张 · 每日自动更新</span>
+    <span v-if="aggregations" class="total">{{ aggregations.total }} 张 · 更新至 {{ aggregations.latest_date }}</span>
   </header>
   <FilterBar :aggregations="aggregations" v-model:filters="filters" />
   <p v-if="loading" class="status">加载中…</p>

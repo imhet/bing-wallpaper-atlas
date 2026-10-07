@@ -6684,20 +6684,106 @@
   }
  ],
  "markets": [
-  "de-de",
-  "en-gb",
-  "en-us",
-  "fr-fr",
-  "ja-jp",
-  "zh-cn"
+  {
+   "name": "de-de",
+   "count": 8
+  },
+  {
+   "name": "en-gb",
+   "count": 8
+  },
+  {
+   "name": "en-us",
+   "count": 2071
+  },
+  {
+   "name": "fr-fr",
+   "count": 8
+  },
+  {
+   "name": "ja-jp",
+   "count": 8
+  },
+  {
+   "name": "zh-cn",
+   "count": 1342
+  }
  ],
  "years": [
-  2021,
-  2022,
-  2023,
-  2024,
-  2025,
-  2026
+  {
+   "name": 2021,
+   "count": 333
+  },
+  {
+   "name": 2022,
+   "count": 364
+  },
+  {
+   "name": 2023,
+   "count": 696
+  },
+  {
+   "name": 2024,
+   "count": 732
+  },
+  {
+   "name": 2025,
+   "count": 730
+  },
+  {
+   "name": 2026,
+   "count": 590
+  }
+ ],
+ "months": [
+  {
+   "name": 1,
+   "count": 248
+  },
+  {
+   "name": 2,
+   "count": 279
+  },
+  {
+   "name": 3,
+   "count": 309
+  },
+  {
+   "name": 4,
+   "count": 300
+  },
+  {
+   "name": 5,
+   "count": 310
+  },
+  {
+   "name": 6,
+   "count": 300
+  },
+  {
+   "name": 7,
+   "count": 310
+  },
+  {
+   "name": 8,
+   "count": 310
+  },
+  {
+   "name": 9,
+   "count": 308
+  },
+  {
+   "name": 10,
+   "count": 283
+  },
+  {
+   "name": 11,
+   "count": 240
+  },
+  {
+   "name": 12,
+   "count": 248
+  }
  ],
  "years_by_market": {
   "de-de": [
@@ -6727,5 +6813,6 @@
    2026
   ]
  },
- "total": 3445
+ "total": 3445,
+ "latest_date": "2026-10-06"
 }

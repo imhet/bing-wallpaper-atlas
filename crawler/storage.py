@@ -62,16 +62,22 @@ def write_aggregations(data_dir):
         c = Counter(r[field] for r in all_recs if r.get(field))
         return [{"name": k, "count": v} for k, v in c.most_common()]
 
+    def counted_by(key):
+        c = Counter(k for r in all_recs if (k := key(r)))
+        return [{"name": k, "count": v} for k, v in sorted(c.items())]
+
     years_by_market = defaultdict(set)
     for r in all_recs:
         years_by_market[r["market"]].add(int(r["date"][:4]))
     agg = {
         "photographers": counted("photographer"),
         "regions": counted("region"),
-        "markets": sorted({r["market"] for r in all_recs}),
-        "years": sorted({int(r["date"][:4]) for r in all_recs}),
+        "markets": counted_by(lambda r: r["market"]),
+        "years": counted_by(lambda r: int(r["date"][:4])),
+        "months": counted_by(lambda r: int(r["date"][5:7])),
         "years_by_market": {m: sorted(ys) for m, ys in sorted(years_by_market.items())},
         "total": len(all_recs),
+        "latest_date": max((r["date"] for r in all_recs), default=None),
     }
     p = Path(data_dir) / "aggregations.json"
     p.parent.mkdir(parents=True, exist_ok=True)

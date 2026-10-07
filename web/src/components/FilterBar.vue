@@ -17,15 +17,21 @@ function set(key, value) {
     />
     <select :value="filters.market" @change="set('market', $event.target.value)">
       <option value="">全部市场</option>
-      <option v-for="m in aggregations?.markets || []" :key="m" :value="m">{{ m }}</option>
+      <option v-for="m in aggregations?.markets || []" :key="m.name" :value="m.name">
+        {{ m.name }} ({{ m.count }})
+      </option>
     </select>
     <select :value="filters.year" @change="set('year', $event.target.value)">
       <option value="">全部年份</option>
-      <option v-for="y in aggregations?.years || []" :key="y" :value="y">{{ y }}</option>
+      <option v-for="y in aggregations?.years || []" :key="y.name" :value="y.name">
+        {{ y.name }} ({{ y.count }})
+      </option>
     </select>
     <select :value="filters.month" @change="set('month', $event.target.value)">
       <option value="">全部月份</option>
-      <option v-for="m in 12" :key="m" :value="m">{{ m }} 月</option>
+      <option v-for="m in aggregations?.months || []" :key="m.name" :value="m.name">
+        {{ m.name }} 月 ({{ m.count }})
+      </option>
     </select>
     <select :value="filters.region" @change="set('region', $event.target.value)">
       <option value="">全部国家/地区</option>
