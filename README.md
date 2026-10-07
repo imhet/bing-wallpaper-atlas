@@ -6,7 +6,7 @@
 
 ## 在线访问
 
-部署到 GitHub Pages 后填入：`https://<用户名>.github.io/<仓库名>/`
+**https://imhet.github.io/bing-wallpaper-atlas/**
 
 ## 数据来源
 
