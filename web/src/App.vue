@@ -62,7 +62,7 @@ onMounted(async () => {
 
 <template>
   <header class="site-header">
-    <h1>Bing 壁纸索引</h1>
+    <h1>Bing 壁纸图集</h1>
     <span v-if="aggregations" class="total">{{ aggregations.total }} 张 · 每日自动更新</span>
   </header>
   <FilterBar :aggregations="aggregations" v-model:filters="filters" />
