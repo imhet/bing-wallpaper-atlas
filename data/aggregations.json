@@ -277,6 +277,10 @@
    "count": 6
   },
   {
+   "name": "Fulcanelli_AOS",
+   "count": 6
+  },
+  {
    "name": "David Santiago Garcia",
    "count": 6
   },
@@ -390,10 +394,6 @@
   },
   {
    "name": "EVA MARIE UZCATEGUI",
-   "count": 5
-  },
-  {
-   "name": "Fulcanelli_AOS",
    "count": 5
   },
   {
@@ -6392,7 +6392,7 @@
   },
   {
    "name": "英国",
-   "count": 224
+   "count": 225
   },
   {
    "name": "意大利",
@@ -6694,7 +6694,7 @@
   },
   {
    "name": "en-us",
-   "count": 2071
+   "count": 2072
   },
   {
    "name": "fr-fr",
@@ -6732,7 +6732,7 @@
   },
   {
    "name": 2026,
-   "count": 590
+   "count": 591
   }
  ],
  "months": [
@@ -6774,7 +6774,7 @@
   },
   {
    "name": 10,
-   "count": 283
+   "count": 284
   },
   {
    "name": 11,
@@ -6813,6 +6813,6 @@
    2026
   ]
  },
- "total": 3445,
- "latest_date": "2026-10-06"
+ "total": 3446,
+ "latest_date": "2026-10-07"
 }

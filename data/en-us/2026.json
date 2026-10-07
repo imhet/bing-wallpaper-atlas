@@ -7168,5 +7168,32 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "en-us-2026-10-07",
+  "market": "en-us",
+  "date": "2026-10-07",
+  "urlbase": "/th?id=OHR.ForestofDean_EN-US7262962048",
+  "imageKey": "ForestofDean",
+  "title": "Puzzled? Follow the trail",
+  "desc": "Moss-covered rocks in Puzzlewood, Forest of Dean, Gloucestershire, England (© Fulcanelli_AOS/Getty Images)",
+  "location": [
+   "Moss-covered rocks in Puzzlewood",
+   "Forest of Dean",
+   "Gloucestershire",
+   "England"
+  ],
+  "region": "英国",
+  "photographer": "Fulcanelli_AOS",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Puzzlewood+England&form=hpcapt&filters=HpDate%3a%2220261007_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261007_ForestofDean%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
