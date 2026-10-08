@@ -62,7 +62,7 @@ jobs:
       - run: npm run build
         if: steps.diff.outputs.changed == 'true'
         working-directory: web
-      - run: cp -r data web/dist/data
+      - run: cp -r data/. web/dist/data/  # public/data（词典）先建了 dist/data，无 /. 会嵌套拷贝
         if: steps.diff.outputs.changed == 'true'
       - uses: actions/upload-pages-artifact@v3
         if: steps.diff.outputs.changed == 'true'
