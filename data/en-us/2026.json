@@ -8416,7 +8416,7 @@
    "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": true
+   "thumb": false
   },
   "tags": []
  },
@@ -8600,7 +8600,7 @@
    "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": true
+   "thumb": false
   },
   "tags": []
  }

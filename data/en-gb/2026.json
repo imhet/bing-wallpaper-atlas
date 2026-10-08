@@ -72,7 +72,7 @@
    "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": true
+   "thumb": false
   },
   "tags": []
  },
@@ -98,7 +98,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": true,
+   "hd": false,
    "thumb": true
   },
   "tags": []
@@ -151,7 +151,7 @@
    "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": true
+   "thumb": false
   },
   "tags": []
  },
@@ -204,7 +204,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": true,
+   "hd": false,
    "thumb": true
   },
   "tags": []

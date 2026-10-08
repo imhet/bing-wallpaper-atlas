@@ -8683,7 +8683,7 @@
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261001_ChattoogaRiver%22&FORM=HPQUIZ",
   "resolutions": {
    "uhd": true,
-   "fhd": true,
+   "fhd": false,
    "hd": true,
    "thumb": true
   },
@@ -8708,7 +8708,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": true,
+   "hd": false,
    "thumb": true
   },
   "tags": []
@@ -8733,7 +8733,7 @@
   "copyrightlink": "https://www.bing.com/search?q=%E4%B8%96%E7%95%8C%E7%A9%BA%E9%97%B4%E5%91%A8&form=hpcapt&mkt=zh-cn",
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261003_ArtemisRocket%22&FORM=HPQUIZ",
   "resolutions": {
-   "uhd": true,
+   "uhd": false,
    "fhd": true,
    "hd": true,
    "thumb": true
@@ -8759,7 +8759,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": true,
+   "hd": false,
    "thumb": true
   },
   "tags": []
