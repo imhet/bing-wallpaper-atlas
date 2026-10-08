@@ -1,7 +1,8 @@
 <script setup>
 import { thumbUrl } from '../api'
+import { highlightParts } from '../search'
 
-defineProps({ records: Array })
+defineProps({ records: Array, query: String, aliasData: Object })
 const emit = defineEmits(['select'])
 </script>
 
@@ -11,7 +12,12 @@ const emit = defineEmits(['select'])
       <img :src="thumbUrl(r)" :alt="r.title || r.desc" loading="lazy" />
       <div class="meta">
         <span class="date">{{ r.date }}</span>
-        <span class="title">{{ r.title || r.desc }}</span>
+        <span class="title"
+          ><template v-for="(p, i) in highlightParts(r.title || r.desc, query, aliasData)" :key="i"
+            ><mark v-if="p.hit">{{ p.text }}</mark
+            ><template v-else>{{ p.text }}</template></template
+          ></span
+        >
       </div>
     </button>
   </div>

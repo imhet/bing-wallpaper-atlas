@@ -1,4 +1,5 @@
 import MiniSearch from 'minisearch'
+import { suggestFromDict } from './suggest'
 
 // 中文单字 + 相邻二元组双重切分（拉丁词整体）：'中国雪山' → ['中','中国','国','国雪','雪','雪山','山']。
 // 单字负责字面召回，二元组让 AND 匹配到「连续词语」——搜「中国」不再被「国家公园+框景中」这类字符共现误报。
@@ -20,6 +21,31 @@ export function buildIndex(records) {
   const index = new MiniSearch({ fields: FIELDS, storeFields: ['id'], tokenize })
   index.addAll(docs)
   return index
+}
+
+// 命中高亮分段：原始查询串 + 词组级 token + 词典桥接别名（京都→kyoto）按长度优先，
+// 在文本中标出命中区间。返回 [{text, hit}] 供模板渲染 <mark>，不用 v-html 以规避 XSS。
+export function highlightParts(text, query, aliasData = null) {
+  const src = String(text || '')
+  const raw = String(query || '').trim()
+  const bridged = aliasData ? suggestFromDict(raw, aliasData) : []
+  const tokens = [...new Set([raw, ...bridged, ...tokenize(raw).filter((t) => t.length >= 2)])]
+    .filter((t) => t.length >= 2)
+    .sort((a, b) => b.length - a.length)
+  if (!tokens.length) return [{ text: src, hit: false }]
+  const re = new RegExp(
+    tokens.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'),
+    'gi',
+  )
+  const parts = []
+  let last = 0
+  for (const m of src.matchAll(re)) {
+    if (m.index > last) parts.push({ text: src.slice(last, m.index), hit: false })
+    parts.push({ text: m[0], hit: true })
+    last = m.index + m[0].length
+  }
+  if (last < src.length) parts.push({ text: src.slice(last), hit: false })
+  return parts
 }
 
 export function searchRecords(index, records, query, filters) {

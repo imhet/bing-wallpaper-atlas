@@ -3,7 +3,10 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { RES_SUFFIX, imageUrl } from '../api'
 
 const props = defineProps({ record: Object, records: Array })
-const emit = defineEmits(['close', 'select-sibling'])
+const emit = defineEmits(['close', 'select-sibling', 'search'])
+
+// tags 混着拉丁/假名别名，只展示含汉字的（规范中文名与字形变体），点击即按该地点搜索
+const cjkTags = (props.record.tags || []).filter((t) => /[一-鿿]/.test(t))
 
 const picked = ref('')
 // 只暴露用户可选档位（thumb 是列表缩略图专用，spec §6.4 禁止展示），并按 uhd>fhd>hd 排序
@@ -33,6 +36,9 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
         </button>
       </div>
       <h2>{{ record.title || record.desc }}</h2>
+      <div v-if="cjkTags.length" class="tag-row">
+        <button v-for="t in cjkTags" :key="t" @click="emit('search', t)">{{ t }}</button>
+      </div>
       <dl class="facts">
         <dt>日期</dt><dd>{{ record.date }}（{{ record.market }}）</dd>
         <dt v-if="record.location.length">地点</dt><dd v-if="record.location.length">{{ record.location.join(' · ') }}</dd>

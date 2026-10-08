@@ -40,6 +40,7 @@ sources/bing_api_source.py    增量源：HPImageArchive.aspx 近 8 天 × 8 市
 backfill.py / fetch_daily.py  build_record() 拼 15 字段记录：
                               copyright_parser 解析 ©（永不抛异常）
                               regions.py 做国家归一（COUNTRY_ALIASES + 否定短语）
+                              geo_enrich 写入多语言地名 tags（跨语言搜索的桥）
         ↓
 merge.py                      merge_records()：源优先级非空覆盖；(market,date) 冲突抛错
         ↓
@@ -48,6 +49,8 @@ storage.py                    data/{market}/{year}.json 分片 + aggregations.js
 .github/workflows/            daily.yml（cron UTC 22:00）与 backfill.yml 共用
                               concurrency 组 bing-wallpaper-deploy，抓取→提交→构建→部署 Pages
 ```
+
+纯前端改动上线用 `gh workflow run daily.yml -f force_deploy=true`（数据无变化时也能部署）。
 
 ### 前端（web/）
 
@@ -63,6 +66,7 @@ Vue 3 + MiniSearch，无路由无状态库。`api.js` 用相对路径 `./data/..
 - **aggregations.json 无时间戳**：数据不变时重新生成应产生零 git diff，别引入易变字段
 - **分辨率探测**（resolutions.py）：uhd/fhd/hd/thumb 四档 HEAD 探测是回填最耗时的一段（interval 0.2s）；已带 resolutions 的记录 skip-guard 会跳过
 - 前端详情弹层的分辨率按钮按 `RES_SUFFIX` 白名单生成，thumb 只做网格缩略图，不进弹层
+- **多语言地名词典**（geo_enrich.py + geo_aliases.json，302 组）：文本命中任一写法即把「规范中文名 + 全组别名」写入 tags，实现跨语言搜索（优胜美地=yosemite=ヨセミテ）。长尾地名搜不到时：词典加条目 → `python -m crawler.geo_enrich --data-dir data` 重跑，**搜索端零改动**；拉丁别名 `\b` 词边界防误报（comparison 不中 paris）
 
 ## 测试约定
 

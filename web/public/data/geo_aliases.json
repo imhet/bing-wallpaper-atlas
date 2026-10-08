@@ -1,0 +1,1277 @@
+{
+  "东京": [
+    "tokyo",
+    "東京",
+    "とうきょう"
+  ],
+  "大阪": [
+    "osaka",
+    "おおさか"
+  ],
+  "京都": [
+    "kyoto",
+    "きょうと",
+    "京都府"
+  ],
+  "北海道": [
+    "hokkaido",
+    "ほっかいどう"
+  ],
+  "冲绳": [
+    "okinawa",
+    "沖縄",
+    "沖繩"
+  ],
+  "奈良": [
+    "nara",
+    "なら"
+  ],
+  "神户": [
+    "kobe",
+    "神戸"
+  ],
+  "名古屋": [
+    "nagoya"
+  ],
+  "福冈": [
+    "fukuoka",
+    "福岡"
+  ],
+  "札幌": [
+    "sapporo"
+  ],
+  "横滨": [
+    "yokohama",
+    "横浜"
+  ],
+  "广岛": [
+    "hiroshima",
+    "広島",
+    "廣島"
+  ],
+  "仙台": [
+    "sendai"
+  ],
+  "静冈": [
+    "shizuoka",
+    "静岡"
+  ],
+  "冈山": [
+    "okayama",
+    "岡山"
+  ],
+  "熊本": [
+    "kumamoto"
+  ],
+  "长崎": [
+    "nagasaki",
+    "長崎"
+  ],
+  "鹿儿岛": [
+    "kagoshima",
+    "鹿児島"
+  ],
+  "那霸": [
+    "naha",
+    "那覇"
+  ],
+  "轻井泽": [
+    "karuizawa",
+    "軽井沢"
+  ],
+  "富士山": [
+    "fuji",
+    "fujisan",
+    "mt fuji"
+  ],
+  "箱根": [
+    "hakone"
+  ],
+  "镰仓": [
+    "kamakura",
+    "鎌倉"
+  ],
+  "日光": [
+    "nikko",
+    "日光"
+  ],
+  "白川乡": [
+    "shirakawa",
+    "shirakawago",
+    "白川郷",
+    "白川村"
+  ],
+  "立山黑部": [
+    "tateyama",
+    "kurobe",
+    "立山黒部"
+  ],
+  "上高地": [
+    "kamikochi"
+  ],
+  "屋久岛": [
+    "yakushima",
+    "屋久島"
+  ],
+  "姬路": [
+    "himeji",
+    "姫路"
+  ],
+  "金泽": [
+    "kanazawa",
+    "金沢",
+    "金澤"
+  ],
+  "富良野": [
+    "furano"
+  ],
+  "美瑛": [
+    "biei"
+  ],
+  "小樽": [
+    "otaru"
+  ],
+  "青森": [
+    "aomori"
+  ],
+  "秋田": [
+    "akita"
+  ],
+  "长野": [
+    "nagano",
+    "長野"
+  ],
+  "新潟": [
+    "niigata"
+  ],
+  "石川": [
+    "ishikawa"
+  ],
+  "岐阜": [
+    "gifu"
+  ],
+  "爱知": [
+    "aichi",
+    "愛知"
+  ],
+  "滋贺": [
+    "shiga",
+    "滋賀"
+  ],
+  "兵库": [
+    "hyogo",
+    "兵庫"
+  ],
+  "和歌山": [
+    "wakayama"
+  ],
+  "鸟取": [
+    "tottori",
+    "鳥取"
+  ],
+  "岛根": [
+    "shimane",
+    "島根"
+  ],
+  "山口": [
+    "yamaguchi"
+  ],
+  "德岛": [
+    "tokushima",
+    "徳島"
+  ],
+  "香川": [
+    "kagawa"
+  ],
+  "爱媛": [
+    "ehime",
+    "愛媛"
+  ],
+  "高知": [
+    "kochi"
+  ],
+  "福岛": [
+    "fukushima",
+    "福島"
+  ],
+  "宫城": [
+    "miyagi",
+    "宮城"
+  ],
+  "山形": [
+    "yamagata"
+  ],
+  "茨城": [
+    "ibaraki"
+  ],
+  "群马": [
+    "gunma",
+    "群馬"
+  ],
+  "栃木": [
+    "tochigi"
+  ],
+  "埼玉": [
+    "saitama"
+  ],
+  "千叶": [
+    "chiba",
+    "千葉"
+  ],
+  "神奈川": [
+    "kanagawa"
+  ],
+  "富山": [
+    "toyama"
+  ],
+  "福井": [
+    "fukui"
+  ],
+  "三重": [
+    "mie"
+  ],
+  "大阪府": [
+    "osaka prefecture"
+  ],
+  "冲绳县": [
+    "okinawa prefecture"
+  ],
+  "涩谷": [
+    "shibuya",
+    "渋谷"
+  ],
+  "新宿": [
+    "shinjuku"
+  ],
+  "银座": [
+    "ginza",
+    "銀座"
+  ],
+  "秋叶原": [
+    "akihabara",
+    "秋葉原"
+  ],
+  "浅草": [
+    "asakusa"
+  ],
+  "京都塔": [
+    "kyoto tower"
+  ],
+  "清水寺": [
+    "kiyomizu"
+  ],
+  "金阁寺": [
+    "kinkakuji",
+    "金閣寺"
+  ],
+  "伏见稻荷": [
+    "fushimi inari",
+    "伏見稲荷"
+  ],
+  "岚山": [
+    "arashiyama",
+    "嵐山"
+  ],
+  "严岛神社": [
+    "itsukushima",
+    "厳島"
+  ],
+  "别府": [
+    "beppu",
+    "別府"
+  ],
+  "由布院": [
+    "yufuin",
+    "湯布院"
+  ],
+  "阿苏山": [
+    "aso",
+    "阿蘇山"
+  ],
+  "雾岛": [
+    "kirishima",
+    "霧島"
+  ],
+  "中国": [
+    "china",
+    "chinese"
+  ],
+  "北京": [
+    "beijing",
+    "peking"
+  ],
+  "上海": [
+    "shanghai"
+  ],
+  "广州": [
+    "guangzhou",
+    "canton",
+    "廣州"
+  ],
+  "深圳": [
+    "shenzhen"
+  ],
+  "成都": [
+    "chengdu"
+  ],
+  "杭州": [
+    "hangzhou"
+  ],
+  "苏州": [
+    "suzhou",
+    "蘇州"
+  ],
+  "南京": [
+    "nanjing",
+    "nanking"
+  ],
+  "西安": [
+    "xi'an",
+    "xian"
+  ],
+  "重庆": [
+    "chongqing",
+    "重慶"
+  ],
+  "武汉": [
+    "wuhan",
+    "武漢"
+  ],
+  "厦门": [
+    "xiamen",
+    "amoy",
+    "廈門"
+  ],
+  "青岛": [
+    "qingdao",
+    "青島"
+  ],
+  "大连": [
+    "dalian",
+    "大連"
+  ],
+  "哈尔滨": [
+    "harbin",
+    "哈爾濱"
+  ],
+  "昆明": [
+    "kunming"
+  ],
+  "拉萨": [
+    "lhasa",
+    "拉薩"
+  ],
+  "乌鲁木齐": [
+    "urumqi",
+    "烏魯木齊"
+  ],
+  "香港": [
+    "hong kong"
+  ],
+  "澳门": [
+    "macau",
+    "macao",
+    "澳門"
+  ],
+  "台北": [
+    "taipei",
+    "臺北"
+  ],
+  "张家界": [
+    "zhangjiajie"
+  ],
+  "九寨沟": [
+    "jiuzhaigou",
+    "九寨溝"
+  ],
+  "黄山": [
+    "huangshan",
+    "黃山"
+  ],
+  "桂林": [
+    "guilin"
+  ],
+  "阳朔": [
+    "yangshuo",
+    "陽朔"
+  ],
+  "长城": [
+    "great wall",
+    "萬里長城"
+  ],
+  "故宫": [
+    "forbidden city",
+    "palace museum"
+  ],
+  "西湖": [
+    "west lake",
+    "westlake"
+  ],
+  "布达拉宫": [
+    "potala",
+    "布達拉宮"
+  ],
+  "丽江": [
+    "lijiang",
+    "麗江"
+  ],
+  "大理": [
+    "dali"
+  ],
+  "西双版纳": [
+    "xishuangbanna",
+    "西雙版納"
+  ],
+  "敦煌": [
+    "dunhuang"
+  ],
+  "张掖": [
+    "zhangye",
+    "張掖"
+  ],
+  "青海湖": [
+    "qinghai lake"
+  ],
+  "喀纳斯": [
+    "kanas",
+    "喀納斯"
+  ],
+  "禾木": [
+    "hemu"
+  ],
+  "漠河": [
+    "mohe"
+  ],
+  "长白山": [
+    "changbai",
+    "長白山"
+  ],
+  "稻城亚丁": [
+    "daocheng",
+    "yading",
+    "稻城"
+  ],
+  "婺源": [
+    "wuyuan",
+    "婺源"
+  ],
+  "宏村": [
+    "hongcun"
+  ],
+  "福建土楼": [
+    "tulou",
+    "fujian tulou"
+  ],
+  "开平碉楼": [
+    "kaiping"
+  ],
+  "元阳梯田": [
+    "yuanyang"
+  ],
+  "东川红土地": [
+    "dongchuan"
+  ],
+  "坝上": [
+    "bashang"
+  ],
+  "额济纳": [
+    "ejina",
+    "ejin"
+  ],
+  "首尔": [
+    "seoul",
+    "首爾",
+    "ソウル"
+  ],
+  "济州岛": [
+    "jeju",
+    "濟州島"
+  ],
+  "釜山": [
+    "busan",
+    "釜山"
+  ],
+  "曼谷": [
+    "bangkok"
+  ],
+  "清迈": [
+    "chiang mai",
+    "清邁"
+  ],
+  "普吉岛": [
+    "phuket",
+    "普吉島"
+  ],
+  "新加坡": [
+    "singapore",
+    "獅城"
+  ],
+  "巴厘岛": [
+    "bali",
+    "峇里島"
+  ],
+  "马尔代夫": [
+    "maldives",
+    "馬爾地夫"
+  ],
+  "迪拜": [
+    "dubai",
+    "杜拜",
+    "ドバイ"
+  ],
+  "阿布扎比": [
+    "abu dhabi",
+    "阿布達比"
+  ],
+  "伊斯坦布尔": [
+    "istanbul",
+    "伊斯坦堡",
+    "イスタンブール"
+  ],
+  "卡帕多奇亚": [
+    "cappadocia",
+    "卡帕多西亞"
+  ],
+  "棉花堡": [
+    "pamukkale"
+  ],
+  "东京铁塔": [
+    "tokyo tower"
+  ],
+  "日本": [
+    "japan",
+    "japanese",
+    "nippon"
+  ],
+  "韩国": [
+    "korea",
+    "korean",
+    "hangug",
+    "韓国"
+  ],
+  "泰国": [
+    "thailand",
+    "thai"
+  ],
+  "越南": [
+    "vietnam",
+    "vietnamese"
+  ],
+  "印度": [
+    "india",
+    "indian",
+    "インド"
+  ],
+  "尼泊尔": [
+    "nepal",
+    "nepali"
+  ],
+  "斯里兰卡": [
+    "sri lanka",
+    "ceylon"
+  ],
+  "不丹": [
+    "bhutan"
+  ],
+  "蒙古": [
+    "mongolia",
+    "mongolian"
+  ],
+  "菲律宾": [
+    "philippines",
+    "filipino"
+  ],
+  "马来西亚": [
+    "malaysia",
+    "malaysian"
+  ],
+  "印度尼西亚": [
+    "indonesia",
+    "indonesian"
+  ],
+  "阿联酋": [
+    "united arab emirates",
+    "uae",
+    "emirates"
+  ],
+  "沙特阿拉伯": [
+    "saudi arabia",
+    "saudi"
+  ],
+  "约旦": [
+    "jordan",
+    "jordanian"
+  ],
+  "以色列": [
+    "israel",
+    "israeli"
+  ],
+  "土耳其": [
+    "turkey",
+    "türkiye",
+    "turkish",
+    "トルコ"
+  ],
+  "伊朗": [
+    "iran",
+    "persian"
+  ],
+  "巴黎": [
+    "paris",
+    "パリ"
+  ],
+  "伦敦": [
+    "london",
+    "ロンドン"
+  ],
+  "罗马": [
+    "rome",
+    "roma",
+    "ローマ"
+  ],
+  "威尼斯": [
+    "venice",
+    "venezia",
+    "威尼托",
+    "ヴェネツィア"
+  ],
+  "佛罗伦萨": [
+    "florence",
+    "firenze",
+    "佛羅倫薩",
+    "フィレンツェ"
+  ],
+  "米兰": [
+    "milan",
+    "milano",
+    "米蘭",
+    "ミラノ"
+  ],
+  "那不勒斯": [
+    "naples",
+    "napoli",
+    "拿坡里"
+  ],
+  "阿马尔菲": [
+    "amalfi"
+  ],
+  "五渔村": [
+    "cinque terre",
+    "五漁村"
+  ],
+  "圣托里尼": [
+    "santorini",
+    "聖托里尼",
+    "サントリーニ"
+  ],
+  "雅典": [
+    "athens",
+    "athinai"
+  ],
+  "巴塞罗那": [
+    "barcelona",
+    "巴塞隆納",
+    "バルセロナ"
+  ],
+  "马德里": [
+    "madrid",
+    "マドリード"
+  ],
+  "塞维利亚": [
+    "seville",
+    "sevilla",
+    "塞維利亞"
+  ],
+  "格拉纳达": [
+    "granada",
+    "格拉那達"
+  ],
+  "里斯本": [
+    "lisbon",
+    "lisboa",
+    "里斯本"
+  ],
+  "波尔图": [
+    "porto",
+    "oporto",
+    "波爾圖"
+  ],
+  "阿姆斯特丹": [
+    "amsterdam",
+    "アムステルダム"
+  ],
+  "羊角村": [
+    "giethoorn"
+  ],
+  "布鲁塞尔": [
+    "brussels",
+    "bruxelles",
+    "布魯塞爾"
+  ],
+  "维也纳": [
+    "vienna",
+    "wien",
+    "維也納",
+    "ウィーン"
+  ],
+  "萨尔茨堡": [
+    "salzburg",
+    "薩爾茨堡"
+  ],
+  "哈尔施塔特": [
+    "hallstatt",
+    "哈爾施塔特"
+  ],
+  "布拉格": [
+    "prague",
+    "praha",
+    "プラハ"
+  ],
+  "布达佩斯": [
+    "budapest",
+    "ブダペシュト"
+  ],
+  "华沙": [
+    "warsaw",
+    "warszawa"
+  ],
+  "苏黎世": [
+    "zurich",
+    "zürich",
+    "蘇黎世",
+    "チューリッヒ"
+  ],
+  "日内瓦": [
+    "geneva",
+    "genève",
+    "日內瓦",
+    "ジュネーブ"
+  ],
+  "卢塞恩": [
+    "lucerne",
+    "luzern",
+    "盧塞恩"
+  ],
+  "因特拉肯": [
+    "interlaken"
+  ],
+  "采尔马特": [
+    "zermatt",
+    "策馬特"
+  ],
+  "伯尔尼": [
+    "bern",
+    "berne",
+    "伯爾尼"
+  ],
+  "洛桑": [
+    "lausanne",
+    "洛桑"
+  ],
+  "慕尼黑": [
+    "munich",
+    "münchen",
+    "慕尼黑",
+    "ミュンヘン"
+  ],
+  "新天鹅堡": [
+    "neuschwanstein",
+    "新天鵝堡"
+  ],
+  "柏林": [
+    "berlin",
+    "ベルリン"
+  ],
+  "汉堡": [
+    "hamburg",
+    "漢堡"
+  ],
+  "科隆": [
+    "cologne",
+    "köln"
+  ],
+  "罗滕堡": [
+    "rothenburg",
+    "羅騰堡"
+  ],
+  "雷根斯堡": [
+    "regensburg"
+  ],
+  "国王湖": [
+    "konigssee",
+    "königssee"
+  ],
+  "冰岛": [
+    "iceland",
+    "island",
+    "アイスランド"
+  ],
+  "雷克雅未克": [
+    "reykjavik",
+    "reykjavík",
+    "雷克雅維克"
+  ],
+  "罗弗敦": [
+    "lofoten",
+    "羅弗敦"
+  ],
+  "哥本哈根": [
+    "copenhagen",
+    "københavn"
+  ],
+  "赫尔辛基": [
+    "helsinki",
+    "赫爾辛基"
+  ],
+  "都柏林": [
+    "dublin"
+  ],
+  "爱丁堡": [
+    "edinburgh",
+    "愛丁堡"
+  ],
+  "意大利": [
+    "italy",
+    "italia",
+    "義大利",
+    "italian",
+    "イタリア"
+  ],
+  "西班牙": [
+    "spain",
+    "españa",
+    "spanish",
+    "西班牙",
+    "スペイン"
+  ],
+  "葡萄牙": [
+    "portugal",
+    "portuguese",
+    "ポルトガル"
+  ],
+  "法国": [
+    "france",
+    "french",
+    "français",
+    "フランス"
+  ],
+  "德国": [
+    "germany",
+    "deutschland",
+    "german",
+    "ドイツ"
+  ],
+  "瑞士": [
+    "switzerland",
+    "schweiz",
+    "suisse",
+    "swiss",
+    "スイス"
+  ],
+  "奥地利": [
+    "austria",
+    "österreich",
+    "austrian",
+    "奧地利",
+    "オーストリア"
+  ],
+  "荷兰": [
+    "netherlands",
+    "holland",
+    "dutch",
+    "オランダ"
+  ],
+  "比利时": [
+    "belgium",
+    "belgian",
+    "比利時"
+  ],
+  "英国": [
+    "uk",
+    "united kingdom",
+    "britain",
+    "england",
+    "english",
+    "英國",
+    "英格蘭",
+    "イギリス"
+  ],
+  "苏格兰": [
+    "scotland",
+    "scottish",
+    "蘇格蘭"
+  ],
+  "爱尔兰": [
+    "ireland",
+    "irish",
+    "愛爾蘭"
+  ],
+  "挪威": [
+    "norway",
+    "norsk",
+    "norwegian",
+    "ノルウェー"
+  ],
+  "瑞典": [
+    "sweden",
+    "swedish"
+  ],
+  "丹麦": [
+    "denmark",
+    "danish",
+    "丹麥"
+  ],
+  "芬兰": [
+    "finland",
+    "finnish",
+    "芬蘭"
+  ],
+  "波兰": [
+    "poland",
+    "polish",
+    "波蘭"
+  ],
+  "捷克": [
+    "czech",
+    "czechia",
+    "捷克"
+  ],
+  "匈牙利": [
+    "hungary",
+    "hungarian",
+    "匈牙利"
+  ],
+  "希腊": [
+    "greece",
+    "greek",
+    "希臘",
+    "ギリシャ"
+  ],
+  "克罗地亚": [
+    "croatia",
+    "hrvatska",
+    "克羅地亞"
+  ],
+  "托斯卡纳": [
+    "tuscany",
+    "toskana",
+    "托斯卡納"
+  ],
+  "普罗旺斯": [
+    "provence",
+    "普羅旺斯"
+  ],
+  "勃朗峰": [
+    "mont blanc",
+    "白朗峰"
+  ],
+  "马特洪峰": [
+    "matterhorn",
+    "馬特洪峰",
+    "マッターホルン"
+  ],
+  "多洛米蒂": [
+    "dolomites",
+    "dolomiti",
+    "多洛米蒂",
+    "ドロミテ"
+  ],
+  "纽约": [
+    "new york",
+    "nyc",
+    "紐約",
+    "ニューヨーク"
+  ],
+  "旧金山": [
+    "san francisco",
+    "舊金山",
+    "三藩市",
+    "サンフランシスコ"
+  ],
+  "洛杉矶": [
+    "los angeles",
+    "洛杉磯",
+    "ロサンゼルス"
+  ],
+  "芝加哥": [
+    "chicago"
+  ],
+  "西雅图": [
+    "seattle",
+    "西雅圖",
+    "シアトル"
+  ],
+  "拉斯维加斯": [
+    "las vegas",
+    "拉斯維加斯",
+    "ラスベガス"
+  ],
+  "波士顿": [
+    "boston",
+    "波士頓"
+  ],
+  "迈阿密": [
+    "miami",
+    "邁阿密"
+  ],
+  "新奥尔良": [
+    "new orleans",
+    "新奧爾良"
+  ],
+  "大峡谷": [
+    "grand canyon",
+    "大峽谷",
+    "グランドキャニオン"
+  ],
+  "黄石": [
+    "yellowstone",
+    "黃石",
+    "イエローストーン"
+  ],
+  "优胜美地": [
+    "yosemite",
+    "優勝美地",
+    "ヨセミテ"
+  ],
+  "拱门": [
+    "arches",
+    "拱門"
+  ],
+  "纪念碑谷": [
+    "monument valley",
+    "紀念碑谷"
+  ],
+  "羚羊谷": [
+    "antelope canyon",
+    "羚羊峽谷"
+  ],
+  "马蹄湾": [
+    "horseshoe bend",
+    "馬蹄灣"
+  ],
+  "锡安": [
+    "zion"
+  ],
+  "死亡谷": [
+    "death valley",
+    "死亡谷"
+  ],
+  "红木": [
+    "redwood"
+  ],
+  "佛罗里达": [
+    "florida",
+    "佛羅里達"
+  ],
+  "加利福尼亚": [
+    "california",
+    "加州",
+    "加利福尼亞"
+  ],
+  "犹他": [
+    "utah",
+    "猶他"
+  ],
+  "亚利桑那": [
+    "arizona",
+    "亞利桑那"
+  ],
+  "夏威夷": [
+    "hawaii",
+    "hawaiian",
+    "夏威夷",
+    "ハワイ"
+  ],
+  "阿拉斯加": [
+    "alaska",
+    "alaskan",
+    "アラスカ"
+  ],
+  "班夫": [
+    "banff"
+  ],
+  "路易斯湖": [
+    "lake louise",
+    "路易絲湖"
+  ],
+  "多伦多": [
+    "toronto",
+    "多倫多"
+  ],
+  "魁北克": [
+    "quebec",
+    "québec",
+    "魁北克"
+  ],
+  "温哥华": [
+    "vancouver",
+    "溫哥華"
+  ],
+  "尼亚加拉瀑布": [
+    "niagara",
+    "尼亞加拉",
+    "ナイアガラ"
+  ],
+  "墨西哥": [
+    "mexico",
+    "mexican",
+    "墨西哥"
+  ],
+  "里约热内卢": [
+    "rio de janeiro",
+    "rio",
+    "里約"
+  ],
+  "马丘比丘": [
+    "machu picchu",
+    "馬丘比丘",
+    "マチュピチュ"
+  ],
+  "巴塔哥尼亚": [
+    "patagonia",
+    "巴塔哥尼亞"
+  ],
+  "乌尤尼": [
+    "uyuni",
+    "ウユニ"
+  ],
+  "加拿大": [
+    "canada",
+    "canadian",
+    "加拿大",
+    "カナダ"
+  ],
+  "美国": [
+    "usa",
+    "united states",
+    "america",
+    "american",
+    "美國",
+    "アメリカ"
+  ],
+  "悉尼": [
+    "sydney",
+    "雪梨"
+  ],
+  "墨尔本": [
+    "melbourne",
+    "墨爾本"
+  ],
+  "珀斯": [
+    "perth",
+    "珀斯"
+  ],
+  "塔斯马尼亚": [
+    "tasmania",
+    "塔斯馬尼亞"
+  ],
+  "大堡礁": [
+    "great barrier reef"
+  ],
+  "乌鲁鲁": [
+    "uluru",
+    "ayers rock",
+    "烏魯魯"
+  ],
+  "新西兰": [
+    "new zealand",
+    "紐西蘭",
+    "新西兰",
+    "ニュージーランド"
+  ],
+  "皇后镇": [
+    "queenstown",
+    "皇后鎮"
+  ],
+  "特卡波湖": [
+    "tekapo",
+    "特卡波"
+  ],
+  "米尔福德峡湾": [
+    "milford sound",
+    "米爾福德"
+  ],
+  "斐济": [
+    "fiji",
+    "fijian"
+  ],
+  "开普敦": [
+    "cape town",
+    "開普敦"
+  ],
+  "撒哈拉": [
+    "sahara"
+  ],
+  "马拉喀什": [
+    "marrakech",
+    "marrakesh",
+    "馬拉喀什"
+  ],
+  "马赛马拉": [
+    "masai mara",
+    "馬賽馬拉"
+  ],
+  "塞伦盖蒂": [
+    "serengeti",
+    "塞倫蓋蒂"
+  ],
+  "乞力马扎罗": [
+    "kilimanjaro",
+    "乞力馬扎羅"
+  ],
+  "摩洛哥": [
+    "morocco",
+    "moroccan",
+    "摩洛哥",
+    "モロッコ"
+  ],
+  "埃及": [
+    "egypt",
+    "egyptian",
+    "埃及",
+    "エジプト"
+  ],
+  "南非": [
+    "south africa",
+    "african",
+    "南非"
+  ],
+  "肯尼亚": [
+    "kenya",
+    "kenyan",
+    "肯尼亞"
+  ],
+  "坦桑尼亚": [
+    "tanzania",
+    "坦桑尼亞"
+  ],
+  "纳米比亚": [
+    "namibia",
+    "納米比亞"
+  ],
+  "南极": [
+    "antarctica",
+    "antarctic",
+    "南極"
+  ],
+  "北极": [
+    "arctic",
+    "北極"
+  ],
+  "格陵兰": [
+    "greenland",
+    "格陵蘭"
+  ],
+  "澳大利亚": [
+    "australia",
+    "aussie",
+    "澳洲",
+    "オーストラリア"
+  ],
+  "阿尔卑斯": [
+    "alps",
+    "alpen",
+    "アルプス",
+    "阿尔卑斯山"
+  ]
+}

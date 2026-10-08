@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { buildIndex, searchRecords, tokenize } from './search'
+import { buildIndex, highlightParts, searchRecords, tokenize } from './search'
 
 const records = [
   { id: 'zh-cn-2023-10-05', market: 'zh-cn', date: '2023-10-05', title: '云海仙境',
@@ -29,6 +29,25 @@ describe('tokenize', () => {
     // 片假名曾是盲区（被 tokenizer 丢弃 → 查询变空）；现与汉字同等待遇
     expect(tokenize('アルプス')).toEqual(['ア', 'アル', 'ル', 'ルプ', 'プ', 'プス', 'ス'])
   })
+
+describe('highlightParts', () => {
+  const DICT = { 京都: ['kyoto', 'きょうと', '京都府'], 阿尔卑斯: ['alps'] }
+  it('marks matched CJK and latin spans', () => {
+    expect(highlightParts('阿尔卑斯山脉的安德马特', '阿尔卑斯', DICT)).toEqual([
+      { text: '阿尔卑斯', hit: true },
+      { text: '山脉的安德马特', hit: false },
+    ])
+    // 词典桥接：中文查询高亮英文文本里的对应地名
+    expect(highlightParts('Autumn in Kyoto', '京都', DICT)).toEqual([
+      { text: 'Autumn in ', hit: false },
+      { text: 'Kyoto', hit: true },
+    ])
+  })
+  it('returns the whole text unmarked without a usable query', () => {
+    expect(highlightParts('Anything', '')).toEqual([{ text: 'Anything', hit: false }])
+    expect(highlightParts('Anything', '((')).toEqual([{ text: 'Anything', hit: false }])
+  })
+})
   it('keeps latin words whole and lowercases', () => {
     expect(tokenize('Alaska 2024')).toEqual(['alaska', '2024'])
   })
