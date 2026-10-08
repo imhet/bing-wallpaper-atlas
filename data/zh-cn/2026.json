@@ -8818,5 +8818,30 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "zh-cn-2026-10-07",
+  "market": "zh-cn",
+  "date": "2026-10-07",
+  "urlbase": "/th?id=OHR.MayotteOctopus_ZH-CN2837659998",
+  "imageKey": "MayotteOctopus",
+  "title": "现在你“海”能看见我……",
+  "desc": "印度洋马约特岛，一只呈防御姿态的章鱼 (© Gabriel Barathieu/Minden Pictures)",
+  "location": [
+   "印度洋马约特岛",
+   "一只呈防御姿态的章鱼"
+  ],
+  "region": "印度",
+  "photographer": "Gabriel Barathieu",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=%E4%B8%96%E7%95%8C%E7%AB%A0%E9%B1%BC%E6%97%A5&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261007_MayotteOctopus%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]

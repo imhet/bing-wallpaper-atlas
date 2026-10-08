@@ -281,6 +281,10 @@
    "count": 6
   },
   {
+   "name": "Gabriel Barathieu",
+   "count": 6
+  },
+  {
    "name": "David Santiago Garcia",
    "count": 6
   },
@@ -2102,10 +2106,6 @@
   },
   {
    "name": "kanuman",
-   "count": 2
-  },
-  {
-   "name": "Gabriel Barathieu",
    "count": 2
   },
   {
@@ -5861,6 +5861,10 @@
    "count": 1
   },
   {
+   "name": "y-studio",
+   "count": 1
+  },
+  {
    "name": "VisualCommunications",
    "count": 1
   },
@@ -6432,7 +6436,7 @@
   },
   {
    "name": "印度",
-   "count": 58
+   "count": 59
   },
   {
    "name": "肯尼亚",
@@ -6686,11 +6690,11 @@
  "markets": [
   {
    "name": "de-de",
-   "count": 8
+   "count": 9
   },
   {
    "name": "en-gb",
-   "count": 8
+   "count": 9
   },
   {
    "name": "en-us",
@@ -6698,15 +6702,15 @@
   },
   {
    "name": "fr-fr",
-   "count": 8
+   "count": 9
   },
   {
    "name": "ja-jp",
-   "count": 8
+   "count": 9
   },
   {
    "name": "zh-cn",
-   "count": 1342
+   "count": 1343
   }
  ],
  "years": [
@@ -6732,7 +6736,7 @@
   },
   {
    "name": 2026,
-   "count": 591
+   "count": 596
   }
  ],
  "months": [
@@ -6774,7 +6778,7 @@
   },
   {
    "name": 10,
-   "count": 284
+   "count": 289
   },
   {
    "name": 11,
@@ -6813,6 +6817,6 @@
    2026
   ]
  },
- "total": 3446,
+ "total": 3451,
  "latest_date": "2026-10-07"
 }

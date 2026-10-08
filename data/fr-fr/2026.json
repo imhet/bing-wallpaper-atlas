@@ -205,5 +205,31 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "fr-fr-2026-10-07",
+  "market": "fr-fr",
+  "date": "2026-10-07",
+  "urlbase": "/th?id=OHR.MayotteOctopus_FR-FR2063163267",
+  "imageKey": "MayotteOctopus",
+  "title": "Poulpe fiction",
+  "desc": "Poulpe en position défensive, Mayotte, océan Indien (© Gabriel Barathieu/Minden Pictures)",
+  "location": [
+   "Poulpe en position défensive",
+   "Mayotte",
+   "océan Indien"
+  ],
+  "region": null,
+  "photographer": "Gabriel Barathieu",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=Journ%C3%A9e+internationale+du+poulpe&form=hpcapt&filters=HpDate%3a%2220261007_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261007_MayotteOctopus%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
