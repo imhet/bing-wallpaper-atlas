@@ -213,6 +213,10 @@
    "count": 8
   },
   {
+   "name": "Gabriel Barathieu",
+   "count": 7
+  },
+  {
    "name": "Richard Du Toit",
    "count": 7
   },
@@ -278,10 +282,6 @@
   },
   {
    "name": "Fulcanelli_AOS",
-   "count": 6
-  },
-  {
-   "name": "Gabriel Barathieu",
    "count": 6
   },
   {
@@ -6698,7 +6698,7 @@
   },
   {
    "name": "en-us",
-   "count": 2072
+   "count": 2073
   },
   {
    "name": "fr-fr",
@@ -6736,7 +6736,7 @@
   },
   {
    "name": 2026,
-   "count": 596
+   "count": 597
   }
  ],
  "months": [
@@ -6778,7 +6778,7 @@
   },
   {
    "name": 10,
-   "count": 289
+   "count": 290
   },
   {
    "name": 11,
@@ -6817,6 +6817,6 @@
    2026
   ]
  },
- "total": 3451,
- "latest_date": "2026-10-07"
+ "total": 3452,
+ "latest_date": "2026-10-08"
 }

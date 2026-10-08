@@ -8577,5 +8577,31 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "en-us-2026-10-08",
+  "market": "en-us",
+  "date": "2026-10-08",
+  "urlbase": "/th?id=OHR.MayotteOctopus_EN-US5694987016",
+  "imageKey": "MayotteOctopus",
+  "title": "Now you 'sea' me...",
+  "desc": "Octopus in defensive posture, Mayotte, Indian Ocean (© Gabriel Barathieu/Minden Pictures)",
+  "location": [
+   "Octopus in defensive posture",
+   "Mayotte",
+   "Indian Ocean"
+  ],
+  "region": null,
+  "photographer": "Gabriel Barathieu",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=World+Octopus+Day&form=hpcapt&filters=HpDate%3a%2220261008_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261008_MayotteOctopus%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
