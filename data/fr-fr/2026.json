@@ -46,7 +46,7 @@
    "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": false
+   "thumb": true
   },
   "tags": []
  },
@@ -69,8 +69,8 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": false,
-   "thumb": false
+   "hd": true,
+   "thumb": true
   },
   "tags": []
  },
@@ -97,7 +97,7 @@
    "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": false
+   "thumb": true
   },
   "tags": []
  },
@@ -122,8 +122,8 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": false,
-   "thumb": false
+   "hd": true,
+   "thumb": true
   },
   "tags": []
  },
@@ -147,7 +147,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": false,
+   "hd": true,
    "thumb": true
   },
   "tags": []
@@ -174,7 +174,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": false,
+   "hd": true,
    "thumb": true
   },
   "tags": []
@@ -201,7 +201,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": false,
+   "hd": true,
    "thumb": true
   },
   "tags": []

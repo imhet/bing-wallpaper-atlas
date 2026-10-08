@@ -70,9 +70,9 @@
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261001_GrizzlySwim%22&FORM=HPQUIZ",
   "resolutions": {
    "uhd": true,
-   "fhd": false,
-   "hd": false,
-   "thumb": false
+   "fhd": true,
+   "hd": true,
+   "thumb": true
   },
   "tags": []
  },
@@ -147,7 +147,7 @@
   "copyrightlink": "https://www.bing.com/search?q=Tag+des+Lehrers&form=hpcapt&filters=HpDate%3a%2220261004_2200%22",
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261004_AdelieTeacher%22&FORM=HPQUIZ",
   "resolutions": {
-   "uhd": false,
+   "uhd": true,
    "fhd": true,
    "hd": true,
    "thumb": true
@@ -203,7 +203,7 @@
    "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": false
+   "thumb": true
   },
   "tags": []
  },

@@ -69,8 +69,8 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": false,
-   "thumb": false
+   "hd": true,
+   "thumb": true
   },
   "tags": []
  },
@@ -91,10 +91,10 @@
   "copyrightlink": "https://www.bing.com/search?q=%E3%82%A2%E3%83%B3%E3%83%A2%E3%83%8A%E3%82%A4%E3%83%88&form=hpcapt&filters=HpDate%3a%2220261002_1500%22",
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261002_AmmoniteFossils%22&FORM=HPQUIZ",
   "resolutions": {
-   "uhd": false,
+   "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": false
+   "thumb": true
   },
   "tags": []
  },
@@ -141,9 +141,9 @@
   "copyrightlink": "https://www.bing.com/search?q=%E3%82%A2%E3%83%87%E3%83%AA%E3%83%BC%E3%83%9A%E3%83%B3%E3%82%AE%E3%83%B3&form=hpcapt&filters=HpDate%3a%2220261004_1500%22",
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261004_AdelieTeacher%22&FORM=HPQUIZ",
   "resolutions": {
-   "uhd": false,
+   "uhd": true,
    "fhd": true,
-   "hd": false,
+   "hd": true,
    "thumb": true
   },
   "tags": []
@@ -214,6 +214,31 @@
   "gallery": "Getty Images",
   "copyrightlink": "https://www.bing.com/search?q=%E5%AF%92%E9%9C%B2&form=hpcapt&filters=HpDate%3a%2220261007_1500%22",
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261007_Chestnut2026%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
+ },
+ {
+  "id": "ja-jp-2026-10-08",
+  "market": "ja-jp",
+  "date": "2026-10-08",
+  "urlbase": "/th?id=OHR.IlesSanguinaires_JA-JP1377358410",
+  "imageKey": "IlesSanguinaires",
+  "title": "コルシカ島を彩る美しい夕日",
+  "desc": "サンギネール諸島, フランス (© Francesco Riccardo Iacomino/Getty Images)",
+  "location": [
+   "サンギネール諸島",
+   "フランス"
+  ],
+  "region": null,
+  "photographer": "Francesco Riccardo Iacomino",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%82%B5%E3%83%B3%E3%82%AE%E3%83%8D%E3%83%BC%E3%83%AB%E8%AB%B8%E5%B3%B6&form=hpcapt&filters=HpDate%3a%2220261008_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261008_IlesSanguinaires%22&FORM=HPQUIZ",
   "resolutions": {
    "uhd": true,
    "fhd": true,
