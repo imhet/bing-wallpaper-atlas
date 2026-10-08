@@ -32,16 +32,13 @@ def test_write_aggregations(tmp_path, make_record):
     upsert_record(tmp_path, make_record(market="en-us", id="en-us-2023-10-06", date="2023-10-06", photographer="Bob"))
     write_aggregations(tmp_path)
     agg = json.loads((tmp_path / "aggregations.json").read_text("utf-8"))
-    # markets/years/months 与 regions 同款 {name, count} 结构（下拉展示张数）；market 按名序、年月按数字序
-    assert agg["markets"] == [{"name": "en-us", "count": 2}, {"name": "zh-cn", "count": 1}]
-    assert agg["years"] == [{"name": 2023, "count": 3}]
-    assert agg["months"] == [{"name": 10, "count": 3}]
-    assert agg["latest_date"] == "2023-10-06"  # 数据自身属性，非抓取时间戳
+    # 下拉计数改由前端 computeFacets 动态计算（分面联动），聚合只留分片清单与站头字段
     assert agg["years_by_market"] == {"en-us": [2023], "zh-cn": [2023]}
+    assert agg["latest_date"] == "2023-10-06"  # 数据自身属性，非抓取时间戳
     assert agg["total"] == 3
-    names = [p["name"] for p in agg["photographers"]]
-    assert set(names) == {"Li Hua", "Bob"}
     assert "updated_at" not in agg  # 零 diff 约束：禁止时间戳字段
+    # 退役字段不再生成（旧的全局计数不随筛选联动，已无消费方）
+    assert not ({"markets", "years", "months", "regions", "photographers"} & set(agg))
 
 
 def test_write_aggregations_empty(tmp_path):

@@ -5,7 +5,7 @@ data/aggregations.json 为聚合文件。无时间戳字段保证零 diff。
 """
 
 import json
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
 
@@ -58,23 +58,11 @@ def load_all(data_dir):
 def write_aggregations(data_dir):
     all_recs = [r for recs in load_all(data_dir).values() for r in recs]
 
-    def counted(field):
-        c = Counter(r[field] for r in all_recs if r.get(field))
-        return [{"name": k, "count": v} for k, v in c.most_common()]
-
-    def counted_by(key):
-        c = Counter(k for r in all_recs if (k := key(r)))
-        return [{"name": k, "count": v} for k, v in sorted(c.items())]
-
+    # 下拉的联动计数由前端 computeFacets 动态计算；聚合只留分片清单与站头字段
     years_by_market = defaultdict(set)
     for r in all_recs:
         years_by_market[r["market"]].add(int(r["date"][:4]))
     agg = {
-        "photographers": counted("photographer"),
-        "regions": counted("region"),
-        "markets": counted_by(lambda r: r["market"]),
-        "years": counted_by(lambda r: int(r["date"][:4])),
-        "months": counted_by(lambda r: int(r["date"][5:7])),
         "years_by_market": {m: sorted(ys) for m, ys in sorted(years_by_market.items())},
         "total": len(all_recs),
         "latest_date": max((r["date"] for r in all_recs), default=None),
