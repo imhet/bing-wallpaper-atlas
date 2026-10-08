@@ -77,3 +77,17 @@ def test_bing_api_source_covers_all_markets(monkeypatch):
     records = BingApiSource().fetch()
     assert set(seen) == {"zh-cn", "en-us", "ja-jp", "en-gb", "de-de", "fr-fr", "ko-kr", "zh-tw"}
     assert len(records) == 8
+
+
+def test_bing_api_source_one_failed_market_does_not_kill_source(monkeypatch):
+    # 单市场失败只丢该市场，绝不能让整源报废（backfill 会把整源异常当源故障跳过）
+    def flaky(market, idx=0, n=8):
+        if market == "de-de":
+            raise RuntimeError("api down")
+        return [{"market": market, "date": "2026-10-06", "urlbase": "/th?id=OHR.X_XX-XX1",
+                 "title": None, "desc": "", "copyrightlink": None, "quiz": None}]
+
+    monkeypatch.setattr("crawler.sources.bing_api_source.fetch_market", flaky)
+    records = BingApiSource().fetch()
+    assert len(records) == 7
+    assert all(r["market"] != "de-de" for r in records)

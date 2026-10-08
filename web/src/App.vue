@@ -29,11 +29,14 @@ const suggestions = computed(() => {
 async function ensureYear(year) {
   const key = String(year)
   if (!aggregations.value || !key || loadedYears.has(key)) return
+  loadedYears.add(key) // 先标记进行中：await 间隙快速再切同年会绕过 has 检查导致双载
   loadingMore.value = true
   try {
     const shards = await loadYearShards(aggregations.value, year)
     records.value = records.value.concat(shards)
-    loadedYears.add(key)
+  } catch (e) {
+    loadedYears.delete(key) // 失败解除标记，下年切换可重试
+    throw e
   } finally {
     loadingMore.value = false
   }
