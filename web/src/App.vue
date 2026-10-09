@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue'
-import { loadAggregations, loadAllRecords, loadYearShards } from './api'
+import { dedupeByUrlbase, loadAggregations, loadAllRecords, loadYearShards } from './api'
 import { buildIndex, searchRecords } from './search'
 import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
@@ -20,10 +20,12 @@ const theme = ref('auto') // auto | light | dark
 const index = computed(() => buildIndex(records.value))
 const results = computed(() => searchRecords(index.value, records.value, filters.value.query, filters.value))
 // 渐进渲染：一次渲染几千张卡会让视口附近上百缩略图同时打 Bing CDN（HTTP/2 并发流被拒），
-// 只渲染前 N 张，滚动到底自动追加
+// 只渲染前 N 张，滚动到底自动追加；同图多市场版本先去重（代表 zh-cn 优先），免网格重复
+const uniqueResults = computed(() => dedupeByUrlbase(results.value))
+const uniqueRecords = computed(() => dedupeByUrlbase(records.value))
 const VISIBLE_STEP = 120
 const visibleCount = ref(VISIBLE_STEP)
-const visibleResults = computed(() => results.value.slice(0, visibleCount.value))
+const visibleResults = computed(() => uniqueResults.value.slice(0, visibleCount.value))
 watch(
   filters,
   () => {
@@ -88,7 +90,7 @@ function pickSuggestion(s) {
 }
 
 function randomPick() {
-  const pool = results.value.length ? results.value : records.value
+  const pool = uniqueResults.value.length ? uniqueResults.value : records.value
   if (pool.length) selected.value = pool[Math.floor(Math.random() * pool.length)]
 }
 
@@ -151,7 +153,7 @@ onMounted(async () => {
   <WallpaperDetail
     v-if="selected"
     :record="selected"
-    :records="records"
+    :records="uniqueRecords"
     @close="selected = null"
     @select-sibling="selected = $event"
     @search="searchTag"

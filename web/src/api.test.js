@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { loadAllRecords, loadYearShards } from './api'
+import { dedupeByUrlbase, loadAllRecords, loadYearShards } from './api'
 
 describe('loadYearShards', () => {
   it('fetches every market that has the year and flattens', async () => {
@@ -45,5 +45,26 @@ describe('loadYearShards', () => {
     const out = await loadAllRecords({ years_by_market: { 'en-us': [2024], 'zh-cn': [2025, 2026] } })
     expect(out.map((r) => r.id)).toEqual(['zh-2026', 'zh-2025', 'us-2024'])
     vi.unstubAllGlobals()
+  })
+})
+
+describe('dedupeByUrlbase', () => {
+  it('same image across markets keeps one record, zh-cn preferred, order preserved', () => {
+    // Bing 同一天全球同图：urlbase 仅市场后缀不同，归一后只留代表记录
+    const recs = [
+      { id: 'us', market: 'en-us', date: '2026-10-08', urlbase: '/th?id=OHR.Fuji_EN-US123' },
+      { id: 'jp', market: 'ja-jp', date: '2026-10-08', urlbase: '/th?id=OHR.Fuji_JA-JP789' },
+      { id: 'zh', market: 'zh-cn', date: '2026-10-08', urlbase: '/th?id=OHR.Fuji_ZH-CN456' },
+      { id: 'other', market: 'en-us', date: '2026-10-07', urlbase: '/th?id=OHR.Alps_EN-US111' },
+    ]
+    expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['zh', 'other'])
+  })
+
+  it('falls back to alphabetical market when no priority market in group', () => {
+    const recs = [
+      { id: 'jp', market: 'ja-jp', date: '2026-10-08', urlbase: '/th?id=OHR.Fuji_JA-JP789' },
+      { id: 'fr', market: 'fr-fr', date: '2026-10-08', urlbase: '/th?id=OHR.Fuji_FR-FR001' },
+    ]
+    expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['fr'])
   })
 })

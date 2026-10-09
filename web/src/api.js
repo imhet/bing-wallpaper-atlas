@@ -31,3 +31,25 @@ export async function loadAllRecords(aggregations) {
   // 日期倒序：默认「全部年份」时最新壁纸在前，搜索结果也按最新优先
   return shards.flat().sort((a, b) => b.date.localeCompare(a.date))
 }
+
+// 同一天 Bing 全球各市场发同一张图（urlbase 仅市场后缀不同）——渲染层按图去重，
+// 避免网格出现多张重复图。数据层不动：各市场版本仍是完整记录，计数保持记录口径。
+const MARKET_PRIORITY = ['zh-cn', 'en-us', 'zh-tw']
+const marketRank = (m) => {
+  const i = MARKET_PRIORITY.indexOf(m)
+  return i === -1 ? MARKET_PRIORITY.length : i
+}
+
+export const imgKey = (urlbase) => urlbase.replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, '')
+
+export function dedupeByUrlbase(records) {
+  // Map 保插入序（= 组首次出现序，date 倒序语义不丢）；代表记录按市场优先序取
+  const best = new Map()
+  for (const r of records) {
+    const key = imgKey(r.urlbase)
+    const cur = best.get(key)
+    if (!cur || marketRank(r.market) < marketRank(cur.market) || (marketRank(r.market) === marketRank(cur.market) && r.market < cur.market))
+      best.set(key, r)
+  }
+  return [...best.values()]
+}
