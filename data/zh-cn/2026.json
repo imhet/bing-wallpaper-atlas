@@ -8733,15 +8733,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
-  ]
+  "tags": []
  },
  {
   "id": "zh-cn-2026-10-02",
@@ -8765,20 +8757,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "加利福尼亚",
-   "california",
-   "加州",
-   "加利福尼亞",
-   "阿拉斯加",
-   "alaska",
-   "alaskan",
-   "アラスカ",
-   "美国",
-   "usa",
-   "united states",
-   "america"
-  ]
+  "tags": []
  },
  {
   "id": "zh-cn-2026-10-03",
@@ -8805,15 +8784,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "佛罗里达",
-   "florida",
-   "佛羅里達",
-   "达州",
-   "dazhou",
-   "四川",
-   "sichuan"
-  ]
+  "tags": []
  },
  {
   "id": "zh-cn-2026-10-04",
@@ -8837,12 +8808,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "南极",
-   "antarctica",
-   "antarctic",
-   "南極"
-  ]
+  "tags": []
  },
  {
   "id": "zh-cn-2026-10-05",
@@ -8869,16 +8835,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "中国",
-   "china",
-   "chinese",
-   "张掖",
-   "zhangye",
-   "張掖",
-   "甘肃",
-   "gansu"
-  ]
+  "tags": []
  },
  {
   "id": "zh-cn-2026-10-06",
@@ -8906,17 +8863,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "英国",
-   "uk",
-   "united kingdom",
-   "britain",
-   "england",
-   "english",
-   "英國",
-   "英格蘭",
-   "イギリス"
-  ]
+  "tags": []
  },
  {
   "id": "zh-cn-2026-10-07",
@@ -8941,12 +8888,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド"
-  ]
+  "tags": []
  },
  {
   "id": "zh-cn-2026-10-08",
@@ -8972,12 +8914,6 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "法国",
-   "france",
-   "french",
-   "français",
-   "フランス"
-  ]
+  "tags": []
  }
 ]
