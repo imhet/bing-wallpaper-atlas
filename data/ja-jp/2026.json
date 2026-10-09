@@ -251,5 +251,30 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "ja-jp-2026-10-09",
+  "market": "ja-jp",
+  "date": "2026-10-09",
+  "urlbase": "/th?id=OHR.CormorantsFlight_JA-JP1768857084",
+  "imageKey": "CormorantsFlight",
+  "title": "今日は世界渡り鳥の日",
+  "desc": "モントレー湾, 米国 カリフォルニア州 (© Hiroya Minakuchi/Minden Pictures)",
+  "location": [
+   "モントレー湾",
+   "米国 カリフォルニア州"
+  ],
+  "region": null,
+  "photographer": "Hiroya Minakuchi",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=%E4%B8%96%E7%95%8C%E6%B8%A1%E3%82%8A%E9%B3%A5%E3%81%AE%E6%97%A5&form=hpcapt&filters=HpDate%3a%2220261009_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261009_CormorantsFlight%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
