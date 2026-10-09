@@ -9,7 +9,7 @@ const emit = defineEmits(['select'])
 <template>
   <div class="grid">
     <button v-for="r in records" :key="r.id" class="card" @click="emit('select', r)">
-      <img :src="thumbUrl(r)" :alt="r.title || r.desc" loading="lazy" />
+      <img :src="thumbUrl(r)" :alt="r.title || r.desc" loading="lazy" decoding="async" />
       <div class="meta">
         <span class="date">{{ r.date }}</span>
         <span class="title"

@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue'
-import { loadAggregations, loadAllRecords } from './api'
+import { loadAggregations, loadAllRecords, loadYearShards } from './api'
 import { buildIndex, searchRecords } from './search'
 import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
@@ -112,14 +112,21 @@ onMounted(async () => {
   ).observe(sentinel.value)
   try {
     aggregations.value = await loadAggregations()
-    // 全量加载（~2.2MB 分片并发）：分面联动计数与全历史搜索都依赖完整数据
-    records.value = await loadAllRecords(aggregations.value)
     if (!filters.value.year) {
       const latest = Object.values(aggregations.value.years_by_market || {})
         .flat()
         .reduce((a, b) => Math.max(a, b), 0)
       if (latest) filters.value.year = String(latest) // 首屏默认展示最新年份
     }
+    // 分级加载：首屏只等目标年份分片立刻渲染，其余分片后台补齐——
+    // 全量 2.2MB 到齐才出图会拖垮慢网络首屏；补齐后分面计数自动修正为全量口径
+    const first = String(filters.value.year || '')
+    records.value = first ? await loadYearShards(aggregations.value, first) : []
+    loadAllRecords(aggregations.value)
+      .then((all) => {
+        records.value = all
+      })
+      .catch(() => console.warn('[backfill] 背景补齐失败，筛选计数暂为部分口径'))
   } catch (e) {
     error.value = `数据加载失败：${e.message}`
   } finally {
