@@ -1422,7 +1422,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -2306,7 +2308,9 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -2854,7 +2858,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "无锡",
+   "wuxi",
+   "江苏",
+   "jiangsu"
   ]
  },
  {
@@ -3448,7 +3456,9 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "天津",
+   "tianjin"
   ]
  },
  {
@@ -4265,7 +4275,9 @@
    "china",
    "chinese",
    "张家界",
-   "zhangjiajie"
+   "zhangjiajie",
+   "湖南",
+   "hunan"
   ]
  },
  {
@@ -8856,7 +8868,11 @@
    "guilin",
    "丽江",
    "lijiang",
-   "麗江"
+   "麗江",
+   "广西",
+   "guangxi",
+   "云南",
+   "yunnan"
   ]
  },
  {

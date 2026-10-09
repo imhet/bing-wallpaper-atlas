@@ -28,5 +28,6 @@ export async function loadAllRecords(aggregations) {
   for (const [market, years] of Object.entries(aggregations.years_by_market || {}))
     for (const year of years) jobs.push(loadShard(market, year))
   const shards = await Promise.all(jobs)
-  return shards.flat()
+  // 日期倒序：默认「全部年份」时最新壁纸在前，搜索结果也按最新优先
+  return shards.flat().sort((a, b) => b.date.localeCompare(a.date))
 }

@@ -26,7 +26,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "福建",
+   "fujian",
+   "龙岩",
+   "longyan"
   ]
  },
  {
@@ -1279,7 +1283,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -1684,7 +1690,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -1897,7 +1905,9 @@
    "hangzhou",
    "西湖",
    "west lake",
-   "westlake"
+   "westlake",
+   "浙江",
+   "zhejiang"
   ]
  },
  {
@@ -5003,7 +5013,9 @@
    "chinese",
    "张掖",
    "zhangye",
-   "張掖"
+   "張掖",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -5197,7 +5209,9 @@
    "china",
    "chinese",
    "敦煌",
-   "dunhuang"
+   "dunhuang",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -5297,7 +5311,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -5840,7 +5856,11 @@
    "chinese",
    "九寨沟",
    "jiuzhaigou",
-   "九寨溝"
+   "九寨溝",
+   "四川",
+   "sichuan",
+   "阿坝",
+   "aba"
   ]
  },
  {
@@ -6101,7 +6121,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -6164,7 +6186,9 @@
    "china",
    "chinese",
    "张家界",
-   "zhangjiajie"
+   "zhangjiajie",
+   "湖南",
+   "hunan"
   ]
  },
  {
@@ -7535,7 +7559,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "贵州",
+   "guizhou",
+   "贵阳",
+   "guiyang"
   ]
  },
  {
@@ -7663,7 +7691,11 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "兰州",
+   "lanzhou",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -8849,7 +8881,9 @@
    "chinese",
    "黄山",
    "huangshan",
-   "黃山"
+   "黃山",
+   "安徽",
+   "anhui"
   ]
  },
  {
@@ -9926,7 +9960,9 @@
    "chinese",
    "黄山",
    "huangshan",
-   "黃山"
+   "黃山",
+   "安徽",
+   "anhui"
   ]
  },
  {
@@ -10277,7 +10313,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "新疆",
+   "xinjiang",
+   "伊犁",
+   "yili"
   ]
  },
  {

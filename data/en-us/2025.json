@@ -886,7 +886,9 @@
    "chinese",
    "武汉",
    "wuhan",
-   "武漢"
+   "武漢",
+   "湖北",
+   "hubei"
   ]
  },
  {
@@ -1299,7 +1301,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "山西",
+   "shanxi",
+   "大同",
+   "datong"
   ]
  },
  {
@@ -8438,7 +8444,13 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "安顺",
+   "anshun",
+   "四川",
+   "sichuan",
+   "贵州",
+   "guizhou"
   ]
  },
  {
@@ -9841,7 +9853,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "四川",
+   "sichuan",
+   "乐山",
+   "leshan"
   ]
  },
  {

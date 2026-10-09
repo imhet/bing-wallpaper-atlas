@@ -16,6 +16,7 @@ from pathlib import Path
 from .storage import load_all, upsert_record
 
 ALIASES_PATH = Path(__file__).parent / "geo_aliases.json"
+HIERARCHY_PATH = Path(__file__).parent / "geo_hierarchy.json"
 MAX_TAGS = 12
 _LATIN_RE = re.compile(r"[a-z0-9 '.\-]+")
 
@@ -39,8 +40,9 @@ def _compile(alts):
 
 
 class _Matcher:
-    def __init__(self, alias_data):
+    def __init__(self, alias_data, hierarchy=None):
         self.alias_data = alias_data
+        self.hierarchy = hierarchy or {}
         self.pairs = [(name, *_compile(alts)) for name, alts in alias_data.items()]
 
     def match(self, text):
@@ -57,19 +59,31 @@ _matcher = None
 def _get_matcher():
     global _matcher
     if _matcher is None:
-        _matcher = _Matcher(_load())
+        hierarchy = (
+            json.loads(HIERARCHY_PATH.read_text(encoding="utf-8"))
+            if HIERARCHY_PATH.exists()
+            else {}
+        )
+        _matcher = _Matcher(_load(), hierarchy)
     return _matcher
 
 
 def enrich_tags(record, matcher=None):
-    """命中地名 → 追加规范名与全组别名到 tags（确定性截断到 MAX_TAGS，幂等）。"""
+    """命中地名 → 追加规范名与全组别名到 tags（确定性截断到 MAX_TAGS，幂等）。
+
+    层级感知：命中子地名（张家界）时把父行政区（湖南）的全组别名一并写入，
+    搜「湖南」即可召回文本里没有「湖南」二字的张家界记录。
+    """
     m = matcher or _get_matcher()
     text = " ".join(
         [record.get("title") or "", record.get("desc") or "", " ".join(record.get("location") or [])]
     )
     tags = list(record.get("tags") or [])
     seen = set(tags)
-    for name in m.match(text):
+    matched = m.match(text)
+    # 层级展开：子地名命中 → 追加父行政区组（键与值都必须是 alias_data 组键）
+    matched = list(dict.fromkeys([*matched, *(m.hierarchy[n] for n in matched if n in m.hierarchy)]))
+    for name in matched:
         for token in (name, *m.alias_data[name]):
             if token in seen:
                 continue

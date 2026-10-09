@@ -883,7 +883,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "湖南",
+   "hunan",
+   "长沙",
+   "changsha"
   ]
  },
  {
@@ -916,7 +920,9 @@
    "chinese",
    "南京",
    "nanjing",
-   "nanking"
+   "nanking",
+   "江苏",
+   "jiangsu"
   ]
  },
  {
@@ -1333,7 +1339,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "山西",
+   "shanxi",
+   "大同",
+   "datong"
   ]
  },
  {
@@ -2058,7 +2068,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -2512,7 +2526,9 @@
    "china",
    "chinese",
    "杭州",
-   "hangzhou"
+   "hangzhou",
+   "浙江",
+   "zhejiang"
   ]
  },
  {
@@ -2709,7 +2725,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -3007,7 +3025,9 @@
    "chinese",
    "苏州",
    "suzhou",
-   "蘇州"
+   "蘇州",
+   "江苏",
+   "jiangsu"
   ]
  },
  {
@@ -3988,7 +4008,9 @@
    "china",
    "chinese",
    "桂林",
-   "guilin"
+   "guilin",
+   "广西",
+   "guangxi"
   ]
  },
  {
@@ -4081,7 +4103,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -4819,7 +4845,9 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "吉林",
+   "jilin"
   ]
  },
  {
@@ -5138,7 +5166,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -5478,7 +5508,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "佛山",
+   "foshan",
+   "广东",
+   "guangdong"
   ]
  },
  {
@@ -5858,7 +5892,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "泉州",
+   "quanzhou"
   ]
  },
  {
@@ -6245,7 +6281,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -6449,7 +6489,9 @@
    "chinese",
    "蒙古",
    "mongolia",
-   "mongolian"
+   "mongolian",
+   "新疆",
+   "xinjiang"
   ]
  },
  {
@@ -6970,7 +7012,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -7482,7 +7526,9 @@
    "chinese",
    "九寨沟",
    "jiuzhaigou",
-   "九寨溝"
+   "九寨溝",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -7835,7 +7881,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -8502,7 +8552,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "江苏",
+   "jiangsu",
+   "常州",
+   "changzhou"
   ]
  },
  {
@@ -8929,7 +8983,13 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "安顺",
+   "anshun",
+   "四川",
+   "sichuan",
+   "贵州",
+   "guizhou"
   ]
  },
  {
@@ -9363,7 +9423,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -9603,7 +9667,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "甘肃",
+   "gansu",
+   "酒泉",
+   "jiuquan"
   ]
  },
  {
@@ -10193,7 +10261,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -10457,7 +10527,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "四川",
+   "sichuan",
+   "乐山",
+   "leshan"
   ]
  },
  {
@@ -10910,7 +10984,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -11383,7 +11459,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "黑龙江",
+   "heilongjiang",
+   "大庆",
+   "daqing"
   ]
  },
  {
@@ -11573,7 +11653,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
   ]
  },
  {

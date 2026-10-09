@@ -193,7 +193,9 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "云南",
+   "yunnan"
   ]
  },
  {
@@ -865,7 +867,11 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "兰州",
+   "lanzhou",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -1144,7 +1150,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -1243,7 +1253,9 @@
    "chinese",
    "西安",
    "xi'an",
-   "xian"
+   "xian",
+   "陕西",
+   "shaanxi"
   ]
  },
  {
@@ -1726,7 +1738,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -2401,7 +2415,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -3819,7 +3835,9 @@
    "chinese",
    "福建土楼",
    "tulou",
-   "fujian tulou"
+   "fujian tulou",
+   "福建",
+   "fujian"
   ]
  },
  {
@@ -4793,7 +4811,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -5149,7 +5169,9 @@
    "厦门",
    "xiamen",
    "amoy",
-   "廈門"
+   "廈門",
+   "福建",
+   "fujian"
   ]
  },
  {
@@ -5478,7 +5500,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "湖南",
+   "hunan",
+   "郴州",
+   "chenzhou"
   ]
  },
  {
@@ -5599,7 +5625,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -5934,7 +5964,11 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "兰州",
+   "lanzhou",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -6429,7 +6463,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -7429,7 +7465,11 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "兰州",
+   "lanzhou",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -8734,7 +8774,9 @@
    "china",
    "chinese",
    "禾木",
-   "hemu"
+   "hemu",
+   "新疆",
+   "xinjiang"
   ]
  },
  {
@@ -9062,7 +9104,9 @@
    "chinese",
    "黄山",
    "huangshan",
-   "黃山"
+   "黃山",
+   "安徽",
+   "anhui"
   ]
  },
  {
@@ -10912,7 +10956,9 @@
    "chinese",
    "大连",
    "dalian",
-   "大連"
+   "大連",
+   "辽宁",
+   "liaoning"
   ]
  },
  {
@@ -11374,7 +11420,12 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "西藏",
+   "xizang",
+   "tibet",
+   "日喀则",
+   "shigatse"
   ]
  },
  {

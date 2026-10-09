@@ -147,7 +147,9 @@
    "chinese",
    "哈尔滨",
    "harbin",
-   "哈爾濱"
+   "哈爾濱",
+   "黑龙江",
+   "heilongjiang"
   ]
  },
  {
@@ -2221,7 +2223,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -3233,7 +3237,10 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "台湾",
+   "taiwan"
+  ]
  },
  {
   "id": "en-us-2023-04-20",
@@ -5828,7 +5835,9 @@
    "chinese",
    "张掖",
    "zhangye",
-   "張掖"
+   "張掖",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -6014,7 +6023,9 @@
    "china",
    "chinese",
    "敦煌",
-   "dunhuang"
+   "dunhuang",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -6602,7 +6613,9 @@
   "tags": [
    "台北",
    "taipei",
-   "臺北"
+   "臺北",
+   "台湾",
+   "taiwan"
   ]
  },
  {
@@ -6908,7 +6921,9 @@
    "china",
    "chinese",
    "张家界",
-   "zhangjiajie"
+   "zhangjiajie",
+   "湖南",
+   "hunan"
   ]
  },
  {
@@ -8245,7 +8260,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "贵州",
+   "guizhou",
+   "贵阳",
+   "guiyang"
   ]
  },
  {
@@ -10426,7 +10445,9 @@
    "chinese",
    "黄山",
    "huangshan",
-   "黃山"
+   "黃山",
+   "安徽",
+   "anhui"
   ]
  },
  {

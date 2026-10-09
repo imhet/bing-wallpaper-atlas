@@ -37,3 +37,12 @@ def test_no_match_keeps_tags_untouched(make_record):
     rec = make_record(title="Nothing matchable", tags=["已有"], **NEUTRAL)
     out = enrich_tags(rec)
     assert out["tags"] == ["已有"]
+
+
+def test_hierarchy_parent_aliases_injected(make_record):
+    # 层级词典：命中子地名（张家界）→ 父行政区（湖南）全组别名一并写入，
+    # 搜「湖南」即可通过 tags 召回张家界（记录文本里并没有「湖南」二字）
+    rec = make_record(title="Wulingyuan sandstone pillars", desc="Zhangjiajie, China (© X)", location=["张家界"])
+    tags = enrich_tags(rec)["tags"]
+    assert "张家界" in tags
+    assert "湖南" in tags and "hunan" in tags

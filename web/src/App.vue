@@ -112,15 +112,13 @@ onMounted(async () => {
   ).observe(sentinel.value)
   try {
     aggregations.value = await loadAggregations()
-    if (!filters.value.year) {
-      const latest = Object.values(aggregations.value.years_by_market || {})
-        .flat()
-        .reduce((a, b) => Math.max(a, b), 0)
-      if (latest) filters.value.year = String(latest) // 首屏默认展示最新年份
-    }
-    // 分级加载：首屏只等目标年份分片立刻渲染，其余分片后台补齐——
-    // 全量 2.2MB 到齐才出图会拖垮慢网络首屏；补齐后分面计数自动修正为全量口径
-    const first = String(filters.value.year || '')
+    // 分级加载：首屏只等最新年分片立刻渲染（URL 指定年份则按 URL），其余分片后台补齐——
+    // 全量 2.2MB 到齐才出图会拖垮慢网络首屏；补齐后按日期倒序替换，分面计数自动修正为全量口径。
+    // 注意默认不把最新年写进 filters.year：搜索必须覆盖全历史（默认年份会把历史结果挡在墙外）
+    const latest = Object.values(aggregations.value.years_by_market || {})
+      .flat()
+      .reduce((a, b) => Math.max(a, b), 0)
+    const first = String(filters.value.year || latest || '')
     records.value = first ? await loadYearShards(aggregations.value, first) : []
     loadAllRecords(aggregations.value)
       .then((all) => {

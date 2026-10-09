@@ -617,7 +617,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "黑龙江",
+   "heilongjiang",
+   "大庆",
+   "daqing"
   ]
  },
  {
@@ -1447,7 +1451,9 @@
    "chinese",
    "西安",
    "xi'an",
-   "xian"
+   "xian",
+   "陕西",
+   "shaanxi"
   ]
  },
  {
@@ -1943,7 +1949,11 @@
    "chinese",
    "北京",
    "beijing",
-   "peking"
+   "peking",
+   "自贡",
+   "zigong",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -2589,7 +2599,9 @@
    "chinese",
    "武汉",
    "wuhan",
-   "武漢"
+   "武漢",
+   "湖北",
+   "hubei"
   ]
  },
  {
@@ -2627,7 +2639,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -4100,7 +4114,11 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "兰州",
+   "lanzhou",
+   "甘肃",
+   "gansu"
   ]
  },
  {
@@ -4422,7 +4440,9 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -4743,7 +4763,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -4806,7 +4828,9 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "青海",
+   "qinghai"
   ]
  },
  {
@@ -4876,7 +4900,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -5134,7 +5160,10 @@
    "spain",
    "españa",
    "spanish",
-   "スペイン"
+   "スペイン",
+   "西藏",
+   "xizang",
+   "tibet"
   ]
  },
  {
@@ -6798,7 +6827,9 @@
    "america",
    "american",
    "美國",
-   "アメリカ"
+   "アメリカ",
+   "达州",
+   "dazhou"
   ]
  },
  {
@@ -7406,7 +7437,9 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "江苏",
+   "jiangsu"
   ]
  },
  {
@@ -8660,7 +8693,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "优胜美地",
+   "yosemite",
+   "優勝美地",
+   "ヨセミテ",
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america"
+  ]
  },
  {
   "id": "zh-cn-2026-10-01",
@@ -8687,7 +8733,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "american",
+   "美國",
+   "アメリカ"
+  ]
  },
  {
   "id": "zh-cn-2026-10-02",
@@ -8711,7 +8765,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "阿拉斯加",
+   "alaska",
+   "alaskan",
+   "アラスカ",
+   "美国",
+   "usa",
+   "united states",
+   "america"
+  ]
  },
  {
   "id": "zh-cn-2026-10-03",
@@ -8738,7 +8805,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達",
+   "达州",
+   "dazhou",
+   "四川",
+   "sichuan"
+  ]
  },
  {
   "id": "zh-cn-2026-10-04",
@@ -8762,7 +8837,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極"
+  ]
  },
  {
   "id": "zh-cn-2026-10-05",
@@ -8789,7 +8869,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "张掖",
+   "zhangye",
+   "張掖",
+   "甘肃",
+   "gansu"
+  ]
  },
  {
   "id": "zh-cn-2026-10-06",
@@ -8817,7 +8906,17 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "英国",
+   "uk",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ]
  },
  {
   "id": "zh-cn-2026-10-07",
@@ -8842,7 +8941,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "印度",
+   "india",
+   "indian",
+   "インド"
+  ]
  },
  {
   "id": "zh-cn-2026-10-08",
@@ -8868,6 +8972,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [
+   "法国",
+   "france",
+   "french",
+   "français",
+   "フランス"
+  ]
  }
 ]

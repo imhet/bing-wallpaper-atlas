@@ -807,7 +807,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -1299,7 +1301,9 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -3533,7 +3537,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -6907,7 +6913,9 @@
    "china",
    "chinese",
    "成都",
-   "chengdu"
+   "chengdu",
+   "四川",
+   "sichuan"
   ]
  },
  {
@@ -7396,7 +7404,11 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "江苏",
+   "jiangsu",
+   "南通",
+   "nantong"
   ]
  },
  {
