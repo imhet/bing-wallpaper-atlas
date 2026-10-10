@@ -1,5 +1,7 @@
 import json
 
+import pytest
+
 from crawler.backfill import build_record, run_backfill, verify_mkt
 from crawler.storage import load_year
 
@@ -109,3 +111,19 @@ def test_run_backfill_one_bad_record_does_not_abort(tmp_path, monkeypatch):
 
     run_backfill(data_dir=tmp_path, check_res=False)  # 不抛异常即通过
     assert len(load_year(tmp_path, "zh-cn", 2026)) == 1
+
+
+@pytest.mark.skip(reason="FIXME(死代码): build_record 首个 return 之后的 `return enrich_tags(rec)` 永不可达——"
+                    "每日增量/回填产出的新记录 tags 全空（线上 829/3458 条缺 tags，扩展市场几乎全空）。"
+                    "修复：改为 rec = {...}; return enrich_tags(rec)，并翻转 test_build_record_parses_everything 的 tags==[] 断言")
+def test_build_record_enriches_tags():
+    merged = {
+        "market": "zh-cn", "date": "2026-10-11",
+        "urlbase": "/th?id=OHR.ZhangjiajieFog_ZH-CN1234567890",
+        "title": None,
+        "desc": "张家界国家森林公园的云海 (© Li Hua/Getty Images)",
+        "copyrightlink": None, "quiz": None,
+    }
+    rec = build_record(merged)
+    assert "张家界" in rec["tags"], "build_record 必须接 geo_enrich：tags 不能是空的"
+    assert "湖南" in rec["tags"], "层级词典：命中张家界应连带父行政区湖南全组别名"

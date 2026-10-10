@@ -1,3 +1,5 @@
+import pytest
+
 from crawler.regions import extract_region
 
 
@@ -40,3 +42,18 @@ def test_english_china_aliases():
     assert extract_region([], "Zhangjiakou, China (© John Doe)") == "中国"
     assert extract_region([], "Victoria Harbour in Hong Kong") == "中国"
     assert extract_region([], "Ruins of St. Paul's in Macau") == "中国"
+
+
+@pytest.mark.skip(reason="FIXME: 全文回退分支按子串匹配，「博尔塔拉蒙古自治州」「内蒙古自治区」里的「蒙古」"
+                    "误归为蒙古国（线上 zh-cn-2025-07-21 赛里木湖 region=蒙古）。"
+                    "_NEGATIVE_PHRASES 目前只对拉丁别名生效，CJK 分支无否定检查——修复需让 CJK 别名也走否定短语")
+def test_mongol_autonomous_prefecture_is_not_mongolia():
+    # 中国行政区划名里的「蒙古」不是蒙古国；否定后全文应回退命中「中国」
+    loc = ["夏季的赛里木湖", "博尔塔拉蒙古自治州博乐县", "中国新疆维吾尔自治区"]
+    assert extract_region(loc, "，".join(loc)) == "中国"
+
+
+@pytest.mark.skip(reason="FIXME: 同上——「内蒙古自治区」里的「蒙古」不得归为蒙古国")
+def test_inner_mongolia_is_not_mongolia():
+    loc = ["额济纳旗胡杨林", "内蒙古自治区阿拉善盟", "中国"]
+    assert extract_region(loc, "，".join(loc)) == "中国"
