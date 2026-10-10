@@ -8915,5 +8915,31 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "zh-cn-2026-10-09",
+  "market": "zh-cn",
+  "date": "2026-10-09",
+  "urlbase": "/th?id=OHR.CormorantsFlight_ZH-CN0770863330",
+  "imageKey": "CormorantsFlight",
+  "title": "迁飞路线上的生命",
+  "desc": "蒙特雷湾上空的双冠鸬鹚，加利福尼亚州，美国 (© Hiroya Minakuchi/Minden Pictures)",
+  "location": [
+   "蒙特雷湾上空的双冠鸬鹚",
+   "加利福尼亚州",
+   "美国"
+  ],
+  "region": "美国",
+  "photographer": "Hiroya Minakuchi",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=%E4%B8%96%E7%95%8C%E5%80%99%E9%B8%9F%E6%97%A5&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261009_CormorantsFlight%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
