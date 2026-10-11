@@ -32,3 +32,9 @@ def test_nullables_accepted(make_record):
 def test_resolutions_must_be_bool(make_record):
     with pytest.raises(Exception):
         validate_record(make_record(resolutions={"uhd": "yes"}))
+
+
+def test_content_tags_optional_and_valid(make_record):
+    # CLIP 打标产物：打标前不存在（可选），存在时必须是字符串数组
+    validate_record(make_record())
+    validate_record(make_record(content_tags=["雪山", "湖泊"]))

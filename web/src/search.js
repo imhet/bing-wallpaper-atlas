@@ -21,7 +21,7 @@ export function tokenize(text) {
   return out
 }
 
-const FIELDS = ['title', 'desc', 'location', 'region', 'photographer', 'gallery', 'tags']
+const FIELDS = ['title', 'desc', 'location', 'region', 'photographer', 'gallery', 'tags', 'content_tags']
 
 export function buildIndex(records) {
   const docs = records.map((r) => ({ ...r, location: (r.location || []).join(' ') }))

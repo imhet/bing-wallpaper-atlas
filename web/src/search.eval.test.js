@@ -54,10 +54,20 @@ describe('真实数据黄金集 · 涛总常用词', () => {
     expect(ids('山峰').size).toBeGreaterThanOrEqual(2)
   })
 
-  // FIXME(召回盲区): 数据文本无「雪山」连续字样（zh-cn 含「雪」仅 26 条、en-us 含 snow 仅 25 条且无 snow mountain 短语），
-  // 字面匹配 0 命中。修复方向：词典组桥接（雪山↔snowy…）或图片内容理解搜索，待定夺
-  it.skip('「雪山」应有召回（当前 0 条）', () => {
-    expect(hits('雪山').length).toBeGreaterThan(0)
+  it('「雪山」召回 ≥10 条（CLIP 内容打标：文字无「雪山」二字的图靠 content_tags 召回）', () => {
+    expect(hits('雪山').length).toBeGreaterThanOrEqual(10)
+  })
+})
+
+describe('真实数据黄金集 · 内容打标（CLIP content_tags）', () => {
+  it('「烟花」召回长沙烟花图', () => {
+    expect(ids('烟花')).toContain('zh-cn-2025-01-27')
+  })
+  it('「野牛」召回黄石图', () => {
+    expect(ids('野牛')).toContain('en-us-2022-01-08')
+  })
+  it('「极光」召回阿拉斯加图', () => {
+    expect(ids('极光')).toContain('en-us-2021-12-19')
   })
 })
 
@@ -107,8 +117,9 @@ describe('真实数据黄金集 · 防误报', () => {
     expect(got, 'Arches NP 与中国无关，不得混入').not.toContain('en-us-2023-05-08')
   })
 
-  it('「雪山 湖」诚实零结果：查询词间不再生成假「山湖」二元组（雪山召回待内容打标）', () => {
-    expect(hits('雪山 湖')).toHaveLength(0)
+  it('「雪山 湖」有召回（content_tags 补齐后 AND 空回退 OR，雪山/山湖任一命中）', () => {
+    expect(hits('雪山 湖').length).toBeGreaterThan(0)
+    expect(ids('雪山 湖')).toContain('zh-cn-2024-09-02') // 高山湖泊图（文字层「山湖」真二元组）
   })
 
   it('「国美」零误报（跨标点假二元组已修：数据里「…国，美…」不再生成假词）', () => {

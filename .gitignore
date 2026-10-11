@@ -9,3 +9,4 @@ backfill.log
 .playwright-mcp/
 playwright-report/
 test-results/
+.venv-tag/

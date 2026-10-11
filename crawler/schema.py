@@ -26,6 +26,8 @@ SCHEMA = {
         "quiz": {"type": ["string", "null"]},
         "resolutions": {"type": "object", "additionalProperties": {"type": "boolean"}},
         "tags": {"type": "array", "items": {"type": "string"}},
+        # CLIP 内容打标产物（crawler/content_tags.py），打标前不存在——不在 required
+        "content_tags": {"type": "array", "items": {"type": "string"}},
     },
 }
 
