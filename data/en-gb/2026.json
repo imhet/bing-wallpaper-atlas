@@ -299,5 +299,32 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "en-gb-2026-10-10",
+  "market": "en-gb",
+  "date": "2026-10-10",
+  "urlbase": "/th?id=OHR.BabcockSP_EN-GB3870597164",
+  "imageKey": "BabcockSP",
+  "title": "Where autumn turns the wheel",
+  "desc": "Glade Creek Grist Mill, Babcock State Park, West Virginia, United States (© dszc/Getty Images)",
+  "location": [
+   "Glade Creek Grist Mill",
+   "Babcock State Park",
+   "West Virginia",
+   "United States"
+  ],
+  "region": "美国",
+  "photographer": "dszc",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Babcock+State+Park&form=hpcapt&filters=HpDate%3a%2220261010_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261010_BabcockSP%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]

@@ -276,5 +276,30 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "ja-jp-2026-10-10",
+  "market": "ja-jp",
+  "date": "2026-10-10",
+  "urlbase": "/th?id=OHR.BabcockSP_JA-JP1996620132",
+  "imageKey": "BabcockSP",
+  "title": "紅葉に包まれた水車小屋",
+  "desc": "グレイド・クリーク・グリスト・ミル, 米国 ウェストバージニア州 (© dszc/Getty Images)",
+  "location": [
+   "グレイド・クリーク・グリスト・ミル",
+   "米国 ウェストバージニア州"
+  ],
+  "region": null,
+  "photographer": "dszc",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%90%E3%83%96%E3%82%B3%E3%83%83%E3%82%AF%E5%B7%9E%E7%AB%8B%E5%85%AC%E5%9C%92&form=hpcapt&filters=HpDate%3a%2220261010_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261010_BabcockSP%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
