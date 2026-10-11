@@ -10725,5 +10725,31 @@
    "加州",
    "加利福尼亞"
   ]
+ },
+ {
+  "id": "en-us-2026-10-11",
+  "market": "en-us",
+  "date": "2026-10-11",
+  "urlbase": "/th?id=OHR.BabcockSP_EN-US6068931791",
+  "imageKey": "BabcockSP",
+  "title": "Where autumn turns the wheel",
+  "desc": "Glade Creek Grist Mill, Babcock State Park, West Virginia (© dszc/Getty Images)",
+  "location": [
+   "Glade Creek Grist Mill",
+   "Babcock State Park",
+   "West Virginia"
+  ],
+  "region": null,
+  "photographer": "dszc",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Babcock+State+Park&form=hpcapt&filters=HpDate%3a%2220261011_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261011_BabcockSP%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
