@@ -24,11 +24,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "纽约",
    "new york",
    "nyc",
@@ -291,13 +286,6 @@
    "thumb": true
   },
   "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ",
    "黄石",
    "yellowstone",
    "黃石",
@@ -514,18 +502,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
-   "西班牙",
-   "spain",
-   "españa",
-   "spanish",
-   "スペイン"
-  ],
+  "tags": [],
   "content_tags": [
    "公路",
    "峡谷",
@@ -556,13 +533,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "温泉",
    "峡谷河流",
@@ -666,7 +637,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -784,8 +754,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "骆驼",
@@ -930,13 +899,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "灯塔",
    "海岛",
@@ -972,7 +935,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -1050,7 +1012,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -1278,7 +1239,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -1497,8 +1457,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "航拍",
@@ -1613,13 +1572,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "岩石拱门",
    "岩石海岸",
@@ -1652,13 +1605,6 @@
    "thumb": true
   },
   "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ",
    "黄石",
    "yellowstone",
    "黃石",
@@ -1698,18 +1644,10 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "马尔代夫",
    "maldives",
-   "馬爾地夫"
+   "馬爾地夫",
+   "馬爾代夫"
   ],
   "content_tags": [
    "海岛",
@@ -1788,7 +1726,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -1832,7 +1769,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -1868,7 +1804,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -2082,7 +2017,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -2226,7 +2160,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -2334,7 +2267,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -2409,14 +2341,8 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -2491,18 +2417,14 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "新西兰",
    "new zealand",
    "紐西蘭",
    "ニュージーランド",
    "新西蘭",
    "特卡波湖",
-   "tekapo"
+   "tekapo",
+   "特卡波"
   ],
   "content_tags": [
    "航拍",
@@ -2759,7 +2681,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -3029,7 +2950,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -3408,7 +3328,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -3485,11 +3404,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "新西兰",
    "new zealand",
    "紐西蘭",
@@ -3611,7 +3525,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -3681,7 +3594,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -3974,7 +3886,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -4047,15 +3958,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
-  ],
+  "tags": [],
   "content_tags": [
    "樱花",
    "猫头鹰",
@@ -4159,11 +4062,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "纽约",
    "new york",
    "nyc",
@@ -4204,7 +4102,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -4352,13 +4249,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "企鹅",
    "彩虹",
@@ -4776,7 +4667,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -4816,11 +4706,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "瑞典",
-   "sweden",
-   "swedish"
-  ],
+  "tags": [],
   "content_tags": [
    "银河",
    "星空",
@@ -4970,18 +4856,15 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "圣托里尼",
    "santorini",
    "聖托里尼",
    "サントリーニ",
    "希腊",
    "greece",
-   "greek"
+   "greek",
+   "希臘",
+   "ギリシャ"
   ],
   "content_tags": [
    "古城",
@@ -5021,13 +4904,9 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
-   "法國",
-   "美国",
-   "usa",
-   "united states"
+   "法國"
   ],
   "content_tags": [
    "徒步",
@@ -5399,8 +5278,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "长颈鹿",
@@ -5516,7 +5394,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -5796,13 +5673,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "宫殿",
@@ -5873,11 +5750,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "加利福尼亚",
    "california",
    "加州",
@@ -5916,8 +5788,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "雪山湖泊",
@@ -6025,8 +5896,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "海豚",
@@ -6136,11 +6006,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -6178,13 +6043,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "里约热内卢",
-   "rio de janeiro",
-   "rio",
-   "里約",
-   "里約熱內盧"
-  ],
+  "tags": [],
   "content_tags": [
    "峡谷河流",
    "峡谷",
@@ -6503,7 +6362,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -6716,7 +6574,6 @@
    "普羅旺斯",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -7010,11 +6867,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "加利福尼亚",
    "california",
    "加州",
@@ -7090,13 +6942,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "佛罗伦萨",
-   "florence",
-   "firenze",
-   "佛羅倫薩",
-   "フィレンツェ"
-  ],
+  "tags": [],
   "content_tags": [
    "灯塔",
    "海岸线",
@@ -7253,7 +7099,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -7509,11 +7354,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "日本",
    "japan",
    "japanese",
@@ -7551,13 +7391,6 @@
    "thumb": true
   },
   "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ",
    "黄石",
    "yellowstone",
    "黃石",
@@ -7628,7 +7461,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -7669,13 +7501,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "修道院",
    "海岛",
@@ -7773,7 +7599,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -7916,7 +7741,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -8278,15 +8102,9 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -8431,9 +8249,6 @@
    "thumb": true
   },
   "tags": [
-   "南非",
-   "south africa",
-   "african",
    "肯尼亚",
    "kenya",
    "kenyan",
@@ -8538,7 +8353,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -8607,13 +8421,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "里约热内卢",
-   "rio de janeiro",
-   "rio",
-   "里約",
-   "里約熱內盧"
-  ],
+  "tags": [],
   "content_tags": [
    "水面倒影",
    "湿地",
@@ -8647,14 +8455,8 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "木屋",
@@ -8729,7 +8531,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -8770,7 +8571,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -8842,7 +8642,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -9275,7 +9074,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -9376,7 +9174,6 @@
   "tags": [
    "里约热内卢",
    "rio de janeiro",
-   "rio",
    "里約",
    "里約熱內盧"
   ],
@@ -9419,7 +9216,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -9829,13 +9625,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "剪影",
@@ -9909,7 +9705,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -9981,13 +9776,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "水面倒影",
    "微距",
@@ -10628,7 +10417,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -10710,7 +10498,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -10854,7 +10641,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -11080,7 +10866,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -11346,7 +11131,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -11689,7 +11473,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -11874,11 +11657,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "希腊",
    "greece",
    "greek",
@@ -11916,15 +11694,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
-  ],
+  "tags": [],
   "content_tags": [
    "水面倒影",
    "河流",
@@ -12303,11 +12073,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "意大利",
    "italy",
    "italia",
@@ -12720,11 +12485,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "夏威夷",
    "hawaii",
    "hawaiian",
@@ -13280,7 +13040,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -13392,7 +13151,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -13431,7 +13189,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -13475,7 +13232,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],

@@ -100,7 +100,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -180,7 +179,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -257,11 +255,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "新西兰",
    "new zealand",
    "紐西蘭",
@@ -526,7 +519,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -567,13 +559,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "宫殿",
@@ -898,7 +890,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -1130,7 +1121,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -1167,8 +1157,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "草原",
@@ -1202,18 +1191,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "南非",
-   "south africa",
-   "african",
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
-  ],
+  "tags": [],
   "content_tags": [
    "宫殿",
    "闪电",
@@ -1279,7 +1257,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -1398,11 +1375,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "新西兰",
    "new zealand",
    "紐西蘭",
@@ -1554,13 +1526,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "灯笼",
@@ -1961,7 +1933,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -2339,8 +2310,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "企鹅",
@@ -2678,7 +2648,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -2717,7 +2686,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -2757,7 +2725,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -3570,7 +3537,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -3638,15 +3604,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
-  ],
+  "tags": [],
   "content_tags": [
    "松鼠",
    "鹰",
@@ -3890,11 +3848,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "葡萄牙",
    "portugal",
    "portuguese",
@@ -3935,7 +3888,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -4229,13 +4181,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "宫殿",
@@ -4454,7 +4406,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -4496,13 +4447,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "剪影",
@@ -4606,12 +4557,12 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "犹他",
    "utah",
-   "猶他"
+   "猶他",
+   "拱门国家公园",
+   "arches national park",
+   "拱門國家公園"
   ],
   "content_tags": [
    "岩石拱门",
@@ -4653,7 +4604,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -5058,13 +5008,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "宫殿",
@@ -5180,7 +5130,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -5580,7 +5529,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -5649,8 +5597,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "雾景",
@@ -5682,19 +5629,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
-   "法国",
-   "france",
-   "french",
-   "français",
-   "フランス",
-   "法國"
-  ],
+  "tags": [],
   "content_tags": [
    "航拍",
    "海岸线",
@@ -5879,7 +5814,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -5956,11 +5890,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "加拿大",
    "canada",
    "canadian",
@@ -6146,11 +6075,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "葡萄牙",
    "portugal",
    "portuguese",
@@ -6291,13 +6215,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "森林",
    "岩石拱门",
@@ -6394,7 +6312,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -6541,12 +6458,12 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "犹他",
    "utah",
-   "猶他"
+   "猶他",
+   "拱门国家公园",
+   "arches national park",
+   "拱門國家公園"
   ],
   "content_tags": [
    "岩石拱门",
@@ -6583,7 +6500,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -6811,11 +6727,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "加拿大",
    "canada",
    "canadian",
@@ -6959,7 +6870,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -7259,7 +7169,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -7298,7 +7207,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -7406,7 +7314,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -7486,7 +7393,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -7553,11 +7459,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "荷兰",
    "netherlands",
    "holland",
@@ -7700,7 +7601,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -7737,11 +7637,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -7857,7 +7752,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -8189,12 +8083,7 @@
   "tags": [
    "佛罗里达",
    "florida",
-   "佛羅里達",
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
+   "佛羅里達"
   ],
   "content_tags": [
    "灯塔",
@@ -8380,9 +8269,6 @@
    "thumb": true
   },
   "tags": [
-   "南非",
-   "south africa",
-   "african",
    "肯尼亚",
    "kenya",
    "kenyan",
@@ -8497,13 +8383,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "蝴蝶",
    "鲸鱼",
@@ -8691,7 +8571,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -8730,7 +8609,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -8841,7 +8719,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -8965,12 +8842,7 @@
    "丹麦",
    "denmark",
    "danish",
-   "丹麥",
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
+   "丹麥"
   ],
   "content_tags": [
    "海岸线",
@@ -9044,7 +8916,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン",
    "马德里",
    "madrid",
@@ -9157,7 +9028,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "芝加哥",
@@ -9498,7 +9368,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -10047,7 +9916,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -10236,13 +10104,7 @@
    "aussie",
    "澳洲",
    "オーストラリア",
-   "澳大利亞",
-   "英国",
-   "uk",
-   "united kingdom",
-   "britain",
-   "england",
-   "english"
+   "澳大利亞"
   ],
   "content_tags": [
    "猴子",
@@ -10599,11 +10461,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "斐济",
    "fiji",
    "fijian",
@@ -10891,7 +10748,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -10998,7 +10854,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -11069,7 +10924,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -11280,11 +11134,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "葡萄牙",
    "portugal",
    "portuguese",
@@ -11325,7 +11174,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -11519,13 +11367,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "桥梁",
@@ -11565,7 +11413,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -11970,7 +11817,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -12158,11 +12004,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "纽约",
    "new york",
    "nyc",
@@ -12278,7 +12119,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -12362,7 +12202,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -12439,14 +12278,7 @@
   "tags": [
    "墨西哥",
    "mexico",
-   "mexican",
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
+   "mexican"
   ],
   "content_tags": [
    "灯笼",
@@ -12894,7 +12726,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -13147,7 +12978,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -13305,8 +13135,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "雪景",
@@ -13502,7 +13331,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",

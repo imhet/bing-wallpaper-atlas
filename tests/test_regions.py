@@ -54,3 +54,8 @@ def test_inner_mongolia_is_not_mongolia():
     # 无独立「中国」段时，「内蒙古」应作为独立别名归中国，而不是落到「蒙古」
     loc = ["额济纳旗胡杨林", "内蒙古自治区阿拉善盟"]
     assert extract_region(loc, "，".join(loc)) == "中国"
+
+
+def test_british_columbia_is_not_colombia():
+    # 「不列颠哥伦比亚」含子串「哥伦比亚」——加拿大图不得误归南美哥伦比亚
+    assert extract_region(["考伊琴山谷的薄雾", "温哥华岛", "加拿大不列颠哥伦比亚省"], "考伊琴山谷的薄雾，温哥华岛，加拿大不列颠哥伦比亚省 (© X)") == "加拿大"

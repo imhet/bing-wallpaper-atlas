@@ -20,9 +20,35 @@ HIERARCHY_PATH = Path(__file__).parent / "geo_hierarchy.json"
 MAX_TAGS = 12
 _LATIN_RE = re.compile(r"[a-z0-9 '.\-]+")
 # CJK 子串匹配的否定上下文：文本含干扰词时整个组跳过（「格拉萨莱马」含子串「拉萨」）
-_CJK_NEGATIVE = {
+# 组级否定上下文：文本含这些子串时整组不命中（2026-10-11 全量排查 166 条误挂的产出）。
+# CJK 按子串、拉丁按小写子串——「X德国家公园」不是德国、「Canton of Bern」不是广州
+# （canton 裸别名已删）、「bohemian switzerland」是捷克不是瑞士。
+_NEGATIVE_CONTEXT = {
     "拉萨": ["格拉萨莱马"],
     "大理": ["大理石", "大理岩"],  # 「魔鬼大理石保护区」（澳大利亚）不是云南大理
+    "兰州": ["昆士兰", "马里兰"],  # 「昆士兰州」「马里兰州」的子串
+    "达州": ["佛罗里达", "内华达", "明尼苏达"],  # 「佛罗里达州」等美国州名音译尾字
+    "泉州": ["泉州立"],  # 彩虹泉州立公园（美国）
+    "墨西哥": ["新墨西哥"],
+    "爱尔兰": ["北爱尔兰"],  # 北爱尔兰属英国
+    "芬兰": ["纽芬兰"],  # 加拿大纽芬兰岛
+    "意大利": ["意大利卡"],  # Italica，西班牙古罗马城
+    "德国": ["德国家", "莱德国"],  # 「泰/穆罕默德国家公园」「阿德莱德国际」的子串
+    "法国": ["法国家"],  # 「科法国家保护区」的子串
+    "澳大利亚": ["澳大利亚花园"],  # 加州大学校园花园名
+    "印度": ["印度尼西亚", "印度洋"],
+    "瑞士": ["瑞士撒克逊", "波希米亚瑞士", "bohemian switzerland", "saxon switzerland"],
+    "蒙古": ["蒙古自治州", "inner mongolia"],  # 内蒙古不是蒙古国
+    "柏林": ["都柏林"],
+    "罗马": ["罗马尼亚", "罗马式", "罗马风格"],
+    "荷兰": ["荷兰港", "dutch harbor"],  # 阿拉斯加 Dutch Harbor
+    "爱丁堡": ["爱丁堡茶园", "edinburgh tea estate"],  # 斯里兰卡茶园名
+    "佛罗伦萨": ["florence, oregon"],  # 俄勒冈州 Florence 市
+    "中国": ["lan su chinese garden"],  # 波特兰中式园林
+    # 物种中文名含国名：动物/植物在世界各地都有
+    "南非": ["南非剑羚"],
+    "印度": ["印度尼西亚", "印度洋", "印度星龟"],
+    "西班牙": ["西班牙苔藓"],
 }
 
 log = logging.getLogger(__name__)
@@ -51,10 +77,11 @@ class _Matcher:
         self.pairs = [(name, *_compile(alts)) for name, alts in alias_data.items()]
 
     def match(self, text):
+        low = text.lower()
         return [
             name
             for name, cjk, latin_re in self.pairs
-            if not any(neg in text for neg in _CJK_NEGATIVE.get(name, []))
+            if not any(neg in low for neg in _NEGATIVE_CONTEXT.get(name, []))
             and (name in text or any(a in text for a in cjk) or (latin_re and latin_re.search(text)))
         ]
 
@@ -100,7 +127,7 @@ def enrich_tags(record, matcher=None):
     return {**record, "tags": tags}
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description="为存量记录补多语言地名 tags")
     parser.add_argument("--data-dir", default="data")
     parser.add_argument(
@@ -109,16 +136,17 @@ def main():
         help="先清空已有 tags 再重算：词典/匹配规则收紧后，清除存量里按旧规则写入的误报 tags"
         "（存量 tags 全部由本工具派生，重建安全——tests/test_geo_data.py 锁定结构）",
     )
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     matcher = _get_matcher()
     changed = 0
     for market, recs in sorted(load_all(args.data_dir).items()):
         for rec in recs:
+            orig_tags = rec.get("tags")  # 比较基准是清空前的 tags——否则重算结果为空的记录永远不写回
             if args.rebuild:
                 rec = {**rec, "tags": []}
             new = enrich_tags(rec, matcher)
-            if new["tags"] != rec["tags"] and upsert_record(args.data_dir, new):
+            if new["tags"] != orig_tags and upsert_record(args.data_dir, new):
                 changed += 1
     log.info("geo enrich done: changed=%d rebuild=%s", changed, args.rebuild)
 

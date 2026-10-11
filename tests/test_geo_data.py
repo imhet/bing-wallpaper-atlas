@@ -51,6 +51,24 @@ def test_province_groups_have_traditional_aliases():
     assert not missing, f"省级组缺繁体别名: {missing}"
 
 
+def test_no_dangerous_common_word_latin_aliases():
+    # 危险裸词黑名单：这些英文常用词作别名会吞掉大量无关图——
+    # island→冰岛吞英文「岛屿」62 条、indian→印度吞 Indian Ocean、canton→广州吞瑞士 Canton of Bern、
+    # uk→英国吞摄影师 credit「.co.uk」……词边界挡不住常用词本身（2026-10-11 全量排查 166 条误挂）
+    aliases, _ = _load()
+    banned = {"canton", "island", "indian", "african", "american", "french", "spanish", "swedish", "uk", "rio"}
+    hits = {a: g for g, alts in aliases.items() for a in alts if a in banned}
+    assert not hits, f"危险裸词别名回归: {hits}"
+
+
+def test_arches_group_requires_full_park_name():
+    # 「拱门」是普通名词：塔斯曼拱门（澳）/圣路易斯拱门/新西兰拱门群岛……只有国家公园全名可作别名；
+    # 搜索端不受损——查询「拱门」的二元组仍命中「拱门国家公园」
+    aliases, _ = _load()
+    assert set(aliases.get("拱门国家公园", [])) == {"arches national park", "拱門國家公園"}
+    assert "拱门" not in aliases, "裸「拱门」组名会吞掉一切拱门类地物"
+
+
 def test_lijiang_city_group_has_no_bare_latin_alias():
     # 丽江/漓江同拼音（lijiang）：英文语料里 lijiang 只出现在漓江——
     # 丽江组不得保留裸 'lijiang' 别名，否则桂林图误挂云南

@@ -100,7 +100,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -341,12 +340,7 @@
   "tags": [
    "墨西哥",
    "mexico",
-   "mexican",
-   "里约热内卢",
-   "rio de janeiro",
-   "rio",
-   "里約",
-   "里約熱內盧"
+   "mexican"
   ],
   "content_tags": [
    "热气球",
@@ -686,7 +680,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -871,10 +864,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "马尔代夫",
    "maldives",
    "馬爾地夫",
@@ -914,7 +903,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -1135,7 +1123,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -1172,8 +1159,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "长颈鹿",
@@ -1427,7 +1413,6 @@
   "tags": [
    "南非",
    "south africa",
-   "african",
    "开普敦",
    "cape town",
    "開普敦"
@@ -1580,11 +1565,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "希腊",
    "greece",
    "greek",
@@ -1624,13 +1604,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "丘陵",
    "火山",
@@ -1809,14 +1783,7 @@
    "new york",
    "nyc",
    "紐約",
-   "ニューヨーク",
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
+   "ニューヨーク"
   ],
   "content_tags": [
    "航拍",
@@ -1917,7 +1884,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -2115,18 +2081,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "南非",
-   "south africa",
-   "african",
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
-  ],
+  "tags": [],
   "content_tags": [
    "热气球",
    "灯笼",
@@ -2239,7 +2194,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -2394,8 +2348,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "长颈鹿",
@@ -2537,7 +2490,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -2578,13 +2530,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "城市夜景",
@@ -3199,7 +3151,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -3342,13 +3293,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "灯塔",
    "海岛",
@@ -3457,12 +3402,11 @@
    "義大利",
    "italian",
    "イタリア",
-   "法国",
-   "france",
-   "french",
-   "français",
-   "フランス",
-   "法國"
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬"
   ],
   "content_tags": [
    "宫殿",
@@ -3674,13 +3618,6 @@
    "thumb": true
   },
   "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ",
    "阿拉斯加",
    "alaska",
    "alaskan",
@@ -3849,12 +3786,12 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "犹他",
    "utah",
-   "猶他"
+   "猶他",
+   "拱门国家公园",
+   "arches national park",
+   "拱門國家公園"
   ],
   "content_tags": [
    "岩石拱门",
@@ -4042,15 +3979,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ"
-  ],
+  "tags": [],
   "content_tags": [
    "熊",
    "森林",
@@ -4087,7 +4016,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -4673,11 +4601,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "爱尔兰",
    "ireland",
    "irish",
@@ -4754,7 +4677,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -4797,7 +4719,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -4840,7 +4761,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -5093,7 +5013,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -5170,9 +5089,6 @@
    "thumb": true
   },
   "tags": [
-   "南非",
-   "south africa",
-   "african",
    "坦桑尼亚",
    "tanzania",
    "坦桑尼亞"
@@ -5215,13 +5131,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "宫殿",
@@ -5411,10 +5327,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "斯里兰卡",
    "sri lanka",
    "ceylon",
@@ -5457,7 +5369,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -5713,7 +5624,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -5945,7 +5855,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -5983,12 +5892,6 @@
    "thumb": true
   },
   "tags": [
-   "荷兰",
-   "netherlands",
-   "holland",
-   "dutch",
-   "オランダ",
-   "荷蘭",
    "阿拉斯加",
    "alaska",
    "alaskan",
@@ -6072,7 +5975,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -6382,7 +6284,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -6791,7 +6692,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -6918,7 +6818,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -7340,7 +7239,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -7497,13 +7395,8 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -7716,7 +7609,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -7795,7 +7687,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -7873,8 +7764,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "海滩",
@@ -7911,7 +7801,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -8135,8 +8024,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "鹿",
@@ -8172,7 +8060,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -8394,11 +8281,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "加拿大",
    "canada",
    "canadian",
@@ -8440,9 +8322,6 @@
    "thumb": true
   },
   "tags": [
-   "南非",
-   "south africa",
-   "african",
    "肯尼亚",
    "kenya",
    "kenyan",
@@ -8484,12 +8363,7 @@
    "克罗地亚",
    "croatia",
    "hrvatska",
-   "克羅地亞",
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
+   "克羅地亞"
   ],
   "content_tags": [
    "海岸线",
@@ -8787,13 +8661,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "海岸线",
    "悬崖",
@@ -9034,7 +8902,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -9075,7 +8942,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -9190,13 +9056,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "航拍",
@@ -9446,8 +9312,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "航拍",
@@ -9592,13 +9457,8 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -9673,13 +9533,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "剪影",
    "遗迹",
@@ -9906,13 +9760,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島"
-  ],
+  "tags": [],
   "content_tags": [
    "灯塔",
    "航拍",
@@ -9991,7 +9839,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -10073,7 +9920,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -10420,7 +10266,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -10486,9 +10331,6 @@
    "thumb": true
   },
   "tags": [
-   "南非",
-   "south africa",
-   "african",
    "肯尼亚",
    "kenya",
    "kenyan",
@@ -10809,7 +10651,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -10925,7 +10766,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -11259,7 +11099,6 @@
    "白朗峰",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -11490,7 +11329,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -11564,13 +11402,6 @@
    "thumb": true
   },
   "tags": [
-   "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ",
    "黄石",
    "yellowstone",
    "黃石",
@@ -11649,7 +11480,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -11797,7 +11627,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -11950,12 +11779,12 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "犹他",
    "utah",
-   "猶他"
+   "猶他",
+   "拱门国家公园",
+   "arches national park",
+   "拱門國家公園"
   ],
   "content_tags": [
    "岩石拱门",
@@ -12310,8 +12139,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "狐狸",
@@ -12349,7 +12177,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -12385,11 +12212,6 @@
    "thumb": true
   },
   "tags": [
-   "冰岛",
-   "iceland",
-   "island",
-   "アイスランド",
-   "冰島",
    "澳大利亚",
    "australia",
    "aussie",
@@ -12624,7 +12446,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -12778,7 +12599,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -12967,7 +12787,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -13040,7 +12859,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -13359,7 +13177,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -13668,7 +13485,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -13739,14 +13555,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "法国",
-   "france",
-   "french",
-   "français",
-   "フランス",
-   "法國"
-  ],
+  "tags": [],
   "content_tags": [
    "海豚",
    "海岛",
@@ -13864,7 +13673,6 @@
   "tags": [
    "里约热内卢",
    "rio de janeiro",
-   "rio",
    "里約",
    "里約熱內盧"
   ],

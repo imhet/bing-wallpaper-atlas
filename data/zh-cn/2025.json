@@ -65,7 +65,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -149,7 +148,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -461,7 +459,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -506,7 +503,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -584,7 +580,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -630,7 +625,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -667,14 +661,10 @@
    "thumb": true
   },
   "tags": [
-   "墨西哥",
-   "mexico",
-   "mexican",
    "美国",
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -871,7 +861,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -908,7 +897,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -1034,7 +1022,7 @@
    "usa",
    "united states",
    "america",
-   "american"
+   "美國"
   ],
   "content_tags": [
    "峡谷",
@@ -1162,7 +1150,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -1199,8 +1186,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "草原",
@@ -1240,13 +1226,7 @@
    "deutschland",
    "german",
    "ドイツ",
-   "德國",
-   "瑞士",
-   "switzerland",
-   "schweiz",
-   "suisse",
-   "swiss",
-   "スイス"
+   "德國"
   ],
   "content_tags": [
    "雪景",
@@ -1382,9 +1362,6 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "新西兰",
    "new zealand",
    "紐西蘭",
@@ -1425,9 +1402,6 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "新西兰",
    "new zealand",
    "紐西蘭",
@@ -1546,7 +1520,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -1589,13 +1562,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "灯笼",
@@ -1999,7 +1972,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -2035,14 +2007,10 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "美国",
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -2169,7 +2137,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -2405,8 +2372,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "企鹅",
@@ -2449,7 +2415,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -2528,14 +2493,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou",
-   "達州",
-   "四川",
-   "sichuan"
+   "アメリカ"
   ],
   "content_tags": [
    "峡谷",
@@ -2723,10 +2682,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -2771,7 +2726,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -2811,7 +2765,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -2851,7 +2804,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -2969,9 +2921,6 @@
    "thumb": true
   },
   "tags": [
-   "柏林",
-   "berlin",
-   "ベルリン",
    "爱尔兰",
    "ireland",
    "irish",
@@ -3020,7 +2969,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3217,7 +3165,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3336,11 +3283,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou"
+   "アメリカ"
   ],
   "content_tags": [
    "鲸鱼",
@@ -3456,7 +3400,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3615,7 +3558,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3660,7 +3602,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3744,7 +3685,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -3822,7 +3762,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -4112,7 +4051,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -4156,7 +4094,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -4270,11 +4207,11 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "锡安",
-   "zion"
+   "zion",
+   "錫安"
   ],
   "content_tags": [
    "峡谷",
@@ -4348,7 +4285,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -4390,7 +4326,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "黄石",
@@ -4479,10 +4414,10 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
-   "阿拉斯加"
+   "阿拉斯加",
+   "alaska"
   ],
   "content_tags": [
    "海岛",
@@ -4600,7 +4535,7 @@
    "usa",
    "united states",
    "america",
-   "american"
+   "美國"
   ],
   "content_tags": [
    "森林",
@@ -4669,7 +4604,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -4747,7 +4681,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -4817,9 +4750,6 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "犹他",
    "utah",
    "猶他",
@@ -4827,8 +4757,11 @@
    "usa",
    "united states",
    "america",
-   "american",
-   "美國"
+   "美國",
+   "アメリカ",
+   "拱门国家公园",
+   "arches national park",
+   "拱門國家公園"
   ],
   "content_tags": [
    "岩石拱门",
@@ -4870,7 +4803,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -4983,12 +4915,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "爱尔兰",
-   "ireland",
-   "irish",
-   "愛爾蘭"
-  ],
+  "tags": [],
   "content_tags": [
    "悬崖",
    "城堡",
@@ -5026,14 +4953,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou",
-   "達州",
-   "四川",
-   "sichuan"
+   "アメリカ"
   ],
   "content_tags": [
    "袋鼠",
@@ -5106,7 +5027,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -5300,13 +5220,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "宫殿",
@@ -5423,7 +5343,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -5809,7 +5728,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "阿拉斯加",
@@ -5854,7 +5772,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -5895,7 +5812,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -6157,7 +6073,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -6204,7 +6119,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -6327,11 +6241,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou"
+   "アメリカ"
   ],
   "content_tags": [
    "湿地",
@@ -6408,7 +6319,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -6607,7 +6517,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -6861,9 +6770,6 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "犹他",
    "utah",
    "猶他",
@@ -6871,8 +6777,11 @@
    "usa",
    "united states",
    "america",
-   "american",
-   "美國"
+   "美國",
+   "アメリカ",
+   "拱门国家公园",
+   "arches national park",
+   "拱門國家公園"
   ],
   "content_tags": [
    "岩石拱门",
@@ -6982,8 +6891,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "雾景",
@@ -7057,10 +6965,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -7142,11 +7046,7 @@
    "加拿大",
    "canada",
    "canadian",
-   "カナダ",
-   "芬兰",
-   "finland",
-   "finnish",
-   "芬蘭"
+   "カナダ"
   ],
   "content_tags": [
    "峡湾",
@@ -7217,13 +7117,10 @@
    "佛罗里达",
    "florida",
    "佛羅里達",
-   "泉州",
-   "quanzhou",
    "美国",
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -7301,7 +7198,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -7349,8 +7245,8 @@
    "usa",
    "united states",
    "america",
-   "american",
-   "美國"
+   "美國",
+   "アメリカ"
   ],
   "content_tags": [
    "沙漠",
@@ -7616,7 +7512,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -7655,7 +7550,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -7696,14 +7590,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou",
-   "達州",
-   "四川",
-   "sichuan"
+   "アメリカ"
   ],
   "content_tags": [
    "星空",
@@ -7777,7 +7665,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -7816,7 +7703,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -7958,10 +7844,7 @@
    "chinese",
    "中國",
    "新疆",
-   "xinjiang",
-   "蒙古",
-   "mongolia",
-   "mongolian"
+   "xinjiang"
   ],
   "content_tags": [
    "雪山湖泊",
@@ -8074,7 +7957,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -8111,10 +7993,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -8158,13 +8036,7 @@
    "埃及",
    "egypt",
    "egyptian",
-   "エジプト",
-   "德国",
-   "germany",
-   "deutschland",
-   "german",
-   "ドイツ",
-   "德國"
+   "エジプト"
   ],
   "content_tags": [
    "海豚",
@@ -8236,7 +8108,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -8275,7 +8146,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -8320,7 +8190,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -8405,7 +8274,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -8518,7 +8386,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -8595,11 +8462,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou"
+   "アメリカ"
   ],
   "content_tags": [
    "灯塔",
@@ -8825,14 +8689,10 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "美国",
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9030,7 +8890,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9070,7 +8929,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -9108,7 +8966,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -9183,7 +9040,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9300,7 +9156,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "黄石",
@@ -9453,7 +9308,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン",
    "马德里",
    "madrid",
@@ -9538,7 +9392,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9659,14 +9512,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou",
-   "達州",
-   "四川",
-   "sichuan"
+   "アメリカ"
   ],
   "content_tags": [
    "湖泊",
@@ -9706,7 +9553,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "阿拉斯加",
@@ -9756,7 +9602,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9987,7 +9832,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -10070,7 +9914,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10111,7 +9954,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10149,7 +9991,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -10226,7 +10067,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "阿拉斯加",
@@ -10392,10 +10232,10 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
-   "阿拉斯加"
+   "阿拉斯加",
+   "alaska"
   ],
   "content_tags": [
    "企鹅",
@@ -10438,7 +10278,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10520,7 +10359,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10559,7 +10397,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -10600,7 +10437,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10642,7 +10478,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10766,13 +10601,7 @@
    "aussie",
    "澳洲",
    "オーストラリア",
-   "澳大利亞",
-   "英国",
-   "uk",
-   "united kingdom",
-   "britain",
-   "england",
-   "english"
+   "澳大利亞"
   ],
   "content_tags": [
    "猴子",
@@ -10817,7 +10646,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10859,7 +10687,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11046,7 +10873,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11092,7 +10918,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11201,7 +11026,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11248,7 +11072,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11373,7 +11196,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11447,7 +11269,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11486,7 +11307,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -11532,14 +11352,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou",
-   "達州",
-   "四川",
-   "sichuan"
+   "アメリカ"
   ],
   "content_tags": [
    "园林",
@@ -11672,7 +11486,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -11717,7 +11530,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11794,7 +11606,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11875,9 +11686,6 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "捷克",
    "czech",
    "czechia"
@@ -11955,7 +11763,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -11990,13 +11797,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "罗马",
-   "rome",
-   "roma",
-   "ローマ",
-   "羅馬"
-  ],
+  "tags": [],
   "content_tags": [
    "城堡",
    "塔楼",
@@ -12035,7 +11836,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "黄石",
@@ -12201,7 +12001,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -12320,7 +12119,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -12394,7 +12192,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -12560,11 +12357,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou"
+   "アメリカ"
   ],
   "content_tags": [
    "海豚",
@@ -12643,7 +12437,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -12685,7 +12478,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -12726,7 +12518,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -12847,7 +12638,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -12960,7 +12750,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -13044,7 +12833,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -13234,10 +13022,7 @@
    "南极",
    "antarctica",
    "antarctic",
-   "南極",
-   "拱门",
-   "arches",
-   "拱門"
+   "南極"
   ],
   "content_tags": [
    "冰川",
@@ -13281,10 +13066,10 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
-   "阿拉斯加"
+   "阿拉斯加",
+   "alaska"
   ],
   "content_tags": [
    "雪山湖泊",
@@ -13320,14 +13105,10 @@
    "thumb": true
   },
   "tags": [
-   "墨西哥",
-   "mexico",
-   "mexican",
    "美国",
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -13444,11 +13225,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou"
+   "アメリカ"
   ],
   "content_tags": [
    "雾景",
@@ -13604,7 +13382,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -13761,7 +13538,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -13912,7 +13688,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -14272,14 +14047,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou",
-   "達州",
-   "四川",
-   "sichuan"
+   "アメリカ"
   ],
   "content_tags": [
    "冰川",
@@ -14384,8 +14153,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "雪景",

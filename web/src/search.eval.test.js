@@ -32,9 +32,11 @@ describe('真实数据黄金集 · 涛总常用词', () => {
     expect(ids('张家界').size).toBeGreaterThanOrEqual(3)
   })
 
-  it('「四川」召回 ≥29 条且含大熊猫/九寨沟图', () => {
+  it('「四川」召回 ≥20 条且含大熊猫/九寨沟图', () => {
     const got = ids('四川')
-    expect(got.size).toBeGreaterThanOrEqual(29)
+    // 基线 2026-10-11 词典收紧：美国州名音译尾字（内华达州等）误挂达州→四川 cascade 的
+    // 9 张图清除后的真实召回（原基线 29）
+    expect(got.size).toBeGreaterThanOrEqual(20)
     expect(got).toContain('en-us-2021-03-16') // Bifengxia Panda Base
     expect(got).toContain('zh-cn-2023-08-07') // 九寨沟五花海
   })
@@ -128,6 +130,23 @@ describe('真实数据黄金集 · 防误报', () => {
 
   it('「湖南」不混入意大利南蒂罗尔图（「布莱耶斯湖，南蒂罗尔」不再生成假「湖南」）', () => {
     expect(ids('湖南')).not.toContain('zh-cn-2024-02-16')
+  })
+})
+
+describe('真实数据黄金集 · geo 词典误挂防护（2026-10-11 全量排查 166 条误挂后锁死）', () => {
+  // 注：词典误挂（tags 层）由 tests/test_geo_enrich.py 锁死；这里只锁搜索端可感知的误召回。
+  // 「都柏林/纽芬兰/佛罗里达州」等中文文本的字面二元组共现（搜「柏林」命中「都柏林」location）
+  // 是 tokenizer 字面召回的固有行为，不在此防护范围——若要消除需搜索端查询否定，另行决策。
+  it('「广州」不召回瑞士图（Canton of Bern 的 canton 裸别名已删；该图文本为英文，无字面共现）', () => {
+    expect(ids('广州')).not.toContain('en-us-2026-01-03')
+  })
+
+  it('「瑞士」不混入捷克波希米亚瑞士图（bohemian switzerland 拉丁否定上下文）', () => {
+    expect(ids('瑞士')).not.toContain('en-us-2021-10-23')
+  })
+
+  it('「里约热内卢」不召回德州大弯图（该图已无里约 tags；大弯文本为英文无「里约」共现）', () => {
+    expect(ids('里约热内卢')).not.toContain('en-us-2021-06-12')
   })
 })
 

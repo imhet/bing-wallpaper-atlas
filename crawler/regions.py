@@ -91,6 +91,7 @@ _NEGATIVE_PHRASES = {
     "america": ["south america", "north america", "latin america"],
     "korea": ["north korea"],
     "蒙古": ["蒙古自治州", "内蒙古"],  # 中国行政区划名里的「蒙古」不是蒙古国
+    "哥伦比亚": ["不列颠哥伦比亚"],  # 加拿大 BC 省不是南美哥伦比亚
 }
 
 

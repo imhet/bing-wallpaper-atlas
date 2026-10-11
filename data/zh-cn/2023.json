@@ -220,7 +220,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -304,8 +303,8 @@
    "usa",
    "united states",
    "america",
-   "american",
-   "美國"
+   "美國",
+   "アメリカ"
   ],
   "content_tags": [
    "银河",
@@ -488,7 +487,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -560,7 +558,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -604,7 +601,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -750,7 +746,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -797,13 +792,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "微距",
@@ -845,7 +840,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -1042,7 +1036,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -1185,7 +1178,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -1308,7 +1300,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -1346,7 +1337,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -1420,7 +1410,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -1533,7 +1522,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -1781,7 +1769,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -1820,7 +1807,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -1903,13 +1889,13 @@
    "ロンドン",
    "倫敦",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "航拍",
@@ -1952,7 +1938,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -2071,11 +2056,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou"
+   "アメリカ"
   ],
   "content_tags": [
    "海豚",
@@ -2210,10 +2192,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -2296,7 +2274,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -2385,7 +2362,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -2459,18 +2435,14 @@
    "thumb": true
   },
   "tags": [
-   "爱尔兰",
-   "ireland",
-   "irish",
-   "愛爾蘭",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "岩石海岸",
@@ -2577,7 +2549,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -2646,7 +2617,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -2721,7 +2691,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -2756,12 +2725,6 @@
    "thumb": true
   },
   "tags": [
-   "德国",
-   "germany",
-   "deutschland",
-   "german",
-   "ドイツ",
-   "德國",
    "澳大利亚",
    "australia",
    "aussie",
@@ -2803,7 +2766,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -2913,7 +2875,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -2997,7 +2958,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3035,7 +2995,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -3175,7 +3134,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3264,7 +3222,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3576,7 +3533,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -3618,12 +3574,12 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "犹他",
    "utah",
-   "猶他"
+   "猶他",
+   "拱门国家公园",
+   "arches national park",
+   "拱門國家公園"
   ],
   "content_tags": [
    "峡谷",
@@ -3694,7 +3650,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -3843,7 +3798,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -3883,7 +3837,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -3989,7 +3942,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -4025,10 +3977,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -4104,7 +4052,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -4346,10 +4293,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -4467,10 +4410,10 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
-   "阿拉斯加"
+   "阿拉斯加",
+   "alaska"
   ],
   "content_tags": [
    "熊",
@@ -4545,9 +4488,6 @@
    "thumb": true
   },
   "tags": [
-   "南非",
-   "south africa",
-   "african",
    "纳米比亚",
    "namibia",
    "納米比亞"
@@ -4596,7 +4536,7 @@
    "usa",
    "united states",
    "america",
-   "american"
+   "美國"
   ],
   "content_tags": [
    "峡谷",
@@ -4640,7 +4580,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -4717,7 +4656,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -4755,14 +4693,10 @@
    "thumb": true
   },
   "tags": [
-   "墨西哥",
-   "mexico",
-   "mexican",
    "美国",
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -4910,8 +4844,7 @@
   },
   "tags": [
    "南非",
-   "south africa",
-   "african"
+   "south africa"
   ],
   "content_tags": [
    "湿地",
@@ -4950,7 +4883,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -4991,14 +4923,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "西班牙",
-   "spain",
-   "españa",
-   "spanish",
-   "スペイン"
+   "アメリカ"
   ],
   "content_tags": [
    "桥梁",
@@ -5078,7 +5004,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -5203,7 +5128,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -5241,7 +5165,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -5284,7 +5207,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "阿拉斯加",
@@ -5499,7 +5421,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -5544,7 +5465,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -5624,10 +5544,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -5674,10 +5590,10 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
-   "阿拉斯加"
+   "阿拉斯加",
+   "alaska"
   ],
   "content_tags": [
    "熊",
@@ -6046,7 +5962,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -6289,7 +6204,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -6447,7 +6361,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -6529,11 +6442,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou"
+   "アメリカ"
   ],
   "content_tags": [
    "水面倒影",
@@ -6571,10 +6481,7 @@
    "斯里兰卡",
    "sri lanka",
    "ceylon",
-   "斯里蘭卡",
-   "爱丁堡",
-   "edinburgh",
-   "愛丁堡"
+   "斯里蘭卡"
   ],
   "content_tags": [
    "梯田",
@@ -6649,7 +6556,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -6727,7 +6633,6 @@
    "パリ",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -6799,7 +6704,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -6839,7 +6743,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -6880,7 +6783,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -6925,10 +6827,10 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
-   "阿拉斯加"
+   "阿拉斯加",
+   "alaska"
   ],
   "content_tags": [
    "雪山",
@@ -6970,7 +6872,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -7072,7 +6973,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -7155,7 +7055,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -7403,7 +7302,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -7519,11 +7417,8 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
-   "アメリカ",
-   "达州",
-   "dazhou"
+   "アメリカ"
   ],
   "content_tags": [
    "航拍",
@@ -7546,7 +7441,7 @@
    "威尔斯格雷省立公园",
    "加拿大不列颠哥伦比亚省"
   ],
-  "region": "哥伦比亚",
+  "region": "加拿大",
   "photographer": "Laurens Verhoeven",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7671,7 +7566,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -7783,7 +7677,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -7829,7 +7722,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -7871,7 +7763,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "黄石",
@@ -8118,7 +8009,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -8160,7 +8050,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -8206,7 +8095,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -8252,7 +8140,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -8290,7 +8177,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -8444,7 +8330,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -8562,7 +8447,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -8643,7 +8527,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -8795,14 +8678,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "德国",
-   "germany",
-   "deutschland",
-   "german",
-   "ドイツ",
-   "德國"
-  ],
+  "tags": [],
   "content_tags": [
    "飞鸟",
    "微距",
@@ -8874,7 +8750,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -8884,7 +8759,8 @@
    "イギリス",
    "长城",
    "great wall",
-   "萬里長城"
+   "萬里長城",
+   "長城"
   ],
   "content_tags": [
    "遗迹",
@@ -8922,12 +8798,7 @@
    "波兰",
    "poland",
    "polish",
-   "波蘭",
-   "罗马",
-   "rome",
-   "roma",
-   "ローマ",
-   "羅馬"
+   "波蘭"
   ],
   "content_tags": [
    "桥梁",
@@ -9399,13 +9270,13 @@
    "普羅旺斯",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國",
    "阿尔卑斯",
    "alps",
-   "alpen"
+   "alpen",
+   "アルプス"
   ],
   "content_tags": [
    "峡谷河流",
@@ -9441,18 +9312,12 @@
    "thumb": true
   },
   "tags": [
-   "兰州",
-   "lanzhou",
-   "蘭州",
    "澳大利亚",
    "australia",
    "aussie",
    "澳洲",
    "オーストラリア",
-   "澳大利亞",
-   "甘肃",
-   "gansu",
-   "甘肅"
+   "澳大利亞"
   ],
   "content_tags": [
    "海岛",
@@ -9565,7 +9430,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9610,10 +9474,10 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
-   "阿拉斯加"
+   "阿拉斯加",
+   "alaska"
   ],
   "content_tags": [
    "熊",
@@ -9648,10 +9512,6 @@
    "thumb": true
   },
   "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
@@ -9699,7 +9559,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9740,7 +9599,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9781,7 +9639,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9822,7 +9679,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -9933,7 +9789,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -9980,7 +9835,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10020,7 +9874,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -10067,10 +9920,10 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
-   "阿拉斯加"
+   "阿拉斯加",
+   "alaska"
   ],
   "content_tags": [
    "雪山湖泊",
@@ -10107,7 +9960,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -10223,7 +10075,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10264,7 +10115,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10344,7 +10194,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10465,7 +10314,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -10506,7 +10354,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10607,7 +10454,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -10656,8 +10502,8 @@
    "usa",
    "united states",
    "america",
-   "american",
-   "美國"
+   "美國",
+   "アメリカ"
   ],
   "content_tags": [
    "沙漠",
@@ -10700,7 +10546,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -10742,7 +10587,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "黄石",
@@ -10786,7 +10630,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -10974,7 +10817,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11090,7 +10932,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -11168,8 +11009,7 @@
   },
   "tags": [
    "瑞典",
-   "sweden",
-   "swedish"
+   "sweden"
   ],
   "content_tags": [
    "雪山湖泊",
@@ -11249,7 +11089,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11364,7 +11203,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -11405,7 +11243,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -11451,7 +11288,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11489,16 +11325,9 @@
    "thumb": true
   },
   "tags": [
-   "德国",
-   "germany",
-   "deutschland",
-   "german",
-   "ドイツ",
-   "德國",
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -11538,7 +11367,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -11577,7 +11405,6 @@
    "西班牙",
    "spain",
    "españa",
-   "spanish",
    "スペイン"
   ],
   "content_tags": [
@@ -11614,7 +11441,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -11772,13 +11598,13 @@
    "scottish",
    "蘇格蘭",
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
    "english",
    "英國",
-   "英格蘭"
+   "英格蘭",
+   "イギリス"
   ],
   "content_tags": [
    "山峰",
@@ -11852,7 +11678,6 @@
   "tags": [
    "印度",
    "india",
-   "indian",
    "インド"
   ],
   "content_tags": [
@@ -11896,7 +11721,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -12065,13 +11889,13 @@
    "普羅旺斯",
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國",
    "阿尔卑斯",
    "alps",
-   "alpen"
+   "alpen",
+   "アルプス"
   ],
   "content_tags": [
    "云海",
@@ -12483,7 +12307,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ],
@@ -12751,7 +12574,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ",
    "阿拉斯加",
@@ -12828,7 +12650,6 @@
   "tags": [
    "冰岛",
    "iceland",
-   "island",
    "アイスランド",
    "冰島"
   ],
@@ -12947,7 +12768,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
