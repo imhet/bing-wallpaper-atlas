@@ -19,6 +19,8 @@ ALIASES_PATH = Path(__file__).parent / "geo_aliases.json"
 HIERARCHY_PATH = Path(__file__).parent / "geo_hierarchy.json"
 MAX_TAGS = 12
 _LATIN_RE = re.compile(r"[a-z0-9 '.\-]+")
+# CJK 子串匹配的否定上下文：文本含干扰词时整个组跳过（「格拉萨莱马」含子串「拉萨」）
+_CJK_NEGATIVE = {"拉萨": ["格拉萨莱马"]}
 
 log = logging.getLogger(__name__)
 
@@ -49,7 +51,8 @@ class _Matcher:
         return [
             name
             for name, cjk, latin_re in self.pairs
-            if name in text or any(a in text for a in cjk) or (latin_re and latin_re.search(text))
+            if not any(neg in text for neg in _CJK_NEGATIVE.get(name, []))
+            and (name in text or any(a in text for a in cjk) or (latin_re and latin_re.search(text)))
         ]
 
 
@@ -97,16 +100,24 @@ def enrich_tags(record, matcher=None):
 def main():
     parser = argparse.ArgumentParser(description="为存量记录补多语言地名 tags")
     parser.add_argument("--data-dir", default="data")
+    parser.add_argument(
+        "--rebuild",
+        action="store_true",
+        help="先清空已有 tags 再重算：词典/匹配规则收紧后，清除存量里按旧规则写入的误报 tags"
+        "（存量 tags 全部由本工具派生，重建安全——tests/test_geo_data.py 锁定结构）",
+    )
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     matcher = _get_matcher()
     changed = 0
     for market, recs in sorted(load_all(args.data_dir).items()):
         for rec in recs:
+            if args.rebuild:
+                rec = {**rec, "tags": []}
             new = enrich_tags(rec, matcher)
             if new["tags"] != rec["tags"] and upsert_record(args.data_dir, new):
                 changed += 1
-    log.info("geo enrich done: changed=%d", changed)
+    log.info("geo enrich done: changed=%d rebuild=%s", changed, args.rebuild)
 
 
 if __name__ == "__main__":

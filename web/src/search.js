@@ -5,11 +5,18 @@ import { suggestFromDict } from './suggest'
 // 单字负责字面召回，二元组让 AND 匹配到「连续词语」——搜「中国」不再被「国家公园+框景中」这类字符共现误报。
 // 假名（ぁ-ヿ）与汉字同等待遇：片假名别名（ヨセミテ等）靠 tags 参与跨语言匹配。
 export function tokenize(text) {
-  const parts = String(text).toLowerCase().match(/[a-z0-9]+|[ぁ-ヿ一-鿿]/g) || []
+  const src = String(text).toLowerCase()
+  const parts = [...src.matchAll(/[a-z0-9]+|[ぁ-ヿ一-鿿]/g)]
   const out = []
   for (let i = 0; i < parts.length; i++) {
-    out.push(parts[i])
-    if (parts[i].length === 1 && parts[i + 1]?.length === 1) out.push(parts[i] + parts[i + 1])
+    out.push(parts[i][0])
+    // 二元组必须原文相邻：标点/空格分隔的两字不组词（「湖，南」≠「湖南」，否则跨标点假词污染召回）
+    if (
+      parts[i][0].length === 1 &&
+      parts[i + 1]?.[0].length === 1 &&
+      parts[i + 1].index - parts[i].index === 1
+    )
+      out.push(parts[i][0] + parts[i + 1][0])
   }
   return out
 }

@@ -37,3 +37,23 @@ def test_no_ambiguous_group_names():
     banned = {"朝阳", "中山", "北海", "山南", "安康", "中卫", "来宾", "宿州", "抚州", "阿里"}
     clash = banned & aliases.keys()
     assert not clash, f"歧义地名回归词典: {clash}"
+
+
+def test_province_groups_have_traditional_aliases():
+    # 繁体用户搜索盲区：省组名含简繁差异字形时必须补繁体别名（搜「廣西」≠搜「广西」）
+    aliases, _ = _load()
+    expected = {
+        "云南": "雲南", "内蒙古": "內蒙古", "宁夏": "寧夏", "山东": "山東", "广东": "廣東",
+        "广西": "廣西", "江苏": "江蘇", "甘肃": "甘肅", "贵州": "貴州", "辽宁": "遼寧",
+        "陕西": "陝西", "黑龙江": "黑龍江", "台湾": "臺灣",
+    }
+    missing = {p: t for p, t in expected.items() if t not in aliases.get(p, [])}
+    assert not missing, f"省级组缺繁体别名: {missing}"
+
+
+def test_lijiang_city_group_has_no_bare_latin_alias():
+    # 丽江/漓江同拼音（lijiang）：英文语料里 lijiang 只出现在漓江——
+    # 丽江组不得保留裸 'lijiang' 别名，否则桂林图误挂云南
+    aliases, _ = _load()
+    assert "lijiang" not in aliases.get("丽江", []), "丽江组的裸 lijiang 别名会误吃英文漓江文本"
+    assert "lijiang river" in aliases.get("漓江", []), "漓江组应承接 lijiang river 召回"

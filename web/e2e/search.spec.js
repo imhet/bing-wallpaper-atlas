@@ -6,15 +6,14 @@ async function stubThumbs(page) {
   )
 }
 
-test('搜「湖南」：层级召回 ≥7 张，网格出现张家界图', async ({ page }) => {
+test('搜「湖南」：层级召回 ≥5 张，网格出现张家界图', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
   await page.fill('input.query', '湖南')
   await page.press('input.query', 'Enter')
   await expect(page.locator('.card').first()).toBeVisible()
-  // 卡片只显示 title/desc，中文记录的 desc 含「张家界」；en-us 卡标题是英文，按张数≥1 断言
-  // 原始 7 条里有跨日同名图（玻璃桥）被渲染层去重 → 网格 6 张
-  expect(await page.locator('.card').count()).toBeGreaterThanOrEqual(6)
+  // 假词误报清理后真实召回 5 条；AvatarMountain 跨市场同图去重 → 网格 4 张
+  expect(await page.locator('.card').count()).toBeGreaterThanOrEqual(4)
   await expect(page.locator('.card .title', { hasText: '张家界' }).first()).toBeVisible()
 })
 

@@ -45,6 +45,7 @@ COUNTRY_ALIASES = {
     "巴基斯坦": "巴基斯坦", "pakistan": "巴基斯坦",
     "哈萨克斯坦": "哈萨克斯坦", "kazakhstan": "哈萨克斯坦",
     "蒙古": "蒙古", "mongolia": "蒙古",
+    "内蒙古": "中国", "inner mongolia": "中国",
     "巴西": "巴西", "brazil": "巴西",
     "墨西哥": "墨西哥", "mexico": "墨西哥",
     "阿根廷": "阿根廷", "argentina": "阿根廷",
@@ -89,6 +90,7 @@ _LOWERED = {k.lower(): v for k, v in COUNTRY_ALIASES.items()}
 _NEGATIVE_PHRASES = {
     "america": ["south america", "north america", "latin america"],
     "korea": ["north korea"],
+    "蒙古": ["蒙古自治州", "内蒙古"],  # 中国行政区划名里的「蒙古」不是蒙古国
 }
 
 
@@ -97,11 +99,10 @@ def _contains(alias, text):
     if alias.isascii():
         if not re.search(rf"\b{re.escape(alias)}\b", text):
             return False
-        for phrase in _NEGATIVE_PHRASES.get(alias, []):
-            if phrase in text:
-                return False
-        return True
-    return alias in text
+    elif alias not in text:
+        return False
+    # 否定短语对拉丁/CJK 一视同仁：「博尔塔拉蒙古自治州」「内蒙古」里的「蒙古」不是蒙古国
+    return not any(neg in text for neg in _NEGATIVE_PHRASES.get(alias, []))
 
 
 def extract_region(location, full_text):

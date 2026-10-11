@@ -51,6 +51,12 @@ describe('highlightParts', () => {
   it('keeps latin words whole and lowercases', () => {
     expect(tokenize('Alaska 2024')).toEqual(['alaska', '2024'])
   })
+  it('does not form bigrams across punctuation or spaces', () => {
+    // 跨标点假相邻曾生成假词「湖南」（「布莱耶斯湖，南蒂罗尔」），导致搜湖南混入意大利图
+    expect(tokenize('布莱耶斯湖，南蒂罗尔')).not.toContain('湖南')
+    expect(tokenize('湖，南')).toEqual(['湖', '南'])
+    expect(tokenize('雪山 湖')).toEqual(['雪', '雪山', '山', '湖'])
+  })
 })
 
 describe('searchRecords', () => {

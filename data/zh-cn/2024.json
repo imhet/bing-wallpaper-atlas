@@ -88,18 +88,18 @@
    "thumb": true
   },
   "tags": [
-   "旧金山",
-   "san francisco",
-   "舊金山",
-   "三藩市",
    "加利福尼亚",
    "california",
    "加州",
    "加利福尼亞",
+   "旧金山",
+   "san francisco",
+   "舊金山",
+   "三藩市",
+   "サンフランシスコ",
    "美国",
    "usa",
-   "united states",
-   "america"
+   "united states"
   ]
  },
  {
@@ -131,11 +131,13 @@
    "deutschland",
    "german",
    "ドイツ",
+   "德國",
    "阿尔卑斯",
    "alps",
    "alpen",
    "アルプス",
-   "阿尔卑斯山"
+   "阿尔卑斯山",
+   "阿爾卑斯"
   ]
  },
  {
@@ -194,8 +196,10 @@
    "aussie",
    "澳洲",
    "オーストラリア",
+   "澳大利亞",
    "云南",
-   "yunnan"
+   "yunnan",
+   "雲南"
   ]
  },
  {
@@ -355,7 +359,8 @@
    "korea",
    "korean",
    "hangug",
-   "韓国"
+   "韓国",
+   "韓國"
   ]
  },
  {
@@ -387,13 +392,13 @@
    "夏威夷",
    "hawaii",
    "hawaiian",
+   "ハワイ",
    "美国",
    "usa",
    "united states",
    "america",
    "american",
    "美國",
-   "ハワイ",
    "アメリカ"
   ]
  },
@@ -456,7 +461,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -485,15 +491,15 @@
    "thumb": true
   },
   "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ",
    "班夫",
    "banff",
    "路易斯湖",
    "lake louise",
-   "路易絲湖",
-   "加拿大",
-   "canada",
-   "canadian",
-   "カナダ"
+   "路易絲湖"
   ]
  },
  {
@@ -524,7 +530,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -554,12 +561,13 @@
   "tags": [
    "巴黎",
    "paris",
+   "パリ",
    "法国",
    "france",
    "french",
    "français",
-   "パリ",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -646,7 +654,8 @@
    "netherlands",
    "holland",
    "dutch",
-   "オランダ"
+   "オランダ",
+   "荷蘭"
   ]
  },
  {
@@ -713,13 +722,14 @@
    "thumb": true
   },
   "tags": [
-   "马尔代夫",
-   "maldives",
-   "馬爾地夫",
    "印度",
    "india",
    "indian",
-   "インド"
+   "インド",
+   "马尔代夫",
+   "maldives",
+   "馬爾地夫",
+   "馬爾代夫"
   ]
  },
  {
@@ -749,7 +759,8 @@
    "冰岛",
    "iceland",
    "island",
-   "アイスランド"
+   "アイスランド",
+   "冰島"
   ]
  },
  {
@@ -863,15 +874,18 @@
    "thumb": true
   },
   "tags": [
+   "兰州",
+   "lanzhou",
+   "蘭州",
    "澳大利亚",
    "australia",
    "aussie",
    "澳洲",
    "オーストラリア",
-   "兰州",
-   "lanzhou",
+   "澳大利亞",
    "甘肃",
-   "gansu"
+   "gansu",
+   "甘肅"
   ]
  },
  {
@@ -900,15 +914,15 @@
    "thumb": true
   },
   "tags": [
-   "萨尔茨堡",
-   "salzburg",
-   "薩爾茨堡",
    "奥地利",
    "austria",
    "österreich",
    "austrian",
    "奧地利",
-   "オーストリア"
+   "オーストリア",
+   "萨尔茨堡",
+   "salzburg",
+   "薩爾茨堡"
   ]
  },
  {
@@ -1002,7 +1016,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -1058,12 +1073,12 @@
    "venice",
    "venezia",
    "威尼托",
+   "ヴェネツィア",
    "意大利",
    "italy",
    "italia",
    "義大利",
    "italian",
-   "ヴェネツィア",
    "イタリア"
   ]
  },
@@ -1153,6 +1168,7 @@
    "アメリカ",
    "达州",
    "dazhou",
+   "達州",
    "四川",
    "sichuan"
   ]
@@ -1182,12 +1198,12 @@
    "thumb": true
   },
   "tags": [
-   "开普敦",
-   "cape town",
-   "開普敦",
    "南非",
    "south africa",
-   "african"
+   "african",
+   "开普敦",
+   "cape town",
+   "開普敦"
   ]
  },
  {
@@ -1251,11 +1267,13 @@
    "中国",
    "china",
    "chinese",
+   "中國",
    "西安",
    "xi'an",
    "xian",
    "陕西",
-   "shaanxi"
+   "shaanxi",
+   "陝西"
   ]
  },
  {
@@ -1284,7 +1302,8 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "中國"
   ]
  },
  {
@@ -1502,16 +1521,16 @@
    "thumb": true
   },
   "tags": [
+   "多洛米蒂",
+   "dolomites",
+   "dolomiti",
+   "ドロミテ",
    "意大利",
    "italy",
    "italia",
    "義大利",
    "italian",
-   "多洛米蒂",
-   "dolomites",
-   "dolomiti",
-   "イタリア",
-   "ドロミテ"
+   "イタリア"
   ]
  },
  {
@@ -1636,6 +1655,7 @@
    "优胜美地",
    "yosemite",
    "優勝美地",
+   "ヨセミテ",
    "加利福尼亚",
    "california",
    "加州",
@@ -1643,8 +1663,7 @@
    "美国",
    "usa",
    "united states",
-   "america",
-   "american"
+   "america"
   ]
  },
  {
@@ -1680,7 +1699,8 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "澳大利亞"
   ]
  },
  {
@@ -1737,10 +1757,11 @@
    "中国",
    "china",
    "chinese",
-   "成都",
-   "chengdu",
+   "中國",
    "四川",
-   "sichuan"
+   "sichuan",
+   "成都",
+   "chengdu"
   ]
  },
  {
@@ -1768,13 +1789,13 @@
    "thumb": true
   },
   "tags": [
-   "温哥华",
-   "vancouver",
-   "溫哥華",
    "加拿大",
    "canada",
    "canadian",
-   "カナダ"
+   "カナダ",
+   "温哥华",
+   "vancouver",
+   "溫哥華"
   ]
  },
  {
@@ -1802,18 +1823,18 @@
    "thumb": true
   },
   "tags": [
-   "大峡谷",
-   "grand canyon",
-   "大峽谷",
    "亚利桑那",
    "arizona",
    "亞利桑那",
+   "大峡谷",
+   "grand canyon",
+   "大峽谷",
+   "グランドキャニオン",
    "美国",
    "usa",
    "united states",
    "america",
-   "american",
-   "美國"
+   "american"
   ]
  },
  {
@@ -1846,9 +1867,9 @@
    "california",
    "加州",
    "加利福尼亞",
-   "阿拉斯加",
-   "alaska",
-   "alaskan",
+   "北极",
+   "arctic",
+   "北極",
    "美国",
    "usa",
    "united states",
@@ -1933,7 +1954,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -2052,7 +2074,8 @@
    "bangkok",
    "泰国",
    "thailand",
-   "thai"
+   "thai",
+   "泰國"
   ]
  },
  {
@@ -2347,7 +2370,8 @@
   "tags": [
    "泰国",
    "thailand",
-   "thai"
+   "thai",
+   "泰國"
   ]
  },
  {
@@ -2414,6 +2438,7 @@
    "中国",
    "china",
    "chinese",
+   "中國",
    "成都",
    "chengdu",
    "四川",
@@ -2545,7 +2570,8 @@
   "tags": [
    "中国",
    "china",
-   "chinese"
+   "chinese",
+   "中國"
   ]
  },
  {
@@ -2601,7 +2627,8 @@
    "新西兰",
    "new zealand",
    "紐西蘭",
-   "ニュージーランド"
+   "ニュージーランド",
+   "新西蘭"
   ]
  },
  {
@@ -2656,7 +2683,8 @@
    "korea",
    "korean",
    "hangug",
-   "韓国"
+   "韓国",
+   "韓國"
   ]
  },
  {
@@ -2770,11 +2798,12 @@
    "thumb": true
   },
   "tags": [
+   "上海",
+   "shanghai",
    "中国",
    "china",
    "chinese",
-   "上海",
-   "shanghai"
+   "中國"
   ]
  },
  {
@@ -2889,14 +2918,15 @@
    "thumb": true
   },
   "tags": [
+   "勃朗峰",
+   "mont blanc",
+   "白朗峰",
    "法国",
    "france",
    "french",
    "français",
-   "勃朗峰",
-   "mont blanc",
-   "白朗峰",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -3031,12 +3061,12 @@
    "thumb": true
   },
   "tags": [
-   "姬路",
-   "himeji",
-   "姫路",
    "兵库",
    "hyogo",
    "兵庫",
+   "姬路",
+   "himeji",
+   "姫路",
    "日本",
    "japan",
    "japanese",
@@ -3073,14 +3103,14 @@
    "california",
    "加州",
    "加利福尼亞",
-   "阿拉斯加",
-   "alaska",
-   "alaskan",
    "美国",
    "usa",
    "united states",
    "america",
-   "american"
+   "american",
+   "美國",
+   "アメリカ",
+   "阿拉斯加"
   ]
  },
  {
@@ -3112,7 +3142,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -3276,7 +3307,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -3347,7 +3379,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -3379,13 +3412,13 @@
    "new york",
    "nyc",
    "紐約",
+   "ニューヨーク",
    "美国",
    "usa",
    "united states",
    "america",
    "american",
    "美國",
-   "ニューヨーク",
    "アメリカ"
   ]
  },
@@ -3511,17 +3544,17 @@
    "thumb": true
   },
   "tags": [
-   "黄石",
-   "yellowstone",
-   "黃石",
    "美国",
    "usa",
    "united states",
    "america",
    "american",
    "美國",
-   "イエローストーン",
-   "アメリカ"
+   "アメリカ",
+   "黄石",
+   "yellowstone",
+   "黃石",
+   "イエローストーン"
   ]
  },
  {
@@ -3625,13 +3658,13 @@
   "tags": [
    "柏林",
    "berlin",
-   "都柏林",
-   "dublin",
+   "ベルリン",
    "爱尔兰",
    "ireland",
    "irish",
    "愛爾蘭",
-   "ベルリン"
+   "都柏林",
+   "dublin"
   ]
  },
  {
@@ -3761,14 +3794,14 @@
    "california",
    "加州",
    "加利福尼亞",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞",
    "美国",
-   "usa",
-   "united states",
-   "america",
-   "american",
-   "美國",
-   "アメリカ",
-   "澳大利亚"
+   "usa"
   ]
  },
  {
@@ -3833,11 +3866,13 @@
    "中国",
    "china",
    "chinese",
+   "中國",
+   "福建",
+   "fujian",
    "福建土楼",
    "tulou",
    "fujian tulou",
-   "福建",
-   "fujian"
+   "福建土樓"
   ]
  },
  {
@@ -4115,7 +4150,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -4146,11 +4182,12 @@
    "伊斯坦布尔",
    "istanbul",
    "伊斯坦堡",
+   "イスタンブール",
+   "伊斯坦布爾",
    "土耳其",
    "turkey",
    "türkiye",
    "turkish",
-   "イスタンブール",
    "トルコ"
   ]
  },
@@ -4182,10 +4219,11 @@
    "印度",
    "india",
    "indian",
+   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
-   "インド"
+   "印度尼西亞"
   ]
  },
  {
@@ -4265,10 +4303,10 @@
    "大峡谷",
    "grand canyon",
    "大峽谷",
+   "グランドキャニオン",
    "纳米比亚",
    "namibia",
-   "納米比亞",
-   "グランドキャニオン"
+   "納米比亞"
   ]
  },
  {
@@ -4417,13 +4455,13 @@
    "thumb": true
   },
   "tags": [
-   "温哥华",
-   "vancouver",
-   "溫哥華",
    "加拿大",
    "canada",
    "canadian",
-   "カナダ"
+   "カナダ",
+   "温哥华",
+   "vancouver",
+   "溫哥華"
   ]
  },
  {
@@ -4545,7 +4583,8 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "澳大利亞"
   ]
  },
  {
@@ -4575,10 +4614,11 @@
    "印度",
    "india",
    "indian",
+   "インド",
    "斯里兰卡",
    "sri lanka",
    "ceylon",
-   "インド"
+   "斯里蘭卡"
   ]
  },
  {
@@ -4871,7 +4911,8 @@
    "里约热内卢",
    "rio de janeiro",
    "rio",
-   "里約"
+   "里約",
+   "里約熱內盧"
   ]
  },
  {
@@ -4903,7 +4944,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -4930,13 +4972,13 @@
    "thumb": true
   },
   "tags": [
-   "哥本哈根",
-   "copenhagen",
-   "københavn",
    "丹麦",
    "denmark",
    "danish",
-   "丹麥"
+   "丹麥",
+   "哥本哈根",
+   "copenhagen",
+   "københavn"
   ]
  },
  {
@@ -4966,7 +5008,8 @@
   "tags": [
    "尼泊尔",
    "nepal",
-   "nepali"
+   "nepali",
+   "尼泊爾"
   ]
  },
  {
@@ -5022,7 +5065,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -5050,18 +5094,18 @@
    "thumb": true
   },
   "tags": [
-   "荷兰",
-   "netherlands",
-   "holland",
-   "dutch",
    "加利福尼亚",
    "california",
    "加州",
    "加利福尼亞",
+   "荷兰",
+   "netherlands",
+   "holland",
+   "dutch",
+   "オランダ",
+   "荷蘭",
    "阿拉斯加",
-   "alaska",
-   "alaskan",
-   "オランダ"
+   "alaska"
   ]
  },
  {
@@ -5094,9 +5138,9 @@
    "california",
    "加州",
    "加利福尼亞",
-   "阿拉斯加",
-   "alaska",
-   "alaskan",
+   "北极",
+   "arctic",
+   "北極",
    "美国",
    "usa",
    "united states",
@@ -5166,6 +5210,7 @@
    "中国",
    "china",
    "chinese",
+   "中國",
    "厦门",
    "xiamen",
    "amoy",
@@ -5412,7 +5457,8 @@
    "冰岛",
    "iceland",
    "island",
-   "アイスランド"
+   "アイスランド",
+   "冰島"
   ]
  },
  {
@@ -5443,7 +5489,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -5501,6 +5548,7 @@
    "中国",
    "china",
    "chinese",
+   "中國",
    "湖南",
    "hunan",
    "郴州",
@@ -5582,15 +5630,16 @@
    "thumb": true
   },
   "tags": [
-   "山口",
-   "yamaguchi",
    "印度",
    "india",
    "indian",
+   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
-   "インド"
+   "印度尼西亞",
+   "山口",
+   "yamaguchi"
   ]
  },
  {
@@ -5628,6 +5677,7 @@
    "アメリカ",
    "达州",
    "dazhou",
+   "達州",
    "四川",
    "sichuan"
   ]
@@ -5661,10 +5711,11 @@
    "印度",
    "india",
    "indian",
+   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
-   "インド"
+   "印度尼西亞"
   ]
  },
  {
@@ -5696,12 +5747,12 @@
    "florence",
    "firenze",
    "佛羅倫薩",
+   "フィレンツェ",
    "意大利",
    "italy",
    "italia",
    "義大利",
    "italian",
-   "フィレンツェ",
    "イタリア"
   ]
  },
@@ -5733,7 +5784,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -5765,7 +5817,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -5793,16 +5846,18 @@
    "thumb": true
   },
   "tags": [
-   "巴厘岛",
-   "bali",
-   "峇里島",
    "印度",
    "india",
    "indian",
+   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
-   "インド"
+   "印度尼西亞",
+   "巴厘岛",
+   "bali",
+   "峇里島",
+   "巴厘島"
   ]
  },
  {
@@ -5865,9 +5920,6 @@
    "thumb": true
   },
   "tags": [
-   "罗马",
-   "rome",
-   "roma",
    "塞维利亚",
    "seville",
    "sevilla",
@@ -5876,7 +5928,10 @@
    "italy",
    "italia",
    "義大利",
-   "italian"
+   "italian",
+   "イタリア",
+   "罗马",
+   "rome"
   ]
  },
  {
@@ -5960,15 +6015,18 @@
    "thumb": true
   },
   "tags": [
+   "兰州",
+   "lanzhou",
+   "蘭州",
    "澳大利亚",
    "australia",
    "aussie",
    "澳洲",
    "オーストラリア",
-   "兰州",
-   "lanzhou",
+   "澳大利亞",
    "甘肃",
-   "gansu"
+   "gansu",
+   "甘肅"
   ]
  },
  {
@@ -6245,12 +6303,12 @@
    "thumb": true
   },
   "tags": [
-   "神奈川",
-   "kanagawa",
    "日本",
    "japan",
    "japanese",
-   "nippon"
+   "nippon",
+   "神奈川",
+   "kanagawa"
   ]
  },
  {
@@ -6307,14 +6365,16 @@
    "thumb": true
   },
   "tags": [
-   "罗滕堡",
-   "rothenburg",
-   "羅騰堡",
    "德国",
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國",
+   "罗滕堡",
+   "rothenburg",
+   "羅騰堡",
+   "羅滕堡"
   ]
  },
  {
@@ -6345,12 +6405,13 @@
    "印度",
    "india",
    "indian",
+   "インド",
    "法国",
    "france",
    "french",
    "français",
-   "インド",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -6462,10 +6523,11 @@
    "中国",
    "china",
    "chinese",
-   "成都",
-   "chengdu",
+   "中國",
    "四川",
-   "sichuan"
+   "sichuan",
+   "成都",
+   "chengdu"
   ]
  },
  {
@@ -6586,12 +6648,13 @@
   "tags": [
    "巴黎",
    "paris",
+   "パリ",
    "法国",
    "france",
    "french",
    "français",
-   "パリ",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -6623,7 +6686,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -6717,11 +6781,11 @@
    "italia",
    "義大利",
    "italian",
+   "イタリア",
    "托斯卡纳",
    "tuscany",
    "toskana",
-   "托斯卡納",
-   "イタリア"
+   "托斯卡納"
   ]
  },
  {
@@ -6843,6 +6907,7 @@
    "中国",
    "china",
    "chinese",
+   "中國",
    "重庆",
    "chongqing",
    "重慶"
@@ -6943,13 +7008,13 @@
    "夏威夷",
    "hawaii",
    "hawaiian",
+   "ハワイ",
    "美国",
    "usa",
    "united states",
    "america",
    "american",
    "美國",
-   "ハワイ",
    "アメリカ"
   ]
  },
@@ -7016,7 +7081,8 @@
    "bangkok",
    "泰国",
    "thailand",
-   "thai"
+   "thai",
+   "泰國"
   ]
  },
  {
@@ -7107,13 +7173,13 @@
    "thumb": true
   },
   "tags": [
-   "温哥华",
-   "vancouver",
-   "溫哥華",
    "加拿大",
    "canada",
    "canadian",
-   "カナダ"
+   "カナダ",
+   "温哥华",
+   "vancouver",
+   "溫哥華"
   ]
  },
  {
@@ -7206,7 +7272,8 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "澳大利亞"
   ]
  },
  {
@@ -7459,6 +7526,9 @@
    "thumb": true
   },
   "tags": [
+   "兰州",
+   "lanzhou",
+   "蘭州",
    "美国",
    "usa",
    "united states",
@@ -7466,8 +7536,6 @@
    "american",
    "美國",
    "アメリカ",
-   "兰州",
-   "lanzhou",
    "甘肃",
    "gansu"
   ]
@@ -7499,7 +7567,8 @@
   "tags": [
    "泰国",
    "thailand",
-   "thai"
+   "thai",
+   "泰國"
   ]
  },
  {
@@ -7650,12 +7719,13 @@
   "tags": [
    "巴黎",
    "paris",
+   "パリ",
    "法国",
    "france",
    "french",
    "français",
-   "パリ",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -7718,10 +7788,11 @@
    "印度",
    "india",
    "indian",
+   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
-   "インド"
+   "印度尼西亞"
   ]
  },
  {
@@ -7780,6 +7851,8 @@
   "tags": [
    "伦敦",
    "london",
+   "ロンドン",
+   "倫敦",
    "英国",
    "uk",
    "united kingdom",
@@ -7787,9 +7860,7 @@
    "england",
    "english",
    "英國",
-   "英格蘭",
-   "ロンドン",
-   "イギリス"
+   "英格蘭"
   ]
  },
  {
@@ -7902,13 +7973,13 @@
    "thumb": true
   },
   "tags": [
-   "多伦多",
-   "toronto",
-   "多倫多",
    "加拿大",
    "canada",
    "canadian",
-   "カナダ"
+   "カナダ",
+   "多伦多",
+   "toronto",
+   "多倫多"
   ]
  },
  {
@@ -8010,7 +8081,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -8062,13 +8134,13 @@
    "thumb": true
   },
   "tags": [
-   "里斯本",
-   "lisbon",
-   "lisboa",
    "葡萄牙",
    "portugal",
    "portuguese",
-   "ポルトガル"
+   "ポルトガル",
+   "里斯本",
+   "lisbon",
+   "lisboa"
   ]
  },
  {
@@ -8095,13 +8167,14 @@
    "thumb": true
   },
   "tags": [
-   "茨城",
-   "ibaraki",
    "德国",
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國",
+   "茨城",
+   "ibaraki"
   ]
  },
  {
@@ -8132,12 +8205,13 @@
    "印度",
    "india",
    "indian",
+   "インド",
    "法国",
    "france",
    "french",
    "français",
-   "インド",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -8268,7 +8342,8 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "澳大利亞"
   ]
  },
  {
@@ -8296,11 +8371,12 @@
    "thumb": true
   },
   "tags": [
+   "上海",
+   "shanghai",
    "中国",
    "china",
    "chinese",
-   "上海",
-   "shanghai"
+   "中國"
   ]
  },
  {
@@ -8497,14 +8573,14 @@
    "california",
    "加州",
    "加利福尼亞",
-   "阿拉斯加",
-   "alaska",
-   "alaskan",
    "美国",
    "usa",
    "united states",
    "america",
-   "american"
+   "american",
+   "美國",
+   "アメリカ",
+   "阿拉斯加"
   ]
  },
  {
@@ -8535,7 +8611,8 @@
    "冰岛",
    "iceland",
    "island",
-   "アイスランド"
+   "アイスランド",
+   "冰島"
   ]
  },
  {
@@ -8632,12 +8709,12 @@
    "venice",
    "venezia",
    "威尼托",
+   "ヴェネツィア",
    "意大利",
    "italy",
    "italia",
    "義大利",
    "italian",
-   "ヴェネツィア",
    "イタリア"
   ]
  },
@@ -8773,10 +8850,11 @@
    "中国",
    "china",
    "chinese",
-   "禾木",
-   "hemu",
+   "中國",
    "新疆",
-   "xinjiang"
+   "xinjiang",
+   "禾木",
+   "hemu"
   ]
  },
  {
@@ -8810,9 +8888,9 @@
    "california",
    "加州",
    "加利福尼亞",
-   "阿拉斯加",
-   "alaska",
-   "alaskan",
+   "北极",
+   "arctic",
+   "北極",
    "美国",
    "usa",
    "united states",
@@ -8997,10 +9075,11 @@
    "印度",
    "india",
    "indian",
+   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
-   "インド"
+   "印度尼西亞"
   ]
  },
  {
@@ -9067,11 +9146,11 @@
    "italia",
    "義大利",
    "italian",
+   "イタリア",
    "托斯卡纳",
    "tuscany",
    "toskana",
-   "托斯卡納",
-   "イタリア"
+   "托斯卡納"
   ]
  },
  {
@@ -9102,11 +9181,12 @@
    "中国",
    "china",
    "chinese",
+   "中國",
+   "安徽",
+   "anhui",
    "黄山",
    "huangshan",
-   "黃山",
-   "安徽",
-   "anhui"
+   "黃山"
   ]
  },
  {
@@ -9134,13 +9214,13 @@
    "thumb": true
   },
   "tags": [
-   "魁北克",
-   "quebec",
-   "québec",
    "加拿大",
    "canada",
    "canadian",
-   "カナダ"
+   "カナダ",
+   "魁北克",
+   "quebec",
+   "québec"
   ]
  },
  {
@@ -9300,12 +9380,12 @@
    "thumb": true
   },
   "tags": [
-   "茨城",
-   "ibaraki",
    "日本",
    "japan",
    "japanese",
-   "nippon"
+   "nippon",
+   "茨城",
+   "ibaraki"
   ]
  },
  {
@@ -9337,13 +9417,13 @@
    "new york",
    "nyc",
    "紐約",
+   "ニューヨーク",
    "美国",
    "usa",
    "united states",
    "america",
    "american",
    "美國",
-   "ニューヨーク",
    "アメリカ"
   ]
  },
@@ -9462,16 +9542,17 @@
    "thumb": true
   },
   "tags": [
-   "罗马",
-   "rome",
-   "roma",
    "意大利",
    "italy",
    "italia",
    "義大利",
    "italian",
+   "イタリア",
+   "罗马",
+   "rome",
+   "roma",
    "ローマ",
-   "イタリア"
+   "羅馬"
   ]
  },
  {
@@ -9571,14 +9652,15 @@
    "thumb": true
   },
   "tags": [
+   "勃朗峰",
+   "mont blanc",
+   "白朗峰",
    "法国",
    "france",
    "french",
    "français",
-   "勃朗峰",
-   "mont blanc",
-   "白朗峰",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -9611,7 +9693,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -9643,10 +9726,10 @@
    "加拿大",
    "canada",
    "canadian",
+   "カナダ",
    "北极",
    "arctic",
-   "北極",
-   "カナダ"
+   "北極"
   ]
  },
  {
@@ -9732,15 +9815,15 @@
    "爱丁堡",
    "edinburgh",
    "愛丁堡",
+   "苏格兰",
+   "scotland",
+   "scottish",
+   "蘇格蘭",
    "英国",
    "uk",
    "united kingdom",
    "britain",
-   "england",
-   "english",
-   "英國",
-   "英格蘭",
-   "苏格兰"
+   "england"
   ]
  },
  {
@@ -9769,12 +9852,13 @@
   "tags": [
    "巴黎",
    "paris",
+   "パリ",
    "法国",
    "france",
    "french",
    "français",
-   "パリ",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -9807,7 +9891,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -9835,17 +9920,17 @@
    "thumb": true
   },
   "tags": [
-   "黄石",
-   "yellowstone",
-   "黃石",
    "美国",
    "usa",
    "united states",
    "america",
    "american",
    "美國",
-   "イエローストーン",
-   "アメリカ"
+   "アメリカ",
+   "黄石",
+   "yellowstone",
+   "黃石",
+   "イエローストーン"
   ]
  },
  {
@@ -9993,8 +10078,10 @@
    "中国",
    "china",
    "chinese",
+   "中國",
    "坝上",
-   "bashang"
+   "bashang",
+   "壩上"
   ]
  },
  {
@@ -10023,7 +10110,8 @@
    "冰岛",
    "iceland",
    "island",
-   "アイスランド"
+   "アイスランド",
+   "冰島"
   ]
  },
  {
@@ -10112,12 +10200,12 @@
    "thumb": true
   },
   "tags": [
-   "班夫",
-   "banff",
    "加拿大",
    "canada",
    "canadian",
-   "カナダ"
+   "カナダ",
+   "班夫",
+   "banff"
   ]
  },
  {
@@ -10256,12 +10344,13 @@
    "thumb": true
   },
   "tags": [
-   "清迈",
-   "chiang mai",
-   "清邁",
    "泰国",
    "thailand",
-   "thai"
+   "thai",
+   "泰國",
+   "清迈",
+   "chiang mai",
+   "清邁"
   ]
  },
  {
@@ -10294,7 +10383,8 @@
    "netherlands",
    "holland",
    "dutch",
-   "オランダ"
+   "オランダ",
+   "荷蘭"
   ]
  },
  {
@@ -10389,17 +10479,18 @@
    "thumb": true
   },
   "tags": [
-   "拱门",
-   "arches",
-   "拱門",
    "塔斯马尼亚",
    "tasmania",
    "塔斯馬尼亞",
+   "拱门",
+   "arches",
+   "拱門",
    "澳大利亚",
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "澳大利亞"
   ]
  },
  {
@@ -10431,7 +10522,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -10524,7 +10616,8 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "澳大利亞"
   ]
  },
  {
@@ -10721,7 +10814,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -10814,14 +10908,14 @@
    "california",
    "加州",
    "加利福尼亞",
-   "阿拉斯加",
-   "alaska",
-   "alaskan",
    "美国",
    "usa",
    "united states",
    "america",
-   "american"
+   "american",
+   "美國",
+   "アメリカ",
+   "阿拉斯加"
   ]
  },
  {
@@ -10954,11 +11048,13 @@
    "中国",
    "china",
    "chinese",
+   "中國",
    "大连",
    "dalian",
    "大連",
    "辽宁",
-   "liaoning"
+   "liaoning",
+   "遼寧"
   ]
  },
  {
@@ -10988,7 +11084,8 @@
    "里约热内卢",
    "rio de janeiro",
    "rio",
-   "里約"
+   "里約",
+   "里約熱內盧"
   ]
  },
  {
@@ -11018,12 +11115,13 @@
   "tags": [
    "巴黎",
    "paris",
+   "パリ",
    "法国",
    "france",
    "french",
    "français",
-   "パリ",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -11160,12 +11258,13 @@
    "thumb": true
   },
   "tags": [
-   "布达佩斯",
-   "budapest",
    "匈牙利",
    "hungary",
    "hungarian",
-   "ブダペシュト"
+   "布达佩斯",
+   "budapest",
+   "ブダペシュト",
+   "布達佩斯"
   ]
  },
  {
@@ -11223,16 +11322,16 @@
    "thumb": true
   },
   "tags": [
+   "多洛米蒂",
+   "dolomites",
+   "dolomiti",
+   "ドロミテ",
    "意大利",
    "italy",
    "italia",
    "義大利",
    "italian",
-   "多洛米蒂",
-   "dolomites",
-   "dolomiti",
-   "イタリア",
-   "ドロミテ"
+   "イタリア"
   ]
  },
  {
@@ -11259,15 +11358,15 @@
    "thumb": true
   },
   "tags": [
-   "萨尔茨堡",
-   "salzburg",
-   "薩爾茨堡",
    "奥地利",
    "austria",
    "österreich",
    "austrian",
    "奧地利",
-   "オーストリア"
+   "オーストリア",
+   "萨尔茨堡",
+   "salzburg",
+   "薩爾茨堡"
   ]
  },
  {
@@ -11359,7 +11458,8 @@
    "罗马",
    "rome",
    "roma",
-   "ローマ"
+   "ローマ",
+   "羅馬"
   ]
  },
  {
@@ -11421,11 +11521,13 @@
    "中国",
    "china",
    "chinese",
+   "中國",
+   "日喀则",
+   "shigatse",
+   "日喀則",
    "西藏",
    "xizang",
-   "tibet",
-   "日喀则",
-   "shigatse"
+   "tibet"
   ]
  },
  {
@@ -11528,7 +11630,8 @@
    "germany",
    "deutschland",
    "german",
-   "ドイツ"
+   "ドイツ",
+   "德國"
   ]
  },
  {
@@ -11642,7 +11745,8 @@
    "france",
    "french",
    "français",
-   "フランス"
+   "フランス",
+   "法國"
   ]
  },
  {
@@ -11673,10 +11777,11 @@
    "印度",
    "india",
    "indian",
+   "インド",
    "印度尼西亚",
    "indonesia",
    "indonesian",
-   "インド"
+   "印度尼西亞"
   ]
  },
  {
@@ -11712,7 +11817,8 @@
    "australia",
    "aussie",
    "澳洲",
-   "オーストラリア"
+   "オーストラリア",
+   "澳大利亞"
   ]
  },
  {

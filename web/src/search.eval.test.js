@@ -21,9 +21,9 @@ const hits = (q) => searchRecords(index, records, q, {})
 const ids = (q) => new Set(hits(q).map((r) => r.id))
 
 describe('真实数据黄金集 · 涛总常用词', () => {
-  it('「湖南」召回 ≥7 条且包含 3 张张家界图（层级词典：子地名挂父行政区）', () => {
+  it('「湖南」召回 ≥5 条且包含 3 张张家界图（层级词典：子地名挂父行政区）', () => {
     const got = ids('湖南')
-    expect(got.size).toBeGreaterThanOrEqual(7)
+    expect(got.size).toBeGreaterThanOrEqual(5)
     for (const id of ['en-us-2022-05-19', 'en-us-2023-08-18', 'zh-cn-2023-08-17'])
       expect(got, `湖南应召回张家界图 ${id}`).toContain(id)
   })
@@ -32,9 +32,9 @@ describe('真实数据黄金集 · 涛总常用词', () => {
     expect(ids('张家界').size).toBeGreaterThanOrEqual(3)
   })
 
-  it('「四川」召回 ≥30 条且含大熊猫/九寨沟图', () => {
+  it('「四川」召回 ≥29 条且含大熊猫/九寨沟图', () => {
     const got = ids('四川')
-    expect(got.size).toBeGreaterThanOrEqual(30)
+    expect(got.size).toBeGreaterThanOrEqual(29)
     expect(got).toContain('en-us-2021-03-16') // Bifengxia Panda Base
     expect(got).toContain('zh-cn-2023-08-07') // 九寨沟五花海
   })
@@ -83,7 +83,7 @@ describe('真实数据黄金集 · 跨语言桥接', () => {
 
   // FIXME(词典繁体覆盖不全): 广西组别名只有 ['guangxi']，无「廣西」——繁体用户搜广西零结果。
   // 修复：补繁体别名 → 重跑 geo_enrich。其余省级组宜同步体检
-  it.skip('繁体「廣西」应召回桂林喀斯特图（当前 0 条）', () => {
+  it('繁体「廣西」应召回桂林喀斯特图（当前 0 条）', () => {
     expect(ids('廣西').size).toBeGreaterThan(0)
   })
 })
@@ -107,8 +107,16 @@ describe('真实数据黄金集 · 防误报', () => {
     expect(got, 'Arches NP 与中国无关，不得混入').not.toContain('en-us-2023-05-08')
   })
 
-  it('「雪山 湖」召回高山湖泊图（「山湖」二元组建功）', () => {
-    expect(ids('雪山 湖')).toContain('zh-cn-2024-09-02')
+  it('「雪山 湖」诚实零结果：查询词间不再生成假「山湖」二元组（雪山召回待内容打标）', () => {
+    expect(hits('雪山 湖')).toHaveLength(0)
+  })
+
+  it('「国美」零误报（跨标点假二元组已修：数据里「…国，美…」不再生成假词）', () => {
+    expect(hits('国美')).toHaveLength(0)
+  })
+
+  it('「湖南」不混入意大利南蒂罗尔图（「布莱耶斯湖，南蒂罗尔」不再生成假「湖南」）', () => {
+    expect(ids('湖南')).not.toContain('zh-cn-2024-02-16')
   })
 })
 
@@ -133,16 +141,16 @@ describe('真实数据黄金集 · 地名与筛选', () => {
   })
 })
 
-describe('真实数据黄金集 · 已确认误报 bug（修复时去掉 skip，先红后绿）', () => {
+describe('真实数据黄金集 · 误报复归防护（曾上线后修掉，锁死防回归）', () => {
   // FIXME(词典歧义): 西班牙「格拉萨莱马山自然公园」含连续子串「拉萨」→ CJK 子串匹配误命中拉萨组 →
   // 层级词典又挂上父级「西藏」→ 搜西藏混入西班牙图（zh-cn-2026-06-11）
-  it.skip('「西藏」不得混入西班牙格拉萨莱马图（zh-cn-2026-06-11）', () => {
+  it('「西藏」不得混入西班牙格拉萨莱马图（zh-cn-2026-06-11）', () => {
     expect(hits('西藏').map((r) => r.id)).not.toContain('zh-cn-2026-06-11')
   })
 
   // FIXME(词典歧义): 桂林图英文文本 "Lijiang River"（漓江）按词边界命中「丽江」组（云南）→ 挂上云南 tags →
   // 搜「云南」混入桂林图。丽江/漓江同拼音，需词典层面消歧（漓江组或丽江组别名收窄）
-  it.skip('「云南」不得混入桂林漓江图（en-us-2022-10-22）', () => {
+  it('「云南」不得混入桂林漓江图（en-us-2022-10-22）', () => {
     expect(hits('云南').map((r) => r.id)).not.toContain('en-us-2022-10-22')
   })
 })

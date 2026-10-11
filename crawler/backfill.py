@@ -42,7 +42,7 @@ def verify_mkt(markets, session=None):
 def build_record(merged):
     loc = parse_copyright(merged.get("desc", ""))
     desc = merged.get("desc", "") or ""
-    return {
+    rec = {
         "id": f'{merged["market"]}-{merged["date"]}',
         "market": merged["market"],
         "date": merged["date"],

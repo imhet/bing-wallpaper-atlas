@@ -46,3 +46,29 @@ def test_hierarchy_parent_aliases_injected(make_record):
     tags = enrich_tags(rec)["tags"]
     assert "张家界" in tags
     assert "湖南" in tags and "hunan" in tags
+
+
+def test_cjk_substring_blocked_by_negative_context(make_record):
+    # 「格拉萨莱马」（西班牙小镇）含子串「拉萨」——否定上下文阻断误命中，
+    # 不再连带挂上父行政区「西藏」混入西藏搜索
+    rec = make_record(
+        title="黄喉蜂虎",
+        desc="格拉萨莱马山自然公园，加的斯，西班牙 (© X)",
+        location=["格拉萨莱马山自然公园", "加的斯", "西班牙"],
+    )
+    tags = enrich_tags(rec)["tags"]
+    assert "拉萨" not in tags and "西藏" not in tags and "lhasa" not in tags
+    assert "西班牙" in tags
+
+
+def test_lijiang_river_is_not_lijiang_city(make_record):
+    # 桂林漓江（Lijiang River）与云南丽江同拼音：拉丁别名收窄后，
+    # 英文漓江文本挂漓江组+广西层级，不再误挂丽江（云南）
+    rec = make_record(
+        title=None,
+        desc="Karst mountains in Guilin and Lijiang River National Park, China (© X)",
+        location=["Guilin", "Lijiang River National Park", "China"],
+    )
+    tags = enrich_tags(rec)["tags"]
+    assert "丽江" not in tags and "云南" not in tags and "yunnan" not in tags
+    assert "桂林" in tags and "广西" in tags

@@ -20,7 +20,7 @@ def test_build_record_parses_everything():
     assert rec["region"] == "南极洲" or rec["region"] is None  # 词表未覆盖时允许 None
     assert rec["photographer"] == "Otto Plantema"
     assert rec["gallery"] == "Minden Pictures"
-    assert rec["tags"] == []
+    assert rec["tags"] == ["南极", "antarctica", "antarctic", "南極"]  # build_record 必须接 geo_enrich
 
 
 def test_build_record_bad_url_never_crashes():
@@ -113,9 +113,6 @@ def test_run_backfill_one_bad_record_does_not_abort(tmp_path, monkeypatch):
     assert len(load_year(tmp_path, "zh-cn", 2026)) == 1
 
 
-@pytest.mark.skip(reason="FIXME(死代码): build_record 首个 return 之后的 `return enrich_tags(rec)` 永不可达——"
-                    "每日增量/回填产出的新记录 tags 全空（线上 829/3458 条缺 tags，扩展市场几乎全空）。"
-                    "修复：改为 rec = {...}; return enrich_tags(rec)，并翻转 test_build_record_parses_everything 的 tags==[] 断言")
 def test_build_record_enriches_tags():
     merged = {
         "market": "zh-cn", "date": "2026-10-11",
