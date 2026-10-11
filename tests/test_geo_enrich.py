@@ -72,3 +72,12 @@ def test_lijiang_river_is_not_lijiang_city(make_record):
     tags = enrich_tags(rec)["tags"]
     assert "丽江" not in tags and "云南" not in tags and "yunnan" not in tags
     assert "桂林" in tags and "广西" in tags
+
+
+def test_marble_rock_is_not_dali_city(make_record):
+    # 「魔鬼大理石保护区」（澳大利亚）含子串「大理」——否定上下文阻断，
+    # 不再误挂大理组+层级父行政区云南
+    rec = make_record(title=None, desc="魔鬼大理石保护区，澳大利亚 (© X)", location=["魔鬼大理石保护区", "澳大利亚"])
+    tags = enrich_tags(rec)["tags"]
+    assert "大理" not in tags and "云南" not in tags and "yunnan" not in tags
+    assert "澳大利亚" in tags

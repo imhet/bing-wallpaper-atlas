@@ -20,7 +20,10 @@ HIERARCHY_PATH = Path(__file__).parent / "geo_hierarchy.json"
 MAX_TAGS = 12
 _LATIN_RE = re.compile(r"[a-z0-9 '.\-]+")
 # CJK 子串匹配的否定上下文：文本含干扰词时整个组跳过（「格拉萨莱马」含子串「拉萨」）
-_CJK_NEGATIVE = {"拉萨": ["格拉萨莱马"]}
+_CJK_NEGATIVE = {
+    "拉萨": ["格拉萨莱马"],
+    "大理": ["大理石", "大理岩"],  # 「魔鬼大理石保护区」（澳大利亚）不是云南大理
+}
 
 log = logging.getLogger(__name__)
 
