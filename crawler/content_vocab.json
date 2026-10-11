@@ -1,121 +1,538 @@
 [
-  {"zh": "兔子", "en": "a rabbit"},
-  {"zh": "松鼠", "en": "a squirrel"},
-  {"zh": "狐狸", "en": "a fox"},
-  {"zh": "鹿", "en": "a deer"},
-  {"zh": "马", "en": "a horse"},
-  {"zh": "牛", "en": "a cow"},
-  {"zh": "羊", "en": "sheep"},
-  {"zh": "山羊", "en": "a mountain goat"},
-  {"zh": "猫", "en": "a cat"},
-  {"zh": "狗", "en": "a dog"},
-  {"zh": "熊", "en": "a bear"},
-  {"zh": "狼", "en": "a wolf"},
-  {"zh": "猴子", "en": "a monkey"},
-  {"zh": "大象", "en": "an elephant"},
-  {"zh": "长颈鹿", "en": "a giraffe"},
-  {"zh": "企鹅", "en": "penguins"},
-  {"zh": "火烈鸟", "en": "flamingos"},
-  {"zh": "猫头鹰", "en": "an owl"},
-  {"zh": "鹰", "en": "an eagle"},
-  {"zh": "鲸鱼", "en": "a whale"},
-  {"zh": "海豚", "en": "a dolphin"},
-  {"zh": "蝴蝶", "en": "a butterfly"},
-  {"zh": "飞鸟", "en": "birds flying"},
-  {"zh": "野牛", "en": "a bison"},
-  {"zh": "熊猫", "en": "a giant panda"},
-  {"zh": "骆驼", "en": "a camel"},
-  {"zh": "袋鼠", "en": "a kangaroo"},
-  {"zh": "雪豹", "en": "a snow leopard"},
-  {"zh": "雪山", "en": "snowy mountains"},
-  {"zh": "冰川", "en": "a glacier"},
-  {"zh": "高山湖泊", "en": "an alpine lake"},
-  {"zh": "湖泊", "en": "a lake"},
-  {"zh": "瀑布", "en": "a waterfall"},
-  {"zh": "海滩", "en": "a beach"},
-  {"zh": "海岸线", "en": "a coastline"},
-  {"zh": "沙漠", "en": "a desert"},
-  {"zh": "沙丘", "en": "sand dunes"},
-  {"zh": "峡谷", "en": "a canyon"},
-  {"zh": "森林", "en": "a forest"},
-  {"zh": "梯田", "en": "rice terraces"},
-  {"zh": "海岛", "en": "an island"},
-  {"zh": "火山", "en": "a volcano"},
-  {"zh": "草原", "en": "grassland"},
-  {"zh": "悬崖", "en": "cliffs"},
-  {"zh": "岩石拱门", "en": "a natural rock arch"},
-  {"zh": "喀斯特山峰", "en": "karst mountains"},
-  {"zh": "溶洞", "en": "limestone caves"},
-  {"zh": "温泉", "en": "hot springs"},
-  {"zh": "间歇泉", "en": "a geyser"},
-  {"zh": "河流", "en": "a river"},
-  {"zh": "湿地", "en": "wetlands"},
-  {"zh": "峡湾", "en": "a fjord"},
-  {"zh": "山峰", "en": "mountain peaks"},
-  {"zh": "丘陵", "en": "rolling hills"},
-  {"zh": "向日葵", "en": "sunflowers"},
-  {"zh": "薰衣草田", "en": "a lavender field"},
-  {"zh": "花田", "en": "a flower field"},
-  {"zh": "郁金香", "en": "tulip fields"},
-  {"zh": "极光", "en": "the aurora borealis"},
-  {"zh": "星空", "en": "a starry night sky"},
-  {"zh": "银河", "en": "the milky way"},
-  {"zh": "日出", "en": "sunrise"},
-  {"zh": "日落", "en": "sunset"},
-  {"zh": "云海", "en": "a sea of clouds"},
-  {"zh": "彩虹", "en": "a rainbow"},
-  {"zh": "闪电", "en": "lightning"},
-  {"zh": "雾景", "en": "foggy morning"},
-  {"zh": "雪景", "en": "snow-covered landscape"},
-  {"zh": "樱花", "en": "cherry blossoms"},
-  {"zh": "红叶", "en": "autumn foliage"},
-  {"zh": "满月", "en": "a full moon"},
-  {"zh": "古城", "en": "an ancient town"},
-  {"zh": "寺庙", "en": "a temple"},
-  {"zh": "神社", "en": "a japanese shrine"},
-  {"zh": "教堂", "en": "a church"},
-  {"zh": "城堡", "en": "a castle"},
-  {"zh": "宫殿", "en": "a palace"},
-  {"zh": "灯塔", "en": "a lighthouse"},
-  {"zh": "桥梁", "en": "a bridge"},
-  {"zh": "摩天大楼", "en": "skyscrapers"},
-  {"zh": "城市夜景", "en": "a city skyline at night"},
-  {"zh": "老街", "en": "an old street"},
-  {"zh": "长城", "en": "the great wall of china"},
-  {"zh": "风车", "en": "a windmill"},
-  {"zh": "塔楼", "en": "a tower"},
-  {"zh": "遗迹", "en": "ancient ruins"},
-  {"zh": "传统村落", "en": "a traditional village"},
-  {"zh": "园林", "en": "a classical garden"},
-  {"zh": "修道院", "en": "a monastery"},
-  {"zh": "清真寺", "en": "a mosque"},
-  {"zh": "热气球", "en": "hot air balloons"},
-  {"zh": "帆船", "en": "a sailboat"},
-  {"zh": "小船", "en": "a small boat"},
-  {"zh": "火车", "en": "a train"},
-  {"zh": "自行车", "en": "a bicycle"},
-  {"zh": "皮划艇", "en": "a kayak"},
-  {"zh": "滑雪", "en": "skiing"},
-  {"zh": "冲浪", "en": "surfing"},
-  {"zh": "徒步", "en": "hikers"},
-  {"zh": "烟花", "en": "fireworks"},
-  {"zh": "摩天轮", "en": "a ferris wheel"},
-  {"zh": "灯笼", "en": "lanterns"},
-  {"zh": "航拍", "en": "an aerial view"},
-  {"zh": "水面倒影", "en": "reflection in water"},
-  {"zh": "剪影", "en": "a silhouette"},
-  {"zh": "微距", "en": "a macro close-up"},
-  {"zh": "仙人掌", "en": "a cactus"},
-  {"zh": "椰子树", "en": "palm trees"},
-  {"zh": "稻田", "en": "rice paddies"},
-  {"zh": "公路", "en": "an empty road"},
-  {"zh": "木屋", "en": "a wooden cabin"},
-  {"zh": "瀑布群", "en": "waterfalls in a forest"},
-  {"zh": "梯田云海", "en": "terraced fields in clouds"},
-  {"zh": "雪山湖泊", "en": "a lake below snowy mountains"},
-  {"zh": "峡谷河流", "en": "a river through a canyon"},
-  {"zh": "秋色森林", "en": "autumn forest"},
-  {"zh": "冬日村庄", "en": "a village covered in snow"},
-  {"zh": "海浪", "en": "ocean waves"},
-  {"zh": "岩石海岸", "en": "a rocky coast"}
+  {
+    "zh": "兔子",
+    "en": "a rabbit"
+  },
+  {
+    "zh": "松鼠",
+    "en": "a squirrel"
+  },
+  {
+    "zh": "狐狸",
+    "en": "a fox"
+  },
+  {
+    "zh": "鹿",
+    "en": "a deer"
+  },
+  {
+    "zh": "马",
+    "en": "a horse"
+  },
+  {
+    "zh": "牛",
+    "en": "a cow"
+  },
+  {
+    "zh": "羊",
+    "en": "sheep"
+  },
+  {
+    "zh": "山羊",
+    "en": "a mountain goat"
+  },
+  {
+    "zh": "猫",
+    "en": "a cat"
+  },
+  {
+    "zh": "狗",
+    "en": "a dog"
+  },
+  {
+    "zh": "熊",
+    "en": "a bear"
+  },
+  {
+    "zh": "狼",
+    "en": "a wolf"
+  },
+  {
+    "zh": "猴子",
+    "en": "a monkey"
+  },
+  {
+    "zh": "大象",
+    "en": "an elephant"
+  },
+  {
+    "zh": "长颈鹿",
+    "en": "a giraffe"
+  },
+  {
+    "zh": "企鹅",
+    "en": "penguins"
+  },
+  {
+    "zh": "火烈鸟",
+    "en": "flamingos"
+  },
+  {
+    "zh": "猫头鹰",
+    "en": "an owl"
+  },
+  {
+    "zh": "鹰",
+    "en": "an eagle"
+  },
+  {
+    "zh": "鲸鱼",
+    "en": "a whale"
+  },
+  {
+    "zh": "海豚",
+    "en": "a dolphin"
+  },
+  {
+    "zh": "蝴蝶",
+    "en": "a butterfly"
+  },
+  {
+    "zh": "飞鸟",
+    "en": "birds flying"
+  },
+  {
+    "zh": "野牛",
+    "en": "a bison"
+  },
+  {
+    "zh": "熊猫",
+    "en": "a giant panda"
+  },
+  {
+    "zh": "骆驼",
+    "en": "a camel"
+  },
+  {
+    "zh": "袋鼠",
+    "en": "a kangaroo"
+  },
+  {
+    "zh": "雪豹",
+    "en": "a snow leopard"
+  },
+  {
+    "zh": "雪山",
+    "en": "snowy mountains"
+  },
+  {
+    "zh": "冰川",
+    "en": "a glacier"
+  },
+  {
+    "zh": "高山湖泊",
+    "en": "an alpine lake"
+  },
+  {
+    "zh": "湖泊",
+    "en": "a lake"
+  },
+  {
+    "zh": "瀑布",
+    "en": "a waterfall"
+  },
+  {
+    "zh": "海滩",
+    "en": "a beach"
+  },
+  {
+    "zh": "海岸线",
+    "en": "a coastline"
+  },
+  {
+    "zh": "沙漠",
+    "en": "a desert"
+  },
+  {
+    "zh": "沙丘",
+    "en": "sand dunes"
+  },
+  {
+    "zh": "峡谷",
+    "en": "a canyon"
+  },
+  {
+    "zh": "森林",
+    "en": "a forest"
+  },
+  {
+    "zh": "梯田",
+    "en": "rice terraces"
+  },
+  {
+    "zh": "海岛",
+    "en": "an island"
+  },
+  {
+    "zh": "火山",
+    "en": "a volcano"
+  },
+  {
+    "zh": "草原",
+    "en": "grassland"
+  },
+  {
+    "zh": "悬崖",
+    "en": "cliffs"
+  },
+  {
+    "zh": "岩石拱门",
+    "en": "a natural rock arch"
+  },
+  {
+    "zh": "喀斯特山峰",
+    "en": "karst mountains"
+  },
+  {
+    "zh": "溶洞",
+    "en": "limestone caves"
+  },
+  {
+    "zh": "温泉",
+    "en": "hot springs"
+  },
+  {
+    "zh": "间歇泉",
+    "en": "a geyser"
+  },
+  {
+    "zh": "河流",
+    "en": "a river"
+  },
+  {
+    "zh": "湿地",
+    "en": "wetlands"
+  },
+  {
+    "zh": "峡湾",
+    "en": "a fjord"
+  },
+  {
+    "zh": "山峰",
+    "en": "mountain peaks"
+  },
+  {
+    "zh": "丘陵",
+    "en": "rolling hills"
+  },
+  {
+    "zh": "向日葵",
+    "en": "sunflowers"
+  },
+  {
+    "zh": "薰衣草田",
+    "en": "a lavender field"
+  },
+  {
+    "zh": "花田",
+    "en": "a flower field"
+  },
+  {
+    "zh": "郁金香",
+    "en": "tulip fields"
+  },
+  {
+    "zh": "极光",
+    "en": "the aurora borealis"
+  },
+  {
+    "zh": "星空",
+    "en": "a starry night sky"
+  },
+  {
+    "zh": "银河",
+    "en": "the milky way"
+  },
+  {
+    "zh": "日出",
+    "en": "sunrise"
+  },
+  {
+    "zh": "日落",
+    "en": "sunset"
+  },
+  {
+    "zh": "云海",
+    "en": "a sea of clouds"
+  },
+  {
+    "zh": "彩虹",
+    "en": "a rainbow"
+  },
+  {
+    "zh": "闪电",
+    "en": "lightning"
+  },
+  {
+    "zh": "雾景",
+    "en": "foggy morning"
+  },
+  {
+    "zh": "雪景",
+    "en": "snow-covered landscape"
+  },
+  {
+    "zh": "樱花",
+    "en": "cherry blossoms"
+  },
+  {
+    "zh": "红叶",
+    "en": "autumn foliage"
+  },
+  {
+    "zh": "满月",
+    "en": "a full moon"
+  },
+  {
+    "zh": "古城",
+    "en": "an ancient town"
+  },
+  {
+    "zh": "寺庙",
+    "en": "a temple"
+  },
+  {
+    "zh": "神社",
+    "en": "a japanese shrine"
+  },
+  {
+    "zh": "教堂",
+    "en": "a church"
+  },
+  {
+    "zh": "城堡",
+    "en": "a castle"
+  },
+  {
+    "zh": "宫殿",
+    "en": "a palace"
+  },
+  {
+    "zh": "灯塔",
+    "en": "a lighthouse"
+  },
+  {
+    "zh": "桥梁",
+    "en": "a bridge"
+  },
+  {
+    "zh": "摩天大楼",
+    "en": "skyscrapers"
+  },
+  {
+    "zh": "城市夜景",
+    "en": "a city skyline at night"
+  },
+  {
+    "zh": "老街",
+    "en": "an old street"
+  },
+  {
+    "zh": "长城",
+    "en": "the great wall of china"
+  },
+  {
+    "zh": "风车",
+    "en": "a windmill"
+  },
+  {
+    "zh": "塔楼",
+    "en": "a tower"
+  },
+  {
+    "zh": "遗迹",
+    "en": "ancient ruins"
+  },
+  {
+    "zh": "传统村落",
+    "en": "a traditional village"
+  },
+  {
+    "zh": "园林",
+    "en": "a classical garden"
+  },
+  {
+    "zh": "修道院",
+    "en": "a monastery"
+  },
+  {
+    "zh": "清真寺",
+    "en": "a mosque"
+  },
+  {
+    "zh": "热气球",
+    "en": "hot air balloons"
+  },
+  {
+    "zh": "帆船",
+    "en": "a sailboat"
+  },
+  {
+    "zh": "小船",
+    "en": "a small boat"
+  },
+  {
+    "zh": "火车",
+    "en": "a train"
+  },
+  {
+    "zh": "自行车",
+    "en": "a bicycle"
+  },
+  {
+    "zh": "皮划艇",
+    "en": "a kayak"
+  },
+  {
+    "zh": "滑雪",
+    "en": "skiing"
+  },
+  {
+    "zh": "冲浪",
+    "en": "surfing"
+  },
+  {
+    "zh": "徒步",
+    "en": "hikers"
+  },
+  {
+    "zh": "烟花",
+    "en": "fireworks"
+  },
+  {
+    "zh": "摩天轮",
+    "en": "a ferris wheel"
+  },
+  {
+    "zh": "灯笼",
+    "en": "lanterns"
+  },
+  {
+    "zh": "航拍",
+    "en": "an aerial view"
+  },
+  {
+    "zh": "水面倒影",
+    "en": "reflection in water"
+  },
+  {
+    "zh": "剪影",
+    "en": "a silhouette"
+  },
+  {
+    "zh": "微距",
+    "en": "a macro close-up"
+  },
+  {
+    "zh": "仙人掌",
+    "en": "a cactus"
+  },
+  {
+    "zh": "椰子树",
+    "en": "palm trees"
+  },
+  {
+    "zh": "稻田",
+    "en": "rice paddies"
+  },
+  {
+    "zh": "公路",
+    "en": "an empty road"
+  },
+  {
+    "zh": "木屋",
+    "en": "a wooden cabin"
+  },
+  {
+    "zh": "瀑布群",
+    "en": "waterfalls in a forest"
+  },
+  {
+    "zh": "梯田云海",
+    "en": "terraced fields in clouds"
+  },
+  {
+    "zh": "雪山湖泊",
+    "en": "a lake below snowy mountains"
+  },
+  {
+    "zh": "峡谷河流",
+    "en": "a river through a canyon"
+  },
+  {
+    "zh": "秋色森林",
+    "en": "autumn forest"
+  },
+  {
+    "zh": "冬日村庄",
+    "en": "a village covered in snow"
+  },
+  {
+    "zh": "海浪",
+    "en": "ocean waves"
+  },
+  {
+    "zh": "岩石海岸",
+    "en": "a rocky coast"
+  },
+  {
+    "zh": "小熊猫",
+    "en": "red panda"
+  },
+  {
+    "zh": "竹林",
+    "en": "bamboo grove"
+  },
+  {
+    "zh": "佛像",
+    "en": "buddha statue"
+  },
+  {
+    "zh": "果园",
+    "en": "orchard"
+  },
+  {
+    "zh": "火箭",
+    "en": "rocket"
+  },
+  {
+    "zh": "海龟",
+    "en": "sea turtle"
+  },
+  {
+    "zh": "鲨鱼",
+    "en": "shark"
+  },
+  {
+    "zh": "章鱼",
+    "en": "octopus"
+  },
+  {
+    "zh": "水母",
+    "en": "jellyfish"
+  },
+  {
+    "zh": "斑马",
+    "en": "zebra"
+  },
+  {
+    "zh": "犀牛",
+    "en": "rhinoceros"
+  },
+  {
+    "zh": "树懒",
+    "en": "sloth"
+  },
+  {
+    "zh": "珊瑚礁",
+    "en": "coral reef"
+  },
+  {
+    "zh": "海豹",
+    "en": "seal"
+  },
+  {
+    "zh": "海狮",
+    "en": "sea lion"
+  }
 ]

@@ -20,10 +20,11 @@ import requests
 from .storage import load_all, upsert_record
 
 VOCAB_PATH = Path(__file__).parent / "content_vocab.json"
-MODEL_NAME = "ViT-B-32"
-PRETRAINED = "laion2b_s34b_b79k"
-TOP_K = 5
-RATIO = 0.35  # 相对阈值：得分 < max*RATIO 的概念丢弃（CLIP 分数分布平，绝对阈值不稳）
+MODEL_NAME = "ViT-B-16"
+PRETRAINED = "laion2b_s34b_b88k"
+TOP_K = 3
+RATIO = 0.5  # 相对阈值：得分 < max*RATIO 的概念丢弃（ViT-B-16 上近邻比值实测 ~0.6-0.7，
+# 正确第二概念 ~0.8+；0.5 砍掉猴子/山羊类形状近邻，留下真第二主体）
 THUMB_SUFFIX = "_400x240.jpg"
 BING_BASE = "https://www.bing.com"
 
@@ -81,6 +82,11 @@ def main():
     parser.add_argument("--data-dir", default="data")
     parser.add_argument("--limit", type=int, default=0, help="最多处理 N 张唯一图（0=全部）")
     parser.add_argument("--ids", default="", help="逗号分隔的记录 id，只处理这些所在图组")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="忽略增量语义（已打标跳过），全部图组重打——词表/阈值/模型更新后使用",
+    )
     parser.add_argument("--dry-run", action="store_true", help="只打印不写库")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -97,7 +103,7 @@ def main():
     for key, recs in groups.items():
         if wanted and not {r["id"] for r in recs} & wanted:
             continue
-        if not wanted and any(r.get("content_tags") for r in recs):
+        if not wanted and not args.force and any(r.get("content_tags") for r in recs):
             continue  # 该图已打标（增量语义）
         lead = recs[0]
         try:
