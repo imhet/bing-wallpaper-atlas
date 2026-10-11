@@ -10623,7 +10623,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -10657,12 +10656,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド"
-  ]
+  "tags": []
  },
  {
   "id": "en-us-2026-10-09",
@@ -10690,7 +10684,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"

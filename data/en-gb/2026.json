@@ -199,7 +199,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ]
@@ -299,7 +298,6 @@
   },
   "tags": [
    "英国",
-   "uk",
    "united kingdom",
    "britain",
    "england",
@@ -333,12 +331,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [
-   "印度",
-   "india",
-   "indian",
-   "インド"
-  ]
+  "tags": []
  },
  {
   "id": "en-gb-2026-10-08",
@@ -366,7 +359,6 @@
   "tags": [
    "法国",
    "france",
-   "french",
    "français",
    "フランス",
    "法國"
@@ -405,7 +397,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ]
@@ -440,7 +431,6 @@
    "usa",
    "united states",
    "america",
-   "american",
    "美國",
    "アメリカ"
   ]
