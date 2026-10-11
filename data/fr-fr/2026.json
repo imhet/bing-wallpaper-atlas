@@ -160,11 +160,6 @@
    "français",
    "フランス",
    "法國"
-  ],
-  "content_tags": [
-   "飞鸟",
-   "火烈鸟",
-   "日落"
   ]
  },
  {
@@ -190,12 +185,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "企鹅",
-   "飞鸟",
-   "海豹"
-  ]
+  "tags": []
  },
  {
   "id": "fr-fr-2026-10-05",
@@ -229,11 +219,6 @@
    "甘肃",
    "gansu",
    "甘肅"
-  ],
-  "content_tags": [
-   "峡谷",
-   "沙漠",
-   "山峰"
   ]
  },
  {
@@ -261,12 +246,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "森林",
-   "岩石拱门",
-   "瀑布群"
-  ]
+  "tags": []
  },
  {
   "id": "fr-fr-2026-10-07",
@@ -292,12 +272,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "章鱼",
-   "水母",
-   "海龟"
-  ]
+  "tags": []
  },
  {
   "id": "fr-fr-2026-10-08",
@@ -321,12 +296,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "灯塔",
-   "海岸线",
-   "海岛"
-  ]
+  "tags": []
  },
  {
   "id": "fr-fr-2026-10-09",
@@ -353,12 +323,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "火箭",
-   "满月",
-   "塔楼"
-  ]
+  "tags": []
  },
  {
   "id": "fr-fr-2026-10-10",
@@ -385,11 +350,6 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "红叶",
-   "瀑布",
-   "瀑布群"
-  ]
+  "tags": []
  }
 ]

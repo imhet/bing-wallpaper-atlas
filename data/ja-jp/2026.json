@@ -146,12 +146,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "火箭",
-   "满月",
-   "塔楼"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-04",
@@ -181,11 +176,6 @@
    "antarctica",
    "antarctic",
    "南極"
-  ],
-  "content_tags": [
-   "企鹅",
-   "飞鸟",
-   "海豹"
   ]
  },
  {
@@ -222,11 +212,6 @@
    "甘肃",
    "gansu",
    "甘肅"
-  ],
-  "content_tags": [
-   "峡谷",
-   "沙漠",
-   "山峰"
   ]
  },
  {
@@ -252,12 +237,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "森林",
-   "岩石拱门",
-   "瀑布群"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-07",
@@ -281,12 +261,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "树懒",
-   "果园",
-   "火箭"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-08",
@@ -317,11 +292,6 @@
    "français",
    "フランス",
    "法國"
-  ],
-  "content_tags": [
-   "灯塔",
-   "海岸线",
-   "海岛"
   ]
  },
  {
@@ -347,12 +317,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "飞鸟",
-   "海浪",
-   "冲浪"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-10",
@@ -377,11 +342,6 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "红叶",
-   "瀑布",
-   "瀑布群"
-  ]
+  "tags": []
  }
 ]
