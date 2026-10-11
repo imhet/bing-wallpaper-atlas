@@ -34,9 +34,12 @@ jobs:
       - run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install open_clip_torch pillow
       - name: 每日增量抓取（核心市场失败则红灯）
         run: python -m crawler.fetch_daily
-      - name: 新图内容打标（CLIP，模型不可用时降级不阻塞——次日重试会补上）
+      - name: 新图内容打标（VLM 优先降级 CLIP，模型不可用时降级不阻塞——次日重试会补上）
         run: python -m crawler.content_tags --data-dir data
         continue-on-error: true
+        env:
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
       - name: 判断数据是否有变化（先暂存再看 diff——git diff 看不见未跟踪的新文件，年切换日靠它兜底）
         id: diff
         run: |

@@ -1,18 +1,27 @@
-"""CLIP 零样本内容打标：给每张图生成「图中内容」标签（雪山/兔子/极光…）。
+"""内容打标：给每张图生成「图中内容」标签（雪山/兔子/乐山大佛…）。
 
 动机：壁纸的文字描述极少写画面内容——语料含「雪」字仅 26 条、搜「雪山」零召回。
 手机相册式的图片理解搜索。标签写入记录的 content_tags 字段（区别于 geo_enrich
 的地点 tags），前端把它加进搜索字段并展示。
 
-推理：open_clip ViT-B-32（CPU 即可），缩略图 400x240 从 Bing CDN 拉到内存、
-用完即弃（图片永不落地原则不变——仓库里只有标签文字）。
-词表见 content_vocab.json：{zh, en}，en 参与 CLIP 文本塔，zh 进 tags。
+双引擎：VLM（glm-5.3-flash，开放理解，认得出「乐山大佛」这类专名和词表外概念）
+优先，凭证取环境变量 ANTHROPIC_BASE_URL / ANTHROPIC_AUTH_TOKEN；未配置或调用
+失败自动降级本地 CLIP（open_clip ViT-B-16，词表 content_vocab.json 闭集分类）。
+缩略图 400x240 从 Bing CDN 拉到内存、用完即弃（图片永不落地原则不变——仓库里
+只有标签文字）。
 """
 
 import argparse
+import base64
 import io
 import json
 import logging
+import os
+import re
+import time
+import urllib.error
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -27,6 +36,14 @@ RATIO = 0.5  # 相对阈值：得分 < max*RATIO 的概念丢弃（ViT-B-16 上�
 # 正确第二概念 ~0.8+；0.5 砍掉猴子/山羊类形状近邻，留下真第二主体）
 THUMB_SUFFIX = "_400x240.jpg"
 BING_BASE = "https://www.bing.com"
+
+VLM_MODEL = "glm-5.3-flash"
+VLM_MAX_TAGS = 6
+VLM_PROMPT = (
+    "看这张壁纸图片，输出画面里的主要内容实体，用简体中文标签的 JSON 数组，只输出 JSON。"
+    "标签要具体：动物到物种、建筑到类型，知名地标输出通用中文名（如「乐山大佛」）；"
+    "不要情绪氛围词（宁静/壮丽），不要品牌或水印文字；最多 6 个，按显著程度排序。"
+)
 
 log = logging.getLogger(__name__)
 
@@ -71,6 +88,65 @@ def tag_image(image_bytes):
     return [s["vocab"][i]["zh"] for v, i in zip(top.values, top.indices) if v.item() >= cutoff]
 
 
+def _parse_vlm_tags(text):
+    """从模型回复中提取 JSON 标签数组；无有效 JSON 返回 None（调用方降级 CLIP）。
+
+    整段可解析时顶层必须是数组（模型输出对象=不符合约定，拒绝）；否则从杂文本
+    中提取数组候选。
+    """
+    if not text:
+        return None
+    try:
+        items = json.loads(text.strip())
+    except ValueError:
+        items = None
+    if items is None:
+        m = re.search(r"\[.*\]", text, re.DOTALL)
+        if not m:
+            return None
+        try:
+            items = json.loads(m.group())
+        except ValueError:
+            return None
+    if not isinstance(items, list):
+        return None
+    tags = [t.strip() for t in items if isinstance(t, str) and t.strip()]
+    return tags[:VLM_MAX_TAGS] or None
+
+
+def vlm_tag_image(image_bytes):
+    """单张图片字节 → VLM 内容标签列表；回复无有效标签时抛 ValueError。"""
+    body = {
+        "model": VLM_MODEL,
+        "max_tokens": 400,
+        "messages": [{
+            "role": "user",
+            "content": [
+                {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg",
+                                             "data": base64.standard_b64encode(image_bytes).decode()}},
+                {"type": "text", "text": VLM_PROMPT},
+            ],
+        }],
+    }
+    req = urllib.request.Request(
+        f"{os.environ['ANTHROPIC_BASE_URL']}/v1/messages",
+        data=json.dumps(body).encode(),
+        headers={
+            "content-type": "application/json",
+            "authorization": f"Bearer {os.environ['ANTHROPIC_AUTH_TOKEN']}",
+            "x-api-key": os.environ["ANTHROPIC_AUTH_TOKEN"],
+            "anthropic-version": "2023-06-01",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        out = json.load(resp)
+    text = "".join(b.get("text", "") for b in out.get("content", []) if b.get("type") == "text")
+    tags = _parse_vlm_tags(text)
+    if tags is None:
+        raise ValueError(f"VLM 回复无有效标签: {text[:80]}")
+    return tags
+
+
 def fetch_thumb(urlbase):
     resp = requests.get(f"{BING_BASE}{urlbase}{THUMB_SUFFIX}", timeout=20)
     resp.raise_for_status()
@@ -78,7 +154,7 @@ def fetch_thumb(urlbase):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="CLIP 内容打标")
+    parser = argparse.ArgumentParser(description="内容打标（VLM 优先，降级 CLIP）")
     parser.add_argument("--data-dir", default="data")
     parser.add_argument("--limit", type=int, default=0, help="最多处理 N 张唯一图（0=全部）")
     parser.add_argument("--ids", default="", help="逗号分隔的记录 id，只处理这些所在图组")
@@ -87,6 +163,9 @@ def main():
         action="store_true",
         help="忽略增量语义（已打标跳过），全部图组重打——词表/阈值/模型更新后使用",
     )
+    parser.add_argument("--engine", choices=["vlm", "clip"], default="vlm",
+                        help="vlm=VLM 优先失败降级 CLIP（默认）；clip=纯本地")
+    parser.add_argument("--workers", type=int, default=1, help="并发推理线程数（写回始终串行）")
     parser.add_argument("--dry-run", action="store_true", help="只打印不写库")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
@@ -99,26 +178,50 @@ def main():
         for rec in recs:
             groups.setdefault(rec.get("imageKey") or f"id:{rec['id']}", []).append(rec)
 
-    done = 0
+    todo = []
     for key, recs in groups.items():
         if wanted and not {r["id"] for r in recs} & wanted:
             continue
         if not wanted and not args.force and any(r.get("content_tags") for r in recs):
             continue  # 该图已打标（增量语义）
+        todo.append((key, recs))
+        if args.limit and len(todo) >= args.limit:
+            break
+
+    def infer(item):
+        key, recs = item
         lead = recs[0]
-        try:
-            tags = tag_image(fetch_thumb(lead["urlbase"]))
-        except Exception as e:
-            log.warning("skip group %s: %s", key, e)
-            continue
-        print(f"{key} | {lead['date']} {(lead.get('desc') or '')[:36]} → {tags} ({len(recs)}条)")
-        if not args.dry_run:
-            for rec in recs:
-                upsert_record(args.data_dir, {**rec, "content_tags": tags})
-        done += 1
-        if args.limit and done >= args.limit:
-            log.info("达到 --limit=%d，停止", args.limit)
-            return
+        img = fetch_thumb(lead["urlbase"])
+        if args.engine == "vlm":
+            # 429 指数退避三次（编码套餐限流紧，退避自适应节奏），其他错误重试一次；
+            # 仍失败才降级 CLIP——避免限流图被静默打成不一致的 CLIP 标签
+            delays = (2, 5, 10) if args.engine == "vlm" else ()
+            for attempt, wait in enumerate((*delays, 0)):
+                try:
+                    return key, recs, vlm_tag_image(img)
+                except urllib.error.HTTPError as e:
+                    if e.code == 429 and wait:
+                        time.sleep(wait)
+                        continue
+                    log.warning("VLM HTTP %s，降级 CLIP: %s", e.code, key)
+                    break
+                except Exception as e:
+                    if wait:
+                        time.sleep(2)
+                        continue
+                    log.warning("VLM 失败，降级 CLIP: %s: %s", key, e)
+                    break
+        return key, recs, tag_image(img)
+
+    # 推理并发、写回串行：upsert 是整分片读改写，并发写会互相覆盖
+    done = 0
+    with ThreadPoolExecutor(max_workers=args.workers) as ex:
+        for key, recs, tags in ex.map(infer, todo):
+            print(f"{key} | {recs[0]['date']} {(recs[0].get('desc') or '')[:36]} → {tags} ({len(recs)}条)")
+            if not args.dry_run:
+                for rec in recs:
+                    upsert_record(args.data_dir, {**rec, "content_tags": tags})
+            done += 1
     log.info("content tagging done: %d 张唯一图%s", done, "（dry-run 未写库）" if args.dry_run else "")
 
 
