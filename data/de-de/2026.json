@@ -30,9 +30,12 @@
    "阿爾卑斯"
   ],
   "content_tags": [
-   "火箭",
-   "徒步",
-   "草原"
+   "阿尔卑斯长号",
+   "传统服饰乐手",
+   "草坡",
+   "蓝天",
+   "云层",
+   "远山"
   ]
  },
  {
@@ -70,9 +73,9 @@
    "イギリス"
   ],
   "content_tags": [
-   "微距",
-   "飞鸟",
-   "草原"
+   "文须雀",
+   "芦苇",
+   "芦苇丛"
   ]
  },
  {
@@ -113,9 +116,8 @@
    "アラスカ"
   ],
   "content_tags": [
-   "熊",
-   "海狮",
-   "野牛"
+   "棕熊",
+   "河流"
   ]
  },
  {
@@ -147,9 +149,10 @@
    "ベルリン"
   ],
   "content_tags": [
+   "勃兰登堡门",
+   "四马战车",
    "烟花",
-   "鹰",
-   "银河"
+   "夜空"
   ]
  },
  {
@@ -188,6 +191,13 @@
    "america",
    "美國",
    "アメリカ"
+  ],
+  "content_tags": [
+   "运载火箭",
+   "满月",
+   "发射塔架",
+   "避雷塔",
+   "航天发射场"
   ]
  },
  {
@@ -213,7 +223,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "阿德利企鹅",
+   "企鹅",
+   "冰川",
+   "积雪"
+  ]
  },
  {
   "id": "de-de-2026-10-05",
@@ -250,6 +266,14 @@
    "甘肃",
    "gansu",
    "甘肅"
+  ],
+  "content_tags": [
+   "七彩丹霞",
+   "丹霞地貌",
+   "彩色丘陵",
+   "山峰",
+   "沟壑",
+   "岩层"
   ]
  },
  {
@@ -286,6 +310,13 @@
    "英國",
    "英格蘭",
    "イギリス"
+  ],
+  "content_tags": [
+   "苔藓",
+   "岩石",
+   "树木",
+   "森林小径",
+   "森林"
   ]
  },
  {
@@ -312,7 +343,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "章鱼",
+   "珊瑚",
+   "沙质海床",
+   "礁石",
+   "浅海"
+  ]
  },
  {
   "id": "de-de-2026-10-08",
@@ -337,7 +375,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "瞭望塔",
+   "灯塔",
+   "岛屿",
+   "海面",
+   "灌木丛",
+   "晚霞"
+  ]
  },
  {
   "id": "de-de-2026-10-09",
@@ -370,6 +416,14 @@
    "america",
    "美國",
    "アメリカ"
+  ],
+  "content_tags": [
+   "海浪",
+   "海鸟",
+   "礁石",
+   "大海",
+   "浪花",
+   "天空"
   ]
  },
  {
@@ -395,32 +449,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
- },
- {
-  "id": "de-de-2026-10-11",
-  "market": "de-de",
-  "date": "2026-10-11",
-  "urlbase": "/th?id=OHR.MumblesSwansea2026_DE-DE6402348082",
-  "imageKey": "MumblesSwansea2026",
-  "title": "Ein Pier voller Geschichte",
-  "desc": "Mumbles Pier, Swansea, Wales (© Helen Hotson/Shutterstock)",
-  "location": [
-   "Mumbles Pier",
-   "Swansea",
-   "Wales"
-  ],
-  "region": "英国",
-  "photographer": "Helen Hotson",
-  "gallery": "Shutterstock",
-  "copyrightlink": "https://www.bing.com/search?q=Mumbles+Pier+Informationen&form=hpcapt&filters=HpDate%3a%2220261011_2200%22",
-  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261011_MumblesSwansea2026%22&FORM=HPQUIZ",
-  "resolutions": {
-   "uhd": true,
-   "fhd": true,
-   "hd": true,
-   "thumb": true
-  },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "欧洲盘羊",
+   "羊角",
+   "森林",
+   "苔藓",
+   "落叶"
+  ]
  }
 ]

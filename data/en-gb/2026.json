@@ -34,9 +34,9 @@
    "イギリス"
   ],
   "content_tags": [
-   "微距",
-   "飞鸟",
-   "草原"
+   "文须雀",
+   "芦苇",
+   "芦苇丛"
   ]
  },
  {
@@ -69,9 +69,11 @@
    "倫敦"
   ],
   "content_tags": [
-   "园林",
-   "宫殿",
-   "城市夜景"
+   "纳尔逊·曼德拉雕像",
+   "大本钟",
+   "威斯敏斯特宫",
+   "议会广场",
+   "树木"
   ]
  },
  {
@@ -107,9 +109,12 @@
    "アメリカ"
   ],
   "content_tags": [
-   "河流",
-   "瀑布群",
-   "峡谷河流"
+   "溪流",
+   "秋叶",
+   "岩石",
+   "苔藓",
+   "森林",
+   "树木"
   ]
  },
  {
@@ -150,9 +155,8 @@
    "アラスカ"
   ],
   "content_tags": [
-   "熊",
-   "海狮",
-   "野牛"
+   "棕熊",
+   "河流"
   ]
  },
  {
@@ -190,6 +194,13 @@
    "america",
    "美國",
    "アメリカ"
+  ],
+  "content_tags": [
+   "运载火箭",
+   "满月",
+   "发射塔架",
+   "避雷塔",
+   "航天发射场"
   ]
  },
  {
@@ -220,6 +231,12 @@
    "antarctica",
    "antarctic",
    "南極"
+  ],
+  "content_tags": [
+   "阿德利企鹅",
+   "企鹅",
+   "冰川",
+   "积雪"
   ]
  },
  {
@@ -258,6 +275,14 @@
    "甘肃",
    "gansu",
    "甘肅"
+  ],
+  "content_tags": [
+   "七彩丹霞",
+   "丹霞地貌",
+   "彩色丘陵",
+   "山峰",
+   "沟壑",
+   "岩层"
   ]
  },
  {
@@ -294,6 +319,13 @@
    "英國",
    "英格蘭",
    "イギリス"
+  ],
+  "content_tags": [
+   "苔藓",
+   "岩石",
+   "树木",
+   "森林小径",
+   "森林"
   ]
  },
  {
@@ -320,7 +352,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "章鱼",
+   "珊瑚",
+   "沙质海床",
+   "礁石",
+   "浅海"
+  ]
  },
  {
   "id": "en-gb-2026-10-08",
@@ -351,6 +390,14 @@
    "français",
    "フランス",
    "法國"
+  ],
+  "content_tags": [
+   "瞭望塔",
+   "灯塔",
+   "岛屿",
+   "海面",
+   "灌木丛",
+   "晚霞"
   ]
  },
  {
@@ -388,6 +435,14 @@
    "america",
    "美國",
    "アメリカ"
+  ],
+  "content_tags": [
+   "海浪",
+   "海鸟",
+   "礁石",
+   "大海",
+   "浪花",
+   "天空"
   ]
  },
  {
@@ -422,32 +477,14 @@
    "america",
    "美國",
    "アメリカ"
-  ]
- },
- {
-  "id": "en-gb-2026-10-11",
-  "market": "en-gb",
-  "date": "2026-10-11",
-  "urlbase": "/th?id=OHR.MumblesSwansea2026_EN-GB4411542970",
-  "imageKey": "MumblesSwansea2026",
-  "title": "Pier-ing into the past",
-  "desc": "Mumbles Pier, Swansea, Wales (© Helen Hotson/Shutterstock)",
-  "location": [
-   "Mumbles Pier",
-   "Swansea",
-   "Wales"
   ],
-  "region": "英国",
-  "photographer": "Helen Hotson",
-  "gallery": "Shutterstock",
-  "copyrightlink": "https://www.bing.com/search?q=Mumbles+Pier+Wales&form=hpcapt&filters=HpDate%3a%2220261011_2300%22",
-  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261011_MumblesSwansea2026%22&FORM=HPQUIZ",
-  "resolutions": {
-   "uhd": true,
-   "fhd": true,
-   "hd": true,
-   "thumb": true
-  },
-  "tags": []
+  "content_tags": [
+   "水磨坊",
+   "枫树",
+   "瀑布",
+   "溪流",
+   "岩石",
+   "秋叶"
+  ]
  }
 ]

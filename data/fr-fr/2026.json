@@ -25,9 +25,9 @@
   },
   "tags": [],
   "content_tags": [
-   "微距",
-   "飞鸟",
-   "草原"
+   "文须雀",
+   "芦苇",
+   "芦苇丛"
   ]
  },
  {
@@ -59,9 +59,11 @@
    "パリ"
   ],
   "content_tags": [
-   "航拍",
-   "摩天大楼",
-   "日落"
+   "埃菲尔铁塔",
+   "巴黎老城建筑群",
+   "拉德芳斯摩天楼群",
+   "战神广场",
+   "日落云霞"
   ]
  },
  {
@@ -88,9 +90,10 @@
   },
   "tags": [],
   "content_tags": [
-   "草原",
-   "红叶",
-   "微距"
+   "狼尾草",
+   "芒草",
+   "草丛",
+   "草穗"
   ]
  },
  {
@@ -125,9 +128,8 @@
    "アラスカ"
   ],
   "content_tags": [
-   "熊",
-   "海狮",
-   "野牛"
+   "棕熊",
+   "河流"
   ]
  },
  {
@@ -160,6 +162,13 @@
    "français",
    "フランス",
    "法國"
+  ],
+  "content_tags": [
+   "灰鹤",
+   "鸟群",
+   "晚霞",
+   "云彩",
+   "黄昏天空"
   ]
  },
  {
@@ -185,7 +194,13 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "阿德利企鹅",
+   "企鹅",
+   "冰川",
+   "积雪"
+  ]
  },
  {
   "id": "fr-fr-2026-10-05",
@@ -219,6 +234,14 @@
    "甘肃",
    "gansu",
    "甘肅"
+  ],
+  "content_tags": [
+   "七彩丹霞",
+   "丹霞地貌",
+   "彩色丘陵",
+   "山峰",
+   "沟壑",
+   "岩层"
   ]
  },
  {
@@ -246,7 +269,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "苔藓",
+   "岩石",
+   "树木",
+   "森林小径",
+   "森林"
+  ]
  },
  {
   "id": "fr-fr-2026-10-07",
@@ -272,7 +302,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "章鱼",
+   "珊瑚",
+   "沙质海床",
+   "礁石",
+   "浅海"
+  ]
  },
  {
   "id": "fr-fr-2026-10-08",
@@ -296,7 +333,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "瞭望塔",
+   "灯塔",
+   "岛屿",
+   "海面",
+   "灌木丛",
+   "晚霞"
+  ]
  },
  {
   "id": "fr-fr-2026-10-09",
@@ -323,7 +368,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "运载火箭",
+   "满月",
+   "发射塔架",
+   "避雷塔",
+   "航天发射场"
+  ]
  },
  {
   "id": "fr-fr-2026-10-10",
@@ -350,32 +402,14 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
- },
- {
-  "id": "fr-fr-2026-10-11",
-  "market": "fr-fr",
-  "date": "2026-10-11",
-  "urlbase": "/th?id=OHR.MumblesSwansea2026_FR-FR6666496816",
-  "imageKey": "MumblesSwansea2026",
-  "title": "Entre rails et marées",
-  "desc": "Jetée de Mumbles, Swansea, Pays de Galles (© Helen Hotson/Shutterstock)",
-  "location": [
-   "Jetée de Mumbles",
-   "Swansea",
-   "Pays de Galles"
-  ],
-  "region": null,
-  "photographer": "Helen Hotson",
-  "gallery": "Shutterstock",
-  "copyrightlink": "https://www.bing.com/search?q=Jet%C3%A9e+de+Mumbles+Pays+de+Galles&form=hpcapt&filters=HpDate%3a%2220261011_2200%22",
-  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261011_MumblesSwansea2026%22&FORM=HPQUIZ",
-  "resolutions": {
-   "uhd": true,
-   "fhd": true,
-   "hd": true,
-   "thumb": true
-  },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "水磨坊",
+   "枫树",
+   "瀑布",
+   "溪流",
+   "岩石",
+   "秋叶"
+  ]
  }
 ]

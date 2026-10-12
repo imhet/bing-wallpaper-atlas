@@ -118,7 +118,7 @@ def vlm_tag_image(image_bytes):
     """单张图片字节 → VLM 内容标签列表；回复无有效标签时抛 ValueError。"""
     body = {
         "model": VLM_MODEL,
-        "max_tokens": 400,
+        "max_tokens": 1024,  # thinking 块也计入输出配额，400 会在 JSON 中途截断
         "messages": [{
             "role": "user",
             "content": [
