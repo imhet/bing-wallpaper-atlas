@@ -10335,5 +10335,31 @@
    "美國",
    "アメリカ"
   ]
+ },
+ {
+  "id": "zh-cn-2026-10-11",
+  "market": "zh-cn",
+  "date": "2026-10-11",
+  "urlbase": "/th?id=OHR.MumblesSwansea2026_ZH-CN5419531039",
+  "imageKey": "MumblesSwansea2026",
+  "title": "从铁轨到潮汐",
+  "desc": "曼布尔斯码头，斯旺西，威尔士 (© Helen Hotson/Shutterstock)",
+  "location": [
+   "曼布尔斯码头",
+   "斯旺西",
+   "威尔士"
+  ],
+  "region": "英国",
+  "photographer": "Helen Hotson",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%A8%81%E5%B0%94%E5%A3%AB%E6%9B%BC%E5%B8%83%E5%B0%94%E6%96%AF%E7%A0%81%E5%A4%B4&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261011_MumblesSwansea2026%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]

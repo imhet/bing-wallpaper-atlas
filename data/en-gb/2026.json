@@ -423,5 +423,31 @@
    "美國",
    "アメリカ"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-11",
+  "market": "en-gb",
+  "date": "2026-10-11",
+  "urlbase": "/th?id=OHR.MumblesSwansea2026_EN-GB4411542970",
+  "imageKey": "MumblesSwansea2026",
+  "title": "Pier-ing into the past",
+  "desc": "Mumbles Pier, Swansea, Wales (© Helen Hotson/Shutterstock)",
+  "location": [
+   "Mumbles Pier",
+   "Swansea",
+   "Wales"
+  ],
+  "region": "英国",
+  "photographer": "Helen Hotson",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=Mumbles+Pier+Wales&form=hpcapt&filters=HpDate%3a%2220261011_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261011_MumblesSwansea2026%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
