@@ -10339,9 +10339,9 @@
   ],
   "content_tags": [
    "阿德利企鹅",
-   "企鹅",
    "冰川",
-   "积雪"
+   "冰雪",
+   "海洋"
   ]
  },
  {
@@ -10382,12 +10382,12 @@
    "甘肅"
   ],
   "content_tags": [
-   "七彩丹霞",
+   "张掖丹霞",
    "丹霞地貌",
    "彩色丘陵",
-   "山峰",
+   "山脉",
    "沟壑",
-   "岩层"
+   "山谷"
   ]
  },
  {
@@ -10428,9 +10428,9 @@
   "content_tags": [
    "苔藓",
    "岩石",
+   "森林",
    "树木",
-   "森林小径",
-   "森林"
+   "小径"
   ]
  },
  {
@@ -10461,9 +10461,9 @@
   "content_tags": [
    "章鱼",
    "珊瑚",
-   "沙质海床",
-   "礁石",
-   "浅海"
+   "沙质海底",
+   "浅海",
+   "海水"
   ]
  },
  {
@@ -10497,12 +10497,12 @@
    "法國"
   ],
   "content_tags": [
-   "瞭望塔",
+   "石砌圆形瞭望塔",
    "灯塔",
-   "岛屿",
-   "海面",
-   "灌木丛",
-   "晚霞"
+   "礁石岛屿",
+   "海岸山丘",
+   "岩石海岸",
+   "大海"
   ]
  },
  {
@@ -10536,11 +10536,9 @@
   ],
   "content_tags": [
    "海浪",
-   "海鸟",
+   "鹈鹕",
    "礁石",
-   "大海",
-   "浪花",
-   "天空"
+   "海洋"
   ]
  },
  {
@@ -10570,11 +10568,45 @@
   "tags": [],
   "content_tags": [
    "水磨坊",
-   "枫树",
+   "水车",
    "瀑布",
+   "枫树",
    "溪流",
-   "岩石",
-   "秋叶"
+   "岩石"
+  ]
+ },
+ {
+  "id": "en-us-2026-10-12",
+  "market": "en-us",
+  "date": "2026-10-12",
+  "urlbase": "/th?id=OHR.WhiteHouse_EN-US6161912809",
+  "imageKey": "WhiteHouse",
+  "title": "A landscape of living history",
+  "desc": "White House Ruin at Canyon de Chelly National Monument in Arizona (© Ingo Arndt/Minden Pictures)",
+  "location": [
+   "White House Ruin at Canyon de Chelly National Monument in Arizona"
+  ],
+  "region": null,
+  "photographer": "Ingo Arndt",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=Indigenous+Peoples%27+Day+US&form=hpcapt&filters=HpDate%3a%2220261012_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261012_WhiteHouse%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "亚利桑那",
+   "arizona",
+   "亞利桑那"
+  ],
+  "content_tags": [
+   "崖居遗址",
+   "砂岩峭壁",
+   "石砌废墟",
+   "峡谷"
   ]
  }
 ]
