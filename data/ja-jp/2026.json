@@ -267,9 +267,8 @@
   "content_tags": [
    "苔藓",
    "岩石",
-   "森林小径",
-   "树木",
-   "蕨类植物"
+   "森林",
+   "林间小径"
   ]
  },
  {
@@ -297,8 +296,7 @@
   "tags": [],
   "content_tags": [
    "板栗",
-   "栗蓬（刺壳）",
-   "板栗树",
+   "栗蓬",
    "树叶"
   ]
  },
@@ -333,12 +331,12 @@
    "法國"
   ],
   "content_tags": [
-   "热那亚式瞭望塔",
-   "海岛群",
+   "石砌塔楼",
+   "群岛",
    "灯塔",
-   "地中海",
-   "落日晚霞",
-   "海岸灌木丛"
+   "大海",
+   "岩石海岸",
+   "灌木丛"
   ]
  },
  {
@@ -367,10 +365,11 @@
   "tags": [],
   "content_tags": [
    "海浪",
-   "鹈鹕",
    "礁石",
-   "海洋",
-   "日落"
+   "海鸟",
+   "浪花",
+   "大海",
+   "黄昏天空"
   ]
  },
  {
@@ -402,8 +401,8 @@
    "水车",
    "瀑布",
    "枫树",
-   "岩石",
-   "溪流"
+   "木桥",
+   "岩石"
   ]
  },
  {
@@ -456,10 +455,47 @@
   "tags": [],
   "content_tags": [
    "普利特维采湖群国家公园",
-   "瀑布",
    "湖泊",
-   "秋季森林",
-   "石灰岩崖壁"
+   "瀑布",
+   "森林",
+   "石灰岩峭壁"
+  ]
+ },
+ {
+  "id": "ja-jp-2026-10-13",
+  "market": "ja-jp",
+  "date": "2026-10-13",
+  "urlbase": "/th?id=OHR.RailwayDay2026_JA-JP4058067313",
+  "imageKey": "RailwayDay2026",
+  "title": "今日は鉄道の日",
+  "desc": "嵯峨野トロッコ列車, 京都府京都市 (© giggsy25/Shutterstock)",
+  "location": [
+   "嵯峨野トロッコ列車",
+   "京都府京都市"
+  ],
+  "region": null,
+  "photographer": "giggsy25",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=%E9%89%84%E9%81%93%E3%81%AE%E6%97%A5&form=hpcapt&filters=HpDate%3a%2220261013_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261013_RailwayDay2026%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "京都",
+   "kyoto",
+   "きょうと",
+   "京都府"
+  ],
+  "content_tags": [
+   "观光列车",
+   "红叶",
+   "峡谷",
+   "河流",
+   "铁路"
   ]
  }
 ]

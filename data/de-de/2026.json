@@ -314,9 +314,8 @@
   "content_tags": [
    "苔藓",
    "岩石",
-   "森林小径",
-   "树木",
-   "蕨类植物"
+   "森林",
+   "林间小径"
   ]
  },
  {
@@ -348,7 +347,7 @@
    "章鱼",
    "珊瑚礁",
    "海底沙地",
-   "海水"
+   "清澈海水"
   ]
  },
  {
@@ -376,12 +375,12 @@
   },
   "tags": [],
   "content_tags": [
-   "热那亚式瞭望塔",
-   "海岛群",
+   "石砌塔楼",
+   "群岛",
    "灯塔",
-   "地中海",
-   "落日晚霞",
-   "海岸灌木丛"
+   "大海",
+   "岩石海岸",
+   "灌木丛"
   ]
  },
  {
@@ -418,10 +417,11 @@
   ],
   "content_tags": [
    "海浪",
-   "鹈鹕",
    "礁石",
-   "海洋",
-   "日落"
+   "海鸟",
+   "浪花",
+   "大海",
+   "黄昏天空"
   ]
  },
  {
@@ -451,8 +451,8 @@
   "content_tags": [
    "欧洲盘羊",
    "森林",
-   "苔藓",
-   "落叶"
+   "落叶",
+   "苔藓"
   ]
  },
  {
@@ -482,9 +482,9 @@
   "tags": [],
   "content_tags": [
    "栈桥",
-   "礁石",
    "海面",
-   "鹅卵石滩",
+   "礁石",
+   "卵石滩",
    "晚霞"
   ]
  },
@@ -514,10 +514,34 @@
   "tags": [],
   "content_tags": [
    "普利特维采湖群国家公园",
-   "瀑布",
    "湖泊",
-   "秋季森林",
-   "石灰岩崖壁"
+   "瀑布",
+   "森林",
+   "石灰岩峭壁"
   ]
+ },
+ {
+  "id": "de-de-2026-10-13",
+  "market": "de-de",
+  "date": "2026-10-13",
+  "urlbase": "/th?id=OHR.AmmoniteFossils_DE-DE6773160072",
+  "imageKey": "AmmoniteFossils",
+  "title": "Spiralen durch die Zeit",
+  "desc": "Ammonitenfossilien aus der Jurazeit (© J Nemchinova/Getty Images)",
+  "location": [
+   "Ammonitenfossilien aus der Jurazeit"
+  ],
+  "region": null,
+  "photographer": "J Nemchinova",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Fossilien&form=hpcapt&filters=HpDate%3a%2220261013_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261013_AmmoniteFossils%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
