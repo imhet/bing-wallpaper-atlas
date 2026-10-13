@@ -29,6 +29,16 @@ def test_nullables_accepted(make_record):
     validate_record(rec)
 
 
+def test_absolute_mirror_url_accepted(make_record):
+    # npanuhin 深史源：老图无 OHR ID，urlbase 存镜像绝对 URL
+    validate_record(make_record(urlbase="https://bing.npanuhin.me/US/en/2011-06-01.jpg"))
+
+
+def test_non_th_relative_url_rejected(make_record):
+    with pytest.raises(Exception):
+        validate_record(make_record(urlbase="/images/foo.jpg"))
+
+
 def test_resolutions_must_be_bool(make_record):
     with pytest.raises(Exception):
         validate_record(make_record(resolutions={"uhd": "yes"}))

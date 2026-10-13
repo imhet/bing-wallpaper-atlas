@@ -11,14 +11,19 @@ const cjkTags = (props.record.tags || []).filter((t) => /[一-鿿]/.test(t))
 const contentTags = props.record.content_tags || []
 
 const picked = ref('')
-// 只暴露用户可选档位（thumb 是列表缩略图专用，spec §6.4 禁止展示），并按 uhd>fhd>hd 排序
-const available = computed(() => Object.keys(RES_SUFFIX).filter((k) => props.record.resolutions?.[k] === true))
+// 只暴露用户可选档位（thumb 是列表缩略图专用，spec §6.4 禁止展示），并按 uhd>fhd>hd 排序；
+// 镜像绝对 URL（npanuhin 深史）无多档变体，只有原图单档
+const available = computed(() => {
+  if (props.record.urlbase?.startsWith('https://'))
+    return props.record.resolutions?.original ? ['original'] : []
+  return Object.keys(RES_SUFFIX).filter((k) => props.record.resolutions?.[k] === true)
+})
 const viewRes = computed(() => picked.value || available.value[0] || 'fhd')
 const siblings = computed(() =>
   props.records.filter((r) => r.imageKey && r.imageKey === props.record.imageKey && r.id !== props.record.id),
 )
 const viewSrc = computed(() => imageUrl(props.record.urlbase, RES_SUFFIX[viewRes.value] || '_1920x1080.jpg'))
-const RES_LABEL = { uhd: '4K UHD (3840×2160)', fhd: '1920×1080', hd: '1366×768' }
+const RES_LABEL = { uhd: '4K UHD (3840×2160)', fhd: '1920×1080', hd: '1366×768', original: '原图' }
 
 function onKey(e) {
   if (e.key === 'Escape') emit('close')
@@ -32,7 +37,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
     <div class="modal">
       <button class="close" aria-label="关闭" @click="emit('close')">✕</button>
       <img class="hero" :src="viewSrc" :alt="record.title || record.desc" />
-      <div class="res-switch" v-if="available.length">
+      <div class="res-switch" v-if="available.length > 1">
         <button v-for="k in available" :key="k" :class="{ active: k === viewRes }" @click="picked = k">
           {{ RES_LABEL[k] || k }}
         </button>

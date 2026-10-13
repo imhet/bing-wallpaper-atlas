@@ -99,6 +99,8 @@ NEGATIVE_CONTEXT_CASES = [
     ("swedish telescope at la silla eso observatory, chile", ["瑞典"], None),
     ("koala in a eucalyptus tree, great otway national park, australia (© x - site.co.uk)", ["英国"], None),
     ("rio grande, big bend national park, texas, usa", ["里约热内卢"], "美国"),
+    # --- 专名类比提及（2026-10-13 深史回填引入）：新西兰塔拉纳基山在《最后的武士》里当过富士山替身 ---
+    ("Taranaki had a star turn as Mount Fuji in background shots for 'The Last Samurai', New Zealand", ["富士山"], None),
     # --- CJK 子串误命中 ---
     ("白天堂海滩，圣灵群岛，昆士兰州，澳大利亚", ["兰州"], None),
     ("英仙座流星雨，内华达州，美国", ["达州", "四川"], "美国"),

@@ -89,10 +89,10 @@ def tag_image(image_bytes):
 
 
 def _parse_vlm_tags(text):
-    """从模型回复中提取 JSON 标签数组；无有效 JSON 返回 None（调用方降级 CLIP）。
+    """从模型回复中提取 JSON 标签数组。
 
-    整段可解析时顶层必须是数组（模型输出对象=不符合约定，拒绝）；否则从杂文本
-    中提取数组候选。
+    返回 None = 无有效 JSON（调用方降级 CLIP）；返回 [] = VLM 明确判断图中
+    无可标注实体（合法结论，绝不能降级 CLIP 硬凑词表标签）。
     """
     if not text:
         return None
@@ -110,12 +110,11 @@ def _parse_vlm_tags(text):
             return None
     if not isinstance(items, list):
         return None
-    tags = [t.strip() for t in items if isinstance(t, str) and t.strip()]
-    return tags[:VLM_MAX_TAGS] or None
+    return [t.strip() for t in items if isinstance(t, str) and t.strip()][:VLM_MAX_TAGS]
 
 
 def vlm_tag_image(image_bytes):
-    """单张图片字节 → VLM 内容标签列表；回复无有效标签时抛 ValueError。"""
+    """单张图片字节 → VLM 内容标签列表（可为 [] = 图中无可标注实体）；无有效 JSON 时抛 ValueError。"""
     body = {
         "model": VLM_MODEL,
         "max_tokens": 1024,  # thinking 块也计入输出配额，400 会在 JSON 中途截断
@@ -147,7 +146,25 @@ def vlm_tag_image(image_bytes):
     return tags
 
 
+def _shrink_image(image_bytes, max_width=640):
+    """镜像原图缩到 max_width 宽（VLM 按图片像素计 token，1920 原图约为 640 的 9 倍开销）。"""
+    from PIL import Image
+
+    img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+    if img.width <= max_width:
+        return image_bytes
+    h = round(img.height * max_width / img.width)
+    buf = io.BytesIO()
+    img.resize((max_width, h)).save(buf, "JPEG", quality=85)
+    return buf.getvalue()
+
+
 def fetch_thumb(urlbase):
+    if urlbase.startswith("https://"):
+        # 镜像绝对 URL（npanuhin 深史）：无 _400x240 档，拉原图后本地缩
+        resp = requests.get(urlbase, timeout=30)
+        resp.raise_for_status()
+        return _shrink_image(resp.content)
     resp = requests.get(f"{BING_BASE}{urlbase}{THUMB_SUFFIX}", timeout=20)
     resp.raise_for_status()
     return resp.content
@@ -182,8 +199,9 @@ def main():
     for key, recs in groups.items():
         if wanted and not {r["id"] for r in recs} & wanted:
             continue
-        if not wanted and not args.force and any(r.get("content_tags") for r in recs):
-            continue  # 该图已打标（增量语义）
+        # 增量语义：content_tags is not None（含 [] = VLM 判断无可标注实体）即视为已打标
+        if not wanted and not args.force and any(r.get("content_tags") is not None for r in recs):
+            continue
         todo.append((key, recs))
         if args.limit and len(todo) >= args.limit:
             break
@@ -191,10 +209,16 @@ def main():
     def infer(item):
         key, recs = item
         lead = recs[0]
-        img = fetch_thumb(lead["urlbase"])
+        try:
+            img = fetch_thumb(lead["urlbase"])
+        except Exception as e:  # 拉图失败只跳过该组（增量语义下轮重跑自动补打），不能崩全进程
+            log.warning("图拉取失败，跳过: %s: %s", key, e)
+            return None
         if args.engine == "vlm":
-            # 429 指数退避三次（编码套餐限流紧，退避自适应节奏），其他错误重试一次；
-            # 仍失败才降级 CLIP——避免限流图被静默打成不一致的 CLIP 标签
+            # 429 指数退避三次（编码套餐限流紧，退避自适应节奏）；耗尽后跳过不降级——
+            # 限流是暂时不可用而非「VLM 判不了」，降级 CLIP 会混入词表风格标签
+            # （2026-10-13 实证：单日 38% 降级污染），增量语义下轮自动补打。
+            # 其他错误（解析失败等）重试一次后仍降级 CLIP 兜底。
             delays = (2, 5, 10) if args.engine == "vlm" else ()
             for attempt, wait in enumerate((*delays, 0)):
                 try:
@@ -203,6 +227,9 @@ def main():
                     if e.code == 429 and wait:
                         time.sleep(wait)
                         continue
+                    if e.code == 429:
+                        log.warning("429 退避耗尽，跳过（下轮补打）: %s", key)
+                        return None
                     log.warning("VLM HTTP %s，降级 CLIP: %s", e.code, key)
                     break
                 except Exception as e:
@@ -216,7 +243,10 @@ def main():
     # 推理并发、写回串行：upsert 是整分片读改写，并发写会互相覆盖
     done = 0
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        for key, recs, tags in ex.map(infer, todo):
+        for result in ex.map(infer, todo):
+            if result is None:  # 拉图失败的组
+                continue
+            key, recs, tags = result
             print(f"{key} | {recs[0]['date']} {(recs[0].get('desc') or '')[:36]} → {tags} ({len(recs)}条)")
             if not args.dry_run:
                 for rec in recs:

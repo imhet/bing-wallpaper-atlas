@@ -4,6 +4,7 @@ from pathlib import Path
 
 from crawler.sources.bing_api_source import BingApiSource
 from crawler.sources.niumoo_source import NiumooSource
+from crawler.sources.npanuhin_source import NpanuhinSource
 
 FIXTURE = json.loads((Path(__file__).parent / "fixtures" / "niumoo_images.json").read_text("utf-8"))
 
@@ -68,6 +69,75 @@ def test_niumoo_one_bad_item_does_not_kill_source():
         "/th?id=OHR.Good_ZH-CN1111111111",
         "/th?id=OHR.Good2_ZH-CN5555555555",
     ]
+
+
+NPANUHIN_FIXTURE = [
+    {
+        "title": "Glade Creek Grist Mill, West Virginia, United States",
+        "caption": None, "subtitle": None,
+        "copyright": "© dszc/Getty Images",
+        "description": "Glade Creek Grist Mill sits above the rocky waters of Glade Creek.",
+        "date": "2011-06-01", "bing_url": None,
+        "url": "https://bing.npanuhin.me/US/en/2011-06-01.jpg",
+    },
+    {
+        "title": "Title-only record",
+        "caption": None, "subtitle": None, "copyright": None,
+        "description": None, "date": "2012-03-05", "bing_url": None,
+        "url": "https://bing.npanuhin.me/US/en/2012-03-05.jpg",
+    },
+]
+
+
+def test_npanuhin_fetch_maps_fields():
+    records = NpanuhinSource().fetch(session=FakeSession(NPANUHIN_FIXTURE))
+    assert len(records) == 2
+    first = records[0]
+    assert first["market"] == "en-us"  # US-en → en-us
+    assert first["date"] == "2011-06-01"  # 归档已是规范日期，不做 niumoo 式 -1 平移
+    assert first["urlbase"] == "https://bing.npanuhin.me/US/en/2011-06-01.jpg"  # 镜像绝对 URL 原样
+    assert first["title"].startswith("Glade Creek")
+    assert "Glade Creek" in first["desc"]
+    assert first["copyright"] == "© dszc/Getty Images"  # build_record 用它补空解析摄影师/图库
+    assert first["copyrightlink"] is None and first["quiz"] is None
+
+
+def test_npanuhin_null_fields_normalized():
+    records = NpanuhinSource().fetch(session=FakeSession(NPANUHIN_FIXTURE))
+    only_title = records[1]
+    assert only_title["desc"] == ""  # description null → 空串（schema desc 不可空）
+    assert only_title["copyright"] is None
+
+
+def test_npanuhin_drops_bad_items():
+    payload = [
+        {"title": "no date", "url": "https://bing.npanuhin.me/US/en/x.jpg"},
+        {"title": "bad date", "date": "01/06/2012", "url": "https://bing.npanuhin.me/US/en/bad.jpg"},
+        {"title": "no url", "date": "2012-02-01"},
+        {"title": "relative url", "date": "2012-03-01", "url": "/US/en/rel.jpg"},
+        {"title": "future", "date": "2999-01-01", "url": "https://bing.npanuhin.me/US/en/future.jpg"},
+        # ≥ niumoo en-us 起点（2021-02）的重叠段丢弃：避免与既有记录在 upsert 整条替换下互相覆盖
+        {"title": "overlap", "date": "2021-06-01", "url": "https://bing.npanuhin.me/US/en/2021-06-01.jpg"},
+        {"title": "ok", "date": "2012-02-02", "url": "https://bing.npanuhin.me/US/en/2012-02-02.jpg"},
+    ]
+    records = NpanuhinSource().fetch(session=FakeSession(payload))
+    assert [r["date"] for r in records] == ["2012-02-02"]
+
+
+def test_npanuhin_dedupes_same_date():
+    payload = [
+        {"title": "first", "date": "2013-05-05", "url": "https://bing.npanuhin.me/US/en/2013-05-05.jpg"},
+        {"title": "second", "date": "2013-05-05", "url": "https://bing.npanuhin.me/US/en/2013-05-05.jpg"},
+    ]
+    records = NpanuhinSource().fetch(session=FakeSession(payload))
+    assert len(records) == 1 and records[0]["title"] == "first"
+
+
+def test_npanuhin_normalizes_trailing_copyright():
+    payload = [{"title": "t", "date": "2014-04-04", "copyright": "McPHOTO/age fotostock ©",
+                "url": "https://bing.npanuhin.me/US/en/2014-04-04.jpg"}]
+    records = NpanuhinSource().fetch(session=FakeSession(payload))
+    assert records[0]["copyright"] == "© McPHOTO/age fotostock"  # 尾部 © 归一到头部，兼容版权解析器
 
 
 def test_bing_api_source_covers_all_markets(monkeypatch):

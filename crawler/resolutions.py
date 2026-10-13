@@ -24,6 +24,9 @@ def _probe(url, session):
 
 
 def check_resolutions(urlbase, session=None):
+    if urlbase.startswith("https://"):
+        # 镜像绝对 URL（npanuhin 深史源）：无 Bing 四档变体，原图即唯一档，不发探测
+        return {"original": True}
     session = session or requests
     urls = [f"{BASE}{urlbase}{suffix}" for _, suffix in RESOLUTION_SUFFIXES]
     with ThreadPoolExecutor(max_workers=len(RESOLUTION_SUFFIXES)) as ex:

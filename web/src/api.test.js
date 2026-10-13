@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { dedupeByUrlbase, loadAllRecords, loadYearShards } from './api'
+import { dedupeByUrlbase, imageUrl, loadAllRecords, loadYearShards, thumbUrl } from './api'
 
 describe('loadYearShards', () => {
   it('fetches every market that has the year and flattens', async () => {
@@ -66,5 +66,25 @@ describe('dedupeByUrlbase', () => {
       { id: 'fr', market: 'fr-fr', date: '2026-10-08', urlbase: '/th?id=OHR.Fuji_FR-FR001' },
     ]
     expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['fr'])
+  })
+
+  it('mirror absolute urlbase（npanuhin 深史）stays a standalone group', () => {
+    const recs = [{ id: 'us', market: 'en-us', date: '2011-06-01', urlbase: 'https://bing.npanuhin.me/US/en/2011-06-01.jpg' }]
+    expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['us'])
+  })
+})
+
+describe('imageUrl / thumbUrl 对镜像绝对 URL（npanuhin 深史源）', () => {
+  it('absolute urlbase returns as-is regardless of suffix', () => {
+    const u = 'https://bing.npanuhin.me/US/en/2011-06-01.jpg'
+    expect(imageUrl(u, '_UHD.jpg')).toBe(u)
+    // 老记录 resolutions 只有 original，thumbUrl 走 fallback 分支也必须直返原 URL
+    expect(thumbUrl({ urlbase: u, resolutions: { original: true } })).toBe(u)
+  })
+
+  it('bing relative urlbase keeps CDN composition', () => {
+    expect(imageUrl('/th?id=OHR.X_ZH-CN1', '_400x240.jpg')).toBe('https://www.bing.com/th?id=OHR.X_ZH-CN1_400x240.jpg')
+    expect(thumbUrl({ urlbase: '/th?id=OHR.X_ZH-CN1', resolutions: { thumb: true } }))
+      .toBe('https://www.bing.com/th?id=OHR.X_ZH-CN1_400x240.jpg')
   })
 })

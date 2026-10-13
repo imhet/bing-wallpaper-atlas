@@ -25,6 +25,14 @@ def test_suffix_list():
     assert dict(RESOLUTION_SUFFIXES)["uhd"] == "_UHD.jpg"
 
 
+def test_absolute_url_skips_probing():
+    # npanuhin 深史镜像 URL：无 Bing 四档变体，原图即唯一档，不发任何探测请求
+    session = FakeSession({})
+    result = check_resolutions("https://bing.npanuhin.me/US/en/2011-06-01.jpg", session=session)
+    assert result == {"original": True}
+    assert session.urls == []
+
+
 def test_check():
     session = FakeSession({"_UHD.jpg": 200, "_1920x1080.jpg": 200, "_1366x768.jpg": 404, "_400x240.jpg": 200})
     result = check_resolutions("/th?id=OHR.Test_ZH-CN1234567890", session=session)

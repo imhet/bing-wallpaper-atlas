@@ -94,8 +94,12 @@ describe('真实数据黄金集 · 跨语言桥接', () => {
     expect(ids('阿尔卑斯').size).toBeGreaterThanOrEqual(20)
   })
 
-  it('繁体「張家界」与简体召回一致（张家界组含繁体别名）', () => {
-    expect(ids('張家界')).toEqual(ids('张家界'))
+  it('繁体「張家界」召回是简体的子集且 ≥6（词典繁体别名桥接；VLM 简体画面标签额外多召回属特性）', () => {
+    // 深史老图（如 en-us-2010-08-30 峰林）desc 空无 geo tags，「张家界」来自 VLM 简体
+    // content_tags——繁体只能桥接词典别名，故繁体 ⊆ 简体、反向不成立
+    const trad = ids('張家界'), simp = ids('张家界')
+    for (const id of trad) expect(simp, `${id} 繁体召回应在简体内`).toContain(id)
+    expect(trad.size).toBeGreaterThanOrEqual(6)
   })
 
   // FIXME(词典繁体覆盖不全): 广西组别名只有 ['guangxi']，无「廣西」——繁体用户搜广西零结果。
@@ -109,13 +113,16 @@ describe('真实数据黄金集 · 防误报', () => {
   it('「paris」主市场全为法国巴黎图（≥20 条，词边界不误伤他词）', () => {
     const out = hits('paris')
     expect(out.length).toBeGreaterThanOrEqual(20)
-    // 扩展市场（fr-fr 等）文本为本地语言，无 "France" 字样时 region 归不出（null 可接受）
+    // 2010-2020 深史老记录 desc 多为空，region 归不出国家（null 属预期），只查 niumoo 起之后的记录
     for (const r of out)
-      if (['zh-cn', 'en-us'].includes(r.market)) expect(r.region, `${r.id} 应归法国`).toBe('法国')
+      if (['zh-cn', 'en-us'].includes(r.market) && r.date >= '2021-02-01')
+        expect(r.region, `${r.id} 应归法国`).toBe('法国')
   })
 
-  it('「comparison」零误报（含 paris 子串的词不触发巴黎）', () => {
-    expect(hits('comparison')).toHaveLength(0)
+  it('「comparison」不触发巴黎（命中只来自正文真含该词的老记录，任何命中都不得挂巴黎 tags）', () => {
+    // 深史老记录正文可能真含 comparison 一词（合法字面召回）；防的是 paris 子串误挂巴黎标签
+    for (const r of hits('comparison'))
+      expect(r.tags.filter((t) => /paris|巴黎/i.test(t)), `${r.id} 不得挂巴黎`).toEqual([])
   })
 
   it('「中国」≥120 条且不混入拱门国家公园（字符共现误报已由二元组 AND 解决）', () => {

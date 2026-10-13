@@ -17,6 +17,7 @@ from .resolutions import check_resolutions
 from .schema import validate_record
 from .sources.bing_api_source import BingApiSource
 from .sources.niumoo_source import NiumooSource
+from .sources.npanuhin_source import NpanuhinSource
 from .storage import load_year, upsert_record, write_aggregations
 
 log = logging.getLogger(__name__)
@@ -41,6 +42,11 @@ def verify_mkt(markets, session=None):
 
 def build_record(merged):
     loc = parse_copyright(merged.get("desc", ""))
+    cp = merged.get("copyright")  # npanuhin 深史源：版权在独立字段，补空解析摄影师/图库
+    if cp and not loc["photographer"]:
+        cloc = parse_copyright(f"({cp})")
+        loc["photographer"] = cloc["photographer"]
+        loc["gallery"] = cloc["gallery"]
     desc = merged.get("desc", "") or ""
     rec = {
         "id": f'{merged["market"]}-{merged["date"]}',
@@ -63,23 +69,30 @@ def build_record(merged):
 
 
 def run_backfill(data_dir="data", check_res=True, markets=None):
-    sources = [NiumooSource(), BingApiSource()]
+    sources = [NiumooSource(), BingApiSource(), NpanuhinSource()]
     by_key = {}
+    key_needs_check = {}  # 预检按「源×记录」判定：镜像源记录不因同市场的 Bing 系记录预检失败而连坐
+    mkt_check_markets = set()
     for src in sources:
         try:
             items = src.fetch()
         except Exception as e:  # 单个源失败不拖垮整个回填
             log.warning("source %s failed: %s", src.name, e)
             continue
+        needs_check = getattr(src, "needs_mkt_check", True)
         for r in items:
             if markets and r["market"] not in markets:
                 continue
-            by_key.setdefault((r["market"], r["date"]), []).append(r)
+            key = (r["market"], r["date"])
+            by_key.setdefault(key, []).append(r)
+            if needs_check:
+                key_needs_check[key] = True
+                mkt_check_markets.add(r["market"])
 
-    valid_markets = set(verify_mkt(sorted({m for m, _ in by_key})))
+    valid_markets = set(verify_mkt(sorted(mkt_check_markets)))
     added = skipped = failed = 0
     for (market, date), recs in sorted(by_key.items()):
-        if market not in valid_markets:
+        if key_needs_check.get((market, date)) and market not in valid_markets:
             continue
         try:
             merged = merge_records(*recs)

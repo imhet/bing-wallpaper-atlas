@@ -1,7 +1,10 @@
 export const BING_BASE = 'https://www.bing.com'
 export const RES_SUFFIX = { uhd: '_UHD.jpg', fhd: '_1920x1080.jpg', hd: '_1366x768.jpg' }
 
-export const imageUrl = (urlbase, suffix) => `${BING_BASE}${urlbase}${suffix}`
+// urlbase 两种形态：/th 开头 = Bing CDN 相对路径；https:// = 第三方镜像绝对 URL
+// （npanuhin 深史源，老图无 OHR ID、无多档变体，原图即唯一档）
+export const imageUrl = (urlbase, suffix) =>
+  urlbase.startsWith('https://') ? urlbase : `${BING_BASE}${urlbase}${suffix}`
 
 export const thumbUrl = (r) =>
   r.resolutions?.thumb ? imageUrl(r.urlbase, '_400x240.jpg') : imageUrl(r.urlbase, '_1920x1080.jpg')

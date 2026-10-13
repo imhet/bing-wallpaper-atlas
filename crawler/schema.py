@@ -14,7 +14,8 @@ SCHEMA = {
         "id": {"type": "string", "pattern": "^[a-z]{2}-[a-z]{2}-\\d{4}-\\d{2}-\\d{2}$"},
         "market": {"type": "string", "pattern": "^[a-z]{2}-[a-z]{2}$"},
         "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
-        "urlbase": {"type": "string", "pattern": "^/th"},
+        # /th = Bing CDN 相对路径；https:// = 第三方镜像绝对 URL（npanuhin 深史源，老图无 OHR ID）
+        "urlbase": {"type": "string", "pattern": "^(https://|/th)"},
         "imageKey": {"type": ["string", "null"]},
         "title": {"type": ["string", "null"]},
         "desc": {"type": "string"},
