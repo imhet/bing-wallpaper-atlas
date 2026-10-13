@@ -232,12 +232,12 @@
    "甘肅"
   ],
   "content_tags": [
+   "七彩丹霞",
    "张掖丹霞",
-   "丹霞地貌",
+   "侵蚀地貌",
    "彩色丘陵",
-   "山脉",
-   "沟壑",
-   "山谷"
+   "干涸河谷",
+   "山脊"
   ]
  },
  {
@@ -267,9 +267,9 @@
   "content_tags": [
    "苔藓",
    "岩石",
-   "森林",
+   "森林小径",
    "树木",
-   "小径"
+   "蕨类植物"
   ]
  },
  {
@@ -297,7 +297,8 @@
   "tags": [],
   "content_tags": [
    "板栗",
-   "栗蓬刺壳",
+   "栗蓬（刺壳）",
+   "板栗树",
    "树叶"
   ]
  },
@@ -332,12 +333,12 @@
    "法國"
   ],
   "content_tags": [
-   "石砌圆形瞭望塔",
+   "热那亚式瞭望塔",
+   "海岛群",
    "灯塔",
-   "礁石岛屿",
-   "海岸山丘",
-   "岩石海岸",
-   "大海"
+   "地中海",
+   "落日晚霞",
+   "海岸灌木丛"
   ]
  },
  {
@@ -368,7 +369,8 @@
    "海浪",
    "鹈鹕",
    "礁石",
-   "海洋"
+   "海洋",
+   "日落"
   ]
  },
  {
@@ -396,12 +398,12 @@
   },
   "tags": [],
   "content_tags": [
-   "水磨坊",
+   "磨坊",
    "水车",
    "瀑布",
    "枫树",
-   "溪流",
-   "岩石"
+   "岩石",
+   "溪流"
   ]
  },
  {
@@ -427,5 +429,37 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "ja-jp-2026-10-12",
+  "market": "ja-jp",
+  "date": "2026-10-12",
+  "urlbase": "/th?id=OHR.PlitviceAutumn_JA-JP3930294400",
+  "imageKey": "PlitviceAutumn",
+  "title": "紅葉に彩られた湖と滝",
+  "desc": "プリトヴィツェ湖群国立公園, クロアチア (© Jan Wlodarczyk/Alamy)",
+  "location": [
+   "プリトヴィツェ湖群国立公園",
+   "クロアチア"
+  ],
+  "region": null,
+  "photographer": "Jan Wlodarczyk",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%97%E3%83%AA%E3%83%88%E3%83%B4%E3%82%A3%E3%83%84%E3%82%A7%E6%B9%96%E7%BE%A4%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92&form=hpcapt&filters=HpDate%3a%2220261012_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261012_PlitviceAutumn%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "普利特维采湖群国家公园",
+   "瀑布",
+   "湖泊",
+   "秋季森林",
+   "石灰岩崖壁"
+  ]
  }
 ]
