@@ -17,7 +17,7 @@ from .resolutions import check_resolutions
 from .schema import validate_record
 from .sources.bing_api_source import BingApiSource
 from .sources.niumoo_source import NiumooSource
-from .sources.npanuhin_source import NpanuhinSource
+from .sources.npanuhin_source import EXTENSION_END_DATE, NpanuhinSource
 from .storage import load_year, upsert_record, write_aggregations
 
 log = logging.getLogger(__name__)
@@ -69,7 +69,16 @@ def build_record(merged):
 
 
 def run_backfill(data_dir="data", check_res=True, markets=None):
-    sources = [NiumooSource(), BingApiSource(), NpanuhinSource()]
+    # npanuhin 四市场扩接（ja/de/fr/gb 2024-04~2026-09 段）：end_date 挡住本地每日增量重叠
+    sources = [
+        NiumooSource(),
+        BingApiSource(),
+        NpanuhinSource(),
+        NpanuhinSource(market="ja-jp", end_date=EXTENSION_END_DATE),
+        NpanuhinSource(market="de-de", end_date=EXTENSION_END_DATE),
+        NpanuhinSource(market="fr-fr", end_date=EXTENSION_END_DATE),
+        NpanuhinSource(market="en-gb", end_date=EXTENSION_END_DATE),
+    ]
     by_key = {}
     key_needs_check = {}  # 预检按「源×记录」判定：镜像源记录不因同市场的 Bing 系记录预检失败而连坐
     mkt_check_markets = set()

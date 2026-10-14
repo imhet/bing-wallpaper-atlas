@@ -91,7 +91,7 @@ def test_run_backfill_end_to_end(tmp_path, monkeypatch):
                         lambda urlbase, **kw: {"uhd": True, "fhd": True, "hd": True, "thumb": True})
     monkeypatch.setattr("crawler.backfill.NiumooSource", lambda: _StubNiumoo(niumoo_payload))
     monkeypatch.setattr("crawler.backfill.BingApiSource", lambda: _StubBing(bing_payload))
-    monkeypatch.setattr("crawler.backfill.NpanuhinSource", lambda: _StubBing([]))
+    monkeypatch.setattr("crawler.backfill.NpanuhinSource", lambda *a, **k: _StubBing([]))
     monkeypatch.setattr("crawler.backfill.verify_mkt", lambda markets, session=None: list(markets))
 
     run_backfill(data_dir=tmp_path, check_res=False)
@@ -134,7 +134,7 @@ def test_run_backfill_one_bad_record_does_not_abort(tmp_path, monkeypatch):
 
     monkeypatch.setattr("crawler.backfill.NiumooSource", lambda: _RawStub())
     monkeypatch.setattr("crawler.backfill.BingApiSource", lambda: _StubBing())
-    monkeypatch.setattr("crawler.backfill.NpanuhinSource", lambda: _StubBing())
+    monkeypatch.setattr("crawler.backfill.NpanuhinSource", lambda *a, **k: _StubBing())
     monkeypatch.setattr("crawler.backfill.verify_mkt", lambda markets, session=None: list(markets))
 
     run_backfill(data_dir=tmp_path, check_res=False)  # 不抛异常即通过
@@ -165,7 +165,7 @@ def test_mirror_records_not_blocked_by_preflight_failure_of_bing_sources(tmp_pat
 
     monkeypatch.setattr("crawler.backfill.NiumooSource", lambda: _StubNiumoo())
     monkeypatch.setattr("crawler.backfill.BingApiSource", lambda: _StubEmpty())
-    monkeypatch.setattr("crawler.backfill.NpanuhinSource", lambda: _StubNpanuhin())
+    monkeypatch.setattr("crawler.backfill.NpanuhinSource", lambda *a, **k: _StubNpanuhin())
     monkeypatch.setattr("crawler.backfill.verify_mkt", lambda markets, session=None: [])  # 预检全失败
     monkeypatch.setattr("crawler.backfill.check_resolutions",
                         lambda urlbase, **kw: {"original": True} if urlbase.startswith("https://") else {})
@@ -196,7 +196,7 @@ def test_npanuhin_source_skips_mkt_preflight(tmp_path, monkeypatch):
 
     monkeypatch.setattr("crawler.backfill.NiumooSource", lambda: _StubEmpty())
     monkeypatch.setattr("crawler.backfill.BingApiSource", lambda: _StubEmpty())
-    monkeypatch.setattr("crawler.backfill.NpanuhinSource", lambda: _StubNpanuhin())
+    monkeypatch.setattr("crawler.backfill.NpanuhinSource", lambda *a, **k: _StubNpanuhin())
     monkeypatch.setattr("crawler.backfill.verify_mkt",
                         lambda markets, session=None: preflight_calls.extend(markets) or [])
     monkeypatch.setattr("crawler.backfill.check_resolutions", lambda urlbase, **kw: {"original": True})

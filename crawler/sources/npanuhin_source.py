@@ -1,10 +1,11 @@
 """npanuhin/Bing-Wallpaper-Archive 深史回填源（en-us 自 2010-01-01，唯一可靠历史归档）。
 
-只取 niumoo en-us 起点（2021-02）之前的部分，重叠段不进 backfill（与 skip-guard 双防线）。
-老图无 Bing OHR ID，urlbase 存镜像绝对 URL——schema pattern / resolutions 探测 /
-前端 imageUrl 均已兼容该形态。其他市场（CN-zh 等）该归档仅 2024-04 起，比现有
-数据还少，不接入。深史条目 2010-2015 无 description（当年 Bing 首页 HTML 只嵌
-标题，描述在 AJAX 弹层里从未被快照保存——经查证的历史事实，非归档缺失）。
+en-us 只取 niumoo 起点（2021-02）之前的部分，重叠段不进 backfill（与 skip-guard 双防线）。
+ja-jp/de-de/fr-fr/en-gb 归档 2024-04 起，end_date 参数化挡住与本地每日增量的重叠段
+（2026-09-29 起）。老图无 Bing OHR ID，urlbase 存镜像绝对 URL——schema pattern /
+resolutions 探测 / 前端 imageUrl 均已兼容该形态。深史条目 2010-2015 无 description
+（当年 Bing 首页 HTML 只嵌标题，描述在 AJAX 弹层里从未被快照保存——经查证的历史事实，
+非归档缺失）。
 """
 
 import os
@@ -15,6 +16,7 @@ import requests
 NPANUHIN_URL = os.environ.get("NPANUHIN_JSON_URL", "https://bing.npanuhin.me/US-en.json")
 MARKET = "en-us"  # 归档的 US-en
 END_DATE = "2021-02-01"  # niumoo 的 en-us 起点
+EXTENSION_END_DATE = "2026-09-29"  # ja/de/fr/gb 的本地每日增量起点
 
 _DATE_FMT = "%Y-%m-%d"
 
@@ -33,9 +35,17 @@ class NpanuhinSource:
     name = "npanuhin"
     needs_mkt_check = False  # 数据来自镜像归档而非 Bing 接口，不存在网络位置路由污染
 
+    def __init__(self, market=MARKET, end_date=END_DATE):
+        self.market = market
+        self.end_date = end_date
+        lang, region = market.split("-")
+        self.slug = f"{region.upper()}-{lang}"  # en-us → US-en、ja-jp → JP-ja
+        # NPANUHIN_JSON_URL 环境变量是全局测试后门：设置时覆盖所有实例
+        self.url = NPANUHIN_URL if os.environ.get("NPANUHIN_JSON_URL") else f"https://bing.npanuhin.me/{self.slug}.json"
+
     def fetch(self, session=None):
         session = session or requests
-        resp = session.get(NPANUHIN_URL, timeout=30)
+        resp = session.get(self.url, timeout=30)
         resp.raise_for_status()
         data = resp.json()
         if not isinstance(data, list):
@@ -49,13 +59,13 @@ class NpanuhinSource:
             except (ValueError, AttributeError):
                 continue  # 缺失/坏日期丢自己，不能让整源报废
             url = (item.get("url") or "").strip()
-            if not url.startswith("https://") or date > today or date >= END_DATE:
+            if not url.startswith("https://") or date > today or date >= self.end_date:
                 continue
             if date in seen:
                 continue
             seen.add(date)
             out.append({
-                "market": MARKET,
+                "market": self.market,
                 "date": date,
                 "urlbase": url,
                 "title": item.get("title"),

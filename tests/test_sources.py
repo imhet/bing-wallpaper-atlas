@@ -140,6 +140,28 @@ def test_npanuhin_normalizes_trailing_copyright():
     assert records[0]["copyright"] == "© McPHOTO/age fotostock"  # 尾部 © 归一到头部，兼容版权解析器
 
 
+def test_npanuhin_market_variants():
+    # 其他市场接入（ja-jp 等 2024-04 起归档）：slug 按市场推导、end_date 参数化挡住与本地增量重叠段
+    src = NpanuhinSource(market="ja-jp", end_date="2026-09-29")
+    assert src.slug == "JP-ja"
+    assert src.url.endswith("/JP-ja.json")
+    payload = [
+        {"title": "keep", "date": "2025-06-01", "url": "https://bing.npanuhin.me/JP/ja/2025-06-01.jpg"},
+        {"title": "overlap", "date": "2026-09-29", "url": "https://bing.npanuhin.me/JP/ja/2026-09-29.jpg"},
+    ]
+    records = src.fetch(session=FakeSession(payload))
+    assert [r["date"] for r in records] == ["2025-06-01"]
+    assert records[0]["market"] == "ja-jp"
+
+
+def test_npanuhin_default_is_en_us_deep_history():
+    # 无参构造保持既有行为：US-en 深史、END_DATE 挡 niumoo 重叠段
+    src = NpanuhinSource()
+    assert src.slug == "US-en"
+    assert src.market == "en-us"
+    assert src.end_date == "2021-02-01"
+
+
 def test_bing_api_source_covers_all_markets(monkeypatch):
     seen = []
     monkeypatch.setattr("crawler.sources.bing_api_source.fetch_market",
