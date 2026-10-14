@@ -109,6 +109,46 @@ describe('真实数据黄金集 · 跨语言桥接', () => {
   })
 })
 
+describe('真实数据黄金集 · 多关键词段间 AND（2026-10-15 新增）', () => {
+  it('「中国西藏的雪山」= 中国∩西藏∩雪山（虚词「的」切段；现状 OR 回退曾返回 654 条噪声）', () => {
+    const got = ids('中国西藏的雪山')
+    const tibet = ids('西藏')
+    const snow = ids('雪山')
+    expect(got.size).toBeGreaterThan(0)
+    expect(got.size).toBeLessThanOrEqual(20)
+    for (const id of got) expect(tibet.has(id) && snow.has(id), `${id} 应同时命中西藏与雪山`).toBe(true)
+  })
+
+  it('「雪山 湖」= 雪山∩湖（空格切段 AND；此前语义是 OR 并集）', () => {
+    const got = ids('雪山 湖')
+    const snow = ids('雪山')
+    const lake = ids('湖')
+    expect(got.size).toBeGreaterThan(0)
+    for (const id of got) expect(snow.has(id) && lake.has(id), `${id} 应同时命中雪山与湖`).toBe(true)
+    expect(got).toContain('zh-cn-2024-09-02') // 高山湖泊图
+  })
+})
+
+describe('真实数据黄金集 · 日期搜索（2026-10-15 新增）', () => {
+  it('「2026-10-01」精确命中当天（此前数字字噪声命中 65 条）', () => {
+    const got = hits('2026-10-01')
+    expect(got.length).toBeGreaterThan(0)
+    for (const r of got) expect(r.date, `${r.id} 应是当天`).toBe('2026-10-01')
+  })
+
+  it('「20261001」连续数字同样精确命中当天', () => {
+    const got = hits('20261001')
+    expect(got.length).toBeGreaterThan(0)
+    for (const r of got) expect(r.date).toBe('2026-10-01')
+  })
+
+  it('「10-01」命中每一年的 10-01（en-us 深史 2010 起每年一张）', () => {
+    const got = hits('10-01')
+    expect(got.length).toBeGreaterThanOrEqual(15)
+    for (const r of got) expect(r.date.slice(5), `${r.id} 应是 10-01`).toBe('10-01')
+  })
+})
+
 describe('真实数据黄金集 · 防误报', () => {
   it('「paris」主市场全为法国巴黎图（≥20 条，词边界不误伤他词）', () => {
     const out = hits('paris')
@@ -129,11 +169,6 @@ describe('真实数据黄金集 · 防误报', () => {
     const got = ids('中国')
     expect(got.size).toBeGreaterThanOrEqual(120)
     expect(got, 'Arches NP 与中国无关，不得混入').not.toContain('en-us-2023-05-08')
-  })
-
-  it('「雪山 湖」有召回（content_tags 补齐后 AND 空回退 OR，雪山/山湖任一命中）', () => {
-    expect(hits('雪山 湖').length).toBeGreaterThan(0)
-    expect(ids('雪山 湖')).toContain('zh-cn-2024-09-02') // 高山湖泊图（文字层「山湖」真二元组）
   })
 
   it('「国美」零误报（跨标点假二元组已修：数据里「…国，美…」不再生成假词）', () => {

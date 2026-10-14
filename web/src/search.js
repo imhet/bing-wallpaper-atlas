@@ -55,23 +55,51 @@ export function highlightParts(text, query, aliasData = null) {
   return parts
 }
 
+// 纯日期查询 → 记录谓词；非日期返回 null 走全文检索。
+// 20261001 / 2026-10-01 → 精确当天；10-01 / 1001 → 每一年的 MM-DD；
+// 四位非日期（2026）→ 年份。月 1-12 日 1-31 宽松校验，越界即不当日期处理。
+export function parseDateQuery(q) {
+  const s = String(q).trim().replace(/[-./]/g, '')
+  if (/^\d{8}$/.test(s)) {
+    const y = s.slice(0, 4), m = +s.slice(4, 6), d = +s.slice(6, 8)
+    if (m >= 1 && m <= 12 && d >= 1 && d <= 31) return (r) => r.date === `${y}-${s.slice(4, 6)}-${s.slice(6, 8)}`
+  } else if (/^\d{4}$/.test(s)) {
+    const m = +s.slice(0, 2), d = +s.slice(2, 4)
+    if (m >= 1 && m <= 12 && d >= 1 && d <= 31) return (r) => r.date.slice(5) === s.slice(0, 2) + '-' + s.slice(2, 4)
+    return (r) => r.date.slice(0, 4) === s
+  }
+  return null
+}
+
+// 单段搜索：AND 优先，无命中才回退词组级 OR（纯单字场景退回原 token）。
+// 必须独立成段调用——跨词二元组（「藏的/的雪」）会让整串 AND 永远落空。
+function segmentIds(index, seg) {
+  const andIds = new Set(index.search(seg, { combineWith: 'AND' }).map((h) => h.id))
+  if (andIds.size > 0) return andIds
+  const tokens = tokenize(seg)
+  const words = tokens.filter((t) => t.length >= 2)
+  const orTokens = words.length > 0 ? words : tokens
+  return new Set(
+    index.search(orTokens.join(' '), { combineWith: 'OR', tokenize: () => orTokens }).map((h) => h.id),
+  )
+}
+
 export function searchRecords(index, records, query, filters) {
   let result = records
   const q = (query || '').trim()
   if (q) {
-    const tokens = tokenize(q)
-    const andIds = new Set(index.search(q, { combineWith: 'AND' }).map((h) => h.id))
-    if (andIds.size > 0) {
-      result = result.filter((r) => andIds.has(r.id))
+    const dateMatch = parseDateQuery(q)
+    if (dateMatch) {
+      result = result.filter(dateMatch)
     } else {
-      // AND 无命中才回退 OR——优先按词组（二元组/拉丁词）匹配压噪声，无词组（纯单字场景）退回原 token；
-      // 注意必须从原始 records 过滤，不能在空结果上继续过滤
-      const words = tokens.filter((t) => t.length >= 2)
-      const orTokens = words.length > 0 ? words : tokens
-      const orIds = new Set(
-        index.search(orTokens.join(' '), { combineWith: 'OR', tokenize: () => orTokens }).map((h) => h.id),
-      )
-      result = result.filter((r) => orIds.has(r.id))
+      // 多关键词：空格/标点/虚词「的」切段，段间 AND（「中国西藏的雪山」→ 中国∩西藏∩雪山）
+      const segments = q.split(/[\s,，、;；!！?？的]+/).filter(Boolean)
+      if (segments.length) {
+        const inter = segments
+          .map((seg) => segmentIds(index, seg))
+          .reduce((acc, s) => new Set([...acc].filter((id) => s.has(id))))
+        result = result.filter((r) => inter.has(r.id))
+      }
     }
   }
   return result.filter(

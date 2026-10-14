@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { buildIndex, highlightParts, searchRecords, tokenize } from './search'
+import { buildIndex, highlightParts, parseDateQuery, searchRecords, tokenize } from './search'
 
 const records = [
   { id: 'zh-cn-2023-10-05', market: 'zh-cn', date: '2023-10-05', title: '云海仙境',
@@ -83,9 +83,19 @@ describe('searchRecords', () => {
   })
 
   it('falls back to OR when AND finds nothing', () => {
-    // '瑞士张家界'：没有任何记录同时含这两组词 → AND 空 → OR 回退应命中两条
+    // '瑞士张家界'：连续串无分隔 → 单段，段内 AND 空 → OR 回退应命中两条
     const hits = searchRecords(index, records, '瑞士张家界', {})
     expect(hits.map((r) => r.id).sort()).toEqual(['en-us-2024-01-01', 'zh-cn-2023-10-05'])
+  })
+
+  it('multi-keyword: 的/空格切段，段间 AND（「中国 的 雪山」只命中同时含两词的记录）', () => {
+    const hits = searchRecords(index, records, '中国 的 雪山', {})
+    expect(hits.map((r) => r.id)).toEqual(['zh-cn-2023-10-05'])
+  })
+
+  it('multi-keyword: 无记录同时满足各段 → 交集为空（不再 OR 并集噪声）', () => {
+    // 带分隔的多词是 AND 语义：瑞士与张家界无同图 → 0 条
+    expect(searchRecords(index, records, '瑞士 的 张家界', {})).toHaveLength(0)
   })
 
   it('cross-language: 中文 tags 命中英文查询，英文 tags 命中中文查询', () => {
@@ -100,5 +110,36 @@ describe('searchRecords', () => {
     expect(searchRecords(index, records, '', { resolution: 'uhd' }).map((r) => r.id))
       .toEqual(['zh-cn-2023-10-05'])
     expect(searchRecords(index, records, '', { month: 1 })).toHaveLength(1)
+  })
+})
+
+describe('parseDateQuery（日期搜索）', () => {
+  it('8 位 / 带分隔日期 → 精确当天', () => {
+    const m = parseDateQuery('2026-10-01')
+    expect(m({ date: '2026-10-01' })).toBe(true)
+    expect(m({ date: '2025-10-01' })).toBe(false)
+    expect(parseDateQuery('20261001')({ date: '2026-10-01' })).toBe(true)
+    expect(parseDateQuery('2026.10.01')({ date: '2026-10-01' })).toBe(true)
+  })
+
+  it('MM-DD / MMDD → 每一年的这一天', () => {
+    const m = parseDateQuery('10-01')
+    expect(m({ date: '2023-10-01' })).toBe(true)
+    expect(m({ date: '2026-10-01' })).toBe(true)
+    expect(m({ date: '2026-10-02' })).toBe(false)
+    expect(parseDateQuery('1001')({ date: '2015-10-01' })).toBe(true)
+  })
+
+  it('非法月日回退年份语义；非数字返回 null 走全文检索', () => {
+    expect(parseDateQuery('2026')({ date: '2026-05-05' })).toBe(true)
+    expect(parseDateQuery('2026')({ date: '2025-05-05' })).toBe(false)
+    expect(parseDateQuery('20261301')).toBe(null) // 13 月非法 → 不当日期
+    expect(parseDateQuery('abc')).toBe(null)
+  })
+
+  it('searchRecords 集成：日期查询精确命中，混入筛选仍生效', () => {
+    expect(searchRecords(index, records, '2023-10-05', {}).map((r) => r.id)).toEqual(['zh-cn-2023-10-05'])
+    expect(searchRecords(index, records, '0101', {}).map((r) => r.id)).toEqual(['en-us-2024-01-01'])
+    expect(searchRecords(index, records, '2023-10-05', { market: 'en-us' })).toHaveLength(0)
   })
 })
