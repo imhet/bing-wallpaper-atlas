@@ -315,8 +315,9 @@
   "content_tags": [
    "苔藓",
    "岩石",
-   "森林",
-   "林间小径"
+   "树林",
+   "小径",
+   "蕨类植物"
   ]
  },
  {
@@ -347,8 +348,8 @@
   "content_tags": [
    "章鱼",
    "珊瑚礁",
-   "海底沙地",
-   "清澈海水"
+   "沙质海床",
+   "海水"
   ]
  },
  {
@@ -382,12 +383,12 @@
    "法國"
   ],
   "content_tags": [
-   "石砌塔楼",
-   "群岛",
+   "热那亚式瞭望塔",
    "灯塔",
-   "大海",
+   "海岛",
    "岩石海岸",
-   "灌木丛"
+   "海洋",
+   "晚霞"
   ]
  },
  {
@@ -428,11 +429,10 @@
   ],
   "content_tags": [
    "海浪",
+   "鹈鹕",
    "礁石",
-   "海鸟",
-   "浪花",
-   "大海",
-   "黄昏天空"
+   "海洋",
+   "日落"
   ]
  },
  {
@@ -469,11 +469,11 @@
    "アメリカ"
   ],
   "content_tags": [
-   "磨坊",
+   "水磨坊",
    "水车",
    "瀑布",
    "枫树",
-   "木桥",
+   "秋林",
    "岩石"
   ]
  },
@@ -504,9 +504,9 @@
   "tags": [],
   "content_tags": [
    "栈桥",
-   "海面",
    "礁石",
-   "卵石滩",
+   "鹅卵石滩",
+   "大海",
    "晚霞"
   ]
  },
@@ -543,8 +543,32 @@
    "普利特维采湖群国家公园",
    "湖泊",
    "瀑布",
-   "森林",
+   "秋季森林",
    "石灰岩峭壁"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-13",
+  "market": "en-gb",
+  "date": "2026-10-13",
+  "urlbase": "/th?id=OHR.AmmoniteFossils_EN-GB4546470412",
+  "imageKey": "AmmoniteFossils",
+  "title": "Spirals through time",
+  "desc": "Ammonite fossils from the Jurassic Period (© J Nemchinova/Getty Images)",
+  "location": [
+   "Ammonite fossils from the Jurassic Period"
+  ],
+  "region": null,
+  "photographer": "J Nemchinova",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Ammonite+fossils&form=hpcapt&filters=HpDate%3a%2220261013_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261013_AmmoniteFossils%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
