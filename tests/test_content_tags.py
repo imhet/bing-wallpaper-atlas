@@ -21,8 +21,11 @@ def test_parses_json_with_leading_text():
     assert _parse_vlm_tags('好的，标签如下：\n["佛像", "悬崖"]') == ["佛像", "悬崖"]
 
 
-def test_caps_at_six_tags():
-    assert _parse_vlm_tags('["a", "b", "c", "d", "e", "f", "g", "h"]') == ["a", "b", "c", "d", "e", "f"]
+def test_caps_at_max_tags():
+    # 上限与 VLM_MAX_TAGS（10）一致：超出的标签截断
+    assert _parse_vlm_tags('["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]') == [
+        "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
+    ]
 
 
 def test_drops_non_string_items():
