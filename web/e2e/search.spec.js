@@ -36,6 +36,17 @@ test('无结果显示空态提示', async ({ page }) => {
   await expect(page.locator('.empty')).toBeVisible()
 })
 
+test('日期搜索「10-01」命中每一年的今天（MMDD 模式）', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await page.fill('input.query', '10-01')
+  await page.press('input.query', 'Enter')
+  await expect(page.locator('.card').first()).toBeVisible()
+  const dates = await page.locator('.card .date').evaluateAll((els) => els.map((e) => e.textContent.trim()))
+  expect(dates.length).toBeGreaterThanOrEqual(15)
+  for (const d of dates) expect(d.slice(5), `${d} 应是 10-01`).toBe('10-01')
+})
+
 test('搜索「优胜美地」与「yosemite」命中数量一致（跨语言桥接）', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
