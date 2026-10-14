@@ -10410,13 +10410,6 @@
    "英國",
    "英格蘭",
    "イギリス"
-  ],
-  "content_tags": [
-   "苔藓",
-   "岩石",
-   "树林",
-   "小径",
-   "蕨类植物"
   ]
  },
  {
@@ -10446,9 +10439,12 @@
   "tags": [],
   "content_tags": [
    "章鱼",
+   "游泳",
+   "浅海",
    "珊瑚礁",
    "沙质海床",
-   "海水"
+   "水面波光",
+   "清澈海水"
   ]
  },
  {
@@ -10482,12 +10478,14 @@
    "法國"
   ],
   "content_tags": [
-   "热那亚式瞭望塔",
+   "热那亚瞭望塔",
+   "桑吉奈尔群岛",
    "灯塔",
-   "海岛",
+   "大海",
+   "晚霞",
    "岩石海岸",
-   "海洋",
-   "晚霞"
+   "灌木丛",
+   "山间小径"
   ]
  },
  {
@@ -10521,10 +10519,11 @@
   ],
   "content_tags": [
    "海浪",
-   "鹈鹕",
+   "海鸟",
    "礁石",
-   "海洋",
-   "日落"
+   "浪花",
+   "大海",
+   "黄昏"
   ]
  },
  {
@@ -10551,15 +10550,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "水磨坊",
-   "水车",
-   "瀑布",
-   "枫树",
-   "秋林",
-   "岩石"
-  ]
+  "tags": []
  },
  {
   "id": "en-us-2026-10-12",
@@ -10587,12 +10578,6 @@
    "亚利桑那",
    "arizona",
    "亞利桑那"
-  ],
-  "content_tags": [
-   "岩壁",
-   "崖居遗址",
-   "石砌古居",
-   "砂岩"
   ]
  },
  {
@@ -10623,13 +10608,30 @@
    "croatia",
    "hrvatska",
    "克羅地亞"
-  ],
-  "content_tags": [
-   "普利特维采湖群国家公园",
-   "湖泊",
-   "瀑布",
-   "秋季森林",
-   "石灰岩峭壁"
   ]
+ },
+ {
+  "id": "en-us-2026-10-14",
+  "market": "en-us",
+  "date": "2026-10-14",
+  "urlbase": "/th?id=OHR.AmmoniteFossils_EN-US6354038755",
+  "imageKey": "AmmoniteFossils",
+  "title": "Spirals through time",
+  "desc": "Ammonite fossils from the Jurassic Period (© J Nemchinova/Getty Images)",
+  "location": [
+   "Ammonite fossils from the Jurassic Period"
+  ],
+  "region": null,
+  "photographer": "J Nemchinova",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=National+Fossil+Day&form=hpcapt&filters=HpDate%3a%2220261014_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261014_AmmoniteFossils%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]

@@ -10758,9 +10758,12 @@
   "tags": [],
   "content_tags": [
    "章鱼",
+   "游泳",
+   "浅海",
    "珊瑚礁",
    "沙质海床",
-   "海水"
+   "水面波光",
+   "清澈海水"
   ]
  },
  {
@@ -10795,12 +10798,14 @@
    "法國"
   ],
   "content_tags": [
-   "热那亚式瞭望塔",
+   "热那亚瞭望塔",
+   "桑吉奈尔群岛",
    "灯塔",
-   "海岛",
+   "大海",
+   "晚霞",
    "岩石海岸",
-   "海洋",
-   "晚霞"
+   "灌木丛",
+   "山间小径"
   ]
  },
  {
@@ -10841,10 +10846,11 @@
   ],
   "content_tags": [
    "海浪",
-   "鹈鹕",
+   "海鸟",
    "礁石",
-   "海洋",
-   "日落"
+   "浪花",
+   "大海",
+   "黄昏"
   ]
  },
  {
@@ -10879,14 +10885,6 @@
    "america",
    "美國",
    "アメリカ"
-  ],
-  "content_tags": [
-   "水磨坊",
-   "水车",
-   "瀑布",
-   "枫树",
-   "秋林",
-   "岩石"
   ]
  },
  {
@@ -10917,9 +10915,10 @@
   "content_tags": [
    "栈桥",
    "礁石",
+   "海面",
+   "晚霞",
    "鹅卵石滩",
-   "大海",
-   "晚霞"
+   "黄昏"
   ]
  },
  {
@@ -10950,13 +10949,6 @@
    "croatia",
    "hrvatska",
    "克羅地亞"
-  ],
-  "content_tags": [
-   "普利特维采湖群国家公园",
-   "湖泊",
-   "瀑布",
-   "秋季森林",
-   "石灰岩峭壁"
   ]
  },
  {
@@ -10982,5 +10974,37 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "zh-cn-2026-10-14",
+  "market": "zh-cn",
+  "date": "2026-10-14",
+  "urlbase": "/th?id=OHR.WroclawPoland_ZH-CN6042428292",
+  "imageKey": "WroclawPoland",
+  "title": "桥梁、屋顶与暮色",
+  "desc": "弗罗茨瓦夫集市广场景观，摄自女巫桥，弗罗茨瓦夫，波兰 (© Piotr Mitelski/Shutterstock)",
+  "location": [
+   "弗罗茨瓦夫集市广场景观",
+   "摄自女巫桥",
+   "弗罗茨瓦夫",
+   "波兰"
+  ],
+  "region": "波兰",
+  "photographer": "Piotr Mitelski",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%BC%97%E7%BD%97%E8%8C%A8%E7%93%A6%E5%A4%AB&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261014_WroclawPoland%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "波兰",
+   "poland",
+   "polish",
+   "波蘭"
+  ]
  }
 ]

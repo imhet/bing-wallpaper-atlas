@@ -294,12 +294,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "板栗",
-   "带刺栗蓬",
-   "栗树叶"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-08",
@@ -332,12 +327,14 @@
    "法國"
   ],
   "content_tags": [
-   "热那亚式瞭望塔",
+   "热那亚瞭望塔",
+   "桑吉奈尔群岛",
    "灯塔",
-   "海岛",
+   "大海",
+   "晚霞",
    "岩石海岸",
-   "海洋",
-   "晚霞"
+   "灌木丛",
+   "山间小径"
   ]
  },
  {
@@ -366,10 +363,11 @@
   "tags": [],
   "content_tags": [
    "海浪",
-   "鹈鹕",
+   "海鸟",
    "礁石",
-   "海洋",
-   "日落"
+   "浪花",
+   "大海",
+   "黄昏"
   ]
  },
  {
@@ -395,15 +393,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "水磨坊",
-   "水车",
-   "瀑布",
-   "枫树",
-   "秋林",
-   "岩石"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-11",
@@ -452,14 +442,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "普利特维采湖群国家公园",
-   "湖泊",
-   "瀑布",
-   "秋季森林",
-   "石灰岩峭壁"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-13",
@@ -489,13 +472,31 @@
    "kyoto",
    "きょうと",
    "京都府"
-  ],
-  "content_tags": [
-   "观光列车",
-   "红叶",
-   "峡谷溪流",
-   "山地森林",
-   "岩石河滩"
   ]
+ },
+ {
+  "id": "ja-jp-2026-10-14",
+  "market": "ja-jp",
+  "date": "2026-10-14",
+  "urlbase": "/th?id=OHR.WroclawPoland_JA-JP4298283472",
+  "imageKey": "WroclawPoland",
+  "title": "黄金色に輝く旧市街",
+  "desc": "ヴロツワフ, ポーランド (© Piotr Mitelski/Shutterstock)",
+  "location": [
+   "ヴロツワフ",
+   "ポーランド"
+  ],
+  "region": null,
+  "photographer": "Piotr Mitelski",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%B4%E3%83%AD%E3%83%84%E3%83%AF%E3%83%95&form=hpcapt&filters=HpDate%3a%2220261014_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261014_WroclawPoland%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
