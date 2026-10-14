@@ -10,3 +10,4 @@ backfill.log
 playwright-report/
 test-results/
 .venv-tag/
+data/thumbs/

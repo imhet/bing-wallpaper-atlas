@@ -6,8 +6,14 @@ export const RES_SUFFIX = { uhd: '_UHD.jpg', fhd: '_1920x1080.jpg', hd: '_1366x7
 export const imageUrl = (urlbase, suffix) =>
   urlbase.startsWith('https://') ? urlbase : `${BING_BASE}${urlbase}${suffix}`
 
+// 镜像记录（npanuhin 深史）网格用本地预生成的 480 宽 webp（gen_thumbs.py 产物，Actions
+// 缓存随 Pages 分发）——原图 74~339KB 且无边缘缓存，直接当缩略图太慢；详情弹层大图仍直链原图
 export const thumbUrl = (r) =>
-  r.resolutions?.thumb ? imageUrl(r.urlbase, '_400x240.jpg') : imageUrl(r.urlbase, '_1920x1080.jpg')
+  r.urlbase.startsWith('https://')
+    ? `./data/thumbs/${r.market}/${r.date.slice(0, 4)}/${r.date}.webp`
+    : r.resolutions?.thumb
+      ? imageUrl(r.urlbase, '_400x240.jpg')
+      : imageUrl(r.urlbase, '_1920x1080.jpg')
 
 export async function fetchJSON(url) {
   const resp = await fetch(url)

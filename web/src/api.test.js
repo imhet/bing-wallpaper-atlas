@@ -78,8 +78,13 @@ describe('imageUrl / thumbUrl 对镜像绝对 URL（npanuhin 深史源）', () =
   it('absolute urlbase returns as-is regardless of suffix', () => {
     const u = 'https://bing.npanuhin.me/US/en/2011-06-01.jpg'
     expect(imageUrl(u, '_UHD.jpg')).toBe(u)
-    // 老记录 resolutions 只有 original，thumbUrl 走 fallback 分支也必须直返原 URL
-    expect(thumbUrl({ urlbase: u, resolutions: { original: true } })).toBe(u)
+  })
+
+  it('thumbUrl 对镜像记录返回本地预生成 webp（gen_thumbs 产物，按 market/年/日期）', () => {
+    // 镜像原图 74~339KB 且无边缘缓存，网格直接加载太慢；缩略图走本地 webp
+    expect(
+      thumbUrl({ urlbase: 'https://bing.npanuhin.me/US/en/2011-06-01.jpg', market: 'en-us', date: '2011-06-01' }),
+    ).toBe('./data/thumbs/en-us/2011/2011-06-01.webp')
   })
 
   it('bing relative urlbase keeps CDN composition', () => {

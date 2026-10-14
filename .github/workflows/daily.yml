@@ -40,6 +40,14 @@ jobs:
         env:
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
           ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
+      - name: 深史缩略图缓存（深史已封顶不再增长，key 固定即命中后永不重生成；被 GitHub 清理也只是下次部署重新生成）
+        uses: actions/cache@v4
+        with:
+          path: data/thumbs
+          key: thumbs-v1
+      - name: 生成深史缩略图（仅缓存 miss 时真正下载 4042 张镜像原图并转 480 宽 WebP；不阻塞部署）
+        run: python -m crawler.gen_thumbs --data-dir data
+        continue-on-error: true
       - name: 判断数据是否有变化（先暂存再看 diff——git diff 看不见未跟踪的新文件，年切换日靠它兜底）
         id: diff
         run: |
