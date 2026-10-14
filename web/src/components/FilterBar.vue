@@ -15,7 +15,7 @@ function set(key, value) {
     <input
       class="query"
       :value="filters.query"
-      placeholder="搜索标题、地点、摄影师…（如：张家界 雪山）"
+      placeholder="搜索标题、地点、画面内容…（如：中国 西藏 雪山；日期如 10-01）"
       aria-label="搜索"
       @input="set('query', $event.target.value)"
     />

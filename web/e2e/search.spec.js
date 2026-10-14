@@ -6,6 +6,17 @@ async function stubThumbs(page) {
   )
 }
 
+// 渐进渲染分批追加卡片：等卡片数连续两次采样相同再返回（数据翻倍后单次抓拍会数到中间态）
+async function settledCount(page) {
+  let prev = -1
+  for (;;) {
+    const n = await page.locator('.card').count()
+    if (n === prev && n > 0) return n
+    prev = n
+    await page.waitForTimeout(250)
+  }
+}
+
 test('搜「湖南」：层级召回 ≥5 张，网格出现张家界图', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
@@ -31,11 +42,11 @@ test('搜索「优胜美地」与「yosemite」命中数量一致（跨语言桥
   await page.fill('input.query', '优胜美地')
   await page.press('input.query', 'Enter')
   await expect(page.locator('.card').first()).toBeVisible()
-  const zhCount = await page.locator('.card').count()
+  const zhCount = await settledCount(page)
 
   await page.fill('input.query', 'yosemite')
   await page.press('input.query', 'Enter')
   await expect(page.locator('.card').first()).toBeVisible()
-  expect(await page.locator('.card').count()).toBe(zhCount)
+  expect(await settledCount(page)).toBe(zhCount)
   expect(zhCount).toBeGreaterThanOrEqual(10)
 })

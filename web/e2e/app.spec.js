@@ -14,12 +14,13 @@ test('首屏渐进渲染 120 张且无重复图（同图多市场去重）', asy
   await page.goto('/')
   await expect(cardImgs(page)).toHaveCount(120)
   const keys = await cardImgs(page).evaluateAll((imgs) =>
-    imgs.map((i) =>
-      new URL(i.src)
-        .searchParams.get('id')
+    imgs.map((i) => {
+      const u = new URL(i.src)
+      // Bing CDN 带 ?id= 查询串；本地深史缩略图（gen_thumbs webp）无查询串，用路径即唯一键
+      return (u.searchParams.get('id') ?? u.pathname)
         .replace(/_\d+x\d+\.jpg$/, '') // 分辨率后缀
-        .replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, ''), // 市场后缀
-    ),
+        .replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, '') // 市场后缀
+    }),
   )
   expect(new Set(keys).size, '同一天全球同图只应显示一张').toBe(keys.length)
   await expect(page.locator('.site-header .total')).toContainText('张 · 更新至')
