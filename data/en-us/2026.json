@@ -10606,5 +10606,35 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "en-us-2026-10-15",
+  "market": "en-us",
+  "date": "2026-10-15",
+  "urlbase": "/th?id=OHR.WroclawPoland_EN-US7757698922",
+  "imageKey": "WroclawPoland",
+  "title": "Bridges, rooftops, and twilight",
+  "desc": "View of the Wroclaw Market Square from the Witches' Bridge in Wroclaw, Poland (© Piotr Mitelski/Shutterstock)",
+  "location": [
+   "View of the Wroclaw Market Square from the Witches' Bridge in Wroclaw",
+   "Poland"
+  ],
+  "region": "波兰",
+  "photographer": "Piotr Mitelski",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=Wroclaw&form=hpcapt&filters=HpDate%3a%2220261015_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261015_WroclawPoland%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "波兰",
+   "poland",
+   "polish",
+   "波蘭"
+  ]
  }
 ]
