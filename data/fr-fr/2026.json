@@ -295,16 +295,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "章鱼",
-   "游泳",
-   "浅海",
-   "珊瑚礁",
-   "沙质海床",
-   "水面波光",
-   "清澈海水"
-  ]
+  "tags": []
  },
  {
   "id": "fr-fr-2026-10-08",
@@ -328,17 +319,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "热那亚瞭望塔",
-   "桑吉奈尔群岛",
-   "灯塔",
-   "大海",
-   "晚霞",
-   "岩石海岸",
-   "灌木丛",
-   "山间小径"
-  ]
+  "tags": []
  },
  {
   "id": "fr-fr-2026-10-09",
@@ -418,15 +399,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "栈桥",
-   "礁石",
-   "海面",
-   "晚霞",
-   "鹅卵石滩",
-   "黄昏"
-  ]
+  "tags": []
  },
  {
   "id": "fr-fr-2026-10-12",
@@ -469,6 +442,32 @@
   "gallery": "Getty Images",
   "copyrightlink": "https://www.bing.com/search?q=le+Jurassique&form=hpcapt&filters=HpDate%3a%2220261013_2200%22",
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261013_AmmoniteFossils%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
+ },
+ {
+  "id": "fr-fr-2026-10-14",
+  "market": "fr-fr",
+  "date": "2026-10-14",
+  "urlbase": "/th?id=OHR.WroclawPoland_FR-FR0061683282",
+  "imageKey": "WroclawPoland",
+  "title": "La ville aux cent ponts",
+  "desc": "Vue sur la place du marché de Wrocław depuis le pont des Sorcières, Wrocław, Pologne (© Piotr Mitelski/Shutterstock)",
+  "location": [
+   "Vue sur la place du marché de Wrocław depuis le pont des Sorcières",
+   "Wrocław",
+   "Pologne"
+  ],
+  "region": null,
+  "photographer": "Piotr Mitelski",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=Wroclaw&form=hpcapt&filters=HpDate%3a%2220261014_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261014_WroclawPoland%22&FORM=HPQUIZ",
   "resolutions": {
    "uhd": true,
    "fhd": true,
