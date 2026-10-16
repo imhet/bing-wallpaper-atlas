@@ -11504,5 +11504,38 @@
    "polish",
    "波蘭"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-15",
+  "market": "en-gb",
+  "date": "2026-10-15",
+  "urlbase": "/th?id=OHR.SneffelsAutumn_EN-GB4713580034",
+  "imageKey": "SneffelsAutumn",
+  "title": "'Peak' into Colorado",
+  "desc": "Mount Sneffels in the San Juan Mountains near Ridgway, Colorado, United States (© lightphoto/Getty Images)",
+  "location": [
+   "Mount Sneffels in the San Juan Mountains near Ridgway",
+   "Colorado",
+   "United States"
+  ],
+  "region": "美国",
+  "photographer": "lightphoto",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Mount+Sneffels&form=hpcapt&filters=HpDate%3a%2220261015_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261015_SneffelsAutumn%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ]
  }
 ]

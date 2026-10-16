@@ -9770,5 +9770,31 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "de-de-2026-10-15",
+  "market": "de-de",
+  "date": "2026-10-15",
+  "urlbase": "/th?id=OHR.AndechsAbbey_DE-DE4997798666",
+  "imageKey": "AndechsAbbey",
+  "title": "Hoch über Bayern",
+  "desc": "Kloster Andechs bei Sonnenuntergang, Andechs, Bayern (© imageBROKER/Martin Moxter)",
+  "location": [
+   "Kloster Andechs bei Sonnenuntergang",
+   "Andechs",
+   "Bayern"
+  ],
+  "region": null,
+  "photographer": "imageBROKER",
+  "gallery": "Martin Moxter",
+  "copyrightlink": "https://www.bing.com/search?q=Kloster+Andechs&form=hpcapt&filters=HpDate%3a%2220261015_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261015_AndechsAbbey%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
