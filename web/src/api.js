@@ -24,10 +24,11 @@ export async function fetchJSON(url) {
 export const loadAggregations = () => fetchJSON('./data/aggregations.json')
 export const loadShard = (market, year) => fetchJSON(`./data/${market}/${year}.json`)
 
-export async function loadYearShards(aggregations, year) {
+export async function loadYearShards(aggregations, year, markets = null) {
   const jobs = []
   for (const [market, years] of Object.entries(aggregations.years_by_market || {}))
-    if (years.includes(Number(year))) jobs.push(loadShard(market, Number(year)))
+    if (years.includes(Number(year)) && (!markets || markets.includes(market)))
+      jobs.push(loadShard(market, Number(year)))
   const shards = await Promise.all(jobs)
   return shards.flat()
 }

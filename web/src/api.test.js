@@ -15,6 +15,19 @@ describe('loadYearShards', () => {
     vi.unstubAllGlobals()
   })
 
+  it('markets 参数只拉指定市场（首屏分级：主视角市场先出图，其余后台补）', async () => {
+    const calls = []
+    vi.stubGlobal('fetch', (url) => {
+      calls.push(url)
+      return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: url }]) })
+    })
+    const agg = { years_by_market: { 'zh-cn': [2026], 'en-us': [2026], 'de-de': [2026], 'ja-jp': [2026] } }
+    const out = await loadYearShards(agg, 2026, ['zh-cn', 'en-us'])
+    expect(calls).toEqual(['./data/zh-cn/2026.json', './data/en-us/2026.json'])
+    expect(out).toHaveLength(2)
+    vi.unstubAllGlobals()
+  })
+
   it('fetches nothing for a year no market has', async () => {
     const calls = []
     vi.stubGlobal('fetch', (url) => {

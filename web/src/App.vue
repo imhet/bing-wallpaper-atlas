@@ -24,6 +24,8 @@ const results = computed(() => searchRecords(index.value, records.value, filters
 const uniqueResults = computed(() => dedupeByUrlbase(results.value))
 const uniqueRecords = computed(() => dedupeByUrlbase(records.value))
 const VISIBLE_STEP = 120
+// 一级首屏市场：中文用户主视角 + 深史最全的英文市场，gzip 后 ~90KB 慢链路 1~2 秒可出图
+const FIRST_MARKETS = ['zh-cn', 'en-us']
 const visibleCount = ref(VISIBLE_STEP)
 const visibleResults = computed(() => uniqueResults.value.slice(0, visibleCount.value))
 watch(
@@ -114,16 +116,24 @@ onMounted(async () => {
   ).observe(sentinel.value)
   try {
     aggregations.value = await loadAggregations()
-    // 分级加载：首屏只等最新年分片立刻渲染（URL 指定年份则按 URL），其余分片后台补齐——
-    // 全量 2.2MB 到齐才出图会拖垮慢网络首屏；补齐后按日期倒序替换，分面计数自动修正为全量口径。
+    // 分级加载三级：一级只等主视角市场（zh-cn/en-us）最新年分片先出图，二级补该年其余市场，
+    // 三级后台全量——国内直连 github.io 吞吐只有几十 KB/s，六市场首屏批 3.3MB 会拖垮首屏。
     // 注意默认不把最新年写进 filters.year：搜索必须覆盖全历史（默认年份会把历史结果挡在墙外）
     const latest = Object.values(aggregations.value.years_by_market || {})
       .flat()
       .reduce((a, b) => Math.max(a, b), 0)
     const first = String(filters.value.year || latest || '')
-    records.value = first ? await loadYearShards(aggregations.value, first) : []
+    records.value = first ? await loadYearShards(aggregations.value, first, FIRST_MARKETS) : []
+    let fullLoaded = false
+    if (first)
+      loadYearShards(aggregations.value, first)
+        .then((yearAll) => {
+          if (!fullLoaded) records.value = yearAll // 全量先到则跳过（守卫：单年不得降级覆盖全量）
+        })
+        .catch(() => {})
     loadAllRecords(aggregations.value)
       .then((all) => {
+        fullLoaded = true
         records.value = all
       })
       .catch(() => console.warn('[backfill] 背景补齐失败，筛选计数暂为部分口径'))

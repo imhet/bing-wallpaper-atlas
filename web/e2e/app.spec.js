@@ -26,6 +26,20 @@ test('首屏渐进渲染 120 张且无重复图（同图多市场去重）', asy
   await expect(page.locator('.site-header .total')).toContainText('张 · 更新至')
 })
 
+test('首屏分级：主视角市场先渲染，其余市场分片延迟不阻塞首屏', async ({ page }) => {
+  await stubThumbs(page)
+  // 四市场 2026 分片延迟 3 秒——首屏只等 zh-cn/en-us（慢链路首屏批 3.3MB 是首页慢主因）。
+  // 延迟响应给固定空 body：用例只关心首屏出图不等数据内容；route.fetch 在 test 结束后会炸（Test ended）
+  for (const m of ['ja-jp', 'de-de', 'fr-fr', 'en-gb'])
+    await page.route(`**/data/${m}/2026.json`, async (route) => {
+      await new Promise((r) => setTimeout(r, 3000))
+      await route.fulfill({ status: 200, contentType: 'application/json', body: '[]' })
+    })
+  await page.goto('/')
+  await expect(cardImgs(page).first()).toBeVisible({ timeout: 2500 })
+  await page.unrouteAll({ behavior: 'ignoreErrors' }) // 清掉还在 3 秒延迟中的回调，不泄漏给同 worker 下个用例
+})
+
 test('滚动到底部追加下一批卡片', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
