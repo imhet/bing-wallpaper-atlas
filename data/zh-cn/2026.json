@@ -12854,5 +12854,37 @@
    "岩壁",
    "洞穴"
   ]
+ },
+ {
+  "id": "zh-cn-2026-10-17",
+  "market": "zh-cn",
+  "date": "2026-10-17",
+  "urlbase": "/th?id=OHR.DolbadarnWales_ZH-CN3649667806",
+  "imageKey": "DolbadarnWales",
+  "title": "75载，风华正茂",
+  "desc": "多巴达恩城堡，兰贝里斯，斯诺登尼亚国家公园，威尔士 (© joe daniel price/Getty Images)",
+  "location": [
+   "多巴达恩城堡",
+   "兰贝里斯",
+   "斯诺登尼亚国家公园",
+   "威尔士"
+  ],
+  "region": "英国",
+  "photographer": "joe daniel price",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%A8%81%E5%B0%94%E5%A3%AB%E6%96%AF%E8%AF%BA%E7%99%BB%E5%B0%BC%E4%BA%9A%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261017_DolbadarnWales%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "遗迹",
+   "城堡",
+   "塔楼"
+  ]
  }
 ]
