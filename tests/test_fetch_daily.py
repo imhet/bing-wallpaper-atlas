@@ -1,5 +1,5 @@
 import crawler.fetch_daily as fd
-from crawler.storage import load_year
+from crawler.storage import load_year, upsert_record
 
 
 def raw(market, date, key):
@@ -24,6 +24,36 @@ def test_daily_idempotent_no_change(tmp_path, monkeypatch):
     fd.run_daily(data_dir=tmp_path)
     changed, core_failed = fd.run_daily(data_dir=tmp_path)
     assert changed is False and core_failed is False
+
+
+def _stub_fetch(monkeypatch, urlbase):
+    monkeypatch.setattr(fd, "fetch_market",
+                        lambda market, idx=0, n=8: [dict(raw(market, "2026-10-06", "Keep"), urlbase=urlbase)] if market == "zh-cn" else [])
+    monkeypatch.setattr(fd, "verify_mkt", lambda markets: list(markets))
+    monkeypatch.setattr(fd, "check_resolutions", lambda urlbase, **kw: {"uhd": True, "fhd": True, "hd": True, "thumb": True})
+
+
+def test_daily_preserves_content_tags_on_refetch(tmp_path, monkeypatch):
+    # Bing 每日窗口重发最近 8 天记录：图片未变时必须保留已有画面标签，
+    # 否则每次抓取清空 content_tags，重打标耗配额且限流期留下空标签
+    _stub_fetch(monkeypatch, "/th?id=OHR.Keep_ZH-CN1111111111")
+    fd.run_daily(data_dir=tmp_path)
+    rec = load_year(tmp_path, "zh-cn", 2026)[0]
+    upsert_record(tmp_path, {**rec, "content_tags": ["雪山", "湖"]})
+    changed, _ = fd.run_daily(data_dir=tmp_path)
+    assert load_year(tmp_path, "zh-cn", 2026)[0]["content_tags"] == ["雪山", "湖"]
+    assert changed is False
+
+
+def test_daily_drops_tags_when_image_changed(tmp_path, monkeypatch):
+    # 同一日期 Bing 换了图：旧标签不能沿用（图组键已变）
+    _stub_fetch(monkeypatch, "/th?id=OHR.OldImage_ZH-CN1111111111")
+    fd.run_daily(data_dir=tmp_path)
+    rec = load_year(tmp_path, "zh-cn", 2026)[0]
+    upsert_record(tmp_path, {**rec, "content_tags": ["旧图标签"]})
+    _stub_fetch(monkeypatch, "/th?id=OHR.NewImage_ZH-CN1111111111")
+    fd.run_daily(data_dir=tmp_path)
+    assert load_year(tmp_path, "zh-cn", 2026)[0].get("content_tags") != ["旧图标签"]
 
 
 def test_core_failure_sets_flag_and_skips_extended(tmp_path, monkeypatch):

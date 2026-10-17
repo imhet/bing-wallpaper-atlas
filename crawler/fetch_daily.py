@@ -12,7 +12,7 @@ from .bing_api import BingApiError, fetch_market
 from .markets import CORE_MARKETS, EXTENDED_ENABLED, EXTENDED_MARKETS
 from .resolutions import check_resolutions
 from .schema import validate_record
-from .storage import upsert_record, write_aggregations
+from .storage import load_year, upsert_record, write_aggregations
 
 log = logging.getLogger(__name__)
 
@@ -27,6 +27,14 @@ def ingest_market(market, data_dir):
         except Exception as e:  # 单条坏记录跳过，不毒化整个市场
             log.warning("skip bad record %s/%s: %s", market, rawrec.get("date"), e)
             continue
+        # Bing 每日窗口会重发最近 8 天记录：图片未变时保留已打标的 content_tags，
+        # 否则每次抓取都清空标签（重打耗配额，限流期还会留下空标签）
+        existing = next(
+            (r for r in load_year(data_dir, market, int(rec["date"][:4])) if r["id"] == rec["id"]),
+            None,
+        )
+        if existing and existing.get("content_tags") is not None and existing.get("imageKey") == rec.get("imageKey"):
+            rec["content_tags"] = existing["content_tags"]
         if upsert_record(data_dir, rec):
             added += 1
     return added
