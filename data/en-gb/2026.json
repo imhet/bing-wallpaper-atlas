@@ -15259,5 +15259,37 @@
    "岩壁",
    "洞穴"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-17",
+  "market": "en-gb",
+  "date": "2026-10-17",
+  "urlbase": "/th?id=OHR.DolbadarnWales_EN-GB4918405829",
+  "imageKey": "DolbadarnWales",
+  "title": "75 and thriving",
+  "desc": "Dolbadarn Castle, Llanberis, Eryri National Park (Snowdonia), Wales (© joe daniel price/Getty Images)",
+  "location": [
+   "Dolbadarn Castle",
+   "Llanberis",
+   "Eryri National Park (Snowdonia)",
+   "Wales"
+  ],
+  "region": "英国",
+  "photographer": "joe daniel price",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Eryri+National+Park+Wales&form=hpcapt&filters=HpDate%3a%2220261017_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261017_DolbadarnWales%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "遗迹",
+   "城堡",
+   "塔楼"
+  ]
  }
 ]
