@@ -30,7 +30,8 @@ export async function loadYearShards(aggregations, year, markets = null) {
     if (years.includes(Number(year)) && (!markets || markets.includes(market)))
       jobs.push(loadShard(market, Number(year)))
   const shards = await Promise.all(jobs)
-  return shards.flat()
+  // 分片文件内是日期正序；首屏一级直接渲染这批数据，不排序会先显示该年 1 月
+  return shards.flat().sort((a, b) => b.date.localeCompare(a.date))
 }
 
 export async function loadAllRecords(aggregations) {

@@ -38,13 +38,17 @@ THUMB_SUFFIX = "_400x240.jpg"
 BING_BASE = "https://www.bing.com"
 
 VLM_MODEL = "glm-5.3-flash"
-VLM_MAX_TAGS = 10
+VLM_MAX_TAGS = 20
 VLM_PROMPT = (
     "看这张壁纸图片，输出画面里的主要内容实体，用简体中文标签的 JSON 数组，只输出 JSON。"
     "标签要具体：动物到物种、建筑到类型，知名地标输出通用中文名（如「乐山大佛」）；"
     "尽量覆盖多个层面：主体（动物/人物/建筑）、环境地貌（雪山/海滩/梯田）、"
     "天气与季节（雪/晚霞/秋色）、画面中的活动或物件（帆船/热气球/薰衣草田）；"
-    "不要情绪氛围词（宁静/壮丽），不要品牌或水印文字；最多 10 个，按显著程度排序。"
+    "具体的主体名后面跟上位泛词，照顾不认识具体名词的搜索者："
+    "麻雀配「鸟」、牡丹配「花」、帆船配「船」、轿车配「汽车」、寺庙配「建筑」；"
+    "「风景」「自然」「美景」这类无信息量的空泛词不要；"
+    "不要情绪氛围词（宁静/壮丽），不要品牌或水印文字；"
+    f"最多 {VLM_MAX_TAGS} 个，按显著程度排序。"
 )
 
 log = logging.getLogger(__name__)
@@ -118,7 +122,8 @@ def _parse_vlm_tags(text):
 def vlm_tag_image(image_bytes):
     """单张图片字节 → VLM 内容标签列表（可为 [] = 图中无可标注实体）；无有效 JSON 时抛 ValueError。"""
     body = {
-        "model": VLM_MODEL,
+        # 本地与 Actions 端点支持的模型名可能不同：VLM_MODEL 可覆盖，默认线上模型不变
+        "model": os.environ.get("VLM_MODEL") or VLM_MODEL,
         "max_tokens": 1024,  # thinking 块也计入输出配额，400 会在 JSON 中途截断
         "messages": [{
             "role": "user",

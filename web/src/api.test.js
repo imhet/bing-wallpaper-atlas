@@ -6,7 +6,7 @@ describe('loadYearShards', () => {
     const calls = []
     vi.stubGlobal('fetch', (url) => {
       calls.push(url)
-      return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: url }]) })
+      return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: url, date: '2024-01-01' }]) })
     })
     const agg = { years_by_market: { 'zh-cn': [2023, 2024], 'en-us': [2024] } }
     const out = await loadYearShards(agg, 2024)
@@ -19,12 +19,29 @@ describe('loadYearShards', () => {
     const calls = []
     vi.stubGlobal('fetch', (url) => {
       calls.push(url)
-      return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: url }]) })
+      return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: url, date: '2026-01-01' }]) })
     })
     const agg = { years_by_market: { 'zh-cn': [2026], 'en-us': [2026], 'de-de': [2026], 'ja-jp': [2026] } }
     const out = await loadYearShards(agg, 2026, ['zh-cn', 'en-us'])
     expect(calls).toEqual(['./data/zh-cn/2026.json', './data/en-us/2026.json'])
     expect(out).toHaveLength(2)
+    vi.unstubAllGlobals()
+  })
+
+  it('returns records newest first（首屏一级直接渲染，分片文件是日期正序，不排序会先显示 1 月）', async () => {
+    vi.stubGlobal('fetch', (url) =>
+      Promise.resolve({
+        ok: true,
+        json: () =>
+          Promise.resolve(
+            url.includes('zh-cn')
+              ? [{ id: 'zh-01', date: '2026-01-01' }, { id: 'zh-10', date: '2026-10-14' }]
+              : [{ id: 'us-06', date: '2026-06-01' }],
+          ),
+      }),
+    )
+    const out = await loadYearShards({ years_by_market: { 'zh-cn': [2026], 'en-us': [2026] } }, 2026)
+    expect(out.map((r) => r.date)).toEqual(['2026-10-14', '2026-06-01', '2026-01-01'])
     vi.unstubAllGlobals()
   })
 

@@ -40,6 +40,21 @@ test('首屏分级：主视角市场先渲染，其余市场分片延迟不阻�
   await page.unrouteAll({ behavior: 'ignoreErrors' }) // 清掉还在 3 秒延迟中的回调，不泄漏给同 worker 下个用例
 })
 
+test('首屏首张卡即最新日期（一级分片必须倒序渲染，不能等全量到货才纠正）', async ({ page }) => {
+  await stubThumbs(page)
+  // 全量分片延迟 3 秒：确保断言发生在「一级已渲染、全量未到货」的窗口内
+  await page.route('**/data/*/*.json', async (route) => {
+    if (!/\/(zh-cn|en-us)\/2026\.json$/.test(route.request().url()))
+      await new Promise((r) => setTimeout(r, 3000))
+    await route.continue()
+  })
+  await page.goto('/')
+  await expect(page.locator('.card').first()).toBeVisible()
+  const latest = (await page.locator('.site-header .total').textContent()).match(/\d{4}-\d{2}-\d{2}/)[0]
+  await expect(page.locator('.card .date').first()).toHaveText(latest)
+  await page.unrouteAll({ behavior: 'ignoreErrors' })
+})
+
 test('滚动到底部追加下一批卡片', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')

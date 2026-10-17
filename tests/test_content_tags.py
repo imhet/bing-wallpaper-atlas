@@ -22,9 +22,10 @@ def test_parses_json_with_leading_text():
 
 
 def test_caps_at_max_tags():
-    # 上限与 VLM_MAX_TAGS（10）一致：超出的标签截断
-    assert _parse_vlm_tags('["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]') == [
+    # 上限与 VLM_MAX_TAGS（20）一致：超出的标签截断（2026-10-16 泛词层级后主体+上位词更占名额）
+    assert _parse_vlm_tags('["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u"]') == [
         "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
+        "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
     ]
 
 
@@ -52,6 +53,57 @@ def test_empty_array_is_valid_judgment_not_failure():
 
 def test_all_invalid_items_yields_empty_list():
     assert _parse_vlm_tags("[123, null, \"\"]") == []
+
+
+def test_vlm_model_env_override(monkeypatch):
+    # 本地端点与 Actions 端点支持的模型名不同：允许 VLM_MODEL 覆盖，默认不变
+    captured = {}
+
+    class _Resp:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            pass
+
+        def read(self):
+            return '{"content": [{"type": "text", "text": "[\\"雪山\\"]"}]}'.encode()
+
+    def fake_urlopen(req, timeout=None):
+        captured["body"] = __import__("json").loads(req.data)
+        return _Resp()
+
+    monkeypatch.setenv("VLM_MODEL", "deepseek-v4-pro")
+    monkeypatch.setenv("ANTHROPIC_BASE_URL", "http://x")
+    monkeypatch.setenv("ANTHROPIC_AUTH_TOKEN", "t")
+    monkeypatch.setattr(ct.urllib.request, "urlopen", fake_urlopen)
+    assert ct.vlm_tag_image(b"jpeg") == ["雪山"]
+    assert captured["body"]["model"] == "deepseek-v4-pro"
+
+
+def test_vlm_model_defaults_to_glm(monkeypatch):
+    captured = {}
+
+    class _Resp:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            pass
+
+        def read(self):
+            return '{"content": [{"type": "text", "text": "[]"}]}'.encode()
+
+    def fake_urlopen(req, timeout=None):
+        captured["body"] = __import__("json").loads(req.data)
+        return _Resp()
+
+    monkeypatch.delenv("VLM_MODEL", raising=False)
+    monkeypatch.setenv("ANTHROPIC_BASE_URL", "http://x")
+    monkeypatch.setenv("ANTHROPIC_AUTH_TOKEN", "t")
+    monkeypatch.setattr(ct.urllib.request, "urlopen", fake_urlopen)
+    ct.vlm_tag_image(b"jpeg")
+    assert captured["body"]["model"] == "glm-5.3-flash"
 
 
 def _jpeg(width, height):
