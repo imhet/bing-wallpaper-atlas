@@ -12216,20 +12216,6 @@
    "california",
    "加州",
    "加利福尼亞"
-  ],
-  "content_tags": [
-   "海浪",
-   "海鸟",
-   "鸟",
-   "礁石",
-   "岩石",
-   "大海",
-   "海洋",
-   "浪花",
-   "日落",
-   "晚霞",
-   "海岸",
-   "飞翔"
   ]
  },
  {
@@ -12256,19 +12242,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "水磨坊",
-   "磨坊",
-   "水车",
-   "瀑布",
-   "溪流",
-   "秋色",
-   "森林",
-   "红叶",
-   "岩石",
-   "树木"
-  ]
+  "tags": []
  },
  {
   "id": "en-us-2026-10-12",
@@ -12296,15 +12270,6 @@
    "亚利桑那",
    "arizona",
    "亞利桑那"
-  ],
-  "content_tags": [
-   "峡谷",
-   "悬崖岩壁",
-   "崖居遗址",
-   "古石砌建筑",
-   "砂岩",
-   "白屋遗址",
-   "史前人类遗址"
   ]
  },
  {
@@ -12335,17 +12300,6 @@
    "croatia",
    "hrvatska",
    "克羅地亞"
-  ],
-  "content_tags": [
-   "普利特维采湖",
-   "湖泊",
-   "瀑布",
-   "秋色",
-   "森林",
-   "彩林",
-   "岩壁",
-   "峡谷",
-   "溪流"
   ]
  },
  {
@@ -12370,16 +12324,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "菊石化石",
-   "化石",
-   "螺旋纹",
-   "贝壳",
-   "岩石",
-   "苔藓",
-   "石头纹理"
-  ]
+  "tags": []
  },
  {
   "id": "en-us-2026-10-15",
@@ -12409,18 +12354,6 @@
    "poland",
    "polish",
    "波蘭"
-  ],
-  "content_tags": [
-   "哥特式教堂钟楼",
-   "老城建筑群",
-   "红瓦屋顶",
-   "欧式历史建筑",
-   "尖塔",
-   "晚霞",
-   "城市夜景",
-   "街灯",
-   "云层",
-   "街道"
   ]
  },
  {
@@ -12446,7 +12379,37 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": null
+  "tags": []
+ },
+ {
+  "id": "en-us-2026-10-17",
+  "market": "en-us",
+  "date": "2026-10-17",
+  "urlbase": "/th?id=OHR.ChauvetPaintingsFrance_EN-US6137200151",
+  "imageKey": "ChauvetPaintingsFrance",
+  "title": "The past, unearthed",
+  "desc": "Life-size replica of Chauvet  cave art in Vallon-Pont-d'Arc, France (© Audrey Poree/Alamy)",
+  "location": [
+   "Life-size replica of Chauvet  cave art in Vallon-Pont-d'Arc",
+   "France"
+  ],
+  "region": "法国",
+  "photographer": "Audrey Poree",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=International+Archaeology+Day&form=hpcapt&filters=HpDate%3a%2220261017_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261017_ChauvetPaintingsFrance%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ]
  }
 ]

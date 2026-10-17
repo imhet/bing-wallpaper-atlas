@@ -11012,19 +11012,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "水磨坊",
-   "磨坊",
-   "水车",
-   "瀑布",
-   "溪流",
-   "秋色",
-   "森林",
-   "红叶",
-   "岩石",
-   "树木"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-11",
@@ -11048,17 +11036,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "金刚鹦鹉",
-   "鹦鹉",
-   "鸟",
-   "飞翔",
-   "悬崖",
-   "岩壁",
-   "岩石",
-   "野生动物"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-12",
@@ -11083,18 +11061,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "普利特维采湖",
-   "湖泊",
-   "瀑布",
-   "秋色",
-   "森林",
-   "彩林",
-   "岩壁",
-   "峡谷",
-   "溪流"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-13",
@@ -11124,18 +11091,6 @@
    "kyoto",
    "きょうと",
    "京都府"
-  ],
-  "content_tags": [
-   "观光列车",
-   "火车",
-   "红叶",
-   "秋色",
-   "山谷",
-   "河流",
-   "峡谷",
-   "山林",
-   "岩石",
-   "铁轨"
   ]
  },
  {
@@ -11161,19 +11116,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": [
-   "哥特式教堂钟楼",
-   "老城建筑群",
-   "红瓦屋顶",
-   "欧式历史建筑",
-   "尖塔",
-   "晚霞",
-   "城市夜景",
-   "街灯",
-   "云层",
-   "街道"
-  ]
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-15",
@@ -11198,8 +11141,7 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
-  "content_tags": null
+  "tags": []
  },
  {
   "id": "ja-jp-2026-10-16",
@@ -11228,7 +11170,31 @@
    "长野",
    "nagano",
    "長野"
+  ]
+ },
+ {
+  "id": "ja-jp-2026-10-17",
+  "market": "ja-jp",
+  "date": "2026-10-17",
+  "urlbase": "/th?id=OHR.DolbadarnWales_JA-JP2361140889",
+  "imageKey": "DolbadarnWales",
+  "title": "丘の上に佇む城跡",
+  "desc": "ドルバダーン城, ウェールズ (© joe daniel price/Getty Images)",
+  "location": [
+   "ドルバダーン城",
+   "ウェールズ"
   ],
-  "content_tags": null
+  "region": null,
+  "photographer": "joe daniel price",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%82%A8%E3%83%AA%E3%83%AA%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92&form=hpcapt&filters=HpDate%3a%2220261017_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261017_DolbadarnWales%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
