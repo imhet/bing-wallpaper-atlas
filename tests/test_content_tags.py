@@ -55,6 +55,37 @@ def test_all_invalid_items_yields_empty_list():
     assert _parse_vlm_tags("[123, null, \"\"]") == []
 
 
+def test_group_tags_propagate_to_untagged_members():
+    # 每日增量新市场记录入库时 content_tags=None：组内已有标签应直接复制，不能整组跳过
+    a = {"id": "a", "content_tags": ["雪山", "湖"]}
+    b = {"id": "b", "content_tags": None}
+    out, has_tags = ct.copy_group_tags([a, b])
+    assert has_tags is True
+    assert out[1]["content_tags"] == ["雪山", "湖"]
+
+
+def test_group_tags_pick_richest_member():
+    a = {"id": "a", "content_tags": []}
+    b = {"id": "b", "content_tags": ["雪山", "湖", "倒影"]}
+    c = {"id": "c", "content_tags": None}
+    out, _ = ct.copy_group_tags([a, b, c])
+    assert out[0]["content_tags"] == ["雪山", "湖", "倒影"]
+    assert out[2]["content_tags"] == ["雪山", "湖", "倒影"]
+
+
+def test_group_all_untagged_needs_inference():
+    out, has_tags = ct.copy_group_tags([{"id": "a", "content_tags": None}])
+    assert has_tags is False
+    assert out[0]["content_tags"] is None
+
+
+def test_group_all_empty_array_is_tagged_knowledge():
+    # 全组 [] = VLM 判断无可标注实体，属已打标，无需再推理
+    out, has_tags = ct.copy_group_tags([{"id": "a", "content_tags": []}, {"id": "b", "content_tags": []}])
+    assert has_tags is True
+    assert out[0]["content_tags"] == []
+
+
 def test_vlm_model_env_override(monkeypatch):
     # 本地端点与 Actions 端点支持的模型名不同：允许 VLM_MODEL 覆盖，默认不变
     captured = {}

@@ -177,6 +177,25 @@ def fetch_thumb(urlbase):
     return resp.content
 
 
+def copy_group_tags(recs):
+    """组内已有打标结果时，把最全成员的 content_tags 复制给其余成员。
+
+    每日增量新市场记录入库时 content_tags 为 None；组内其他市场已打标时增量语义会
+    整组跳过，新记录永远补不上标。返回 (同步后的记录, 组内是否已有打标知识)。
+    全组 [] 是 VLM 判定的「无可标注实体」，属已有知识，不应再推理。
+    """
+    known = [r for r in recs if r.get("content_tags") is not None]
+    if not known:
+        return recs, False
+    best = max(known, key=lambda r: len(r["content_tags"]))
+    if not best["content_tags"]:
+        return recs, True
+    return [
+        {**r, "content_tags": list(best["content_tags"])} if r.get("content_tags") != best["content_tags"] else r
+        for r in recs
+    ], True
+
+
 def main():
     parser = argparse.ArgumentParser(description="内容打标（VLM 优先，降级 CLIP）")
     parser.add_argument("--data-dir", default="data")
@@ -206,9 +225,16 @@ def main():
     for key, recs in groups.items():
         if wanted and not {r["id"] for r in recs} & wanted:
             continue
-        # 增量语义：content_tags is not None（含 [] = VLM 判断无可标注实体）即视为已打标
-        if not wanted and not args.force and any(r.get("content_tags") is not None for r in recs):
-            continue
+        # 增量语义：content_tags is not None（含 [] = VLM 判断无可标注实体）即视为已打标；
+        # 组内部分成员未打标（每日增量新市场记录）时先把组内最全标签复制过去，再整组跳过
+        if not wanted and not args.force:
+            synced, has_tags = copy_group_tags(recs)
+            if has_tags:
+                if not args.dry_run:
+                    for old, new in zip(recs, synced):
+                        if old != new:
+                            upsert_record(args.data_dir, new)
+                continue
         todo.append((key, recs))
         if args.limit and len(todo) >= args.limit:
             break
