@@ -42,16 +42,20 @@ test('首屏分级：主视角市场先渲染，其余市场分片延迟不阻�
 
 test('首屏首张卡即最新日期（一级分片必须倒序渲染，不能等全量到货才纠正）', async ({ page }) => {
   await stubThumbs(page)
-  // 全量分片延迟 3 秒：确保断言发生在「一级已渲染、全量未到货」的窗口内
+  // 非一级分片直接阻断：断言只针对「一级渲染窗口」，避免全量到货后的重渲染竞态
   await page.route('**/data/*/*.json', async (route) => {
-    if (!/\/(zh-cn|en-us)\/2026\.json$/.test(route.request().url()))
-      await new Promise((r) => setTimeout(r, 3000))
-    await route.continue()
+    if (/\/(zh-cn|en-us)\/2026\.json$/.test(route.request().url())) await route.continue()
+    else await route.abort()
   })
   await page.goto('/')
   await expect(page.locator('.card').first()).toBeVisible()
-  const latest = (await page.locator('.site-header .total').textContent()).match(/\d{4}-\d{2}-\d{2}/)[0]
-  await expect(page.locator('.card .date').first()).toHaveText(latest)
+  // 断言一级渲染窗口内首张卡已是最新月份（此前分片文件正序 → 首屏先出现 1 月）。
+  // 不比较具体日期：同图跨市场发布日不同，去重代表记录的日期可能比分组首条早一天
+  const us = await (await page.request.get('/data/en-us/2026.json')).json()
+  const zh = await (await page.request.get('/data/zh-cn/2026.json')).json()
+  const latestMonth = [...us, ...zh].map((r) => r.date.slice(0, 7)).sort().at(-1)
+  const firstDate = await page.locator('.card .date').first().textContent()
+  expect(firstDate.trim().slice(0, 7)).toBe(latestMonth)
   await page.unrouteAll({ behavior: 'ignoreErrors' })
 })
 
