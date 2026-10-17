@@ -14072,7 +14072,12 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "山峰",
+   "雪山",
+   "雪山湖泊"
+  ]
  },
  {
   "id": "fr-fr-2026-10-16",
@@ -14096,6 +14101,11 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "松鼠",
+   "狐狸",
+   "兔子"
+  ]
  }
 ]
