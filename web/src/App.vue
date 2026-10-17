@@ -13,6 +13,7 @@ const aggregations = ref(null)
 const records = ref([])
 const error = ref('')
 const loading = ref(true)
+const dataLoading = ref(false) // 全量分片后台补齐中：此窗口内搜索只覆盖部分数据，零结果不能报「没找到」
 const filters = ref({ query: '', market: '', year: '', month: '', region: '', photographer: '', resolution: '' })
 const selected = ref(null)
 const aliasDict = ref(null) // 多语言地名词典（零结果建议 + 高亮桥接共用，懒加载）
@@ -39,7 +40,8 @@ const sentinel = ref(null)
 // 分面联动计数：每个下拉的计数 = 其他筛选 + 搜索词过滤后的分布（数据源为全量 records）
 const facets = computed(() => computeFacets(index.value, records.value, filters.value.query, filters.value))
 const suggestions = computed(() => {
-  if (results.value.length || !filters.value.query || !aliasDict.value) return []
+  // 全量补齐中零结果不代表搜不到，此时给「换个写法」建议会误导
+  if (dataLoading.value || results.value.length || !filters.value.query || !aliasDict.value) return []
   return suggestFromDict(filters.value.query, aliasDict.value)
 })
 
@@ -125,6 +127,7 @@ onMounted(async () => {
     const first = String(filters.value.year || latest || '')
     records.value = first ? await loadYearShards(aggregations.value, first, FIRST_MARKETS) : []
     let fullLoaded = false
+    dataLoading.value = true
     if (first)
       loadYearShards(aggregations.value, first)
         .then((yearAll) => {
@@ -135,8 +138,12 @@ onMounted(async () => {
       .then((all) => {
         fullLoaded = true
         records.value = all
+        dataLoading.value = false
       })
-      .catch(() => console.warn('[backfill] 背景补齐失败，筛选计数暂为部分口径'))
+      .catch(() => {
+        dataLoading.value = false
+        console.warn('[backfill] 背景补齐失败，筛选计数暂为部分口径')
+      })
   } catch (e) {
     error.value = `数据加载失败：${e.message}`
   } finally {
@@ -158,7 +165,13 @@ onMounted(async () => {
     没找到「{{ filters.query }}」，试试它的其他写法：
     <button v-for="s in suggestions" :key="s" @click="pickSuggestion(s)">{{ s }}</button>
   </p>
-  <WallpaperGrid :records="visibleResults" :query="filters.query" :alias-data="aliasDict" @select="selected = $event" />
+  <WallpaperGrid
+    :records="visibleResults"
+    :query="filters.query"
+    :alias-data="aliasDict"
+    :data-loading="dataLoading"
+    @select="selected = $event"
+  />
   <div ref="sentinel" aria-hidden="true"></div>
   <WallpaperDetail
     v-if="selected"

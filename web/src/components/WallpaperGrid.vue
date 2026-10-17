@@ -2,7 +2,7 @@
 import { thumbUrl } from '../api'
 import { highlightParts } from '../search'
 
-defineProps({ records: Array, query: String, aliasData: Object })
+defineProps({ records: Array, query: String, aliasData: Object, dataLoading: Boolean })
 const emit = defineEmits(['select'])
 </script>
 
@@ -21,5 +21,7 @@ const emit = defineEmits(['select'])
       </div>
     </button>
   </div>
-  <p v-if="!records.length" class="empty">没有匹配的壁纸，试试放宽筛选条件。</p>
+  <p v-if="!records.length" class="empty">
+    {{ dataLoading ? '数据仍在加载，请稍候…' : '没有匹配的壁纸，试试放宽筛选条件。' }}
+  </p>
 </template>

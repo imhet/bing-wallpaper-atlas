@@ -59,6 +59,21 @@ test('首屏首张卡即最新日期（一级分片必须倒序渲染，不能�
   await page.unrouteAll({ behavior: 'ignoreErrors' })
 })
 
+test('全量数据加载中：零结果提示「数据仍在加载」而非「没有匹配」', async ({ page }) => {
+  await stubThumbs(page)
+  // 非一级分片延迟 8 秒：模拟慢链路全量补齐期间搜索（西藏记录在 zh-cn/2024，尚未到货）
+  await page.route('**/data/*/*.json', async (route) => {
+    if (!/\/(zh-cn|en-us)\/2026\.json$/.test(route.request().url()))
+      await new Promise((r) => setTimeout(r, 8000))
+    await route.continue()
+  })
+  await page.goto('/')
+  await expect(cardImgs(page).first()).toBeVisible()
+  await page.fill('input.query', '西藏')
+  await expect(page.locator('.empty')).toHaveText('数据仍在加载，请稍候…')
+  await page.unrouteAll({ behavior: 'ignoreErrors' })
+})
+
 test('滚动到底部追加下一批卡片', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
