@@ -10755,7 +10755,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "章鱼",
+   "浅海海底",
+   "沙质海床",
+   "珊瑚礁",
+   "海水",
+   "阳光水波"
+  ]
  },
  {
   "id": "zh-cn-2026-10-08",
@@ -10787,6 +10795,16 @@
    "français",
    "フランス",
    "法國"
+  ],
+  "content_tags": [
+   "石砌瞭望塔",
+   "群岛",
+   "灯塔",
+   "日落晚霞",
+   "大海",
+   "岩石海岸",
+   "灌木丛",
+   "山间小径"
   ]
  },
  {
@@ -10824,6 +10842,14 @@
    "america",
    "美國",
    "アメリカ"
+  ],
+  "content_tags": [
+   "海浪",
+   "海鸟",
+   "礁石",
+   "浪花水雾",
+   "黄昏",
+   "大海"
   ]
  },
  {
@@ -10884,7 +10910,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "栈桥",
+   "礁石",
+   "鹅卵石滩",
+   "海面",
+   "晚霞",
+   "黄昏",
+   "天空"
+  ]
  },
  {
   "id": "zh-cn-2026-10-12",
@@ -10914,6 +10949,15 @@
    "croatia",
    "hrvatska",
    "克羅地亞"
+  ],
+  "content_tags": [
+   "普利特维采湖群国家公园",
+   "湖泊",
+   "瀑布",
+   "秋色",
+   "彩林",
+   "石灰岩峭壁",
+   "森林"
   ]
  },
  {
@@ -10970,6 +11014,18 @@
    "poland",
    "polish",
    "波蘭"
+  ],
+  "content_tags": [
+   "哥特式教堂钟楼",
+   "老城建筑群",
+   "红瓦屋顶",
+   "欧式历史建筑",
+   "尖塔",
+   "晚霞",
+   "城市夜景",
+   "街灯",
+   "云层",
+   "街道"
   ]
  },
  {
@@ -11004,6 +11060,47 @@
    "america",
    "美國",
    "アメリカ"
+  ]
+ },
+ {
+  "id": "zh-cn-2026-10-16",
+  "market": "zh-cn",
+  "date": "2026-10-16",
+  "urlbase": "/th?id=OHR.ChauvetPaintingsFrance_ZH-CN3150703955",
+  "imageKey": "ChauvetPaintingsFrance",
+  "title": "发掘尘封的过去",
+  "desc": "肖维岩洞艺术作品等比例复制品，瓦隆蓬达尔克，法国 (© Audrey Poree/Alamy)",
+  "location": [
+   "肖维岩洞艺术作品等比例复制品",
+   "瓦隆蓬达尔克",
+   "法国"
+  ],
+  "region": "法国",
+  "photographer": "Audrey Poree",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%9B%BD%E9%99%85%E8%80%83%E5%8F%A4%E6%97%A5&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261016_ChauvetPaintingsFrance%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
+  "content_tags": [
+   "洞穴壁画",
+   "史前岩画",
+   "马",
+   "野牛",
+   "鹿",
+   "岩壁",
+   "洞穴"
   ]
  }
 ]

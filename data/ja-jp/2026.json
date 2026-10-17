@@ -7382,6 +7382,16 @@
    "français",
    "フランス",
    "法國"
+  ],
+  "content_tags": [
+   "石砌瞭望塔",
+   "群岛",
+   "灯塔",
+   "日落晚霞",
+   "大海",
+   "岩石海岸",
+   "灌木丛",
+   "山间小径"
   ]
  },
  {
@@ -7407,7 +7417,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "海浪",
+   "海鸟",
+   "礁石",
+   "浪花水雾",
+   "黄昏",
+   "大海"
+  ]
  },
  {
   "id": "ja-jp-2026-10-10",
@@ -7481,7 +7499,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "普利特维采湖群国家公园",
+   "湖泊",
+   "瀑布",
+   "秋色",
+   "彩林",
+   "石灰岩峭壁",
+   "森林"
+  ]
  },
  {
   "id": "ja-jp-2026-10-13",
@@ -7536,7 +7563,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "哥特式教堂钟楼",
+   "老城建筑群",
+   "红瓦屋顶",
+   "欧式历史建筑",
+   "尖塔",
+   "晚霞",
+   "城市夜景",
+   "街灯",
+   "云层",
+   "街道"
+  ]
  },
  {
   "id": "ja-jp-2026-10-15",
@@ -7562,5 +7601,34 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "ja-jp-2026-10-16",
+  "market": "ja-jp",
+  "date": "2026-10-16",
+  "urlbase": "/th?id=OHR.Persimmons2026_JA-JP2192858733",
+  "imageKey": "Persimmons2026",
+  "title": "秋の風に揺れる干し柿",
+  "desc": "ずらりと並ぶ干し柿, 長野県 妻籠宿 (© wayfarer2020/Shutterstock)",
+  "location": [
+   "ずらりと並ぶ干し柿",
+   "長野県 妻籠宿"
+  ],
+  "region": null,
+  "photographer": "wayfarer2020",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%B9%B2%E3%81%97%E6%9F%BF&form=hpcapt&filters=HpDate%3a%2220261016_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261016_Persimmons2026%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "长野",
+   "nagano",
+   "長野"
+  ]
  }
 ]

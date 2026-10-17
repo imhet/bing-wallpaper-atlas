@@ -11291,7 +11291,15 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "章鱼",
+   "浅海海底",
+   "沙质海床",
+   "珊瑚礁",
+   "海水",
+   "阳光水波"
+  ]
  },
  {
   "id": "en-gb-2026-10-08",
@@ -11322,6 +11330,16 @@
    "français",
    "フランス",
    "法國"
+  ],
+  "content_tags": [
+   "石砌瞭望塔",
+   "群岛",
+   "灯塔",
+   "日落晚霞",
+   "大海",
+   "岩石海岸",
+   "灌木丛",
+   "山间小径"
   ]
  },
  {
@@ -11359,6 +11377,14 @@
    "america",
    "美國",
    "アメリカ"
+  ],
+  "content_tags": [
+   "海浪",
+   "海鸟",
+   "礁石",
+   "浪花水雾",
+   "黄昏",
+   "大海"
   ]
  },
  {
@@ -11419,7 +11445,16 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "栈桥",
+   "礁石",
+   "鹅卵石滩",
+   "海面",
+   "晚霞",
+   "黄昏",
+   "天空"
+  ]
  },
  {
   "id": "en-gb-2026-10-12",
@@ -11449,6 +11484,15 @@
    "croatia",
    "hrvatska",
    "克羅地亞"
+  ],
+  "content_tags": [
+   "普利特维采湖群国家公园",
+   "湖泊",
+   "瀑布",
+   "秋色",
+   "彩林",
+   "石灰岩峭壁",
+   "森林"
   ]
  },
  {
@@ -11503,6 +11547,18 @@
    "poland",
    "polish",
    "波蘭"
+  ],
+  "content_tags": [
+   "哥特式教堂钟楼",
+   "老城建筑群",
+   "红瓦屋顶",
+   "欧式历史建筑",
+   "尖塔",
+   "晚霞",
+   "城市夜景",
+   "街灯",
+   "云层",
+   "街道"
   ]
  },
  {
@@ -11536,6 +11592,46 @@
    "america",
    "美國",
    "アメリカ"
+  ]
+ },
+ {
+  "id": "en-gb-2026-10-16",
+  "market": "en-gb",
+  "date": "2026-10-16",
+  "urlbase": "/th?id=OHR.ChauvetPaintingsFrance_EN-GB4836767874",
+  "imageKey": "ChauvetPaintingsFrance",
+  "title": "The past, unearthed",
+  "desc": "Life-size replica of Chauvet cave art in Vallon-Pont-d'Arc, France (© Audrey Poree/Alamy)",
+  "location": [
+   "Life-size replica of Chauvet cave art in Vallon-Pont-d'Arc",
+   "France"
+  ],
+  "region": "法国",
+  "photographer": "Audrey Poree",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=International+Archaeology+Day&form=hpcapt&filters=HpDate%3a%2220261016_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261016_ChauvetPaintingsFrance%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
+  "content_tags": [
+   "洞穴壁画",
+   "史前岩画",
+   "马",
+   "野牛",
+   "鹿",
+   "岩壁",
+   "洞穴"
   ]
  }
 ]
