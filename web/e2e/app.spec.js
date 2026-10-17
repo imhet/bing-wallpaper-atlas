@@ -59,6 +59,28 @@ test('首屏首张卡即最新日期（一级分片必须倒序渲染，不能�
   await page.unrouteAll({ behavior: 'ignoreErrors' })
 })
 
+test('缩略图加载中显示骨架占位，加载完成后淡入', async ({ page }) => {
+  // 1×1 透明 PNG：空 body 会被浏览器判为解码失败（error），触发不了 load
+  const pixel = Buffer.from(
+    'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+    'base64',
+  )
+  await page.route('**/th?id=*', async (route) => {
+    await new Promise((r) => setTimeout(r, 1200))
+    await route.fulfill({ status: 200, contentType: 'image/png', body: pixel })
+  })
+  await page.goto('/')
+  await expect(page.locator('.card .thumb .skeleton').first()).toBeVisible()
+  await expect(page.locator('.card .thumb').first()).toHaveClass(/loaded/, { timeout: 6000 })
+  await expect(page.locator('.card .thumb').first().locator('.skeleton')).toHaveCount(0)
+})
+
+test('缩略图加载失败显示兜底占位', async ({ page }) => {
+  await page.route('**/th?id=*', (route) => route.fulfill({ status: 404, contentType: 'image/jpeg', body: Buffer.from('') }))
+  await page.goto('/')
+  await expect(page.locator('.card .thumb-fallback').first()).toBeVisible()
+})
+
 test('全量数据加载中：零结果提示「数据仍在加载」而非「没有匹配」', async ({ page }) => {
   await stubThumbs(page)
   // 非一级分片延迟 8 秒：模拟慢链路全量补齐期间搜索（西藏记录在 zh-cn/2024，尚未到货）
