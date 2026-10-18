@@ -59,6 +59,20 @@ test('首屏首张卡即最新日期（一级分片必须倒序渲染，不能�
   await page.unrouteAll({ behavior: 'ignoreErrors' })
 })
 
+test('详情弹层展示同图的其他市场版本并可切换', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await page.fill('input.query', '2024-04-02')
+  await expect(page.locator('.card').first()).toBeVisible()
+  await page.locator('.card').first().click()
+  await expect(page.locator('.modal h2')).toBeVisible()
+  const versions = page.locator('.siblings button')
+  // JutlandSpring 同图有 en-us/de-de/en-gb/fr-fr 四个市场版本，当前 en-us → 另外 3 个
+  await expect(versions).toHaveCount(3)
+  await versions.filter({ hasText: 'Deutsch' }).click()
+  await expect(page.locator('.modal .facts dd').first()).toContainText('de-de')
+})
+
 test('缩略图加载中显示骨架占位，加载完成后淡入', async ({ page }) => {
   // 1×1 透明 PNG：空 body 会被浏览器判为解码失败（error），触发不了 load
   const pixel = Buffer.from(

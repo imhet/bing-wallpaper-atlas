@@ -23,7 +23,6 @@ const results = computed(() => searchRecords(index.value, records.value, filters
 // 渐进渲染：一次渲染几千张卡会让视口附近上百缩略图同时打 Bing CDN（HTTP/2 并发流被拒），
 // 只渲染前 N 张，滚动到底自动追加；同图多市场版本先去重（代表 zh-cn 优先），免网格重复
 const uniqueResults = computed(() => dedupeByUrlbase(results.value))
-const uniqueRecords = computed(() => dedupeByUrlbase(records.value))
 const VISIBLE_STEP = 120
 // 一级首屏市场：中文用户主视角 + 深史最全的英文市场，gzip 后 ~90KB 慢链路 1~2 秒可出图
 const FIRST_MARKETS = ['zh-cn', 'en-us']
@@ -176,7 +175,7 @@ onMounted(async () => {
   <WallpaperDetail
     v-if="selected"
     :record="selected"
-    :records="uniqueRecords"
+    :records="records"
     @close="selected = null"
     @select-sibling="selected = $event"
     @search="searchTag"

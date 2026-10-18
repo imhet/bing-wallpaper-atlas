@@ -22,6 +22,10 @@ const viewRes = computed(() => picked.value || available.value[0] || 'fhd')
 const siblings = computed(() =>
   props.records.filter((r) => r.imageKey && r.imageKey === props.record.imageKey && r.id !== props.record.id),
 )
+const MARKET_LABEL = {
+  'zh-cn': '中文', 'zh-tw': '繁體中文', 'en-us': 'English (US)', 'en-gb': 'English (UK)',
+  'ja-jp': '日本語', 'de-de': 'Deutsch', 'fr-fr': 'Français',
+}
 const viewSrc = computed(() => imageUrl(props.record.urlbase, RES_SUFFIX[viewRes.value] || '_1920x1080.jpg'))
 const RES_LABEL = { uhd: '4K UHD (3840×2160)', fhd: '1920×1080', hd: '1366×768', original: '原图' }
 
@@ -63,9 +67,9 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
         <a v-if="record.copyrightlink" :href="record.copyrightlink" target="_blank" rel="noopener">背后故事 ↗</a>
       </div>
       <div v-if="siblings.length" class="siblings">
-        <h3>同图其他市场</h3>
+        <h3>同图其他市场（{{ siblings.length }}）</h3>
         <button v-for="s in siblings" :key="s.id" @click="emit('select-sibling', s)">
-          {{ s.market }} · {{ s.date }} · {{ s.title || s.desc }}
+          {{ MARKET_LABEL[s.market] || s.market }} · {{ s.date }}
         </button>
       </div>
     </div>
