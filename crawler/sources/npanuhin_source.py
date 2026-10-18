@@ -64,12 +64,18 @@ class NpanuhinSource:
             if date in seen:
                 continue
             seen.add(date)
+            title = item.get("title")
+            desc = item.get("description") or ""
+            # 少量归档条目只有 caption（title/description 皆空）：用它兜底描述，
+            # 否则详情页标题取 title || desc 为空；已有 title 的记录不受影响
+            if not title and not desc:
+                desc = item.get("caption") or ""
             out.append({
                 "market": self.market,
                 "date": date,
                 "urlbase": url,
-                "title": item.get("title"),
-                "desc": item.get("description") or "",
+                "title": title,
+                "desc": desc,
                 "copyright": _normalize_copyright(item.get("copyright")),
                 "copyrightlink": None,
                 "quiz": None,

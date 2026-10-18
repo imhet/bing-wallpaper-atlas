@@ -109,6 +109,15 @@ def test_npanuhin_null_fields_normalized():
     assert only_title["copyright"] is None
 
 
+def test_npanuhin_falls_back_to_caption_when_title_and_description_missing():
+    # 扩展市场归档有 27 条只带 caption 的新条目（2024-2025）：无兜底则详情页标题为空
+    payload = [{"title": None, "caption": "Zeugen der Wildnis", "description": None,
+                "date": "2025-11-01", "url": "https://bing.npanuhin.me/DE/de/2025-11-01.jpg"}]
+    records = NpanuhinSource(market="de-de", end_date="2026-09-29").fetch(session=FakeSession(payload))
+    assert records[0]["title"] is None
+    assert records[0]["desc"] == "Zeugen der Wildnis"
+
+
 def test_npanuhin_drops_bad_items():
     payload = [
         {"title": "no date", "url": "https://bing.npanuhin.me/US/en/x.jpg"},
