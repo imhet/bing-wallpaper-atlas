@@ -98,6 +98,24 @@ describe('dedupeByUrlbase', () => {
     expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['fr'])
   })
 
+  it('同一 imageKey 的镜像记录跨市场折叠为一张（镜像 urlbase 各市场路径不同）', () => {
+    const recs = [
+      { id: 'de', market: 'de-de', date: '2024-04-02', imageKey: 'JutlandSpring', urlbase: 'https://bing.npanuhin.me/DE/de/2024-04-02.jpg' },
+      { id: 'fr', market: 'fr-fr', date: '2024-04-02', imageKey: 'JutlandSpring', urlbase: 'https://bing.npanuhin.me/FR/fr/2024-04-02.jpg' },
+      { id: 'us', market: 'en-us', date: '2024-04-02', imageKey: 'JutlandSpring', urlbase: '/th?id=OHR.JutlandSpring_EN-US123' },
+      { id: 'cn', market: 'zh-cn', date: '2024-04-02', imageKey: 'KyrgyzstanRainbow', urlbase: '/th?id=OHR.KyrgyzstanRainbow_ZH-CN1' },
+    ]
+    expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['us', 'cn'])
+  })
+
+  it('无 imageKey 的镜像深史记录保持独立（不同日期不误合并）', () => {
+    const recs = [
+      { id: 'a', market: 'en-us', date: '2011-06-01', imageKey: null, urlbase: 'https://bing.npanuhin.me/US/en/2011-06-01.jpg' },
+      { id: 'b', market: 'en-us', date: '2011-06-02', imageKey: null, urlbase: 'https://bing.npanuhin.me/US/en/2011-06-02.jpg' },
+    ]
+    expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['a', 'b'])
+  })
+
   it('mirror absolute urlbase（npanuhin 深史）stays a standalone group', () => {
     const recs = [{ id: 'us', market: 'en-us', date: '2011-06-01', urlbase: 'https://bing.npanuhin.me/US/en/2011-06-01.jpg' }]
     expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['us'])

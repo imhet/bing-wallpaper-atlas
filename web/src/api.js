@@ -53,11 +53,15 @@ const marketRank = (m) => {
 
 export const imgKey = (urlbase) => urlbase.replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, '')
 
+// 去重键：优先 imageKey——镜像记录（npanuhin）的 urlbase 是各市场不同路径
+// （/DE/de/…、/FR/fr/…），只归一化 CDN 市场后缀会把同一张图重复展示
+const recordKey = (r) => r.imageKey || imgKey(r.urlbase)
+
 export function dedupeByUrlbase(records) {
   // Map 保插入序（= 组首次出现序，date 倒序语义不丢）；代表记录按市场优先序取
   const best = new Map()
   for (const r of records) {
-    const key = imgKey(r.urlbase)
+    const key = recordKey(r)
     const cur = best.get(key)
     if (!cur || marketRank(r.market) < marketRank(cur.market) || (marketRank(r.market) === marketRank(cur.market) && r.market < cur.market))
       best.set(key, r)
