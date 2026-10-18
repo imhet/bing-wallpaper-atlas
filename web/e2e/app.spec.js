@@ -110,6 +110,42 @@ test('全量数据加载中：零结果提示「数据仍在加载」而非「�
   await page.unrouteAll({ behavior: 'ignoreErrors' })
 })
 
+test('结果计数：无筛选显示总数，搜索后显示命中张数', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  const count = page.locator('.result-count')
+  // 等全量数据到货（首屏一级只有最新年，总数需背景补齐）
+  await expect(count).toHaveText(/^共 [1-9]\d{3,} 张$/, { timeout: 20000 })
+  await page.fill('input.query', '2025-11-04')
+  await expect(page.locator('.card')).toHaveCount(2)
+  await expect(count).toHaveText('找到 2 张')
+})
+
+test('筛选面板：按钮打开底部面板，面板内搜索并选中摄影师', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await expect(page.locator('.card').first()).toBeVisible()
+  // 原生下拉全部换成按钮 + 面板（摄影师取值 4000+、最长 147 字符，原生下拉撑爆宽度）
+  await expect(page.locator('.filter-bar select')).toHaveCount(0)
+
+  await page.getByRole('button', { name: /全部摄影师/ }).click()
+  const sheet = page.locator('.filter-sheet')
+  await expect(sheet).toBeVisible()
+  await page.keyboard.press('Escape')
+  await expect(sheet).toBeHidden()
+
+  await page.getByRole('button', { name: /全部摄影师/ }).click()
+  await page.fill('.filter-sheet .sheet-search', 'Brundle')
+  await expect(sheet.locator('.option-name', { hasText: 'Nick Brundle Photography' })).toBeVisible()
+  await expect(sheet.locator('.option-name', { hasText: 'NASA' })).toHaveCount(0) // 已按关键字过滤
+  await sheet.locator('.option', { hasText: 'Nick Brundle Photography' }).click()
+  await expect(sheet).toBeHidden()
+  // 卡片标题里也含摄影师名，用筛选按钮限定
+  await expect(page.locator('.filter-bar .filter-btn', { hasText: 'Nick Brundle Photography' })).toBeVisible()
+  await expect(page.locator('.result-count')).toHaveText(/^找到 \d+ 张$/)
+  expect(new URL(page.url()).searchParams.get('photographer')).toBe('Nick Brundle Photography')
+})
+
 test('滚动到底部追加下一批卡片', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
@@ -122,7 +158,8 @@ test('市场筛选联动：选 zh-cn 后所有卡片来自中国市场', async (
   await stubThumbs(page)
   await page.goto('/')
   await expect(cardImgs(page).first()).toBeVisible()
-  await page.selectOption('select[aria-label="市场"]', 'zh-cn')
+  await page.getByRole('button', { name: /全部市场/ }).click()
+  await page.locator('.filter-sheet .option', { hasText: 'zh-cn' }).click()
   await expect(page.locator('.card').first()).toBeVisible()
   const count = await page.locator('.card').count()
   expect(count, 'zh-cn 去重后仍有可观卡片').toBeGreaterThan(50)

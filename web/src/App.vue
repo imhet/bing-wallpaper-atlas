@@ -28,6 +28,12 @@ const VISIBLE_STEP = 120
 const FIRST_MARKETS = ['zh-cn', 'en-us']
 const visibleCount = ref(VISIBLE_STEP)
 const visibleResults = computed(() => uniqueResults.value.slice(0, visibleCount.value))
+// 结果计数用去重后的图片数：与网格实际卡片口径一致（站头 total 是记录数）
+const resultCount = computed(() => {
+  const hasFilters = Object.values(filters.value).some(Boolean)
+  const base = `${hasFilters ? '找到' : '共'} ${uniqueResults.value.length} 张`
+  return dataLoading.value ? `${base}（数据加载中…）` : base
+})
 watch(
   filters,
   () => {
@@ -164,6 +170,7 @@ onMounted(async () => {
     没找到「{{ filters.query }}」，试试它的其他写法：
     <button v-for="s in suggestions" :key="s" @click="pickSuggestion(s)">{{ s }}</button>
   </p>
+  <p v-if="!loading && records.length" class="result-count">{{ resultCount }}</p>
   <WallpaperGrid
     :records="visibleResults"
     :query="filters.query"
