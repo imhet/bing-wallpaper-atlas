@@ -11268,5 +11268,42 @@
    "城堡",
    "塔楼"
   ]
+ },
+ {
+  "id": "ja-jp-2026-10-18",
+  "market": "ja-jp",
+  "date": "2026-10-18",
+  "urlbase": "/th?id=OHR.VeniceSunrise_JA-JP2535499489",
+  "imageKey": "VeniceSunrise",
+  "title": "夕焼けに染まるヴェネツィアの大運河",
+  "desc": "カナル・グランデ, イタリア (© Juan Romero/Cavan Images)",
+  "location": [
+   "カナル・グランデ",
+   "イタリア"
+  ],
+  "region": null,
+  "photographer": "Juan Romero",
+  "gallery": "Cavan Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%82%AB%E3%83%8A%E3%83%AB%E3%83%BB%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%87&form=hpcapt&filters=HpDate%3a%2220261018_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261018_VeniceSunrise%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "ヴェネツィア",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
  }
 ]

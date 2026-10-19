@@ -15291,5 +15291,42 @@
    "城堡",
    "塔楼"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-18",
+  "market": "en-gb",
+  "date": "2026-10-18",
+  "urlbase": "/th?id=OHR.VeniceSunrise_EN-GB5027785704",
+  "imageKey": "VeniceSunrise",
+  "title": "The road that runs on water",
+  "desc": "Grand Canal in Venice, Italy (© Juan Romero/Cavan Images)",
+  "location": [
+   "Grand Canal in Venice",
+   "Italy"
+  ],
+  "region": "意大利",
+  "photographer": "Juan Romero",
+  "gallery": "Cavan Images",
+  "copyrightlink": "https://www.bing.com/search?q=Grand+Canal+Venice&form=hpcapt&filters=HpDate%3a%2220261018_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261018_VeniceSunrise%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "ヴェネツィア",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
  }
 ]
