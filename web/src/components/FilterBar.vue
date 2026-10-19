@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 
 const props = defineProps({ facets: Object, filters: Object })
 const emit = defineEmits(['update:filters', 'random'])
@@ -19,6 +19,17 @@ const LIMIT = 100
 
 const open = ref('') // 当前展开面板的维度 key
 const keyword = ref('')
+const sheetRef = ref(null)
+const lastTrigger = ref(null) // 关闭后把焦点还给触发的筛选按钮
+
+// 面板打开时焦点移入（有关键字框则聚焦搜索框），并锁定背景滚动
+watch(open, async (v) => {
+  document.body.style.overflow = v ? 'hidden' : ''
+  if (v) {
+    await nextTick()
+    sheetRef.value?.querySelector('.sheet-search, .option')?.focus()
+  }
+})
 const current = computed(() => DIMS.find((d) => d.key === open.value))
 const options = computed(() => props.facets?.[open.value] || [])
 const matched = computed(() => {
@@ -38,19 +49,42 @@ function btnText(dim) {
 function set(key, value) {
   emit('update:filters', { ...props.filters, [key]: value })
 }
-function openSheet(key) {
+function openSheet(key, e) {
+  lastTrigger.value = e?.currentTarget || document.activeElement
   open.value = key
   keyword.value = ''
 }
+function closeSheet() {
+  if (!open.value) return
+  open.value = ''
+  nextTick(() => lastTrigger.value?.focus())
+}
 function pick(value) {
   set(open.value, value)
-  open.value = ''
+  closeSheet()
 }
 function onKey(e) {
-  if (e.key === 'Escape') open.value = ''
+  if (!open.value) return
+  if (e.key === 'Escape') return closeSheet()
+  if (e.key !== 'Tab' || !sheetRef.value) return
+  // 焦点陷阱：Tab 在面板内循环，不逃到背后的页面
+  const items = [...sheetRef.value.querySelectorAll('button, input')].filter((el) => !el.disabled)
+  if (!items.length) return
+  const first = items[0]
+  const last = items[items.length - 1]
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault()
+    last.focus()
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault()
+    first.focus()
+  }
 }
 onMounted(() => window.addEventListener('keydown', onKey))
-onUnmounted(() => window.removeEventListener('keydown', onKey))
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKey)
+  document.body.style.overflow = ''
+})
 </script>
 
 <template>
@@ -68,18 +102,18 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
       class="filter-btn"
       :class="{ active: filters[d.key] }"
       :aria-expanded="open === d.key"
-      @click="openSheet(d.key)"
+      @click="openSheet(d.key, $event)"
     >
       <span class="filter-btn-text">{{ btnText(d) }}</span><span class="caret">▾</span>
     </button>
     <button aria-label="随机看一张" @click="emit('random')">🎲 随机看看</button>
   </div>
   <Teleport to="body">
-    <div v-if="open" class="sheet-overlay" @click.self="open = ''">
-      <div class="filter-sheet" role="dialog" :aria-label="current.label">
+    <div v-if="open" class="sheet-overlay" @click.self="closeSheet">
+      <div ref="sheetRef" class="filter-sheet" role="dialog" :aria-label="current.label">
         <header class="sheet-head">
           <h3>{{ current.label }}</h3>
-          <button class="sheet-close" aria-label="关闭" @click="open = ''">✕</button>
+          <button class="sheet-close" aria-label="关闭" @click="closeSheet">✕</button>
         </header>
         <input
           v-if="options.length > 12"

@@ -146,6 +146,49 @@ test('筛选面板：按钮打开底部面板，面板内搜索并选中摄影�
   expect(new URL(page.url()).searchParams.get('photographer')).toBe('Nick Brundle Photography')
 })
 
+test('URL 直达带摄影师筛选：按钮文案与结果计数正确还原', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/?photographer=Nick+Brundle+Photography')
+  const count = page.locator('.result-count')
+  await expect(count).toHaveText(/^找到 \d+ 张$/, { timeout: 20000 })
+  await expect(page.locator('.filter-bar .filter-btn', { hasText: 'Nick Brundle Photography' })).toBeVisible()
+  // 计数与网格卡片数同口径；结果 < 120 不触发渐进切片，数量稳定
+  const n = await page.locator('.card').count()
+  await expect(count).toHaveText(`找到 ${n} 张`)
+})
+
+test('选中值被其他筛选筛空时，面板仍保留该项并显示 0', async ({ page }) => {
+  await stubThumbs(page)
+  // 分面口径下 UI 选不出 0 结果组合，真实场景是分享链接直达：
+  // George Steinmetz 仅出现在 en-us，与 zh-cn 组合为空
+  await page.goto('/?photographer=George+Steinmetz&market=zh-cn')
+  await expect(page.locator('.result-count')).toHaveText(/^找到 0 张$/, { timeout: 20000 })
+  // 面板里选中项不能消失（否则用户无法看到当前值、也无法改回）
+  await page.getByRole('button', { name: /George Steinmetz/ }).click()
+  await page.fill('.filter-sheet .sheet-search', 'George Steinmetz')
+  const option = page.locator('.filter-sheet .option', { hasText: 'George Steinmetz' })
+  await expect(option).toBeVisible()
+  await expect(option).toHaveClass(/active/)
+  await expect(option.locator('.option-count')).toHaveText('0')
+})
+
+test('筛选面板：焦点进入面板并在关闭后归还，打开时锁定背景滚动', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  const trigger = page.getByRole('button', { name: /全部摄影师/ })
+  await trigger.click()
+  const sheet = page.locator('.filter-sheet')
+  await expect(sheet).toBeVisible()
+  // 焦点必须进入面板（键盘/读屏用户否则仍在背后的按钮上）
+  expect(await sheet.evaluate((el) => el.contains(document.activeElement))).toBe(true)
+  // 面板打开时背景不可滚动
+  expect(await page.evaluate(() => getComputedStyle(document.body).overflow)).toBe('hidden')
+  await page.keyboard.press('Escape')
+  await expect(sheet).toBeHidden()
+  expect(await trigger.evaluate((el) => el === document.activeElement)).toBe(true)
+  expect(await page.evaluate(() => getComputedStyle(document.body).overflow)).not.toBe('hidden')
+})
+
 test('滚动到底部追加下一批卡片', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
