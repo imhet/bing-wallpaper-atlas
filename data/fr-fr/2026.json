@@ -14164,5 +14164,31 @@
    "thumb": true
   },
   "tags": []
+ },
+ {
+  "id": "fr-fr-2026-10-19",
+  "market": "fr-fr",
+  "date": "2026-10-19",
+  "urlbase": "/th?id=OHR.BrownSloth_FR-FR7781895704",
+  "imageKey": "BrownSloth",
+  "title": "La vie au ralenti",
+  "desc": "Paresseux à gorge brune, Puerto Viejo de Talamanca, Costa Rica (© Suzi Eszterhas/Minden Pictures)",
+  "location": [
+   "Paresseux à gorge brune",
+   "Puerto Viejo de Talamanca",
+   "Costa Rica"
+  ],
+  "region": "哥斯达黎加",
+  "photographer": "Suzi Eszterhas",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=Journ%C3%A9e+internationale+du+paresseux&form=hpcapt&filters=HpDate%3a%2220261019_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261019_BrownSloth%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
