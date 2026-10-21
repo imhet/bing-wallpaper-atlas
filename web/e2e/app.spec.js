@@ -63,7 +63,7 @@ test('详情弹层展示同图的其他市场版本并可切换', async ({ page 
   await stubThumbs(page)
   await page.goto('/')
   await page.fill('input.query', '2024-04-02')
-  await expect(page.locator('.card').first()).toBeVisible()
+  await expect(page.locator('.card').first()).toBeVisible({ timeout: 15000 }) // 全量分片到货后才命中
   await page.locator('.card').first().click()
   await expect(page.locator('.modal h2')).toBeVisible()
   const versions = page.locator('.siblings button')
@@ -108,6 +108,75 @@ test('全量数据加载中：零结果提示「数据仍在加载」而非「�
   await page.fill('input.query', '西藏')
   await expect(page.locator('.empty')).toHaveText('数据仍在加载，请稍候…')
   await page.unrouteAll({ behavior: 'ignoreErrors' })
+})
+
+test('分享元信息：og 图存在，描述不含过期计数', async ({ page }) => {
+  await page.goto('/')
+  const desc = await page.getAttribute('meta[property="og:description"]', 'content')
+  expect(desc).not.toMatch(/\d{3,}\+/) // 曾硬编码「3446+ 张」
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+    'content',
+    'https://imhet.github.io/bing-wallpaper-atlas/og.png',
+  )
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+    'href',
+    'https://imhet.github.io/bing-wallpaper-atlas/',
+  )
+  const resp = await page.request.get('/og.png')
+  expect(resp.ok()).toBe(true)
+  expect((await resp.body()).length).toBeGreaterThan(10000)
+})
+
+test('首屏数据未到时不显示「没有匹配的壁纸」', async ({ page }) => {
+  await stubThumbs(page)
+  await page.route('**/data/*/*.json', async (route) => {
+    await new Promise((r) => setTimeout(r, 2000))
+    await route.continue()
+  })
+  await page.goto('/')
+  await expect(page.locator('.status')).toHaveText('加载中…')
+  // 即时断言（toHaveCount(0) 会自动等待，2 秒后数据到货就会误判通过）
+  expect(await page.locator('.empty').count()).toBe(0)
+  await page.unrouteAll({ behavior: 'ignoreErrors' })
+})
+
+test('详情：默认 1080p，切换市场版本后标签与档位同步', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await page.fill('input.query', '2024-04-06')
+  await expect(page.locator('.card').first()).toBeVisible()
+  await page.locator('.card').first().click()
+  const hero = page.locator('.modal .hero')
+  // 默认 1080p：此前 available[0] 是 uhd，每开一张详情都拉几 MB 的 4K 原图
+  await expect(hero).toHaveAttribute('src', /_1920x1080\.jpg/)
+  const tags = page.locator('.modal .tag-row').first().locator('button')
+  await expect(tags).toHaveCount(3) // en-us JapanHimeji：姬路/姫路/日本
+  await page.locator('.res-switch button', { hasText: '4K UHD' }).click()
+  await expect(hero).toHaveAttribute('src', /_UHD\.jpg/)
+  await page.locator('.siblings button', { hasText: 'Français' }).click()
+  await expect(page.locator('.modal .facts dd').first()).toContainText('fr-fr')
+  // 标签是 setup 时常量时切市场不更新，仍显示 en-us 的 3 个
+  await expect(tags).toHaveCount(2) // fr-fr：姬路/姫路
+  // 镜像记录只有原图一档；picked 未重置会继续拼 4K 后缀
+  await expect(hero).toHaveAttribute('src', 'https://bing.npanuhin.me/FR/fr/2024-04-06.jpg')
+  await expect(page.locator('.res-switch')).toHaveCount(0)
+})
+
+test('详情弹层：焦点进入并归还，背景滚动锁定', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await expect(page.locator('.card').first()).toBeVisible()
+  const card = page.locator('.card').first()
+  await card.click()
+  const modal = page.locator('.modal')
+  await expect(modal).toBeVisible()
+  expect(await modal.evaluate((el) => el.contains(document.activeElement))).toBe(true)
+  expect(await page.evaluate(() => getComputedStyle(document.body).overflow)).toBe('hidden')
+  await page.keyboard.press('Escape')
+  await expect(modal).toHaveCount(0)
+  // 数据补齐可能替换掉原卡片节点，断言焦点回到网格（而不是掉到 body）
+  expect(await page.evaluate(() => document.querySelector('.grid')?.contains(document.activeElement))).toBe(true)
+  expect(await page.evaluate(() => getComputedStyle(document.body).overflow)).not.toBe('hidden')
 })
 
 test('结果计数：无筛选显示总数，搜索后显示命中张数', async ({ page }) => {

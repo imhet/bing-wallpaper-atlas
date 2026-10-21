@@ -1,16 +1,23 @@
 <script setup>
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { RES_SUFFIX, imageUrl } from '../api'
 
 const props = defineProps({ record: Object, records: Array })
 const emit = defineEmits(['close', 'select-sibling', 'search'])
 
 // tags 混着拉丁/假名别名，只展示含汉字的（规范中文名与字形变体），点击即按该地点搜索
-const cjkTags = (props.record.tags || []).filter((t) => /[一-鿿]/.test(t))
+const cjkTags = computed(() => (props.record.tags || []).filter((t) => /[一-鿿]/.test(t)))
 // 内容标签（CLIP 打标）是词表中文概念词，全量展示
-const contentTags = props.record.content_tags || []
+const contentTags = computed(() => props.record.content_tags || [])
 
 const picked = ref('')
+// 切换同图的其他市场版本后，原选中的档位可能不存在（镜像记录只有原图）
+watch(
+  () => props.record.id,
+  () => {
+    picked.value = ''
+  },
+)
 // 只暴露用户可选档位（thumb 是列表缩略图专用，spec §6.4 禁止展示），并按 uhd>fhd>hd 排序；
 // 镜像绝对 URL（npanuhin 深史）无多档变体，只有原图单档
 const available = computed(() => {
@@ -18,7 +25,11 @@ const available = computed(() => {
     return props.record.resolutions?.original ? ['original'] : []
   return Object.keys(RES_SUFFIX).filter((k) => props.record.resolutions?.[k] === true)
 })
-const viewRes = computed(() => picked.value || available.value[0] || 'fhd')
+// 默认 1080p：uhd 一档动辄几 MB，移动端打开详情不应默认拉 4K
+const viewRes = computed(() => {
+  const avail = available.value
+  return picked.value || (avail.includes('fhd') ? 'fhd' : avail[0] || 'fhd')
+})
 const siblings = computed(() =>
   props.records.filter((r) => r.imageKey && r.imageKey === props.record.imageKey && r.id !== props.record.id),
 )
@@ -29,24 +40,60 @@ const MARKET_LABEL = {
 const viewSrc = computed(() => imageUrl(props.record.urlbase, RES_SUFFIX[viewRes.value] || '_1920x1080.jpg'))
 const RES_LABEL = { uhd: '4K UHD (3840×2160)', fhd: '1920×1080', hd: '1366×768', original: '原图' }
 
+const modalRef = ref(null)
+const closeBtn = ref(null)
+const lastFocus = ref(null)
+
 function onKey(e) {
-  if (e.key === 'Escape') emit('close')
+  if (e.key === 'Escape') return emit('close')
+  if (e.key !== 'Tab' || !modalRef.value) return
+  // 焦点陷阱：Tab 在弹层内循环，不逃到背后的卡片
+  const items = [...modalRef.value.querySelectorAll('button, a[href], input')].filter((el) => !el.disabled)
+  if (!items.length) return
+  const first = items[0]
+  const last = items[items.length - 1]
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault()
+    last.focus()
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault()
+    first.focus()
+  }
 }
-onMounted(() => window.addEventListener('keydown', onKey))
-onUnmounted(() => window.removeEventListener('keydown', onKey))
+
+onMounted(async () => {
+  lastFocus.value = document.activeElement
+  document.body.style.overflow = 'hidden'
+  window.addEventListener('keydown', onKey)
+  await nextTick()
+  closeBtn.value?.focus()
+})
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKey)
+  document.body.style.overflow = ''
+  // 全量数据补齐会让去重代表切换，原卡片可能已被移出 DOM；此时把焦点还给网格里的任一张卡
+  if (lastFocus.value?.isConnected) lastFocus.value.focus()
+  else document.querySelector('.card')?.focus()
+})
 </script>
 
 <template>
   <div class="overlay" @click.self="emit('close')">
-    <div class="modal">
-      <button class="close" aria-label="关闭" @click="emit('close')">✕</button>
+    <div
+      ref="modalRef"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="detail-title"
+    >
+      <button ref="closeBtn" class="close" aria-label="关闭" @click="emit('close')">✕</button>
       <img class="hero" :src="viewSrc" :alt="record.title || record.desc" />
       <div class="res-switch" v-if="available.length > 1">
         <button v-for="k in available" :key="k" :class="{ active: k === viewRes }" @click="picked = k">
           {{ RES_LABEL[k] || k }}
         </button>
       </div>
-      <h2>{{ record.title || record.desc }}</h2>
+      <h2 id="detail-title">{{ record.title || record.desc }}</h2>
       <div v-if="cjkTags.length" class="tag-row">
         <button v-for="t in cjkTags" :key="t" @click="emit('search', t)">{{ t }}</button>
       </div>

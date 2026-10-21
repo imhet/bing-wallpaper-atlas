@@ -176,6 +176,7 @@ onMounted(async () => {
     :query="filters.query"
     :alias-data="aliasDict"
     :data-loading="dataLoading"
+    :loading="loading"
     @select="selected = $event"
   />
   <div ref="sentinel" aria-hidden="true"></div>

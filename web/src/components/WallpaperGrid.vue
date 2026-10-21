@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { thumbUrl } from '../api'
 import { highlightParts } from '../search'
 
-defineProps({ records: Array, query: String, aliasData: Object, dataLoading: Boolean })
+defineProps({ records: Array, query: String, aliasData: Object, dataLoading: Boolean, loading: Boolean })
 const emit = defineEmits(['select'])
 
 // 缩略图加载状态：骨架占位 → 淡入 / 失败兜底（按记录 id 记，滚动追加不重复加载）
@@ -37,7 +37,8 @@ const failedIds = ref(new Set())
       </div>
     </button>
   </div>
-  <p v-if="!records.length" class="empty">
+  <!-- 首屏加载中由 App 的「加载中…」负责，不能同时说「没有匹配」 -->
+  <p v-if="!records.length && !loading" class="empty">
     {{ dataLoading ? '数据仍在加载，请稍候…' : '没有匹配的壁纸，试试放宽筛选条件。' }}
   </p>
 </template>

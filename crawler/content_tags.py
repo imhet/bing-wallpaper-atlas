@@ -274,10 +274,11 @@ def main():
         return key, recs, tag_image(img)
 
     # 推理并发、写回串行：upsert 是整分片读改写，并发写会互相覆盖
-    done = 0
+    done = skipped = 0
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
         for result in ex.map(infer, todo):
-            if result is None:  # 拉图失败的组
+            if result is None:  # 拉图/限流失败的组
+                skipped += 1
                 continue
             key, recs, tags = result
             print(f"{key} | {recs[0]['date']} {(recs[0].get('desc') or '')[:36]} → {tags} ({len(recs)}条)")
@@ -286,6 +287,9 @@ def main():
                     upsert_record(args.data_dir, {**rec, "content_tags": tags})
             done += 1
     log.info("content tagging done: %d 张唯一图%s", done, "（dry-run 未写库）" if args.dry_run else "")
+    if skipped:
+        # 单独一行 WARNING：此前限流跳过的组会被「done: 0」掩盖，部署日志看不出有图未打标
+        log.warning("content tagging skipped: %d 张唯一图（限流/拉图失败，待下轮补打）", skipped)
 
 
 if __name__ == "__main__":
