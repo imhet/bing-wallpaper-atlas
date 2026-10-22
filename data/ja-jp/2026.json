@@ -11387,5 +11387,38 @@
    "韓国",
    "韓國"
   ]
+ },
+ {
+  "id": "ja-jp-2026-10-22",
+  "market": "ja-jp",
+  "date": "2026-10-22",
+  "urlbase": "/th?id=OHR.TsutanumaMomiji2026_JA-JP1409614988",
+  "imageKey": "TsutanumaMomiji2026",
+  "title": "今日は霜降",
+  "desc": "蔦沼, 青森県 十和田市 (© MASATO SAITO/Getty Images)",
+  "location": [
+   "蔦沼",
+   "青森県 十和田市"
+  ],
+  "region": null,
+  "photographer": "MASATO SAITO",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E8%94%A6%E6%B2%BC&form=hpcapt&filters=HpDate%3a%2220261022_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261022_TsutanumaMomiji2026%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "和田",
+   "hotan",
+   "hetian",
+   "青森",
+   "aomori",
+   "新疆",
+   "xinjiang"
+  ]
  }
 ]
