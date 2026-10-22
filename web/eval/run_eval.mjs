@@ -5,7 +5,7 @@
 // 与 App.vue 的 dedupeByUrlbase 显示口径一致。
 //
 // 用法：node eval/run_eval.mjs [--json]
-import { readFileSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { dedupeByUrlbase, imgKey } from '../src/api.js'
@@ -21,6 +21,12 @@ const records = Object.entries(agg.years_by_market).flatMap(([market, years]) =>
   years.flatMap((y) => JSON.parse(readFileSync(join(DATA, market, `${y}.json`), 'utf8'))),
 )
 const queries = JSON.parse(readFileSync(join(HERE, 'queries.json'), 'utf8'))
+// 池化判定（judge.py 生成）：候选池里被判定过的记录也进 qrels，
+// 否则用户实际看到但没判过的相关结果会被当成不相关
+const judged = existsSync(join(HERE, 'judgments.json'))
+  ? JSON.parse(readFileSync(join(HERE, 'judgments.json'), 'utf8'))
+  : {}
+const NOSORT = process.argv.includes('--nosort') // 对照：复现「只过滤不排序」的旧行为
 
 const groupKey = (r) => r.imageKey || imgKey(r.urlbase)
 const keyById = new Map(records.map((r) => [r.id, groupKey(r)]))
@@ -29,13 +35,30 @@ const t0 = Date.now()
 const index = buildIndex(records)
 const buildMs = Date.now() - t0
 
+if (process.argv.includes('--dump-candidates')) {
+  // 池化判定用：每条查询的前 20 条（去重后）交给 judge.py 判相关度
+  const dump = queries.map((item) => {
+    const ids = dedupeByUrlbase(searchRecords(index, records, item.query, {})).slice(0, 20).map((r) => r.id)
+    return { query: item.query, anchors: item.anchors, candidates: ids }
+  })
+  writeFileSync(join(HERE, 'candidates.json'), JSON.stringify(dump, null, 1) + '\n', 'utf8')
+  console.log(`候选池已写入 eval/candidates.json（${dump.length} 条查询）`)
+  process.exit(0)
+}
+
 const rows = queries.map((item) => {
   const anchors = [...new Set(item.anchors.map((id) => keyById.get(id)).filter(Boolean))]
   const missing = item.anchors.length - anchors.length
   const judgments = new Map(anchors.map((k) => [k, 2]))
+  for (const [id, rel] of Object.entries(judged[item.query] || {})) {
+    const k = keyById.get(id)
+    if (k) judgments.set(k, Math.max(judgments.get(k) ?? 0, rel))
+  }
 
   const t = Date.now()
-  const hits = dedupeByUrlbase(searchRecords(index, records, item.query, {})).map(groupKey)
+  const ranked = searchRecords(index, records, item.query, {})
+  const pool = NOSORT ? records.filter((r) => new Set(ranked.map((x) => x.id)).has(r.id)) : ranked
+  const hits = dedupeByUrlbase(pool).map(groupKey)
   const ms = Date.now() - t
 
   return {

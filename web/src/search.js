@@ -73,14 +73,16 @@ export function parseDateQuery(q) {
 
 // 单段搜索：AND 优先，无命中才回退词组级 OR（纯单字场景退回原 token）。
 // 必须独立成段调用——跨词二元组（「藏的/的雪」）会让整串 AND 永远落空。
-function segmentIds(index, seg) {
-  const andIds = new Set(index.search(seg, { combineWith: 'AND' }).map((h) => h.id))
-  if (andIds.size > 0) return andIds
+// 返回 id → 相关度分数：集合过滤之后要用它把最相关的结果排到前面。
+function segmentScores(index, seg) {
+  const andHits = index.search(seg, { combineWith: 'AND' })
+  if (andHits.length) return new Map(andHits.map((h) => [h.id, h.score]))
   const tokens = tokenize(seg)
   const words = tokens.filter((t) => t.length >= 2)
   const orTokens = words.length > 0 ? words : tokens
-  return new Set(
-    index.search(orTokens.join(' '), { combineWith: 'OR', tokenize: () => orTokens }).map((h) => h.id),
+  return new Map(
+    index.search(orTokens.join(' '), { combineWith: 'OR', tokenize: () => orTokens })
+      .map((h) => [h.id, h.score]),
   )
 }
 
@@ -95,10 +97,16 @@ export function searchRecords(index, records, query, filters) {
       // 多关键词：空格/标点/虚词「的」切段，段间 AND（「中国西藏的雪山」→ 中国∩西藏∩雪山）
       const segments = q.split(/[\s,，、;；!！?？的]+/).filter(Boolean)
       if (segments.length) {
-        const inter = segments
-          .map((seg) => segmentIds(index, seg))
-          .reduce((acc, s) => new Set([...acc].filter((id) => s.has(id))))
-        result = result.filter((r) => inter.has(r.id))
+        const perSegment = segments.map((seg) => segmentScores(index, seg))
+        const inter = perSegment.reduce(
+          (acc, s) => new Set([...acc].filter((id) => s.has(id))),
+          new Set(perSegment[0].keys()),
+        )
+        // 多段命中累加分数；同分保持原顺序（Array.sort 稳定，日期序不被打乱）
+        const score = new Map()
+        for (const s of perSegment)
+          for (const [id, v] of s) if (inter.has(id)) score.set(id, (score.get(id) ?? 0) + v)
+        result = result.filter((r) => inter.has(r.id)).sort((a, b) => score.get(b.id) - score.get(a.id))
       }
     }
   }

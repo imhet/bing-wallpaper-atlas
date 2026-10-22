@@ -143,3 +143,34 @@ describe('parseDateQuery（日期搜索）', () => {
     expect(searchRecords(index, records, '2023-10-05', { market: 'en-us' })).toHaveLength(0)
   })
 })
+
+describe('searchRecords 相关度排序', () => {
+  // 数组顺序刻意把「弱相关」放前面：旧实现直接返回数组顺序，弱相关会占据首屏
+  const rankDocs = [
+    { id: 'weak', market: 'zh-cn', date: '2024-01-01', title: '城市夜景',
+      desc: '城市街道与高楼，远处山顶有一点雪山', location: [], region: null,
+      photographer: null, gallery: null, tags: [], content_tags: ['城市', '夜景', '高楼'], resolutions: {} },
+    { id: 'strong', market: 'zh-cn', date: '2023-01-01', title: '雪山',
+      desc: '雪山', location: [], region: null,
+      photographer: null, gallery: null, tags: [], content_tags: ['雪山'], resolutions: {} },
+    { id: 'strong2', market: 'zh-cn', date: '2022-01-01', title: '雪山',
+      desc: '雪山', location: [], region: null,
+      photographer: null, gallery: null, tags: [], content_tags: ['雪山'], resolutions: {} },
+  ]
+  const rankIndex = buildIndex(rankDocs)
+
+  it('命中字段更相关的结果排在前面，而不是按入库顺序', () => {
+    const ids = searchRecords(rankIndex, rankDocs, '雪山', {}).map((r) => r.id)
+    expect(ids[0]).toBe('strong')
+    expect(ids).toContain('weak')
+  })
+
+  it('同分结果保持原有顺序（稳定排序，日期序不被随机打乱）', () => {
+    const ids = searchRecords(rankIndex, rankDocs, '雪山', {}).map((r) => r.id)
+    expect(ids.indexOf('strong')).toBeLessThan(ids.indexOf('strong2'))
+  })
+
+  it('无查询时保持原数组顺序（首屏最新日期靠它）', () => {
+    expect(searchRecords(rankIndex, rankDocs, '', {}).map((r) => r.id)).toEqual(['weak', 'strong', 'strong2'])
+  })
+})
