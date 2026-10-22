@@ -13598,5 +13598,30 @@
    "vietnam",
    "vietnamese"
   ]
+ },
+ {
+  "id": "de-de-2026-10-21",
+  "market": "de-de",
+  "date": "2026-10-21",
+  "urlbase": "/th?id=OHR.NaejangsanNP_DE-DE1873468197",
+  "imageKey": "NaejangsanNP",
+  "title": "Stille Wasser, leuchtende Farben",
+  "desc": "Herbst im Naejangsan-Nationalpark, Südkorea (© Twenty47studio/Getty Images)",
+  "location": [
+   "Herbst im Naejangsan-Nationalpark",
+   "Südkorea"
+  ],
+  "region": null,
+  "photographer": "Twenty47studio",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Naejangsan-Nationalpark&form=hpcapt&filters=HpDate%3a%2220261021_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261021_NaejangsanNP%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]

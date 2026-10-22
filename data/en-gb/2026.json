@@ -15384,5 +15384,37 @@
    "vietnam",
    "vietnamese"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-21",
+  "market": "en-gb",
+  "date": "2026-10-21",
+  "urlbase": "/th?id=OHR.NaejangsanNP_EN-GB5252582759",
+  "imageKey": "NaejangsanNP",
+  "title": "Still waters, vivid colours",
+  "desc": "Autumn in Naejangsan National Park, South Korea (© Twenty47studio/Getty Images)",
+  "location": [
+   "Autumn in Naejangsan National Park",
+   "South Korea"
+  ],
+  "region": "韩国",
+  "photographer": "Twenty47studio",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Naejangsan+National+Park&form=hpcapt&filters=HpDate%3a%2220261021_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261021_NaejangsanNP%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "韩国",
+   "korea",
+   "korean",
+   "hangug",
+   "韓国",
+   "韓國"
+  ]
  }
 ]
