@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "minisearch": "^7.1.0",
+    "onnxruntime-web": "^1.30.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {

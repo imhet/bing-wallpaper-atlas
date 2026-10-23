@@ -86,6 +86,20 @@ function segmentScores(index, seg) {
   )
 }
 
+// 分面筛选独立成函数：语义融合需要「已过滤的候选集」做同口径重排，
+// 否则语义会把年份/市场筛选掉的图带回结果列表。
+export function applyFilters(records, filters) {
+  return records.filter(
+    (r) =>
+      (!filters.market || r.market === filters.market) &&
+      (!filters.year || r.date.slice(0, 4) === String(filters.year)) &&
+      (!filters.month || r.date.slice(5, 7) === String(filters.month).padStart(2, '0')) &&
+      (!filters.region || r.region === filters.region) &&
+      (!filters.photographer || r.photographer === filters.photographer) &&
+      (!filters.resolution || r.resolutions?.[filters.resolution] === true),
+  )
+}
+
 export function searchRecords(index, records, query, filters) {
   let result = records
   const q = (query || '').trim()
@@ -110,13 +124,5 @@ export function searchRecords(index, records, query, filters) {
       }
     }
   }
-  return result.filter(
-    (r) =>
-      (!filters.market || r.market === filters.market) &&
-      (!filters.year || r.date.slice(0, 4) === String(filters.year)) &&
-      (!filters.month || r.date.slice(5, 7) === String(filters.month).padStart(2, '0')) &&
-      (!filters.region || r.region === filters.region) &&
-      (!filters.photographer || r.photographer === filters.photographer) &&
-      (!filters.resolution || r.resolutions?.[filters.resolution] === true),
-  )
+  return applyFilters(result, filters)
 }

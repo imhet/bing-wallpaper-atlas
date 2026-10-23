@@ -1,7 +1,9 @@
 <script setup>
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref, shallowRef, watch } from 'vue'
 import { dedupeByUrlbase, loadAggregations, loadAllRecords, loadYearShards } from './api'
-import { buildIndex, searchRecords } from './search'
+import { applyFilters, buildIndex, parseDateQuery, searchRecords } from './search'
+import { rrfFuse } from './semantic'
+import { createSemanticEngine } from './semantic-engine'
 import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
 import { suggestFromDict } from './suggest'
@@ -19,7 +21,21 @@ const selected = ref(null)
 const aliasDict = ref(null) // 多语言地名词典（零结果建议 + 高亮桥接共用，懒加载）
 const theme = ref('auto') // auto | light | dark
 const index = computed(() => buildIndex(records.value))
-const results = computed(() => searchRecords(index.value, records.value, filters.value.query, filters.value))
+const keywordResults = computed(() => searchRecords(index.value, records.value, filters.value.query, filters.value))
+// 语义检索：模型与向量在空闲时后台加载，就绪后把关键词结果与语义结果做 RRF 融合；
+// 未就绪/加载失败时 semanticScores 为空，结果就是纯关键词口径（渐进增强，不求人等）
+const semanticEngine = shallowRef(null)
+const semanticScores = shallowRef(null)
+const semanticLoading = ref(false)
+let semanticToken = 0
+const results = computed(() => {
+  if (!semanticScores.value?.size) return keywordResults.value
+  return rrfFuse(
+    applyFilters(records.value, filters.value),
+    keywordResults.value.map((r) => r.id),
+    semanticScores.value,
+  )
+})
 // 渐进渲染：一次渲染几千张卡会让视口附近上百缩略图同时打 Bing CDN（HTTP/2 并发流被拒），
 // 只渲染前 N 张，滚动到底自动追加；同图多市场版本先去重（代表 zh-cn 优先），免网格重复
 const uniqueResults = computed(() => dedupeByUrlbase(results.value))
@@ -46,7 +62,7 @@ const sentinel = ref(null)
 const facets = computed(() => computeFacets(index.value, records.value, filters.value.query, filters.value))
 const suggestions = computed(() => {
   // 全量补齐中零结果不代表搜不到，此时给「换个写法」建议会误导
-  if (dataLoading.value || results.value.length || !filters.value.query || !aliasDict.value) return []
+  if (dataLoading.value || semanticLoading.value || results.value.length || !filters.value.query || !aliasDict.value) return []
   return suggestFromDict(filters.value.query, aliasDict.value)
 })
 
@@ -57,6 +73,38 @@ watch(
     history.replaceState(null, '', encodeFilters(f) || location.pathname)
   },
   { deep: true },
+)
+
+// 语义引擎加载：全量数据补齐后空闲时启动，不跟首屏抢带宽
+async function startSemantic() {
+  if (semanticEngine.value || semanticLoading.value || !aggregations.value) return
+  semanticLoading.value = true
+  try {
+    const years = [...new Set(Object.values(aggregations.value.years_by_market || {}).flat())]
+    semanticEngine.value = await createSemanticEngine({ years })
+  } catch (e) {
+    console.warn('[semantic] 加载失败，退回关键词检索：', e)
+  } finally {
+    semanticLoading.value = false
+  }
+}
+const whenIdle = (fn) => (window.requestIdleCallback ? requestIdleCallback(fn) : setTimeout(fn, 1500))
+
+watch(
+  [() => filters.value.query, semanticEngine],
+  async ([q]) => {
+    const engine = semanticEngine.value
+    const token = ++semanticToken
+    semanticScores.value = null
+    // 日期查询是精确谓词，语义排序只会把无关图混进来
+    if (!engine || !q.trim() || parseDateQuery(q)) return
+    try {
+      const scores = await engine.rank(q)
+      if (token === semanticToken) semanticScores.value = scores
+    } catch (e) {
+      console.warn('[semantic] 查询编码失败，保留关键词结果：', e)
+    }
+  },
 )
 
 // 零结果采样（console 起步）：观察用户搜不到的词，作为词典扩充依据
@@ -144,6 +192,7 @@ onMounted(async () => {
         fullLoaded = true
         records.value = all
         dataLoading.value = false
+        whenIdle(startSemantic)
       })
       .catch(() => {
         dataLoading.value = false
@@ -166,6 +215,7 @@ onMounted(async () => {
   <FilterBar :facets="facets" v-model:filters="filters" @random="randomPick" />
   <p v-if="loading" class="status">加载中…</p>
   <p v-if="error" class="status error">{{ error }}</p>
+  <p v-if="semanticLoading && filters.query && !results.length" class="hint">语义搜索准备中…</p>
   <p v-if="suggestions.length" class="hint">
     没找到「{{ filters.query }}」，试试它的其他写法：
     <button v-for="s in suggestions" :key="s" @click="pickSuggestion(s)">{{ s }}</button>
