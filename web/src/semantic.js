@@ -74,6 +74,18 @@ export function encodeQuery(text, vocab, maxLen = 32) {
   return { inputIds, mask, tokenTypeIds: new BigInt64Array(maxLen) }
 }
 
+// 从模型输出里取出句子向量：输出可能是 last_hidden_state（[1, seq, hidden]）或已池化的
+// [1, hidden]，两种情况都只取第一行（CLS）——用整段归一化会把范数放大 sqrt(seq) 倍，
+// 查询向量随之缩小，softmax 温度失效、概念权重被抹平。
+export function pickQueryVector({ data, dims }) {
+  const hidden = dims[dims.length - 1]
+  const cls = data.subarray(0, hidden)
+  let norm = 0
+  for (let i = 0; i < hidden; i++) norm += cls[i] * cls[i]
+  norm = Math.sqrt(norm) || 1
+  return Float32Array.from(cls, (x) => x / norm)
+}
+
 // 查询向量与每个概念向量的余弦（概念已归一化，故乘 scale 即可）。
 export function conceptSims(query, concepts) {
   const out = new Float32Array(concepts.length)

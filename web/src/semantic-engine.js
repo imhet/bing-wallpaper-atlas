@@ -5,7 +5,7 @@
 
 import * as ort from 'onnxruntime-web/wasm'
 import wasmUrl from 'onnxruntime-web/ort-wasm-simd-threaded.wasm?url'
-import { conceptSims, encodeQuery, parseShard, pickConcepts, semanticRank } from './semantic'
+import { conceptSims, encodeQuery, parseShard, pickConcepts, pickQueryVector, semanticRank } from './semantic'
 
 // 用打包后的 wasm 资源路径，避免相对路径二次拼接成 dist/xxx/dist/xxx
 ort.env.wasm.wasmPaths = { wasm: new URL(wasmUrl, location.href).href }
@@ -64,11 +64,7 @@ export async function createSemanticEngine({ years = [], onProgress = () => {} }
       attention_mask: new ort.Tensor('int64', mask, [1, MAX_LEN]),
       token_type_ids: new ort.Tensor('int64', tokenTypeIds, [1, MAX_LEN]),
     })
-    const vec = out[outputName].data
-    let norm = 0
-    for (let i = 0; i < vec.length; i++) norm += vec[i] * vec[i]
-    norm = Math.sqrt(norm) || 1
-    return Float32Array.from(vec, (x) => x / norm)
+    return pickQueryVector(out[outputName])
   }
 
   return {

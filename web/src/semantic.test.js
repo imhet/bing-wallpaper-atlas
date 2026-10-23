@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { encodeQuery, packShard, parseShard, pickConcepts, rrfFuse, semanticRank } from './semantic'
+import { encodeQuery, packShard, parseShard, pickConcepts, pickQueryVector, rrfFuse, semanticRank } from './semantic'
 
 // 构造与 crawler/semantic_index.py 相同的分片格式：BSEM | v1 | dim | count | [klen|key|scale|int8[dim]]
 function shard(rows, dim = 4) {
@@ -98,6 +98,23 @@ describe('encodeQuery', () => {
   it('truncates long queries so SEP still fits', () => {
     const { inputIds } = encodeQuery('灯塔灯塔灯塔灯塔', vocab, 4)
     expect([...inputIds]).toEqual([101n, 7n, 8n, 102n])
+  })
+})
+
+describe('pickQueryVector', () => {
+  it('takes only the CLS row from a [1, seq, hidden] output and normalizes it', () => {
+    // 模型输出 last_hidden_state（1×2×3），只有第一行是句子向量。
+    // 拿整段归一化会把范数放大约 sqrt(seq) 倍，查询向量被缩小、概念权重被抹平。
+    const data = Float32Array.from([3, 4, 0, 0, 100, 0])
+    const vec = pickQueryVector({ data, dims: [1, 2, 3] })
+    expect(vec[0]).toBeCloseTo(0.6)
+    expect(vec[1]).toBeCloseTo(0.8)
+    expect(vec[2]).toBeCloseTo(0)
+  })
+
+  it('handles an already-pooled [1, hidden] output', () => {
+    const data = Float32Array.from([0, 0.5])
+    expect([...pickQueryVector({ data, dims: [1, 2] })]).toEqual([0, 1])
   })
 })
 
