@@ -75,12 +75,23 @@ jobs:
           fi
       - name: 提交数据
         if: steps.diff.outputs.changed == 'true'
+        # 这一步排在 build/deploy 之前，一旦失败就把上线一起卡死：部署遇 Pages 500 后 rerun，
+        # 上一次已推的 bot 提交会让 git pull --rebase 撞车，线上于是永远停在旧版本。
+        # 数据入 git 失败只该影响记账，不该影响上线；但必须先清掉 rebase 残留——
+        # 停在冲突态时 data/ 里的冲突标记会跟着拷进 dist，发出一个 JSON 全坏的站点。
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "data: daily wallpaper update $(date -u +%F)"
-          git pull --rebase origin main
-          git push
+          if ! git pull --rebase origin main; then
+            echo "::warning::数据提交冲突，放弃本次提交，改用远程数据部署"
+            git rebase --abort 2>/dev/null || true
+            git fetch origin main
+            git reset --hard FETCH_HEAD
+            exit 0
+          fi
+          git push || echo "::warning::push 失败，本次数据已生成但未入库"
       - uses: actions/setup-node@v4
         if: steps.diff.outputs.changed == 'true' || inputs.force_deploy == true
         with:
