@@ -14163,7 +14163,24 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "威尼斯",
+   "大运河",
+   "运河",
+   "圣母安康圣殿",
+   "教堂",
+   "晚霞",
+   "历史建筑",
+   "建筑",
+   "小船",
+   "船",
+   "倒影",
+   "黄昏",
+   "水城",
+   "圆顶",
+   "码头"
+  ]
  },
  {
   "id": "fr-fr-2026-10-19",
@@ -14189,7 +14206,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "树懒",
+   "哺乳动物",
+   "野生动物",
+   "树枝",
+   "树木",
+   "热带雨林",
+   "丛林",
+   "森林",
+   "绿叶",
+   "攀爬"
+  ]
  },
  {
   "id": "fr-fr-2026-10-20",
@@ -14219,6 +14248,18 @@
    "越南",
    "vietnam",
    "vietnamese"
+  ],
+  "content_tags": [
+   "拱桥",
+   "桥",
+   "江河",
+   "水面倒影",
+   "桥梁灯光",
+   "夜景",
+   "晚霞",
+   "黄昏",
+   "云",
+   "天空"
   ]
  },
  {
@@ -14244,6 +14285,61 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "枫叶",
+   "枫树",
+   "凉亭",
+   "亭子",
+   "秋色",
+   "池塘",
+   "倒影",
+   "晨雾",
+   "晨光",
+   "树",
+   "建筑",
+   "湖水",
+   "园林",
+   "石墙",
+   "日出"
+  ]
+ },
+ {
+  "id": "fr-fr-2026-10-22",
+  "market": "fr-fr",
+  "date": "2026-10-22",
+  "urlbase": "/th?id=OHR.ReimsChampagne_FR-FR6230244152",
+  "imageKey": "ReimsChampagne",
+  "title": "Là où naissent les bulles",
+  "desc": "Vignobles à Verzenay, montagne de Reims, Champagne (© Philippe TURPIN/Getty Images)",
+  "location": [
+   "Vignobles à Verzenay",
+   "montagne de Reims",
+   "Champagne"
+  ],
+  "region": null,
+  "photographer": "Philippe TURPIN",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Journ%C3%A9e+mondiale+du+champagne&form=hpcapt&filters=HpDate%3a%2220261022_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261022_ReimsChampagne%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "葡萄园",
+   "农田",
+   "秋色",
+   "田间小路",
+   "道路",
+   "树林",
+   "树",
+   "晨雾",
+   "阳光",
+   "航拍"
+  ]
  }
 ]

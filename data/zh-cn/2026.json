@@ -12923,6 +12923,23 @@
    "義大利",
    "italian",
    "イタリア"
+  ],
+  "content_tags": [
+   "威尼斯",
+   "大运河",
+   "运河",
+   "圣母安康圣殿",
+   "教堂",
+   "晚霞",
+   "历史建筑",
+   "建筑",
+   "小船",
+   "船",
+   "倒影",
+   "黄昏",
+   "水城",
+   "圆顶",
+   "码头"
   ]
  },
  {
@@ -12949,7 +12966,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "树懒",
+   "哺乳动物",
+   "野生动物",
+   "树枝",
+   "树木",
+   "热带雨林",
+   "丛林",
+   "森林",
+   "绿叶",
+   "攀爬"
+  ]
  },
  {
   "id": "zh-cn-2026-10-20",
@@ -12979,6 +13008,18 @@
    "越南",
    "vietnam",
    "vietnamese"
+  ],
+  "content_tags": [
+   "拱桥",
+   "桥",
+   "江河",
+   "水面倒影",
+   "桥梁灯光",
+   "夜景",
+   "晚霞",
+   "黄昏",
+   "云",
+   "天空"
   ]
  },
  {
@@ -13011,6 +13052,73 @@
    "hangug",
    "韓国",
    "韓國"
+  ],
+  "content_tags": [
+   "枫叶",
+   "枫树",
+   "凉亭",
+   "亭子",
+   "秋色",
+   "池塘",
+   "倒影",
+   "晨雾",
+   "晨光",
+   "树",
+   "建筑",
+   "湖水",
+   "园林",
+   "石墙",
+   "日出"
+  ]
+ },
+ {
+  "id": "zh-cn-2026-10-22",
+  "market": "zh-cn",
+  "date": "2026-10-22",
+  "urlbase": "/th?id=OHR.YellowstoneWolves_ZH-CN6767268961",
+  "imageKey": "YellowstoneWolves",
+  "title": "荒野伙伴",
+  "desc": "两只灰狼，黄石国家公园，怀俄明州，美国 (© John Morrison/Getty Images)",
+  "location": [
+   "两只灰狼",
+   "黄石国家公园",
+   "怀俄明州",
+   "美国"
+  ],
+  "region": "美国",
+  "photographer": "John Morrison",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E7%81%B0%E7%8B%BC&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261022_YellowstoneWolves%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ",
+   "黄石",
+   "yellowstone",
+   "黃石",
+   "イエローストーン"
+  ],
+  "content_tags": [
+   "灰狼",
+   "狼",
+   "野生动物",
+   "哺乳动物",
+   "荒野",
+   "灌木丛",
+   "枯草",
+   "荒漠植被",
+   "秋色",
+   "依偎"
   ]
  }
 ]

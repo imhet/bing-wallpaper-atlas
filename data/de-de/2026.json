@@ -13541,7 +13541,24 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "威尼斯",
+   "大运河",
+   "运河",
+   "圣母安康圣殿",
+   "教堂",
+   "晚霞",
+   "历史建筑",
+   "建筑",
+   "小船",
+   "船",
+   "倒影",
+   "黄昏",
+   "水城",
+   "圆顶",
+   "码头"
+  ]
  },
  {
   "id": "de-de-2026-10-19",
@@ -13567,7 +13584,19 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "树懒",
+   "哺乳动物",
+   "野生动物",
+   "树枝",
+   "树木",
+   "热带雨林",
+   "丛林",
+   "森林",
+   "绿叶",
+   "攀爬"
+  ]
  },
  {
   "id": "de-de-2026-10-20",
@@ -13597,6 +13626,18 @@
    "越南",
    "vietnam",
    "vietnamese"
+  ],
+  "content_tags": [
+   "拱桥",
+   "桥",
+   "江河",
+   "水面倒影",
+   "桥梁灯光",
+   "夜景",
+   "晚霞",
+   "黄昏",
+   "云",
+   "天空"
   ]
  },
  {
@@ -13622,6 +13663,72 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "枫叶",
+   "枫树",
+   "凉亭",
+   "亭子",
+   "秋色",
+   "池塘",
+   "倒影",
+   "晨雾",
+   "晨光",
+   "树",
+   "建筑",
+   "湖水",
+   "园林",
+   "石墙",
+   "日出"
+  ]
+ },
+ {
+  "id": "de-de-2026-10-22",
+  "market": "de-de",
+  "date": "2026-10-22",
+  "urlbase": "/th?id=OHR.YellowstoneWolves_DE-DE2017697752",
+  "imageKey": "YellowstoneWolves",
+  "title": "Partner in freier Wildbahn",
+  "desc": "Wölfe im Yellowstone-Nationalpark, Wyoming, USA (© John Morrison/Getty Images)",
+  "location": [
+   "Wölfe im Yellowstone-Nationalpark",
+   "Wyoming",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "John Morrison",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Wolf+Tier&form=hpcapt&filters=HpDate%3a%2220261022_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261022_YellowstoneWolves%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ",
+   "黄石",
+   "yellowstone",
+   "黃石",
+   "イエローストーン"
+  ],
+  "content_tags": [
+   "灰狼",
+   "狼",
+   "野生动物",
+   "哺乳动物",
+   "荒野",
+   "灌木丛",
+   "枯草",
+   "荒漠植被",
+   "秋色",
+   "依偎"
+  ]
  }
 ]
