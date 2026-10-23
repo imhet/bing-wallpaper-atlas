@@ -14068,7 +14068,7 @@
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261015_SneffelsAutumn%22&FORM=HPQUIZ",
   "resolutions": {
    "uhd": true,
-   "fhd": true,
+   "fhd": false,
    "hd": true,
    "thumb": true
   },

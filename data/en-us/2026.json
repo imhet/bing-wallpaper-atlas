@@ -12707,5 +12707,48 @@
    "石墙",
    "日出"
   ]
+ },
+ {
+  "id": "en-us-2026-10-23",
+  "market": "en-us",
+  "date": "2026-10-23",
+  "urlbase": "/th?id=OHR.YellowstoneWolves_EN-US7105521535",
+  "imageKey": "YellowstoneWolves",
+  "title": "Partners in the wild",
+  "desc": "Two gray wolves, Yellowstone National Park, Wyoming (© John Morrison/Getty Images)",
+  "location": [
+   "Two gray wolves",
+   "Yellowstone National Park",
+   "Wyoming"
+  ],
+  "region": null,
+  "photographer": "John Morrison",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Wolf+Awareness+Week&form=hpcapt&filters=HpDate%3a%2220261023_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261023_YellowstoneWolves%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "黄石",
+   "yellowstone",
+   "黃石",
+   "イエローストーン"
+  ],
+  "content_tags": [
+   "灰狼",
+   "狼",
+   "野生动物",
+   "哺乳动物",
+   "荒野",
+   "灌木丛",
+   "枯草",
+   "荒漠植被",
+   "秋色",
+   "依偎"
+  ]
  }
 ]
