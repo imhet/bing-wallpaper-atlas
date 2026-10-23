@@ -11490,5 +11490,47 @@
    "水面",
    "秋天"
   ]
+ },
+ {
+  "id": "ja-jp-2026-10-23",
+  "market": "ja-jp",
+  "date": "2026-10-23",
+  "urlbase": "/th?id=OHR.PortugueseLibrary_JA-JP3230226750",
+  "imageKey": "PortugueseLibrary",
+  "title": "図書館の天窓から差し込む自然光",
+  "desc": "王立ポルトガル図書館, ブラジル (© Antonio Salaverry/Shutterstock)",
+  "location": [
+   "王立ポルトガル図書館",
+   "ブラジル"
+  ],
+  "region": null,
+  "photographer": "Antonio Salaverry",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=%E7%8E%8B%E7%AB%8B%E3%83%9D%E3%83%AB%E3%83%88%E3%82%AC%E3%83%AB%E5%9B%B3%E6%9B%B8%E9%A4%A8&form=hpcapt&filters=HpDate%3a%2220261023_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261023_PortugueseLibrary%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "葡萄牙",
+   "portugal",
+   "portuguese",
+   "ポルトガル"
+  ],
+  "content_tags": [
+   "图书馆",
+   "皇家葡萄牙语阅读室",
+   "书架",
+   "彩绘玻璃穹顶",
+   "穹顶",
+   "吊灯",
+   "书籍",
+   "拱门",
+   "室内",
+   "建筑"
+  ]
  }
 ]
