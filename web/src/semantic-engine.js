@@ -4,7 +4,6 @@
 // 任何一步失败都只是让页面退回纯关键词，不影响可用性。
 
 import * as ort from 'onnxruntime-web/wasm'
-import wasmUrl from 'onnxruntime-web/ort-wasm-simd-threaded.wasm?url'
 import { conceptSims, encodeQuery, parseShard, pickConcepts, pickQueryVector, semanticRank } from './semantic'
 
 ort.env.wasm.numThreads = 1 // 多线程要 SharedArrayBuffer，Pages 没有 COOP/COEP 头
@@ -13,9 +12,10 @@ const BASE = './data/sem'
 // 国内直连 github.io 只有几十 KB/s，模型和 wasm 从 jsDelivr 取（免费、有国内节点）；
 // jsDelivr 取不到时回退到 Pages 上的同一份文件，两条路都不通就退回纯关键词检索。
 const CDN = 'https://cdn.jsdelivr.net'
-const MODEL_CDN = `${CDN}/gh/imhet/bing-wallpaper-atlas@main/data/sem/bge/model_4bit.onnx`
-const WASM_CDN = `${CDN}/npm/onnxruntime-web@1.30.0/dist/ort-wasm-simd-threaded.wasm`
-const WASM_LOCAL = new URL(wasmUrl, location.href).href
+const REPO = `${CDN}/gh/imhet/bing-wallpaper-atlas@main`
+const MODEL_CDN = `${REPO}/data/sem/bge/model_4bit.onnx`
+const WASM_CDN = `${REPO}/data/sem/ort/ort-wasm-simd-threaded.wasm`
+const WASM_LOCAL = new URL(`${BASE}/ort/ort-wasm-simd-threaded.wasm`, location.href).href
 const MAX_LEN = 32
 const TOP_K_CONCEPTS = 3 // 与评估集上选出的最优参数一致
 const CONCEPT_TEMP = 12
@@ -26,27 +26,14 @@ async function fetchArrayBuffer(path) {
   return resp.arrayBuffer()
 }
 
-// 按顺序尝试多个来源，全失败才抛错。CDN 返回错的文件（比如 404 页面）也会被 .ok 挡掉。
-async function fetchFirst(paths) {
-  let last
-  for (const path of paths) {
-    try {
-      return await fetchArrayBuffer(path)
-    } catch (e) {
-      last = e
-    }
-  }
-  throw last
-}
-
-async function pickWasmPath() {
+// CDN 是否可用用 HEAD 预检：失败时只等几秒就能回退，而不是把整个文件的下载超时等完。
+async function reachable(url, timeoutMs = 5000) {
   try {
-    const resp = await fetch(WASM_CDN, { method: 'HEAD' })
-    if (resp.ok) return WASM_CDN
+    const resp = await fetch(url, { method: 'HEAD', signal: AbortSignal.timeout(timeoutMs) })
+    return resp.ok
   } catch {
-    // 探测失败只是慢一点，不阻塞
+    return false
   }
-  return WASM_LOCAL
 }
 
 async function loadImageShards(years) {
@@ -80,8 +67,9 @@ export async function createSemanticEngine({ years = [], onProgress = () => {} }
   const images = await loadImageShards(years)
 
   onProgress('语言模型')
-  const model = await fetchFirst([MODEL_CDN, `${BASE}/bge/model_4bit.onnx`])
-  ort.env.wasm.wasmPaths = { wasm: await pickWasmPath() }
+  const [modelFromCdn, wasmFromCdn] = await Promise.all([reachable(MODEL_CDN), reachable(WASM_CDN)])
+  const model = await fetchArrayBuffer(modelFromCdn ? MODEL_CDN : `${BASE}/bge/model_4bit.onnx`)
+  ort.env.wasm.wasmPaths = { wasm: wasmFromCdn ? WASM_CDN : WASM_LOCAL }
   const session = await ort.InferenceSession.create(model, { executionProviders: ['wasm'] })
   const outputName = session.outputNames[0]
 
