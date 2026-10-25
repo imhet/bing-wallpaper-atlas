@@ -87,7 +87,8 @@
  "丹麦": [
   "denmark",
   "danish",
-  "丹麥"
+  "丹麥",
+  "faroe islands"
  ],
  "丽水": [
   "lishui",
@@ -1058,7 +1059,8 @@
  "捷克": [
   "czech",
   "czechia",
-  "捷克"
+  "捷克",
+  "czech republic"
  ],
  "揭阳": [
   "jieyang",
@@ -1771,7 +1773,6 @@
   "紅河"
  ],
  "约旦": [
-  "jordan",
   "jordanian",
   "約旦"
  ],
@@ -1900,7 +1901,9 @@
   "english",
   "英國",
   "英格蘭",
-  "イギリス"
+  "イギリス",
+  "scotland",
+  "wales"
  ],
  "茂名": [
   "maoming"
@@ -2405,7 +2408,8 @@
   "korean",
   "hangug",
   "韓国",
-  "韓國"
+  "韓國",
+  "south korea"
  ],
  "韶关": [
   "shaoguan",
@@ -2558,5 +2562,75 @@
  "拱门国家公园": [
   "arches national park",
   "拱門國家公園"
+ ],
+ "南极洲": [
+  "antarctica"
+ ],
+ "阿根廷": [
+  "argentina"
+ ],
+ "玻利维亚": [
+  "bolivia"
+ ],
+ "博茨瓦纳": [
+  "botswana"
+ ],
+ "巴西": [
+  "brazil"
+ ],
+ "保加利亚": [
+  "bulgaria"
+ ],
+ "缅甸": [
+  "burma",
+  "myanmar"
+ ],
+ "柬埔寨": [
+  "cambodia"
+ ],
+ "智利": [
+  "chile"
+ ],
+ "哥伦比亚": [
+  "colombia"
+ ],
+ "哥斯达黎加": [
+  "costa rica"
+ ],
+ "厄瓜多尔": [
+  "ecuador"
+ ],
+ "哈萨克斯坦": [
+  "kazakhstan"
+ ],
+ "马达加斯加": [
+  "madagascar"
+ ],
+ "巴基斯坦": [
+  "pakistan"
+ ],
+ "巴拿马": [
+  "panama"
+ ],
+ "罗马尼亚": [
+  "romania"
+ ],
+ "俄罗斯": [
+  "russia"
+ ],
+ "斯洛伐克": [
+  "slovakia"
+ ],
+ "斯洛文尼亚": [
+  "slovenia"
+ ],
+ "突尼斯": [
+  "tunisia"
+ ],
+ "乌拉圭": [
+  "uruguay"
+ ],
+ "委内瑞拉": [
+  "venezuela"
  ]
 }

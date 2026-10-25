@@ -11,7 +11,7 @@ _BRACKET_RE = re.compile(r"[（(]\s*©\s*(?P<inner>.*)[)）]")
 
 
 def _empty_result():
-    return {"photographer": None, "gallery": None, "location": []}
+    return {"photographer": None, "gallery": None, "location": [], "has_copyright": False}
 
 
 def parse_copyright(desc):
@@ -21,6 +21,7 @@ def parse_copyright(desc):
     text = desc
     m = _BRACKET_RE.search(desc)
     if m:
+        result["has_copyright"] = True
         inner = m.group("inner").strip()
         inner = re.sub(r"[（(][^)）]*[)）]", "", inner).strip()  # 剥掉摄影师名内嵌套的配对括号
         if "/" in inner:
@@ -30,9 +31,11 @@ def parse_copyright(desc):
         else:
             result["photographer"] = inner or None
         text = (desc[: m.start()] + " " + desc[m.end() :]).strip()
-    text = text.strip(" ,，、-–—")
-    parts = [p.strip() for p in re.split(r"[,，]", text) if p.strip()]
-    if parts and _DATE_RE.match(parts[-1]):
-        parts = parts[:-1]
-    result["location"] = parts
+        text = text.strip(" ,，、-–—")
+        parts = [p.strip() for p in re.split(r"[,，]", text) if p.strip()]
+        if parts and _DATE_RE.match(parts[-1]):
+            parts = parts[:-1]
+        result["location"] = parts
+    # 无 © 块 = 该源不提供版权结构（镜像深史/编码损坏的 desc）：纯描述文本不是地点，
+    # location 留空，由 build_record 用 geo_enrich.extract_locations 从文本挖地名填充
     return result

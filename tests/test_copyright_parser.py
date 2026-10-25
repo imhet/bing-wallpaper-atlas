@@ -6,6 +6,7 @@ def test_standard_zh():
     assert r["photographer"] == "Weiquan Lin"
     assert r["gallery"] == "Getty Images"
     assert r["location"] == ["丹霞地貌", "张掖国家地质公园", "甘肃省", "中国"]
+    assert r["has_copyright"] is True
 
 
 def test_no_gallery():
@@ -27,16 +28,19 @@ def test_trailing_date_stripped():
     assert r["photographer"] == "EVA MARIE UZCATEGUI"
 
 
-def test_no_bracket_keeps_text_as_location():
+def test_no_bracket_means_no_location():
+    # 无版权结构（镜像深史/乱码 desc）= 该源不提供地点：纯描述文本不得误当地点，
+    # 由 geo_enrich.extract_locations 从文本挖地名填充（build_record 接线）
     r = parse_copyright("神秘湖泊风光")
     assert r["photographer"] is None
     assert r["gallery"] is None
-    assert r["location"] == ["神秘湖泊风光"]
+    assert r["location"] == []
+    assert r["has_copyright"] is False
 
 
 def test_empty_and_none_never_raise():
-    assert parse_copyright("") == {"photographer": None, "gallery": None, "location": []}
-    assert parse_copyright(None) == {"photographer": None, "gallery": None, "location": []}
+    assert parse_copyright("") == {"photographer": None, "gallery": None, "location": [], "has_copyright": False}
+    assert parse_copyright(None) == {"photographer": None, "gallery": None, "location": [], "has_copyright": False}
 
 
 def test_nested_brackets_in_photographer_field():

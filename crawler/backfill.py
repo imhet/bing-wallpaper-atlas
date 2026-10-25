@@ -9,7 +9,7 @@ import re
 
 from .bing_api import fetch_market
 from .copyright_parser import parse_copyright
-from .geo_enrich import enrich_tags
+from .geo_enrich import enrich_tags, extract_locations
 from .image_key import extract_image_key
 from .merge import merge_records
 from .regions import extract_region
@@ -48,6 +48,10 @@ def build_record(merged):
         loc["photographer"] = cloc["photographer"]
         loc["gallery"] = cloc["gallery"]
     desc = merged.get("desc", "") or ""
+    location = loc["location"]
+    if not loc["has_copyright"]:
+        # 无版权结构（镜像深史/乱码 desc）：描述不是地点，改用多语言词典从文本挖地名
+        location = extract_locations(f"{merged.get('title') or ''} {desc}")
     rec = {
         "id": f'{merged["market"]}-{merged["date"]}',
         "market": merged["market"],
@@ -56,7 +60,7 @@ def build_record(merged):
         "imageKey": extract_image_key(merged.get("urlbase") or ""),
         "title": merged.get("title"),
         "desc": desc,
-        "location": loc["location"],
+        "location": location,
         "region": extract_region(loc["location"], desc),
         "photographer": loc["photographer"],
         "gallery": loc["gallery"],

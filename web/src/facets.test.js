@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { buildIndex } from './search'
+import { applyFilters, buildIndex, searchRecords } from './search'
 import { computeFacets } from './facets'
 
 const records = [
@@ -18,7 +18,9 @@ const records = [
 ]
 
 const index = buildIndex(records)
-const facetsOf = (filters) => computeFacets(index, records, '', filters)
+// 默认 search = 纯关键词（无语义时的结果口径）
+const keywordSearch = (f) => searchRecords(index, records, '', f)
+const facetsOf = (filters) => computeFacets(keywordSearch, filters)
 
 describe('computeFacets', () => {
   it('year counts follow the market filter (sum equals that market total)', () => {
@@ -65,7 +67,18 @@ describe('computeFacets', () => {
   })
 
   it('counts respect the search query as well', () => {
-    expect(computeFacets(index, records, '雪山', {}).market).toEqual([{ name: 'zh-cn', count: 1 }])
+    const search = (f) => searchRecords(index, records, '雪山', f)
+    expect(computeFacets(search, {}).market).toEqual([{ name: 'zh-cn', count: 1 }])
+  })
+
+  it('facets pool 与结果列表同口径（调用方提供融合后的 search）', () => {
+    // 关键词只命中「雪山」1 条，语义融合扩成 2 条——计数必须按融合口径算，
+    // 否则搜「秋景」时面板计数 0/1 而列表 200 张，完全脱节
+    const search = (f) => applyFilters(records, f).filter((r) => ['zh-2024-b', 'us-2024-c'].includes(r.id))
+    expect(computeFacets(search, {}).market).toEqual([
+      { name: 'en-us', count: 1 },
+      { name: 'zh-cn', count: 1 },
+    ])
   })
 
   it('omits empty region/photographer values from options', () => {

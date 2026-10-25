@@ -20,7 +20,7 @@ def test_build_record_parses_everything():
     assert rec["region"] == "南极洲" or rec["region"] is None  # 词表未覆盖时允许 None
     assert rec["photographer"] == "Otto Plantema"
     assert rec["gallery"] == "Minden Pictures"
-    assert rec["tags"] == ["南极", "antarctica", "antarctic", "南極"]  # build_record 必须接 geo_enrich
+    assert rec["tags"] == ["南极", "antarctica", "antarctic", "南極", "南极洲"]  # build_record 必须接 geo_enrich
 
 
 def test_build_record_copyright_field_fills_blank_parser():
@@ -217,3 +217,15 @@ def test_build_record_enriches_tags():
     rec = build_record(merged)
     assert "张家界" in rec["tags"], "build_record 必须接 geo_enrich：tags 不能是空的"
     assert "湖南" in rec["tags"], "层级词典：命中张家界应连带父行政区湖南全组别名"
+
+
+def test_build_record_mines_locations_from_free_text_desc():
+    # 无版权结构的 desc（镜像深史源）：描述不再误当地点，词典挖出的规范中文名进 location
+    merged = {
+        "market": "en-us", "date": "2013-07-01",
+        "urlbase": "https://bing.npanuhin.me/US/en/2013-07-01.jpg",
+        "title": None, "desc": "Winter in Yellowstone National Park, Wyoming",
+        "copyright": "© Someone/Alamy", "copyrightlink": None, "quiz": None,
+    }
+    rec = build_record(merged)
+    assert rec["location"] == ["黄石"]

@@ -14,6 +14,7 @@ import re
 from pathlib import Path
 
 from .storage import load_all, upsert_record
+from .regions import _LOWERED
 
 ALIASES_PATH = Path(__file__).parent / "geo_aliases.json"
 HIERARCHY_PATH = Path(__file__).parent / "geo_hierarchy.json"
@@ -35,7 +36,9 @@ _NEGATIVE_CONTEXT = {
     "芬兰": ["纽芬兰"],  # 加拿大纽芬兰岛
     "意大利": ["意大利卡"],  # Italica，西班牙古罗马城
     "德国": ["德国家", "莱德国"],  # 「泰/穆罕默德国家公园」「阿德莱德国际」的子串
-    "法国": ["法国家"],  # 「科法国家保护区」的子串
+    "法国": ["法国家", "mont blanc"],  # 「科法国家保护区」的子串；富士山文类比「勃朗峰（法国阿尔卑斯）」时不得归法国
+    "富士山": ["new zealand", "apple"],  # 塔拉纳基山类比；"Fuji" 也是苹果品种（desc 提 apple 时是水果）
+    "勃朗峰": ["fuji"],  # 富士山文类比勃朗峰（fuji 子串会误伤 fujian——二者同现概率≈0，可接受）
     "澳大利亚": ["澳大利亚花园"],  # 加州大学校园花园名
     "印度": ["印度尼西亚", "印度洋"],
     "瑞士": ["瑞士撒克逊", "波希米亚瑞士", "bohemian switzerland", "saxon switzerland"],
@@ -100,6 +103,25 @@ def _get_matcher():
         )
         _matcher = _Matcher(_load(), hierarchy)
     return _matcher
+
+
+MAX_LOCATIONS = 5
+# regions.py 的规范国家/地区名集合：extract_locations 排序时让国家殿后
+_REGION_CANONICALS = frozenset(_LOWERED.values())
+
+
+def extract_locations(text, matcher=None):
+    """自由文本（无版权结构的 title+desc）挖地名：命中的规范中文名，最多 MAX_LOCATIONS 个。
+
+    具体地名在前、国家名殿后（regions 规范表内的组是国家/地区，如「美国」——
+    组内有 "united states" 这类长别名，纯按长度会把国家排到景点前面），
+    其余按组内最长别名长度降序近似具体度。不做层级展开（tags 已展开，location
+    保持文本真实出现的名字）。
+    """
+    m = matcher or _get_matcher()
+    matched = m.match(text or "")
+    matched.sort(key=lambda n: (n in _REGION_CANONICALS, -max(len(a) for a in (n, *m.alias_data[n]))))
+    return matched[:MAX_LOCATIONS]
 
 
 def enrich_tags(record, matcher=None):

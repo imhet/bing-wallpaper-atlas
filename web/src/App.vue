@@ -49,25 +49,28 @@ const years = computed(() =>
 const totalImages = computed(() => dedupeByUrlbase(records.value).length)
 
 const index = computed(() => buildIndex(records.value))
-const keywordResults = computed(() => searchRecords(index.value, records.value, filters.value.query, filters.value))
+// 结果口径的唯一入口：关键词 + 语义融合（语义就绪时）。结果列表与分面计数都从这走，
+// 保证「找到 N 张」和面板计数永远同源——搜「秋景」关键词层只命中 2 条、语义扩到 200 张，
+// 计数若走纯关键词会全是 0/1，与列表完全脱节
+function fusedResults(query, f) {
+  const kw = searchRecords(index.value, records.value, query, f)
+  if (!semanticScores.value?.size) return kw
+  // 查询带地理限定词（如「中国的秋景」的「中国」）时约束语义候选：
+  // CLIP 概念不懂国别，不过滤的话日本秋景会混进前排
+  const semScores = geoFilterSemScores(semanticScores.value, records.value, extractGeoTerms(query, regionNames.value))
+  return rrfFuse(
+    applyFilters(records.value, f),
+    kw.map((r) => r.id),
+    semScores,
+  )
+}
 // 语义检索：模型与向量在空闲时后台加载，就绪后把关键词结果与语义结果做 RRF 融合；
 // 未就绪/加载失败时 semanticScores 为空，结果就是纯关键词口径（渐进增强，不求人等）
 const semanticEngine = shallowRef(null)
 const semanticScores = shallowRef(null)
 const semanticLoading = ref(false)
 let semanticToken = 0
-const results = computed(() => {
-  if (!semanticScores.value?.size) return keywordResults.value
-  // 查询带地理限定词（如「中国的秋景」的「中国」）时约束语义候选：
-  // CLIP 概念不懂国别，不过滤的话日本秋景会混进前排
-  const geoTerms = extractGeoTerms(filters.value.query, regionNames.value)
-  const semScores = geoFilterSemScores(semanticScores.value, records.value, geoTerms)
-  return rrfFuse(
-    applyFilters(records.value, filters.value),
-    keywordResults.value.map((r) => r.id),
-    semScores,
-  )
-})
+const results = computed(() => fusedResults(filters.value.query, filters.value))
 const regionNames = computed(() => [...new Set(records.value.map((r) => r.region).filter(Boolean))])
 // 渐进渲染：一次渲染几千张卡会让视口附近上百缩略图同时打 Bing CDN（HTTP/2 并发流被拒），
 // 只渲染前 N 张，滚动到底自动追加；同图多市场版本先去重（代表 zh-cn 优先），免网格重复
@@ -92,8 +95,8 @@ watch(
   { deep: true },
 )
 const sentinel = ref(null)
-// 分面联动计数：每个下拉的计数 = 其他筛选 + 搜索词过滤后的分布（数据源为全量 records）
-const facets = computed(() => computeFacets(index.value, records.value, filters.value.query, filters.value))
+// 分面联动计数：与结果列表同口径（fusedResults），各维度轮流清空自身筛选重算分布
+const facets = computed(() => computeFacets((f) => fusedResults(filters.value.query, f), filters.value))
 const suggestions = computed(() => {
   // 全量补齐中零结果不代表搜不到，此时给「换个写法」建议会误导
   if (dataLoading.value || semanticLoading.value || results.value.length || !filters.value.query || !aliasDict.value) return []

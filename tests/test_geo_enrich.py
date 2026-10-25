@@ -161,7 +161,8 @@ def test_rebuild_writes_back_when_enrich_result_is_empty(tmp_path, make_record):
 
     rec = {**make_record(
         title=None,
-        desc="lighthouse at cape aniva, sakhalin island, russia (© X)",
+        # 无任何词典命中（russia 会命中新建的「俄罗斯」组，那是合法命中，不适用本用例）
+        desc="lighthouse at cape aniva, sakhalin island (© X)",
         location=["Cape Aniva"],
     ), "id": "en-us-2021-04-03", "market": "en-us", "date": "2021-04-03",
         "tags": ["冰岛", "iceland", "island", "アイスランド", "冰島"]}
@@ -171,3 +172,19 @@ def test_rebuild_writes_back_when_enrich_result_is_empty(tmp_path, make_record):
 
     out = load_year(str(tmp_path), "en-us", 2021)
     assert out[0]["tags"] == [], f"rebuild 后残留: {out[0]['tags']}"
+
+
+def test_extract_locations_specific_first():
+    # 无版权结构文本挖地名：具体地名排前（组内最长别名更长），国家殿后
+    from crawler.geo_enrich import extract_locations
+
+    names = extract_locations("Winter in Yellowstone National Park, Wyoming, United States")
+    assert names[0] == "黄石"
+    assert "美国" in names
+
+
+def test_extract_locations_caps_at_five():
+    from crawler.geo_enrich import extract_locations
+
+    text = "Tokyo Kyoto Osaka Nagoya Sapporo Fukuoka Hiroshima Sendai"
+    assert len(extract_locations(text)) <= 5
