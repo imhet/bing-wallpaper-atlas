@@ -15571,5 +15571,56 @@
    "室内",
    "建筑"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-24",
+  "market": "en-gb",
+  "date": "2026-10-24",
+  "urlbase": "/th?id=OHR.BSTEnds2026_EN-GB5502884225",
+  "imageKey": "BSTEnds2026",
+  "title": "The clock strikes back",
+  "desc": "The Eastgate Clock, Chester, England (© Alexey_Fedoren/iStock/Getty Images)",
+  "location": [
+   "The Eastgate Clock",
+   "Chester",
+   "England"
+  ],
+  "region": "英国",
+  "photographer": "Alexey_Fedoren",
+  "gallery": "iStock/Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=British+Summer+Time&form=hpcapt&filters=HpDate%3a%2220261024_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261024_BSTEnds2026%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
+  "content_tags": [
+   "切斯特东门钟",
+   "钟楼",
+   "建筑",
+   "时钟",
+   "路灯",
+   "红砖建筑",
+   "历史建筑",
+   "老街",
+   "都铎风格建筑",
+   "尖顶",
+   "维多利亚式建筑",
+   "英国古城",
+   "蓝天",
+   "白云"
+  ]
  }
 ]

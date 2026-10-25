@@ -11532,5 +11532,42 @@
    "室内",
    "建筑"
   ]
+ },
+ {
+  "id": "ja-jp-2026-10-24",
+  "market": "ja-jp",
+  "date": "2026-10-24",
+  "urlbase": "/th?id=OHR.YellowstoneWolves_JA-JP3378091323",
+  "imageKey": "YellowstoneWolves",
+  "title": "冬の大地を進むオオカミたち",
+  "desc": "ハイイロオオカミ, 米国 ワイオミング州 (© John Morrison/Getty Images)",
+  "location": [
+   "ハイイロオオカミ",
+   "米国 ワイオミング州"
+  ],
+  "region": null,
+  "photographer": "John Morrison",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%8F%E3%82%A4%E3%82%A4%E3%83%AD%E3%82%AA%E3%82%AA%E3%82%AB%E3%83%9F&form=hpcapt&filters=HpDate%3a%2220261024_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261024_YellowstoneWolves%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "灰狼",
+   "狼",
+   "野生动物",
+   "哺乳动物",
+   "荒野",
+   "灌木丛",
+   "枯草",
+   "荒漠植被",
+   "秋色",
+   "依偎"
+  ]
  }
 ]

@@ -14384,5 +14384,49 @@
    "室内",
    "建筑"
   ]
+ },
+ {
+  "id": "fr-fr-2026-10-24",
+  "market": "fr-fr",
+  "date": "2026-10-24",
+  "urlbase": "/th?id=OHR.MaligneFest_FR-FR5795515025",
+  "imageKey": "MaligneFest",
+  "title": "Des étoiles plein les yeux",
+  "desc": "Lac Maligne, Parc national Jasper, Alberta, Canada (© Andrey Popov/Getty Images)",
+  "location": [
+   "Lac Maligne",
+   "Parc national Jasper",
+   "Alberta",
+   "Canada"
+  ],
+  "region": "加拿大",
+  "photographer": "Andrey Popov",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Lac+Maligne&form=hpcapt&filters=HpDate%3a%2220261024_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261024_MaligneFest%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ],
+  "content_tags": [
+   "星空",
+   "雪山",
+   "湖泊",
+   "银河",
+   "针叶林",
+   "森林",
+   "倒影",
+   "夜空",
+   "云",
+   "夜景"
+  ]
  }
 ]

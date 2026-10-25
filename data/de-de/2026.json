@@ -13773,5 +13773,44 @@
    "台灯",
    "弧形结构"
   ]
+ },
+ {
+  "id": "de-de-2026-10-24",
+  "market": "de-de",
+  "date": "2026-10-24",
+  "urlbase": "/th?id=OHR.MaligneFest_DE-DE5179640958",
+  "imageKey": "MaligneFest",
+  "title": "Wo Gipfel auf Stille treffen",
+  "desc": "Maligne Lake, Jasper-Nationalpark, Alberta, Kanada (© Andrey Popov/Getty Images)",
+  "location": [
+   "Maligne Lake",
+   "Jasper-Nationalpark",
+   "Alberta",
+   "Kanada"
+  ],
+  "region": null,
+  "photographer": "Andrey Popov",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Jasper-Nationalpark+Kanada&form=hpcapt&filters=HpDate%3a%2220261024_2200%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261024_MaligneFest%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "星空",
+   "雪山",
+   "湖泊",
+   "银河",
+   "针叶林",
+   "森林",
+   "倒影",
+   "夜空",
+   "云",
+   "夜景"
+  ]
  }
 ]

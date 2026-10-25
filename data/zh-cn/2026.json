@@ -13167,5 +13167,49 @@
    "室内",
    "建筑"
   ]
+ },
+ {
+  "id": "zh-cn-2026-10-24",
+  "market": "zh-cn",
+  "date": "2026-10-24",
+  "urlbase": "/th?id=OHR.MaligneFest_ZH-CN8343066766",
+  "imageKey": "MaligneFest",
+  "title": "群峰与宁静相遇之地",
+  "desc": "玛琳湖，贾斯珀国家公园，艾伯塔省，加拿大 (© Andrey Popov/Getty Images)",
+  "location": [
+   "玛琳湖",
+   "贾斯珀国家公园",
+   "艾伯塔省",
+   "加拿大"
+  ],
+  "region": "加拿大",
+  "photographer": "Andrey Popov",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E7%8E%9B%E7%90%B3%E6%B9%96&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261024_MaligneFest%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ],
+  "content_tags": [
+   "星空",
+   "雪山",
+   "湖泊",
+   "银河",
+   "针叶林",
+   "森林",
+   "倒影",
+   "夜空",
+   "云",
+   "夜景"
+  ]
  }
 ]
