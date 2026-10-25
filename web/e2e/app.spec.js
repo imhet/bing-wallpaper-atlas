@@ -23,7 +23,7 @@ test('首屏渐进渲染 120 张且无重复图（同图多市场去重）', asy
     }),
   )
   expect(new Set(keys).size, '同一天全球同图只应显示一张').toBe(keys.length)
-  await expect(page.locator('.site-header .total')).toContainText('张 · 更新至')
+  await expect(page.locator('.site-header .total-link')).toContainText('更新日志')
 })
 
 test('首屏分级：主视角市场先渲染，其余市场分片延迟不阻塞首屏', async ({ page }) => {
@@ -277,4 +277,22 @@ test('市场筛选联动：选 zh-cn 后所有卡片来自中国市场', async (
   expect(count, 'zh-cn 去重后仍有可观卡片').toBeGreaterThan(50)
   // URL 状态同步：筛选写入 query string，刷新可还原
   expect(page.url()).toContain('market=zh-cn')
+})
+
+test('更新日志：按日期倒序分组，点卡片进详情，URL 可直达', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/?view=updates')
+  await expect(page.locator('.day-group').first()).toBeVisible({ timeout: 15000 })
+  const dates = await page.locator('.day-group h3').evaluateAll((els) => els.map((e) => e.textContent.trim().slice(0, 10)))
+  expect(dates.length).toBeGreaterThan(1)
+  expect([...dates].sort().reverse()).toEqual(dates) // 倒序
+  // 组内市场徽标（同一天多市场不去重，正是「哪天哪个市场更新了什么」）
+  await expect(page.locator('.day-group').first().locator('.market-badge').first()).toBeVisible()
+  // 点卡片进详情弹层
+  await page.locator('.day-group .card').first().click()
+  await expect(page.locator('.modal h2')).toBeVisible()
+  // 站头入口可返回浏览视图
+  await page.getByRole('button', { name: '关闭' }).click()
+  await page.getByRole('button', { name: '← 返回浏览' }).first().click()
+  await expect(page.locator('.filter-bar')).toBeVisible()
 })

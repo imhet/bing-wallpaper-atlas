@@ -82,7 +82,8 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .overlay { position: fixed; inset: 0; background: var(--overlay); display: flex; align-items: center; justify-content: center; z-index: 20; }
 .modal { background: var(--modal-bg); border: 1px solid var(--border); border-radius: 12px; max-width: 900px; width: min(92vw, 900px); max-height: 90vh; overflow: auto; padding: 16px; }
 .modal { position: relative; }
-.modal .close { position: absolute; top: 10px; right: 10px; background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+.modal .close, .modal .fav-btn { position: absolute; top: 10px; background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+.modal .close { right: 10px; }
 .modal .fav-btn { right: 46px; }
 .modal .fav-btn.on { border-color: #ff6b81; color: #ff6b81; }
 .modal .hero { width: 100%; border-radius: 8px; }
@@ -101,6 +102,16 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .siblings h3 { font-size: 14px; color: var(--muted); }
 .siblings button { display: block; width: 100%; text-align: left; margin-bottom: 6px; }
 
+/* 更新日志：按发布日期分组的浏览视图 */
+.updates { padding: 0 20px 30px; }
+.updates-head { display: flex; align-items: center; gap: 12px; padding-bottom: 12px; }
+.updates-head select { background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 14px; }
+.updates-summary { color: var(--muted); font-size: 13px; }
+.day-group h3 { margin: 18px 0 8px; font-size: 15px; }
+.day-group .day-count { color: var(--muted); font-size: 12px; font-weight: normal; margin-left: 6px; }
+.day-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.market-badge { display: inline-block; background: var(--panel); border: 1px solid var(--border); border-radius: 999px; padding: 0 8px; font-size: 11px; color: var(--muted); width: fit-content; }
+
 @media (max-width: 640px) {
   .site-header { padding: 12px; flex-wrap: wrap; }
   .filter-bar { padding: 0 12px 12px; }
@@ -111,4 +122,6 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
   .site-footer { padding: 12px 12px 24px; }
   .modal { padding: 12px; }
   .facts { font-size: 13px; }
+  .updates { padding: 0 12px 24px; }
+  .day-cards { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
 }

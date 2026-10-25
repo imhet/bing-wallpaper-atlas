@@ -45,10 +45,15 @@ export async function loadAllRecords(aggregations) {
 
 // 同一天 Bing 全球各市场发同一张图（urlbase 仅市场后缀不同）——渲染层按图去重，
 // 避免网格出现多张重复图。数据层不动：各市场版本仍是完整记录，计数保持记录口径。
-const MARKET_PRIORITY = ['zh-cn', 'en-us', 'zh-tw']
+export const MARKET_PRIORITY = ['zh-cn', 'en-us', 'zh-tw']
 const marketRank = (m) => {
   const i = MARKET_PRIORITY.indexOf(m)
   return i === -1 ? MARKET_PRIORITY.length : i
+}
+
+export const MARKET_LABEL = {
+  'zh-cn': '中文', 'zh-tw': '繁體中文', 'en-us': 'English (US)', 'en-gb': 'English (UK)',
+  'ja-jp': '日本語', 'de-de': 'Deutsch', 'fr-fr': 'Français',
 }
 
 export const imgKey = (urlbase) => urlbase.replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, '')

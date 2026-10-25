@@ -1,6 +1,6 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
-import { RES_SUFFIX, imageUrl } from '../api'
+import { MARKET_LABEL, RES_SUFFIX, imageUrl } from '../api'
 import { favoriteKey } from '../favorites'
 
 const props = defineProps({ record: Object, records: Array, favKeys: Set })
@@ -36,10 +36,6 @@ const viewRes = computed(() => {
 const siblings = computed(() =>
   props.records.filter((r) => r.imageKey && r.imageKey === props.record.imageKey && r.id !== props.record.id),
 )
-const MARKET_LABEL = {
-  'zh-cn': '中文', 'zh-tw': '繁體中文', 'en-us': 'English (US)', 'en-gb': 'English (UK)',
-  'ja-jp': '日本語', 'de-de': 'Deutsch', 'fr-fr': 'Français',
-}
 const viewSrc = computed(() => imageUrl(props.record.urlbase, RES_SUFFIX[viewRes.value] || '_1920x1080.jpg'))
 const RES_LABEL = { uhd: '4K UHD (3840×2160)', fhd: '1920×1080', hd: '1366×768', original: '原图' }
 
@@ -91,7 +87,7 @@ onUnmounted(() => {
     >
       <button ref="closeBtn" class="close" aria-label="关闭" @click="emit('close')">✕</button>
       <button
-        class="close fav-btn"
+        class="fav-btn"
         :class="{ on: isFav }"
         :aria-label="isFav ? '取消收藏' : '收藏'"
         :title="isFav ? '取消收藏' : '收藏'"

@@ -11,6 +11,7 @@ import { favoriteKey, loadFavorites, saveFavorites, toggleFavorite } from './fav
 import FilterBar from './components/FilterBar.vue'
 import WallpaperGrid from './components/WallpaperGrid.vue'
 import WallpaperDetail from './components/WallpaperDetail.vue'
+import UpdatesView from './components/UpdatesView.vue'
 
 const aggregations = ref(null)
 const records = ref([])
@@ -30,14 +31,18 @@ function toggleFav(record) {
   favorites.value = toggleFavorite(favorites.value, record)
 }
 
-// 收藏视图：优先用内存里的完整记录（数据新、字段全），快照兜底（全量加载完成前也能看）
-const showFavorites = ref(false)
+// 视图切换：browse（搜索浏览）/ favorites（本地收藏）/ updates（更新日志）。
+// favorites 是浏览器本地数据不入 URL；updates 入 URL 可分享直达
+const view = ref('browse')
 const favoriteRecords = computed(() => {
   const byKey = new Map(records.value.map((r) => [favoriteKey(r), r]))
   return Object.entries(favorites.value)
     .map(([key, snap]) => byKey.get(key) || snap)
     .sort((a, b) => b.date.localeCompare(a.date))
 })
+const years = computed(() =>
+  [...new Set(Object.values(aggregations.value?.years_by_market || {}).flat())].sort((a, b) => b - a),
+)
 
 const index = computed(() => buildIndex(records.value))
 const keywordResults = computed(() => searchRecords(index.value, records.value, filters.value.query, filters.value))
@@ -65,7 +70,7 @@ const visibleCount = ref(VISIBLE_STEP)
 const visibleResults = computed(() => uniqueResults.value.slice(0, visibleCount.value))
 // 结果计数用去重后的图片数：与网格实际卡片口径一致（站头 total 是记录数）
 const resultCount = computed(() => {
-  if (showFavorites.value) return `共收藏 ${favoriteRecords.value.length} 张`
+  if (view.value === 'favorites') return `共收藏 ${favoriteRecords.value.length} 张`
   const hasFilters = Object.values(filters.value).some(Boolean)
   const base = `${hasFilters ? '找到' : '共'} ${uniqueResults.value.length} 张`
   return dataLoading.value ? `${base}（数据加载中…）` : base
@@ -88,9 +93,11 @@ const suggestions = computed(() => {
 
 // 筛选状态 ↔ URL：刷新还原、分享直达；replaceState 不产生历史记录
 watch(
-  filters,
-  (f) => {
-    history.replaceState(null, '', encodeFilters(f) || location.pathname)
+  [filters, view],
+  ([f, v]) => {
+    const params = new URLSearchParams(encodeFilters(f).slice(1))
+    if (v !== 'browse') params.set('view', v)
+    history.replaceState(null, '', params.toString() ? `?${params}` : location.pathname)
   },
   { deep: true },
 )
@@ -181,14 +188,18 @@ onMounted(async () => {
   const stored = localStorage.getItem('theme')
   if (stored) theme.value = stored
   Object.assign(filters.value, decodeFilters(location.search)) // 分享链接/刷新还原
-  // 滚动到底部附近就追加下一批卡片（rootMargin 提前预取，滚动无感）
-  new IntersectionObserver(
+  const urlView = new URLSearchParams(location.search).get('view')
+  if (urlView === 'updates' || urlView === 'favorites') view.value = urlView
+  // 滚动到底部附近就追加下一批卡片（rootMargin 提前预取，滚动无感）。
+  // sentinel 只在浏览视图渲染（更新/收藏视图下为 null），用 watch 挂载
+  const gridObserver = new IntersectionObserver(
     (entries) => {
       if (entries[0].isIntersecting && visibleCount.value < results.value.length)
         visibleCount.value += VISIBLE_STEP
     },
     { rootMargin: '800px' },
-  ).observe(sentinel.value)
+  )
+  watch(sentinel, (el) => el && gridObserver.observe(el), { immediate: true })
   try {
     aggregations.value = await loadAggregations()
     // 分级加载三级：一级只等主视角市场（zh-cn/en-us）最新年分片先出图，二级补该年其余市场，
@@ -229,36 +240,54 @@ onMounted(async () => {
 <template>
   <header class="site-header">
     <h1>Bing 壁纸图集</h1>
-    <span v-if="aggregations" class="total">{{ aggregations.total }} 张 · 更新至 {{ aggregations.latest_date }}</span>
-    <button class="theme-toggle" :class="{ active: showFavorites }" @click="showFavorites = !showFavorites">
-      {{ showFavorites ? '← 返回浏览' : `♥ 收藏 ${favKeys.size}` }}
+    <button
+      v-if="aggregations"
+      class="theme-toggle total-link"
+      :class="{ active: view === 'updates' }"
+      @click="view = view === 'updates' ? 'browse' : 'updates'"
+    >
+      {{ view === 'updates' ? '← 返回浏览' : `${aggregations.total} 张 · 更新日志 →` }}
+    </button>
+    <button class="theme-toggle" :class="{ active: view === 'favorites' }" @click="view = view === 'favorites' ? 'browse' : 'favorites'">
+      {{ view === 'favorites' ? '← 返回浏览' : `♥ 收藏 ${favKeys.size}` }}
     </button>
     <button class="theme-toggle" @click="toggleTheme">{{ THEME_LABEL[theme] }}</button>
   </header>
-  <FilterBar v-if="!showFavorites" :facets="facets" v-model:filters="filters" @random="randomPick" />
-  <p v-if="loading" class="status">加载中…</p>
-  <p v-if="error" class="status error">{{ error }}</p>
-  <p v-if="!showFavorites && semanticLoading && filters.query && !results.length" class="hint">语义搜索准备中…</p>
-  <p v-if="!showFavorites && suggestions.length" class="hint">
-    没找到「{{ filters.query }}」，试试它的其他写法：
-    <button v-for="s in suggestions" :key="s" @click="pickSuggestion(s)">{{ s }}</button>
-  </p>
-  <p v-if="!loading && records.length" class="result-count">{{ resultCount }}</p>
-  <p v-if="showFavorites && !favoriteRecords.length" class="empty">
-    还没有收藏。浏览时点卡片右上角的 ♥，喜欢的图就会留在这里（只存这台浏览器里）。
-  </p>
-  <WallpaperGrid
-    :records="showFavorites ? favoriteRecords : visibleResults"
-    :query="showFavorites ? '' : filters.query"
-    :alias-data="aliasDict"
-    :data-loading="dataLoading"
-    :loading="loading"
+  <UpdatesView
+    v-if="view === 'updates'"
+    :records="records"
+    :years="years"
+    :loading="loading || dataLoading"
     :fav-keys="favKeys"
-    :hide-empty="showFavorites"
     @select="selected = $event"
     @toggle-fav="toggleFav"
   />
-  <div ref="sentinel" aria-hidden="true"></div>
+  <template v-else>
+    <FilterBar v-if="view === 'browse'" :facets="facets" v-model:filters="filters" @random="randomPick" />
+    <p v-if="loading" class="status">加载中…</p>
+    <p v-if="error" class="status error">{{ error }}</p>
+    <p v-if="view === 'browse' && semanticLoading && filters.query && !results.length" class="hint">语义搜索准备中…</p>
+    <p v-if="view === 'browse' && suggestions.length" class="hint">
+      没找到「{{ filters.query }}」，试试它的其他写法：
+      <button v-for="s in suggestions" :key="s" @click="pickSuggestion(s)">{{ s }}</button>
+    </p>
+    <p v-if="!loading && records.length" class="result-count">{{ resultCount }}</p>
+    <p v-if="view === 'favorites' && !favoriteRecords.length" class="empty">
+      还没有收藏。浏览时点卡片右上角的 ♥，喜欢的图就会留在这里（只存这台浏览器里）。
+    </p>
+    <WallpaperGrid
+      :records="view === 'favorites' ? favoriteRecords : visibleResults"
+      :query="view === 'favorites' ? '' : filters.query"
+      :alias-data="aliasDict"
+      :data-loading="dataLoading"
+      :loading="loading"
+      :fav-keys="favKeys"
+      :hide-empty="view === 'favorites'"
+      @select="selected = $event"
+      @toggle-fav="toggleFav"
+    />
+    <div v-if="view === 'browse'" ref="sentinel" aria-hidden="true"></div>
+  </template>
   <WallpaperDetail
     v-if="selected"
     :record="selected"
