@@ -1,8 +1,8 @@
 <script setup>
 import { computed, onMounted, ref, shallowRef, watch } from 'vue'
 import { dedupeByUrlbase, loadAggregations, loadAllRecords, loadYearShards } from './api'
-import { applyFilters, buildIndex, parseDateQuery, searchRecords } from './search'
-import { rrfFuse } from './semantic'
+import { applyFilters, buildIndex, extractGeoTerms, parseDateQuery, searchRecords } from './search'
+import { geoFilterSemScores, rrfFuse } from './semantic'
 import { createSemanticEngine } from './semantic-engine'
 import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
@@ -58,12 +58,17 @@ const semanticLoading = ref(false)
 let semanticToken = 0
 const results = computed(() => {
   if (!semanticScores.value?.size) return keywordResults.value
+  // 查询带地理限定词（如「中国的秋景」的「中国」）时约束语义候选：
+  // CLIP 概念不懂国别，不过滤的话日本秋景会混进前排
+  const geoTerms = extractGeoTerms(filters.value.query, regionNames.value)
+  const semScores = geoFilterSemScores(semanticScores.value, records.value, geoTerms)
   return rrfFuse(
     applyFilters(records.value, filters.value),
     keywordResults.value.map((r) => r.id),
-    semanticScores.value,
+    semScores,
   )
 })
+const regionNames = computed(() => [...new Set(records.value.map((r) => r.region).filter(Boolean))])
 // 渐进渲染：一次渲染几千张卡会让视口附近上百缩略图同时打 Bing CDN（HTTP/2 并发流被拒），
 // 只渲染前 N 张，滚动到底自动追加；同图多市场版本先去重（代表 zh-cn 优先），免网格重复
 const uniqueResults = computed(() => dedupeByUrlbase(results.value))
@@ -244,7 +249,7 @@ onMounted(async () => {
 
 <template>
   <header class="site-header">
-    <h1>Bing 壁纸图集</h1>
+    <h1><button class="home-link" title="回到浏览" @click="view = 'browse'">Bing 壁纸图集</button></h1>
     <button
       v-if="aggregations"
       class="theme-toggle total-link"

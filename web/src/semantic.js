@@ -123,6 +123,28 @@ export function semanticRank(images, conceptsClip, picked) {
   return scores
 }
 
+// 图组归一键：与 favorites/imgKey 同口径（镜像记录的 urlbase 各市场路径不同，靠 imageKey 归一）
+const groupKey = (r) => r.imageKey || r.urlbase.replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, '')
+
+// 语义候选的地理约束：CLIP 概念跨市场共享，「中国的秋景」的语义结果会混入日本秋景。
+// 查询含地理限定词（extractGeoTerms）时三档处理——region 匹配 ×3 加权（霸住语义前排），
+// 冲突 ×0.05 沉底（前 200 截断会挤掉它），未知保持原分（全库 55% 记录无 region，不冤枉）。
+export function geoFilterSemScores(semScores, records, terms) {
+  if (!terms.length) return semScores
+  const termsSet = new Set(terms)
+  const regionOf = new Map()
+  for (const r of records) {
+    const key = groupKey(r)
+    if (!regionOf.has(key)) regionOf.set(key, r.region || '')
+  }
+  return new Map(
+    [...semScores].map(([key, s]) => {
+      const region = regionOf.get(key) || ''
+      return [key, region ? (termsSet.has(region) ? s * 3 : s * 0.05) : s]
+    }),
+  )
+}
+
 // Reciprocal Rank Fusion：关键词名次与语义名次各自贡献 1/(k+rank)，语义独有结果得以进入列表
 // （零结果查询靠它救回）。k=60 是 RRF 的常用默认值，评估集上已按同一参数验证过。
 export function rrfFuse(records, keywordIds, semScores, { k = 60, semTopN = 200 } = {}) {
@@ -134,11 +156,10 @@ export function rrfFuse(records, keywordIds, semScores, { k = 60, semTopN = 200 
     .slice(0, semTopN)
     .forEach(([key], n) => semRank.set(key, n + 1))
   const kwRank = new Map(keywordIds.map((id, n) => [id, n + 1]))
-  const keyOf = (r) => r.imageKey || r.urlbase.replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, '')
   const scored = []
   for (const r of records) {
     const kw = kwRank.get(r.id)
-    const sem = semRank.get(keyOf(r))
+    const sem = semRank.get(groupKey(r))
     if (kw === undefined && sem === undefined) continue
     scored.push({ r, s: (kw ? 1 / (k + kw) : 0) + (sem ? 1 / (k + sem) : 0) })
   }

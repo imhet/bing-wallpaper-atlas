@@ -157,9 +157,13 @@ test('详情：默认 1080p，切换市场版本后标签与档位同步', async
   await expect(page.locator('.modal .facts dd').first()).toContainText('fr-fr')
   // 标签是 setup 时常量时切市场不更新，仍显示 en-us 的 3 个
   await expect(tags).toHaveCount(2) // fr-fr：姬路/姫路
-  // 镜像记录只有原图一档；picked 未重置会继续拼 4K 后缀
+  // 镜像记录只有原图一档；picked 未重置会继续拼 4K 后缀。
+  // 档位行单档也显示（与深史旧图的详情格式统一），但内容必须是「原图」
   await expect(hero).toHaveAttribute('src', 'https://bing.npanuhin.me/FR/fr/2024-04-06.jpg')
-  await expect(page.locator('.res-switch')).toHaveCount(0)
+  const switchBtns = page.locator('.res-switch button')
+  await expect(switchBtns).toHaveCount(1)
+  await expect(switchBtns).toHaveText('原图')
+  await expect(switchBtns).toHaveClass(/active/)
 })
 
 test('详情弹层：焦点进入并归还，背景滚动锁定', async ({ page }) => {

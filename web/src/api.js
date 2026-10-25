@@ -58,6 +58,11 @@ export const MARKET_LABEL = {
 
 export const imgKey = (urlbase) => urlbase.replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, '')
 
+// 详情页「地点」跳地图：多段地点空格拼接进 Google Maps 搜索；
+// 定位不了时 Google 自动落到普通搜索页，天然兜底
+export const mapsUrl = (location) =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((location || []).join(' '))}`
+
 // 去重键：优先 imageKey——镜像记录（npanuhin）的 urlbase 是各市场不同路径
 // （/DE/de/…、/FR/fr/…），只归一化 CDN 市场后缀会把同一张图重复展示
 const recordKey = (r) => r.imageKey || imgKey(r.urlbase)

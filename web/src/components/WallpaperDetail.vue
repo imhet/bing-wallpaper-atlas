@@ -1,6 +1,6 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
-import { MARKET_LABEL, RES_SUFFIX, imageUrl } from '../api'
+import { MARKET_LABEL, RES_SUFFIX, imageUrl, mapsUrl } from '../api'
 import { favoriteKey } from '../favorites'
 import HeartIcon from './HeartIcon.vue'
 
@@ -98,7 +98,8 @@ onUnmounted(() => {
         {{ isFav ? '已收藏' : '收藏' }}
       </button>
       <img class="hero" :src="viewSrc" :alt="record.title || record.desc" />
-      <div class="res-switch" v-if="available.length > 1">
+      <!-- 单档（镜像深史原图）也显示档位行，与新图格式一致 -->
+      <div class="res-switch" v-if="available.length">
         <button v-for="k in available" :key="k" :class="{ active: k === viewRes }" @click="picked = k">
           {{ RES_LABEL[k] || k }}
         </button>
@@ -113,7 +114,12 @@ onUnmounted(() => {
       </div>
       <dl class="facts">
         <dt>日期</dt><dd>{{ record.date }}（{{ record.market }}）</dd>
-        <dt v-if="record.location.length">地点</dt><dd v-if="record.location.length">{{ record.location.join(' · ') }}</dd>
+        <dt v-if="record.location.length">地点</dt>
+        <dd v-if="record.location.length"
+          ><a class="loc-link" :href="mapsUrl(record.location)" target="_blank" rel="noopener"
+            >{{ record.location.join(' · ') }} ↗</a
+          ></dd
+        >
         <dt v-if="record.region">国家/地区</dt><dd v-if="record.region">{{ record.region }}</dd>
         <dt v-if="record.photographer">摄影师</dt><dd v-if="record.photographer">{{ record.photographer }}</dd>
         <dt v-if="record.gallery">图库</dt><dd v-if="record.gallery">{{ record.gallery }}</dd>

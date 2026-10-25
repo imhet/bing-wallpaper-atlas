@@ -100,6 +100,13 @@ export function applyFilters(records, filters) {
   )
 }
 
+// 查询里的地理限定段：切段后完整等于某条记录 region 值的段（「中国的秋景」→ ['中国']）。
+// 语义层（CLIP 概念）不懂国别，语义候选需要用它做地理约束——见 semantic.js geoFilterSemScores。
+export function extractGeoTerms(query, regions) {
+  const set = new Set(regions)
+  return (query || '').trim().split(/[\s,，、;；!！?？的]+/).filter((seg) => set.has(seg))
+}
+
 export function searchRecords(index, records, query, filters) {
   let result = records
   const q = (query || '').trim()

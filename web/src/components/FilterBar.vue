@@ -152,10 +152,12 @@ onUnmounted(() => {
 .filter-btn-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .filter-btn .caret { color: var(--muted); font-size: 10px; flex: none; }
 
-.sheet-overlay { position: fixed; inset: 0; background: var(--overlay); z-index: 30; display: flex; align-items: flex-end; justify-content: center; }
+/* 面板从贴底改为屏幕中上（贴底是移动端 bottom-sheet 习惯，长列表下沿会被遮住）；
+   超长内容靠 .sheet-list 的 overflow-y 滚动 */
+.sheet-overlay { position: fixed; inset: 0; background: var(--overlay); z-index: 30; display: flex; align-items: flex-start; justify-content: center; padding-top: 12vh; }
 .filter-sheet {
-  background: var(--modal-bg); border: 1px solid var(--border); border-radius: 14px 14px 0 0;
-  width: min(100%, 560px); max-height: 75vh; display: flex; flex-direction: column; padding: 14px 16px 18px;
+  background: var(--modal-bg); border: 1px solid var(--border); border-radius: 14px;
+  width: min(100%, 560px); max-height: 70vh; display: flex; flex-direction: column; padding: 14px 16px 18px;
 }
 .sheet-head { display: flex; align-items: center; justify-content: space-between; }
 .sheet-head h3 { margin: 0 0 10px; font-size: 16px; }

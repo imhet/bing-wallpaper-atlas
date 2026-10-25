@@ -1,5 +1,18 @@
 import { describe, expect, it, vi } from 'vitest'
-import { dedupeByUrlbase, imageUrl, loadAllRecords, loadYearShards, thumbUrl } from './api'
+import { dedupeByUrlbase, imageUrl, loadAllRecords, loadYearShards, mapsUrl, thumbUrl } from './api'
+
+describe('mapsUrl（详情页地点跳地图）', () => {
+  it('joins location parts and encodes them into a Google Maps search URL', () => {
+    expect(mapsUrl(['张家界国家森林公园', '湖南'])).toBe(
+      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('张家界国家森林公园 湖南')}`,
+    )
+  })
+
+  it('keeps working for empty or missing location', () => {
+    expect(mapsUrl([])).toBe(`https://www.google.com/maps/search/?api=1&query=`)
+    expect(mapsUrl(undefined)).toBe(`https://www.google.com/maps/search/?api=1&query=`)
+  })
+})
 
 describe('loadYearShards', () => {
   it('fetches every market that has the year and flattens', async () => {

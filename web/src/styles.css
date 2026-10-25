@@ -38,6 +38,9 @@
 body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text); }
 .site-header { display: flex; align-items: baseline; gap: 12px; padding: 16px 20px; }
 .site-header h1 { font-size: 20px; margin: 0; }
+/* 标题可点击回首页：子页面（更新日志/收藏）找得回来 */
+.home-link { background: none; border: 0; padding: 0; color: inherit; font: inherit; cursor: pointer; }
+.home-link:hover { color: var(--accent); }
 .total { color: var(--muted); font-size: 13px; }
 .theme-toggle { display: inline-flex; align-items: center; gap: 4px; background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
 /* 只让 h1 后第一个按钮吃掉剩余空间：按钮组成组靠右，而不是被 auto margin 平分推散 */
@@ -98,6 +101,8 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .facts { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; margin: 0 0 12px; font-size: 14px; }
 .facts dt { color: var(--muted); }
 .facts dd { margin: 0; }
+.facts dd .loc-link { color: var(--accent); text-decoration: none; }
+.facts dd .loc-link:hover { text-decoration: underline; }
 .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
 .tag-row button { background: var(--panel); color: var(--accent); border: 1px solid var(--border); border-radius: 999px; padding: 2px 10px; cursor: pointer; font-size: 12px; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; }

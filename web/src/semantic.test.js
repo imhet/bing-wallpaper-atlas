@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { encodeQuery, packShard, parseShard, pickConcepts, pickQueryVector, rrfFuse, semanticRank } from './semantic'
+import { encodeQuery, geoFilterSemScores, packShard, parseShard, pickConcepts, pickQueryVector, rrfFuse, semanticRank } from './semantic'
+import { extractGeoTerms } from './search'
 
 // 构造与 crawler/semantic_index.py 相同的分片格式：BSEM | v1 | dim | count | [klen|key|scale|int8[dim]]
 function shard(rows, dim = 4) {
@@ -147,5 +148,45 @@ describe('rrfFuse', () => {
     const records = [rec('a', 'A'), rec('b', 'B')]
     const fused = rrfFuse(records, ['b', 'a'], new Map(), { k: 60 })
     expect(fused.map((r) => r.id)).toEqual(['b', 'a'])
+  })
+})
+
+describe('extractGeoTerms（查询里的地理限定段）', () => {
+  it('只有完整等于某个 region 值的段才算地理限定', () => {
+    // 「中国的秋景」切段 [中国, 秋景]，只有「中国」是 region 值
+    expect(extractGeoTerms('中国的秋景', ['中国', '美国', '日本'])).toEqual(['中国'])
+    expect(extractGeoTerms('中国 雪山', ['中国', '美国'])).toEqual(['中国'])
+    expect(extractGeoTerms('秋景', ['中国'])).toEqual([])
+    expect(extractGeoTerms('', ['中国'])).toEqual([])
+  })
+})
+
+describe('geoFilterSemScores（语义候选的地理约束）', () => {
+  // 语义（CLIP 概念）不懂国别：「中国的秋景」的语义结果会混入日本秋景，需按 region 约束
+  const recs = [
+    { id: 'cn-1', imageKey: 'A', region: '中国', urlbase: '/th?id=A' },
+    { id: 'jp-1', imageKey: 'B', region: '日本', urlbase: '/th?id=B' },
+    { id: 'xx-1', imageKey: 'C', region: null, urlbase: '/th?id=C' },
+  ]
+
+  it('region 与地理词冲突的图衰减沉底，匹配的加权，未知的保留原分', () => {
+    const out = geoFilterSemScores(new Map([['A', 0.9], ['B', 0.95], ['C', 0.8]]), recs, ['中国'])
+    expect(out.get('A')).toBe(2.7) // 匹配 ×3：region=中国 的图霸住语义前排
+    expect(out.get('C')).toBe(0.8) // region 未知不惩罚
+    expect(out.get('B')).toBeLessThan(0.05)
+  })
+
+  it('无地理词时原样返回', () => {
+    const scores = new Map([['A', 0.9]])
+    expect(geoFilterSemScores(scores, recs, [])).toBe(scores)
+  })
+
+  it('融合后中国图排到日本图前面（「中国的秋景」端到端）', () => {
+    const records = [
+      { id: 'cn', imageKey: 'A', region: '中国', urlbase: '/th?id=A' },
+      { id: 'jp', imageKey: 'B', region: '日本', urlbase: '/th?id=B' },
+    ]
+    const sem = geoFilterSemScores(new Map([['A', 0.9], ['B', 0.95]]), records, ['中国'])
+    expect(rrfFuse(records, [], sem, { k: 60 }).map((r) => r.id)).toEqual(['cn', 'jp'])
   })
 })
