@@ -505,7 +505,9 @@
   "imageKey": null,
   "title": "Pedestrian tunnel under Interstate 395 leading to the Pentagon in Arlington, Virginia",
   "desc": "",
-  "location": [],
+  "location": [
+   "日光"
+  ],
   "region": null,
   "photographer": "Rozanne Hakala",
   "gallery": "Getty Images",
@@ -514,7 +516,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日光",
+   "nikko"
+  ],
   "content_tags": [
    "隧道",
    "地下通道",
@@ -3073,7 +3078,9 @@
   "imageKey": null,
   "title": "Lava lake in the glowing crater of Erta Ale volcano, Ethiopia",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Dr. Richard Roscoe",
   "gallery": "Visuals Unlimited, Inc.",
@@ -3082,7 +3089,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "熔岩湖",
    "火山",
@@ -4275,8 +4285,10 @@
   "imageKey": null,
   "title": "Baltimore skyline and the Inner Harbor, Maryland",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Greg Pease",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4284,7 +4296,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "巴尔的摩内港",
    "城市天际线",
@@ -4386,7 +4405,9 @@
   "imageKey": null,
   "title": "Milky Way above Crater Lake, Oregon",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Nagesh Mahadev",
   "gallery": null,
@@ -4395,7 +4416,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山口湖",
    "湖",
@@ -5360,8 +5384,10 @@
   "imageKey": null,
   "title": "Marine Corps War Memorial in Arlington, Virginia",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Paul Souders",
   "gallery": "Corbis",
   "copyrightlink": null,
@@ -5369,7 +5395,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "硫磺岛纪念碑",
    "士兵雕塑",
@@ -6051,8 +6084,10 @@
   "imageKey": null,
   "title": "”Betsy Ross” flag, symbol of the American Revolution",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -6060,7 +6095,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "美国国旗",
    "旗帜",
@@ -6779,7 +6821,9 @@
   "imageKey": null,
   "title": "City and County Building illuminated in Civic Center Park, Denver, Colorado",
   "desc": "",
-  "location": [],
+  "location": [
+   "罗马"
+  ],
   "region": null,
   "photographer": "Blaine Harrington",
   "gallery": "age fotostock/SuperStock",
@@ -6788,7 +6832,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬"
+  ],
   "content_tags": [
    "市政厅",
    "建筑",
@@ -9193,7 +9243,9 @@
   "imageKey": null,
   "title": "Aerial view of Mount St. Helens, Washington",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Muralee Raghavan",
   "gallery": null,
@@ -9202,7 +9254,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山口",
    "火山",
@@ -11295,8 +11350,11 @@
   "imageKey": null,
   "title": "Entrance hall to the main reading room at the Library of Congress, Washington, D.C.",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "罗马",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Ryan McGinnis",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11304,7 +11362,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "彩绘穹顶",
    "天花板",
@@ -12661,8 +12731,10 @@
   "imageKey": null,
   "title": "Marines and sailors aboard the USS Pearl Harbor dock landing ship during the 2011 ceremony commemorating the 70th anniversary of the attack on Pearl Harbor",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Super Nova Images",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -12670,7 +12742,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "水兵",
    "军人",

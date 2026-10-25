@@ -207,7 +207,9 @@
   "imageKey": null,
   "title": "Crater Lake in Oregon",
   "desc": "We're looking out on the deepest lake in the US. Crater Lake, the centerpiece and namesake of the only national park in Oregon, goes down to depths of 1,943 feet—that's enough room to stack three-and-a-half Washington Monuments on top of each other. Fed mainly by snowfall, this pristine, crystal blue lake came into the world with a bang. Sometime around 5700 BCE, Mount Mazama erupted, losing roughly 3,000 feet of its height. The volcano blew out so much molten rock that it left a giant depression that gradually filled with water, giving us this serene scene today.\nCrater Lake National Park is open to visitors year-round, but in the winter many of the facilities as well as the road that circumnavigates the lake are closed. But, as our picture captures so beautifully, the snowy view is worth a (socially distant) trip.",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": "美国",
   "photographer": "Steve Bloom Images",
   "gallery": "Alamy",
@@ -216,7 +218,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山口湖",
    "湖泊",

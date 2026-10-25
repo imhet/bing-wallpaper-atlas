@@ -1894,8 +1894,10 @@
   "imageKey": null,
   "title": "The National Mall, Lincoln Memorial, and Washington Monument, Washington, D.C.",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Annie Griffiths Belt",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1903,7 +1905,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "林肯纪念堂",
    "华盛顿纪念碑",
@@ -3964,7 +3973,9 @@
   "imageKey": null,
   "title": "Lava lake within Nyiragongo Volcano near Goma, in the Democratic Republic of Congo",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Carsten Peter",
   "gallery": "National Geographic",
@@ -3973,7 +3984,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "熔岩湖",
    "火山",
@@ -5581,8 +5595,10 @@
   "imageKey": null,
   "title": "Flags line the entrance of the Massachusetts National Cemetery in Bourne, Cape Cod, Massachusetts",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Michael Neelon",
   "gallery": "age fotostock",
   "copyrightlink": null,
@@ -5590,7 +5606,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "美国国旗",
    "旗帜",
@@ -6122,8 +6145,10 @@
   "imageKey": null,
   "title": "Military personnel stand under a huge American flag preceding a San Diego Chargers football game, San Diego, Calif.",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Robert Benson",
   "gallery": "Aurora Photos",
   "copyrightlink": null,
@@ -6131,7 +6156,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "美国国旗",
    "国旗",
@@ -13098,7 +13130,9 @@
   "imageKey": null,
   "title": "Romanesco",
   "desc": "",
-  "location": [],
+  "location": [
+   "罗马"
+  ],
   "region": null,
   "photographer": "Martha Lazar",
   "gallery": "Getty",
@@ -13107,7 +13141,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬"
+  ],
   "content_tags": [
    "宝塔花菜",
    "罗马花椰菜",

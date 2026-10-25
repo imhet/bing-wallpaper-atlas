@@ -1457,8 +1457,11 @@
   "imageKey": "AustriaMarmot",
   "title": "Young alpine marmot",
   "desc": "The alpine marmot in today's image is a close relative of the groundhog, which is another species of marmot. The alpine marmot is native to central and southern Europe and can be found at altitudes between 800 and 3,200 metres. Weighing between 1.9 and 7 kilograms, they are easily recognised by their round faces, short tails and dense fur that helps them endure chilly mountain climates. When it comes to food, these creatures are herbivores with simple taste. They spend their summer days grazing on grasses, herbs, roots, seeds and flowers, storing up energy for their big event: a roughly nine-month hibernation party. Sometimes they eat grain, worms, insects and spiders. Beyond their hibernation habits, alpine marmots live a highly social lifestyle. They communicate through a variety of vocal sounds, including sharp whistles to warn the group of predators like eagles or foxes. This strong sense of community is key to their survival.",
-  "location": [],
-  "region": null,
+  "location": [
+   "阿尔卑斯",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Jonas Fichtner-Pflaum",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1466,7 +1469,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯"
+  ],
   "content_tags": [
    "土拨鼠",
    "旱獭",
@@ -1704,8 +1719,11 @@
   "imageKey": "SnowySvaneti",
   "title": "Medieval towers in Mestia, Upper Svaneti, Georgia",
   "desc": "Winter turns Mestia's medieval towers into icy fortresses. Perched over 1,400 metres up in the Caucasus Mountains, Mestia is a charming highland town in northwest Georgia. The town is home to the Svans, a cultural and linguistic subgroup of Georgians. Despite its modest size, Mestia has been an essential hub of Georgian culture for centuries, dotted with the Svan defensive towers, seen in today's image. Most of these towers were constructed between the 9th and 12th centuries, a period often referred to as Georgia's Golden Age. However, their roots are believed to stretch even further back, possibly into prehistoric times. Built for both protection and shelter, these towers were not just fortresses but also integral parts of family homes, reflecting the region's history of resilience and self-sufficiency. Therefore, it isn't just a town; it's a living museum where history rises from these towers and echoes through the mountains.",
-  "location": [],
-  "region": null,
+  "location": [
+   "罗滕堡",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "photoaliona",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1713,7 +1731,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "罗滕堡",
+   "rothenburg",
+   "羅騰堡",
+   "羅滕堡"
+  ],
   "content_tags": [
    "雪山",
    "碉楼",
@@ -2116,8 +2144,11 @@
   "imageKey": "BlueBelize",
   "title": "Great Blue Hole, Belize",
   "desc": "The Great Blue Hole, found near the centre of Lighthouse Reef off the coast of Belize, is one of nature's most incredible creations. This massive marine sinkhole, 318 metres across and 125 metres deep, was formed during the last ice age when a limestone cave system collapsed and rising sea levels flooded the area, leaving behind this striking natural wonder.\nMade famous by explorer Jacques Cousteau in 1971, the Great Blue Hole is now one of the world's top scuba diving destinations. Divers flock here to see its crystal-clear waters, breathtaking stalactites and diverse marine life, including nurse sharks, reef sharks and giant groupers. Beyond a depth of 91 metres, a mysterious layer of hydrogen sulfide creates a lifeless, dark zone—an eerie yet fascinating feature. Whether you're an adventurer or a nature lover, the Great Blue Hole is a must-see marvel that displays the beauty and mystery of our planet.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "JamiesOnAMission",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -2125,7 +2156,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "大蓝洞",
    "蓝洞",
@@ -4480,7 +4523,9 @@
   "imageKey": "SpaceFlight",
   "title": "View from the cupola of the International Space Station above the South Pacific Ocean",
   "desc": "Not so long ago, humanity took its first step beyond Earth. For thousands of years, we gazed at the stars, dreaming of what lay beyond. Then, on April 12, 1961, one man left the planet and changed history forever. That morning, Soviet pilot Yuri Gagarin climbed into a small, spherical spacecraft named Vostok 1. The countdown began. The engines ignited. As the rocket roared toward the sky, he called out, 'Poyekhali!'—'Let's go!' And just like that, Earth had its first space traveller.\nFor 108 minutes, Gagarin orbited the planet, watching the world from a view no human had ever seen before. When he landed safely back on Earth, everything had changed. Humanity had entered the Space Age. His flight sparked the race to the Moon, the dream of living on Mars and much more. Decades later, in honour of his achievement, the United Nations declared April 12 as the International Day of Human Space Flight. Pictured here is the view from the cupola of the International Space Station, showing the vast South Pacific Ocean. It is a reminder of how small Earth is in the grand cosmos—and how far human spaceflight has taken us.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "NASA",
   "gallery": null,
@@ -4489,7 +4534,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "国际空间站",
    "航天器",
@@ -5680,8 +5732,10 @@
   "imageKey": "CuteChameleon",
   "title": "Common chameleon",
   "desc": "One moment they're blending in, the next they're flaunting a new shade—chameleons really know how to colour the world. But every May 9, these masters of disguise can't hide from the spotlight. International Chameleon Day celebrates their colour-shifting skills, zippy tongues and wild adaptations. With over 200 species found in diverse habitats, these reptiles don't change colour to match their background. Instead, their shifting shades help regulate body temperature, attract mates and communicate with others. Specialised skin cells, including iridophores, reflect light to create dazzling displays. Some species turn bright to signal aggression, while others adopt subdued tones to avoid attention.\nA chameleon's eyes move independently, scanning for predators or prey. With 360-degree vision and a lightning-fast sticky tongue, they're stealthy hunters and agile escape artists. Their zygodactylous feet (two toes forward, two toes back) and prehensile tails give them an iron grip, making them expert climbers in tricky treetops. So, today, whether you stand out or fade in, take a moment to appreciate these incredible creatures.",
-  "location": [],
-  "region": null,
+  "location": [
+   "马达加斯加"
+  ],
+  "region": "马达加斯加",
   "photographer": "Photostock-Israel",
   "gallery": "SPL/Getty Images",
   "copyrightlink": null,
@@ -5689,7 +5743,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "马达加斯加",
+   "madagascar"
+  ],
   "content_tags": [
    "变色龙",
    "爬行动物",
@@ -6176,8 +6233,11 @@
   "imageKey": "HoneyBeeLavender",
   "title": "Honey bee on lavender flowers",
   "desc": "Honey bees may be small, but without them, your grocery list would be a lot shorter. No more berries, avocados or even coffee. Alongside butterflies, bats and hummingbirds, bees pollinate nearly 90% of the world's wild flowering plants and over 35% of the food crops we rely on. World Bee Day, marked every May 20, honours these vital pollinators and celebrates Anton Janša, a pioneer of modern beekeeping. Janša saw bees as the noblest of insects, an idea now backed by science.\nUnfortunately, bee populations are in danger. Pesticide exposure, habitat loss and climate change are driving their numbers down, threatening both global food security and biodiversity. The good news is that small actions can make a big difference. Support local beekeepers, plant pollinator-friendly flowers and avoid chemical pesticides. And the next time you stir honey into your tea, remember the tiny worker behind that golden spoonful and why protecting this buzzing species matters more than ever.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Anthony Brown",
   "gallery": "Alamy Stock Photo",
   "copyrightlink": null,
@@ -6185,7 +6245,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "蜜蜂",
    "昆虫",
@@ -8444,8 +8515,11 @@
   "imageKey": "BahamaBlues",
   "title": "Turquoise waters of the Bahamas",
   "desc": "The Bahamas comes alive with colour, music and pride today as the nation marks its Independence Day. First recorded by Europeans in 1492 when Christopher Columbus arrived, the islands were initially under Spanish rule. They later came briefly under American control before becoming a British colony. After decades of legal negotiations and a growing push for self-governance, the Bahamas transitioned to full independence on this day in 1973.\nIn the lead-up to July 10, Bahamians across the archipelago take part in spirited celebrations, including National Pride Day, ecumenical services and community walks and runs. These events shine a spotlight on the nation's vibrant culture, heritage and deep sense of patriotism. And what better backdrop for such festivities than the breathtaking turquoise waters that surround the islands? The shallow, white sandbanks reflect sunlight in a way that gives the ocean its signature electric-blue glow, pictured here. Whether you're snorkeling among coral reefs, watching fireworks from a beachfront, or cruising the Exuma Cays under the golden sun, it seems the ocean sparkles just a little brighter on Independence Day.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "BlueOrange Studio",
   "gallery": "Adobe Stock",
   "copyrightlink": null,
@@ -8453,7 +8527,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales",
+   "西班牙",
+   "spain"
+  ],
   "content_tags": [
    "云",
    "热带海洋",
@@ -8849,8 +8936,10 @@
   "imageKey": "BigMoon",
   "title": "Photo of the moon's surface through a telescope",
   "desc": "Every July 20, we celebrate National Moon Day, marking the historic moment when Neil Armstrong first stepped onto the moon in 1969. With his iconic words, 'That's one small step for man, one giant leap for mankind,' Armstrong became the first human to walk on the moon, followed by Buzz Aldrin.\nThe moon landing was the result of President John F. Kennedy's bold 1961 goal to send a man to the moon and return him safely before the decade's end. Apollo 11 launched from Kennedy Space Centre on July 16, 1969, reaching lunar orbit by July 19. On July 20, the Eagle lunar module touched down, and the world held its breath as history unfolded. Moon Day honours not just that first step, but also the science, teamwork and peaceful international cooperation that made it possible—and continue to drive space exploration today.",
-  "location": [],
-  "region": null,
+  "location": [
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Sergey Kuznetsov",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8858,7 +8947,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "月球",
    "月球表面",
@@ -9005,8 +9099,11 @@
   "imageKey": "AshyWoodswallow",
   "title": "Family of ashy woodswallows perched on a branch",
   "desc": "Remember the cousin who convinced you to climb the tallest tree or the one who helped you sneak an extra slice of cake at the family reunion? Today is a good time to appreciate those childhood partners in crime who made growing up way more exciting. Cousins often land somewhere between sibling and friend, getting into trouble with you, sharing inside jokes and showing up at every family gathering. The bond may stretch over time and distance, but it seldom fades. In nature, few creatures mirror that kind of togetherness better than the ashy woodswallow, pictured here. Native to South Asia, these birds are rarely seen alone. They gather in tight groups on bare branches or perch atop high places like powerlines. From there, they launch into graceful flights—flapping and gliding as they snatch insects midair.\nCousins Day may not come with gift guides or special sales, but it is a great reason to drop a text, make a call or laugh over a shared memory. Cousins aren't just relatives; they're the ones who make family feel like fun. And just like these snug little woodswallows, life's a little warmer when they're close.",
-  "location": [],
-  "region": null,
+  "location": [
+   "日本",
+   "泰国"
+  ],
+  "region": "泰国",
   "photographer": "Captain Skyhigh",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9014,7 +9111,16 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "泰国",
+   "thailand",
+   "thai",
+   "泰國"
+  ],
   "content_tags": [
    "灰燕鵙",
    "鸟",
@@ -12114,7 +12220,9 @@
   "imageKey": "DragonEndeavour",
   "title": "ISS main solar arrays seen from SpaceX Crew Dragon Endeavour",
   "desc": "From October 4 to 10, World Space Week invites us to transcend our earthly bounds and chase the stars. It was born from the launch of Sputnik 1 by the USSR in 1957 and the signing of the Outer Space Treaty in 1967, a pioneering international commitment to peaceful cosmic exploration. During this week, classrooms buzz with experiments, planetariums echo with wonder and telescopes bridge the gap to distant galaxies. Together, these moments weave a universal story of science, discovery and humanity's relentless drive to push boundaries. The week's mission is clear: to ignite the next generation of explorers, engineers and dreamers ready to rewrite the cosmos.\nToday's image captures the International Space Station (ISS), a vast laboratory built by 15 nations, orbiting about 260 miles above Earth. Its solar arrays soak up sunlight to power groundbreaking research on microgravity, technology and human survival beyond our planet. Shot from the SpaceX Crew Dragon Endeavour—a reusable spacecraft that has completed six missions since 2020, ferrying astronauts and cargo—this scene embodies what humanity can achieve when it chooses cooperation over competition. Each gleaming panel makes it clear: the final frontier is within reach and the audacity to explore it defines us.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "NASA",
   "gallery": null,
@@ -12123,7 +12231,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "地球",
    "舷窗",
@@ -12331,7 +12446,9 @@
   "imageKey": "WebbPillars",
   "title": "The Pillars of Creation viewed by the James Webb Space Telescope",
   "desc": "As World Space Week draws to a close, the cosmos continues to give us reasons to look up in awe. Picture clouds—not drifting across our skies, but stretching across space itself, cradling the birth of new stars. That's exactly what NASA's James Webb Space Telescope has revealed in its view of the Pillars of Creation—shown here—with colours and details unlike anything seen before.\nThese massive, spire-like structures—rising diagonally from bottom left to the top right—are composed almost entirely of dust and gas, the very seedbed of stars. Within these towering formations, gravity tightens its grip on knots of material, sparking gradual ignition and birthing new stars that already shimmer along the pillars' edges. Remarkably, this celestial performance is taking place just 6,500 light-years away, within the Eagle Nebula. Hidden behind thick lanes of interstellar clouds that mask the distant universe, the pillars emerge in full glory, shining front and centre.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "NASA",
   "gallery": null,
@@ -12340,7 +12457,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "创生之柱",
    "鹰状星云",
@@ -13101,8 +13225,10 @@
   "imageKey": "AfricanRaven",
   "title": "Thick-billed raven, Simien Mountains, Ethiopia",
   "desc": "Perched high in the mountains of Ethiopia, Eritrea and Somalia, the thick-billed raven holds the title of the world's largest raven. At nearly 70 centimetres in length and weighing more than 1.5 kilograms, it is about a quarter heavier than the common raven. Its enormous, arched bill—pale at the base and close to 9 centimetres long—is the largest among perching birds. These ravens live mostly between 1,500 and 3,500 metres above sea level, found across farmland, rocky cliffs and even rooftops in mountain towns.\nThick-billed ravens are versatile feeders, taking carrion, insects, beetle larvae, seeds and crops like wheat, along with scraps from people. Observers have seen them pulling grubs from dung heaps and even forcing Verreaux's eagle-owls from their nests. Often seen in pairs or small groups, they build large stick nests on cliffs or tall trees, laying three to five bluish-green eggs. Their calls range from deep croaks to wheezy notes, and rare instances of mimicry have been recorded. Their plumage gleams purple in sunlight, a striking figure of the African highlands. Classified as 'least-concern' by the International Union for Conservation of Nature, the thick-billed raven continues to thrive.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Ignacio Yufera",
   "gallery": "FLPA/Minden Pictures",
   "copyrightlink": null,
@@ -13110,7 +13236,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "厚嘴渡鸦",
    "乌鸦",
@@ -13298,8 +13431,10 @@
   "imageKey": "MoncayoAutumn",
   "title": null,
   "desc": "Orange you glad it's autumn?",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -13307,7 +13442,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "山毛榉",
    "树",
@@ -13327,8 +13467,12 @@
   "imageKey": "KyotoMaple",
   "title": null,
   "desc": "Where bamboo breathes and maples blaze",
-  "location": [],
-  "region": null,
+  "location": [
+   "岚山",
+   "京都",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -13336,7 +13480,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "京都",
+   "kyoto",
+   "きょうと",
+   "京都府",
+   "岚山",
+   "arashiyama",
+   "嵐山",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "枫叶",
    "枫树",
@@ -13355,8 +13511,10 @@
   "imageKey": "MexicoJelly",
   "title": null,
   "desc": "Just jellin'",
-  "location": [],
-  "region": null,
+  "location": [
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -13364,7 +13522,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ],
   "content_tags": [
    "水母",
    "海洋生物",
@@ -13383,7 +13545,9 @@
   "imageKey": "TowerBridgeUK",
   "title": null,
   "desc": "Mind the gap—this one opens",
-  "location": [],
+  "location": [
+   "伦敦"
+  ],
   "region": null,
   "photographer": null,
   "gallery": null,
@@ -13392,7 +13556,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "伦敦",
+   "london",
+   "ロンドン",
+   "倫敦"
+  ],
   "content_tags": [
    "伦敦塔桥",
    "桥",
@@ -13448,8 +13617,10 @@
   "imageKey": "LanternsThailand",
   "title": null,
   "desc": "Sky full of wishes",
-  "location": [],
-  "region": null,
+  "location": [
+   "泰国"
+  ],
+  "region": "泰国",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -13457,7 +13628,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "泰国",
+   "thailand",
+   "thai",
+   "泰國"
+  ],
   "content_tags": [
    "灯笼",
    "彩灯",
@@ -14729,7 +14905,9 @@
   "imageKey": "CopanRuins",
   "title": "Maya site of Copán, Honduras",
   "desc": "In a quiet valley of western Honduras lie the ruins of Copán—a city of the ancient Maya civilisation. Its sky served as both compass and calendar, guiding celestial events and shaping temples, rituals and the rhythm of life. Around 426 CE, K'inich Yax K'uk' Mo', a warrior from the Maya heartland, founded Copán and established its royal dynasty. The city became a centre of Maya art, astronomy and power.\nAt the heart of Copán stand two monuments—stories in stone—that reflect its artistic and political brilliance: the Hieroglyphic Stairway and Altar Q. The stairway rises in 63 carved steps covered with more than 2,000 glyphs—the longest Maya inscription ever found—recording reigns, ceremonies and ambitions that shaped the city's power. Altar Q, standing beside it, translates that history into sculpture, portraying 16 rulers in sequence, preserving the story of a dynasty in stone. Rediscovered in the 19th century and designated as a UNESCO World Heritage Site in 1980, Copán remains one of the finest achievements of the ancient Maya. Today, it endures in the precision of its stonework—proof that art can outlast even the world that built it.",
-  "location": [],
+  "location": [
+   "英国"
+  ],
   "region": "英国",
   "photographer": "diegograndi",
   "gallery": "Getty Images",
@@ -14738,7 +14916,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "玛雅遗址",
    "古代遗迹",
@@ -15786,8 +15975,11 @@
   "imageKey": "AniTurkey",
   "title": "St Gregory Church in Ani Ruins, Kars, Türkiye",
   "desc": "On a windswept plateau in eastern Türkiye, along the border with Armenia, the ruins of the ancient city of Ani rise from the landscape with striking clarity. A millennium ago, Ani was a thriving Armenian capital on a major Silk Road route, its fortifications and busy streets shaping trade and culture across the region. Today, the city is quiet, but its outline still carries the weight of its past.\nThe image shows the Church of St Gregory, one of Ani's most striking survivors. Built from dark volcanic stone, its tall cylindrical tower stands over the plateau with the same precision that once defined the city. Ani was known as the 'City of 1,001 Churches,' and its architects pushed new ideas in arches, domes and facades that later influenced Gothic tradition. Even in ruin, the design remains deliberate and unmistakable.\nAni's decline unfolded through earthquakes, invasions and shifting trade routes, yet the city never fully disappeared. Archaeologists continue to find new details and conservation work fights erosion and time. Walking here feels less like exploring a ruin and more like meeting a city determined to keep its story alive.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国",
+   "土耳其"
+  ],
+  "region": "土耳其",
   "photographer": "Kenan Talas",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -15795,7 +15987,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "土耳其",
+   "turkey",
+   "türkiye",
+   "turkish",
+   "トルコ",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "亚美尼亚古教堂",
    "教堂",

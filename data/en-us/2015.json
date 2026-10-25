@@ -5344,7 +5344,9 @@
   "imageKey": null,
   "title": "Mount St. Helens, Washington",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Diane Cook and Len Jenshel",
   "gallery": "Getty Images",
@@ -5353,7 +5355,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "圣海伦斯火山",
    "火山",
@@ -5488,7 +5493,9 @@
   "imageKey": null,
   "title": "Crater Lake, Oregon",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Roshin Lal Ramesan",
   "gallery": null,
@@ -5497,7 +5504,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山口湖",
    "湖泊",
@@ -11617,8 +11627,10 @@
   "imageKey": null,
   "title": "Day of the Dead calaca figurines",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "Inti St. Clair",
   "gallery": "Blend Images/Getty Images",
   "copyrightlink": null,
@@ -11626,7 +11638,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ],
   "content_tags": [
    "骷髅人偶",
    "人偶",
@@ -11840,8 +11856,10 @@
   "imageKey": null,
   "title": "Crown Point at Columbia River Gorge, Oregon",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "哥伦比亚"
+  ],
+  "region": "哥伦比亚",
   "photographer": "JPL Designs",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -11849,7 +11867,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "哥伦比亚",
+   "colombia"
+  ],
   "content_tags": [
    "哥伦比亚河峡谷",
    "河流",
@@ -11984,8 +12005,10 @@
   "imageKey": null,
   "title": "World War II Memorial, Washington, DC",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Ixefra",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11993,7 +12016,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "华盛顿纪念碑",
    "纪念碑",
@@ -12812,7 +12842,9 @@
   "imageKey": null,
   "title": "Concert hall of the Heydar Aliyev Center in Baku, Azerbaijan",
   "desc": "",
-  "location": [],
+  "location": [
+   "哈尔滨"
+  ],
   "region": null,
   "photographer": "VIEW Pictures Ltd",
   "gallery": "Alamy",
@@ -12821,7 +12853,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "哈尔滨",
+   "harbin",
+   "哈爾濱",
+   "黑龙江",
+   "heilongjiang",
+   "黑龍江"
+  ],
   "content_tags": [
    "哈尔滨大剧院",
    "歌剧院",

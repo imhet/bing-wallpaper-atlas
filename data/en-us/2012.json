@@ -887,7 +887,9 @@
   "imageKey": null,
   "title": "Three alphorn players from the International Alphorn Society perform in Fort Kent, Maine",
   "desc": "",
-  "location": [],
+  "location": [
+   "阿尔卑斯"
+  ],
   "region": null,
   "photographer": "Don Emmert",
   "gallery": "Getty Images",
@@ -896,7 +898,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯"
+  ],
   "content_tags": [
    "阿尔卑斯长号",
    "乐器",
@@ -1869,8 +1878,10 @@
   "imageKey": null,
   "title": "The Washington Monument with the U.S. Capitol building in the background, Washington D.C.",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Corbis Motion",
   "gallery": null,
   "copyrightlink": null,
@@ -1878,7 +1889,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "华盛顿纪念碑",
    "纪念碑",
@@ -5445,8 +5463,10 @@
   "imageKey": null,
   "title": "The Memorial Amphitheater at Arlington National Cemetery in Arlington, Virginia",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Peter Carroll",
   "gallery": "Corbis",
   "copyrightlink": null,
@@ -5454,7 +5474,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "石柱",
    "拱门",
@@ -11605,8 +11632,10 @@
   "imageKey": null,
   "title": "Balloons floating over the U.S. Capitol dome, Washington, D.C.",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Joseph Sohm; Visions of America",
   "gallery": "Corbis",
   "copyrightlink": null,
@@ -11614,7 +11643,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "气球",
    "美国国会大厦",

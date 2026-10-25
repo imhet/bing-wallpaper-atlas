@@ -7,7 +7,9 @@
   "imageKey": null,
   "title": "A polar bear plunging",
   "desc": "",
-  "location": [],
+  "location": [
+   "北极"
+  ],
   "region": null,
   "photographer": "Sergei Gladyshev",
   "gallery": "500px",
@@ -16,7 +18,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "北极",
+   "arctic",
+   "北極"
+  ],
   "content_tags": [
    "北极熊",
    "熊",
@@ -81,8 +87,10 @@
   "imageKey": null,
   "title": "Mask of Tutankhamun",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "埃及"
+  ],
+  "region": "埃及",
   "photographer": "Sandro Vannini",
   "gallery": "Corbis",
   "copyrightlink": null,
@@ -90,7 +98,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト"
+  ],
   "content_tags": [
    "图坦卡蒙黄金面具",
    "面具",
@@ -1686,8 +1699,10 @@
   "imageKey": null,
   "title": "Bronze statue of George Washington in the Capitol rotunda in Washington, DC",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Michael Reynolds",
   "gallery": "Corbis",
   "copyrightlink": null,
@@ -1695,7 +1710,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "美国国会大厦",
    "建筑",
@@ -2983,7 +3005,9 @@
   "imageKey": null,
   "title": "Early blooming crocus",
   "desc": "",
-  "location": [],
+  "location": [
+   "阿尔卑斯"
+  ],
   "region": null,
   "photographer": "suterscher",
   "gallery": "iStock/Getty Images",
@@ -2992,7 +3016,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯"
+  ],
   "content_tags": [
    "番红花",
    "花",
@@ -5280,7 +5311,9 @@
   "imageKey": null,
   "title": "Blooming butterweed in Congaree National Park, South Carolina",
   "desc": "Some of the tallest trees in the southeastern US grow in the bottomland ecosystem of Congaree National Park. That tree with the grooved trunk in the center of this image is a bald cypress, a resilient hardwood valued for its water resistance when used as lumber. The Congaree River, the park’s centerpiece, can crest its banks during the year, turning some of the park trails into temporary waterways. Throughout spring, the butterweed blooms in the water-soaked soil, covering the forest floor with a spray of green and gold.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Jeff Lepore",
   "gallery": "Alamy",
@@ -5289,7 +5322,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "森林",
    "黄色野花",
@@ -5647,7 +5687,9 @@
   "imageKey": null,
   "title": "Guard at the Tomb of the Unknowns, Arlington National Cemetery, Virginia",
   "desc": "The Tomb of the Unknowns honors US service members who died in combat, but whose remains cannot be identified. When Arlington National Cemetery in Virginia is open to the public, anyone is welcome to visit the tomb and watch the somber changing of the guard. During the changing ceremony, officials ask only that those viewing the event remain \"silent and standing\" during the exchange.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Mira",
   "gallery": "Alamy",
@@ -5656,7 +5698,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "军人",
    "士兵",
@@ -6092,7 +6141,9 @@
   "imageKey": null,
   "title": "Ice pillars in a cave at Durmitor, Montenegro",
   "desc": "Durmitor National Park features numerous extremes of nature, with four dozen peaks in the Durmitor Massif rising 2,000 feet or more. Caves up in these mountains can contain various ice formations, including the pillars seen here. At a glance, they can look like odd mineral deposits, but the chill in the air would likely cure us of that misconception.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Marko Radovanovic",
   "gallery": "Aurora Photos",
@@ -6101,7 +6152,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "冰柱",
    "冰洞",
@@ -6285,7 +6343,9 @@
   "imageKey": null,
   "title": "American flag tribute in Middletown, Ohio to victims of the September 11 attacks",
   "desc": "We celebrate the adoption of the now-iconic Stars and Stripes with this image of skydivers in the air over Middletown, Ohio. The skydivers were part of a 2011 commemoration of the September 11 attacks, their US flags rippling as they slowly descended. Flag Day pays homage to the day the Second Continental Congress gave an official resolution to adopt the Red, White, and Blue—with just 13 stars at the time—as our nation’s flag.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Norman Kent",
   "gallery": "Getty Images",
@@ -6294,7 +6354,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "美国国旗",
    "旗帜",
@@ -7819,7 +7886,9 @@
   "imageKey": null,
   "title": "Headlights streaking through Badlands National Park, South Dakota",
   "desc": "July 22, 2016. Beneath the rugged beauty of Badlands’ buttes, pinnacles, and spires lies buried treasure: This is one of the richest fossil beds in the world. Scientists have uncovered the remains of saber-toothed cats, three-toed horses, and hornless rhinoceroses. We’ll leave the actual digging to paleontologists (as should you!), but we figure there are treasures of all kinds waiting to be discovered here at Badlands National Park.\nWhat’s your greatest discovery in a national park? Let us know on Facebook, Twitter, and Instagram, where we'll be posting regular updates on our national parks road trip. And don't forget to check back on the Bing homepage each Friday to see our favorite photo from the park we’ll be visiting that week.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Adam Hester",
   "gallery": "Getty Images",
@@ -7828,7 +7897,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "恶地",
    "恶地国家公园",
@@ -8351,7 +8427,9 @@
   "imageKey": null,
   "title": "Jesup Path in Acadia National Park, Maine",
   "desc": "The National Park Service isn’t alone in celebrating its first 100 years in 2016—Acadia National Park is, too! A century ago, a group of visionary individuals donated the land and worked tirelessly to create the first eastern national park. Here’s to the remarkable men and women whose foresight and generosity have preserved this ruggedly beautiful coast for generations.\nWhat’s your favorite example of conservation? Let us know on Facebook, Twitter, and Instagram, where we'll be posting regular updates on our national parks road trip. And don't forget to check back on the Bing homepage each Thursday to see our favorite photo from the park we’ll be visiting that week.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Pat & Chuck Blackley",
   "gallery": "Alamy",
@@ -8360,7 +8438,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "白桦",
    "树",
@@ -8980,7 +9065,9 @@
   "imageKey": null,
   "title": "Common kingfishers perched on a camera lens",
   "desc": "Perhaps these kingfishers wanted to celebrate World Photo Day by investigating what it takes to be a wildlife photographer. Of course, you don’t need National Geographic-level skills these days to take a decent photo. Phone cameras have made shutterbugs of us all. Skip the selfies and food portraits and get creative for World Photo Day. Who knows? In a few years, you might end up on the Bing homepage.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Sijanto",
   "gallery": "Getty Images",
@@ -8989,7 +9076,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "翠鸟",
    "鸟",
@@ -9682,7 +9776,9 @@
   "imageKey": null,
   "title": "Workers applying stucco to a wall of a new building",
   "desc": "The unofficial end of summer has arrived. (Don’t break out the pumpkin spice coffee yet. Science says we have a couple more weeks.) Labor Day in the US traces back to the late 1800s, when unions began to form in an effort to protect workers’ rights. As the idea of a day set aside to celebrate working men and women caught hold, states began to declare it an official holiday. By 1894, appealing to workers’ votes in his bid for reelection, President Grover Cleveland made it a federal holiday. He lost. So if you have the day off, thank those 19th-century activists who made it possible.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Ognian Medarov",
   "gallery": "500px",
@@ -9691,7 +9787,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "高空作业工人（工人）",
    "粉刷外墙（刷漆）",
@@ -10178,7 +10281,9 @@
   "imageKey": null,
   "title": "Blue Hen Falls, Cuyahoga Valley National Park, Ohio",
   "desc": "Ohio has but one national park, so they went all out with Cuyahoga Valley. It’s unique among the 59 national parks in the US for a variety of reasons, not the least of which is that Cuyahoga Valley includes working farms within the park’s boundaries. Much of the area’s land had been, or was in danger of, becoming urbanized, with historic farms lost to development. As the National Park Service and groups within Ohio began identifying potential park land, they found that farms were some of the least developed parcels in the region. How to get around that? Include them in the park’s boundaries.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Patrick Jennings",
   "gallery": "Shutterstock",
@@ -10187,7 +10292,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "瀑布",
    "森林",
@@ -12228,8 +12340,10 @@
   "imageKey": null,
   "title": "The Washington Monument and US Capitol Building from the steps of the Lincoln Memorial, Washington, DC",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Steve Heap",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -12237,7 +12351,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "华盛顿纪念碑",
    "纪念碑",
@@ -13599,7 +13720,9 @@
   "imageKey": null,
   "title": "Inside Fromme-Birney Round Barn in Mullinville, Kansas",
   "desc": "The round barn design uses gravity and a central silo inside the barn to get hay from the loft to the livestock floor. Despite this work-reducing design, round barns never surpassed the traditional four-sided barn in popularity. Most round barns in the US were built between the mid-1800s and the 1930s, including the Fromme-Birney barn, seen here, built in 1912. Today, the Fromme-Birney Round Barn is on the National Registry of Historic Places.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Garret Suhrie",
   "gallery": "Tandem Stills + Motion",
@@ -13608,7 +13731,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "穹顶",
    "屋顶",
@@ -13630,7 +13760,9 @@
   "imageKey": null,
   "title": "Black-headed night monkeys in Pacaya-Samiria National Reserve, Peru",
   "desc": "Since black-headed night monkeys are nocturnal, it’s surprising to see them awake during daylight hours. Perhaps here in Peru’s Pacaya-Samiria National Reserve, these tropical-forest dwellers felt comfortable enough to take a peek at the photographer while he worked. Night monkeys are the only nocturnal monkeys, and those large brown eyes gather enough light to let them see in the dark. Scientists have determined that night monkeys see in black and white. Color vision’s not necessary when you spend most of your waking hours in the dark.",
-  "location": [],
+  "location": [
+   "秘鲁"
+  ],
   "region": "秘鲁",
   "photographer": "Cyril Ruoso",
   "gallery": "Minden Pictures",
@@ -13785,7 +13917,9 @@
   "imageKey": null,
   "title": "Necklace sea star on a magnificent sea anemone near Sipadan Island, Borneo",
   "desc": "The coloration of this necklace sea star reminds us a bit of the red and white of a candy cane. And we’re not alone in making that association—one of the lesser-used common names for the animal is the peppermint sea star. Found in the shallow waters of the Indian and western Pacific Oceans, the colors of the necklace sea star vary, with brilliant orange and pale-yellow combinations in place of the red and white seen here.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Norbert Wu",
   "gallery": "Minden Pictures",
@@ -13794,7 +13928,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "海星",
    "海葵",

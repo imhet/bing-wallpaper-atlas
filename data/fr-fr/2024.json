@@ -187,8 +187,10 @@
   "imageKey": "HedgehogMeadow",
   "title": "Hérisson dans un jardin de pissenlits, Bad Driburg, Allemagne",
   "desc": "Saviez-vous que dans les recoins ombragés d'un jardin ou d'une forêt se cache un petit héros méconnu ? Le hérisson ! Avec son allure discrète, il incarne à lui seul l'esprit de la nature sauvage. Imaginez-le se faufilant habilement entre les feuilles mortes à la recherche de nourriture, son museau frétillant d'excitation à chaque découverte. Les insectes grouillent sous ses pattes agiles, tandis qu'il les traque avec une détermination silencieuse. Sa silhouette dodue et sa démarche hésitante cachent une énergie débordante et une curiosité insatiable. Alors la prochaine fois que vous croiserez le chemin d'un hérisson, prenez un moment pour l'observer avec émerveillement. Car derrière ses piquants se cache un véritable trésor de la nature, un être fragile et merveilleux qui mérite toute notre admiration et notre respect.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Oksana Schmidt",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -196,7 +198,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "刺猬",
    "哺乳动物",
@@ -216,8 +225,10 @@
   "imageKey": "SkagitValleyTulips",
   "title": "Champs de tulipes au printemps, Skagit Valley, Washington, États-Unis",
   "desc": "Se promener à travers un véritable tableau vivant où des fleurs éclatantes colorent la terre... C'est ce qui attend les visiteurs chanceux du festival des tulipes de la vallée de Skagit dans l'État de Washington, aux États-Unis. Fondé en 1984, cet événement s'est étendu sur trois jours pour devenir une fête d'un mois, se déroulant d'avril à mai. Le spectacle floral s'étend sur plusieurs jardins de la vallée, notamment Tulip Town, Tulip Valley Farms, Garden Rosalyn, et une exposition de 20 235 hectares à RoozenGaarde. Il est possible d’explorer ces jardins à vélo et d’y découvrir des vignobles, des brasseries et des restaurants locaux. Parmi les pétales, la vie ralentit juste assez pour savourer les joies simples de la vie !",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Claudia Cooper",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -225,7 +236,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "郁金香",
    "花",
@@ -245,8 +263,11 @@
   "imageKey": "OwlSiblings",
   "title": "Oisillons de chevêches des terriers, Wyoming, États-Unis",
   "desc": "Le 10 avril, c'est la Journée nationale des frères et sœurs, l'occasion de célébrer ces liens spéciaux. Des rivalités amicales aux souvenirs partagés, rien n'est comparable à cette relation. Cette journée a été instaurée par Claudia Evart en mémoire de ses frères et sœurs, Alan et Lisette. Aujourd'hui, elle est reconnue dans 14 pays.\nSur l'image du jour, quatre chouettes chevêches des terriers, reconnaissables à leurs sourcils blancs et leurs yeux jaunes, nous rappellent la complicité entre frères et sœurs. Elles chassent ensemble et se protègent des prédateurs. Alors, comment allez-vous marquer cette journée spéciale avec vos proches ?",
-  "location": [],
-  "region": null,
+  "location": [
+   "纽约",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Danita Delimont",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -254,7 +275,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "穴鸮",
    "猫头鹰",
@@ -382,8 +415,11 @@
   "imageKey": "BowlingBallCali",
   "title": "Coucher de soleil sur la plage de Bowling Ball, Californie, États-Unis",
   "desc": "Bienvenue sur une piste de bowling naturelle ! Bowling Ball Beach, située sur la côte californienne de Mendocino aux États-Unis, doit son nom à ses formations rocheuses étonnantes. Ces boules de grès, appelées concrétions, se forment au fil du temps, sur des millions d'années, lorsque des couches sédimentaires s'accumulent autour d'un noyau central de sable et de pierres, cimenté par des minéraux. L'érosion progressive révèle alors ces sphères spectaculaires à marée basse. Bien que des théories variées aient été avancées quant à leur origine, des débris extraterrestres aux fossiles de dinosaures, elles sont simplement le produit des forces naturelles. Incroyable non ?",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Melo Qiao",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -391,7 +427,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "保龄球海滩",
    "圆石",
@@ -414,8 +461,13 @@
   "imageKey": "RedBallBelgium",
   "title": "Le RedBall Project, œuvre d’art itinérante, Gare centrale, Anvers, Belgique",
   "desc": "La Journée mondiale de l'art nous rappelle combien l'art est essentiel pour transmettre le savoir à travers les époques. Célébrée le 15 avril, elle rend hommage à la naissance de Léonard de Vinci, ce génie de la Renaissance, nous a laissé un héritage remarquable, de la célèbre Joconde à ses inventions révolutionnaires. Aujourd'hui, notre page d'accueil met en lumière le projet RedBall à la gare centrale belge d'Anvers. Cette installation, imaginée par l'artiste américain Kurt Perschke, se présente sous la forme d'un ballon rouge géant de 4,5 mètres de long. Depuis 2001, cette œuvre d'art itinérante a voyagé à travers le globe, de l'Australie à l'Angleterre, elle est considérée comme « la plus ancienne œuvre d'art de rue au monde ».",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "德国",
+   "澳大利亚",
+   "比利时"
+  ],
+  "region": "比利时",
   "photographer": "Brit Worgan",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -423,7 +475,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "比利时",
+   "belgium",
+   "belgian",
+   "比利時",
+   "澳大利亚",
+   "australia"
+  ],
   "content_tags": [
    "安特卫普中央车站",
    "火车站",
@@ -494,8 +559,10 @@
   "imageKey": "SpringCub",
   "title": "Ours noir, Parc national de Shenandoah, Virginie, États-Unis",
   "desc": "Bienvenue au monde, petit ourson ! Après avoir passé ses premiers mois lovés au creux de la tanière, ce jeune ourson noir s'aventure timidement dans un univers nouveau et étonnant. Originaires d’Amérique du Nord, les oursons noirs voient le jour en moyenne entre janvier et février. Cependant, ils n'osent pas s'aventurer dans le monde extérieur avant la mi-avril ou les premiers jours de mai. Au printemps, ils ne pèsent guère plus que 2,3 kg, mais ils grandissent vite pour atteindre environ 36 kg à leur premier anniversaire. Quant aux adultes, leur poids fluctue entre 45 et 270 kg, un chiffre influencé par des variables multiples comme l'âge, le sexe, la saison et surtout l'abondance de nourriture dans leur habitat. Dans le paisible parc national de Shenandoah, en Virginie, où cette photo a été prise, les ours noirs règnent en maîtres, ils y sont les seuls représentants de leur espèce.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Scott Suriano",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -503,7 +570,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "黑熊",
    "幼熊",
@@ -569,8 +643,11 @@
   "imageKey": "OrkneyStones",
   "title": "Le cercle de Brodgar, Orcades, Écosse",
   "desc": "Au cœur des îles Orcades, un archipel niché dans le nord de l'Écosse, se trouve une énigme ancienne : le cercle de Brodgar. Érigé entre 2500 et 2000 avant notre ère, ce cercle de pierres et son enceinte néolithique mesurent environ 103 mètres de diamètre. Encastré entre deux lochs sur une mince bande de terre, le site abritait autrefois 60 pierres, mais seules 36 subsistent aujourd'hui. En 2008, une excavation a été lancée pour percer les mystères du site, mais ses résultats demeurent encore incertains. En 1999, le cœur néolithique de l'Orcanie, comprenant le cercle de Brodgar, a été inscrit au patrimoine mondial de l'UNESCO. Si un voyage en Écosse vous tente, ne manquez pas de découvrir ces vestiges remarquables tout en vous imprégnant de l'air purifiant de cette région lé-gen-daire !",
-  "location": [],
-  "region": null,
+  "location": [
+   "苏格兰",
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Paul Williams - FunkyStock",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -578,7 +655,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "苏格兰",
+   "scotland",
+   "scottish",
+   "蘇格蘭",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
   "content_tags": [
    "立石",
    "石头",
@@ -686,8 +776,12 @@
   "imageKey": "EarthDayTurtle",
   "title": "Tortue verte, San Diego, Californie, États-Unis",
   "desc": "Aujourd'hui, nous célébrons la Journée de la Terre, dédiée à sensibiliser aux défis environnementaux menaçant notre planète. Cette journée trouve ses racines en 1969, lorsque le sénateur Gaylord Nelson, a été inspiré par des événements marquants tels que l'incendie de la rivière Cuyahoga et la marée noire de Santa Barbara. Convaincu de la nécessité d'une action environnementale mondiale.\nElle est célébrée à travers le monde, rassemblant plus d'un milliard de participants dans plus de 193 pays. Cette année, la campagne met en lumière le problème urgent des plastiques, une source majeure de pollution terrestre et océanique. Ces déchets plastiques menacent la vie marine, comme cette tortue verte qui ingère ces matériaux nocifs confondus avec de la nourriture.\nChaque année, environ 25 millions de tonnes de plastique polluent nos écosystèmes aquatiques. Il est essentiel d'agir, que ce soit en plantant des arbres, en nettoyant nos plages ou en sensibilisant notre entourage à adopter un mode de vie plus durable. Car rappelez-vous, il n'y a pas de planète de rechange.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Ralph Pace",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -695,7 +789,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa"
+  ],
   "content_tags": [
    "绿海龟",
    "海龟",
@@ -839,8 +946,11 @@
   "imageKey": "KalalochTree",
   "title": "Arbre de Kalaloch, alias l'arbre de vie, plage de Kalaloch, parc national olympique, Washington, États-Unis",
   "desc": "L’Arbre de Vie de Kalaloch est un emblématique épicéa de Sitka situé sur la plage de Kalaloch, à l’intérieur du parc national olympique de Washington, aux États-Unis. Cet épicéa de Sitka défie les lois de la nature en survivant malgré l’érosion intense qui a emporté la terre autour de ses racines, le laissant suspendu au-dessus d’une cavité. Malgré cette situation extrême, l’arbre continue de produire des feuilles et des pousses, résistant vaillamment à la mort imminente. On le surnomme également « L’arbre de vie de Kalaloch ». Un petit ruisseau souterrain qui se jette dans la mer serait la cause de la cavité sous ses racines. Depuis des décennies, cet arbre symbolise la résistance et la ténacité face à l’adversité.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Abbie Warnock-Matthews",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -848,7 +958,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "生命之树",
    "树根",
@@ -915,8 +1038,11 @@
   "imageKey": "GuadalupeTexas",
   "title": "El Capitan au lever du soleil, parc national des Guadalupe Mountains, Texas, États-Unis",
   "desc": "Préparez-vous à être transporté au cœur des paysages époustouflants du parc national des Guadalupe Mountains, niché à l'ouest du Texas, aux États-Unis. Fondé en 1972, cet incroyable sanctuaire s'étend sur 350 km². Les majestueuses Guadalupe Mountains surplombent les étendues de dunes de sel du désert de Chihuahuan, offrant un spectacle à couper le souffle. Le point culminant de cette chaîne, et du Texas tout entier, est le pic Guadalupe, s'élevant majestueusement à 2 667 mètres d'altitude.\nCe parc regorge d'une diversité d'écosystèmes remarquable, allant des déserts aux canyons, en passant par des zones alpines dépassant les 2 000 mètres. Il abrite une incroyable variété de plus de 1 000 espèces de plantes, des marais salants, des buissons de créosote et des forêts de pins ponderosa, pour n'en nommer que quelques-unes. La faune y est tout aussi remarquable, avec environ 60 espèces de mammifères, 289 espèces d'oiseaux et 55 espèces de reptiles. Un véritable joyau de la nature, ce parc offre une beauté exceptionnelle et revêt une importance écologique capitale.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Adam Mowery",
   "gallery": "Tandem Stills + Motion",
   "copyrightlink": null,
@@ -924,7 +1050,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "龙舌兰",
    "植物",
@@ -1030,7 +1167,9 @@
   "imageKey": "HawaiianLei",
   "title": "Colliers de fleurs hawaïens",
   "desc": "Le Lei Day à Hawaï, qui célèbre le début du mois de mai, est une véritable explosion de couleurs, de parfums et de festivités. Les leis, ces guirlandes composées de fleurs, de feuilles et parfois de coquillages, occupent une place centrale dans la culture de cet État insulaire des États-Unis. Originellement introduits par les Polynésiens lors de leur migration à travers le Pacifique vers Hawaï entre 1000 et 1200 de notre ère, les leis sont chargés de symbolisme, représentant l'amour, le respect et l'esprit aloha, qui est décrit comme l'harmonie entre l'esprit et le cœur de chaque individu. Le Lei Day est une célébration d'une journée entière, ponctuée de défilés, de concours de fabrication de leis, de danses hula et de festins, où la communauté se rassemble pour honorer sa culture et sa diversité.",
-  "location": [],
+  "location": [
+   "夏威夷"
+  ],
   "region": null,
   "photographer": "Jotika Pun",
   "gallery": "Shutterstock",
@@ -1039,7 +1178,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "ハワイ"
+  ],
   "content_tags": [
    "花环",
    "夏威夷花环",
@@ -1057,8 +1201,10 @@
   "imageKey": "CratersOfTheMoon",
   "title": "Coulée de lave du Dragon Bleu, Monument national des Cratères de la Lune, Idaho, États-Unis",
   "desc": "Préparez-vous à une aventure sidérale à couper le souffle, sans jamais quitter notre planète ! Niché au sein des reliefs sauvages de l’Idaho, aux États-Unis, le Monument national des Cratères de la Lune est un héritage de l’activité volcanique qui a façonné ce paysage il y a des millénaires. À peine arrivés, nous sommes saisis par le spectacle surréaliste d’immenses champs de lave, parsemés de cônes de cendres et de scories, qui rappellent étrangement le sol lunaire. Ce site s’étend sur près de 21 853 hectares, un espace presque aussi mystérieux que la lune elle-même.\nSaviez-vous que le site a servi de terrain d’entraînement aux astronautes d’Apollo 14 en préparation de leurs expéditions lunaires ? En se plongeant dans la géologie volcanique singulière de ce lieu, ces pionniers de l’espace ont acquis une expérience précieuse, les préparant aux conditions qu’ils allaient rencontrer sur la lune.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Alan Majchrowicz",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1066,7 +1212,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "熔岩",
    "火山岩",
@@ -1126,8 +1279,10 @@
   "imageKey": "JediMonastery",
   "title": "Ruines d'un ancien monastère sur l'île de Skellig Michael, Irlande",
   "desc": "Les lueurs des sabres laser et les sons des droïdes remplissent l'air ! Pour cette fête galactique, les fans du monde entier se rassemblent pour se plonger dans l'univers de Star Wars, en visionnant les films de la saga ou en se déguisant en leurs personnages préférés. L'image d'aujourd'hui met en avant un lieu de tournage mythique, l'île de Skellig Michael, au large de la côte sud-ouest de l'Irlande.\nCe site classé au patrimoine mondial de l'UNESCO abrite un monastère datant du VIe siècle. Les cabanes en forme de ruche et les escaliers en pierre du site ont été utilisés comme décor pour représenter une île isolée sur la planète Ahch-To, où le maître Jedi Luke Skywalker s'est retiré dans « Star Wars : Le Réveil de la Force ».\nLa riche population d'oiseaux marins, notamment les macareux, a inspiré la création des porgs. Alors, prenez votre copilote Wookiee, embarquez à bord de votre vaisseau et que la force vous accompagne lors de votre voyage vers cette Terre galactique… pas si lointaine !",
-  "location": [],
-  "region": null,
+  "location": [
+   "爱尔兰"
+  ],
+  "region": "爱尔兰",
   "photographer": "MNStudio",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1135,7 +1290,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "爱尔兰",
+   "ireland",
+   "irish",
+   "愛爾蘭"
+  ],
   "content_tags": [
    "斯凯利格·迈克尔岛",
    "石屋",
@@ -1234,8 +1394,10 @@
   "imageKey": "LittleDuckling",
   "title": "Un caneton nageant dans une prairie d'eau, Suffolk, Angleterre",
   "desc": "Bienvenue à ce petit caneton qui fait aujourd’hui ses premiers pas sous les feux de la rampe, prêt à nous charmer avec ses facéties ! Les canards, avec leur plumage éclatant et leurs cancanements joyeux, incarnent parfaitement la beauté des campagnes, tout en s’adaptant sans effort à la vie citadine. Mais c’est l’arrivée des canetons qui ajoute une touche de magie. Ces boules de duvet suivent leur mère de près, imitant chaque coup de patte et picorage pour maîtriser l’art de vivre sur l’eau. En se régalant d’insectes et d’algues, ces oiseaux contribuent essentiellement à l’équilibre de nos écosystèmes aquatiques.\nDans le comté du Suffolk en Angleterre, où les charmants villages se fondent dans un décor verdoyant, on peut admirer les canards et leurs petits naviguant avec grâce autour des mares et rivières. La prochaine fois que vous visiterez la campagne, gardez donc un œil attentif sur ces adorables animaux !",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Nick Hurst",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1243,7 +1405,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "小鸭",
    "雏鸭",
@@ -1350,8 +1523,10 @@
   "imageKey": "MisoolRajaAmpat",
   "title": "Misool, îles Raja Ampat, Indonésie",
   "desc": "Imaginez un havre aquatique d’une telle pureté qu’il semble venu d’un autre monde. Misool, joyau de l’archipel de Raja Ampat en Indonésie, couvre environ 2 034 km² et appartient à un quatuor d’îles majeures : Misool, Waigeo, Batanta et Salawati. Ici, les flots bercent doucement les plages éclatantes, tandis qu’une explosion de biodiversité marine s’épanouit sous la surface. Les récifs coralliens, trésors de biodiversité, sont un eldorado pour les amateurs de plongée.\nLes aventuriers peuvent explorer la réserve naturelle de Pulau Misool, établie en 1982, pour y admirer des couscous tachetés, des phalangers volants à queue courte, des echymipera kalubu et d’autres marsupiaux. Misool, érigée en « zone de non-prélèvement » interdite à la pêche et à la chasse, est un refuge pour les requins et les raies manta, symbolisant l’espoir pour la préservation marine. C’est un écrin où les joyaux de la nature sont choyés et protégés.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度尼西亚"
+  ],
+  "region": "印度尼西亚",
   "photographer": "Giordano Cipriani",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1359,7 +1534,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian",
+   "印度尼西亞"
+  ],
   "content_tags": [
    "喀斯特岛屿",
    "岛屿",
@@ -1381,8 +1561,11 @@
   "imageKey": "TexasIndigoBunting",
   "title": "Passerin indigo, perché sur une branche, Texas, États-Unis",
   "desc": "Avez-vous déjà admiré les migrations annuelles des oiseaux qui traversent notre planète ? En ce jour, nous mettons en avant le passerin indigo, ce petit oiseau dont les plumes rappellent le bleu du ciel au crépuscule. Guidé par les étoiles, il parcourt des milliers de kilomètres entre ses lieux de reproduction en Amérique du Nord et ses refuges hivernaux en Amérique centrale et dans le nord de l’Amérique du Sud.\nCette journée rassemble ceux qui se consacrent à la protection de nos amis à plumes. Cette année, elle se déroulera sur deux jours, le 11 mai et le 12 octobre, afin de correspondre au cycle naturel de migration des oiseaux dans les différents hémisphères. La campagne de 2024 met l'accent sur la nécessité de mesures de conservation actives, telles que la réduction de l'utilisation de pesticides et d'engrais, et, autant que possible, la transition vers une agriculture biologique.\nAinsi, levons les yeux vers le ciel, où chaque battement d’aile résonne comme le pouls vital de notre planète, et engageons-nous à protéger les corridors migratoires, essentiels à notre équilibre écologique.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "加拿大"
+  ],
+  "region": "加拿大",
   "photographer": "Jeff R Clow",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1390,7 +1573,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "靛蓝彩鹀",
    "鸟",
@@ -1447,7 +1641,9 @@
   "imageKey": "NamibiaCanyon",
   "title": "Canyon de la rivière Fish, Namibie",
   "desc": "Que ce soit pour explorer le désert du Namib, le plus ancien du monde, ou pour s’émerveiller devant la forêt de Quiver Tree, la Namibie, située dans le sud de l’Afrique, offre des paysages sans pareil. La Fish River, la rivière la plus longue du pays, a sculpté le plus vaste canyon d’Afrique au fil de millions d’années.\nOndulant entre des strates de gneiss et de dolomite, le canyon de la Fish River s’étire sur 160 kilomètres de long, 27 de large et 550 mètres de profondeur. Ce lieu prisé des aventuriers propose un sentier de randonnée de plus de 80 km et accueille l’Ultra Marathon du Fish River Canyon.\nEn outre, le site est un sanctuaire pour la faune, abritant des zèbres de montagne de Hartmann, des antilopes oréotrague, ainsi que des elephantulus myurus, une espèce de rats à trompe. Que l’on vienne pour la randonnée, le trekking, le camping ou simplement pour contempler les paysages, le Fish River Canyon offre une expérience inoubliable !",
-  "location": [],
+  "location": [
+   "大峡谷"
+  ],
   "region": null,
   "photographer": "R. M. Nunes",
   "gallery": "Getty Images",
@@ -1456,7 +1652,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "大峡谷",
+   "grand canyon",
+   "大峽谷",
+   "グランドキャニオン"
+  ],
   "content_tags": [
    "鱼河大峡谷",
    "峡谷",
@@ -1480,8 +1681,11 @@
   "imageKey": "CarlsbadNP",
   "title": "Parc national des grottes de Carlsbad, Nouveau-Mexique, États-Unis",
   "desc": "Le Parc National américain des Cavernes de Carlsbad, situé au Nouveau-Mexique, est un joyau géologique caractérisé par d’impressionnants canyons rocheux et d’antiques falaises maritimes. Ce site d’exception, connu pour ses formations rocheuses singulières, dissimule sous son paysage aride plus de 119 cavernes. Ces dernières se sont formées suite à la dissolution du calcaire par l’acide sulfurique.\nCréé en 1930, le parc est célèbre pour abriter la « Big Room », la plus vaste cavité souterraine d’Amérique du Nord, ornée de stalactites majestueuses et de stalagmites qui s’élèvent vers le plafond, témoins d’une époque révolue. Inscrit au patrimoine mondial de l’UNESCO, le parc propose des spectacles naturels étonnants comme le ballet nocturne des chauves-souris, offrant aux visiteurs le spectacle de milliers de ces mammifères volants qui entrent et sortent de la grotte. Fascinant ou effrayant ?",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Doug Meek",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1489,7 +1693,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "溶洞",
    "洞穴",
@@ -1515,8 +1732,10 @@
   "imageKey": "BlueCityIndia",
   "title": "La ville bleue de Jodhpur, Inde",
   "desc": "Bienvenue à Jodhpur, joyau du Rajasthan en Inde, où le ciel n'est pas le seul à être bleu, les maisons le sont aussi ! Cette ville magnifique, établie au cœur du désert de Thar, tire son nom de son fondateur Rao Jodha, issu du clan Rathore. Depuis plus de cinq siècles, Jodhpur s’illustre par son industrie textile florissante, ses boutiques de meubles réputées, sa gastronomie exquise et ses marchés vibrants. La ville, qui se dresse fièrement avec ses forts imposants, ses palais somptueux, ses mausolées, ses jardins luxuriants et ses lacs scintillants, est le berceau de sites légendaires tels que le fort Mehrangarh et le palais Umaid Bhawan. Pourquoi ne pas vous laissez-vous envoûter par les splendeurs de cette cité azurée !",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "cinoby",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1524,7 +1743,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "焦特布尔",
    "蓝城",
@@ -1546,8 +1769,12 @@
   "imageKey": "DayOfLight",
   "title": "Œuvre « Feelings Are Facts », par l'artiste Olafur Eliasson et l'architecte Ma Yansong, Pékin, Chine",
   "desc": "Nous célébrons aujourd’hui la Journée internationale de la lumière, qui commémore l’anniversaire de l’invention du laser en 1960 par Theodore Maiman, physicien et ingénieur américain. Cette percée démontre la capacité de la technologie à révolutionner notre société, avec un impact allant des télécommunications aux soins médicaux. La journée rend également hommage au rôle essentiel de la lumière dans la vie humaine, touchant à l’art, la culture, la science et la technologie.\nL’œuvre mise à l’honneur aujourd’hui est « Feelings Are Facts », une installation conçue par l’artiste danois Olafur Eliasson en collaboration avec l’architecte chinois Ma Yansong de MAD Studio. Présentée au Centre d’art contemporain Ullens à Pékin en Chine, cette création plongeait les visiteurs dans un brouillard éclairé par un spectre de lumières colorées. Une matrice lumineuse segmentait l’espace en couleurs primaires – rouge, vert et bleu – qui se fondaient aux intersections, créant des teintes de cyan, magenta et jaune. Les spectateurs étaient invités à naviguer à travers le brouillard, guidés par ces confluences chromatiques.",
-  "location": [],
-  "region": null,
+  "location": [
+   "北京",
+   "丹麦",
+   "中国"
+  ],
+  "region": "中国",
   "photographer": "Feng Li",
   "gallery": "Getty Images News",
   "copyrightlink": null,
@@ -1555,7 +1782,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "丹麦",
+   "denmark",
+   "danish",
+   "丹麥",
+   "faroe islands",
+   "北京",
+   "beijing",
+   "peking"
+  ],
   "content_tags": [
    "人影",
    "灯光艺术装置",
@@ -1577,8 +1817,10 @@
   "imageKey": "TarangireElephants",
   "title": "Une famille d'éléphants d'Afrique dans le parc national de Tarangire, en Tanzanie",
   "desc": "Aujourd’hui, à l’occasion de la Journée mondiale des espèces menacées, nous nous rassemblons pour unir nos efforts en faveur de la préservation de la biodiversité. L’Endangered Species Coalition a instauré cet événement en 2006 dans le but de contribuer activement à la survie de ces animaux. Actuellement, plus de 44 000 espèces sont menacées d’extinction. Parmi les plus vulnérables figurent les rhinocéros de Java, les rhinocéros noirs, les gorilles des montagnes et les tortues imbriquées.\nAujourd’hui, nous vous emmenons au parc national de Tarangire, en Tanzanie, où les éléphants d’Afrique évoluent en liberté. Ces majestueux pachydermes se distinguent par leurs grandes oreilles ondulantes, leur longue trompe et leurs impressionnantes défenses courbées. Ils vivent en petits groupes familiaux dirigés par une matriarche et communiquent par des infrasons. Malheureusement, des menaces telles que la déforestation et le braconnage les ont poussés au bord de l’extinction. Engageons-nous donc pour préserver les vies qu’il nous reste à sauver et unissons nos voix, car c’est dans leur survie que réside la nôtre.",
-  "location": [],
-  "region": null,
+  "location": [
+   "坦桑尼亚"
+  ],
+  "region": "坦桑尼亚",
   "photographer": "Vicki Jauron, Babylon and Beyond Photography",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1586,7 +1828,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "坦桑尼亚",
+   "tanzania",
+   "坦桑尼亞"
+  ],
   "content_tags": [
    "大象",
    "动物",
@@ -1609,8 +1855,11 @@
   "imageKey": "MuseumWhale",
   "title": "Squelette de baleine bleue appelé Hope, Natural History Museum, Londres, Angleterre",
   "desc": "Dans la majestueuse salle Hintze du Muséum d’histoire naturelle de Londres, au Royaume-Uni, plane un squelette nommé Hope, une baleine bleue en plein plongeon, au-dessus des visiteurs ébahis. En cette Journée internationale des musées, il n’y a pas de meilleur moment pour célébrer les gardiens de l’histoire, de l’art et de la science à travers le monde. Instituée en 1977 par le Conseil international des musées, cette journée met en lumière l’importance de ces institutions en tant que vecteurs d’échanges culturels, de compréhension mutuelle et de coopération entre les peuples. Le thème de cette année est « Les musées pour l’éducation et la recherche ».\nCes lieux nous offrent un espace où le passé dialogue avec le présent. Le musée d’histoire naturelle, abritant Hope, a vu le jour en 1881. Il renferme 80 millions de spécimens, parmi lesquels des fossiles, des minéraux et des objets de taxidermie. Le cadre majestueux de Hope, long de 25,2 mètres, trône au cœur du hall d’entrée. Laissez-vous guider par Hope pour explorer votre musée local en cette journée spéciale. Laissez votre curiosité s’éveiller et permettez à l’émerveillement de prendre place dans votre cœur !",
-  "location": [],
-  "region": null,
+  "location": [
+   "伦敦",
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Bailey-Cooper Photography",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -1618,7 +1867,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "伦敦",
+   "london",
+   "ロンドン",
+   "倫敦",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
   "content_tags": [
    "蓝鲸骨架",
    "鲸鱼标本",
@@ -1759,8 +2021,11 @@
   "imageKey": "SnowGumTasmania",
   "title": "Eucalyptus coccifera, parc national de Mount Field, Tasmanie, Australie",
   "desc": "Aujourd’hui, nous célébrons la biodiversité de notre planète ! Mais qu’est-ce que la biodiversité ? Elle englobe tous les êtres vivants, des animaux aux plantes, en passant par les champignons et les micro-organismes, coexistant dans une même zone. Cet équilibre délicat de la nature est essentiel pour notre survie à tous. Le 22 mai a été officiellement désigné Journée internationale de la biodiversité par les Nations unies en 2000.\nMalheureusement, la biodiversité de notre planète diminue lentement en raison du changement climatique, de l’épuisement des ressources naturelles, de l’urbanisation et de la pollution, entre autres. Il est de notre responsabilité de rendre à la nature ce qu’elle nous offre et de la protéger.\nAussi, nous avons la chance de compter des espèces fascinantes, comme l’eucalyptus coccifera - en photo aujourd’hui - qui prend racine dans l’un des endroits les plus riches en biodiversité de la planète : le parc national du Mont Field, en Tasmanie, Australie.",
-  "location": [],
-  "region": null,
+  "location": [
+   "塔斯马尼亚",
+   "澳大利亚"
+  ],
+  "region": "澳大利亚",
   "photographer": "Ignacio Palacios",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1768,7 +2033,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "塔斯马尼亚",
+   "tasmania",
+   "塔斯馬尼亞",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞"
+  ],
   "content_tags": [
    "桉树",
    "树",
@@ -1828,8 +2103,11 @@
   "imageKey": "OrdesaNationalPark",
   "title": "Canyon d'Anisclo, Parc national d'Ordesa et Monte Perdido, Huesca, Espagne",
   "desc": "Aujourd’hui, nous célébrons la Journée européenne des parcs ! En 1909, la Suède a établi les neuf premiers parcs nationaux d’Europe, marquant ainsi le début de cette initiative. Cette année, la célébration met en avant le rôle crucial des zones protégées dans l’élaboration et la mise en œuvre des politiques de conservation de la nature. Elle souligne également leur contribution à la construction d’une société durable et résiliente. Ces espaces ne sont pas seulement des gardiens de la biodiversité, mais aussi des piliers de notre bien-être collectif, nous rappelant l’importance de préserver notre patrimoine naturel.\nL’image du jour nous emmène au parc national d’Ordesa et Monte Perdido, niché dans la chaîne de montagnes des Pyrénées, au nord-est de l’Espagne. Créé dans le but de préserver le paysage de haute montagne de la région environnante, ce parc se caractérise par un terrain accidenté et des formations calcaires. On y trouve une multitude de caractéristiques karstiques, telles que des dolines et des grottes. Une véritable merveille naturelle à explorer !",
-  "location": [],
-  "region": null,
+  "location": [
+   "瑞典",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Marisa Estivill",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -1837,7 +2115,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "瑞典",
+   "sweden",
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "峡谷",
    "悬崖",
@@ -1966,8 +2251,10 @@
   "imageKey": "MeteoraMonastery",
   "title": "Monastère de Roussanou, Météores, Thessalie, Grèce",
   "desc": "Lorsqu’on évoque la Grèce, on pense souvent à ses magnifiques côtes, ses bâtiments blanchis à la chaux et ses fameuses coupoles bleues. Cependant, ce pays réserve bien d’autres surprises. La photo présente le monastère de Roussanou, perché au sommet de falaises impressionnantes, dans une région appelée les Météores, située dans le nord de la Grèce, en Thessalie. Selon la légende, au XIVe siècle, un groupe de moines, cherchant à échapper aux troubles politiques, aurait escaladé ces falaises pour y établir leur ermitage.\nRoussanou est l’un des six monastères encore debout dans ce site classé au patrimoine mondial de l’UNESCO. Une fois parvenu en haut, vous serez récompensé par des vues panoramiques à couper le souffle, mais les véritables trésors se trouvent à l’intérieur du monastère lui-même, véritable joyau d’art et d’architecture byzantins. Ce style artistique a émergé dans l’Empire romain d’Orient, également connu sous le nom d’Empire byzantin, qui a prospéré du IVe siècle après J.-C. jusqu’à la chute de Constantinople en 1453. Alors, êtes-vous prêt à entreprendre cette ascension ?",
-  "location": [],
-  "region": null,
+  "location": [
+   "希腊"
+  ],
+  "region": "希腊",
   "photographer": "Marius Roman",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1975,7 +2262,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ"
+  ],
   "content_tags": [
    "迈泰奥拉",
    "修道院",
@@ -1997,8 +2290,14 @@
   "imageKey": "MullOtter",
   "title": "Loutre d'Europe, Loch Spelve, île de Mull, Écosse",
   "desc": "Les loutres sont des créatures joueuses, d’excellentes nageuses et des chasseuses expertes. Elles sont présentes sur tous les continents, à l’exception de l’Antarctique et de l’Australie. Leurs 13 espèces varient en taille et en forme, allant de la loutre de mer des eaux côtières à la loutre de rivière des habitats d’eau douce.\nSur l’image d’aujourd’hui, nous découvrons la loutre d’Europe sur l’île de Mull, au large de la côte ouest de l’Écosse. Avec leurs pattes palmées, leur silhouette hydrodynamique et leur pelage dense, les loutres sont parfaitement adaptées à la vitesse et à l’agilité sous l’eau. Elles peuvent plonger profondément et retenir leur souffle pendant plusieurs minutes.\nCependant, la perte d’habitat, la pollution et la chasse pour leur fourrure mettent en péril leur survie. C’est là que la Journée mondiale de la loutre entre en jeu, se déroulant le dernier mercredi de mai, donc aujourd’hui ! C’est l’occasion de sensibiliser le public aux défis auxquels sont confrontées les loutres et à ce que nous pouvons faire pour protéger notre environnement.",
-  "location": [],
-  "region": null,
+  "location": [
+   "南极",
+   "苏格兰",
+   "英国",
+   "南极洲",
+   "澳大利亚"
+  ],
+  "region": "澳大利亚",
   "photographer": "Neil Henderson",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -2006,7 +2305,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞",
+   "苏格兰",
+   "scotland"
+  ],
   "content_tags": [
    "水獭",
    "野生动物",
@@ -2065,8 +2377,10 @@
   "imageKey": "YorkshireDalesNP",
   "title": "Gunnerside, Swaledale, Parc national des Yorkshire Dales, Angleterre",
   "desc": "Découvrez le charme anglais du village historique de Gunnerside, niché au cœur du parc national du Yorkshire Dales. Imaginez-vous, vous promenant dans ses ruelles étroites, entourées de collines verdoyantes et ondoyantes, avec ses cottages en pierre et le doux murmure de la rivière Swale en toile de fond.\nLe parc national, établi en 1954, s'étend sur 2178,18 km² et abrite plus de 1 000 fermes. Une caractéristique emblématique de la région est la présence de murs en pierre sèche, qui résistent au temps sans mortier. On estime qu'il y a plus de 8 000 km de ces murs dans le Yorkshire Dales.\nGunnerside tire son nom du vieux norrois, « Gunnar’s saetr », signifiant « la colline ou le pâturage de Gunnar ». Autrefois, Gunnerside Gill était un centre prospère de l'industrie minière du plomb du 17e au 19e siècle. Aujourd'hui, le village abrite l'Old Working Smithy & Museum, exposant des outils de forgeron et des équipements miniers historiques. Gunnerside offre une escapade paisible et une opportunité d'explorer le riche passé historique de l'Angleterre.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Derek Croucher",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -2074,7 +2388,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "石砌谷仓",
    "石头建筑",
@@ -2186,8 +2511,13 @@
   "imageKey": "CopenhagenBicycles",
   "title": "Vélos à Copenhague, Danemark",
   "desc": "Le vélo est incontestablement un choix judicieux ! C'est une option écologique, divertissante, économique, pratique et durable. Pédaler, c’est bon pour la santé, et quand on sait faire du vélo, c'est pour la vie ! La Journée mondiale de la bicyclette, célébrée le 3 juin grâce à Leszek Sibiliski, un scientifique polono-américain, a été reconnue par l'ONU en 2018.\nRemontons à 1817, lorsque Karl von Drais, un inventeur allemand, a créé le premier prototype de vélo appelé le « swiftwalker ». Malgré ses imperfections avec son cadre en bois sans pédales, il a jeté les bases de cette invention. Les vélos modernes, apparus à la fin du XIXe siècle, ont considérablement évolué, offrant toujours plus de confort et de sécurité. Alors, à l'occasion de la Journée mondiale de la bicyclette, enfourchez votre vélo et participez à la fête !",
-  "location": [],
-  "region": null,
+  "location": [
+   "哥本哈根",
+   "丹麦",
+   "德国",
+   "波兰"
+  ],
+  "region": "波兰",
   "photographer": "Alphotographic",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -2195,7 +2525,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "丹麦",
+   "denmark",
+   "danish",
+   "丹麥",
+   "faroe islands",
+   "哥本哈根",
+   "copenhagen",
+   "københavn",
+   "德国",
+   "germany",
+   "deutschland",
+   "german"
+  ],
   "content_tags": [
    "自行车",
    "车筐",
@@ -2403,8 +2746,10 @@
   "imageKey": "BardenasBiosphere",
   "title": "Réserve de la biosphère et parc naturel de Bardenas Reales, Navarre, Espagne",
   "desc": "Dans le nord de l’Espagne, la Réserve de la Biosphère des Bardenas Reales est une véritable œuvre surréaliste de la nature. Ce parc est renommé pour ses paysages désertiques façonnés par des millénaires d’érosion. Ornés de plateaux rocheux, de canyons et de formations argileuses capricieuses appelées cabezos, le parc offre un spectacle géologique époustouflant.\nClassé parc naturel en 1999 et Réserve de la Biosphère par l’UNESCO en 2000, les Bardenas Reales sont également un refuge pour une flore et une faune variées, adaptées à ses conditions arides. Le parc abrite une diversité d’oiseaux et d’animaux, notamment des vautours, des aigles royaux, des vautours fauves, des grands-ducs et d’autres rapaces imposants. On y trouve aussi des oiseaux de steppe comme la pipit rousseline, le traquet tarier, la calandre, l’alouette et l’outarde. S’étendant sur 41 845 hectares, l’environnement semi-désertique du parc et ses formations géologiques uniques en font un site majeur pour la recherche scientifique et la conservation.\nSi vous aimez les destinations où la nature est sauvage, ne ratez pas les Bardenas Reales !",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Aliaume Chapelle",
   "gallery": "Tandem Stills + Motion",
   "copyrightlink": null,
@@ -2412,7 +2757,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "山峰",
    "山",
@@ -2518,8 +2868,10 @@
   "imageKey": "BigBendMilkyWay",
   "title": "Voie lactée au-dessus du parc national de Big Bend, Texas, États-Unis",
   "desc": "Aujourd’hui, nous partons à la découverte du Parc National de Big Bend dans l’ouest du Texas aux États-Unis, qui célèbre aujourd’hui son 80ème anniversaire. Créé le 12 juin 1944, ce parc est la plus grande zone protégée du désert de Chihuahua, s’étendant sur plus de 3 200 kilomètres carrés.\nCe parc renferme non seulement des sites historiques comme le district historique de Castolon et les sources chaudes, mais aussi les traces laissées par les pionniers modernes, les éleveurs et les mineurs. De plus, il est l'une des destinations incontournables en Amérique du Nord pour l'observation des étoiles. Grâce à l'absence d'activité humaine dans les environs, la pollution lumineuse est minimale, offrant ainsi parmi les ciels nocturnes les plus sombres de la région.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "wisanuboonrawd",
   "gallery": "Adobe Stock",
   "copyrightlink": null,
@@ -2527,7 +2879,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "银河",
    "星空",
@@ -2744,8 +3103,10 @@
   "imageKey": "LupinIceland",
   "title": "Champs de lupins et église au lever du soleil, péninsule de Snæfellsnes, Islande",
   "desc": "À l’arrivée de l’été, l’Islande se métamorphose en un tableau vivant. Introduits dans les années 1940, les lupins sont devenus les alliés de la terre islandaise, luttant contre l’érosion avec leurs racines robustes. Ils prospèrent sur les terrains sablonneux et salins, et se multiplient, colorant les paysages de violet, de rose et de bleu.\nMalgré les inquiétudes de certains qui les voient comme une menace pour la flore locale, les lupins sont devenus un symbole de l’été. On les trouve partout, de Reykjavík aux abords de la cascade de Skógafoss, et ils embellissent le chemin vers l’église Hellissandur sur la péninsule de Snæfellsnes.\nLa péninsule de Snæfellsnes est un véritable trésor naturel, bien au-delà de ses magnifiques champs de lupins. C’est un lieu unique où se rencontrent volcans, étendues de lave, glaciers et plages de sable, offrant une expérience géologique exceptionnelle.",
-  "location": [],
-  "region": null,
+  "location": [
+   "冰岛"
+  ],
+  "region": "冰岛",
   "photographer": "Matteo Colombo",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -2753,7 +3114,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "冰岛",
+   "iceland",
+   "アイスランド",
+   "冰島"
+  ],
   "content_tags": [
    "教堂",
    "建筑",
@@ -2952,7 +3318,9 @@
   "imageKey": "FloresIsland",
   "title": "Lacs de cratères volcaniques, volvan Kelimutu, Flores, Indonésie",
   "desc": "Vous avez peut-être déjà admiré des lacs aux couleurs uniques, mais l'île indonésienne de Flores, avec son volcan Kelimutu, risque bien de vous émerveiller. Ce site naturel abrite trois lacs, chacun doté d'une teinte et d'un folklore distincts, attirant les voyageurs en quête d'expériences hors du commun. Les cheminées volcaniques libèrent des vapeurs et des gaz qui modifient la composition minérale des eaux, provoquant des changements spectaculaires de couleur.\nChaque lac possède une composition chimique unique, ce qui explique leurs couleurs variées et indépendantes. Le lac le plus à l'ouest, le Tiwu Ata Bupu (lac des anciens), arbore généralement une teinte bleue. Le Tiwu Ko'o Fai Nuwa Muri (lac des jeunes hommes et des jeunes filles) est souvent vert, tandis que le Tiwu Ata Polo (lac enchanté) prend habituellement une teinte rouge.\nLa population locale, les Lio, vénère ces lacs, les considérant comme le dernier refuge des âmes. Alors, pourquoi se contenter de vacances classiques au bord de la mer quand on peut explorer ce trio de lacs aux couleurs changeantes ?",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Shane P. White",
   "gallery": "Minden Pictures",
@@ -2961,7 +3329,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山口湖",
    "克利穆图火山",
@@ -2982,8 +3353,11 @@
   "imageKey": "FireWave",
   "title": "Formation rocheuse Fire Wave, parc d'État de Valley of Fire, Nevada, États-Unis",
   "desc": "Le parc d'État de la Vallée du Feu est situé au cœur du désert aride du Mojave, dans le Nevada, aux États-Unis. Ce parc s'étend sur plus de 18 600 hectares et doit son nom aux flamboyants grès rouges aztèques, une formation géologique datant du Jurassique précoce composée d'anciennes dunes. L'attraction principale, Fire Wave, est une merveille géologique ressemblant à une vague figée, avec ses bandes rouges, roses et blanches.\nDans le parc, vous découvrirez des pétroglyphes mystérieux, des gravures rupestres réalisées en grattant la surface de la roche. Ces œuvres ont été laissées par les tribus Pueblos, des agriculteurs de la vallée voisine de Moapa. Il est probable qu'ils pratiquaient la chasse et célébraient des cérémonies religieuses dans cette région. Si vous êtes passionné d'histoire, vous serez peut-être tenté de décoder les messages énigmatiques gravés sur les parois rocheuses. Ça vous tente ?",
-  "location": [],
-  "region": null,
+  "location": [
+   "奈良",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Clint Losee",
   "gallery": "Tandem Stills + Motion",
   "copyrightlink": null,
@@ -2991,7 +3365,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "奈良",
+   "nara",
+   "なら",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "波浪岩(岩石)",
    "红色砂岩(岩石)",
@@ -3013,8 +3397,10 @@
   "imageKey": "CardinalfishAnemone",
   "title": "Poisson cardinal de Banggai et anémone de mer, détroit de Lembeh, Sulawesi du Nord, Indonésie",
   "desc": "Plongez sous les vagues des îles Banggai en Indonésie et découvrez le fascinant poisson-cardinal de Banggai. Ces poissons, mesurant jusqu'à 7 centimètres, possèdent un corps scintillant orné de bandes verticales noires et de nageoires aux bords blancs, qui les aident à se camoufler. Contrairement à d'autres créatures marines qui migrent sur de longues distances, ces petits poissons préfèrent rester près des récifs locaux.\nChaque jeune poisson cardinal commence sa vie sous la protection attentive de son père, qui garde les œufs dans sa bouche pendant 30 jours pour les protéger des dangers marins. À l'abri dans cette bouche protectrice, les jeunes poissons se métamorphosent silencieusement avant de sortir, prêts à explorer les courants. Au début de leur vie, ils forment des bancs serrés pour se protéger des prédateurs et se cachent parmi les épines des oursins et les tentacules des anémones.\nOpportunistes, ils se nourrissent principalement de petits poissons, de crustacés et de plancton. Leur existence raconte des histoires de résilience - une créature précieuse à protéger pour le spectacle de la vie qu'elle nous offre.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度尼西亚"
+  ],
+  "region": "印度尼西亚",
   "photographer": "Constantinos Petrinos",
   "gallery": "NPL/Minden Pictures",
   "copyrightlink": null,
@@ -3022,7 +3408,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian",
+   "印度尼西亞"
+  ],
   "content_tags": [
    "海葵",
    "考氏鳍竺鲷",
@@ -3259,7 +3650,9 @@
   "imageKey": "ItalicaRuins",
   "title": "Ancienne ville romaine de Italica à Santiponce, Séville,  Espagne",
   "desc": "En 206 avant notre ère, après la bataille d'Ilipa, le général et homme d'État romain Publius Cornelius Scipio fonda une colonie pour les vétérans ayant aidé à vaincre les Carthaginois. Située sur la rive droite du fleuve Guadalquivir, cette colonie fut baptisée Italica, en référence à l'origine italienne de ses habitants. Italica devint ainsi la première colonie romaine de la péninsule ibérique, jouant un rôle crucial dans la romanisation de la région alors connue sous le nom d’Hispanie, aujourd’hui l’Espagne.\nLes ruines d’Italica sont les vestiges d'un centre urbain autrefois florissant. L'élément le plus emblématique est son amphithéâtre, visible sur l'image d’aujourd’hui, l'un des plus grands de l'Empire romain. Il pouvait accueillir jusqu’à 25 000 spectateurs, soit plus du double de la population de la ville. On y trouve également des vestiges d’édifices publics impressionnants, tels qu'un temple dédié à Trajan, des thermes et des villas ornées de mosaïques magnifiques. Italica est un joyau archéologique, préservé dans le temps, offrant un aperçu de la grandeur de l’Empire romain.",
-  "location": [],
+  "location": [
+   "罗马"
+  ],
   "region": null,
   "photographer": "Moses Palermo",
   "gallery": "Amazing Aerial Agency",
@@ -3268,7 +3661,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬"
+  ],
   "content_tags": [
    "古罗马竞技场",
    "竞技场遗址",
@@ -3292,8 +3691,10 @@
   "imageKey": "MeerkatManor",
   "title": "Famille de suricates",
   "desc": "Les suricates, ces petits êtres au regard vif qui se tiennent debout sur leurs pattes arrière, sont bien connus de tous. Ces prédateurs de la famille des mangoustes évoluent dans les étendues arides et les savanes du sud-ouest africain. Infiniment sociables, les suricates vivent en clan et forment des communautés très unies qui peuvent rassembler jusqu’à 30 membres. Leur vie en groupe est un véritable ballet de solidarité : partage des repas, toilettage collectif, soin des jeunes et surveillance alternée des dangers. Leurs terriers, vastes et complexes, leur servent de refuge contre la nuit et la chaleur intense de l’après-midi.\nSensibiliser à leur importance écologique est essentiel. Bien que classés comme « préoccupation mineure » par l’Union internationale pour la conservation de la nature, ces mammifères jouent un rôle déterminant dans la régulation des populations d'insectes de leur habitat naturel. Il est crucial de veiller à ce que notre fascination pour ces êtres extraordinaires perdure et que nous prenions conscience de la nécessité de les protéger.",
-  "location": [],
-  "region": null,
+  "location": [
+   "澳大利亚"
+  ],
+  "region": "澳大利亚",
   "photographer": "anetapics",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -3301,7 +3702,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞"
+  ],
   "content_tags": [
    "狐獴",
    "猫鼬",
@@ -3367,8 +3775,10 @@
   "imageKey": "NoahBeach",
   "title": "Plage de Noah, forêt tropicale de Daintree, Queensland, Australie",
   "desc": "Bienvenue dans une contrée où le vert luxuriant se fond dans l’immensité bleue ! Au nord du Queensland, en Australie, découvrez la plage de Noah, un havre de paix cerné par la végétation foisonnante de la forêt tropicale de Daintree. Caressée par les flots de la mer de Corail, cette plage offre un spectacle étonnant où deux écosystèmes se rencontrent harmonieusement : la jungle dense se mêle aux eaux cristallines de l’océan.\nCe coin reculé du parc national de Daintree se distingue par son sable fin et doré. Le parc abrite des arbres majestueux, des fougères opulentes et une flore endémique exceptionnelle. La forêt de Daintree est la plus vaste étendue de forêt tropicale préservée en Australie et est estimée vieille de 180 millions d’années, ce qui en fait la forêt la plus ancienne de la planète. Noah Beach est un paradis préservé.",
-  "location": [],
-  "region": null,
+  "location": [
+   "澳大利亚"
+  ],
+  "region": "澳大利亚",
   "photographer": "bjeayes",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -3376,7 +3786,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞"
+  ],
   "content_tags": [
    "海滩",
    "海洋",
@@ -3401,8 +3818,10 @@
   "imageKey": "ConwyRiver",
   "title": "Château de Conwy surplombant la rivière Conwy, Pays de Galles, Royaume-Uni",
   "desc": "Plongez dans l’histoire du festival de Conwy ! Depuis 1993, cet événement anime les quais de Conwy, au pied du majestueux château. Le point d’orgue du festival, le Quay Day, rassemble amateurs et professionnels de la voile pour une régate où se côtoient voiliers classiques et bijoux de la technologie maritime. Cette célébration gratuite en plein air offre un spectacle unique et l’occasion de déguster des spécialités galloises, comme le bara brith, un pain doux parfumé au thé, aux fruits confits et aux épices, ou encore le laverbread, une recette traditionnelle à base d’algues.\nConstruit par le roi Édouard Ier entre 1283 et 1287, ce château est l’œuvre de l’illustre architecte James of St. George. Classé au patrimoine mondial de l’UNESCO, il est un témoin privilégié des tumultes historiques de la région. La rivière Conwy, longue de 55 kilomètres, tire son nom des mots gallois « cyn » (chef) et « gwy » (eau), symbolisant la puissance et la fluidité. Le château de Conwy et la rivière témoignent du passé riche et turbulent du Pays de Galles.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "David Chapman",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -3410,7 +3829,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "康威城堡",
    "城堡",
@@ -3471,8 +3901,10 @@
   "imageKey": "PontBordeaux",
   "title": "Pont de pierre, Bordeaux",
   "desc": "Le Pont de pierre qui enjambe la Garonne à Bordeaux, est un puissant symbole de la ville depuis son inauguration en 1822. Commandé par Napoléon Ier et conçu par les ingénieurs Deschamps et Billaudel, ce pont historique fut le premier à relier les deux rives. Avec ses 17 arches majestueuses reposant sur 16 piles, il mesure 486 mètres de long et témoigne de l’ingéniosité de l’époque. Initialement nommé « Pont Louis XVIII » lors de son inauguration, il a été rapidement adopté par les Bordelais sous le nom de « Pont de Pierre », probablement en raison de sa construction en dur.\nAujourd’hui, après plus de deux siècles de service et plusieurs rénovations, le pont de Pierre reste un passage vital et un point de vue privilégié sur le port de la Lune. Fermé à la circulation automobile, il est désormais un lieu de promenade prisé, réservé aux piétons, aux cyclistes et aux transports en commun. Des travaux de consolidation sont prévus pour l’été 2025, assurant ainsi la pérennité de ce témoin de l’histoire bordelaise.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "SergiyN",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -3480,7 +3912,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "皮埃尔桥",
    "石拱桥",
@@ -3504,8 +3942,10 @@
   "imageKey": "TalampayaNP",
   "title": "Parc national de Talampaya, province de La Rioja, Argentine",
   "desc": "En cette journée où l’Argentine célèbre son indépendance, le parc national de Talampaya nous ouvre les portes d’une épopée au cœur de l’âme antique de la nation. Niché au sein de la province de La Rioja, ce sanctuaire de 2 150 km2, classé au patrimoine mondial de l’UNESCO, dévoile des formations rocheuses rougeoyantes qui s’élèvent jusqu’à 143 mètres, portant en elles les mystères de l’ère préhistorique.\nLe parc est le gardien de certains des fossiles de dinosaures les plus anciens jamais découverts. Talampaya est aussi un écrin d’art séculaire. Ses falaises et cavernes servent de canevas aux pétroglyphes laissés par les peuples Ciénaga, Diaguita et autres civilisations autochtones qui ont peuplé ces terres du IIIe au IXe siècle.\nLa beauté de la nature se révèle aussi dans la diversité de la flore locale, avec ses buissons et ses cactus résistants à l’aridité, ainsi que dans la faune sauvage. Guanacos, lièvres et renards y déambulent sans entraves, tandis que dans les hauteurs, condors, cacholotes à gorge blanche et toucos sable déploient leurs ailes. Alors, si l’appel de l’aventure résonne en vous, laissez-vous guider par sa voix !",
-  "location": [],
-  "region": null,
+  "location": [
+   "阿根廷"
+  ],
+  "region": "阿根廷",
   "photographer": "Gonzalo Azumendi",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -3513,7 +3953,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿根廷",
+   "argentina"
+  ],
   "content_tags": [
    "红色砂岩峭壁",
    "岩壁",
@@ -3578,8 +4021,10 @@
   "imageKey": "GangiSicily",
   "title": "Gangi, Sicile, Italie",
   "desc": "En 1987, la population mondiale franchissait le cap des cinq milliards, un jalon si marquant qu’il a donné naissance à une commémoration internationale : la Journée des Cinq Milliards. À cette époque, les Nations Unies reconnaissaient la nécessité de s’attaquer aux problèmes grandissants liés à notre empreinte globale. C’est ainsi que la Journée Mondiale de la Population fut instaurée en 1989. Aujourd’hui, ce n’est pas seulement une journée, c’est un appel à l’action.\nLa surpopulation épuise les ressources de notre planète, nous incitant à affronter des questions urgentes telles que la planification familiale, l’augmentation des déchets et de la pollution, ou le manque d’infrastructures. Tandis que les zones métropolitaines luttent contre la surpopulation, les petites font face à une diminution de la population, entraînant un déséquilibre.\nUn exemple en est la ville italienne de Gangi, en Sicile, visible sur l’image d’aujourd’hui. Ce village comptait environ 16 000 habitants dans les années 1950, mais aujourd’hui, il n’en abrite guère plus de 6 000. Soucieuse de revitalisation, Gangi attire l’attention en offrant des maisons abandonnées à ceux qui s’engagent à les restaurer.",
-  "location": [],
-  "region": null,
+  "location": [
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Andrea Caruso",
   "gallery": "Amazing Aerial Agency",
   "copyrightlink": null,
@@ -3587,7 +4032,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ],
   "content_tags": [
    "山城",
    "老城",
@@ -3613,8 +4065,10 @@
   "imageKey": "RainierWildflowers",
   "title": "Fleurs sauvages dans le parc national du Mont Rainier, Washington, États-Unis",
   "desc": "Sous le regard du mont Rainier, un tapis de fleurs sauvages éclot et transforme le paysage. Chaque été, les prairies autour de cette montagne américaine se parent de couleurs éclatantes grâce aux fleurs subalpines en pleine floraison : asters, corallorhizes roses et lis tigrés. Aussi connu sous le nom de Tahoma, le mont Rainier, avec ses 4 390 mètres d'altitude, est la plus haute montagne de l'État de Washington aux États-Unis. Il est recouvert par 93 km² de glaciers et de névés permanents.\nCe parc national s'étend sur plus de 95 000 hectare s et offre une diversité incroyable de paysages : montagnes, cascades, prairies et forêts primaires. En plus de sa flore variée, le parc abrite une faune incroyable avec des couguars, des castors, des pygargues à tête blanche et des faucons pèlerins.\nLe parc national du mont Rainier est une destination incontournable pour les amateurs d'alpinisme, avec environ 10 000 personnes tentant chaque année d'escalader la montagne. Les visiteurs peuvent également profiter de nombreuses randonnées le long de sentiers diversifiés.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "RomanKhomlyak",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -3622,7 +4076,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "雷尼尔山",
    "雪山",
@@ -3646,7 +4107,9 @@
   "imageKey": "CappadociaRocks",
   "title": "Cheminées de fées et habitations troglodytes en Cappadoce, Turquie",
   "desc": "Découvrons ensemble l'univers fascinant des roches ! Aujourd'hui, nous allons parler de granite, de calcaire et d'ardoise. Il existe trois types de roches : les roches magmatiques, formées à partir de magma et de lave solidifiés ; les roches sédimentaires, constituées de couches de particules comme le sable ; et les roches métamorphiques, résultant de la chaleur et de la pression appliquées sur d'autres types de roches.\nL'image du jour nous transporte en Cappadoce, au cœur de la Turquie, célèbre pour ses cheminées de fées. Ces formations en forme de cônes sont faites de tuf, une roche sédimentaire formée par l'accumulation de cendres et de débris volcaniques. Les anciens habitants de la région ont creusé des maisons et des églises dans les flancs des rochers. La région est également renommée pour ses villes souterraines, creusées dans le tuf pour offrir refuge et sécurité.\nN'est-ce pas incroyable de voir comment l'humanité a su tirer parti des roches au fil de l'histoire ?",
-  "location": [],
+  "location": [
+   "卡帕多奇亚"
+  ],
   "region": null,
   "photographer": "Storm Is Me",
   "gallery": "Shutterstock",
@@ -3655,7 +4118,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "卡帕多奇亚",
+   "cappadocia",
+   "卡帕多西亞",
+   "卡帕多奇亞"
+  ],
   "content_tags": [
    "卡帕多奇亚",
    "精灵烟囱",
@@ -3760,8 +4228,11 @@
   "imageKey": "AncientOrkney",
   "title": "Site néolithique de Skara Brae, Orcades, Écosse",
   "desc": "Quand on pense à un festival, l'archéologie n'est peut-être pas la première idée qui nous vient en tête ! Pourtant, celui de l'archéologie britannique est là pour changer cela. Depuis sa création en 1990, cet événement est devenu une véritable célébration.\nCette année, le thème « Archéologie et communauté » invite les passionnés de tout le Royaume-Uni à participer pendant 2 semaines à une multitude d'événements, qu'ils soient en présentiel ou en ligne. Organisés par des institutions patrimoniales, des associations locales et des amateurs passionnés, ces rendez-vous permettent d'explorer notre passé collectif.\nImaginez-vous au cœur des anciennes habitations en pierre de Skara Brae, sur l'archipel écossais des Orcades. Il y a plus de 5 000 ans, les colons néolithiques y prospéraient. Dévoilée par une tempête en 1850, cette merveille préhistorique est surnommée la « Pompéi écossaise », Incroyablement bien préservée, elle est plus ancienne que Stonehenge et les grandes pyramides. Alors, même si vous ne pouvez pas vous y rendre, plongez virtuellement dans ce passé fascinant et riche en histoires. Qui sait quelles découvertes vous attendent depuis chez vous ?",
-  "location": [],
-  "region": null,
+  "location": [
+   "苏格兰",
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Paul Williams - FunkyStock",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -3769,7 +4240,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "苏格兰",
+   "scotland",
+   "scottish",
+   "蘇格蘭",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
   "content_tags": [
    "斯卡拉布雷遗址（遗迹）",
    "石屋（建筑）",
@@ -3876,8 +4360,12 @@
   "imageKey": "YoungJaguar",
   "title": "Jeune jaguar au bord d'une rivière, Pantanal, Brésil",
   "desc": "Découvrez la star de la faune sur cette image : le jaguar, le plus grand félin des Amériques, se révèle ici dans le Pantanal, au Brésil. Ces majestueux prédateurs vivent en Amérique depuis environ 2 millions d’années, après avoir migré depuis l’Eurasie par le détroit de Béring. Aujourd’hui, on les trouve dans divers habitats, des forêts du sud-ouest des États-Unis aux jungles tropicales du nord de l’Argentine.\nSouvent proches des plans d’eau, les jaguars sont d'excellents nageurs et chassent en bondissant dans l'eau pour attraper leurs proies. Véritables carnivores, ils se nourrissent exclusivement de viande, mangeant une variété d’animaux tels que cerfs, tatous, singes et lézards. Leurs puissantes mâchoires leur permettent même de percer les carapaces des tortues et d’attaquer les têtes de crocodiles. Dans le Pantanal brésilien, une petite population de jaguars privilégie la chasse aux reptiles aquatiques et aux poissons.\nAlors, lors de votre prochaine balade en forêt, gardez les yeux grands ouverts et soyez attentifs : chaque bruissement de feuilles pourrait bien être le signe d’un jaguar en chasse !",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "阿根廷",
+   "巴西"
+  ],
+  "region": "巴西",
   "photographer": "Tambako the Jaguar",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -3885,7 +4373,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ",
+   "阿根廷",
+   "argentina",
+   "巴西",
+   "brazil"
+  ],
   "content_tags": [
    "美洲豹",
    "豹",
@@ -3908,8 +4407,10 @@
   "imageKey": "MineralMoon",
   "title": "La Lune",
   "desc": "Aujourd’hui, célébrons les petits pas et les grands bonds : c’est la Journée internationale de la Lune ! Reconnue mondialement par les Nations unies en 2021, cette journée honore l’héritage de la mission Apollo 11.\nDepuis des millénaires, les civilisations humaines scrutent le ciel, fascinées par ce satellite naturel. Apollo 11, mission pionnière, a permis à l’homme de fouler la surface lunaire pour la première fois le 20 juillet 1969. Neil Armstrong et Buzz Aldrin y ont laissé leurs empreintes, marquant un jalon historique. La Journée de la Lune commémore cet événement et rappelle les efforts titanesques déployés pour le programme spatial.\nMême si aucune vie n’a été trouvée, la Lune pourrait devenir un site de colonisation humaine. La découverte de glace d’eau dans les cratères des pôles la rend plus accueillante pour de futurs colons. En attendant ce jour, continuons de rêver sous cette lune qui nous fascine depuis toujours.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Victor Blum",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -3917,7 +4418,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "月球",
    "满月",
@@ -3935,8 +4443,11 @@
   "imageKey": "ZanzibarBoats",
   "title": "Bateaux de pêche en bois, village de Kendwa, Zanzibar, Tanzanie",
   "desc": "Au large de la côte est de l’Afrique, dans l’archipel de Zanzibar, se trouve le village de Kendwa. Historiquement, ce havre de paix a joué un rôle modeste dans l’industrie de la pêche locale. Ses boutres, ces bateaux traditionnels en bois, dessinent des motifs sur les eaux turquoise. Façonnés par des mains habiles selon des techniques ancestrales, ils incarnent l’esprit durable du village.\nImaginez-vous dans les fermes d’épices luxuriantes de Zanzibar, où l’air est imprégné des parfums envoûtants de la noix de muscade et du poivre noir. Ici, les plats traditionnels swahilis, tels que le Nyama Choma (viande rôtie) et le Samaki Wa Kaupaka (poisson à la sauce de noix de coco), marient les épices aux richesses de la mer et de la terre. Au coucher du soleil, les feux de joie s’allument, et l’île résonne au rythme envoûtant du Taarab, une fusion musicale mêlant influences africaines, arabes et indiennes. Zanzibar est un kaléidoscope de saveurs et de cultures où la diversité est au cœur de la vie.",
-  "location": [],
-  "region": null,
+  "location": [
+   "坦桑尼亚",
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "Lubos Paukeje",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -3944,7 +4455,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド",
+   "坦桑尼亚",
+   "tanzania",
+   "坦桑尼亞"
+  ],
   "content_tags": [
    "木船",
    "船",
@@ -4000,8 +4518,12 @@
   "imageKey": "MethoniCastle",
   "title": "Château de Méthoni, Messénie, Grèce",
   "desc": "Perché sur un promontoire rocheux, le château de Méthoni domine fièrement les rives de la mer Ionienne, dans le sud de la Grèce. Construit par les Vénitiens au début du XIIIe siècle, ce symbole de la puissance médiévale se trouve dans le village de Méthoni, en Messénie. Il servait à la fois de comptoir commercial stratégique et de bastion défensif, protégeant la côte sud-ouest contre les envahisseurs.\nLa tour Bourtzi, une extension de la forteresse située sur un petit îlot, était autrefois reliée au château principal par un pont de pierre. Au fil des siècles, de nombreux conquérants, tels que les Ottomans en 1499-1500 puis les Français en 1828, ont cherché à s’emparer de cette position stratégique. Aujourd’hui, les visiteurs peuvent franchir les mêmes portes que celles où marchaient autrefois les soldats, découvrant ainsi un fascinant mélange d’architectures byzantines, vénitiennes et ottomanes.",
-  "location": [],
-  "region": null,
+  "location": [
+   "威尼斯",
+   "奈良",
+   "希腊"
+  ],
+  "region": "希腊",
   "photographer": "Andrew Mayovskyy",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -4009,7 +4531,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "奈良",
+   "nara",
+   "なら",
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "ヴェネツィア",
+   "希腊",
+   "greece",
+   "greek",
+   "希臘"
+  ],
   "content_tags": [
    "迈索尼城堡 城堡",
    "海上要塞 建筑",
@@ -4033,8 +4568,11 @@
   "imageKey": "SheepCousins",
   "title": "Troupeau de moutons de Swaledale dans le Yorkshire du Nord, Angleterre",
   "desc": "Les réunions de famille ne seraient pas les mêmes sans eux. Aujourd'hui, célébrons le lien unique qui unit les cousins ! Cette journée est l'occasion parfaite pour se remémorer les aventures et secrets partagés, ainsi que les innombrables souvenirs qui vous ont rapprochés.\nSaviez-vous que les cousins germains partagent environ 12,5 % de leur ADN ? Cela explique sans doute pourquoi vous ressentez souvent autant d'amour et de compréhension envers eux. Alors, profitez de cette journée pour organiser des activités ensemble, que ce soit un pique-nique ou un repas dans votre restaurant local préféré !\nN'oubliez pas de capturer ces moments précieux avec une photo, tout comme ce groupe de moutons de Swaledale dans les vallées du North Yorkshire en Angleterre. Il y a fort à parier qu'il y a quelques cousins parmi eux ! Alors, profitez pleinement de cette journée spéciale et renforcez vos liens avec vos cousins !",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "R A Kearton",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4042,7 +4580,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國"
+  ],
   "content_tags": [
    "绵羊",
    "羊",
@@ -4067,8 +4618,10 @@
   "imageKey": "SmokyMountainTrail",
   "title": "Chemin forestier dans le parc national des Great Smoky Mountains, Tennessee, États-Unis",
   "desc": "Avez-vous déjà entendu parler des Smokies, visibles sur l'image du jour ? S'étendant sur plus de 210 000 hectares entre la Caroline du Nord et le Tennessee, aux États-Unis, le parc national des Great Smoky Mountains est un trésor de beauté naturelle et de biodiversité. Il abrite plus de 19 000 espèces répertoriées et les scientifiques estiment que des dizaines de milliers d'autres restent à découvrir. Des kilomètres de sentiers de randonnée serpentent à travers des forêts denses, menant à des cascades et à des points de vue spectaculaires. Le parc compte également certaines des plus hautes montagnes de l'est du pays, dont le Clingmans Dome, qui culmine à 2 025 mètres.\nClassé au patrimoine mondial de l'UNESCO et réserve de biosphère internationale, le parc offre un spectacle unique à chaque saison : la floraison des fleurs sauvages au printemps, le feuillage éclatant à l'automne et les paysages sereins enneigés en hiver. Cette merveille est un havre de paix pour les amoureux de la nature et les aventuriers, promettant des expériences inoubliables et une connexion profonde avec la nature.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "putmanphoto",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4076,7 +4629,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "森林",
    "林间小径",
@@ -4179,8 +4739,10 @@
   "imageKey": "BeachHutsSweden",
   "title": "Cabines de bain sur la plage, comté de Scanie, Suède",
   "desc": "Bienvenue en Scanie en Suède, où les plages prennent vie avec mille couleurs. À Skanörs Havsbad, dans la jolie ville de Skanör, les cabines de plage pastel créent un tableau des plus photogéniques. Cette étendue de sable fin, qui s'étire sur près de 10 km le long de la côte ouest de la péninsule de Falsterbonäset, attire les amateurs de soleil chaque été.\nMais la Scanie ne se résume pas à ses plages. La région est parsemée de champs de colza dorés, de forêts de hêtres luxuriantes, et de monuments historiques qui racontent des histoires d'un autre temps. Des châteaux majestueux aux musées captivants, en passant par la cathédrale de Lund, joyau de l'architecture romane, jusqu'à l'animation moderne de Malmö, chaque recoin de la Scanie est une fenêtre ouverte sur le passé et le présent.\nSi vous avez la chance de visiter la Scanie, prenez le temps de flâner le long de ses côtes et laissez-vous charmer par les pittoresques cabines de plage, véritables emblèmes de la région.",
-  "location": [],
-  "region": null,
+  "location": [
+   "瑞典"
+  ],
+  "region": "瑞典",
   "photographer": "Martin Wahlborg",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4188,7 +4750,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "瑞典",
+   "sweden"
+  ],
   "content_tags": [
    "彩色小屋",
    "小屋",
@@ -4209,8 +4774,10 @@
   "imageKey": "CorbettTigers",
   "title": "Tigres dans le parc national de Jim Corbett, Uttarakhand, Inde",
   "desc": "Nous commençons la journée en rugissant pour la Journée Internationale du Tigre ! Célébrée le 29 juillet et initiée en 2010, cette journée est dédiée à la sauvegarde des tigres, confrontés à des dangers tels que le braconnage et la destruction de leur habitat naturel par la déforestation. À la fin du XIXe siècle, leur population était estimée à environ 100 000 ; de nos jours, leur nombre a chuté à moins de 6 000.\nL'image du jour nous emmène au Parc National de Jim Corbett, dans l'État indien de l'Uttarakhand. Fondé en 1936 et s'étendant sur près de 520 km², il a été baptisé en l'honneur de Jim Corbett, un conservateur clé dans sa création. Il héberge 256 tigres du Bengale, des superprédateurs vitaux pour l'équilibre de l'écosystème. Dominant la chaîne alimentaire, ils chassent de grandes proies telles que les buffles d'eau et parfois de jeunes éléphants. Les visiteurs peuvent réserver un safari dans la jungle, guidés par des gardes forestiers, pour admirer ces splendides et uniques félins.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "Sourabh Bharti",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4218,7 +4785,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "老虎",
    "动物",
@@ -4238,8 +4809,10 @@
   "imageKey": "ImpalaOxpecker",
   "title": "Impala et pic-bœuf à bec rouge, Afrique du Sud",
   "desc": "La Journée internationale de l’amitié, proclamée en 2011 par l’Assemblée générale des Nations Unies, rappelle que l’amitié entre les peuples, les cultures et les individus et elle offre l’occasion de jeter des ponts entre les communautés. Cette journée met l’accent sur la participation des jeunes à des activités communautaires et multiculturelles pour favoriser la compréhension internationale et le respect de la diversité.\nCette célébration nous invite à réfléchir sur l’impact de l’amitié dans nos vies, comme la relation symbiotique entre l’impala et le pic à bec rouge en Afrique du Sud. Le pic-bœuf se nourrit des tiques sur l’impala, qui reste propre en échange. Ce duo illustre parfaitement la camaraderie naturelle.\nAlors, profitez de cette journée pour tendre la main à vos amis, exprimez votre gratitude et célébrez ces moments qui enrichissent nos vies !",
-  "location": [],
-  "region": null,
+  "location": [
+   "南非"
+  ],
+  "region": "南非",
   "photographer": "Matrishva Vyas",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4247,7 +4820,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南非",
+   "south africa"
+  ],
   "content_tags": [
    "黑斑羚",
    "羚羊",
@@ -4520,7 +5096,9 @@
   "imageKey": "MolokiniHawaii",
   "title": "Cratère de Molokini, Maui, Hawaï, États-Unis",
   "desc": "Découvrez le cratère de Molokini, un joyau du Pacifique ! Situé entre les îles hawaïennes de Maui et Kaho’olawe aux États-Unis, ce croissant de lune est tout ce qui reste d’un volcan ayant éclaté il y a environ 230 000 ans. Selon la mythologie hawaïenne, Pele, la déesse du feu, aimait un homme nommé Mo’o, mais ce dernier en aimait une autre. En représailles, Pele coupa sa rivale en deux : son corps devint Molokini et sa tête devint Pu’u Olai, un cône de cendre à Maui.\nAujourd’hui, le cratère de Molokini est une destination prisée pour la plongée sous-marine et le snorkeling. La forme en croissant de l’îlot protège les plongeurs des vagues et des courants, permettant une visibilité exceptionnelle allant jusqu’à 45 mètres. Cet habitat abrite au moins 250 espèces de poissons, comme le baliste noir et le poisson-perroquet, ainsi que 38 espèces de coraux durs et une centaine d’espèces d’algues. Imaginez-vous plonger dans ces eaux magnifiques, entouré d'une biodiversité époustouflante. Même de loin, laissez-vous transporter par la magie de Molokini et la légende de Pele.",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Douglas Peebles",
   "gallery": "eStock Photo",
@@ -4529,7 +5107,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "莫洛基尼火山口",
    "火山口",
@@ -4633,8 +5214,10 @@
   "imageKey": "IncaRuinPeru",
   "title": "Ruine inca de Sacsayhuamán près de Cusco, Pérou",
   "desc": "Explorons l’héritage des civilisations anciennes à l’occasion de la Journée internationale des populations autochtones ! Près de 5 000 cultures autochtones enrichissent 90 pays, de la Polynésie au Groenland, de la Nouvelle-Zélande au Népal. Cependant, elles font face à une menace majeure : environ 2 600 des 4 000 langues autochtones sont en danger d’extinction.\nÀ Cuzco, au Pérou, les imposants murs de pierre de Sacsayhuamán, visibles sur l’image du jour, racontent l’histoire de la puissante civilisation inca. Le mot quechua « Sacsayhuamán » signifie « le lieu où le faucon se rassasie ». Ces murs, s’étendant sur près de 305 mètres, ont été construits au XVe siècle sans mortier. Après la défaite de l’Empire inca en 1536, Sacsayhuamán a été démantelée par les Espagnols et recouverte de terre. Le site a été redécouvert en 1934 lors de fouilles archéologiques.\nEn cette journée spéciale, rendons hommage aux peuples autochtones et engageons-nous résolument à préserver leurs cultures et leur savoir ancestral.",
-  "location": [],
-  "region": null,
+  "location": [
+   "尼泊尔"
+  ],
+  "region": "尼泊尔",
   "photographer": "SL_Photography",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4642,7 +5225,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "尼泊尔",
+   "nepal",
+   "nepali",
+   "尼泊爾"
+  ],
   "content_tags": [
    "萨克塞瓦曼",
    "印加遗址",
@@ -5008,8 +5596,11 @@
   "imageKey": "HuntingtonBeach",
   "title": "Quai de Huntington Beach, Californie, États-Unis",
   "desc": "Plongez dans le crépuscule californien, où le soleil se fond doucement derrière le célèbre quai de Huntington Beach. Construit en 1902, ce lieu historique a servi de poste de surveillance pendant la Seconde Guerre mondiale. Aujourd'hui, il attire pêcheurs et amateurs de surf.\nSurnommée la ville du Surf, Huntington Beach est renommée pour ses vagues, attirant des surfeurs du monde entier. Avec ses 15 kilomètres de sable fin, elle offre des conditions idéales toute l'année. Ne manquez pas l'International Surf Museum, qui retrace l'histoire du surf à travers ses planches légendaires.\nPlus proche de nous, la plage de Biarritz, au Pays basque, est un lieu incontournable pour les passionnés de surf. La Côte des Basques est probablement le spot de surf le plus célèbre de Biarritz. Connue pour ses vagues puissantes et régulières, elle convient aux surfeurs de tous niveaux. Alors, laissez-vous envoûter par ces destinations emblématiques du surf et leurs paysages à couper le souffle !",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Stan Moniz Photography",
   "gallery": "Tandem Stills + Motion",
   "copyrightlink": null,
@@ -5017,7 +5608,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "栈桥",
    "建筑",
@@ -5040,8 +5642,11 @@
   "imageKey": "RegataSanGines",
   "title": "Bufadero de la Garita, Grande Canarie, Espagne",
   "desc": "Vous pensez avoir tout vu ? Laissez-nous vous emmener découvrir un phénomène naturel incroyable : le Bufadero de la Garita. Situé sur les côtes pittoresques de Grande Canarie, en Espagne, ce geyser maritime offre un spectacle impressionnant. Imaginez de l'eau cristalline jaillissant des rochers avec une telle force qu'elle s'élève à plusieurs mètres dans les airs, comme un ballet aquatique orchestré par la nature.\nEt ce n’est pas tout ! Ce mois-ci, l'île accueille la célèbre Régate international de San Ginés, un événement nautique qui apportera une dose d'aventure à votre séjour espagnol. Si vous ne pouvez pas vous rendre aux îles Canaries cet été, suivez le parcours du Solitaire du Figaro, cette régate pourrait faire escale près de chez vous !",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Marco Bottigelli",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -5049,7 +5654,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "天然泳池",
    "水池",
@@ -5114,8 +5730,10 @@
   "imageKey": "NazcaBooby",
   "title": "Fou de Grant, île Wolf, îles Galápagos, Équateur",
   "desc": "En quête d'expériences uniques ? Embarquez pour un voyage fascinant aux îles Galápagos, en Équateur, sanctuaire de la biodiversité. De l’autre côté du globe, ce paradis terrestre abrite des régions arides et des forêts tropicales humides, formant un écosystème unique. Vous y trouverez entre autres le Fou de Grant, qui tire son nom cocasse de son comportement maladroit et parfois comique lorsqu’il se déplace sur terre. Il offre un spectacle bien plus gracieux lorsqu'il est en vol ou dans l'eau.\nL'île Wolf, avec ses falaises abruptes et ses rivages rocheux, est le théâtre de la vie de ces oiseaux marins. Les eaux poissonneuses qu'elle enserre sont un véritable buffet à volonté pour ces gourmands à plume. Tout explorateur en herbe ou aguerri y trouvera un champ d'observation sans pareil. Oubliez le stress de l’Hexagone, c'est une immersion totale dans la nature qui vous attend ! Ne ratez pas ce chapitre vivant de notre belle planète.",
-  "location": [],
-  "region": null,
+  "location": [
+   "厄瓜多尔"
+  ],
+  "region": "厄瓜多尔",
   "photographer": "Tui De Roy",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -5123,7 +5741,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "厄瓜多尔",
+   "ecuador"
+  ],
   "content_tags": [
    "鲣鸟",
    "海鸟",
@@ -5148,8 +5769,12 @@
   "imageKey": "OceanCityMD",
   "title": "Vue aérienne d’Ocean City au lever du soleil, Maryland, États-Unis",
   "desc": "Que pensez-vous d’une escapade en bord de mer, mêlant charme, aventure et détente ? Plongez dans l’ambiance unique d'Ocean City, dans le Maryland, aux États-Unis ! Autrefois simple village de pêcheurs, l'ouverture de l'Atlantic Hotel en 1875 a signé la métamorphose d'Ocean City en destination prisée, faisant d’elle un lieu de vacances des plus populaires.\nVous pourrez déambuler sur la promenade de près de 5 kilomètres, équivalente au bois de Vincennes, entre boutiques, restos, et manèges pour vous donner le tournis. Côté plage, ce ne sont pas moins de 16 kilomètres de sable fin qui s’offrent à vous : parfaits pour un moment de détente, une partie de beach-volley ou des châteaux de sable dignes de ceux de Chambord ! Ocean City, c'est ce charme authentique, lié à son histoire, qui en fait un séjour inoubliable !",
-  "location": [],
-  "region": null,
+  "location": [
+   "日光",
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Kevin Olson",
   "gallery": "Amazing Aerial Agency",
   "copyrightlink": null,
@@ -5157,7 +5782,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "日光",
+   "nikko",
+   "美国",
+   "usa",
+   "united states",
+   "america"
+  ],
   "content_tags": [
    "摩天轮",
    "游乐设施",
@@ -5448,8 +6086,12 @@
   "imageKey": "CastellfollitSpain",
   "title": "Castellfollit de la Roca, Catalogne, Espagne",
   "desc": "Découvrez l'un des joyaux de la Catalogne, perché sur une falaise de basalte : Castellfollit de la Roca. Au nord-est de l’Espagne, ce village historique offre une vue imprenable sur les rivières Toronell et Fluvia, à presque 50 mètres en contrebas. L'emblématique église Sant Salvador, vestige du XIIIe siècle, trône fièrement au bout de l'éperon rocheux.\nAu cœur du Parc Naturel de la Zone Volcanique de la Garrotxa, Castellfollit de la Roca invite à l'exploration, entouré de près de 40 volcans éteints depuis 11 000 ans. Bien que paisible aujourd'hui, la région a tremblé sous l'impact de séismes, le dernier en date étant en 1902. Les amoureux de la randonnée viennent s'y ressourcer, avec ses paysages volcaniques qui n'ont rien à envier à ceux de notre Massif Central. Tout comme le Puy-de-Dôme, ces lieux offrent des panoramas à couper le souffle et une immersion dans une nature préservée. Laissez-vous emporter par l'histoire et la beauté de Castellfollit de la Roca – un voyage époustouflant garanti.",
-  "location": [],
-  "region": null,
+  "location": [
+   "巴塞罗那",
+   "德国",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Eloi_Omella",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -5457,7 +6099,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "巴塞罗那",
+   "barcelona",
+   "巴塞隆納",
+   "バルセロナ",
+   "巴塞羅那",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "西班牙"
+  ],
   "content_tags": [
    "悬崖小镇",
    "悬崖",
@@ -6092,8 +6747,13 @@
   "imageKey": "RapaNuiSunrise",
   "title": "Lever de soleil à Ahu Tongariki, parc national de Rapa Nui, île de Pâques, Chili",
   "desc": "Prêts pour une aventure inoubliable ? Embarquez avec nous pour Rapa Nui, également connue sous le nom d'île de Pâques, un joyau isolé au cœur de l'immensité chilienne. Célèbre pour ses statues emblématiques, les moai, cette île captivante offre des paysages à couper le souffle et une culture ancestrale.\nLes premiers habitants, les Polynésiens, auraient probablement débarqué sur l'île au VIIIe siècle, bien que cette date soit encore sujette à débat. Imaginez-vous contempler un lever de soleil spectaculaire, explorer des cratères volcaniques majestueux et parcourir de vastes prairies où se dressent ces impressionnants colosses de pierre.\nRapa Nui, signifiant « Grande Rapa » en référence à une île de Polynésie avec laquelle elle partage une ressemblance, est entourée de petites îles tout aussi fascinantes. L'île de Pâques doit son nom à Jacob Roggeveen, l'explorateur néerlandais qui la découvrit un dimanche de Pâques en 1722. Ne manquez pas l'occasion de découvrir cette île envoûtante ; elle vous accueille toute l'année avec son histoire riche et captivante !",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "荷兰",
+   "日本",
+   "智利"
+  ],
+  "region": "智利",
   "photographer": "Piriya Photography",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6101,7 +6761,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
   "content_tags": [
    "摩艾石像",
    "石雕像",
@@ -6270,8 +6943,11 @@
   "imageKey": "PiratePlayground",
   "title": "Aire de jeux du phare d'Obereversand à Dorum-Neufeld, Allemagne",
   "desc": "Oyez, matelots ! C'est la Journée mondiale du parler pirate ! Que vous habitiez près des côtes bretonnes ou que vous rêviez de naviguer sur les mers, enfilez votre chapeau à trois cornes ! Cette tradition naît d’une simple boutade entre amis, puis grâce à l'écrivain Dave Barry qui en a parlé en 2002, cette journée est devenue une fête populaire. Alors enfilez votre plus beau costume de flibustier et larguons les amarres vers des aventures dignes de Jean Lafitte ou Robert Surcouf. À l’abordage ! Et souvenez-vous : aujourd'hui, tout le monde peut lever l'ancre et prendre le large comme un vrai pirate, façon de parler !",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "INGO WAGNER",
   "gallery": "DPA/AFP via Getty Images",
   "copyrightlink": null,
@@ -6279,7 +6955,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "灯塔",
    "海盗船",
@@ -6518,8 +7205,12 @@
   "imageKey": "GiantSequoias",
   "title": "Séquoias géants, parc national de Sequoia, Californie, États-Unis",
   "desc": "Plongez au cœur de l'histoire vivante du Sequoia National Park, un véritable sanctuaire naturel créé en 1890 au sein de la majestueuse chaîne de la Sierra Nevada aux États-Unis. Ce parc est un trésor biologique qui abrite des séquoias géants, véritables colosses de la nature, dont certains ont plus de 2 200 ans. Imaginez-vous au pied de ces titans, aussi imposants que la tour Eiffel. Parmi eux, le célèbre Général Sherman, qui domine le paysage avec ses 83 mètres de hauteur et une circonférence de près de 11 mètres, se dresse comme un symbole de la grandeur et de la longévité de la nature. S'étendant sur 1 629 km², le parc est un écosystème foisonnant de vie, où cohabitent ours noirs, cerfs mulets et plus de 200 espèces d'oiseaux. Explorer ces terres, c'est renouer avec la nature dans toute sa splendeur, un spectacle grandiose qui invite à une profonde connexion avec la terre.",
-  "location": [],
-  "region": null,
+  "location": [
+   "新天鹅堡",
+   "加利福尼亚",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Galyna Andrushko",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -6527,7 +7218,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "新天鹅堡",
+   "neuschwanstein",
+   "新天鵝堡",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國"
+  ],
   "content_tags": [
    "巨杉",
    "树",
@@ -7388,7 +8092,9 @@
   "imageKey": "PitonFournaise",
   "title": "Volcan Formica Leo, Piton de la Fournaise, île de La Réunion",
   "desc": "Chaque année, en octobre, l'île de La Réunion devient le théâtre d'une aventure épique : le Grand Raid, également connu sous le nom de Diagonale des Fous. Cette course mythique de 48h, longue de 165 km avec 10 000 mètres de dénivelé positif, attire des coureurs du monde entier. Le parcours traverse des paysages à couper le souffle, dont le majestueux Piton de la Fournaise, l'un des volcans les plus actifs de la planète, en photo aujourd’hui.\nCe volcan, avec ses éruptions effusives régulières, offre un spectacle naturel impressionnant. Les coureurs, en passant à proximité de ce géant de feu, ressentent la puissance brute de la nature. Le volcan, qui a contribué à la formation de l'île il y a des millions d'années, est un symbole de la force et de la résilience, des qualités essentielles pour les participants du Grand Raid.\nParticiper à cette course, c'est non seulement un défi sportif, mais aussi une immersion dans un environnement unique où la nature règne en maître. La Diagonale des Fous est bien plus qu'une simple course, c'est une expérience inoubliable qui marie sport et découverte de la beauté sauvage de La Réunion.",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Stefan Kiefer",
   "gallery": "imageBROKER.com GmbH & Co. KG/Alamy Stock Photo",
@@ -7397,7 +8103,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山口",
    "火山",
@@ -7706,8 +8415,13 @@
   "imageKey": "MontBlancMassif",
   "title": "Massif du Mont-Blanc, Chamonix",
   "desc": "Saviez-vous que l'un des plus célèbres romans de la littérature gothique, Frankenstein, de Mary Shelley, est intimement lié au majestueux Mont-Blanc ? En 1816, alors qu’elle séjourne à Genève, Mary Shelley est inspirée par les paysages alpins pour écrire son chef-d'œuvre. Dans le roman, Victor Frankenstein, originaire de Genève, trouve refuge dans cette région, et la créature erre dans les Alpes, symbolisant la solitude et la puissance de la nature.\nAussi, peu de gens savent que Frankenstein est né d'un défi littéraire lancé par Lord Byron lors de « l'année sans été », causée par l’éruption du volcan Tambora en 1815. Cette catastrophe climatique a provoqué un refroidissement global et des tempêtes inhabituelles. Confinés à la villa Diodati près du lac Léman, Mary Shelley, Percy Shelley, Lord Byron, John Polidori et Claire Clairmont ont passé l'été à écrire des histoires de fantômes, conduisant Mary Shelley à imaginer Frankenstein.\nLe Mont-Blanc, avec son atmosphère à la fois sublime et menaçante, reflète parfaitement la dualité de la nature, thème central de l'œuvre.",
-  "location": [],
-  "region": null,
+  "location": [
+   "勃朗峰",
+   "阿尔卑斯",
+   "瑞士",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Simon Schöpf",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7715,7 +8429,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "勃朗峰",
+   "mont blanc",
+   "白朗峰",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "瑞士",
+   "switzerland",
+   "schweiz"
+  ],
   "content_tags": [
    "雪山",
    "云海",
@@ -7974,8 +8701,10 @@
   "imageKey": "VineyardsBlackForestFall",
   "title": "Vue aérienne de vignobles en automne, Varnhalt, Forêt-Noire, Allemagne",
   "desc": "La route des vins du Bade, une destination empreinte d’histoire et de paysages grandioses, traverse la région allemande de la Forêt-Noire. Avec ses 500 kilomètres de parcours, elle relie des villages renommés pour leurs traditions anciennes. À Varnhalt, village situé près de Baden-Baden, on trouve le domaine Nägelsförsterhof, en activité depuis 1588, témoin d'une longue tradition de viticulture.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Sabine Gerold",
   "gallery": "Amazing Aerial Agency",
   "copyrightlink": null,
@@ -7983,7 +8712,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "葡萄园",
    "农田",
@@ -8043,8 +8779,14 @@
   "imageKey": "YucatanBiosphere",
   "title": "Œufs de flamants roses des Caraïbes dans leur nid, Réserve de biosphère de Ría Lagartos, Yucatán, Mexique",
   "desc": "Aujourd'hui, à l'occasion de la Journée internationale des réserves de biosphère, nous mettons à l'honneur ces espaces naturels protégés, essentiels pour préserver la biodiversité. Saviez-vous qu'il existe plus de 759 réserves de biosphère réparties dans 136 pays à travers le monde ? Ces sites sont conçus pour protéger la nature tout en encourageant des pratiques durables.",
-  "location": [],
-  "region": null,
+  "location": [
+   "屋久岛",
+   "白山",
+   "澳大利亚",
+   "日本",
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "Claudio Contreras",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -8052,7 +8794,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican",
+   "屋久岛",
+   "yakushima",
+   "屋久島",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "澳大利亚",
+   "australia"
+  ],
   "content_tags": [
    "叠层石",
    "岩石",
@@ -8074,8 +8829,10 @@
   "imageKey": "CumbriaAutumn",
   "title": "Grasmere, Lake District, Cumbria, Angleterre",
   "desc": "Bienvenue à Grasmere en Angleterre, un lieu où poésie, histoire et nature se rencontrent. William Wordsworth, poète emblématique, l’a décrit comme « le plus bel endroit jamais découvert ». Ses maisons en ardoise vert bleuté et Dove Cottage, où il vécut de 1799 à 1808, rappellent une époque révolue. Le musée adjacent plonge les visiteurs dans l’univers du poète.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Thomas Molyneux",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8083,7 +8840,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "湖泊",
    "秋色",
@@ -8106,8 +8874,10 @@
   "imageKey": "YucatanFlamingos",
   "title": "Flamants des Caraïbes, péninsule du Yucatán, Mexique",
   "desc": "Avez-vous déjà vu des flamants roses s'envoler tous ensemble ? Si vous avez eu la chance de voyager dans des régions comme la péninsule mexicaine du Yucatán, vous avez peut-être aperçu des flamants des Caraïbes, aussi appelés flamants d'Amérique. Leur plumage rose vif est un vrai spectacle ! En groupe, on les appelle une « flamboyance », un terme parfait pour ces oiseaux majestueux. Le flamant des Caraïbes est le plus grand de sa famille en Amérique et le seul natif d'Amérique du Nord.",
-  "location": [],
-  "region": null,
+  "location": [
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "Claudio Contreras",
   "gallery": "NPL/Minden Pictures",
   "copyrightlink": null,
@@ -8115,7 +8885,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ],
   "content_tags": [
    "火烈鸟",
    "鸟",
@@ -8135,8 +8909,10 @@
   "imageKey": "ShiShiBeach",
   "title": "Shi Shi Beach, Parc national Olympique, Washington, États-Unis",
   "desc": "Envie de découvrir un trésor naturel exceptionnel ? Le parc national Olympique, situé dans l’État américain de Washington, est le lieu idéal pour une escapade inoubliable ! Fondé en 1938, ce parc s’étend sur près de 3 730 km² et vous transporte dans une nature sauvage et variée, des montagnes enneigées aux forêts humides et luxuriantes. Shi Shi Beach, avec son sable doré et ses impressionnantes formations rocheuses, est l’un des endroits les plus tranquilles du parc. Avec ses près de 1 000 km de sentiers, vous pourrez partir en randonnée jusqu’au spectaculaire Point of the Arches, où les colonnes de pierre surgissent de l’océan.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "T.M. Schultze",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -8144,7 +8920,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "海蚀柱",
    "礁石",
@@ -8215,8 +8998,10 @@
   "imageKey": "GlacialRivers",
   "title": "Vue aérienne de rivières glacières, Islande",
   "desc": "Bienvenue en Islande, la « terre de feu et de glace », où les rivières glaciaires sculptent le paysage depuis des millénaires. Alimentés par la fonte des glaciers géants comme le Vatnajökull, ces cours d'eau créent un spectacle naturel impressionnant. Avec ses 8 000 km², le Vatnajökull couvre environ 10 % de l'île, témoignant de l'ampleur des forces naturelles en jeu.",
-  "location": [],
-  "region": null,
+  "location": [
+   "冰岛"
+  ],
+  "region": "冰岛",
   "photographer": "rybarmarekk",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -8224,7 +9009,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "冰岛",
+   "iceland",
+   "アイスランド",
+   "冰島"
+  ],
   "content_tags": [
    "辫状河",
    "河流",
@@ -8248,8 +9038,13 @@
   "imageKey": "MoroccoMilkyWay",
   "title": "Voie lactée, Aït Benhaddou, Maroc",
   "desc": "Préparez-vous à vivre une nuit étoilée magique au Maroc ! Ici, l'absence de pollution lumineuse offre des conditions idéales pour l’observation des étoiles. Chaque nuit, le ciel s’illumine et la Voie lactée, cette large bande de lumière formée par des milliards d'étoiles, se déploie devant vous.",
-  "location": [],
-  "region": null,
+  "location": [
+   "马拉喀什",
+   "喀什",
+   "撒哈拉",
+   "摩洛哥"
+  ],
+  "region": "摩洛哥",
   "photographer": "Cavan Images",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8257,7 +9052,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "喀什",
+   "kashgar",
+   "摩洛哥",
+   "morocco",
+   "moroccan",
+   "モロッコ",
+   "撒哈拉",
+   "sahara",
+   "马拉喀什",
+   "marrakech",
+   "marrakesh",
+   "馬拉喀什"
+  ],
   "content_tags": [
    "银河",
    "星空",
@@ -8503,8 +9311,12 @@
   "imageKey": "FrieslandNetherlands",
   "title": "Le littoral de la mer des Wadden, Frise, Pays-Bas",
   "desc": "Vous avez toujours rêvé de marcher sur l'eau ? Direction la mer des Wadden ! Cette vaste étendue de plus de 480 kilomètres, entre les Pays-Bas, l'Allemagne et le Danemark, est un véritable trésor naturel. Classée au patrimoine mondial de l'UNESCO, elle révèle à marée basse un paysage fascinant de vasières où vous pouvez avancer sur le fond marin. C'est l'endroit idéal pour une expérience unique !",
-  "location": [],
-  "region": null,
+  "location": [
+   "丹麦",
+   "德国",
+   "荷兰"
+  ],
+  "region": "荷兰",
   "photographer": "Ron ter Burg",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -8512,7 +9324,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "丹麦",
+   "denmark",
+   "danish",
+   "丹麥",
+   "faroe islands",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "荷兰"
+  ],
   "content_tags": []
  },
  {
@@ -8523,8 +9348,14 @@
   "imageKey": "RedStag",
   "title": "Cerf élaphe dans la forêt calédonienne, Glen Affric, Highlands, Écosse",
   "desc": "La présence imposante du cerf élaphe, avec ses majestueux bois, ne laisse personne indifférent. Photographié ici dans les anciennes forêts de Glen Affric, une des vallées les plus pittoresques d’Écosse, ce cerf symbolise à la fois puissance et beauté sauvage. Espèce emblématique présente à travers l'Europe, l'Asie et l'Afrique du Nord, le cerf élaphe est le plus grand mammifère terrestre de Grande-Bretagne, jouant un rôle clé dans l'écosystème des pinèdes calédoniennes. Depuis les peintures rupestres jusqu'aux traditions de chasse médiévales, cet animal fascine l’imaginaire humain.",
-  "location": [],
-  "region": null,
+  "location": [
+   "苏格兰",
+   "柏林",
+   "英国",
+   "德国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Terry Whittaker",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -8532,7 +9363,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "柏林",
+   "berlin"
+  ],
   "content_tags": [
    "马鹿",
    "鹿",
@@ -8556,8 +9400,11 @@
   "imageKey": "PorthcawlLighthouse",
   "title": "Phare de Porthcawl, Pays de Galles, Royaume-Uni",
   "desc": "Depuis plus de 160 ans, le phare de Porthcawl se dresse fièrement face à l’océan Atlantique, bravant les tempêtes qui balayent les côtes galloises. Ce petit phare de 9 mètres, imaginé par James Walker, est habituellement immortalisé dans des clichés spectaculaires où il affronte les vagues. Situé le long d’une côte accidentée parsemée de criques, il a guidé d'innombrables marins depuis le XIXe siècle. Saviez-vous que c'était le dernier phare au Royaume-Uni à être alimenté par charbon et gaz ? Depuis 1997, il est électrique, mais n’a rien perdu de son charme d’autrefois !",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Leighton Collins",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -8565,7 +9412,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
   "content_tags": [
    "巨浪",
    "海浪",
@@ -8587,8 +9447,11 @@
   "imageKey": "TasmansArch",
   "title": "Arche de Tasmans Tasmanie, Australie",
   "desc": "Envie de vous immerger dans une nature sauvage préservée ? Le parc national de Tasman, situé en Tasmanie, une île au sud-est de l’Australie, vous ouvre ses portes sur plus de 106 kilomètres carrés de paysages côtiers spectaculaires. Ses falaises sculptées par la mer et son arche de Tasmans, formée par l’effondrement d’une immense grotte marine, en sont les joyaux. Ce lieu unique est aussi un refuge pour des espèces comme les phoques à fourrure australiens et les manchots pygmées. En parcourant ce parc, on ne peut s'empêcher de penser aux falaises d'Étretat, en Normandie, dont l’arche naturelle, la célèbre « porte d'Aval », a été sculptée par la Manche au fil des siècles. Ici, comme là-bas, la nature offre un spectacle inoubliable.",
-  "location": [],
-  "region": null,
+  "location": [
+   "塔斯马尼亚",
+   "澳大利亚"
+  ],
+  "region": "澳大利亚",
   "photographer": "Gary Bell",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -8596,7 +9459,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "塔斯马尼亚",
+   "tasmania",
+   "塔斯馬尼亞",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞"
+  ],
   "content_tags": [
    "塔斯曼拱门",
    "海蚀拱门",
@@ -8668,8 +9541,11 @@
   "imageKey": "LionCubs",
   "title": "Lionceaux au lever du soleil, Afrique du Sud",
   "desc": "Saviez-vous que la vie d’un lionceau dans la savane est une aventure pleine de défis dès ses premiers instants ? À la naissance, ces petits lions sont complètement aveugles et dépendent entièrement de leur mère.",
-  "location": [],
-  "region": null,
+  "location": [
+   "日光",
+   "南非"
+  ],
+  "region": "南非",
   "photographer": "Ruan Springorum",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8677,7 +9553,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南非",
+   "south africa",
+   "日光",
+   "nikko"
+  ],
   "content_tags": [
    "狮子",
    "狮子幼崽",
@@ -8699,8 +9580,10 @@
   "imageKey": "ZafraCastle",
   "title": "Château de Zafra, Guadalajara, Espagne",
   "desc": "Le château de Zafra, un trésor historique de la Sierra de Caldereros, est un exemple fascinant d'architecture médiévale. Édifié au XIIe siècle, ce château servait de bastion pour les royaumes chrétiens face à l'occupation mauresque. Bien que sa fonction militaire ait pris fin au XVe siècle, son héritage reste intact.",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Eduard Gene",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8708,7 +9591,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "城堡遗迹",
    "城堡",
@@ -8732,8 +9620,11 @@
   "imageKey": "FibonacciAloe",
   "title": "Aloès en spirale, île Kangaroo, Australie",
   "desc": "Le 23 novembre, jour de Fibonacci, rend hommage au mathématicien médiéval qui a popularisé le système de numérotation que nous utilisons aujourd'hui. Sa célèbre suite de nombres, débutant par 0, 1, 1, 2, 3, 5, 8…, repose sur une addition progressive des deux termes précédents. Les premiers chiffres (1, 1, 2, 3) correspondent d'ailleurs à la date du 23 novembre.",
-  "location": [],
-  "region": null,
+  "location": [
+   "澳大利亚",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Michael Melford",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -8741,7 +9632,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞"
+  ],
   "content_tags": [
    "螺旋芦荟",
    "芦荟",
@@ -8840,8 +9744,12 @@
   "imageKey": "TrulliGrove",
   "title": "Oliveraie, vallée d'Itria, Pouilles, Italie",
   "desc": "La Journée mondiale de l'olivier est une invitation à découvrir la richesse et la diversité de cet arbre emblématique. Dans la vallée d'Itria en photo aujourd’hui, au cœur des Pouilles en Italie, les oliveraies dessinent un paysage enchanteur. Cette région, connue pour ses trulli pittoresques et ses oliviers centenaires, est un véritable paradis pour les amateurs d'huile d'olive. L'olivier, cultivé depuis l'Antiquité, a été vénéré par les Grecs et les Romains pour ses multiples usages et ses vertus médicinales. Les oliviers de la vallée d'Itria, certains âgés de plus de mille ans, produisent une huile d'olive extra vierge d'une qualité inégalée.",
-  "location": [],
-  "region": null,
+  "location": [
+   "意大利",
+   "希腊",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Massimo Santi",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -8849,7 +9757,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "西班牙"
+  ],
   "content_tags": [
    "传统村落",
    "遗迹",
@@ -8900,8 +9821,13 @@
   "imageKey": "SemoisRiver",
   "title": "Tombeau des Géants en automne, Bouillon, Belgique",
   "desc": "Le Tombeau des Géants, à Bouillon en Belgique, est un site naturel captivant, niché dans un méandre de la rivière Semois. Selon la légende, un géant trévire, fuyant les Romains, aurait plongé du Rocher des Gattes, donnant son nom à cet endroit mythique. Aujourd'hui, ce site offre une vue spectaculaire sur la vallée et est classé patrimoine exceptionnel de Wallonie.",
-  "location": [],
-  "region": null,
+  "location": [
+   "三重",
+   "英国",
+   "日本",
+   "比利时"
+  ],
+  "region": "比利时",
   "photographer": "David Briard",
   "gallery": "Getty",
   "copyrightlink": null,
@@ -8909,7 +9835,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "三重",
+   "mie",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "比利时",
+   "belgium",
+   "belgian",
+   "比利時",
+   "英国",
+   "united kingdom"
+  ],
   "content_tags": [
    "河流",
    "河湾",
@@ -8931,8 +9870,10 @@
   "imageKey": "MtStMichel",
   "title": "Mont Saint-Michel, Normandie",
   "desc": "Le Mont Saint-Michel est le véritable emblème de la Normandie. Classé au patrimoine mondial de l'UNESCO depuis 1979, il fascine par son histoire. Fondée au XIe siècle, l’abbaye a connu de nombreux bouleversements, allant de la conquête anglaise de la Normandie à son rôle durant la guerre de Cent Ans. Ses ruelles pavées, bordées de maisons à colombages, nous plongent dans l'histoire.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Captain Skyhigh",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8940,7 +9881,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "圣米歇尔山",
    "修道院",
@@ -8966,8 +9913,13 @@
   "imageKey": "KilchurnAutumn",
   "title": "Reflet du château de Kilchurn à Loch Awe, Argyll et Bute, Écosse",
   "desc": "Aujourd'hui, l'Écosse célèbre sa Fête nationale, et quel meilleur hommage à son héritage que l'image majestueuse du château de Kilchurn, qui se reflète sur le Loch Awe. Ce château, construit par le clan Campbell au XVe siècle, incarne l'esprit écossais, résistant et empreint de mystères. Le lac, calme comme un miroir, reflète chaque pierre et chaque ombre, rendant hommage aux récits des batailles qui ont façonné cette terre.",
-  "location": [],
-  "region": null,
+  "location": [
+   "苏格兰",
+   "英国",
+   "罗马尼亚",
+   "希腊"
+  ],
+  "region": "希腊",
   "photographer": "Tom Mackie",
   "gallery": "plainpicture",
   "copyrightlink": null,
@@ -8975,7 +9927,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ",
+   "苏格兰",
+   "scotland",
+   "scottish",
+   "蘇格蘭",
+   "英国",
+   "united kingdom",
+   "britain"
+  ],
   "content_tags": [
    "基尔丘恩城堡",
    "古堡",
@@ -9075,8 +10040,10 @@
   "imageKey": "JaipurFort",
   "title": "Sattais Katcheri, Fort d'Amber, Amer, Jaipur, Rajasthan, Inde",
   "desc": "Découvrez l’impressionnante Sattais Katcheri, ou « cour des 27 colonnes », nichée au sein du fort d’Amber, à environ 11 km de Jaipur. Érigé en 1592 pour les Maharajas, ce fort indien est un bijou architectural mariant les styles hindou, rajput et moghol, construit en grès jaune et rose et en marbre blanc. Cette beauté évoque des lieux patrimoniaux comme la citadelle d'Halifax, où l'architecture se fond dans l'histoire. En soirée, un spectacle de son et lumière révèle l’histoire du fort, ajoutant une touche immersive à ce site inscrit au patrimoine mondial de l’UNESCO. Un incontournable pour les amateurs de patrimoine et d’histoire, où l’on découvre un morceau de l’Inde royale, avec la même admiration que pour nos propres sites historiques.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "Yury Taranik",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -9084,7 +10051,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "宫殿",
    "建筑",
@@ -9143,8 +10114,11 @@
   "imageKey": "MonoTufa",
   "title": "Cheminées de fées sur le lac Mono, Californie, États-Unis",
   "desc": "Aux États-Unis, le lac Mono en Californie cache des trésors de nature surprenants ! Ces cheminées de fées, érigées au fil des siècles, sont le résultat d’un étonnant mélange entre l’eau douce des rivières riches en calcium et l’eau salée et alcaline du lac. Ce site désertique, qui n’a pas de sortie naturelle, abrite aussi une vie incroyable : des millions de petites crevettes et mouches alcalines attirent des oiseaux migrateurs venus des quatre coins du continent. Inscrit en réserve naturelle en 1981, le lac Mono est un endroit magique où chaque saison offre une vue différente sur ce paysage minéral et vivant.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Susanna Patras",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -9152,7 +10126,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "钙华岩",
    "岩石",
@@ -9178,8 +10163,11 @@
   "imageKey": "ColmarHoliday",
   "title": "Maisons traditionnelles alsaciennes à colombages et rivière Lauch Colmar, Alsace",
   "desc": "Chaque hiver, Colmar se transforme en un véritable tableau de Noël. Son marché, vieux de plusieurs siècles, fait partie des traditions les plus chères aux Alsaciens. Depuis le XVIIe siècle, l’Alsace a su préserver l’art du marché de Noël et Colmar en est l’un des joyaux. En arpentant les rues de cette cité médiévale, on découvre la place Rapp illuminée, avec sa patinoire et ses échoppes regorgeant de créations artisanales. Chaque allée révèle des trésors : des décorations faites main aux gourmandises locales, un hommage à l’artisanat alsacien.",
-  "location": [],
-  "region": null,
+  "location": [
+   "威尼斯",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "KavalenkavaVolha",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9187,7 +10175,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "ヴェネツィア",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "半木结构房屋",
    "建筑",
@@ -9297,8 +10296,13 @@
   "imageKey": "GuanacosChile",
   "title": "Guanacos, parc national Torres del Paine, Chili",
   "desc": "Les guanacos, majestueux camélidés des Andes, sont des cousins proches des lamas et des alpagas, que l’on retrouve aussi bien dans la faune sauvage du Chili qu’en élevage domestique. Dans le parc Torres del Paine, ces animaux évoluent librement dans des paysages époustouflants, contribuant à préserver l’équilibre écologique de la région. Quant aux lamas, ils ont depuis longtemps un rôle essentiel auprès des populations andines, que ce soit pour le transport ou pour leur laine, un matériau robuste et prisé pour les vêtements.",
-  "location": [],
-  "region": null,
+  "location": [
+   "马丘比丘",
+   "巴塔哥尼亚",
+   "美国",
+   "智利"
+  ],
+  "region": "智利",
   "photographer": "Floris van Breugel",
   "gallery": "NPL/Minden Pictures",
   "copyrightlink": null,
@@ -9306,7 +10310,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "巴塔哥尼亚",
+   "patagonia",
+   "巴塔哥尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ",
+   "马丘比丘",
+   "machu picchu",
+   "馬丘比丘"
+  ],
   "content_tags": [
    "原驼",
    "野生动物",
@@ -9328,8 +10345,12 @@
   "imageKey": "CornwallSnow",
   "title": "Le sentier côtier de Cornouailles recouvert de neige, Land's End, Cornouailles, Angleterre",
   "desc": "Envie d’une escapade sauvage et inspirante ? Land’s End, le point le plus à l’ouest de l’Angleterre, est l’endroit rêvé pour une immersion totale dans la nature. Ici, les falaises abruptes, bordées de bruyères et caressées par l’Atlantique, révèlent des panoramas grandioses. Avec ses sentiers de randonnée mythiques comme le South West Coast Path, Land’s End est un paradis pour les amoureux du plein air. Laissez-vous porter par la beauté des lieux, où chaque recoin raconte des histoires légendaires ! Un voyage aux confins de la Cornouailles, c'est un souffle d’air pur et une vraie bouffée d’évasion.",
-  "location": [],
-  "region": null,
+  "location": [
+   "伦敦",
+   "英国",
+   "希腊"
+  ],
+  "region": "希腊",
   "photographer": "Josef FitzGerald-Patrick",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9337,7 +10358,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "伦敦",
+   "london",
+   "ロンドン",
+   "倫敦",
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ",
+   "英国",
+   "united kingdom",
+   "britain"
+  ],
   "content_tags": [
    "海蚀拱",
    "悬崖",
@@ -9565,7 +10599,9 @@
   "imageKey": "SalzburgSnow",
   "title": "Salzbourg, Autriche",
   "desc": "Si vous rêvez de vivre Noël dans une ambiance authentique, Salzbourg est la destination idéale. Située au pied des Alpes autrichiennes, cette ville historique célèbre les fêtes avec une intensité unique. Son marché de Noël, parmi les plus anciens d’Europe, se déploie autour de la cathédrale, offrant des objets artisanaux, des biscuits au gingembre et une atmosphère chaleureuse sous les guirlandes lumineuses. Musicalement, Salzbourg brille avec l’Adventssingen, des concerts dédiés à Noël, et c’est dans ses environs que « Douce Nuit » a été chantée pour la première fois en 1818.",
-  "location": [],
+  "location": [
+   "萨尔茨堡"
+  ],
   "region": null,
   "photographer": "bluejayphoto",
   "gallery": "Getty Images",
@@ -9574,7 +10610,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "萨尔茨堡",
+   "salzburg",
+   "薩爾茨堡"
+  ],
   "content_tags": [
    "萨尔茨堡要塞",
    "城堡",
@@ -9601,8 +10641,11 @@
   "imageKey": "ReinefjordenNorway",
   "title": "Cabanes traditionnelles de pêcheurs sur le rivage de Reinefjorden, Norvège",
   "desc": "Les cabanes traditionnelles de pêcheurs, ou rorbuer, sont emblématiques de Reinefjorden, un fjord pittoresque de Norvège. Reine, un village de pêcheurs de 300 habitants, est chargé d’histoire. Depuis 1775, il a été un poste de commerce, avant de devenir une destination touristique prisée. Ces cabanes en bois, souvent rouges, étaient autrefois essentielles pour les pêcheurs qui travaillaient sans relâche pendant la saison de la morue.",
-  "location": [],
-  "region": null,
+  "location": [
+   "罗弗敦",
+   "挪威"
+  ],
+  "region": "挪威",
   "photographer": "Pilat666",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9610,7 +10653,16 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "挪威",
+   "norway",
+   "norsk",
+   "norwegian",
+   "ノルウェー",
+   "罗弗敦",
+   "lofoten",
+   "羅弗敦"
+  ],
   "content_tags": [
    "红色小屋",
    "木屋",
@@ -9688,8 +10740,10 @@
   "imageKey": "SibiuRomania",
   "title": "Marché de Noël de Sibiu, Roumanie",
   "desc": "Imaginez un décor féerique où la magie de Noël rencontre l’histoire d’un lieu millénaire : bienvenue au marché de Noël de Sibiu en Roumanie ! Chaque hiver, la Grande place s’illumine d’une myriade de lumières, transformant cette ville médiévale en un conte de fées.",
-  "location": [],
-  "region": null,
+  "location": [
+   "罗马尼亚"
+  ],
+  "region": "罗马尼亚",
   "photographer": "Calin Stan",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -9697,7 +10751,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马尼亚",
+   "romania"
+  ],
   "content_tags": [
    "圣诞集市",
    "城市广场",
@@ -9723,8 +10780,11 @@
   "imageKey": "SantaClausVillage",
   "title": "Village du Père Noël à Rovaniemi, Laponie, Finlande",
   "desc": "Le village du Père Noël à Rovaniemi, en Finlande, est un endroit magique à découvrir, surtout pendant les fêtes de fin d’année. Situé sur le cercle polaire arctique, ce lieu accueille chaque année des visiteurs curieux de rencontrer le célèbre Père Noël. Le point fort ? La ligne symbolique du cercle polaire que vous pouvez traverser, immortalisant votre aventure dans l’Arctique. Ne manquez pas le bureau de poste du Père Noël, où vous pouvez envoyer des lettres marquées du timbre officiel.",
-  "location": [],
-  "region": null,
+  "location": [
+   "北极",
+   "芬兰"
+  ],
+  "region": "芬兰",
   "photographer": "Smelov",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -9732,7 +10792,15 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "北极",
+   "arctic",
+   "北極",
+   "芬兰",
+   "finland",
+   "finnish",
+   "芬蘭"
+  ],
   "content_tags": [
    "雪屋",
    "木屋",
@@ -9760,8 +10828,10 @@
   "imageKey": "SolsticeHalo",
   "title": "Halo autour du soleil, Monts Métallifères, Saxe, Allemagne",
   "desc": "Le solstice d’hiver dans les Monts Métallifères, en Allemagne, est une expérience unique, mêlant nature et traditions. C’est à cette date, la plus courte de l’année, que vous pourriez apercevoir un halo solaire, ce cercle lumineux formé par la lumière réfractée à travers les cristaux de glace en altitude. Un spectacle rare et impressionnant ! Ce phénomène s’inscrit dans une région riche d’histoire. Les Monts Métallifères, connus pour leur patrimoine minier classé par l’UNESCO, célèbrent depuis des siècles le solstice comme un moment clé du cycle annuel. Les anciens mineurs voyaient dans ce jour un présage de lumière et de renouveau, une tradition encore vivante dans les villages locaux.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Martin Ruegner",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9769,7 +10839,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "日晕",
    "太阳",
@@ -9793,8 +10870,11 @@
   "imageKey": "CrystalPier",
   "title": "Arbre de Noël à Crystal Pier, Pacific Beach, San Diego, Californie",
   "desc": "Chaque année, l’arbre de Noël de Crystal Pier, à San Diego, en Californie, illumine la côte Pacifique avec une touche de magie unique. Situé au bout d’un emblématique ponton en bois, cet arbre scintillant semble flotter au-dessus de l’océan, offrant un spectacle captivant à ses visiteurs.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "SamAntonioPhotography",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9802,7 +10882,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "栈桥",
    "桥",
@@ -9905,8 +10996,10 @@
   "imageKey": "ReindeerTrio",
   "title": "Rennes du Svalbard, parc national de Van Mijenfjorden, Norvège",
   "desc": "Le jour de Noël, célébré à travers le monde, marie traditions religieuses et contes légendaires. Parmi les figures emblématiques, les rennes du Père Noël captivent l’imaginaire collectif. Mais saviez-vous que les véritables rennes, comme ceux du Svalbard en Norvège, sont aussi des symboles de résilience ?",
-  "location": [],
-  "region": null,
+  "location": [
+   "挪威"
+  ],
+  "region": "挪威",
   "photographer": "Martin Zwick",
   "gallery": "REDA&CO/Universal Images Group via Getty Images",
   "copyrightlink": null,
@@ -9914,7 +11007,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "挪威",
+   "norway",
+   "norsk",
+   "norwegian",
+   "ノルウェー"
+  ],
   "content_tags": [
    "驯鹿",
    "鹿",
@@ -9973,8 +11072,11 @@
   "imageKey": "LakeBledSnow",
   "title": "Lac de Bled, Slovénie",
   "desc": "Au cœur des Alpes juliennes, le lac de Bled évoque un conte hivernal. Pourtant, son histoire est bien réelle. Né il y a 14 000 ans à la fin de la dernière glaciation, il a vu défiler des siècles de traditions. En son centre, l'île abrite une église dédiée à l'Assomption, dont les premières traces remontent au IXᵉ siècle. La cloche légendaire, coulée au XVe siècle, est réputée pour exaucer les vœux des cœurs sincères. Surplombant ce joyau, le château de Bled, mentionné pour la première fois en 1011, veille depuis plus de mille ans. Construit par les évêques de Brixen, il cache une ancienne imprimerie où sont reproduites des gravures médiévales.",
-  "location": [],
-  "region": null,
+  "location": [
+   "阿尔卑斯",
+   "斯洛文尼亚"
+  ],
+  "region": "斯洛文尼亚",
   "photographer": "Kesu01",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9982,7 +11084,16 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯",
+   "斯洛文尼亚",
+   "slovenia"
+  ],
   "content_tags": [
    "雪景",
    "冬日村庄",
@@ -9997,8 +11108,13 @@
   "imageKey": "CoralTurtle",
   "title": "Tortue verte, océan Pacifique, Nouvelle-Calédonie",
   "desc": "Avez-vous déjà croisé une tortue verte ? Ces fascinants reptiles marins, qui naviguent dans les eaux tropicales, sont bien plus que des créatures majestueuses. Avec une carapace mesurant en moyenne 115 cm et un poids compris entre 80 et 130 kg, elles jouent un rôle clé dans les océans en préservant l’équilibre des herbiers marins, essentiels pour la biodiversité.",
-  "location": [],
-  "region": null,
+  "location": [
+   "苏格兰",
+   "英国",
+   "法国",
+   "爱尔兰"
+  ],
+  "region": "爱尔兰",
   "photographer": "Damsea",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -10006,7 +11122,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "爱尔兰",
+   "ireland",
+   "irish",
+   "愛爾蘭",
+   "苏格兰",
+   "scotland",
+   "scottish"
+  ],
   "content_tags": [
    "海龟",
    "珊瑚",
@@ -10025,8 +11154,11 @@
   "imageKey": "BorobudurBells",
   "title": "Temple de Borobudur, Java, Indonésie",
   "desc": "Avez-vous déjà rêvé de voyager dans le temps ? Une visite à Borobudur, en Indonésie, vous plonge au cœur du IXᵉ siècle. Ce temple bouddhiste monumental, situé au milieu des volcans et des rizières de Java, est une merveille architecturale. Avec ses neuf niveaux et ses milliers de sculptures, il dévoile l'histoire et la spiritualité d'une époque révolue. L'architecture en forme de mandala symbolise l'univers bouddhiste, avec 504 statues de Bouddha et 2 672 reliefs racontant les enseignements du Bouddha et les récits du Mahayana.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "印度尼西亚"
+  ],
+  "region": "印度尼西亚",
   "photographer": "Robertharding",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -10034,7 +11166,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian",
+   "印度尼西亞",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
   "content_tags": [
    "婆罗浮屠",
    "佛塔",
@@ -10062,8 +11207,11 @@
   "imageKey": "MountFieldNP",
   "title": "Eucalyptus coccifera et pandanus, parc national de Mount Field, Tasmanie, Australie",
   "desc": "Vous cherchez un endroit magique pour vous ressourcer ? Le parc national de Mount Field, en Tasmanie, est l’endroit rêvé. Ce paradis naturel, inscrit au patrimoine mondial, offre des paysages à couper le souffle, entre forêts luxuriantes et sommets enneigés. Les cascades de Russell Falls, parmi les plus belles d’Australie, sont un véritable spectacle. Mais le parc n’est pas seulement connu pour ses paysages : il abrite aussi une faune et une flore exceptionnelles.",
-  "location": [],
-  "region": null,
+  "location": [
+   "塔斯马尼亚",
+   "澳大利亚"
+  ],
+  "region": "澳大利亚",
   "photographer": "Whitworth Images",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -10071,7 +11219,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "塔斯马尼亚",
+   "tasmania",
+   "塔斯馬尼亞",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞"
+  ],
   "content_tags": [
    "潘达尼",
    "灌木",

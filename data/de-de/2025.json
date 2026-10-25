@@ -234,8 +234,11 @@
   "imageKey": "RavennaBasilica",
   "title": "Überschwemmte Krypta, Basilika von San Francesco, Ravenna, Italien",
   "desc": "Die Basilika von San Francesco in Ravenna, Italien, ist ein bedeutendes historisches Bauwerk, das zwischen dem 9. und 10. Jahrhundert erbaut wurde. Ursprünglich als Kirche der Apostel bekannt, wurde sie später den Heiligen Petrus und Paulus gewidmet. Im 13. Jahrhundert übernahmen die Franziskaner die Kirche und widmeten sie dem Heiligen Franz von Assisi. Besonders bemerkenswert ist die Krypta, die aufgrund von Bodensenkungen unter Wasser steht und wunderschöne Mosaike aus der ursprünglichen Kirche zeigt. Die Basilika ist auch bekannt für die Beisetzung von Dante Alighieri, dessen Grab sich in unmittelbarer Nähe befindet. Ein Besuch dieser Basilika ist eine Reise in die reiche Geschichte Ravennas.\nDie Schönheit der Natur in Ravenna und der Region Emilia-Romagna ist atemberaubend. Von den sanften Hügeln bis zu den malerischen Küsten bietet die Landschaft eine Vielfalt an Farben und Formen, die jeden Besucher verzaubert. Die Region ist auch für ihre reiche kulinarische Tradition bekannt. Typische Gerichte wie Piadina, Cappelletti und Tagliatelle al Ragù (Bolognese) sind ein wahrer Genuss und spiegeln die Kultur und Geschichte der Region wider. Ein Besuch in Ravenna ist nicht nur eine Reise in die Natur, sondern auch ein kulinarisches Erlebnis.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Andrea Pucci",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -243,7 +246,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "地下蓄水池",
    "石柱",
@@ -565,8 +580,10 @@
   "imageKey": "CadizSpain",
   "title": "Zahara de la Sierra, Cádiz, Spanien",
   "desc": "Willkommen in einem der schönsten weißen Dörfer in Andalusien, Spanien! Wir befinden uns heute in Zahara de la Sierra, in den Hügeln von Cádiz. Dieses charmante Dorf bietet die perfekte Mischung aus Geschichte und Natur im Süden der Iberischen Halbinsel. Hoch oben auf einem felsigen Hügel gelegen, bietet Zahara einen fantastischen Blick auf den türkisfarbenen Zahara-El Gastor-Stausee und den üppigen Naturpark Sierra de Grazalema, ein UNESCO-Biosphärenreservat seit 1977. Die maurischen Burgruinen und der Turm aus dem 15. Jahrhundert erzählen von seiner Geschichte als mittelalterliche Festung. Spazieren Sie durch die engen Gassen mit ihren blumengeschmückten Balkonen, besuchen Sie die malerische Kirche Santa María de la Mesa oder entspannen Sie einfach und genießen Sie die atemberaubende Aussicht.\nÄhnlich wie Zahara de la Sierra bieten auch die deutschen Fachwerkstädte wie Quedlinburg und Goslar im Harz eine reiche Mischung aus Geschichte, Kultur und natürlicher Schönheit. Diese Städte sind bekannt für ihre gut erhaltenen mittelalterlichen Gebäude und malerischen Straßen, die eine ähnliche Atmosphäre wie die weißen Dörfer in Spanien schaffen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "SEN LI",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -574,7 +591,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "水塔",
    "塔",
@@ -858,8 +880,14 @@
   "imageKey": "DutchSquirrel",
   "title": "Eurasisches Eichhörnchen mit Fliegenpilz",
   "desc": "Wussten Sie, dass Eichhörnchen oft vergessen, wo sie ihre Nüsse vergraben? Jeden Herbst vergraben sie fast 10.000 Nüsse und Samen für den Winter und helfen so, neue Bäume zu pflanzen. Tatsächlich sind sie für die Verbreitung und Keimung vieler Baumarten entscheidend. Das heutige Bild zeigt ein Eurasisches Eichhörnchen, das in den Niederlanden fotografiert wurde. Diese flinken Tiere sind die wahren Stars des Waldes, immer bereit für ein neues Abenteuer.\nAuch in der deutschen Kultur haben Eichhörnchen eine besondere Bedeutung. Als Symbol für Voraussicht und Fleiß beim Sammeln von Nahrung für den Winter haben sie über Jahrhunderte die Fantasie deutscher Künstler beflügelt. Das „Portät einer Dame mit Eichhörnchen und Star“ von Hans Holbein dem Jüngeren aus der Renaissance zeigt eine Frau mit einem Eichhörnchen und verbindet Realismus und Symbolik.",
-  "location": [],
-  "region": null,
+  "location": [
+   "北海道",
+   "丹麦",
+   "荷兰",
+   "葡萄牙",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Edwin Giesbers",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -867,7 +895,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "丹麦",
+   "denmark",
+   "danish",
+   "丹麥",
+   "faroe islands",
+   "北海道",
+   "hokkaido",
+   "ほっかいどう",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "红松鼠",
    "松鼠",
@@ -1389,8 +1430,10 @@
   "imageKey": "WaddenSeaBiosphereReserve",
   "title": "Westerhever, Nationalpark Schleswig-Holsteinisches Wattenmeer",
   "desc": "Wussten Sie, dass wir am 2. Februar den Welttag der Feuchtgebiete feiern? Dieser Tag soll auf die Bedeutung dieser einzigartigen Lebensräume aufmerksam machen. Feuchtgebiete wie Sümpfe, Moore, Flussauen oder Mangrovenwälder sind wahre Schätze der Natur. Sie bieten nicht nur Lebensraum für zahlreiche Tier- und Pflanzenarten, sondern spielen auch eine entscheidende Rolle für unser Klima. Als natürliche „Schwämme“ speichern sie Wasser, schützen vor Überschwemmungen und filtern Schadstoffe, was sie zu wichtigen Ressourcen für sauberes Wasser macht. Feuchtgebiete sind jedoch nicht nur ökologisch wertvoll, sondern auch Orte von außergewöhnlicher Schönheit. Der Welttag der Feuchtgebiete lädt dazu ein, diese faszinierenden Ökosysteme besser zu verstehen und sich für ihren Erhalt einzusetzen.\nAuch der Nationalpark Schleswig-Holsteinisches Wattenmeer, Teil des UNESCO-Weltnaturerbes, gehört zu diesen wertvollen Ökosystemen und ist ein wahres Naturparadies an der deutschen Nordseeküste. Mit einer Fläche von 4.410 Quadratkilometern ist er zudem der größte Nationalpark Deutschlands. Hier können Besucher die faszinierende Welt der Gezeiten hautnah erleben und eine einzigartige Landschaft entdecken, die Heimat für zahlreiche Vogelarten, Fische und Meeressäuger ist.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "3quarks",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1398,7 +1441,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "海滩",
    "沙洲",
@@ -1564,8 +1614,12 @@
   "imageKey": "WhararikiBeach",
   "title": "Archway Islands, Wharariki Beach, Südinsel, Neuseeland",
   "desc": "Heute, am 6. Februar, ist der „Waitangi-Tag“, ein Feiertag in Neuseeland, der an die Unterzeichnung des Vertrags von Waitangi im Jahr 1840 erinnert, der zwischen Vertretern der britischen Krone und Māori-Häuptlingen geschlossen wurde und als Gründungsdokument der Nation gilt. Die Unterzeichnung fand in Waitangi in der Bay of Islands statt. Der Tag wird mit offiziellen Zeremonien, kulturellen Darbietungen und Reflexionen über die Beziehungen zwischen dem indigenen Volk der Māori und den europäischstämmigen Neuseeländern begangen. „Aotearoa“ ist die Māori-Bezeichnung für Neuseeland und bedeutet „Land der langen weißen Wolke“. Ursprünglich bezog sich der Name nur auf die Nordinsel, wird aber heute für das gesamte Land verwendet.\nIn einer Zeit zunehmender Globalisierung ist die Bewahrung lokaler Völker und Traditionen von entscheidender Bedeutung. Die Kultur der Māori mit ihren alten Bräuchen, Geschichten und Werten ist ein unschätzbarer Schatz, der verloren zu gehen droht, wenn er nicht geschützt wird. Die Feierlichkeiten zum Waitangi-Tag erinnern uns daran, wie wichtig es ist, die Traditionen und die Geschichte aller indigenen Völker lebendig zu halten. Diese Kulturen bieten einen Reichtum an Wissen und einzigartigen Perspektiven, die die gesamte Menschheit bereichern können. Die Bewahrung lokaler Traditionen und Geschichten ehrt nicht nur die Vergangenheit, sondern sichert auch eine vielfältigere und kulturell reichere Zukunft.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "新西兰",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Francesco Vaninetti",
   "gallery": "AWL/plainpicture",
   "copyrightlink": null,
@@ -1573,7 +1627,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "新西兰",
+   "new zealand",
+   "紐西蘭",
+   "ニュージーランド",
+   "新西蘭",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "英国",
+   "united kingdom"
+  ],
   "content_tags": [
    "瓦拉里基海滩",
    "海蚀拱门",
@@ -1596,8 +1663,10 @@
   "imageKey": "BlueNorway",
   "title": "Blaue Stunde in Trondheim, Norwegen",
   "desc": "Der Winter ist in Norwegen ein einzigartiges Erlebnis. Auch wenn die Sonne einige Wochen nicht zu sehen ist, hat diese Jahreszeit etwas Magisches. Besonders beeindruckend ist die blaue Stunde, die, wie auf unserem heutigen Foto zu sehen, die Stadt Trondheim in ein atemberaubendes, glasiges blaues Leuchten taucht. Trondheim, die einstige Hauptstadt und heute drittgrößte Stadt des Landes, gilt als ein wahres Juwel des Nordens und ein bedeutendes Zentrum für Tradition und Innovation. Die idyllische Lage am malerischen Trondheimfjord, die reiche Kulturszene sowie imposante Bauwerke ziehen Besucher aus aller Welt in die Universitätsstadt.\nÄhnlich wie Trondheim kann auch die Hansestadt Lübeck auf eine lange Geschichte zurückblicken. Die nordische Schönheit, auch bekannt als „Königin der Hanse“ war einst ein bedeutendes Handelszentrum. Ihren ursprünglichen Charme hat die Hafenstadt bis heute bewahrt. Die Altstadt von Lübeck, ein UNESCO-Weltkulturerbe, liegt malerisch auf einer Insel und begeistert mit ihrer mittelalterlichen Architektur. Neben roten Backstein-Denkmälern und verwinkelten Altstadtgassen ist die Stadt bekannt für ihr Marzipan, das weltweit Kultstatus erlangt hat.",
-  "location": [],
-  "region": null,
+  "location": [
+   "挪威"
+  ],
+  "region": "挪威",
   "photographer": "Jeanny Mueller",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -1605,7 +1674,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "挪威",
+   "norway",
+   "norsk",
+   "norwegian",
+   "ノルウェー"
+  ],
   "content_tags": [
    "彩色木屋",
    "建筑",
@@ -1970,8 +2045,13 @@
   "imageKey": "HumpbackMother",
   "title": "Buckelwal-Mutter und Kalb, Tonga",
   "desc": "Mit unserem heutigen Bild einer Buckelwalmutter mit ihrem Jungen vor Tonga feiern wir den Welttag der Wale. Diese faszinierenden Meeressäuger zählen zu den größten Tieren der Erde. Der Blauwal, das größte Tier, das jemals gelebt hat, kann bis zu 30 Meter lang und über 180 Tonnen schwer werden. Eine interessante Tatsache über Wale ist, dass sie Lieder singen können, die sich über Hunderte von Kilometern durch das Wasser tragen. Diese Gesänge können bis zu 20 Minuten dauern und werden oft wiederholt.\nEine der führenden deutschen Wissenschaftlerinnen auf dem Gebiet der Walforschung ist Dr. Heike Vester. Sie ist Meeresbiologin und Gründerin von Ocean Sounds, einer Organisation, die sich der Erforschung und dem Schutz von Walen widmet. Interessanterweise hat Vester innovative Techniken zur Aufzeichnung und Analyse von Walgeräuschen entwickelt, die zu bedeutenden Fortschritten beim Verständnis der komplexen Kommunikationssysteme der Wale geführt haben. Ihre Forschung hat wesentlich zum Schutz dieser majestätischen Tiere und ihrer natürlichen Lebensräume beigetragen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "夏威夷",
+   "阿拉斯加",
+   "日本",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Chase Dekker",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -1979,7 +2059,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "ハワイ",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "法国",
+   "france",
+   "français",
+   "フランス"
+  ],
   "content_tags": [
    "座头鲸",
    "鲸鱼",
@@ -2293,8 +2386,12 @@
   "imageKey": "GiantCuttlefish",
   "title": "Gruppe von Riesensepien im Spencer-Golf vor Whyalla, Südaustralien",
   "desc": "Das heutige Bild zeigt eine Gruppe von Riesensepien (Sepia apama), die für ihre faszinierende Fähigkeit bekannt sind, ihr Aussehen blitzschnell zu verändern. Die Riesensepia lebt in den gemäßigten und subtropischen Gewässern Australiens. Sie erreicht eine beeindruckende Mantellänge von 50 Zentimetern und eine Gesamtlänge von bis zu einem Meter, wenn ihre Tentakel vollständig ausgestreckt sind. Mit einem Gewicht von über 10 Kilogramm ist dieses Schwergewicht der Meere ebenso faszinierend wie beeindruckend. Wie alle Sepien hat auch diese Art acht Arme, zwei Fangarme, drei Herzen und blaues Blut.\nObwohl die Riesensepia und der Gewöhnliche Tintenfisch (Sepia officinalis) in verschiedenen Regionen der Welt leben, teilen beide faszinierende Eigenschaften. Der Gewöhnliche Tintenfisch, der an den deutschen Küsten zu finden ist, ist kleiner, aber ebenso beeindruckend mit ihrer Fähigkeit, dank der Chromatophoren die Farbe zu wechseln. Beide Arten haben drei Herzen, blaues Blut und hochentwickelte Augen, die die Polarisation des Lichts erkennen können.",
-  "location": [],
-  "region": null,
+  "location": [
+   "塔斯马尼亚",
+   "澳大利亚",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Gary Bell",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -2302,7 +2399,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "塔斯马尼亚",
+   "tasmania",
+   "塔斯馬尼亞",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲"
+  ],
   "content_tags": [
    "墨鱼",
    "乌贼",
@@ -2412,7 +2522,9 @@
   "imageKey": "CologneNight",
   "title": "Hohenzollernbrücke mit dem Kölner Dom und dem Rhein bei Sonnenuntergang in Köln",
   "desc": "Der Straßenkarneval ist ein bekanntes rheinisches Volksfest mit langjähriger Tradition. Besonders die auf unserem heutigen Bild abgebildete Rheinmetropole Köln, die bekannt für ihren beeindruckenden Dom ist, gilt als wahre Hochburg der Narrenzeit. Mit der Weiberfastnacht fällt in Köln der offizielle Startschuss für den Höhepunkt des Karnevals - ein Fest, das die Straßen in ein Meer aus Farben, Musik und vor allem Lebensfreude verwandelt. Jedes Jahr am Donnerstag vor Rosenmontag erobern die Frauen die Straßen und schneiden den Männern symbolisch die Krawatten ab - ein Zeichen von Macht und Spaß. Die Straßen der Karnevalshochburg füllen sich mit farbenfrohen Kostümen, Gesang und Gelächter.\nVon den Altstadtgassen bis hin zu den großen Plätzen - überall wird ausgelassen gefeiert und getanzt. Weiberfastnacht ist jedoch nicht nur ein fröhliches Fest, sondern auch ein Stück kölsches Brauchtum, das die Gemeinschaft stärkt. Die Karnevalssaison, die sogenannte „fünfte Jahreszeit“, begeistert nicht nur Einheimische, sondern lockt jährlich Millionen Menschen in die Domstadt, die mit den kölschen Jecken bis in die späte Nacht hinein feiern. Kölle Alaaf!",
-  "location": [],
+  "location": [
+   "科隆"
+  ],
   "region": null,
   "photographer": "Prasit Rodphan",
   "gallery": "Alamy Stock Foto",
@@ -2421,7 +2533,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "科隆",
+   "cologne",
+   "köln"
+  ],
   "content_tags": [
    "科隆大教堂",
    "霍亨索伦桥",
@@ -2585,8 +2701,11 @@
   "imageKey": "HornbillPair",
   "title": "Südliche Gelbschnabeltoko im Kruger-Nationalpark, Südafrika",
   "desc": "In dem heutigen Bild ist der Südliche Gelbschnabeltoko zu sehen. Dieser faszinierende Vogel ist bekannt für seinen markanten gelben Schnabel und seine lebhaften Farben. Er lebt hauptsächlich in den trockenen Savannen und Halbwüsten des südlichen Afrikas und ernährt sich von Insekten, kleinen Reptilien und Früchten. Am Tag des Artenschutzes, der jedes Jahr am 3. März gefeiert wird, erinnern wir uns an die Bedeutung des Schutzes der Tierwelt und ihrer Lebensräume. Ein besonders interessantes Tier ist der Biber, der oft als „Ingenieur des Ökosystems“ bezeichnet wird. Durch den Bau von Dämmen und Kanälen schafft er neue Lebensräume für viele andere Arten und trägt zur Erhaltung der biologischen Vielfalt bei.\nDer Buntspecht, ein emblematischer Vogel der deutschen Wälder, ist bekannt für sein schwarz-weißes Gefieder und Trommeln. Beide Vögel teilen Ähnlichkeiten in ihrem Höhlenbrutverhalten und ihrer Ernährung. Der Buntspecht höhlt Nester in Bäumen aus, während der Gelbschnabeltoko natürliche Höhlen nutzt. Beide spielen wichtige Rollen in ihren jeweiligen Ökosystemen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "南非",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Richard Du Toit",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -2594,7 +2713,15 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南非",
+   "south africa",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "黄嘴犀鸟",
    "犀鸟",
@@ -2968,8 +3095,10 @@
   "imageKey": "ChateauLoire",
   "title": "Schloss Sully-sur-Loire, Centre-Val de Loire, Frankreich",
   "desc": "Geschichte und Drama vereinen sich im Schloss Sully-sur-Loire im Herzen Nordfrankreichs. Von Schlachten über Machtwechsel bis hin zu königlichen Verbindungen hat diese Festung alles erlebt. Im 14. Jahrhundert erbaut, sollte das mittelalterliche Wasserschloss den Fluss Loire bewachen und den Zugang zur Region kontrollieren. Später wurde es zur Residenz des Adels, insbesondere für Maximilien de Béthune, Herzog von Sully, einem engen Vertrauten von König Heinrich IV. Das Schloss spielte eine wichtige Rolle während der Hugenottenkriege von 1562 bis 1598 und war Zeuge zahlreicher Intrigen und diplomatischer Momente. Heute, nach mehreren Restaurierungen, lädt das Schloss die Besucher ein, seine reiche Geschichte zu entdecken - ein beeindruckendes Beispiel der französischen Renaissance-Architektur.\nEin ähnliches Erlebnis bietet das Wasserschloss Mespelbrunn in Bayern, das ebenfalls eine faszinierende Geschichte und beeindruckende Architektur aufweist. Dieses idyllische Schloss im Spessart ist bekannt für seine malerische Lage und gut erhaltenen Renaissance-Elemente. Ein Besuch beider Schlösser ist eine Reise in die Vergangenheit, die Geschichte lebendig werden lässt.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "StockPhotoAstur",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -2977,7 +3106,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "城堡",
    "建筑",
@@ -3088,7 +3223,9 @@
   "imageKey": "ForumRomanum",
   "title": "Der Saturntempel im Forum Romanum, Rom, Italien",
   "desc": "Die Iden des März, ein Datum voller geschichtlicher Bedeutung, sind untrennbar mit den dramatischen Ereignissen im antiken Rom verbunden. Am 15. März 44 v. Chr. wurde Julius Caesar im Senat ermordet – ein Wendepunkt in der Geschichte Roms, der das Ende der Republik einleitete. Dieser Tag ist eng mit dem Forum Romanum verknüpft, wo politische und gesellschaftliche Machtkämpfe ausgetragen wurden. Den imposante Saturntempel im Forum Romanum auf unserem heutigen Bild ist eines der ältesten und bedeutendsten Bauwerke des antiken Roms. Errichtet im Jahr 497 v. Chr., war der Tempel dem Gott Saturn gewidmet, dem Schutzpatron der Landwirtschaft und des Wohlstands.\nDie beeindruckenden Überreste der Säulenfront zeugen noch heute von der einstigen Pracht. Darüber hinaus diente der Tempel als Aufbewahrungsort der römischen Staatskasse. Einst war das Forum Romanum das politische, wirtschaftliche und religiöse Zentrum des antiken Roms. Die Überreste erzählen die Geschichte eines mächtigen Reiches und locken heute jährlich Millionen von Besuchern an. Auch Köln war Teil des Römischen Reiches und spiegelt dessen Architektur und Kultur wider. Besuchen Sie das Römisch-Germanische Museum und tauchen Sie in die Vergangenheit ein!",
-  "location": [],
+  "location": [
+   "罗马"
+  ],
   "region": null,
   "photographer": "Nico De Pasquale Photography",
   "gallery": "Getty Images",
@@ -3097,7 +3234,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬"
+  ],
   "content_tags": [
    "古罗马广场",
    "遗址",
@@ -3956,8 +4099,11 @@
   "imageKey": "GaztelugatxeSunset",
   "title": "Insel Gaztelugatxe bei Sonnenuntergang, Baskenland, Spanien",
   "desc": "Haben Sie schon einmal von der Insel Gaztelugatxe an der Küste von Biskaya im Baskenland, Spanien, gehört? Sie ist berühmt für ihre dramatische Landschaft und die kleine Einsiedelei San Juan de Gaztelugatxe, die dem Heiligen Johannes dem Täufer geweiht ist und sich auf dem Gipfel der Insel befindet. Die Einsiedelei stammt aus dem 10. Jahrhundert und wurde aufgrund von Schäden durch Kämpfe und Brände mehrmals umgebaut. Das heutige Gebäude thront auf der Insel und ist über einen schmalen, steilen Pfad mit fast 250 Stufen zu erreichen. Es ist ein beliebter Wallfahrtsort, und die Besucher läuten oft dreimal die Kirchenglocke und äußern einen Wunsch. Der Legende nach soll Johannes der Täufer selbst die Insel betreten haben. Wem der Ort bekannt vorkommt, der hat ihn vielleicht in der Fernsehserie Game of Thrones gesehen, wo er Dragonstone, den Stammsitz des Hauses Targaryen, darstellt.\nDie deutsche Nordseeinsel Helgoland ähnelt Gaztelugatxe in ihrer geologischen Beschaffenheit und Naturschönheit. Helgoland besteht aus rotem Sandstein, hat beeindruckende Klippen und ist bekannt für seine Robbenpopulation und Brutgebiete von Seevögeln. Die Insel blickt auf eine reiche Geschichte zurück, unter anderem als Handelszentrum und Zufluchtsort für Piraten. Beide Orte bieten ein einzigartiges Natur- und Geschichtserlebnis, das einen Besuch wert ist.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Eloi_Omella",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -3965,7 +4111,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "圣胡安修道院",
    "修道院",
@@ -4182,8 +4338,11 @@
   "imageKey": "LittleFoxes",
   "title": "Rotfuchsjunge in der Nähe ihres Baus",
   "desc": "Heute feiern wir den Tag der Geschwister, um diejenigen zu ehren, die immer für uns da waren, mit uns gelacht, Geheimnisse geteilt und unvergessliche Momente erlebt haben. Unter Geschwistern streitet man sich, spielt sich Streiche, aber am Ende hat man sich immer lieb. Die Idee, diesen Tag ins Leben zu rufen, stammt von Claudia Evart in Erinnerung an ihre geliebten Geschwister. Seit 1995 setzt sich die Siblings Day Foundation dafür ein, diesen Tag und die einzigartige Verbindung zwischen Geschwistern zu feiern. Die Gebrüder Grimm sind wohl die berühmtesten Geschwister in der deutschen Literaturgeschichte. Jacob und Wilhelm sind bekannt für ihre Sammlung von Märchen, darunter Klassiker wie Aschenputtel, Hänsel und Gretel und Schneewittchen. Ihre Arbeit hat die moderne Folklore- und Märchenforschung maßgeblich beeinflusst.\nGeschwisterliebe ist auch in der Tierwelt wichtig. Rotfuchswelpen, wie auf dem heutigen Bild, werden blind und hilflos in einer unterirdischen Höhle geboren. Die Mutter beschützt sie, während der Vater auf die Jagd geht. Doch wenn sie die Augen öffnen und anfangen, ihre Beine zu bewegen, geht der Spaß erst richtig los. Das Spiel unter Geschwistern ist entscheidend für die Entwicklung ihrer jagdlichen und sozialen Fähigkeiten. Sie ahmen das Verhalten der anderen nach, testen ihre Grenzen aus und entwickeln ihre schlauen Instinkte als Team. Also nehmt euch am Tag der Geschwister ein Beispiel an diesen Tieren: Umarmt das Chaos, genießt den Spaß und teilt euch vielleicht einmal den letzten Snack.",
-  "location": [],
-  "region": null,
+  "location": [
+   "纽约",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "WildMedia",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -4191,7 +4350,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク"
+  ],
   "content_tags": [
    "赤狐",
    "狐狸",
@@ -4254,8 +4423,11 @@
   "imageKey": "SpaceFlight",
   "title": "Blick aus der Kuppel der Internationalen Raumstation über den Südpazifik",
   "desc": "Es ist noch gar nicht so lange her, dass die Menschheit den ersten Schritt in den Weltraum gewagt hat. Jahrtausendelang haben wir zu den Sternen aufgeschaut und von der Ferne geträumt. Am 12. April 1961 schrieb der sowjetische Pilot Juri Gagarin Geschichte, als er mit dem Raumschiff Wostok 1 die Erde verließ. Mit den Worten \"Poyekhali!\" - \"Los geht's!\" - begann eine neue Ära. Gagarin umkreiste die Erde 108 Minuten lang und sah die Welt aus einer nie zuvor gesehenen Perspektive. Mit seiner sicheren Rückkehr trat die Menschheit in das Zeitalter der Raumfahrt ein. Sein Flug inspirierte den Wettlauf zum Mond, den Traum vom Leben auf dem Mars und vieles mehr. Um diese Leistung zu würdigen, haben die Vereinten Nationen den 12. April zum Internationalen Tag der bemannten Raumfahrt erklärt.\nDer erste deutsche Raumfahrer, Sigmund Jähn, flog am 26. August 1978 mit Sojus 31 ins All und verbrachte sieben Tage auf der Raumstation Saljut 6. Das Bild zeigt den weiten Südpazifik durch die Kuppel der Internationalen Raumstation und erinnert daran, wie klein die Erde im endlosen Kosmos ist – und wie weit uns die Raumfahrt gebracht hat.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "NASA",
   "gallery": null,
   "copyrightlink": null,
@@ -4263,7 +4435,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "国际空间站",
    "航天器",
@@ -4361,8 +4544,10 @@
   "imageKey": "BeachArt",
   "title": "Sandkunst am Sauveterre Strand bei Zarpo, Les Sables-d'Olonne, Vendee, Frankreich",
   "desc": "Heute feiern wir den Weltkunsttag, der weltweit jedes Jahr am 15. April begangen wird, um die Bedeutung des kreativen Schaffens zu würdigen. Ins Leben gerufen von der Internationalen Vereinigung der Kunst, ehrt dieser besondere Tag den Geburtstag von Leonardo da Vinci, einem der größten Künstler und Visionäre der Menschheitsgeschichte. Dabei geht es nicht nur um eine symbolische Hommage an den Meister, sondern auch um die Bedeutung von Künstlern und kreativem Schaffen in unserer Gesellschaft sowie um die Vielfalt kreativer Ausdrucksformen. Von prähistorischen Höhlenmalereien bis hin zu modernen digitalen Werken – Kunst ist seit jeher ein Spiegel der menschlichen Seele.\nOb im Museum oder im Alltag, als Graffiti oder sogar als Strandkunst wie auf unserem heutigen Bild - Kunst begegnet uns überall. Die universelle Sprache der Kunst überwindet Grenzen, inspiriert und verbindet. Sie erzählt Geschichten und bringt Unausgesprochenes zum Ausdruck. Deutschlands reiche Kunstlandschaft, mit Museen wie die Pinakotheken in München laden uns ein, die transformative Kraft der Kunst zu erleben. Nutzen Sie doch den Weltkunsttag, um eine Galerie zu besuchen oder selbst kreativ zu werden!",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Hemis",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -4370,7 +4555,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "沙画",
    "沙滩",
@@ -4802,8 +4993,14 @@
   "imageKey": "MagellanicPenguin",
   "title": "Magellanpinguine, Volunteer Point, Falklandinseln",
   "desc": "Heute ist der Internationale Weltpinguintag! Jedes Jahr am 25. April wird dieser besondere Tag gefeiert, der seinen Ursprung in der McMurdo-Forschungsstation in der Antarktis hat, wo Wissenschaftler beobachteten, dass die Adéliepinguine um diese Zeit ihre jährliche Wanderung begannen. Seitdem ist er zu einer Gelegenheit geworden, um auf die Bedeutung des Schutzes dieser faszinierenden Tiere und ihrer Lebensräume aufmerksam zu machen.\nPinguine sind faszinierende Vögel, die die kältesten Landschaften des Planeten erobert haben. Obwohl sie nicht fliegen können, sind ihre Flügel zum Schwimmen angepasst, was ihnen ermöglicht, Geschwindigkeiten von bis zu 36 km/h zu erreichen. Es gibt etwa 18 Pinguinarten, vom kleinen Zwergpinguin bis zum majestätischen Kaiserpinguin. Auf dem heutigen Bild können wir eine Gruppe von Magellanpinguinen am Volunteer Point auf den Falklandinseln beobachten. Jedes Jahr wandern sie tausende Kilometer von ihren Nahrungsgebieten im Atlantischen Ozean zu ihren Brutplätzen an der Küste. Pinguine sind ein Symbol für Widerstandsfähigkeit und Anpassungsfähigkeit, und ihr Tag erinnert uns daran, die vom Klimawandel betroffenen polaren Ökosysteme zu bewahren.",
-  "location": [],
-  "region": null,
+  "location": [
+   "南极",
+   "巴塔哥尼亚",
+   "英国",
+   "美国",
+   "葡萄牙"
+  ],
+  "region": "葡萄牙",
   "photographer": "imageBROKER",
   "gallery": "Matthias Graben/Getty Images",
   "copyrightlink": null,
@@ -4811,7 +5008,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極",
+   "巴塔哥尼亚",
+   "patagonia",
+   "巴塔哥尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國"
+  ],
   "content_tags": [
    "企鹅",
    "麦哲伦企鹅",
@@ -4950,8 +5160,11 @@
   "imageKey": "GardensVillandry",
   "title": "Château de Villandry, Loiretal, Frankreich",
   "desc": "Was macht die Gärten von Château de Villandry so besonders? Obwohl das Loiretal in Frankreich voll von beeindruckenden Schlössern ist, sticht Villandry durch seine Gärten hervor, wie unser heutiges Bild zeigt. Erbaut im 16. Jahrhundert von Jean le Breton, einem Minister von König Franz I., sollte Villandry stets beeindrucken und seine Besucher in Staunen versetzen. Die Gärten sind auf Terrassen nach verschiedenen Themen angelegt: Der Ziergarten zeigt geometrische Muster, der Wassergarten bietet einen ruhigen Rückzugsort und der Gemüsegarten verwandelt alltägliche Pflanzen in künstlerische Darstellungen.\nNach schwierigen Zeiten wurde das heruntergekommene Château de Villandry 1906 von dem spanischen Arzt Joachim Carvallo und seiner Frau Ann Coleman erworben. Ihre Leidenschaft für Geschichte und Gartenbau führte zu einer umfassenden Restaurierung. Die Gärten verändern sich mit den Jahreszeiten, so dass kein Besuch dem anderen gleicht. Ähnlich beeindruckend sind die Gärten von Schloss Schwetzingen in Baden-Württemberg. Der im 18. Jahrhundert von Karl Theodor von der Pfalz angelegte Schlossgarten ist eine Mischung aus französischem und englischem Stil und zieht Besucher aus aller Welt an. Ob Sie nun einen grünen Daumen haben oder nicht, es ist schwer, die Präzision dieser Gärten nicht zu bewundern.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Mint Images",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4959,7 +5172,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "绿篱迷宫",
    "法式园林",
@@ -5206,8 +5429,11 @@
   "imageKey": "YohoNP",
   "title": "Mount Burgess und Emerald Lake im Yoho-Nationalpark, British Columbia, Kanada",
   "desc": "Auf dem heutigen Bild ist der Yoho-Nationalpark zu sehen, der sich in der kanadischen Provinz British Columbia befindet. Dieser Park wurde 1886 gegründet und ist der zweitälteste Nationalpark in Kanada. Er ist bekannt für seine beeindruckenden Landschaften, darunter die berühmten Takakkaw-Wasserfälle und der Emerald Lake. Außerdem gehört der Yoho-Nationalpark aufgrund seiner natürlichen und wissenschaftlichen Bedeutung zum UNESCO-Welterbe. Zu seinen Schätzen gehören die Fossilien des Burgess-Schiefer, die einen einzigartigen Einblick in das Meeresleben vor über 500 Millionen Jahren bieten.\nDer deutsche Paläontologe Walther Kühne hatte eine bedeutende Beziehung zum Yoho-Nationalpark. Kühne, bekannt für seine paläontologischen Studien, hat zur Erforschung der Fossilien des Burgess-Schiefer beigetragen und geholfen, die Geheimnisse des prähistorischen Lebens zu entschlüsseln und die Evolution der Meeresorganismen besser zu verstehen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加拿大",
+   "哥伦比亚"
+  ],
+  "region": "哥伦比亚",
   "photographer": "Feng Wei Photography",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -5215,7 +5441,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ",
+   "哥伦比亚",
+   "colombia"
+  ],
   "content_tags": [
    "山峰",
    "翡翠湖",
@@ -5274,8 +5507,11 @@
   "imageKey": "DunluceIreland",
   "title": "Dunluce Castle, Grafschaft Antrim, Nordirland",
   "desc": "Hoch auf einer Klippe an der rauen Nordküste Irlands thront Dunluce Castle, eine der eindrucksvollsten Burgruinen des Landes. Umgeben von zerklüfteten Felsen und tosenden Wellen scheint die Burg aus einer anderen Zeit zu stammen. Im 13. Jahrhundert erbaut, war sie einst Sitz des mächtigen MacDonnell-Clans und spielte eine zentrale Rolle in der irischen Geschichte. Nach der Schlacht am Boyne im Jahr 1690 verfiel die Burg nach und nach und hinterließ eine mystische Ruine voller Legenden. Die bekannteste Geschichte handelt von Maeve Roe, der einzigen Tochter von Lord MacQuillan. Sie widersetzte sich einer arrangierten Heirat und wurde im Turm eingesperrt. Auf der Flucht mit ihrem Geliebten ertranken beide in den Fluten. Noch heute soll ihr Geist durch den Turm wandeln. Dunluce Castle hat schon Schriftsteller wie J.R.R. Tolkien inspiriert, der hier Ideen für Minas Tirith in „Der Herr der Ringe“ gefunden haben soll.\nÄhnlich faszinierend ist die Burg Eltz in der Eifel, die mit ihrer beeindruckenden Architektur und der Legende um die tapfere Agnes von Eltz und den scheußlichen Ritter zahlreiche Besucher in ihren Bann zieht.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "DieterMeyrl",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -5283,7 +5519,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭"
+  ],
   "content_tags": [
    "邓卢斯城堡",
    "城堡",
@@ -5357,8 +5606,10 @@
   "imageKey": "CuteChameleon",
   "title": "Gewöhnliches Chamäleon",
   "desc": "Das Gewöhnliche Chamäleon ist ein faszinierendes Reptil, das für seine Fähigkeit bekannt ist, seine Farbe zu ändern, um sich in seiner Umgebung zu tarnen. Dieses Chamäleon hat Augen, die sich unabhängig voneinander bewegen können, was ihm eine nahezu 360-Grad-Sicht ermöglicht und es ihm erlaubt, Beute und Raubtiere effektiv zu erkennen. Außerdem besitzt es eine lange und schnelle Zunge, die es zum Fangen von Insekten einsetzt. Sein Körper ist an das Klettern in Bäumen und Büschen angepasst, mit Greifbeinen und einem Greifschwanz, die ihm einen hervorragenden Halt bieten.\nIm Jahr 2012 entdeckten deutsche Wissenschaftler zusammen mit Kollegen aus Madagaskar das Nanocamäleon, das kleinste Reptil der Welt. Dieses winzige Chamäleon wurde während einer Expedition im Norden Madagaskars gefunden und ist so klein, dass es auf eine Fingerspitze passt.",
-  "location": [],
-  "region": null,
+  "location": [
+   "马达加斯加"
+  ],
+  "region": "马达加斯加",
   "photographer": "Photostock-Israel",
   "gallery": "SPL/Getty Images",
   "copyrightlink": null,
@@ -5366,7 +5617,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "马达加斯加",
+   "madagascar"
+  ],
   "content_tags": [
    "变色龙",
    "爬行动物",
@@ -5692,8 +5946,12 @@
   "imageKey": "VeniceLagoon",
   "title": "Delta in der Lagune von Venedig, Italien",
   "desc": "Das heutige Bild führt uns in die spektakuläre venezianische Lagune in Italien. Die Lagune erstreckt sich über 550 Quadratkilometer und ist ein reiches Mosaik aus Inseln, Schlickflächen, Kanälen und Sümpfen. Sie ist eines der größten Feuchtgebiete im Mittelmeerraum und steckt voller Geschichte und Innovation. Nach der letzten Eiszeit wurde sie um 476 n. Chr. zum Zufluchtsort für Menschen, die vor Invasionen flohen. Diese frühen Siedler begannen mit dem Bau der symbolträchtigen Stadt Venedig.\nAuch heute noch ist die Lagune ein wichtiger Teil des Lebens der Menschen und unterstützt Fischerei, Tourismus und nachhaltige Aquakultur. Die Lagune ist durch drei Einlässe mit der Adria verbunden und ist berühmt für ihr „acqua alta“, wenn die Fluten Teile Venedigs überschwemmen. Auch der deutsche Schriftsteller und Literaturnobelpreisträger Thomas Mann ließ sich von Venedig inspirieren und schrieb nach mehrmaligen Besuchen der Stadt seinen berühmten Roman „Der Tod in Venedig“. Tauchen Sie ein in die faszinierende Welt der venezianischen Lagune und entdecken Sie, wie Geschichte, Natur und Kultur sich zu einem einzigartigen Erlebnis verbinden.",
-  "location": [],
-  "region": null,
+  "location": [
+   "威尼斯",
+   "罗马",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Dimitri Weber",
   "gallery": "Amazing Aerial Agency",
   "copyrightlink": null,
@@ -5701,7 +5959,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "ヴェネツィア",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "罗马"
+  ],
   "content_tags": [
    "湿地",
    "蜿蜒河流",
@@ -5913,8 +6184,10 @@
   "imageKey": "BaobabAvenue",
   "title": "Affenbrotbäume bei Sonnenuntergang, Baobab-Allee, Madagaskar",
   "desc": "Das Leben auf der Erde, von winzigen Bakterien bis hin zu majestätischen Bäumen, ist in einem einzigartigen Netzwerk von Verbindungen verwoben, das unseren Planeten trägt. Der „Internationale Tag der biologischen Vielfalt“ feiert dieses lebenswichtige Geflecht, ein Loblied auf die Biodiversität, die jeden Aspekt unseres Daseins nährt: von nachhaltiger Landwirtschaft über sauberes Wasser bis hin zu Klimaschutz und Katastrophenvorsorge. Wenn die biologische Vielfalt schwindet, steigt das Risiko von Zoonosen - Krankheiten, die von Tieren auf Menschen übertragen werden. Ihre Erhaltung stärkt jedoch unsere Fähigkeit, globalen Krisen wie Pandemien vorzubeugen und sie zu bewältigen. Die Vereinten Nationen widmen diesen Tag der Bewusstseinsbildung und inspirieren zu konkreten Maßnahmen, um die biologischen Schätze zu erhalten, die uns mit der Zukunft verbinden.\nDas heutige Bild führt uns entlang der mystischen „Baobab-Allee“ in Madagaskar, wo die majestätischen Grandidier-Baobabs, allgemein oft auch nur als Affenbrotbäume bekannt, wie Wächter der Zeit emporragen. In der Region Menabe erzählen diese Giganten, Renala oder Reniala („Mutter des Waldes“) genannt, von einst üppigen Tropenwäldern, die weitgehend verschwunden sind. Obwohl die Region 2015 zum Naturdenkmal erklärt wurde, sind diese außergewöhnlichen Bäume weiterhin Bedrohungen wie saisonalen Bränden und landwirtschaftlichen Abwässern ausgesetzt. So wie die Baobabs die Geschichte Madagaskars erzählen - welcher Baum spiegelt für Sie die Seele Deutschlands wider?",
-  "location": [],
-  "region": null,
+  "location": [
+   "马达加斯加"
+  ],
+  "region": "马达加斯加",
   "photographer": "Framalicious",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -5922,7 +6195,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "马达加斯加",
+   "madagascar"
+  ],
   "content_tags": [
    "猴面包树",
    "树",
@@ -6303,8 +6579,12 @@
   "imageKey": "SwedenReserve",
   "title": "Naturschutzgebiet Knuthöjdsmossen, Schweden",
   "desc": "Willkommen im zauberhaften Naturschutzgebiet Knuthöjdsmossen, das sich über fast 100 Hektar in der Nähe der schwedischen Stadt Hällefors erstreckt. Dieses friedliche Paradies bietet einen Rundweg auf Holzstegen, der durch das Moor führt und mehrere kleine Seen, Sanddünen, Sümpfe und Kiefern zeigt. Die Landschaft wurde durch das letzte Inlandeis geformt, das vor etwa 10.000 Jahren abschmolz und Moränen und Gletschersand hinterließ. In den Sanddünen leben viele einzigartige Insekten, darunter die seltene graue Ameise Formica cinerea. Vogelliebhaber werden von der Vielfalt der Vogelwelt begeistert sein, darunter Sterntaucher, Kiebitz, Grünschenkel und Schellente. Die häufigsten Bäume im Park sind Kiefern, aber es gibt auch verschiedene Sträucher wie Zwergbirke, Krähenbeere und wilder Rosmarin. Knuthöjdsmossen ist ein ideales Ausflugsziel für Naturliebhaber und Erholungssuchende.\nÄhnlich wie Knuthöjdsmossen bietet das Murnauer Moos in Bayern ein einzigartiges Naturerlebnis. Es ist das größte lebende Moor Mitteleuropas und beherbergt eine beeindruckende Vielfalt an Flora und Fauna, darunter seltene Pflanzen und Tiere wie das Wanzen-Knabenkraut und den Wachtelkönig.",
-  "location": [],
-  "region": null,
+  "location": [
+   "东京",
+   "法国",
+   "瑞典"
+  ],
+  "region": "瑞典",
   "photographer": "Sven Halling",
   "gallery": "DEEPOL/plainpicture",
   "copyrightlink": null,
@@ -6312,7 +6592,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "东京",
+   "tokyo",
+   "東京",
+   "とうきょう",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "瑞典",
+   "sweden"
+  ],
   "content_tags": [
    "湖泊",
    "晨雾",
@@ -6333,8 +6625,11 @@
   "imageKey": "GrandeTerreReef",
   "title": "Barriere-Riff vor Grande Terre, Neukaledonien, Frankreich",
   "desc": "Heute feiern wir den Welttag der Riffe, ein Datum, das seit 2019 jedes Jahr am 1. Juni begangen wird, um das Bewusstsein für die Bedeutung der Korallenriffe und die Gefahren, denen sie durch menschliche Aktivitäten ausgesetzt sind, zu erhöhen. Auf dem heutigen Bild ist das Barriere-Riff vor Grande Terre in Neukaledonien, Frankreich, zu sehen. Dieses Riff ist eines der längsten zusammenhängenden Korallenriffe der Welt und erstreckt sich über etwa 1.500 km um die Hauptinsel Grande Terre und andere kleinere Inseln herum. Seine Vielfalt und die damit verbundenen Ökosysteme machen es zu einem ökologisch wertvollen Ort, der seit 2008 als UNESCO-Welterbe anerkannt ist.\nDie Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) unterstützt Projekte zum Schutz der Korallenriffe in Neukaledonien, einschließlich des Barriere-Riffs vor Grande Terre. Diese Projekte zielen darauf ab, die Biodiversität zu schützen und eine nachhaltige Entwicklung in der Region zu fördern, und tragen so zur Erhaltung dieser wertvollen marinen Ökosysteme bei, die wir heute feiern.",
-  "location": [],
-  "region": null,
+  "location": [
+   "冲绳",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Karsten Wrobel",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6342,7 +6637,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "冲绳",
+   "okinawa",
+   "沖縄",
+   "沖繩",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "珊瑚礁",
    "泻湖",
@@ -6527,8 +6832,11 @@
   "imageKey": "DubrovnikTwilight",
   "title": "Altstadt von Dubrovnik in Dalmatien, Kroatien",
   "desc": "Auf dem heutigen Bild ist die Altstadt von Dubrovnik in Dalmatien, Kroatien, zu sehen, die auch als die „Perle der Adria“ bekannt ist. Die am Adriatischen Meer gelegene historische Stadt zeichnet sich durch ihre beeindruckende mittelalterliche Architektur aus, zu der die berühmten Stadtmauern, Kirchen und Paläste gehören. Dubrovnik ist auch dafür berühmt, Hauptdrehort der fiktiven Stadt Königsmund in der Serie „Game of Thrones“ zu sein. Dies hat zahlreiche Fans der Serie dazu veranlasst, die Straßen und Denkmäler der Stadt zu erkunden.\nDie Beziehung zwischen Dubrovnik und Bad Homburg in Hessen wurde durch die Städtepartnerschaft zwischen den beiden Städten gestärkt. Diese Verbindung wurde im Jahr 2002 etabliert und fördert seither kulturelle und bildungsbezogene Austauschprogramme. Kürzlich wurde der Dubrovnikplatz in Bad Homburg eingeweiht, um die dauerhafte Freundschaft zwischen beiden Städten zu symbolisieren. An der Einweihungsfeier nahmen Vertreter aus Dubrovnik und Bad Homburg teil, die die Bedeutung dieser Beziehung für beide Gemeinschaften betonten.",
-  "location": [],
-  "region": null,
+  "location": [
+   "威尼斯",
+   "克罗地亚"
+  ],
+  "region": "克罗地亚",
   "photographer": "bluejayphoto",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6536,7 +6844,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "克罗地亚",
+   "croatia",
+   "hrvatska",
+   "克羅地亞",
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "ヴェネツィア"
+  ],
   "content_tags": [
    "杜布罗夫尼克古城",
    "老城街道",
@@ -6875,7 +7193,10 @@
   "imageKey": "DolomitiEstate",
   "title": "Cinque Torri, Dolomiten, Italien",
   "desc": "Die Cinque Torri, zu Deutsch die „Fünf Türme“, erheben sich majestätisch im Herzen der Dolomiten in der Provinz Belluno in der norditalienischen Region Venetien. Sie bieten eine perfekte Zuflucht vor der sommerlichen Hitze und dem Trubel überfüllter Strände. Jeder dieser Türme erzählt eine Geschichte: von alten Zivilisationen, abenteuerlustigen Wanderern und mutigen Kletterern. Diese bizarren Felsformationen ragen wie steinerne Wächter in den Himmel und bieten ein Panorama, das weit über die Gipfel der Dolomiten hinausreicht. Sanfte Almwiesen erstrecken sich ringsum, durchzogen von verschlungenen Wanderwegen, die sich perfekt für Erkundungstouren eignen. Das Farbspiel des Gesteins variiert je nach Licht: mal golden im Morgenrot, mal kühl und silbern im Mondschein.\nEine Wanderung zwischen den Cinque Torri bedeutet, Freiheit zu atmen, Frische zu finden und der Stille der Berge zu lauschen, fernab vom Lärm der Stadt. Ob Klettern, Fotografieren oder einfach nur Staunen – dieser Ort lädt dazu ein, sich selbst neu zu entdecken. Hier, wo die Zeit langsamer fließt, öffnet sich die Seele, und die Schönheit spricht die ewige Sprache der Gipfel.",
-  "location": [],
+  "location": [
+   "多洛米蒂",
+   "阿尔卑斯"
+  ],
   "region": null,
   "photographer": "usabin",
   "gallery": "Getty Images",
@@ -6884,7 +7205,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "多洛米蒂",
+   "dolomites",
+   "dolomiti",
+   "ドロミテ",
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯"
+  ],
   "content_tags": [
    "多洛米蒂山",
    "山脉",
@@ -6914,8 +7246,10 @@
   "imageKey": "WatertowerMannheim",
   "title": "Wasserturm, Mannheim, Baden-Württemberg",
   "desc": "Mitten auf dem prächtigen Friedrichsplatz in Mannheim – einer der schönsten Jugendstilanlagen Europas – erhebt sich der imposante Wasserturm, der auf unserem heutigen Bild zu sehen ist. Doch er ist weit mehr als nur ein funktionales Bauwerk: Er ist das ikonische Wahrzeichen der Stadt. Der Turm wurde von Gustav Halmhuber entworfen, der später auch am Berliner Reichstag mitwirkte. Zwischen 1886 und 1889 erbaut, diente der 60 Meter hohe Turm einst der städtischen Trinkwasserversorgung und fasste beeindruckende zwei Millionen Liter Wasser. Heute ist er ein beliebtes Ausflugsziel und Veranstaltungsort, der Mannheims gelungene Verbindung von Tradition und Moderne repräsentiert. Die umgebende Parkanlage lädt zu entspannten Spaziergängen, kulturellen Veranstaltungen oder romantischen Momenten ein.\nDoch Mannheim hat weit mehr zu bieten: Mit seiner einzigartigen Anordnung in quadratischen Straßenzügen, die der Stadt den Beinamen „Quadratestadt“ einbrachte, beeindruckt Mannheim durch urbanen Charme, kulturelle Vielfalt und Innovationskraft. Hier rollte das erste Auto von Carl Benz über die Straßen, das erste Fahrrad wurde erfunden, und die Söhne Mannheims setzen musikalische Akzente. Entdecken Sie eine dynamische Stadt, die Geschichte und Gegenwart auf faszinierende Weise vereint!",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "no_limit_pictures",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6923,7 +7257,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "曼海姆水塔",
    "水塔",
@@ -6948,8 +7289,12 @@
   "imageKey": "SeaTurtleBrazil",
   "title": "Meeresschildkröte, Fernando de Noronha, Brasilien",
   "desc": "In dem heutigen Bild können wir eine majestätische Meeresschildkröte beobachten, wie diese, die in Fernando de Noronha, Brasilien, fotografiert wurde, um den Welttag der Meeresschildkröte zu feiern. Dieser Tag soll auf die Bedeutung dieser Kreaturen und die Herausforderungen, denen sie gegenüberstehen, aufmerksam machen. Meeresschildkröten existieren seit mehr als 100 Millionen Jahren und spielen eine entscheidende Rolle in den marinen Ökosystemen, wie zum Beispiel bei der Erhaltung gesunder Korallenriffe. Eine interessante Tatsache ist, dass sie Tausende von Kilometern zwischen ihren Nahrungs- und Brutgebieten zurücklegen können.\nNicht nur Meeresschildkröten, sondern auch andere Meeresbewohner wie der Schweinswal in der Nordsee sind bedroht. Diese Tiere leiden unter den gleichen Gefahren wie die Schildkröten: Plastikmüll, Überfischung und Klimawandel. Der Schutz ihrer Lebensräume und die Reduzierung von Umweltverschmutzung sind entscheidend, um das Überleben dieser Arten zu sichern. Indem wir uns für den Meeresschutz einsetzen, helfen wir, die Vielfalt und Gesundheit unserer Ozeane zu bewahren.",
-  "location": [],
-  "region": null,
+  "location": [
+   "日本",
+   "法国",
+   "巴西"
+  ],
+  "region": "巴西",
   "photographer": "João Vianna",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6957,7 +7302,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "巴西",
+   "brazil"
+  ],
   "content_tags": [
    "海龟",
    "龟",
@@ -7050,8 +7407,10 @@
   "imageKey": "WinterBegins",
   "title": "Strand in Santa Catarina, Brasilien",
   "desc": "Diese traumhafte Küste auf unserem heutigen Bild befindet sich im Süden Brasiliens, genauer gesagt im Bundesstaat Santa Catarina. Die malerische Küstenlinie, die sich über beeindruckende 560 Kilometer erstreckt, fasziniert nicht nur durch ihre atemberaubende Naturschönheit, sondern auch durch ihre spannende Geschichte. Bereits lange bevor europäische Seefahrer die Region erreichten, war sie die Heimat der Carijós, eines Volkes der Tupi-Guaraní. Sie lebten im Einklang mit der Natur, nutzten die fruchtbaren Böden und reichen Küstengewässer für Landwirtschaft und Fischfang und hinterließen kulturelle Spuren, die bis heute nachwirken. Mit der Ankunft portugiesischer Kolonisten im 18. Jahrhundert wurde die Region zu einem wichtigen strategischen Kolonialstützpunkt.\nIm 19. Jahrhundert prägten deutsche Einwanderer die Region. Ihre Spuren sind bis heute sichtbar – von Fachwerkhäusern bis zur traditionellen deutschen Küche. Besonders die Stadt Blumenau, 1850 vom deutschen Apotheker Hermann Bruno Otto Blumenau gegründet, ist ein lebendiges Zeugnis deutscher Kultur. Besucher können hier unter der brasilianischen Sonne das berühmte Oktoberfest feiern. Wussten Sie, dass es sogar das zweitgrößte Oktoberfest außerhalb Münchens ist?",
-  "location": [],
-  "region": null,
+  "location": [
+   "巴西"
+  ],
+  "region": "巴西",
   "photographer": "CaioCarvalhoPhotography",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7059,7 +7418,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "巴西",
+   "brazil"
+  ],
   "content_tags": [
    "礁石",
    "岩石",
@@ -7199,8 +7561,14 @@
   "imageKey": "DresdenElbe",
   "title": "Elbe in Dresden, Sachsen",
   "desc": "Diese malerische Kulisse auf unserem heutigen Bild entführt uns nach Dresden, in die Landeshauptstadt Sachsens. Direkt an der Elbe gelegen, verzaubert die Stadt mit einer einzigartigen Mischung aus romantischen Landschaften und prachtvoller barocker Baukunst, die harmonisch mit modernem Flair verschmilzt. Die Schönheit der „Elbflorenz“, wie die Stadt liebevoll genannt wird, zieht Besucherinnen und Besucher aus aller Welt in ihren Bann. Besonders die Altstadt beeindruckt mit weltberühmten Bauwerken wie der Frauenkirche, dem Zwinger und der Semperoper – einem der schönsten Opernhäuser der Welt.\nDoch Dresden hat noch weit mehr zu bieten: In Szenevierteln wie der Neustadt pulsiert das Leben mit gemütlichen Cafés, kreativen Galerien und individuellen Boutiquen. Ein Spaziergang über die Brühlsche Terrasse, den sogenannten „Balkon Europas“, eröffnet atemberaubende Ausblicke auf die Elbe und die barocke Skyline. Kunst- und Kulturfreunde kommen in den zahlreichen Museen wie der Gemäldegalerie Alte Meister auf ihre Kosten. Ob pulsierendes Stadtleben oder entspannte Momente in der Natur – etwa an den idyllischen Elbwiesen – Dresden bietet für jeden Geschmack etwas. Lassen Sie sich doch bei Ihrem nächsten Besuch vom Charme dieser faszinierenden Stadt verzaubern!",
-  "location": [],
-  "region": null,
+  "location": [
+   "佛罗伦萨",
+   "慕尼黑",
+   "柏林",
+   "德国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Sean Pavone",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7208,7 +7576,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "佛罗伦萨",
+   "florence",
+   "firenze",
+   "佛羅倫薩",
+   "フィレンツェ",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "慕尼黑"
+  ],
   "content_tags": [
    "德累斯顿",
    "易北河",
@@ -7326,8 +7707,14 @@
   "imageKey": "HorseheadRock",
   "title": "Die Milchstraße über Horse Head Rock, Neusüdwales, Australien",
   "desc": "Auf dem heutigen Bild ist die Milchstraße über dem Horse Head Rock in Neusüdwales, Australien, zu sehen. Diese Felsformation, die sich an der Sapphire Coast in der Nähe von Bermagui befindet, ist etwa 500 Millionen Jahre alt. Ihre Form, die an ein Pferd erinnert, das seinen Hals neigt, ist das Ergebnis von Wind- und Wellen-Erosion. Dieser ikonische Ort zieht das ganze Jahr über Wanderer, Fotografen und Naturliebhaber an. Die besten Aussichtspunkte befinden sich auf dem erhöhten Pfad zwischen Camel Rock und Murunna Point, während die Abenteuerlustigen von Camel Rock Surf Beach aus herankommen können, jedoch nur bei Ebbe und mit Vorsicht.\nEiner der faszinierendsten Orte in der Nähe von Bermagui ist der Blue Pool, ein natürlicher Salzwasserpool, der sich mit den Gezeiten des Ozeans füllt. Dieser Pool ist perfekt zum Schwimmen und Schnorcheln und bietet kristallklares Wasser und ein einzigartiges Erlebnis. Außerdem ist er ein hervorragender Ort, um das lokale Meeresleben zu beobachten, wie kleine Fische und Krabben. Der Blue Pool ist auch ein beliebter Ort, um sich zu entspannen und die Panoramablicke auf den Ozean zu genießen, besonders bei Sonnenuntergang, wenn der Himmel in lebhaften Farben erstrahlt.",
-  "location": [],
-  "region": null,
+  "location": [
+   "和歌山",
+   "静冈",
+   "悉尼",
+   "秋田",
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Philip Thurston",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7335,7 +7722,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "和歌山",
+   "wakayama",
+   "悉尼",
+   "sydney",
+   "雪梨",
+   "秋田",
+   "akita",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english"
+  ],
   "content_tags": [
    "银河",
    "星空",
@@ -7663,8 +8063,10 @@
   "imageKey": "OroseiSardegna",
   "title": "Orosei, Sardinien, Italien",
   "desc": "Diese malerische Bucht, die Cala Luna, liegt an der Ostküste Sardiniens im Golf von Orosei – ein wahres Paradies für alle, die Natur, Ruhe und kristallklares Wasser lieben. Zu Recht gilt dieser Traumstrand als einer der schönsten Italiens. Der feine, goldene Sand und das glasklare Wasser laden sowohl Sonnenanbeter als auch Schnorchler und Taucher ein, die beeindruckende Unterwasserwelt zu entdecken. Besonders faszinierend sind die markanten Höhlen entlang des Strandes, die nicht nur vor der Sonne schützen, sondern auch einen idyllischen Ort für ein Picknick bieten. Die Abgeschiedenheit der Cala Luna verleiht ihr einen besonderen Reiz, denn sie ist ausschließlich zu Fuß oder per Boot erreichbar. Wer sich für den Landweg entscheidet, wird nach einer zweieinhalbstündigen Wanderung durch schattige Wälder, tiefe Schluchten und grüne Täler schließlich mit dem ersten atemberaubenden Blick auf die Bucht belohnt.",
-  "location": [],
-  "region": null,
+  "location": [
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "EyeEm Mobile GmbH",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7672,7 +8074,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ],
   "content_tags": [
    "海蚀洞 洞穴",
    "沙滩 海滩",
@@ -7778,8 +8187,12 @@
   "imageKey": "ShetlandGannets",
   "title": "Nach Fisch tauchende Basstölpel, Shetlandinseln, Schottland",
   "desc": "Basstölpel sind faszinierende Vögel voller Gegensätze. Während sie in der Luft als außergewöhnlich geschickte Flieger gelten, wirken sie an Land überraschend unbeholfen. Mit ihrem schneeweißen Gefieder, den schwarzen Flügelspitzen und den leuchtend gelben Köpfen gehören sie zu den größten Seevögeln des Nordatlantiks. Besonders beeindruckend ist ihre Jagdtechnik: Aus bis zu 30 Metern Höhe stürzen sie sich pfeilschnell mit über 100 km/h wie ein Speer ins Wasser. Ihr Körper ist perfekt an diese Hochgeschwindigkeits-Tauchmanöver angepasst: stromlinienförmiger Schädel, Luftpolster unter der Haut und nach vorn gerichtete Augen ermöglichen präzises Zielen. Unter Wasser schwimmen sie mithilfe von Flügeln und Füßen bis zu 20 Meter tief, um Fische zu fangen.\nVon März bis Oktober brüten Basstölpel in Kolonien an steilen Klippen und Felsen im Nordatlantik. Seit 1991 sind sie auch auf Helgoland heimisch, wo über 1.200 Brutpaare am berühmten Lummenfelsen und der Langen Anna zu beobachten sind. Doch diese faszinierenden Vögel stehen vor Herausforderungen: Verschmutzung und Überfischung bedrohen ihre Lebensräume und machen den Schutz ihrer Lebenswelt umso wichtiger.",
-  "location": [],
-  "region": null,
+  "location": [
+   "苏格兰",
+   "英国",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Richard Shucksmith",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -7787,7 +8200,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "苏格兰",
+   "scotland",
+   "scottish",
+   "蘇格蘭",
+   "英国",
+   "united kingdom",
+   "britain"
+  ],
   "content_tags": [
    "塘鹅",
    "鸟",
@@ -7900,8 +8326,11 @@
   "imageKey": "BahamaBlues",
   "title": "Türkisfarbenes Wasser der Bahamas",
   "desc": "Heute feiern wir den Unabhängigkeitstag der Bahamas, eines Archipels, das am 10. Juli 1973 seine Unabhängigkeit von Großbritannien erlangte. Dieser Tag erinnert an die reiche Geschichte und Kultur der Inseln, die ein Schmelztiegel afrikanischer, europäischer und amerikanischer Einflüsse sind. Die Bahamas sind bekannt für ihre Rolle in der Geschichte der Piraterie in der Karibik und dienten als Zufluchtsort für berühmte Piraten wie Blackbeard. Außerdem ist die Junkanoo-Musik mit ihren lebhaften Paraden und mitreißenden Rhythmen ein wesentlicher Bestandteil der Feierlichkeiten.\nAuf dem heutigen Bild sind die türkisfarbenen Wasser der Bahamas zu sehen, die für ihre Klarheit und Schönheit berühmt sind. Diese kristallklaren Gewässer sind nicht nur ein Paradies für Touristen, sondern auch ein Zuhause für eine reiche marine Biodiversität. Die Korallenriffe der Bahamas gehören zu den ausgedehntesten und gesündesten der Welt und bieten zahlreichen Fischarten und Meereslebewesen einen Zufluchtsort.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "BlueOrange Studio",
   "gallery": "Adobe Stock",
   "copyrightlink": null,
@@ -7909,7 +8338,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales",
+   "西班牙",
+   "spain"
+  ],
   "content_tags": [
    "云",
    "热带海洋",
@@ -7982,8 +8424,11 @@
   "imageKey": "ThomsonGazelle",
   "title": "Thomson-Gazelle, Mutter und Kitz, Maasai Mara, Kenia",
   "desc": "Unser heutiges Bild zeigt eine Thomson-Gazelle mit ihrem Kalb im Maasai Mara Reservat in Kenia. Die Thomson-Gazelle gehört zu den schnellsten Antilopenarten und erreicht Geschwindigkeiten von bis zu 80 Kilometern pro Stunde. Dieser kleine und agile Pflanzenfresser ist in den afrikanischen Savannen beheimatet, wo er sich hauptsächlich von Gräsern und jungen Trieben ernährt. Sein Fell ist hellbraun mit einem markanten schwarzen Streifen an den Flanken, was ihm eine effektive Tarnung gegen Raubtiere bietet.\nEine interessante Eigenheit der Thomson-Gazellen ist das sogenannte „Pronking“ oder „Stotting“, bei dem sie mit steifen Beinen in die Luft springen. Dieses auffällige Verhalten wird als Methode angesehen, um ihre Beweglichkeit und Gesundheit zu demonstrieren und Raubtiere davon abzuhalten, sie zu verfolgen. Außerdem haben diese Gazellen ein ausgezeichnetes Seh- und Hörvermögen, das ihnen hilft, Gefahren rechtzeitig zu erkennen. Im Maasai Mara Reservat sind sie ein häufiger Anblick und ein Symbol für die reiche Biodiversität der Region.",
-  "location": [],
-  "region": null,
+  "location": [
+   "马赛马拉",
+   "肯尼亚"
+  ],
+  "region": "肯尼亚",
   "photographer": "Gallo Images",
   "gallery": "DanitaDelimont.com",
   "copyrightlink": null,
@@ -7991,7 +8436,15 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞",
+   "马赛马拉",
+   "masai mara",
+   "馬賽馬拉"
+  ],
   "content_tags": [
    "瞪羚",
    "羚羊",
@@ -8137,8 +8590,10 @@
   "imageKey": "TemplePhilae",
   "title": "Tempel von Philae, Assuan, Ägypten",
   "desc": "Der Tempel von Philae zählt zu den faszinierendsten Stätten des Alten Ägyptens. Ursprünglich wurde er auf der Insel Philae erbaut und später auf die nahegelegene Insel Agilkia verlegt, um ihn vor den Fluten des Nils zu schützen. Heute liegt er friedlich am Wasser und lädt zu einer Reise in die Vergangenheit ein. Durch das monumentale Eingangstor gelangt man in einen weitläufigen Hof, der von imposanten Säulen gesäumt ist. Der Haupttempel ist der Göttin Isis gewidmet, die für Magie, Mutterschaft und Schutz steht. Ihr Kult verbreitete sich weit über Ägypten hinaus, sogar die Römer verehrten sie in prächtigen Tempeln.\nNeben dem Haupttempel befinden sich kleinere Heiligtümer, darunter jene für Osiris, den Gott der Unterwelt, und für Horus, die Himmelsgottheit mit Falkenkopf. Nachts erweckt eine beeindruckende Licht- und Tonshow die alten Mythen zum Leben und lässt die kunstvollen Reliefs in magischem Glanz erstrahlen. Die Erforschung solcher Stätten verdanken wir maßgeblich dem deutschen Ägyptologen Karl Richard Lepsius (1810–1884), der im 19. Jahrhundert eine bahnbrechende Expedition nach Ägypten leitete. Seine detaillierten Aufzeichnungen und Zeichnungen legten den Grundstein für die moderne Ägyptologie und halfen dabei, zahlreiche Tempel und Gräber zu dokumentieren. So bewahren Orte wie Philae nicht nur steinerne Zeugen vergangener Zeiten, sondern lassen auch den Geist einer ganzen Kultur weiterleben.",
-  "location": [],
-  "region": null,
+  "location": [
+   "埃及"
+  ],
+  "region": "埃及",
   "photographer": "Ratnakorn Piyasirisorost",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8146,7 +8601,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト"
+  ],
   "content_tags": [
    "菲莱神庙",
    "神庙",
@@ -8292,8 +8752,10 @@
   "imageKey": "BigMoon",
   "title": "Foto der Mondoberfläche durch ein Teleskop",
   "desc": "Heute wird der Internationale Mondtag gefeiert, ein Datum, das von den Vereinten Nationen festgelegt wurde, um der ersten Landung des Menschen auf dem Mond am 20. Juli 1969 zu gedenken. Dieser Tag soll die Öffentlichkeit für die Bedeutung der Mondforschung und ihrer nachhaltigen Nutzung sensibilisieren. Interessanterweise ist der Mond etwa 4,5 Milliarden Jahre alt und seine Oberfläche ist aufgrund von Meteoriteneinschlägen mit Kratern bedeckt. Außerdem beträgt die Schwerkraft des Mondes nur ein Sechstel der Erde, was es den Astronauten ermöglicht, beeindruckende Sprünge zu machen.\nAuf dem heutigen Bild ist eine detaillierte Aufnahme der Mondoberfläche zu sehen, die durch ein Teleskop aufgenommen wurde. Dieses Bild zeigt die Krater und Berge, die die Mondlandschaft prägen, und bietet einen faszinierenden Blick auf unseren natürlichen Satelliten. Ein interessantes Detail ist, dass der Mond keine Atmosphäre besitzt, wodurch seine Oberfläche direkt den extremen Bedingungen von Temperatur und Strahlung im Weltraum ausgesetzt ist. Ein wirklich beeindruckender Anblick!",
-  "location": [],
-  "region": null,
+  "location": [
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Sergey Kuznetsov",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8301,7 +8763,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "月球",
    "月球表面",
@@ -8319,8 +8786,11 @@
   "imageKey": "AcroporaReef",
   "title": "Hirschhorn-Koralle im seichten Ozean",
   "desc": "Korallenriffe gehören zu den faszinierendsten und vielfältigsten Ökosystemen der Erde und bieten unzähligen Tier- und Pflanzenarten einen einzigartigen Lebensraum – vergleichbar mit einem Regenwald unter Wasser. Besonders beeindruckend sind Hirschhorn-Korallen, wie auf unserem heutigen Bild zu sehen, deren verzweigte Strukturen an ein Hirschgeweih erinnern. Diese Korallenart wächst schnell und schafft stabile Lebensräume, die maßgeblich zum Aufbau von Riffen beitragen. Obwohl Korallenriffe weniger als ein Prozent des Meeresbodens bedecken, beherbergen sie etwa 25 Prozent aller Meeresarten.\nDie Bedeutung dieser Unterwasserwelten reicht jedoch weit über ihren ästhetischen Reiz hinaus: Sie schützen Küsten vor Erosion, dienen als Nahrungsquelle, sichern Einkommen und fungieren als natürlicher CO₂-Speicher. Leider sind Korallenriffe durch Überfischung, Klimawandel und Wasserverschmutzung erheblich gefährdet. Aktuell sind rund drei Viertel aller Riffe weltweit bedroht. Doch jeder von uns kann helfen, diese Wunder der Natur zu bewahren – sei es durch die Nutzung riffverträglicher Sonnencreme oder die Unterstützung von Meeresschutzprojekten. Kleine Schritte können Großes bewirken, um Korallenriffe und ihre Vielfalt zu erhalten.",
-  "location": [],
-  "region": null,
+  "location": [
+   "荷兰",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "blue-sea.cz",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -8328,7 +8798,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "荷兰",
+   "netherlands",
+   "holland",
+   "dutch",
+   "オランダ",
+   "荷蘭"
+  ],
   "content_tags": [
    "鹿角珊瑚",
    "珊瑚",
@@ -8394,8 +8876,10 @@
   "imageKey": "VaticanCity",
   "title": "Vatikanstadt mit dem Petersdom, Rom, Italien",
   "desc": "Auf dem heutigen Bild ist die Vatikanstadt mit dem Petersdom in Rom, Italien, zu sehen. Die Vatikanstadt, das kleinste Land der Welt, ist vollständig von der Stadt Rom umgeben. Trotz ihrer winzigen Größe beherbergt sie einen unvergleichlichen kulturellen und religiösen Reichtum. Die Basilika St. Peter mit ihrer beeindruckenden Kuppel, die von Michelangelo entworfen wurde, ist eines der bekanntesten und meistbesuchten Wahrzeichen. Außerdem zieht die Sixtinische Kapelle, berühmt für ihre Fresken, darunter „Die Erschaffung Adams“, jedes Jahr Millionen von Touristen an.\nEine interessante Kuriosität ist, dass sich im Vatikan die einzigen Geldautomaten der Welt befinden, die Anweisungen auf Latein anbieten. Dieses Detail unterstreicht die historische und kulturelle Bedeutung des Lateins im täglichen Leben des Vatikans. Darüber hinaus verfügt der Vatikan über einen eigenen Postdienst, der bei Briefmarkensammlern sehr geschätzt wird. Die Vatikanstadt hat auch ihren eigenen Bahnhof, der jedoch einer der kleinsten und am wenigsten genutzten der Welt ist.",
-  "location": [],
-  "region": null,
+  "location": [
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "RudyBalasko",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8403,7 +8887,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ],
   "content_tags": [
    "圣彼得大教堂",
    "教堂",
@@ -8427,7 +8918,9 @@
   "imageKey": "BayreuthTheatre",
   "title": "Innenansicht des Bayreuther Festspielhauses, Bayreuth, Bayern",
   "desc": "Jedes Jahr im Sommer verwandelt sich Bayreuth in das kulturelle Zentrum für Opernfreunde. Vom 25. Juli bis zum 26. August 2025 finden in der beschaulichen Stadt in Oberfranken die renommierten Bayreuther Festspiele statt. Den feierlichen Auftakt bildet das kostenlose Open-Air-Konzert, das am heutigen 24. Juli auf dem Hügel vor dem Festspielhaus stattfindet. Das Festspielhaus, von Richard Wagner selbst entworfen und zwischen 1872 und 1875 erbaut, wurde speziell für die Aufführung seiner Werke nach antikem Vorbild konzipiert und genießt heute internationalen Ruhm. Mit seiner schlichten roten Backsteinfassade wirkt es eher unscheinbar und erinnert kaum an ein typisches Opernhaus. Doch seine innovative Architektur beeindruckt: Der amphitheaterartige Zuschauerraum und der verdeckte Orchestergraben sorgen für eine revolutionäre Akustik und ein unvergleichliches Klangerlebnis.\nDie Bayreuther Festspiele sind ein einzigartiges Zusammenspiel von Musik, Kunst und Geschichte. Auch dieses Jahr erwartet die Besucherinnen und Besucher ein hochkarätiges Programm: Von „Der Ring des Nibelungen“ bis „Parsifal“ werden ausschließlich Wagners Meisterwerke präsentiert. Eröffnet werden die Festspiele mit „Die Meistersinger von Nürnberg“ in einer Inszenierung von Matthias Davids und unter der musikalischen Leitung von Daniele Gatti.",
-  "location": [],
+  "location": [
+   "罗马"
+  ],
   "region": null,
   "photographer": "Bruce Yuanyue Bi",
   "gallery": "Getty Images",
@@ -8436,7 +8929,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬"
+  ],
   "content_tags": [
    "歌剧院 建筑",
    "剧场内景",
@@ -8824,8 +9323,11 @@
   "imageKey": "HappySunflower",
   "title": "Blühende Sonnenblumen auf einem Feld im Sommer",
   "desc": "Sonnenblumen sind der Inbegriff des Sommers: leuchtend gelb, fröhlich und voller Leben. Ihr Name Helianthus stammt aus dem Griechischen und bedeutet „Sonne“ und „Blume“. Mit einer Wuchshöhe von bis zu drei Metern sind sie nicht zu übersehen – ein echter Blickfang am Wegesrand, perfekt für einen spontanen Fotostopp oder um einen kleinen Naturmoment zu genießen. Ihre Blütezeit liegt meist im Juli und August, wenn ganze Felder goldgelb blühen. Doch Sonnenblumen sind nicht nur schön anzusehen. Ihre Kerne sind wahre Kraftpakete, reich an Vitamin E, Magnesium und gesunden, ungesättigten Fettsäuren.\nBesonders beeindruckend sind die Sonnenblumenfelder im Thüringer Becken, das zu den größten Anbauregionen Deutschlands zählt. Zwischen sanften Hügeln und weiten Feldern erstrecken sich hier im Sommer riesige gelbe Teppiche bis zum Horizont und schaffen so ein Paradies für Naturfreunde und Fotografen. Auch rund um Leipzig, in der Lüneburger Heide oder in Brandenburg findet man wunderschöne Sonnenblumenfelder, die zum Verweilen einladen. Ob beim Spaziergang, auf einer Radtour oder bei einem kurzen Stopp am Straßenrand – Sonnenblumen schenken uns ein kleines Stück Sommer zum Sehen, Schmecken und Fühlen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国",
+   "希腊"
+  ],
+  "region": "希腊",
   "photographer": "Arsgera",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -8833,7 +9335,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "向日葵",
    "花",
@@ -8924,8 +9437,11 @@
   "imageKey": "BabyLemur",
   "title": "Katta-Junges spielt mit seinem Schwanz, Madagaskar",
   "desc": "Kennen Sie diesen geselligen Kerl auf unserem heutigen Bild? Kattas sind faszinierende Halbaffen, die ausschließlich im Süden Madagaskars vorkommen – in trockenen Wäldern und felsigen Landschaften. Mit ihrem markanten schwarz-weiß-geringelten Schwanz und den großen, leuchtenden Augen gehören sie zu den bekanntesten Lemurenarten. Ihr Schwanz ist nicht nur unverwechselbar, sondern auch ein wichtiges Kommunikationsmittel: Beim Wandern durch offenes Gelände halten Kattas ihn wie eine Fahne hoch, um die Gruppe zusammenzuhalten.\nDuftmarken, laute Rufe und sogenannte „Stinkkämpfe“ zwischen Männchen prägen ihren Alltag. Junge Kattas üben mit ihrem Schwanz Gleichgewicht und Koordination, während sie sich in den ersten Lebenswochen eng am Bauch oder Rücken ihrer Mutter klammern. Später lernen sie durch Spiel, sich in der Gruppe von bis zu 30 Tieren, die von Weibchen angeführt wird, zurechtzufinden. Leider ist ihr Lebensraum jedoch stark durch Abholzung und Wilderei bedroht. Umso wichtiger ist es, ihren einzigartigen Lebensraum zu schützen – bevor es zu spät ist.",
-  "location": [],
-  "region": null,
+  "location": [
+   "马达加斯加",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Andy Rouse",
   "gallery": "Nature Picture Library",
   "copyrightlink": null,
@@ -8933,7 +9449,15 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "马达加斯加",
+   "madagascar"
+  ],
   "content_tags": [
    "环尾狐猴",
    "狐猴",
@@ -9000,8 +9524,11 @@
   "imageKey": "IguazuArgentina",
   "title": "Die Drei-Musketiere-Fälle bei den Iguazú-Wasserfällen, Argentinien",
   "desc": "Manche Naturwunder muss man erst hören, bevor man sie sieht. Die Iguazú-Fälle sind ein solcher Ort: Sie erstrecken sich über fast drei Kilometer und bestehen aus über 270 Wasserfällen, die tosend in die Tiefe rauschen und ein echtes Spektakel an der Grenze zwischen Argentinien und Brasilien darstellen. Besonders eindrucksvoll sind die Drei-Musketiere-Fälle, die auf dem heutigen Bild zu sehen sind. Drei mächtige Wasserströme stürzen nebeneinander in den Iguazú-Fluss und sind eingerahmt vom dichten, subtropischen Regenwald. Obwohl sie sich auf argentinischem Boden befinden, sind sie nur von der brasilianischen Seite aus sichtbar – ein faszinierendes Naturparadoxon.\nDer Iguazú-Nationalpark, der zum UNESCO-Weltnaturerbe gehört, bietet Stege und Aussichtsplattformen sowie eine unglaubliche Artenvielfalt. Wer hier steht, spürt die Kraft der Natur – eine Kraft, die sich vielleicht mit der der Triberger Wasserfälle im Schwarzwald vergleichen lässt, jedoch in tropischer Dimension und mit ungleich größerer Wucht. Ob Sie tropische Fälle bestaunen oder heimische Wasserwege erkunden möchten: Nehmen Sie Eindrücke mit, aber lassen Sie nichts zurück, damit die Natur ihre Ursprünglichkeit behält.",
-  "location": [],
-  "region": null,
+  "location": [
+   "阿根廷",
+   "巴西"
+  ],
+  "region": "巴西",
   "photographer": "Mark Meredith",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9009,7 +9536,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿根廷",
+   "argentina",
+   "巴西",
+   "brazil"
+  ],
   "content_tags": [
    "伊瓜苏瀑布",
    "瀑布",
@@ -9146,8 +9678,10 @@
   "imageKey": "KenyaElephants",
   "title": "Afrikanische Elefantenherde, Amboseli-Nationalpark, Kenia",
   "desc": "Heute ist Welttag der Elefanten – ein Aktionstag zu Ehren der sanften Riesen, der erstmals 2012 auf Initiative zweier kanadischer Filmemacher ins Leben gerufen wurde. Ziel ist es, weltweit auf den Schutz dieser beeindruckenden Tiere aufmerksam zu machen. Elefanten wie jene im Amboseli-Nationalpark in Kenia auf unserem heutigen Bild, sind die größten landlebenden Säugetiere der Erde. Mit ihren langen Stoßzähnen, großen Ohren und dem markanten Rüssel wirken sie imposant, sind aber zugleich äußerst sensibel, intelligent und besitzen ein ausgeprägtes Sozialverhalten. Sie erkennen sich selbst im Spiegel, trauern um Verstorbene und leben in komplexen Herdenstrukturen, die von erfahrenen Elefantenkühen – den sogenannten Matriarchinnen – angeführt werden. Dank ihres erstaunlichen Erinnerungsvermögens führen sie ihre Gruppen zu Wasserstellen, die sie seit Jahrzehnten kennen.\nIn freier Wildbahn gibt es heute noch zwei Arten: den afrikanischen und den kleineren asiatischen Elefanten. Beide sind für ihr Ökosystem unverzichtbar. Doch Wilderei, Lebensraumverlust und illegaler Elfenbeinhandel bedrohen ihren Bestand massiv. In Afrika werden jährlich rund 30.000 Tiere getötet – mehr, als sich jährlich fortpflanzen können. Darum ist der Schutz dieser einzigartigen Dickhäuter dringlicher denn je.",
-  "location": [],
-  "region": null,
+  "location": [
+   "肯尼亚"
+  ],
+  "region": "肯尼亚",
   "photographer": "Chase Dekker",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -9155,7 +9689,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞"
+  ],
   "content_tags": [
    "大象",
    "象群",
@@ -9313,8 +9852,12 @@
   "imageKey": "ColorfulBeehives",
   "title": "Bunte Bienenstöcke, Italien",
   "desc": "Haben Sie sich schon einmal gefragt, wie wichtig Honigbienen für Ihr Frühstück sind? Dabei geht es nicht nur um Honig. Etwa 35 Prozent der weltweiten Nahrungsmittelproduktion hängt von der Bestäubung durch Tiere ab, wobei Honigbienen eine zentrale Rolle spielen. Ihr Beitrag zur Landwirtschaft hat einen wirtschaftlichen Wert von mehreren hundert Milliarden Euro. Doch diese kleinen Helfer sind bedroht: Krankheiten, Umweltgifte und der Verlust blühender Lebensräume gefährden ihre Existenz.\nDas heutige Bild zeigt bunte Bienenstöcke in Italien. Die farbigen Kästen – oft in Blau, Gelb, Grün oder Rot – helfen den Bienen, ihren eigenen Stock leichter zu erkennen. Das reduziert Verwechslungen und hilft, das Verfliegen oder Eindringen in fremde Stöcke zu vermeiden. Auch Imker profitieren von der besseren Unterscheidbarkeit. Solche Farbcodierungen sind auch in vielen Regionen Deutschlands üblich, in denen mehrere Bienenvölker nebeneinander gehalten werden. Was können Sie tun? Pflanzen Sie bienenfreundliche Blumen, verzichten Sie auf chemische Spritzmittel im Garten oder unterstützen Sie lokale Imker. Jeder Beitrag hilft, die Artenvielfalt zu erhalten.",
-  "location": [],
-  "region": null,
+  "location": [
+   "普罗旺斯",
+   "法国",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Roberto Caucino",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -9322,7 +9865,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "普罗旺斯",
+   "provence",
+   "普羅旺斯",
+   "法国",
+   "france",
+   "français"
+  ],
   "content_tags": [
    "蜂箱",
    "养蜂",
@@ -9427,8 +9983,10 @@
   "imageKey": "GipuzcoaSummer",
   "title": "Flysch-Felsformationen in Zumaia, Baskenland, Spanien",
   "desc": "Im Norden des spanischen Baskenlandes, rund 40 Kilometer westlich von San Sebastián, liegt Zumaia – eine charmante Küstenstadt an einem der schönsten Abschnitte der Region, dort, wo die Flüsse Urola und Norrondo zusammenfließen. Besonders bekannt ist Zumaia für seine beeindruckenden Flysch-Felsformationen, die auf unserem heutigen Bild zu sehen sind. Diese schichtweise abgelagerten Kalk-, Sandstein- und Tonschiefergesteine entstanden über Millionen Jahre hinweg durch geologische Prozesse. Diese geologische Besonderheit fasziniert sowohl Wissenschaftler als auch Naturbegeisterte und Fotografen aus aller Welt. Die Steilküste von Zumaia gewährt spannende Einblicke in die Erdgeschichte und ist Teil des UNESCO-Geoparks der Baskischen Küste.\nZugleich ist die Region ein Paradies für Aktivurlauber: Surfen, Kajakfahren und Stand-up-Paddling sind an den Stränden des Kantabrischen Meeres besonders beliebt. Entlang der rauen Klippen führen spektakuläre Wanderwege zu den Nachbarorten Deba und Mutriku und belohnen mit malerischen Ausblicken. Wussten Sie übrigens, dass einige Szenen der Serie „Game of Thrones“ in Zumaia gedreht wurden? Ob Serienfan oder Naturliebhaber – Zumaia ist ein reizvoller Urlaubsort abseits des Massentourismus für alle, die das Klima der Atlantikküste und die baskische Kultur erleben möchten.",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Eloi_Omella",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9436,7 +9994,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "海岸",
    "礁石",
@@ -9461,8 +10024,11 @@
   "imageKey": "CitadelBonifacio",
   "title": "Die Zitadelle von Bonifacio, Südkorsika, Frankreich",
   "desc": "Weiße Kalkfelsen, kristallklares Wasser und eine beeindruckende Kulisse – so lässt sich die Stadt Bonifacio wohl am treffendsten beschreiben. Die südlichste Stadt Korsikas wurde im Jahr 828 vom toskanischen Markgrafen Bonifatius II. als Küstenfestung gegründet und gilt heute als einer der faszinierendsten Orte der Insel. Über Jahrhunderte diente sie als strategischer Stützpunkt an den wichtigsten Seerouten des Mittelmeers. Die mittelalterliche Altstadt, die Haute Ville, erzählt mit ihren engen Gassen, alten Wohnhäusern und der imposanten Zitadelle, die auf unserem heutigen Bild zu sehen ist, eindrucksvoll von ihrer wechselvollen Geschichte.\nEin besonderes Erlebnis ist der Abstieg über die „Treppe des Königs von Aragon“, deren 187 in den Fels gehauene Stufen direkt zum Meer führen. Beliebt sind auch Bootstouren zu den nahe gelegenen Meeresgrotten oder zur vorgelagerten Inselgruppe Lavezzi. Diese steht unter Naturschutz und bietet Lebensraum für seltene Arten wie die Korsische Möwe. Korsika gehört zwar zu Frankreich, vereint aber französische, italienische und korsische Einflüsse, die sich in der Kultur der Insel widerspiegeln. Die malerische Hafenstadt Bonifacio ist ein Ort voller Kontraste, der mit seiner bewegten Geschichte und Mittelmeer-Charme zum Entdecken und Verweilen einlädt.",
-  "location": [],
-  "region": null,
+  "location": [
+   "托斯卡纳",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Marc Dozier",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9470,7 +10036,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "托斯卡纳",
+   "tuscany",
+   "toskana",
+   "托斯卡納",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "博尼法乔",
    "要塞",
@@ -9547,8 +10123,10 @@
   "imageKey": "FieldKaiserstuhl",
   "title": "Ansicht eines landwirtschaftlichen Feldes, Kaiserstuhl, Baden-Württemberg",
   "desc": "Der Kaiserstuhl ist ein kleines Mittelgebirge im Süden Baden-Württembergs, nahe Freiburg im Breisgau, und zählt zu den sonnenreichsten Orten Deutschlands. Seinen Namen verdankt der Kaiserstuhl übrigens Kaiser Otto III., der hier im Jahr 994 Gericht hielt. Die malerische Gegend ist ein wahres Paradies für Naturliebhaber, Erholungssuchende und Weinliebhaber gleichermaßen. Dank der fruchtbaren Böden und des milden Klimas gedeihen hier Rebsorten wie Grauburgunder und Spätburgunder besonders gut. Die vulkanische Vergangenheit hat einen mineralstoffreichen Boden hinterlassen, der den Weinen der Region ihren einzigartigen Charakter verleiht. Die sanften Hügel, idyllischen Dörfer und eine artenreiche Tierwelt – darunter die seltene Smaragdeidechse – machen den Kaiserstuhl auch für Naturfreunde zu einem faszinierenden Ziel.\nGut ausgeschilderte Wander- und Radwege führen durch Weinberge, Wälder und historische Orte wie Vogtsburg oder Endingen, die mit Fachwerkhäusern und badischer Gastfreundschaft begeistern. Im Frühling erblühen Orchideenwiesen, während der Herbst mit stimmungsvollen Weinfesten lockt. Genießen Sie das Panorama endloser Weinterrassen und lassen Sie sich von der badischen Gastfreundschaft verwöhnen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "EyeEM Mobile GmbH",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9556,7 +10134,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "梯田",
    "葡萄园",
@@ -9876,8 +10461,11 @@
   "imageKey": "MaldivesWhaleShark",
   "title": "Walhai vor der Küste des Alifu Dhaalu-Atolls, Malediven",
   "desc": "Am 30. August ist Internationaler Tag des Walhais – ein Aktionstag, der seit 2008 auf den Schutz dieser sanften Riesen aufmerksam macht. Der Walhai kann bis zu 12 Meter lang werden und wiegt mehrere Tonnen. Trotz seines Namens ist er völlig ungefährlich, da er sich ausschließlich von Plankton ernährt und keine Gefahr für den Menschen darstellt. Diese faszinierenden Tiere sind weltweit in tropischen und subtropischen Meeren unterwegs – von der Yucatán-Küste in Mexiko über die Malediven bis hin zu Mosambik, Australien und den Philippinen. In deutschen Gewässern wie der Nord- oder Ostsee wäre es ihnen allerdings viel zu kalt.\nWalhaie sind ovovivipar, das heißt, ihre Jungen schlüpfen im Mutterleib und werden lebend geboren. Forschende identifizieren sie anhand ihrer einzigartigen Punktmuster, doch vieles, etwa zur Fortpflanzung, bleibt rätselhaft. Klar ist: Walhaie sind bedroht – vor allem durch den Menschen. Kollisionen mit Schiffen, Plastikmüll und nicht regulierter Tourismus setzen ihnen zu. Gerade ein Tag wie dieser erinnert uns daran, wie wichtig es ist, die Wunder der Meere zu schützen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "马尔代夫",
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "Bachir Moukarzel",
   "gallery": "Amazing Aerial Agency",
   "copyrightlink": null,
@@ -9885,7 +10473,15 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican",
+   "马尔代夫",
+   "maldives",
+   "馬爾地夫",
+   "馬爾代夫"
+  ],
   "content_tags": [
    "鲸鲨",
    "鲨鱼",
@@ -10179,8 +10775,10 @@
   "imageKey": "FrankfurtAlteBruecke",
   "title": "Frankfurter Skyline im violetten Licht und Alte Brücke, Frankfurt am Main, Hessen",
   "desc": "Frankfurt am Main, die lebendige Metropole im Herzen Deutschlands, besticht durch ihre einzigartige Verbindung von moderner Skyline und historischer Altstadt. Ein herausragendes Bauwerk ist die Alte Brücke, die den Main seit dem Mittelalter überspannt und als eine der ältesten Flussquerungen der Stadt gilt. Über Jahrhunderte war sie ein bedeutender Handelsweg. Die heutige Alte Brücke, zwischen 1912 und 1926 neu errichtet, verbindet die Altstadt mit dem Stadtteil Sachsenhausen und bietet einen der schönsten Ausblicke auf die beeindruckende Mainhattan-Skyline und den Dom – ein Sinnbild für die Verbindung von Tradition und Moderne. Besonders bei Sonnenuntergang entfaltet die Brücke ihren besonderen Charme.\nDie Alte Brücke ist der ideale Ausgangspunkt für einen Spaziergang entlang des Mainufers oder einen Besuch der nahe gelegenen Altstadt. Hier warten Sehenswürdigkeiten wie der Römer, die Paulskirche und urige Apfelweinlokale. Kulturinteressierte können im Geburtshaus von Johann Wolfgang von Goethe auf den Spuren des berühmten Dichters wandeln. Auch die renommierte Frankfurter Museumslandschaft begeistert Kunstliebhaber. Erleben Sie das harmonische Zusammenspiel zwischen Vergangenheit und Moderne bei einem Besuch in der fahrradfreundlichen Bankenmetropole, denn kaum eine Stadt steckt so voller Kontraste wie Frankfurt.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "diegograndi",
   "gallery": "iStock/Getty Images Plus",
   "copyrightlink": null,
@@ -10188,7 +10786,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "法兰克福",
    "城市",
@@ -10214,8 +10819,11 @@
   "imageKey": "BlueGdansk",
   "title": "Danzig am Ufer der Mottlau, Polen",
   "desc": "Die an der Ostseeküste Polens gelegene Stadt Danzig bezaubert mit ihren historischen Gebäuden und ihrem unverwechselbaren Charme. Die Hafenstadt liegt an der Mottlau, einem Nebenarm der Weichsel, und blickt auf eine lange, bewegte Geschichte zurück. Die prächtigen Fassaden der Rechtstadt, allen voran das berühmte Krantor – eines der bekanntesten Wahrzeichen –, erinnern an die Hansezeit, als Danzig auch für deutsche Kaufleute ein wichtiger Handelspartner war. Über Jahrhunderte stand die Stadt unter wechselndem Einfluss – preußisch, deutsch und polnisch – und bewahrt bis heute eine faszinierende Mischung aus Kulturen. Ein Spaziergang durch die malerische Altstadt gleicht einer Reise in die Vergangenheit: Historische Wahrzeichen und prachtvolle Bauwerke erzählen von einer reichen Vergangenheit. Besonders sehenswert sind die Lange Gasse mit dem prächtigen Artushof und der Neptunbrunnen.\nDanzig zählt zu den schönsten Städten Polens und bietet für jeden Geschmack etwas: eindrucksvolle Architektur, kleine Boutiquen mit feinem Kunsthandwerk – besonders bekannt ist die Stadt für ihren Bernstein – sowie zahlreiche Restaurants mit regionalen Spezialitäten. Im Sommer laden die kilometerlangen Strände des benachbarten Sopot zum Baden und Entspannen ein. Wer Danzig noch nicht kennt, sollte diese Reise fest einplanen!",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "波兰"
+  ],
+  "region": "波兰",
   "photographer": "Oscar Dominguez",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -10223,7 +10831,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "波兰",
+   "poland",
+   "polish",
+   "波蘭"
+  ],
   "content_tags": [
    "格但斯克老城",
    "港口起重机 中世纪建筑",
@@ -10416,8 +11035,10 @@
   "imageKey": "SpinnerDolphins",
   "title": "Gruppe von Spinnerdelfinen im Roten Meer bei Marsa Alam, Ägypten",
   "desc": "Anlässlich des heutigen Weltdelfintags, der 2022 erstmals gefeiert wurde, stehen Delfine als außergewöhnliche Meeressäuger im Mittelpunkt. Mit über 40 Arten, darunter der seltene Māui-Delfin, zählen sie zu den faszinierendsten Lebewesen des Ozeans. Sie beeindrucken mit Fähigkeiten wie ausgeprägtem Teamverhalten, spektakulären „Superpods“ mit Hunderten Tieren und ihrer einzigartigen Echolot-Ortung. Dabei senden sie Klicklaute aus, deren Echos ihnen helfen, sich unter Wasser zu orientieren und Beute zu finden – selbst bei Dunkelheit oder in trübem Wasser.\nAuf dem heutigen Bild sind Spinnerdelfine zu sehen, die elegant durch das warme Wasser vor Marsa Alam im Roten Meer gleiten. Dabei springen sie bis zu zwei Meter hoch und drehen sich bis zu siebenmal – ein beeindruckendes Naturschauspiel. Doch ihr geregelter Tagesablauf macht sie empfindlich gegenüber Massentourismus. Deshalb begrenzen Schutzgebiete den Zugang, um ihre Ruhephasen zu sichern. Auch in der Nordsee leben Delfine, vor allem Große Tümmler und gelegentlich auch Weißschnauzendelfine. Besonders im Sommer lassen sie sich in den küstennahen Gewässern beobachten, was einen seltenen, aber beeindruckenden Anblick bietet. Lassen Sie uns also gemeinsam dafür sorgen, dass Delfine frei und ungestört leben können.",
-  "location": [],
-  "region": null,
+  "location": [
+   "埃及"
+  ],
+  "region": "埃及",
   "photographer": "Franco Banfi",
   "gallery": "Nature Picture Library",
   "copyrightlink": null,
@@ -10425,7 +11046,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト"
+  ],
   "content_tags": [
    "海豚",
    "海洋动物",
@@ -10577,8 +11203,14 @@
   "imageKey": "OzoneEarth",
   "title": "Nachtansicht der Golfküstenstaaten aus 362 Kilometern Höhe über der Erde",
   "desc": "Am 16. September wird der Internationale Tag zum Schutz der Ozonschicht begangen – ein Datum, das an die Unterzeichnung des Montrealer Protokolls im Jahr 1987 erinnert. Dieses historische Abkommen erzielte etwas Einzigartiges: Es wurde von allen 197 Mitgliedstaaten der Vereinten Nationen ratifiziert und ist damit das erste Abkommen in der Geschichte der UNO mit universeller Zustimmung. Dank dieser globalen Zusammenarbeit konnte der Einsatz ozonschädlicher Stoffe wie FCKW drastisch reduziert werden.\nInteressant ist, dass sich die Ozonschicht zwar in etwa 15 bis 35 Kilometern Höhe befindet, ihr Schutz jedoch Auswirkungen hat, die uns direkt betreffen – von der menschlichen Gesundheit bis hin zum globalen Klimagleichgewicht. In der heutigen Aufnahme sieht man eine Nachtansicht der Golfküstenstaaten aus 362 Kilometern Höhe über der Erde, ein eindrucksvolles Bild, das uns die Schönheit unseres Planeten vor Augen führt und daran erinnert, wie wichtig es ist, ihn zu bewahren.",
-  "location": [],
-  "region": null,
+  "location": [
+   "南极",
+   "南极洲",
+   "加拿大",
+   "日本",
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "Stocktrek Images",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -10586,7 +11218,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ",
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極",
+   "墨西哥",
+   "mexico",
+   "mexican",
+   "日本"
+  ],
   "content_tags": [
    "地球",
    "行星",
@@ -10654,8 +11299,10 @@
   "imageKey": "DunquinIreland",
   "title": "Serpentinenartiger Pfad, Dunquin Pier, County Kerry, Irland",
   "desc": "Endlos lange Strände, schroffe Berglandschaften und steil abfallende Küsten – für eine solche Traumkulisse muss man nicht ans andere Ende der Welt reisen. Diese landschaftliche Vielfalt findet sich auch in Irland, besonders eindrucksvoll an der windumtosten Atlantikküste der Dingle-Halbinsel. Dort liegt das kleine Dorf Dunquin (irisch: Dún Chaoin), bekannt für seine dramatische Küste, seine lebendige Tradition und den berühmten Dunquin Pier – ein Ort, der wirkt, als sei er einem Film entsprungen. Der kleine Anleger ist nur zu Fuß erreichbar und berühmt für seinen serpentinenartigen Pfad, der sich spektakulär die Klippen hinabwindet. Heute zählt er zu den meistfotografierten Motiven Irlands. Von hier aus fahren Boote zu den abgelegenen Blasket Islands, die einst Heimat von Fischern und Schriftstellern waren. Dunquin ist die westlichste Siedlung Irlands und Teil der Gaeltacht, in der bis heute Irisch gesprochen wird.\nMit rund 160 Einwohnern ist er ein lebendiger Mittelpunkt gälischer Traditionen, Musik und Erzählkunst. Der malerische Ort erinnert an die autofreie Insel Hiddensee vor der Küste Rügens. Mit ihren langen Sandstränden, weiten Heideflächen und markanten Steilküsten ist die Insel eine echte Oase für Naturliebhaber und Kulturschaffende, auf der schon Dichter wie Gerhart Hauptmann Inspiration fanden.",
-  "location": [],
-  "region": null,
+  "location": [
+   "爱尔兰"
+  ],
+  "region": "爱尔兰",
   "photographer": "Hugh O'Connor",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -10663,7 +11310,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "爱尔兰",
+   "ireland",
+   "irish",
+   "愛爾蘭"
+  ],
   "content_tags": [
    "邓金码头",
    "码头",
@@ -10738,7 +11390,9 @@
   "imageKey": "OktoberfestHackerFestzelt",
   "title": "Hacker-Festzelt auf dem Oktoberfest, München, Bayern",
   "desc": "Heute ist der Tag, den Millionen Menschen sehnlichst erwartet haben: Das größte Volksfest der Welt beginnt wieder. Bis zum 5. Oktober findet das 190. Oktoberfest auf der Theresienwiese in München statt und verwandelt die berühmte „Wiesn“ in ein Meer aus bunten Festzelten, Fahrgeschäften und Ständen mit traditionellen Spezialitäten. Das traditionsreiche Fest geht auf das Jahr 1810 zurück, als Kronprinz Ludwig und Prinzessin Therese ihre Hochzeit mit einem großen Pferderennen feierten.\nEines der beliebtesten Festzelte ist das Hacker-Festzelt, auch bekannt als „Himmel der Bayern“. Seinen Namen verdankt es der kunstvoll bemalten Decke, die einen weiß-blauen Himmel mit Wolken und Münchens Skyline zeigt – ein Gefühl, als würde man unter freiem Himmel feiern. Das Zelt bietet Platz für über 9.000 Gäste und ist bekannt für seine ausgelassene Stimmung, traditionelle Blasmusik und legendäre Wiesn-Hits am Abend. Ein besonderes Highlight ist der Kehraus am letzten Wiesn-Tag. Zum großen Finale funkeln unter dem „Himmel der Bayern“ unzählige Wunderkerzen, die zuvor an die Gäste verteilt werden. Also: Dirndl oder Lederhosen anziehen und sich von der einzigartigen Wiesn-Atmosphäre mitreißen lassen. O’zapft is!",
-  "location": [],
+  "location": [
+   "慕尼黑"
+  ],
   "region": null,
   "photographer": "Westend61",
   "gallery": "Getty Images Plus",
@@ -10747,7 +11401,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "慕尼黑",
+   "munich",
+   "münchen",
+   "ミュンヘン"
+  ],
   "content_tags": [
    "人群",
    "啤酒节大棚",
@@ -11119,8 +11778,10 @@
   "imageKey": "HoutenHouses",
   "title": "Regenbogenhäuser in der Stadt Houten, Niederlande",
   "desc": "Auf dem heutigen Bild sind die Regenbogenhäuser in der Stadt Houten, Niederlande, zu sehen. Diese farbenfrohen Holzhäuser liegen direkt am Rietplas-See und stehen für modernes, nachhaltiges Stadtdesign. Mit ihren lebendigen Farben verschönern sie nicht nur die Umgebung, sondern spiegeln auch den ökologischen Geist von Houten wider – einer Stadt, die für Fahrräder und Fußgänger konzipiert wurde. Besonders bei Sonnenuntergang, wenn sich die Farben im Wasser spiegeln, wird dieser Ort zu einem beliebten Ziel für Fotografen und Architekturbegeisterte.\nWer solche malerische Architektur schätzt, wird auch in Idstein fündig – einem charmanten Städtchen in Hessen. Die Altstadt begeistert mit liebevoll restaurierten Fachwerkhäusern, deren bunte Fassaden eine warme und einladende Atmosphäre schaffen. Zwischen verwinkelten Gassen und den Stadtbächen Wörsbach und Wolfsbach lässt sich eine ähnliche Wertschätzung für Farbe, Form und Lebensqualität erkennen wie in Houten. Idstein verbindet Tradition mit Ästhetik – ein Ort, der nicht nur architektonisch, sondern auch kulturell viel zu bieten hat.",
-  "location": [],
-  "region": null,
+  "location": [
+   "荷兰"
+  ],
+  "region": "荷兰",
   "photographer": "George Pachantouris",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11128,7 +11789,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "荷兰",
+   "netherlands",
+   "holland",
+   "dutch",
+   "オランダ",
+   "荷蘭"
+  ],
   "content_tags": [
    "彩色的联排房屋",
    "房屋",
@@ -11154,8 +11822,12 @@
   "imageKey": "EucalyptusKoala",
   "title": "Koala in einem Eukalyptusbaum, Great-Otway-Nationalpark, Australien",
   "desc": "Koalas sind einzigartige Beuteltiere aus Australien, bekannt für ihr niedliches Aussehen und ihren entspannten Lebensstil. Sie schlafen bis zu 20 Stunden am Tag und verbringen den Rest damit, Eukalyptusblätter zu fressen – ihre einzige Nahrungsquelle. Trotz ihres Rufs als „Baumumarmer“ trinken Koalas kaum Wasser; sie beziehen fast ihre gesamte Flüssigkeit aus den Blättern. Auf dem heutigen Bild sieht man einen Koala in einem Eukalyptusbaum im Great-Otway-Nationalpark, Australien, der sich fest an die Äste klammert – als würde er das Wesentliche umarmen.\nInteressanterweise haben Koalas Fingerabdrücke, die denen des Menschen fast identisch sind – eine Überraschung selbst für Forensiker. Ihr dichtes Fell schützt sie sowohl vor Hitze als auch vor Kälte, und ihre scharfen Krallen helfen ihnen beim Klettern. Auch wenn sie langsam wirken, sind sie ausgezeichnete Kletterer und sehr wählerisch bei ihrer Nahrung. Sie in freier Wildbahn zu beobachten, vermittelt ein Gefühl von Ruhe und tiefer Verbundenheit mit der Natur.",
-  "location": [],
-  "region": null,
+  "location": [
+   "普罗旺斯",
+   "澳大利亚",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Jamie Lamb - elusive-images.co.uk",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11163,7 +11835,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "普罗旺斯",
+   "provence",
+   "普羅旺斯",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲"
+  ],
   "content_tags": [
    "考拉",
    "动物",
@@ -11334,8 +12019,10 @@
   "imageKey": "DragonEndeavour",
   "title": "Die Hauptsolaranlagen der ISS, gesehen von der SpaceX Crew Dragon Endeavour (© NASA)",
   "desc": "Jedes Jahr vom 4. bis 10. Oktober wird die Internationale Weltraumwoche gefeiert – eine Initiative der Vereinten Nationen, die die Bedeutung von Raumfahrttechnologie und -wissenschaft für das Leben auf der Erde hervorhebt. Diese Woche erinnert an zwei historische Meilensteine: den Start des ersten künstlichen Satelliten, Sputnik I, am 4. Oktober 1957 und das Inkrafttreten des Weltraumvertrags am 10. Oktober 1967, der die friedliche Nutzung des Weltraums sowie das Verbot von Waffen im All regelt. Weltweit finden in dieser Zeit zahlreiche Veranstaltungen statt – von Schulprojekten bis hin zu wissenschaftlichen Ausstellungen –, um das Interesse an der Raumfahrt zu fördern und junge Menschen für die Erforschung des Universums zu begeistern.\nAuf dem heutigen Bild sieht man die Hauptsolaranlagen der ISS, gesehen von der SpaceX Crew Dragon Endeavour, eine beeindruckende Perspektive auf die zentralen Solarpaneele der Internationalen Raumstation. Diese Anlagen sind entscheidend für die Energieversorgung der ISS, da sie Sonnenlicht im luftleeren Raum einfangen. Die Aufnahme aus der Crew-Dragon-Kapsel erinnert uns daran, wie weit die Menschheit bereits vorgedrungen ist – und wie viel es im All noch zu entdecken gibt.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "NASA",
   "gallery": null,
   "copyrightlink": null,
@@ -11343,7 +12030,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "地球",
    "舷窗",
@@ -11365,8 +12059,14 @@
   "imageKey": "TeacherOwl",
   "title": "Raufußkauz in einem Wald in Mitteleuropa",
   "desc": "Der Weltlehrertag wird jedes Jahr am 5. Oktober gefeiert und wurde 1994 von der UNESCO ins Leben gerufen, um die zentrale Rolle von Lehrkräften weltweit zu würdigen. Dieses Datum erinnert an die Unterzeichnung der gemeinsamen Empfehlung von UNESCO und IAO zur Lage des Lehrpersonals (1966), die Standards für deren Rechte und Pflichten festlegt. Lehrkräfte sind entscheidend für den Aufbau gerechter, inklusiver und nachhaltiger Gesellschaften. Persönlichkeiten wie Maria Montessori, Paulo Freire oder Gabriela Mistral gelten als Vorbilder für innovative Bildungsansätze und lebenslanges Engagement für das Lernen.\nAls Hommage an die Weisheit zeigt das heutige Bild einen Raufußkauz in einem Wald in Mitteleuropa. Seit Jahrhunderten steht der Kauz als Symbol für Intelligenz, Nachdenklichkeit und tiefes Wissen – Eigenschaften, die auch große Lehrkräfte auszeichnen. Sein ruhiger Blick zwischen den Bäumen erinnert uns daran, wie wertvoll es ist, mit Geduld und Weitsicht zu lehren.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "日本",
+   "法国",
+   "中国",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Ondrej Prosicky",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -11374,7 +12074,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "日本",
+   "japan"
+  ],
   "content_tags": [
    "猫头鹰",
    "鸟",
@@ -11540,8 +12253,11 @@
   "imageKey": "WebbPillars",
   "title": "Die Säulen der Schöpfung, betrachtet vom James-Webb-Weltraumteleskop",
   "desc": "Es ist bereits der 9. Oktober und die Internationale Weltraumwoche neigt sich dem Ende zu. Die vergangenen Tage brachten eine Fülle an Erkenntnissen, eindrucksvollen Aufnahmen und neuen Perspektiven auf unsere Stellung im Universum. Zum krönenden Abschluss richten wir heute unseren Blick auf eine der ikonischsten Ansichten des Kosmos: die majestätischen Säulen der Schöpfung, die vom James-Webb-Weltraumteleskop eingefangen wurden.\nDiese kolossalen Strukturen erstrecken sich über mehrere Lichtjahre und bestehen hauptsächlich aus interstellarem Wasserstoff und kosmischem Staub. Sie fungieren als Sternenwiegen, in denen neue Sterne durch den gravitativen Kollaps von Materie entstehen. Das Faszinierendste daran ist, dass sie zwar statisch wirken, sich aber ständig verändern: Innere Prozesse und die Strahlung nahegelegener Sterne formen sie langsam um. Die Bilder des James-Webb-Teleskops haben nie zuvor gesehene Details enthüllt – darunter Materiejets, die von Protosternen ausgestoßen werden, und Zonen intensiver energetischer Aktivität. Es ist, als würde das Universum direkt vor unseren Augen erblühen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "NASA",
   "gallery": null,
   "copyrightlink": null,
@@ -11549,7 +12265,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "创生之柱",
    "鹰状星云",
@@ -11569,8 +12297,11 @@
   "imageKey": "MonurikiFiji",
   "title": "Korallenriff rund um die Insel Monuriki, Mamanuca-Inseln, Fidschi",
   "desc": "Am Fidschi-Tag, der jedes Jahr am 10. Oktober gefeiert wird, erinnert man sich an die Unabhängigkeit Fidschis vom Vereinigten Königreich im Jahr 1970. Dieser nationale Feiertag ist geprägt von kulturellem Stolz, traditionellen Tänzen, Musik, religiösen Zeremonien und farbenfrohen Umzügen. Die Menschen kleiden sich in traditionelle Gewänder und genießen gemeinsam typische Gerichte wie Kokoda (in Kokosmilch marinierter Fisch) oder Lovo (unterirdisch gegartes Essen). Der Fidschi-Tag ist nicht nur ein politisches Ereignis, sondern auch eine Gelegenheit, die ethnische Vielfalt des Landes und seine tiefe Verbundenheit mit der Natur und dem Ozean zu feiern.\nAuf dem heutigen Bild sieht man die beeindruckende Schönheit eines Korallenriffs rund um die Insel Monuriki in den Mamanuca-Inseln, Fidschi, ein paradiesischer Ort, der wie aus einem Traum erscheint. Dieses Riff umgibt die unbewohnte Insel Monuriki, die für ihre reiche Meeresfauna und als Drehort des Films Cast Away bekannt ist. Das kristallklare Wasser und das lebendige Unterwasserleben machen diesen Ort im Pazifik zu einem perfekten Symbol für den natürlichen Reichtum, den Fidschi an seinem Nationalfeiertag feiert.",
-  "location": [],
-  "region": null,
+  "location": [
+   "斐济",
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "David Wall",
   "gallery": "SuperStock",
   "copyrightlink": null,
@@ -11578,7 +12309,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "斐济",
+   "fiji",
+   "fijian",
+   "斐濟",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
   "content_tags": [
    "海岛",
    "岛屿",
@@ -11694,8 +12438,11 @@
   "imageKey": "HinterseeWaterfall",
   "title": "Wasserfall in der Wimbachklamm, Bayern",
   "desc": "Steile Felsschluchten, rauschendes Wasser und eine Landschaft wie aus einem Gemälde: Die Wimbachklamm bei Ramsau im Nationalpark Berchtesgaden auf unserem heutigen Bild ist eine der eindrucksvollsten Schluchten in Bayern. Auf rund 200 Metern bahnt sich der Wimbach seinen Weg durch enge Gesteinsformationen, stürzt in kleinen Wasserfällen talwärts und hat im Laufe der Zeit beeindruckende Strukturen in den Fels gegraben. Die verschiedenfarbigen Gesteinsschichten erzählen von geologischen Prozessen, die Jahrtausende zurückreichen. Gesicherte Holzstege führen direkt entlang der Felswände durch die enge Schlucht. Am Ende öffnet sich das imposante Wimbachtal zwischen Watzmann und Hochkalter – ein beliebter Ausgangspunkt für Wanderungen. Die Klamm ist seit 1847 öffentlich zugänglich und begeistert Besucherinnen und Besucher aller Altersgruppen mit einem intensiven Naturerlebnis.\nGeöffnet von Mai bis Oktober, ist die Schlucht ein beliebtes Ziel für Spaziergänger und Wanderer – ideal für einen kurzen Ausflug oder als Einstieg in längere Touren, etwa zur Wimbachgrieshütte. Besonders eindrucksvoll zeigt sich die Wimbachklamm im Frühjahr, wenn das Schmelzwasser die Wasserführung erhöht. Eine Wanderung hier gleicht einer Zeitreise durch die ursprüngliche Kraft der Natur.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "EyeEm Mobile GmbH",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11703,7 +12450,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "瀑布",
    "峡谷",
@@ -11725,7 +12484,9 @@
   "imageKey": "OiaSantorini",
   "title": "Oia, Santorin, Griechenland",
   "desc": "Das Dorf Oia auf der griechischen Insel Santorin wirkt wie aus einer anderen Welt. Kein Wunder, dass es als Kulisse für Filme wie „Tomb Raider“ oder „Eine für 4“ diente. Die würfelförmigen Häuser mit flachen Dächern und weiß-blauer Fassade stammen aus dem 19. Jahrhundert und wurden teilweise direkt in die Vulkanfelsen gebaut – ein architektonisches Zeugnis der Anpassung an die Landschaft. So blieben sie im Sommer kühl und im Winter warm. Die Kalkfarbe diente nicht nur ästhetischen Zwecken: Regenwasser konnte so besser abfließen und gesammelt werden. Heute schlendern Besucher durch enge Gassen, besuchen das Schifffahrtsmuseum oder genießen den Sonnenuntergang an der Burgruine Agios Nikolaos. Oia, auch „Adlernest“ genannt, bietet Ausblicke auf die Vulkaninseln Nea und Palia Kameni – Überreste einer der größten Eruptionen der Menschheitsgeschichte. Ein Ort, der Naturgewalt und Schönheit vereint – und auch bei deutschen Reisenden sehr beliebt ist.",
-  "location": [],
+  "location": [
+   "圣托里尼"
+  ],
   "region": null,
   "photographer": "f9photos",
   "gallery": "Getty Images",
@@ -11734,7 +12495,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "圣托里尼",
+   "santorini",
+   "聖托里尼",
+   "サントリーニ"
+  ],
   "content_tags": [
    "圣托里尼 岛屿",
    "白色房屋 建筑",
@@ -12023,8 +12789,10 @@
   "imageKey": "DiyaDiwali",
   "title": "Eine Diya im Harmandir Sahib (Goldener Tempel), Amritsar, Indien",
   "desc": "Diwali, auch bekannt als Lichterfest, gehört zu den bedeutendsten Feierlichkeiten im Hinduismus. Es wird über fünf Tage hinweg gefeiert und symbolisiert den Sieg des Guten über das Böse, des Lichts über die Dunkelheit. Häuser werden mit Öllampen, sogenannten Diyas, geschmückt, Feuerwerke erleuchten den Himmel und traditionelle Süßigkeiten werden geteilt. Das Lichterfest ist eine Zeit der spirituellen Erneuerung, der familiären Verbundenheit und der Dankbarkeit. Jede Region Indiens feiert das Fest auf ihre eigene Weise, doch die Botschaft von Hoffnung und Licht bleibt überall gleich.\nEiner der eindrucksvollsten Orte, um das Lichterfest zu erleben, ist der Harmandir Sahib – auch bekannt als der Goldene Tempel – in Amritsar, Indien. Dieses Gurdwara, ein heiliger Ort des Sikhismus, heißt Menschen aller Glaubensrichtungen willkommen. Rund um Diwali feiern viele Sikhs Bandi Chhor Divas, das an die Befreiung des sechsten Sikh-Gurus, Guru Hargobind Sahib Ji, erinnert. Obwohl sich die Traditionen unterscheiden, teilen beide Feste zentrale Werte wie Hoffnung, Gerechtigkeit und spirituelle Freiheit.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "EyeEm Mobile GmbH",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -12032,7 +12800,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "油灯",
    "手",
@@ -12056,8 +12828,11 @@
   "imageKey": "BulgariaRocks",
   "title": "Belogradtschik-Felsen, Bulgarien",
   "desc": "Was erzählen uns Felsen, wenn wir genau hinsehen? An den westlichen Hängen des Balkangebirges nahe der bulgarischen Stadt Belogradtschik formen Wind und Zeit seit Jahrmillionen eine fantasievolle und geschichtsträchtige Landschaft. Die Belogradtschik-Felsen sehen aus wie Tiere, Menschen oder ganze Szenen. Kein Wunder also, dass sie Namen wie „Der Reiter“ oder „Die Schülerin“ tragen. Die Felsen erstrecken sich über 30 Kilometer und leuchten je nach Tageszeit in warmen Rottönen. Wer durch die Region wandert, entdeckt nicht nur bizarre Formen, sondern auch Geschichte: Die alte Festung von Belogradtschik wurde einst von Römern und Osmanen genutzt – die Felsen dienten dabei als natürliche Mauer.\nEin Ort zum Staunen, Entdecken und Träumen – ganz wie die Externsteine im Teutoburger Wald in Nordrhein-Westfalen. Die bis zu 40 Meter hohe Sandsteinformation gilt seit Jahrhunderten als Naturdenkmal, Kultstätte und Inspirationsquelle für Mythen und Legenden – und zählt heute zu den bekanntesten geologischen Wahrzeichen Deutschlands.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国",
+   "保加利亚"
+  ],
+  "region": "保加利亚",
   "photographer": "EvaL Miko",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -12065,7 +12840,15 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "保加利亚",
+   "bulgaria"
+  ],
   "content_tags": [
    "贝洛格拉奇克岩石",
    "巨石",
@@ -12297,8 +13080,10 @@
   "imageKey": "TepliceRocks",
   "title": "Das Gotische Tor in den Adršpach-Teplice-Felsen, Tschechien",
   "desc": "Lust auf ein Felsenabenteuer? Nur einen Katzensprung von der deutschen Grenze entfernt erwartet Sie ein echtes Naturwunder: die Adršpach-Teplice-Felsen im Nordosten Böhmens, Tschechien. Nach einem großen Waldbrand im 18. Jahrhundert wurde hier eine verborgene Felsenstadt mit Bögen, Türmen und geheimnisvollen Pfaden freigelegt – das größte Sandsteinlabyrinth Mitteleuropas.\nHeute können Sie auf etwa 13 Quadratkilometern durch diese faszinierende Landschaft wandern. Besonders beeindruckend ist das auf dem Bild zu sehende Gotische Tor aus dem Jahr 1839, ein steinerner Eingang, der wie aus einem Fantasyfilm wirkt! Es wurde vom Adligen Ludvik Karel Nádherný in Auftrag gegeben und ist bis heute das Wahrzeichen der Felsenstadt. Ein ideales Ziel für einen Tagesausflug – Natur, Geschichte und Abenteuer in perfekter Kombination. Sind Sie bereit, das Tor zur Felsenstadt zu durchschreiten?",
-  "location": [],
-  "region": null,
+  "location": [
+   "捷克"
+  ],
+  "region": "捷克",
   "photographer": "Kseniya_Milner",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -12306,7 +13091,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "捷克",
+   "czech",
+   "czechia",
+   "czech republic"
+  ],
   "content_tags": [
    "石拱门",
    "建筑",
@@ -12372,8 +13162,10 @@
   "imageKey": "PushkarFair",
   "title": "Kamele in Jaisalmer, Rajasthan, Indien",
   "desc": "Die Pushkarer Kamelmesse ist weit mehr als nur ein Viehmarkt – sie ist ein kulturelles Spektakel, das das ruhige Städtchen Pushkar in Rajasthan, Indien, in ein buntes, lebendiges Fest verwandelt. Jedes Jahr versammeln sich Tausende von Händlern, Pilgern und Neugierigen, um Kamele, Pferde und Rinder zu tauschen, während sie traditionelle Tänze, Wettbewerbe und religiöse Rituale am heiligen See erleben. Es ist, als würde sich die Wüste in Festlaune kleiden und ihre Geschichten durch jeden Schritt, jeden Blick und jeden Höcker erzählen.\nAuf dem Bild sieht man Kamele in Jaisalmer, Rajasthan – zwar nicht in Pushkar, aber mit demselben Geist: goldener Sand, endloser Himmel und Kamele, die wie weise Zeitreisende wirken. Die Messe feiert nicht nur das Landleben, sondern auch Ausdauer, Schönheit und die Verbindung zwischen Mensch und Tier. Wer je dachte, Kamele seien langweilig, wird bei der Pushkarer Kamelmesse eines Besseren belehrt – mit Musik, Magie und ganz viel Sand.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "f9photos",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -12381,7 +13173,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "骆驼",
    "沙丘",
@@ -12451,7 +13247,9 @@
   "imageKey": "BisonSprings",
   "title": null,
   "desc": "Zeugen der Wildnis",
-  "location": [],
+  "location": [
+   "黄石"
+  ],
   "region": null,
   "photographer": null,
   "gallery": null,
@@ -12460,7 +13258,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "黄石",
+   "yellowstone",
+   "黃石",
+   "イエローストーン"
+  ],
   "content_tags": [
    "美洲野牛",
    "野生动物",
@@ -12486,8 +13289,12 @@
   "imageKey": "KyotoMaple",
   "title": null,
   "desc": "Wo Bambus atmet und Ahornbäume leuchten",
-  "location": [],
-  "region": null,
+  "location": [
+   "岚山",
+   "京都",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -12495,7 +13302,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "京都",
+   "kyoto",
+   "きょうと",
+   "京都府",
+   "岚山",
+   "arashiyama",
+   "嵐山",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "枫叶",
    "枫树",
@@ -12514,8 +13333,10 @@
   "imageKey": "MexicoJelly",
   "title": null,
   "desc": "Wellenweise Wunder",
-  "location": [],
-  "region": null,
+  "location": [
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -12523,7 +13344,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ],
   "content_tags": [
    "水母",
    "海洋生物",
@@ -12542,7 +13367,9 @@
   "imageKey": "TowerBridgeUK",
   "title": null,
   "desc": "Mehr als nur Verbindung",
-  "location": [],
+  "location": [
+   "伦敦"
+  ],
   "region": null,
   "photographer": null,
   "gallery": null,
@@ -12551,7 +13378,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "伦敦",
+   "london",
+   "ロンドン",
+   "倫敦"
+  ],
   "content_tags": [
    "伦敦塔桥",
    "桥",
@@ -12575,8 +13407,10 @@
   "imageKey": "MoncayoAutumn",
   "title": null,
   "desc": "Farbenpracht des Herbstes",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -12584,7 +13418,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "山毛榉",
    "树",
@@ -12604,8 +13443,10 @@
   "imageKey": "LanternsThailand",
   "title": null,
   "desc": "Ein Himmel voller Wünsche",
-  "location": [],
-  "region": null,
+  "location": [
+   "泰国"
+  ],
+  "region": "泰国",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -12613,7 +13454,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "泰国",
+   "thailand",
+   "thai",
+   "泰國"
+  ],
   "content_tags": [
    "灯笼",
    "彩灯",
@@ -12850,7 +13696,9 @@
   "imageKey": "ColosseumRome",
   "title": "Luftaufnahme des Kolosseums, Rom, Italien",
   "desc": "Sie denken, moderne Stadien sind beeindruckend? Dann sehen Sie sich das Original an! Das Kolosseum in Rom wurde im Jahr 72 n. Chr. vom flavischen Kaiser Vespasian in Auftrag gegeben und acht Jahre später von seinem Sohn Titus vollendet. Die beiden Herrscher wollten damit nicht nur die Macht Roms demonstrieren, sondern auch das Volk mit spektakulären Spielen begeistern. Mit Platz für rund 50.000 Zuschauer, was in etwa der Kapazität des RheinEnergieSTADIONs in Köln entspricht, bot das Kolosseum Gladiatorenkämpfe, wilde Tiere und sogar inszenierte Seeschlachten. Versteckte Aufzüge und Falltüren sorgten für echte Überraschungsmomente.\nIm Mittelalter wurde das Bauwerk mehrfach umgenutzt, unter anderem als Kirche und Festung. Besonders bemerkenswert ist, dass große Mengen an Marmor, Travertin und Eisen aus dem Kolosseum entnommen und in anderen Bauwerken verbaut wurden – eine Praxis namens „Spolien“, durch die das antike Monument buchstäblich in die Stadt Rom eingewoben wurde. Heute zählt das Kolosseum zu den bedeutendsten Sehenswürdigkeiten Europas und ist ein Muss für jeden Rom-Besucher. Wenn Sie Geschichte hautnah erleben möchten, führt kein Weg am Kolosseum vorbei.",
-  "location": [],
+  "location": [
+   "罗马"
+  ],
   "region": null,
   "photographer": "Nico De Pasquale Photography",
   "gallery": "Getty Images",
@@ -12859,7 +13707,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬"
+  ],
   "content_tags": [
    "罗马斗兽场",
    "竞技场",
@@ -13015,8 +13869,10 @@
   "imageKey": "LyonTraboules",
   "title": "Eine Traboule in Lyon, Frankreich",
   "desc": "Die Traboules sind versteckte Durchgänge, die Gebäude und Innenhöfe miteinander verbinden und in mehreren Städten im Osten Frankreichs vorkommen – insbesondere in Lyon. Ihr Ursprung reicht bis in die Renaissance zurück, als Seidenhändler schnelle und wettergeschützte Wege benötigten, um ihre Waren zu transportieren. Im Laufe der Jahrhunderte dienten diese Gänge auch als Zufluchtsort und Fluchtweg, insbesondere während des Zweiten Weltkriegs, als sie von der französischen Résistance genutzt wurden. Heute sind die Traboules ein fester Bestandteil des architektonischen Erbes Lyons. Viele von ihnen sind öffentlich zugänglich und bieten ein einzigartiges urbanes Entdeckungserlebnis.\nBeim Spaziergang durch die Straßen von Lyon entdeckt man eine Traboule von beeindruckender architektonischer Schönheit, in der Lichtspiele, Wendeltreppen und Innenhöfe Jahrhunderte verborgener Geschichte offenbaren. Diese Durchgänge verbinden nicht nur physische Räume, sondern auch Epochen und Stile und machen jeden Rundgang zu einer Reise in die Vergangenheit. Eine Traboule zu entdecken, ist, als würde man eine geheime Tür zum Herzen der Stadt öffnen.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "TPopova",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13024,7 +13880,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "旋转楼梯",
    "楼梯",
@@ -13373,8 +14235,10 @@
   "imageKey": "GwailorFort",
   "title": "Gwalior-Fort, Madhya Pradesh, Indien",
   "desc": "Gwalior in Madhya Pradesh ist mehr als nur eine Stadt – sie ist ein lebendiges Kapitel indischer Geschichte. Hoch über der Stadt thront das Gwalior-Fort, eine Festung aus dem 6. Jahrhundert, die über Jahrhunderte hinweg von Dynastien geprägt wurde. Der Mogulkaiser Babur nannte sie einst die „Perle unter den Festungen Indiens“ – ein Titel, den sie sich durch ihre imposante Architektur und strategische Lage verdient hat. Die Festung beherbergt sechs Paläste, darunter die von Raja Man Singh Tomar errichteten Man-Mandir-Paläste mit ihrer markanten, türkisfarbenen Fassade.\nDie Baukunst vereint hinduistische und mogulische Elemente auf eindrucksvolle Weise. Besonders hervorzuheben sind die kunstvollen Sas-Bahu-Tempel sowie der Teli-Tempel mit seiner auffallend rechteckigen Struktur. Geheimgänge und verborgene Kammern wecken bis heute Legenden über versteckte Schätze. Wenn die Sonne hinter den Mauern versinkt, erweckt eine Licht- und Tonshow die Geschichte zu neuem Leben – ein Erlebnis, das lange nachhallt.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "ImagesofIndia",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -13382,7 +14246,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "瓜廖尔堡",
    "宫殿",
@@ -13447,8 +14315,10 @@
   "imageKey": "OliveGrove",
   "title": "Olivenhain in der Serra de Tramuntana, Mallorca, Balearische Inseln, Spanien",
   "desc": "Olivenbäume sind echte Überlebenskünstler: uralt, knorrig und doch voller Leben. Selbst nach Feuer oder Trockenheit treiben sie neue Blätter. Die UNESCO hat ihnen mit dem Welttag des Olivenbaums am 26. November einen eigenen Tag gewidmet. Seit über 8.000 Jahren begleiten Oliven die Menschheit als Nahrung, Heilmittel und Friedenssymbol. Ihre Zweige krönten Sieger, ihr Öl nährte Generationen.\nMallorca, die Lieblingsinsel vieler Deutscher, erzählt diese Geschichte auf ganz besondere Weise. In der Serra de Tramuntana, einem UNESCO-Welterbe im Nordwesten der Insel und auf dem heutigen Bild zu sehen, wachsen Olivenbäume, die älter sind als mittelalterliche Bauwerke. Die Oliven werden sorgfältig geerntet und innerhalb weniger Stunden verarbeitet – das Öl ist fruchtig, mit feinen Mandel- und Kräuternoten. Jeder Baum steht für Geduld, jede Ernte für Tradition. Nutzen Sie doch Ihren nächsten Mallorca-Urlaub, um in diese jahrtausendealte Kultur einzutauchen – und erleben Sie, wie Geschichte schmeckt!",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "cinoby",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13456,7 +14326,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "橄榄树",
    "古树",
@@ -13524,8 +14399,11 @@
   "imageKey": "InvernoItalia",
   "title": "Val Brandet, Brescia, Lombardei, Italien",
   "desc": "Zwischen den verschneiten Höhen des Val Brandet im Adamello-Park in der Lombardei, Italien, entfaltet der Winter seine leise Magie. In Corteno Golgi – benannt nach dem berühmten Arzt und Nobelpreisträger Camillo Golgi – treffen Natur und Geschichte aufeinander.\nHier wird jedes Geräusch zum Erlebnis. Der Wind streicht sanft durch die Bäume, der Schnee fällt wie in Zeitlupe. Selbst ein kleiner Wasserfall trotzt dem Frost – eingefasst von Eis, aber voller Leben. Diese Szene erinnert an die Partnachklamm bei Garmisch-Partenkirchen in Bayern, die sich im Winter in eine Eiswunderwelt verwandelt: Gefrorene Wasserfälle, meterhohe Eiszapfen und glitzernde Eisvorhänge machen die Schlucht zu einem stillen, magischen Ort.\nEin Spaziergang durch solche Winterlandschaften fühlt sich an wie eine Pause vom Alltag. Die Kälte ist klar, nicht schmerzhaft – sie weckt die Sinne. Und der Wasserfall, so still und beständig, wird zum Symbol für das, was bleibt. Denn auch im tiefsten Winter gibt es Bewegung, Klang und Leben.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "ClickAlps",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -13533,7 +14411,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "瀑布",
    "积雪",
@@ -13553,8 +14443,13 @@
   "imageKey": "DeerVeluwe",
   "title": "Rothirsch im Nationalpark De Hoge Veluwe, Niederlande",
   "desc": "Ein Rothirsch mit mächtigem Geweih, wanderndes Wild und 54 Quadratkilometer abwechslungsreiche Landschaft – das ist der Nationalpark De Hoge Veluwe in der Provinz Gelderland im Osten der Niederlande. Der Park wurde 1909 von dem Ehepaar Kröller-Müller gegründet, das Kunst und Natur vereinen wollte. Heute begegnet man dort nicht nur Skulpturen wie „Three Upright Motives” des englischen Bildhauers Henry Moore oder der „Steyn-Bank” des belgischen Architekten Henry van de Velde, sondern auch Wildschweinen, Mufflons und Wölfen.\nEs sind jedoch vor allem die Rothirsche, die die Besucher in ihren Bann ziehen. Die ausgewachsenen Männchen wiegen bis zu 240 Kilogramm und sind etwa 1,20 Meter hoch. Besonders zur Brunftzeit wird der Park zur Bühne eindrucksvoller Revierkämpfe. Solche Naturschauspiele lassen sich auch in deutschen Schutzgebieten wie dem Müritz-Nationalpark oder dem Harz erleben. Ein Ausflug, der berührt, denn wer die Natur beobachtet, spürt das Leben in jedem Atemzug.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "荷兰",
+   "法国",
+   "比利时"
+  ],
+  "region": "比利时",
   "photographer": "CreativeNature_nl",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13562,7 +14457,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "比利时",
+   "belgium",
+   "belgian",
+   "比利時",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "英国",
+   "united kingdom",
+   "britain"
+  ],
   "content_tags": [
    "马鹿",
    "鹿",
@@ -13587,8 +14495,10 @@
   "imageKey": "LeipzigMarket",
   "title": "Weihnachtsmarkt in Leipzig, Sachsen",
   "desc": "Wussten Sie, dass der Leipziger Weihnachtsmarkt bereits im Jahr 1458 entstand, also vor mehr als 560 Jahren? Damals kauften die Menschen dort allerdings noch keine Glaskugeln, sondern Kerzen, Gewürze und Strickwaren. Diese Tradition lebt bis heute fort: Heute erwarten Sie rund 300 Stände mit regionalen Produkten, Kunsthandwerk und winterlichen Köstlichkeiten. Ein besonderes Highlight ist die feierliche Ankunft des Weihnachtsmanns, der stilecht mit einer historischen Dampflok auf Gleis 6 des Leipziger Hauptbahnhofs eintrifft. Von dort aus fährt er mit der festlich geschmückten Kutsche weiter zum Markt. Für Familien ist dieses Ritual am Samstag vor dem ersten Advent ein unvergesslicher Start in die Weihnachtszeit.\nInmitten der historischen Altstadt entfaltet sich eine stimmungsvolle Winteratmosphäre, die durch liebevoll dekorierte Stände, festliche Musik und besondere Attraktionen wie das historische Etagenkarussell am Salzgäßchen geprägt ist. Auch die berühmte Thomaskirche, einst Wirkungsstätte von Johann Sebastian Bach, bildet eine eindrucksvolle Kulisse und lädt zum Innehalten ein. Unser Tipp: Probieren Sie die „Leipziger Lerche“ oder besuchen Sie das historische Handwerkerdorf auf dem Naschmarkt – beides vereint Genuss und Geschichte.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Krzysztof Baranowski",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13596,7 +14506,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "圣诞市集",
    "圣诞树 树",
@@ -13802,8 +14719,10 @@
   "imageKey": "CopanRuins",
   "title": "Maya-Stätte von Copán, Honduras",
   "desc": "Im Herzen des honduranischen Regenwaldes offenbaren die Ruinen von Copán den Glanz einer Zivilisation, die Kunst, Astronomie und Schrift meisterhaft beherrschte. Diese antike Maya-Stadt galt als bedeutendes politisches und zeremonielles Zentrum Mesoamerikas. Ihre kunstvoll gemeißelten Stelen, die hieroglyphischen Treppen und Tempel zeugen von einer architektonischen Präzision, die Archäologen und Historiker bis heute fasziniert. Heute können wir die Schönheit der Maya-Stätte von Copán in Honduras bewundern – ein Ort, an dem jeder Stein Fragmente einer jahrtausendealten Geschichte zu erzählen scheint.\nCopán wurde 1980 von der UNESCO zum Weltkulturerbe erklärt, nicht nur wegen seines archäologischen Wertes, sondern auch wegen seines Beitrags zum Verständnis der Maya-Welt. Besonders beeindruckend ist die Hieroglyphentreppe, der längste bekannte Maya-Text mit über 2.000 Glyphen. Die Ruinen von Copán kartierten nicht nur die Sterne, sondern auch die Zeitzyklen, königlichen Dynastien und Mythen, die das Wesen einer Kultur formen, die bis heute Generationen inspiriert.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "diegograndi",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13811,7 +14730,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "玛雅遗址",
    "古代遗迹",
@@ -13863,8 +14793,11 @@
   "imageKey": "MistyPineForest",
   "title": "Ein Kiefernwald im Elsass, Frankreich",
   "desc": "Wenn sich im Dezember Nebel über die Wälder des Elsass legt, scheint die Zeit stillzustehen. In der französischen Region Grand Est, nahe der deutschen Grenze, verwandelt sich die Landschaft dann in eine geheimnisvolle Kulisse. Fast 40 % des Elsass sind bewaldet und bieten Rehen, Wildschweinen und mit etwas Glück sogar Luchsen einen Rückzugsort. Zwischen Kiefern und Tannen dämpft der moosbedeckte Boden jeden Schritt und eine beinahe ehrfürchtige Stille legt sich über die Wälder.\nDoch diese Wälder sind nicht nur Rückzugsorte für Tiere, sondern auch durchdrungen von Geschichten. Einheimische erzählen sich, dass tief im Nebel der Sotré lauert, ein schelmischer Waldgeist, der unsichtbar bleibt. Andere berichten von den „Weißen Frauen“, geisterhaften Gestalten, die an Bächen erscheinen – Überbleibsel uralter Legenden, die bis heute weitergegeben werden.\nDas Elsass blickt auf eine reiche kulturelle Geschichte zurück, die sich in Sprache, Architektur und Brauchtum widerspiegelt. Französische und deutsche Einflüsse haben hier über Jahrhunderte hinweg eine ganz eigene Identität geformt, die in den Dörfern, auf den Märkten und in den Erzählungen der Menschen spürbar ist.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "alekseystemmer",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13872,7 +14805,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "森林",
    "针叶树",
@@ -13985,8 +14930,10 @@
   "imageKey": "CordobaCathedral",
   "title": "Innenraum der Mezquita-Kathedrale von Córdoba, Andalusien, Spanien",
   "desc": "Heute bewundern wir den beeindruckenden Innenraum der Mezquita-Kathedrale von Córdoba in Andalusien, Spanien. Ein architektonisches Meisterwerk, das Jahrhunderte der Geschichte und des kulturellen Miteinanders widerspiegelt. Ursprünglich im 8. Jahrhundert unter der Herrschaft der Umayyaden als Moschee erbaut, wurde sie mehrfach erweitert und galt lange als eine der größten Moscheen der islamischen Welt. Nach der christlichen Rückeroberung im Jahr 1236 wurde sie zur Kathedrale umgewandelt, wobei gotische, renaissancezeitliche und barocke Elemente in die islamische Struktur integriert wurden. Diese einzigartige Stilfusion macht das Bauwerk zu einem lebendigen Zeugnis des kulturellen Dialogs.\nSeit 1984 gehört die Mezquita-Kathedrale zum UNESCO-Weltkulturerbe – eine Anerkennung ihres außergewöhnlichen universellen Wertes. Besonders faszinierend ist der „Säulenwald“ mit seinen rot-weißen Hufeisenbögen, der eine fast unendliche Raumwirkung erzeugt. Im Zentrum der ehemaligen muslimischen Gebetshalle befindet sich heute ein christlicher Hochaltar, was einen überraschenden architektonischen Kontrast schafft. Dieses Monument ist nicht nur ein Symbol für Córdoba, sondern auch für den kulturellen Reichtum Andalusiens und die menschliche Fähigkeit, Geschichte zu bewahren und weiterzuentwickeln.",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Elena Zolotova",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13994,7 +14941,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "科尔多瓦清真寺大教堂",
    "拱门",
@@ -14446,8 +15398,14 @@
   "imageKey": "SwedenSolstice",
   "title": "Morgendämmerung durch frostige Bäume, Schweden",
   "desc": "Die Wintersonnenwende markiert den Moment, an dem die Sonne ihre tiefste Position am Himmel erreicht und somit die längste Nacht des Jahres auf der Nordhalbkugel einleitet. Dieses Phänomen wurde von alten Kulturen als Symbol für Erneuerung und Hoffnung gefeiert, denn nach der Dunkelheit beginnt die langsame Rückkehr des Lichts.\nHeute, während sich die Erde ihrer größten Dunkelheit zuneigt, zeigt sich in Regionen wie Schweden ein einzigartiges Schauspiel: ein strahlender Sonnenaufgang zwischen von Raureif bedeckten Bäumen, bei dem die Sonne den Horizont nur für wenige Stunden berührt. In Städten wie Stockholm kann sich das Tageslicht auf weniger als sechs Stunden verkürzen, während am Polarkreis die Polarnacht herrscht. Dieser extreme Gegensatz beeinflusst nicht nur den Alltag, sondern auch Kultur und Natur und erinnert uns an die kraftvolle Verbindung zwischen unserem Planeten und dem Kosmos.\nAuch in der Wissenschaft spielt die Wintersonnenwende eine wichtige Rolle. Sie dient als Referenzpunkt für astronomische Berechnungen, Kalenderanpassungen und klimatische Beobachtungen. Solche Daten sind für die Forschung zu Jahreszeiten, globalen Wettermustern und den langfristigen Veränderungen unseres Planeten von entscheidender Bedeutung.",
-  "location": [],
-  "region": null,
+  "location": [
+   "普罗旺斯",
+   "伊朗",
+   "英国",
+   "埃及",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Schon",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -14455,7 +15413,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "伊朗",
+   "iran",
+   "persian",
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト",
+   "普罗旺斯",
+   "provence",
+   "普羅旺斯",
+   "法国",
+   "france"
+  ],
   "content_tags": [
    "雪林",
    "雾凇",
@@ -14525,8 +15496,12 @@
   "imageKey": "ReindeerFinland",
   "title": "Rentiere während des Schneefalls im Winter, Lappland, Finnland",
   "desc": "Rentiere sind perfekt an das Leben in arktischen Regionen angepasst. So verändern sich beispielsweise ihre Hufe je nach Jahreszeit: Im Sommer sind sie weich, um auf dem Boden zu laufen, und im Winter härten sie aus, sodass sie festen Halt auf Eis und Schnee bieten. Zusammen mit ihrem dichten Fell ermöglicht ihnen diese Eigenschaft das Überleben bei extremen Temperaturen. Eine weitere erstaunliche Besonderheit ist, dass sowohl Männchen als auch Weibchen ein Geweih entwickeln, was unter Hirschen eher selten vorkommt. Die Geweihe erfüllen wichtige Funktionen, wie das Entfernen von Schnee, um Flechten zu finden, die in den kältesten Monaten ihre wichtigste Nahrung sind.\nAuf dem Bild sind zwei majestätische Rentiere während eines Schneefalls im finnischen Lappland zu sehen. Ihr Erscheinungsbild erinnert an andere europäische Hirsche, mit denen sie die Eleganz der Geweihe und die Kraft in den Beinen teilen. Rentiere zeichnen sich dadurch aus, dass sie lange Strecken unter extremen Bedingungen zurücklegen können. Beide Tiere sind Symbole für Widerstandskraft und Anpassungsfähigkeit und können in Umgebungen gedeihen, in denen Leben nahezu unmöglich erscheint.",
-  "location": [],
-  "region": null,
+  "location": [
+   "北极",
+   "法国",
+   "芬兰"
+  ],
+  "region": "芬兰",
   "photographer": "Roberto Moiola",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -14534,7 +15509,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "北极",
+   "arctic",
+   "北極",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "芬兰",
+   "finland",
+   "finnish",
+   "芬蘭"
+  ],
   "content_tags": [
    "驯鹿",
    "鹿",

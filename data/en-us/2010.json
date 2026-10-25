@@ -625,8 +625,10 @@
   "imageKey": null,
   "title": "Sunset on the Washington Monument & Reflecting Pool in Washington, D.C.",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Photodisc",
   "gallery": "Photolibrary",
   "copyrightlink": null,
@@ -634,7 +636,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "华盛顿纪念碑",
    "方尖碑",
@@ -865,8 +874,10 @@
   "imageKey": null,
   "title": "Atrium of the Library of Congress in Washington, DC",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Michele Falzone",
   "gallery": "age fotostock/Photolibrary",
   "copyrightlink": null,
@@ -874,7 +885,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "雕像",
    "美国国会图书馆",
@@ -1601,7 +1619,9 @@
   "imageKey": null,
   "title": "Snow cats grooming the snow on Whistler Mountain, British Columbia",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Randy Lincks",
   "gallery": "Photolibrary",
@@ -1610,7 +1630,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "雪山",
    "车队",
@@ -5220,7 +5243,9 @@
   "imageKey": null,
   "title": "Mount Saint Helens and the devastation from the 1980 eruption, Washington",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Alan Kearney",
   "gallery": "Photolibrary",
@@ -5229,7 +5254,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "圣海伦斯火山",
    "火山",
@@ -6277,8 +6305,10 @@
   "imageKey": null,
   "title": "People holding American flags at sunset near the Washington Monument in Washington, D.C.",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Glow Images, Inc",
   "gallery": "Superstock",
   "copyrightlink": null,
@@ -6286,7 +6316,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "人群剪影",
    "美国国旗",
@@ -10143,7 +10180,9 @@
   "imageKey": null,
   "title": "“Gates of Hell” burning fire pit near the village of Darvaza, in the Karakorum Desert, Turkmenistan",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Image Source",
   "gallery": "Superstock",
@@ -10152,7 +10191,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "地狱之门",
    "火山口",
@@ -10706,7 +10748,9 @@
   "imageKey": null,
   "title": "The Triumphal Arch at Palmyra, Syria",
   "desc": "",
-  "location": [],
+  "location": [
+   "罗马"
+  ],
   "region": null,
   "photographer": "DEA",
   "gallery": "Photolibrary",
@@ -10715,7 +10759,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬"
+  ],
   "content_tags": [
    "帕尔米拉凯旋门",
    "拱门",
@@ -11019,7 +11069,9 @@
   "imageKey": null,
   "title": "Terraced fields of wheat climb the slopes of a small volcano near the Virunga Mountains in Rwanda",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "George Steinmetz",
   "gallery": "Corbis",
@@ -11028,7 +11080,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山口",
    "农田",
@@ -11173,7 +11228,9 @@
   "imageKey": null,
   "title": "The peaks of the San Juan Mountains, part of the Rocky Mountains, rise above a beaver pond in southwest Colorado",
   "desc": "",
-  "location": [],
+  "location": [
+   "日照"
+  ],
   "region": null,
   "photographer": "Phil Nelson",
   "gallery": "Photolibrary",
@@ -11182,7 +11239,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日照",
+   "rizhao",
+   "山东",
+   "shandong",
+   "山東"
+  ],
   "content_tags": [
    "山峰",
    "山",
@@ -12833,7 +12896,9 @@
   "imageKey": null,
   "title": "Christmas Lighting Festival in the Bavarian style village of Leavenworth, Washington",
   "desc": "",
-  "location": [],
+  "location": [
+   "阿尔卑斯"
+  ],
   "region": null,
   "photographer": "Connie Coleman",
   "gallery": "Photolibrary",
@@ -12842,7 +12907,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯"
+  ],
   "content_tags": [
    "圣诞彩灯（灯饰）",
    "圣诞树（树）",

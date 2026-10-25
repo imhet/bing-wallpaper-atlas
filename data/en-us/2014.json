@@ -3103,8 +3103,12 @@
   "imageKey": null,
   "title": "Global map of winds",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "南极",
+   "南极洲",
+   "澳大利亚"
+  ],
+  "region": "澳大利亚",
   "photographer": "NASA",
   "gallery": null,
   "copyrightlink": null,
@@ -3112,7 +3116,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞",
+   "南极洲"
+  ],
   "content_tags": [
    "世界地图",
    "地球",
@@ -5134,8 +5150,10 @@
   "imageKey": null,
   "title": "Axolotl",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "John Cancalosi",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -5143,7 +5161,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ],
   "content_tags": [
    "墨西哥钝口螈",
    "蝾螈",
@@ -5815,8 +5837,13 @@
   "imageKey": null,
   "title": "Map of Earth created by the Global Inventory Modeling and Mapping Studies (GIMMS) project at NASA’s Goddard Space Flight Center",
   "desc": "",
-  "location": [],
-  "region": null,
+  "location": [
+   "南极",
+   "撒哈拉",
+   "南极洲",
+   "格陵兰"
+  ],
+  "region": "格陵兰",
   "photographer": "NASA",
   "gallery": null,
   "copyrightlink": null,
@@ -5824,7 +5851,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極",
+   "撒哈拉",
+   "sahara",
+   "格陵兰",
+   "greenland",
+   "格陵蘭",
+   "南极洲"
+  ],
   "content_tags": [
    "地球",
    "世界地图",
@@ -8353,7 +8391,9 @@
   "imageKey": null,
   "title": "Galia melon detail",
   "desc": "",
-  "location": [],
+  "location": [
+   "哈密"
+  ],
   "region": null,
   "photographer": "Nick Fielding",
   "gallery": "Alamy",
@@ -8362,7 +8402,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "哈密",
+   "hami",
+   "新疆",
+   "xinjiang"
+  ],
   "content_tags": [
    "哈密瓜",
    "甜瓜",
@@ -12001,7 +12046,9 @@
   "imageKey": null,
   "title": "A terrace-farmed volcano near Kisoro, Uganda",
   "desc": "",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Peter McBride",
   "gallery": "Axiom",
@@ -12010,7 +12057,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山口",
    "梯田",

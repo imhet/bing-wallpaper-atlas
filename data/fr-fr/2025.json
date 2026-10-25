@@ -84,8 +84,10 @@
   "imageKey": "TolkienOxford",
   "title": "Radcliffe Camera et All Souls College, Université d'Oxford, Angleterre",
   "desc": "Impossible de visiter Oxford sans s’émerveiller devant la Radcliffe Camera, cette bibliothèque ronde majestueuse qui semble tout droit sortie d’un conte. Conçue au XVIIIᵉ siècle, elle est l’un des lieux les plus photographiés d’Angleterre ! Non loin de là, All Souls College, avec son architecture gothique et son ambiance intemporelle, est un incontournable pour ressentir l’âme de cette prestigieuse université.\nMais saviez-vous qu’Oxford est aussi intimement liée à J.R.R. Tolkien ? Né un 3 janvier, ce génie littéraire a enseigné ici et s’est imprégné des lieux pour imaginer les paysages fantastiques de la Terre du Milieu. Certains disent même que les tours d’All Souls auraient inspiré les décors de ses romans.\nQue vous soyez amateur d’architecture, passionné de littérature ou simple curieux, Oxford vous offre une expérience unique entre culture et histoire. Et qui sait, peut-être y trouverez-vous l’inspiration pour votre propre aventure ?",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "atiger",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -93,7 +95,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "牛津大学",
    "拉德克利夫图书馆",
@@ -281,7 +294,9 @@
   "imageKey": "GreatWallStairs",
   "title": "La Grande Muraille enneigée, Chine",
   "desc": "Saviez-vous que la Grande Muraille de Chine s’étend sur près de 21 000 kilomètres ? Ce chiffre impressionnant a été confirmé en 2012 par une étude archéologique approfondie. En hiver, elle offre un spectacle inoubliable. Les sections enneigées, comme celles de Badaling ou Jinshanling, révèlent une beauté saisissante et un calme rare, parfaits pour les amateurs de paysages hivernaux. Cette fortification, construite il y a plus de 2 000 ans, avait pour but de protéger l’Empire du Milieu des invasions. Elle symbolise aussi la détermination humaine : des millions d’ouvriers ont uni leurs forces pour édifier ce rempart géant, défiant les montagnes et le temps.\nBien que moins majestueuse, la cité médiévale de Carcassonne, avec ses remparts impressionnants, offre également un voyage dans le temps. Ce site, inscrit au patrimoine mondial de l’UNESCO, plonge les visiteurs dans un passé fascinant où histoire et architecture se rencontrent.\nAdmirer la Grande Muraille sous la neige, ou se perdre dans les rues pavées de Carcassonne, c’est plonger dans un livre d’histoire grandeur nature. N’oubliez pas votre appareil photo : chaque recoin est une œuvre d’art !",
-  "location": [],
+  "location": [
+   "长城"
+  ],
   "region": null,
   "photographer": "View Stock",
   "gallery": "Alamy",
@@ -290,7 +305,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "长城",
+   "great wall",
+   "萬里長城",
+   "長城"
+  ],
   "content_tags": [
    "长城",
    "城墙",
@@ -314,8 +334,10 @@
   "imageKey": "NamibiaDunes",
   "title": "Dunes de Sossusvlei, désert du Namib, Namibie",
   "desc": "Saviez-vous que le désert du Namib, situé en Namibie, est l’un des plus anciens déserts de la planète ? Avec ses dunes géantes, certaines atteignant jusqu'à 300 mètres de hauteur, le Namib est un véritable terrain d'étude pour les scientifiques et un lieu de visite incontournable pour les passionnés de nature.\nCe désert abrite des espèces adaptées à des conditions extrêmes, comme l'oryx, capable de survivre sans eau pendant de longues périodes, ou encore les éléphants du désert, qui parcourent de grandes distances à la recherche de ressources. Le Namib est une illustration frappante de la résilience de la vie dans un environnement hostile, témoignant du pouvoir de la nature à s’adapter et à prospérer.",
-  "location": [],
-  "region": null,
+  "location": [
+   "纳米比亚"
+  ],
+  "region": "纳米比亚",
   "photographer": "Airpano",
   "gallery": "Amazing Aerial Agency",
   "copyrightlink": null,
@@ -323,7 +345,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "纳米比亚",
+   "namibia",
+   "納米比亞"
+  ],
   "content_tags": [
    "沙丘",
    "沙漠",
@@ -428,8 +454,14 @@
   "imageKey": "CrescentTail",
   "title": "Poisson Gros-Yeux, Grande Barrière de Corail, Australie",
   "desc": "Si vous prévoyez une visite à la Grande Barrière de Corail, ouvrez l’œil pour repérer le poisson gros-yeux (Priacanthus hamrur). Ce curieux poisson, d’une longueur moyenne de 40 à 45 centimètres, attire l’attention par ses grands yeux ronds et sa couleur rouge intense, idéale pour se fondre dans l’obscurité des récifs.\nActif surtout la nuit, le gros-yeux est un chasseur discret, capturant petits crustacés et poissons dans les profondeurs sombres. Son rôle est essentiel à l’équilibre de cet incroyable écosystème corallien australien. Partir à la rencontre du gros-yeux, c’est aussi réfléchir à la préservation de ces trésors naturels mondiaux. La Grande Barrière de Corail, joyau inscrit à l’UNESCO, s’étend sur près de 2 300 kilomètres et abrite une biodiversité unique, mais fragile.\nCe phénomène évoque le Parc national de Port-Cros dans le Var, où l’observation des mérous et des gorgones en plongée met aussi en lumière l’importance de préserver nos écosystèmes marins. Comme en Australie, ils souffrent des effets du changement climatique et nécessitent une vigilance accrue. Observer ces merveilles est une leçon d’humilité et une invitation à protéger la richesse du vivant.",
-  "location": [],
-  "region": null,
+  "location": [
+   "大堡礁",
+   "马尔代夫",
+   "英国",
+   "菲律宾",
+   "印度尼西亚"
+  ],
+  "region": "印度尼西亚",
   "photographer": "Fred Bavendam",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -437,7 +469,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian",
+   "印度尼西亞",
+   "大堡礁",
+   "great barrier reef",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國"
+  ],
   "content_tags": [
    "鱼群",
    "大眼鲷",
@@ -499,8 +544,10 @@
   "imageKey": "CadizSpain",
   "title": "Zahara de la Sierra, Cadix, Espagne",
   "desc": "Vous rêvez d’un voyage en Andalousie ? Découvrez Zahara de la Sierra, un village au cœur de la province de Cadix, parfait pour mêler culture et nature. Perché sur une colline rocheuse, ce joyau andalou offre une vue imprenable sur le réservoir turquoise Zahara-El Gastor et le parc naturel de la Sierra de Grazalema, classé réserve de biosphère par l’UNESCO depuis 1977. Ses ruelles blanches bordées de balcons fleuris mènent à des vestiges emblématiques, comme son château mauresque et la tour du XVe siècle. Ne manquez pas de visiter l’église pittoresque Santa María de la Mesa ou de profiter des nombreuses activités : randonnée, vélo ou kayak.\nCette atmosphère unique rappelle celle des villages perchés du Luberon, comme Gordes, où ruelles pittoresques, paysages enchanteurs et patrimoine historique se côtoient harmonieusement. Saviez-vous que Zahara tient son nom non pas de l’azahar, la fleur d’oranger, mais du mot arabe sahra, signifiant « terre sauvage » ? En suivant la célèbre route des villages blancs d’Andalousie, Zahara de la Sierra vous promet une expérience inoubliable au cœur de l’Espagne.",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "SEN LI",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -508,7 +555,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "水塔",
    "塔",
@@ -702,8 +754,12 @@
   "imageKey": "NeptunesGrotto",
   "title": "Grotte de Neptune, Sardaigne, Italie",
   "desc": "La grotte de Neptune, en Sardaigne, est un trésor souterrain qui vaut chaque effort pour y accéder. Située à Capo Caccia, elle peut être rejointe en bateau ou via l’Escala del Cabirol, un escalier impressionnant de 654 marches taillé dans la roche.\nÀ l’intérieur, la nature se révèle sous son meilleur jour : des stalactites et des stalagmites majestueuses, un lac souterrain spectaculaire – le lac Lamarmora – et des galeries qui s’étendent sur 4 km, dont 500 mètres sont ouverts aux visiteurs. Chaque salle regorge de formations uniques, comme des colonnes millénaires créées par le dépôt de calcaire.\nPour les Français, ce lieu évoque la majesté de la grotte de Clamouse, dans l’Hérault. Avec ses immenses concrétions et ses jeux de lumière soigneusement étudiés, elle offre également une plongée fascinante dans les entrailles de la Terre. Que ce soit en Sardaigne ou en Occitanie, ces merveilles naturelles ravissent les amateurs de géologie et les curieux avides de découverte.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "日本",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Carlo Murenu",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -711,7 +767,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ],
   "content_tags": [
    "溶洞",
    "洞穴",
@@ -808,8 +877,14 @@
   "imageKey": "PetraMonastery",
   "title": "Ad-Deir, Pétra, Jordanie",
   "desc": "L’un des joyaux de Pétra, en Jordanie, Ad-Deir, est un monument impressionnant à couper le souffle. Ce « Monastère » sculpté dans la roche il y a plus de 2000 ans est un témoignage vivant de la créativité des anciens Nabatéens. Accessible via un sentier escarpé comprenant environ 800 marches, Ad-Deir se révèle comme un véritable trésor caché au sommet d'une colline.\nAvec ses dimensions imposantes – environ 47 mètres de large et 48 mètres de haut – cet édifice offre une vue spectaculaire sur la vallée environnante. Le calme qui règne à l’intérieur de ce lieu majestueux invite à la contemplation et à la réflexion. Classé au patrimoine mondial de l'UNESCO, Ad-Deir reste un site incontournable pour les passionnés d'histoire et d'architecture.\nSi vous êtes de passage à Pétra, ne manquez pas ce chef-d'œuvre ancien qui dévoile l’ingéniosité des Nabatéens. Une expérience inoubliable, alliant nature, histoire et patrimoine.",
-  "location": [],
-  "region": null,
+  "location": [
+   "约旦",
+   "埃及",
+   "中国",
+   "希腊",
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "Punnawit Suwuttananun",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -817,7 +892,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "印度",
+   "india",
+   "インド",
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト",
+   "希腊"
+  ],
   "content_tags": [
    "佩特拉修道院",
    "修道院",
@@ -1190,8 +1278,12 @@
   "imageKey": "PlainsZebra",
   "title": "Zèbres des plaines au lever du soleil, parc national de Mokala, Afrique du Sud",
   "desc": "Le 31 janvier, on célèbre la Journée internationale du zèbre. C'est une excellente occasion de découvrir les efforts de préservation dans des lieux comme le Parc national de Mokala en Afrique du Sud. Ce parc abrite des populations de zèbres de Burchell, une sous-espèce du zèbre des plaines.\nLes zèbres sont des créatures sociales, qui vivent en troupeaux dirigés par un mâle dominant, appelé étalon. Leurs rayures uniques servent à les distinguer et à les camoufler dans la végétation, créant un effet optique qui les rend difficiles à repérer pour les prédateurs. Saviez-vous que les zèbres communiquent aussi par des sons, des postures corporelles et des mouvements de leur queue ?\nLe Parc national de Mokala nous montre comment la nature peut se régénérer lorsque l’on lui accorde la priorité et souligne l'importance de la préservation de ces créatures emblématiques. Les efforts de conservation contribuent à maintenir un équilibre écologique fragile, essentiel à la survie de nombreuses espèces.",
-  "location": [],
-  "region": null,
+  "location": [
+   "南非",
+   "德国",
+   "肯尼亚"
+  ],
+  "region": "肯尼亚",
   "photographer": "EcoPrint",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -1199,7 +1291,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南非",
+   "south africa",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "肯尼亚",
+   "kenya",
+   "kenyan",
+   "肯尼亞"
+  ],
   "content_tags": [
    "斑马",
    "野生动物",
@@ -2053,8 +2158,10 @@
   "imageKey": "MentonFestival",
   "title": "Fête du citron, Menton, Alpes-Maritimes",
   "desc": "Chaque année, la ville de Menton se transforme en un royaume d’agrumes pour la célèbre Fête du Citron. Depuis 1934, cet événement unique au monde célèbre l’excellence des citrons de Menton, réputés pour leur parfum intense et leur qualité exceptionnelle.\nAvec plus de 140 tonnes de citrons et d’oranges, des sculptures géantes prennent vie dans les jardins Biovès, illustrant des thèmes spectaculaires renouvelés à chaque édition. Parades, corsi illuminés et expositions florales attirent plus de 200 000 visiteurs, venus admirer ce spectacle haut en couleurs.\nL’histoire de cette fête remonte à la Belle-Époque lorsqu’un hôtelier eut l’idée d’organiser une exposition de fleurs et d’agrumes pour dynamiser l’hiver mentonnais. Aujourd’hui, la Fête du Citron est un symbole du patrimoine et du savoir-faire. Un rendez-vous incontournable pour découvrir l’âme ensoleillée de Menton !",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "NelzTabcharani316",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -2062,7 +2169,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "法国国旗",
    "旗帜",
@@ -2092,8 +2205,10 @@
   "imageKey": "ChampakaSarasi",
   "title": "Bassin de Champaka Sarasi, Karnataka, Inde",
   "desc": "Au cœur du Karnataka, en Inde, le bassin de Champaka Sarasi est un trésor méconnu de l’architecture et de l’histoire. Construit au XIIe siècle sous la dynastie Hoysala, ce réservoir sacré servait aux rituels et aux ablutions religieuses. Son eau paisible reflète les sculptures finement ouvragées qui ornent ses rives, témoignant du savoir-faire exceptionnel des artisans de l’époque.\nLes Hoysala, maîtres incontestés de l’architecture sacrée, ont conçu ce bassin comme un espace de méditation et de purification. Son ingénierie hydraulique avancée, avec un réseau sophistiqué de canaux souterrains et un système de drainage efficace, assurait une gestion optimale de l’eau. Aujourd’hui encore, ses gradins en pierre, usés par le temps, rappellent l’importance de ces bassins dans la vie spirituelle et quotidienne des civilisations anciennes.\nBien que peu fréquenté, Champaka Sarasi reste un site fascinant pour les passionnés d’histoire et de patrimoine. Entre tradition et modernité, il incarne une parfaite harmonie entre nature et architecture, témoignant d’un héritage d’ingéniosité qui traverse les siècles.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "Amith Nag Photography",
   "gallery": "Getty Images)hotography/Getty Images",
   "copyrightlink": null,
@@ -2101,7 +2216,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "池塘",
    "神庙",
@@ -2422,8 +2541,13 @@
   "imageKey": "EucalyptusForest",
   "title": "Eucalyptus, vallée de Megalong, parc national des Blue Mountains, Australie",
   "desc": "Aujourd’hui, nous sommes au cœur du parc national des Blue Mountains, en Australie, où la vallée de Megalong dévoile une mer d’eucalyptus, s’étendant à perte de vue. Plusieurs sentiers permettent de l’explorer, entre falaises, rivières et panoramas grandioses. Ces arbres majestueux, riches en huiles essentielles, libèrent des vapeurs qui créent une brume bleutée caractéristique, donnant son nom à la région. Les peuples aborigènes y puisent depuis toujours des remèdes naturels grâce à leurs vertus antiseptiques. Véritable trésor naturel, cette plante purifie aussi l’air et favorise la biodiversité.\nOn retrouve un phénomène similaire en Corse, où les forêts d’eucalyptus, introduites au XIXᵉ siècle, parfument l'air de leurs arômes intenses. S’intégrant harmonieusement à la végétation corse, elles en sont maintenant un élément emblématique.\nLes koalas, ces adorables marsupiaux emblématiques de l'Australie, dépendent entièrement des eucalyptus. Ces arbres constituent leur principale source de nourriture, leur offrant une alimentation spécialisée. Les koalas se réfugient souvent dans les cimes d’eucalyptus, où ils passent la majeure partie de leur journée à se reposer.",
-  "location": [],
-  "region": null,
+  "location": [
+   "悉尼",
+   "阿尔卑斯",
+   "英国",
+   "澳大利亚"
+  ],
+  "region": "澳大利亚",
   "photographer": "Andrew Peacock",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -2431,7 +2555,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "悉尼",
+   "sydney",
+   "雪梨",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞",
+   "英国",
+   "united kingdom",
+   "britain"
+  ],
   "content_tags": [
    "雾",
    "森林",
@@ -2975,8 +3112,13 @@
   "imageKey": "PandaSnow",
   "title": "Bébé panda géant dans la neige, Chine",
   "desc": "Majestueux et vulnérable, le panda géant incarne à lui seul la lutte pour la préservation du vivant. Autrefois au bord de l’extinction, il doit aujourd’hui sa survie à des décennies d’efforts acharnés. Grâce aux initiatives de reforestation et aux programmes de conservation, son statut est passé d’« en danger » à « vulnérable » en 2016. Une victoire… mais fragile.\nCar malgré ce progrès, moins de 2 000 pandas subsistent à l’état sauvage. Leur habitat disparaît, grignoté par la déforestation et l’agriculture. Pourtant, ces géants paisibles sont les gardiens silencieux de leurs forêts. Chaque bambou croqué, chaque pas posé participe à l’équilibre de cet écosystème unique. En se déplaçant, ils ouvrent des chemins à d’autres espèces, dispersent des graines et contribuent à la régénération des bambous dont tant d’animaux dépendent.\nLes observer, c’est mesurer l’impact des actions humaines sur la nature. C’est comprendre que chaque espèce sauvée est une promesse d’espoir. Derrière leur allure attendrissante, les pandas nous rappellent une vérité essentielle : protéger la biodiversité, c’est protéger l’avenir.",
-  "location": [],
-  "region": null,
+  "location": [
+   "巴黎",
+   "日本",
+   "法国",
+   "中国"
+  ],
+  "region": "中国",
   "photographer": "Cheryl Schneider",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -2984,7 +3126,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "巴黎",
+   "paris",
+   "パリ",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "法国"
+  ],
   "content_tags": [
    "大熊猫",
    "熊猫",
@@ -3991,8 +4146,11 @@
   "imageKey": "LittleFoxes",
   "title": "Renardeaux près de leur tanière",
   "desc": "Depuis l’Antiquité, la fratrie est un pilier des relations humaines. Mais saviez-vous que la Journée des frères et sœurs, célébrée le 10 avril, est née d’une histoire personnelle ? Claudia Evart a institué cette journée en mémoire de ses frères et sœurs disparus. Depuis 1995, elle est soutenue par la Siblings Day Foundation, qui œuvre pour en faire une journée de reconnaissance, à l'instar de la fête des Mères et des Pères.\nDans la nature, ce lien fraternel joue aussi un rôle fondamental. Regardez ces renardeaux roux : à leur naissance, ils sont aveugles et vulnérables, protégés dans leur tanière par leur mère, tandis que leur père veille à leur ravitaillement. Mais à mesure qu’ils grandissent, la fraternité devient un véritable terrain d’apprentissage. Le jeu devient un entraînement : embuscades, bonds et luttes forgent leurs futurs instincts de chasseurs.\nDans la vie comme chez les renards, la fratrie est une force qui nous façonne. En cette journée spéciale, prenons le temps de célébrer ces liens si précieux, empreints de souvenirs, de rivalités et d’un soutien indéfectible.",
-  "location": [],
-  "region": null,
+  "location": [
+   "纽约",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "WildMedia",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -4000,7 +4158,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク"
+  ],
   "content_tags": [
    "赤狐",
    "狐狸",
@@ -4064,8 +4232,11 @@
   "imageKey": "SpaceFlight",
   "title": "Vue de la coupole de la Station spatiale internationale au-dessus de l'océan Pacifique Sud",
   "desc": "Le 12 avril est une date clé de l’histoire spatiale, marquée par un exploit qui a changé à jamais notre vision de l’univers. En 1961, le cosmonaute Youri Gagarine est devenu le premier humain à voyager dans l’espace. À bord de Vostok 1, il a accompli un tour de la Terre en seulement 108 minutes, un moment de pure audace et de courage qui a captivé le monde entier.\nCette prouesse a ouvert la voie à des décennies d’exploration spatiale, des alunissages historiques aux stations spatiales modernes. En reconnaissance de cet événement marquant, l’ONU a instauré en 2011 la Journée internationale du vol spatial habité, célébrée chaque année le 12 avril. Cette journée souligne l’importance des avancées réalisées et rend hommage à tous ceux qui ont contribué à ces succès.\nAujourd’hui, la conquête spatiale continue de progresser à un rythme effréné. Les satellites jouent un rôle crucial dans les communications et l’observation de la Terre, tandis que les missions vers Mars et la recherche sur la vie extraterrestre captivent l’imagination du public. L’espace est devenu un terrain d’innovation et de découvertes sans précédent, promettant de nouvelles avancées pour l’avenir de l’humanité.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "NASA",
   "gallery": null,
   "copyrightlink": null,
@@ -4073,7 +4244,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "国际空间站",
    "航天器",
@@ -4220,8 +4402,10 @@
   "imageKey": "ToulouseBridge",
   "title": "Pont sur la Garonne avec le Dôme de la Grave, Toulouse",
   "desc": "Lorsque le soleil se couche sur la Garonne, Toulouse dévoile l’un de ses plus beaux panoramas : le pont Saint-Pierre et le majestueux dôme de la Grave se reflétant dans l’eau. Ce pont, reliant les deux rives de la Ville Rose, a été construit en 1849, puis reconstruit en 1927 et en 1987 pour s’adapter aux besoins modernes.\nFace à lui, le dôme de la Grave, coiffant l’ancien hôpital du même nom, domine le paysage. Ce chef-d’œuvre architectural du XIXᵉ siècle est un symbole de Toulouse, visible de loin grâce à sa silhouette imposante. Jadis dédié aux malades et indigents, l’Hôpital de la Grave témoigne du passé médical de la ville, qui reste aujourd’hui un pôle de recherche et d’innovation.\nToulouse, avec son patrimoine unique et ses couleurs caractéristiques, offre ainsi une harmonie parfaite entre histoire et modernité. Un simple regard sur ce panorama suffit pour comprendre pourquoi la Garonne a toujours été le cœur battant de cette cité millénaire.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "LOOK-foto",
   "gallery": "Image Professionals GmbH/Alamy Stock Photo",
   "copyrightlink": null,
@@ -4229,7 +4413,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "圣皮埃尔桥",
    "桥",
@@ -4255,8 +4445,14 @@
   "imageKey": "EcuadorBird",
   "title": "Coq-de-roche péruvien, Écuateur",
   "desc": "Dans les forêts brumeuses des Andes, un éclat rouge vif attire les regards : le coq-de-roche péruvien. Considéré comme l’un des oiseaux les plus spectaculaires d’Amérique du Sud, il est l’emblème national du Pérou. Son plumage flamboyant et sa crête arrondie en font une véritable icône de la biodiversité andine. Il vit principalement dans les zones rocheuses et les forêts humides, où il se nourrit de fruits et d’insectes.\nCe qui fascine le plus chez cet oiseau, c’est son rituel de séduction. Lors de la parade nuptiale, les mâles se rassemblent dans des leks, des arènes naturelles où ils dansent et s’affrontent pour séduire les femelles. Ce spectacle rythmé par des cris rauques et des mouvements rapides est une démonstration de force et de beauté.\nMais ce joyau des Andes est vulnérable face à la déforestation. Des efforts de conservation sont en cours pour protéger ces oiseaux et leurs habitats, impliquant des initiatives locales et internationales. Observer le coq-de-roche péruvien dans son environnement naturel est une expérience inoubliable, qui rappelle l'importance de préserver notre biodiversité.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "委内瑞拉",
+   "哥伦比亚",
+   "玻利维亚",
+   "厄瓜多尔"
+  ],
+  "region": "厄瓜多尔",
   "photographer": "Kit Day",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -4264,7 +4460,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "玻利维亚",
+   "bolivia",
+   "哥伦比亚",
+   "colombia",
+   "厄瓜多尔",
+   "ecuador"
+  ],
   "content_tags": [
    "动冠伞鸟",
    "鸟",
@@ -4831,8 +5040,12 @@
   "imageKey": "PinkPlumeria",
   "title": "Fleurs de frangipanier, Hawaï, États-Unis",
   "desc": "Perlées de gouttes, les fleurs du frangipanier s’ouvrent lentement dans la lumière douce d’Hawaï. Leurs cinq pétales arrondis mêlent blanc, rose et or, comme un lever de soleil miniature. Originaire d’Amérique centrale, le frangipanier s’épanouit dans les sols volcaniques de l’archipel.\nÀ Hawaï, il est indissociable de l’art du lei, le collier de fleurs offert en signe de paix, d’accueil ou d’amour. Aujourd’hui, chaque 1er mai, les habitants célèbrent le « Lei Day », une journée festive dédiée à cette tradition florale. On y compose des guirlandes colorées, on chante, on danse, on rend hommage à la culture insulaire.\nLe parfum sucré du frangipanier flotte dans les jardins comme un message discret. Bien qu’il semble fragile, il résiste à la chaleur, au vent et aux saisons. Contempler un frangipanier en fleur, c’est goûter à l’âme d’Hawaï : un éclat de beauté simple, enraciné dans la terre, porté par la culture et transmis de main en main comme un geste de bienvenue.",
-  "location": [],
-  "region": null,
+  "location": [
+   "夏威夷",
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Miranda Jans",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -4840,7 +5053,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "ハワイ",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa"
+  ],
   "content_tags": [
    "鸡蛋花",
    "花",
@@ -5025,8 +5251,12 @@
   "imageKey": "FlyoverNamibia",
   "title": "Un avion ULM survolant les sables de Namibie",
   "desc": "À perte de vue, les dunes du désert du Namib ondulent comme une mer figée par le temps. Situé sur la côte sud-ouest de la Namibie, ce désert vieux de plus de 55 millions d’années est l’un des plus anciens de la planète.\nSurvoler ces paysages en ULM (Ultra-Léger Motorisé) est une expérience inoubliable. Nés dans les années 1970, ces aéronefs légers ont été conçus comme une alternative accessible à l’avion traditionnel. Inspirés du deltaplane motorisé, les premiers modèles étaient simples, mais ont rapidement évolué vers différentes formes, des multiaxes aux autogires.\nEn vol, l’ULM offre une sensation de liberté totale : silencieux, ouvert sur l’horizon, il permet d’observer les dunes sans altérer leur silence. Le désert se dévoile alors dans toute sa grandeur. Et sous cette apparente immobilité, la vie : oryx, scarabées du brouillard, plantes rares… témoignent d’un monde qui résiste. Une aventure hors du temps, où chaque instant suspendu devient inoubliable.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "日本",
+   "纳米比亚"
+  ],
+  "region": "纳米比亚",
   "photographer": "Burt Johnson",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -5034,7 +5264,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "纳米比亚",
+   "namibia",
+   "納米比亞",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english"
+  ],
   "content_tags": [
    "滑翔翼",
    "飞行器",
@@ -5094,7 +5337,9 @@
   "imageKey": "VictoryDay",
   "title": "Volcan Puy du Pariou, Auvergne",
   "desc": "Saviez-vous que le paisible volcan du Pariou fut un refuge pour les résistants durant la Seconde Guerre mondiale ? Quand on admire ses courbes verdoyantes, difficile d’imaginer qu’il abrita des actes de bravoure pour la liberté. En ce jour de commémoration, le Puy du Pariou nous ramène à une époque où ses flancs boisés étaient le théâtre d’opérations de résistance.\nSitué au cœur de l’Auvergne, le Puy du Pariou culmine à 1 209 mètres. Ce volcan de type strombolien est l’un des plus emblématiques de la chaîne des Puys, inscrite au patrimoine mondial de l’UNESCO. Son cratère circulaire et sa silhouette verdoyante en font un lieu prisé des randonneurs… mais aussi un ancien abri stratégique pour les maquisards. Protégés par la nature, ces derniers bénéficiaient d’un terrain abrupt et boisé, offrant un avantage précieux face à l’occupant.\nAujourd’hui, le Pariou attire les curieux, mais il mérite aussi d’être exploré pour sa mémoire. Marcher sur ces terres, c’est honorer ceux qui ont combattu pour la liberté. Et cela résonne encore dans notre monde actuel : la paix reste fragile, et notre vigilance, essentielle.",
-  "location": [],
+  "location": [
+   "山口"
+  ],
   "region": null,
   "photographer": "Frantisek ZVARDON",
   "gallery": "Onlyfrance.fr/Alamy Stock Photo",
@@ -5103,7 +5348,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "山口",
+   "yamaguchi"
+  ],
   "content_tags": [
    "火山",
    "火山口",
@@ -5377,8 +5625,13 @@
   "imageKey": "LondonParliament",
   "title": "Big Ben et le Parlement, Palais de Westminster, Londres, Angleterre",
   "desc": "Sur les rives de la Tamise, le Palais de Westminster, à Londres, incarne depuis des siècles le cœur battant de la vie politique britannique. Ancienne résidence royale édifiée au XIe siècle par Édouard le Confesseur, il accueille le Parlement depuis le XIIIe siècle. Ravagé par un incendie en 1834, il fut reconstruit dans un style néogothique spectaculaire, sous la direction de Charles Barry et Augustus Pugin.\nLe bâtiment abrite la Chambre des communes, la Chambre des lords et la Westminster Hall, datant de 1097, l’une des plus anciennes salles médiévales d’Europe encore debout. L'ensemble couvre plus de 112 476 m² et reste un symbole vivant de la démocratie parlementaire.\nEt bien sûr, impossible d’évoquer Westminster sans Big Ben, souvent confondu avec la tour elle-même. Ce nom désigne en réalité la cloche de 13,5 tonnes logée dans l’Elizabeth Tower, renommée en 2012 pour le Jubilé de la reine. Chaque cadran mesure 6,8 mètres, et ses aiguilles marquent l’heure de Londres depuis 1859, au rythme de son carillon devenu légendaire.",
-  "location": [],
-  "region": null,
+  "location": [
+   "伦敦",
+   "英国",
+   "德国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Puthipong Worasaran",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -5386,7 +5639,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "伦敦",
+   "london",
+   "ロンドン",
+   "倫敦",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "日本",
+   "japan"
+  ],
   "content_tags": [
    "大本钟",
    "威斯敏斯特宫",
@@ -5446,8 +5712,12 @@
   "imageKey": "VeniceLagoon",
   "title": "Delta de la lagune vénitienne, Italie",
   "desc": "Un entrelacs de canaux, de marais salants et de terres mouvantes : bienvenue dans le delta de la lagune de Venise en Italie. Située au nord de l’Adriatique, cette zone humide exceptionnelle couvre près de 550 km² et constitue l’un des écosystèmes lagunaires les plus riches d’Europe. Formée par les sédiments des rivières alpines après la dernière glaciation, la lagune existe depuis plus de 6 000 ans.\nElle devint un refuge naturel à la chute de l’Empire romain d’Occident, en 476, pour les populations fuyant les invasions. C’est là, au cœur de ce paysage mouvant, que naîtra peu à peu la cité unique de Venise. Classée au patrimoine mondial de l’UNESCO, la lagune abrite aujourd’hui une biodiversité remarquable. Son système complexe de vasières et de chenaux régule les marées et protège la ville des inondations.\nPour faire face à la montée des eaux, le projet MOSE a mis en place un système de digues mobiles destiné à préserver l’équilibre fragile de la lagune. Une série de barrières flottantes peuvent être élevées pour bloquer l'entrée des marées hautes et ainsi protéger Venise des inondations. Comprendre la lagune, c’est mieux saisir comment nature, mémoire et ingénierie cohabitent pour protéger un patrimoine unique.",
-  "location": [],
-  "region": null,
+  "location": [
+   "威尼斯",
+   "罗马",
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "Dimitri Weber",
   "gallery": "Amazing Aerial Agency",
   "copyrightlink": null,
@@ -5455,7 +5725,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "ヴェネツィア",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア",
+   "罗马"
+  ],
   "content_tags": [
    "湿地",
    "蜿蜒河流",
@@ -5553,8 +5836,11 @@
   "imageKey": "HoneyBeeLavender",
   "title": "Abeille sur des fleurs de lavande",
   "desc": "Saviez-vous qu’un tiers de ce que vous mangez est le fruit du labeur des abeilles ? Baies, avocats, café : tous ces délices existent grâce à elles. Le 20 mai, nous célébrons la Journée mondiale des abeilles, rendant hommage à leur rôle essentiel et à Anton Janša, le Slovène visionnaire de l’apiculture moderne.\nImaginez un monde sans abeilles. Près de 75 % des cultures alimentaires dépendent de la pollinisation par les animaux, avec les abeilles en première ligne, accompagnées des papillons, des chauves-souris et des colibris. Les abeilles sont aussi les gardiennes de la reproduction de nombreuses fleurs sauvages. Pourtant, leur population décline, fragilisée par les pesticides, la perte de leur habitat et les caprices du climat.\nMais il y a de l’espoir. Nous pouvons tous agir. Plantez de la lavande ou du romarin sur votre balcon, offrez-leur un abri à insectes ou soutenez les apiculteurs locaux en achetant leur miel. Et surtout, bannissez les produits chimiques. Ces gestes simples protègent un maillon vital de notre écosystème. Les abeilles sont discrètes, mais sans elles, notre monde perdrait tant de sa splendeur.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Anthony Brown",
   "gallery": "Alamy",
   "copyrightlink": null,
@@ -5562,7 +5848,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "蜜蜂",
    "昆虫",
@@ -6014,8 +6311,11 @@
   "imageKey": "GrandeTerreReef",
   "title": "Récif barrière au large de la Grande Terre, Nouvelle-Calédonie",
   "desc": "Au large de Grande Terre, l’île principale de Nouvelle-Calédonie, s’étire l’un des plus longs récifs barrières continus du monde. Sur environ 1 500 kilomètres, il encercle un lagon turquoise de 24 000 km², classé au patrimoine mondial de l’UNESCO. Tortues vertes, dugongs, poissons tropicaux, baleines à bosse : plus de 2 300 espèces marines y trouvent refuge.\nLe 1er juin, la Journée mondiale de sensibilisation aux récifs coralliens nous rappelle que ces écosystèmes, aussi beaux que fragiles, sont essentiels à l’équilibre des océans. Ce récif est le troisième plus vaste au monde, après ceux d’Australie et du Mexique et il borde un territoire à part : la Nouvelle-Calédonie.\nMais face au réchauffement, au blanchissement, à la pollution, ce joyau est menacé. Préserver les récifs, c’est protéger un héritage naturel mondial et une mémoire vivante partagée entre peuples, cultures et générations.",
-  "location": [],
-  "region": null,
+  "location": [
+   "冲绳",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Karsten Wrobel",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6023,7 +6323,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "冲绳",
+   "okinawa",
+   "沖縄",
+   "沖繩",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "珊瑚礁",
    "泻湖",
@@ -6325,8 +6635,11 @@
   "imageKey": "DubrovnikTwilight",
   "title": "Vieille ville de Dubrovnik, Dalmatie, Croatie",
   "desc": "À l’aube, les pavés polis de la vieille ville de Dubrovnik captent la lumière comme une mer de marbre doré. Classée au patrimoine mondial de l’UNESCO, cette cité croate, ceinturée de remparts médiévaux, semble suspendue entre histoire et légende. De la porte Pile à la tour de l’Horloge, chaque pierre raconte des siècles de diplomatie, de commerce et de résilience.\nSurnommée la perle de l’Adriatique, Dubrovnik fut la capitale de la République de Raguse, une puissance maritime rivale de Venise. Son plan actuel remonte à 1292, après un incendie sous domination vénitienne. Les remparts, érigés du XIIIe au XVIIe siècle, s’étendent sur plus de deux kilomètres. En son cœur, on découvre le palais du Recteur, le palais Sponza, l’église Saint-Blaise et le monastère franciscain, qui abrite la plus ancienne pharmacie encore en activité d’Europe.\nDe ses toits rouges à ses ruelles calmes, Dubrovnik conjugue passé et modernité. Décor emblématique de la série Game of Thrones, elle ne joue pas un rôle : elle incarne sa propre histoire, forgée par les hommes et portée par la mer.",
-  "location": [],
-  "region": null,
+  "location": [
+   "威尼斯",
+   "克罗地亚"
+  ],
+  "region": "克罗地亚",
   "photographer": "bluejayphoto",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6334,7 +6647,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "克罗地亚",
+   "croatia",
+   "hrvatska",
+   "克羅地亞",
+   "威尼斯",
+   "venice",
+   "venezia",
+   "威尼托",
+   "ヴェネツィア"
+  ],
   "content_tags": [
    "杜布罗夫尼克古城",
    "老城街道",
@@ -6440,8 +6763,12 @@
   "imageKey": "BigBendChisos",
   "title": "Chisos Mountains, Parc national de Big Bend, Texas, État-Unis",
   "desc": "Au sud de l’Etat américain du Texas, Big Bend déploie son immensité entre désert, montagne et rivière. Autrefois territoire mexicain, ce site a rejoint les États-Unis en 1848, avant d’être protégé dès les années 1930 et classé parc national en 1944. Aujourd’hui encore, il reste l’un des parcs les plus sauvages et confidentiels du pays.\nLe parc abrite trois écosystèmes spectaculaires : le désert du Chihuahua, le Rio Grande sinueux et les montagnes Chisos, théâtre de panoramas grandioses comme celui-ci. On y croise pumas, colibris, serpents, ou même un roadrunner filant entre les yuccas. Les vestiges de civilisations anciennes comme les pétroglyphes, ruines, sentiers, témoignent d’un passé bien antérieur à la frontière actuelle.\nBig Bend est aussi un des meilleurs endroits aux États-Unis pour observer les étoiles. Comme dans les Causses ou les Alpes du Sud, la nuit y dévoile un ciel profond et pur. Venir ici, c’est traverser l’espace et le temps. Et découvrir que le silence du désert en dit souvent bien plus que les mots.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国",
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "Dean Fikar",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6449,7 +6776,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states"
+  ],
   "content_tags": [
    "峡谷",
    "日落",
@@ -6555,8 +6895,12 @@
   "imageKey": "RheaDad",
   "title": "Nandou de Darwin mâle avec ses petits, parc national Torres del Paine, Patagonie, Chili",
   "desc": "Le saviez-vous ? Chez le nandou de Darwin, c’est le mâle qui élève les petits. Après s’être accouplé avec plusieurs femelles, il construit un nid commun, couve jusqu’à 50 œufs, puis élève seul les poussins pendant près de six mois.\nDans le parc national Torres del Paine, en Patagonie chilienne, on peut le voir guider sa progéniture à travers la steppe, les abriter sous ses ailes et même adopter des orphelins. Il communique par de doux sifflements et veille sur eux avec une patience admirable.\nPour la Fête des Pères, célébrée aujourd’hui, ce comportement exceptionnel rappelle que la paternité, dans la nature aussi, demande engagement et protection. Ce modèle inattendu d’un père dévoué est parfait pour initier les enfants à la biodiversité et à l’empathie. Une belle histoire qui change des cravates et des mugs « Meilleur Papa du monde » !",
-  "location": [],
-  "region": null,
+  "location": [
+   "巴塔哥尼亚",
+   "美国",
+   "智利"
+  ],
+  "region": "智利",
   "photographer": "Ignacio Yufera",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -6564,7 +6908,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "巴塔哥尼亚",
+   "patagonia",
+   "巴塔哥尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ",
+   "智利",
+   "chile"
+  ],
   "content_tags": [
    "美洲鸵",
    "鸟",
@@ -6694,8 +7050,10 @@
   "imageKey": "WinterBegins",
   "title": "Plage à Santa Catarina, Brésil",
   "desc": "La côte de Santa Catarina, au sud du Brésil, s’étend sur plus de 560 km de plages, de baies et de petits ports ancrés dans le sable. Bien avant l’arrivée des navigateurs européens, le peuple autochtone des Carijós habitait ces terres, en harmonie avec la mer. Pêche, culture, récits : tout naissait ici du dialogue entre l’humain et la nature.\nLe nom de Santa Catarina apparaît sur les cartes dès 1529. Puis, au XVIIIe siècle, des colons açoriens portugais s’installent. Des vagues d’immigrants allemands et italiens suivent, transformant ce littoral en mosaïque culturelle, à l’image de la Bretagne qui s’est aussi démarquée par ses multiples cultures et ses traditions de pêche.\nAujourd’hui, ces plages attirent autant les amoureux de nature que ceux d’histoire. En marchant sur le sable, on découvre bien plus qu’un paysage : un récit ancien, tissé de sel, de vent et de mémoire.",
-  "location": [],
-  "region": null,
+  "location": [
+   "巴西"
+  ],
+  "region": "巴西",
   "photographer": "CaioCarvalhoPhotography",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6703,7 +7061,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "巴西",
+   "brazil"
+  ],
   "content_tags": [
    "礁石",
    "岩石",
@@ -6811,8 +7172,13 @@
   "imageKey": "AmazonEcuador",
   "title": "Forêt amazonienne, Équateur",
   "desc": "Le 22 juin, la Journée mondiale des forêts tropicales nous invite à explorer un monde foisonnant de vie : l’Amazonie. En Équateur, ce fragment de forêt, plus modeste que celui du Brésil, est pourtant l’un des plus riches en biodiversité de la planète. Dans cet écosystème fragile cohabitent des jaguars, des aras, des caïmans noirs, des anguilles électriques, ainsi que des plantes médicinales encore inconnues de la science.\nC’est aussi le berceau de peuples autochtones, dont certains vivent en totale autonomie, sans contact avec le monde moderne. Leurs territoires sont légalement protégés, mais de plus en plus menacés par les activités industrielles, notamment les forages pétroliers. À l’image de la forêt amazonienne de Guyane, ces écosystèmes nous rappellent la force et la fragilité du vivant.\nCréée en 2017 par l’ONG Rainforest Partnership, cette journée mondiale nous interpelle : protéger les forêts, c’est défendre la vie, la diversité et les cultures qui nous enrichissent tous. Chaque geste compte : consommer autrement, soutenir les peuples forestiers, s’informer. Préserver la forêt, c’est préserver notre avenir commun.",
-  "location": [],
-  "region": null,
+  "location": [
+   "千叶",
+   "日本",
+   "厄瓜多尔",
+   "巴西"
+  ],
+  "region": "巴西",
   "photographer": "Mark Fox",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6820,7 +7186,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "千叶",
+   "chiba",
+   "千葉",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "巴西",
+   "brazil",
+   "厄瓜多尔",
+   "ecuador"
+  ],
   "content_tags": [
    "热带雨林",
    "森林",
@@ -6931,8 +7309,10 @@
   "imageKey": "GlastonburyScenic",
   "title": "Tour Saint-Michel, colline Glastonbury Tor, Somerset, Angleterre",
   "desc": "Sur une colline escarpée du sud de l’Angleterre, Glastonbury Tor se dresse comme une légende vivante. Dominé par la tour médiévale de Saint-Michel, ce site chargé de mystères offre une vue imprenable sur les plaines du Somerset et sur un événement tout aussi mythique : le festival de Glastonbury.\nDepuis 1970, ce festival figure parmi les plus influents au monde. Né de l’esprit libre des années 60, il rassemble chaque année plus de 200 000 festivaliers. David Bowie, Metallica, Billie Eilish, Olivia Rodrigo… tous ont foulé ses scènes. C’est un peu le Woodstock britannique, mêlant musique, conscience sociale et énergie collective. Un peu comme les Vieilles Charrues en Bretagne, ici la musique est un prétexte au rassemblement, à l’éveil et à la liberté.\nDu sommet du Tor, entre ciel, vent et prairie, on ressent un lien puissant entre l’humain et le paysage. Un rappel que les lieux ont une âme, et que la musique, parfois, la fait vibrer à l’unisson.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Gavin Hellier",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -6940,7 +7320,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "格拉斯顿伯里突岩",
    "圣迈克尔塔楼",
@@ -7003,8 +7394,14 @@
   "imageKey": "SplendidFrog",
   "title": "Grenouille Cruziohyla calcarifer",
   "desc": "Perchée dans la canopée comme une acrobate de la jungle, la grenouille Cruziohyla calcarifer (ou grenouille feuille splendide) ne manque pas d’impressionner. Originaire des forêts tropicales d’Amérique centrale, elle arbore des couleurs vives, des yeux dorés avec des pupilles verticales et des pattes adhésives dignes d’un superhéros. De nuit, elle devient une chasseuse agile, filant de feuille en feuille à la recherche d’insectes.\nPour pondre, elle choisit des feuilles au-dessus de flaques ou de petites mares. Les têtards, une fois éclos, plongent directement dans l’eau, une stratégie aussi originale qu’efficace. Une fois les œufs pondus, les parents disparaissent. Chez cette espèce, on apprend à se débrouiller très tôt !\nColorée, discrète et audacieuse, la grenouille Cruziohyla calcarifer nous rappelle à quel point la biodiversité est précieuse. Elle est un clin d’œil exotique, un éclat venu du Sud qui illumine nos forêts intérieures, et peut-être aussi notre regard sur la nature.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国",
+   "哥斯达黎加",
+   "哥伦比亚",
+   "厄瓜多尔"
+  ],
+  "region": "厄瓜多尔",
   "photographer": "Jan Stria",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -7012,7 +7409,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "树蛙",
    "青蛙",
@@ -7192,8 +7602,12 @@
   "imageKey": "MaroonClownfish",
   "title": "Poisson-clown à joues épineuses entouré d'une anémone à bouts renflés, baie de Milne, Papouasie-Nouvelle-Guinée",
   "desc": "Dans les eaux tièdes de Papouasie-Nouvelle-Guinée, un minuscule poisson écarlate danse entre les tentacules translucides d’une anémone à bouts renflés. Ce n’est pas un décor de conte fantastique, mais la vie quotidienne du poisson-clown à joues épineuses. Avec ses flancs bordeaux, ses épines sur les joues et son regard attentif, il partage son existence avec un organisme bien plus étrange que lui.\nCe duo fonctionne à merveille. L’anémone le protège de ses filaments urticants; le poisson, lui, éloigne les intrus et débarrasse son hôte des débris. Une alliance millimétrée, patiemment tissée par l’évolution. Mieux encore : au sein du groupe, la hiérarchie est flexible. Si la femelle dominante disparaît, le mâle principal change de sexe pour assurer la continuité. Une capacité rare, précieuse, qui garantit l’équilibre.\nAujourd’hui, alors que les récifs coralliens déclinent, cette discrète scène de récif prend une valeur nouvelle. Elle incarne l’adaptabilité, la coopération et la résilience des écosystèmes marins. Protéger ces vies minuscules, c’est aussi préserver l’élégance fragile du monde naturel. Et se rappeler que même les plus petits êtres peuvent inspirer de grandes leçons.",
-  "location": [],
-  "region": null,
+  "location": [
+   "大堡礁",
+   "台湾",
+   "印度尼西亚"
+  ],
+  "region": "印度尼西亚",
   "photographer": "Fred Bavendam",
   "gallery": "Nature Picture Library",
   "copyrightlink": null,
@@ -7201,7 +7615,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度尼西亚",
+   "indonesia",
+   "indonesian",
+   "印度尼西亞",
+   "台湾",
+   "taiwan",
+   "臺灣",
+   "大堡礁",
+   "great barrier reef"
+  ],
   "content_tags": [
    "小丑鱼",
    "鱼",
@@ -7256,8 +7680,10 @@
   "imageKey": "OroseiSardegna",
   "title": "Orosei, Sardaigne, Italie",
   "desc": "Entre falaises ocre et mer d’azur, la petite ville italienne d’Orosei, sur la côte est de la Sardaigne, évoque les paysages de la calanque d’En-Vau ou de Bonifacio. Depuis la grotte de Cala Luna, la vue sur la plage semble tout droit sortie d’une carte postale avec son sable clair, ses eaux turquoise et ses rochers dorés.\nAncien village de pêcheurs, Orosei a su préserver son âme, avec ses ruelles en pierre, ses églises baroques et son atmosphère paisible. Aux abords, le golfe du même nom dévoile des trésors : criques sauvages, grottes marines et sentiers escarpés qui raviront les amateurs de randonnée, comme dans les gorges du Verdon.\nEn bateau, en palmes-masque-tuba ou simplement les pieds dans l’eau, on découvre une nature intacte et généreuse. Une parenthèse idéale pour qui rêve d’évasion, loin de l’agitation touristique. Sous le soleil sarde, Orosei est un hymne à la lenteur méditerranéenne, entre farniente, authenticité et mer scintillante.",
-  "location": [],
-  "region": null,
+  "location": [
+   "意大利"
+  ],
+  "region": "意大利",
   "photographer": "EyeEm Mobile GmbH",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7265,7 +7691,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ],
   "content_tags": [
    "海蚀洞 洞穴",
    "沙滩 海滩",
@@ -7442,8 +7875,12 @@
   "imageKey": "ConstitucionStation",
   "title": "Gare de Constitución, Buenos Aires, Argentine",
   "desc": "Chaque 9 juillet, l’Argentine célèbre le jour où, en 1816, les Provinces unies du Río de la Plata ont proclamé leur indépendance à Tucumán. Cette date, gravée dans la mémoire collective, marque le début d’un chemin singulier, fait de luttes, d’identité retrouvée et de fierté partagée.\nÀ Buenos Aires, la gare de Constitución, témoin d’innombrables départs et retrouvailles, semble elle aussi suspendre son souffle. Les avenues s’habillent de bleu ciel et de blanc, les balcons se parent de drapeaux, les places vibrent au rythme des musiques traditionnelles et des défilés.\nPlus qu’un simple jour férié, c’est un moment de cohésion nationale. On se retrouve autour d’un maté ou d’un asado, on chante, on se souvient. Et dans chaque regard brille l’écho d’un pays fier de son parcours, tendu vers l’avenir, sans jamais oublier les pas qui l’ont conduit jusqu’ici.",
-  "location": [],
-  "region": null,
+  "location": [
+   "巴黎",
+   "阿根廷",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Grafissimo",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7451,7 +7888,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "巴黎",
+   "paris",
+   "パリ",
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン",
+   "阿根廷",
+   "argentina"
+  ],
   "content_tags": [
    "宪法火车站",
    "火车站",
@@ -7479,8 +7926,11 @@
   "imageKey": "BahamaBlues",
   "title": "Eaux turquoise des Bahamas",
   "desc": "Vue du ciel, l’archipel des Bahamas dévoile un rêve en bleu. Des langues de sable blanc, cernées d’eaux turquoise et émeraude, dessinent un paysage presque irréel. Entre les nuages, la lumière danse sur l’océan, comme un hommage vibrant à la beauté insulaire. C’est ici, au cœur de cette mer de corail et de lumière, que le 10 juillet résonne chaque année comme un chant de liberté.\nLa fête nationale des Bahamas célèbre l’indépendance du pays, acquise en 1973. Mais au-delà de l’histoire, c’est une ode à l’identité insulaire, à la culture créole, à la chaleur du peuple bahaméen. Musiques goombay et junkanoo, défilés hauts en couleur, danses traditionnelles et arômes de fruits tropicaux : tout rappelle que les Bahamas, ce n’est pas seulement une carte postale, c’est un art de vivre.\nEntre ciel et mer, entre passé colonial et avenir souverain, l’archipel célèbre chaque année son âme libre. Une fête à l’image de ses eaux : éclatante, lumineuse et profondément ancrée dans l’horizon.",
-  "location": [],
-  "region": null,
+  "location": [
+   "英国",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "BlueOrange Studio",
   "gallery": "Adobe Stock",
   "copyrightlink": null,
@@ -7488,7 +7938,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales",
+   "西班牙",
+   "spain"
+  ],
   "content_tags": [
    "云",
    "热带海洋",
@@ -7593,8 +8056,13 @@
   "imageKey": "BasaltColumns",
   "title": "Colonnes de basalte dans la crique de Kálfshamarsvík, Skagi, Islande",
   "desc": "Sur la péninsule sauvage de Skagi, au nord de l’Islande, Kálfshamarsvík déploie ses falaises aux allures d’œuvre d’art. Là, la mer frappe des colonnes de basalte si parfaitement hexagonales qu’on croirait à un décor d’architecture antique. Pourtant, ces structures sont bien naturelles, formées il y a environ 2 millions d’années, lorsque la lave, en refroidissant lentement, s’est fracturée en motifs géométriques.\nCe paysage minéral, sculpté par le temps, évoque les falaises d’Étretat ou les chaos granitiques de Fontainebleau : un monde de pierre, immobile en apparence, mais vibrant d’histoires. Sous chaque colonne se cache la mémoire d’un volcan et d’un monde en transformation.\nDe l’époque des premiers outils taillés jusqu’aux ruelles pavées de nos vieilles villes, la roche nous accompagne depuis toujours. Contempler Kálfshamarsvík, c’est poser un regard neuf sur ce que la nature façonne en silence, patiemment, et nous transmettre sans un mot.",
-  "location": [],
-  "region": null,
+  "location": [
+   "兵库",
+   "德国",
+   "日本",
+   "冰岛"
+  ],
+  "region": "冰岛",
   "photographer": "Arterra Picture Library",
   "gallery": "Alamy Stock Photo",
   "copyrightlink": null,
@@ -7602,7 +8070,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "兵库",
+   "hyogo",
+   "兵庫",
+   "冰岛",
+   "iceland",
+   "アイスランド",
+   "冰島",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ],
   "content_tags": [
    "玄武岩柱",
    "柱状节理",
@@ -7708,8 +8189,10 @@
   "imageKey": "TemplePhilae",
   "title": "Temple d'Isis, Assouan, Égypte",
   "desc": "Quand le soleil descend sur le Nil, les colonnes du temple égyptien d’Isis prennent une teinte dorée, presque irréelle. Ce lieu sacré, jadis érigé sur l’île de Philae, a été sauvé des eaux dans les années 1960. Bloc par bloc, plus de 40 000 pierres ont été déplacées, numérotées puis transportées vers l’île voisine d’Agilkia grâce à une vaste opération internationale menée par l’UNESCO.\nDerrière son imposant pylône, le temple s’ouvre sur une cour bordée de colonnes, menant au sanctuaire dédié à Isis, déesse de la magie, de la maternité et de la protection. Ses murs racontent son histoire : celle d’une mère divine, épouse d’Osiris, mère d’Horus, et gardienne des cycles de la vie. Autour, de petites chapelles abritent d’autres figures du panthéon égyptien, chacune sculptée avec une finesse bouleversante.\nÀ la tombée de la nuit, le site s’illumine, les voix s’élèvent, puis les légendes reprennent vie. Dans ce théâtre millénaire, on se surprend à écouter les pierres murmurer. Ici, chaque détail semble dire que l’Égypte des Pharaons n’est pas morte. Bien au contraire, son âme veille à jamais sur les rives du fleuve sacré.",
-  "location": [],
-  "region": null,
+  "location": [
+   "埃及"
+  ],
+  "region": "埃及",
   "photographer": "Ratnakorn Piyasirisorost",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7717,7 +8200,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト"
+  ],
   "content_tags": [
    "菲莱神庙",
    "神庙",
@@ -7862,8 +8350,10 @@
   "imageKey": "BigMoon",
   "title": "Photo de la surface de la Lune à travers un télescope",
   "desc": "Chaque 20 juillet, la planète célèbre la Journée internationale de la Lune, en hommage à un moment historique : le premier pas sur la Lune en 1969. Ce jour-là, Neil Armstrong prononçait sa célèbre phrase : « C’est un petit pas pour l’homme, un bond de géant pour l’humanité. » À ses côtés, Buzz Aldrin participait à cet exploit historique, fruit d’une ambition mondiale pour explorer l’espace.\nLa mission Apollo 11 a marqué un tournant majeur dans l’histoire scientifique et technologique. Le module Eagle s’est posé sur la Lune le 20 juillet, concrétisant l’objectif fixé huit ans plus tôt par le président John F. Kennedy : envoyer un humain sur la Lune avant la fin de la décennie. C’est tout un travail d’équipe, une prouesse d’ingénierie et un symbole de paix qui ont permis cette aventure.\nAujourd’hui encore, la Lune continue de fasciner. Elle représente un laboratoire céleste, un rêve commun pour la science, l’exploration et la coopération internationale. Cette journée est l’occasion de rappeler que l’espace appartient à toutes et à tous, et que son exploration ne fait que commencer.",
-  "location": [],
-  "region": null,
+  "location": [
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Sergey Kuznetsov",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -7871,7 +8361,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "月球",
    "月球表面",
@@ -7924,8 +8419,12 @@
   "imageKey": "BadlandsSunset",
   "title": "Coucher de soleil sur le parc national des Badlands, Dakota du Sud, États-Unis",
   "desc": "Au cœur de l’État américain du Dakota du Sud, les Badlands s’illuminent au coucher du soleil. Crêtes déchiquetées, canyons sculptés par l’érosion, falaises striées de rose, d’ocre et de gris, ce décor semble tout droit sorti d’un rêve. Ici, la roche raconte lentement les secrets de la Terre.\nCe paysage saisissant est l’un des plus riches gisements fossiles d’Amérique du Nord. Entre les couches de cendres et de limon se cachent les vestiges d’anciens mondes : chevaux primitifs, tigres à dents de sabre, camélidés oubliés. Un musée à ciel ouvert, façonné par la patience du vent et de l’eau.\nEt au milieu de ce désert vibrant, la vie persiste. Bisons, mouflons, chiens de prairie, et même le furet à pieds noirs, espèce rare et menacée, y trouvent refuge. Traverser les Badlands, c’est plonger dans un espace brut, où le silence, la lumière et les roches nous rappellent à l’essentiel : le monde n’a pas commencé avec nous, et ne finira pas avec nous.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国",
+   "瑞士"
+  ],
+  "region": "瑞士",
   "photographer": "Petr Bednarik",
   "gallery": "Danita Delimont/Alamy Stock Photo",
   "copyrightlink": null,
@@ -7933,7 +8432,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "瑞士",
+   "switzerland",
+   "schweiz",
+   "suisse",
+   "swiss",
+   "スイス"
+  ],
   "content_tags": [
    "恶地国家公园",
    "岩石",
@@ -7996,8 +8508,11 @@
   "imageKey": "AshyWoodswallow",
   "title": "Famille de langrayens bruns perchée sur une branche",
   "desc": "Le 24 juillet célèbre ces partenaires de bêtises, de fous rires et de souvenirs partagés : nos cousins et cousines. Ceux qui ont rendu les vacances d’été inoubliables, les repas de famille un peu plus vivants, et les jeux de cour de récré encore plus fous.\nLes liens entre cousins, c’est un mélange d’amitié et de famille. Même si la vie nous éloigne parfois, il suffit d’un message ou d’un clin d’œil à un souvenir d’enfance pour que tout revienne. Pas besoin d’occasion spéciale : cette journée est un bon prétexte pour se retrouver, virtuellement ou en vrai.\nSur la photo, une famille de langrayens bruns, blottis sur une branche, nous rappelle cette tendresse fraternelle. Ces oiseaux aiment vivre ensemble, se suivre, se percher côte à côte. Un peu comme nous, en somme, quand on retrouve nos cousins autour d’un repas, d’une blague ou d’un simple souvenir.",
-  "location": [],
-  "region": null,
+  "location": [
+   "日本",
+   "泰国"
+  ],
+  "region": "泰国",
   "photographer": "Captain Skyhigh",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8005,7 +8520,16 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "泰国",
+   "thailand",
+   "thai",
+   "泰國"
+  ],
   "content_tags": [
    "灰燕鵙",
    "鸟",
@@ -8025,8 +8549,13 @@
   "imageKey": "BlackfinBarracuda",
   "title": "Banc de barracudas chevrons, Shark Reef, parc national de Ras Mohammed, péninsule du Sinaï, Égypte",
   "desc": "Petit clin d’œil à Claude François… et aux superprédateurs de la mer Rouge. Plongé dans les eaux limpides du parc national de Ras Mohammed, à la pointe sud de la péninsule égyptienne du Sinaï, on se retrouve cerné par une spirale d’argent en mouvement. Ce sont des barracudas chevrons, glissant à l’unisson dans une chorégraphie naturelle fascinante. Avec leurs rayures en V et leur silhouette fuselée, ils semblent tout droit sortis d’un rêve… ou d’un refrain. Et ici, pas de doute : ils ont plus d’appétit qu’un barracuda !\nMais ces bancs ne sont pas que spectaculaires : ils sont aussi stratégiques. En groupe serré, les barracudas se protègent des prédateurs et augmentent leurs chances de capturer leurs proies. Le jour, ils tournoient calmement autour du récif de Shark Reef ; à la tombée de la nuit, ils se dispersent pour traquer leur dîner.\nRas Mohammed n’abrite pas que ces ballets marins. Premier parc marin d’Égypte, il protège plus de 1 000 espèces de poissons et 200 types de coraux. Comme les mangroves d’Indonésie, ces écosystèmes racontent la vie, sa diversité, sa fragilité.",
-  "location": [],
-  "region": null,
+  "location": [
+   "鹿儿岛",
+   "冲绳",
+   "埃及",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Alex Mustard",
   "gallery": "Nature Picture Library",
   "copyrightlink": null,
@@ -8034,7 +8563,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "冲绳",
+   "okinawa",
+   "沖縄",
+   "沖繩",
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon"
+  ],
   "content_tags": [
    "梭鱼",
    "鱼",
@@ -8141,8 +8683,11 @@
   "imageKey": "MongoliaYurts",
   "title": "Yourtes dans les steppes de Mongolie",
   "desc": "En cette journée, on se rappelle que conserver la nature, ce n’est pas un luxe, c’est vital. En Mongolie, les vastes steppes herbeuses témoignent de ce lien ancien entre humains et nature. Ces prairies tempérées s’étendent sur des millions d’hectares et abritent encore des espèces rares comme la gazelle de Mongolie et le léopard des neiges.\nSur cette mer verte, les yourtes traditionnelles des familles nomades apparaissent comme des constellations terrestres. Environ 200 000 éleveurs y vivent encore au rythme des saisons, en équilibre fragile avec leur environnement.\nMême sans organisme fondateur officiel, cette journée fait écho au travail de l’UICN, engagée pour la biodiversité depuis 1948. Des forêts boréales du Québec aux steppes mongoles, la leçon est la même : quand on respecte les écosystèmes, humains et faune peuvent coexister. Et ça, c’est à préserver.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "蒙古"
+  ],
+  "region": "蒙古",
   "photographer": "Michel Arnault",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -8150,7 +8695,17 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "蒙古",
+   "mongolia",
+   "mongolian"
+  ],
   "content_tags": []
  },
  {
@@ -8161,8 +8716,11 @@
   "imageKey": "TigerDay",
   "title": "Tigresse du Bengale, parc national de Kanha, Inde",
   "desc": "Écouter le silence. Attendre, immobile, au cœur du parc national de Kanha, dans le centre de l’Inde. Et soudain, dans les feuillages, une tigresse du Bengale. Silencieuse. Majestueuse. Les tigres sont bien plus que des pelages flamboyants. Ce sont des superprédateurs essentiels à l’équilibre des écosystèmes. En régulant les populations de cerfs ou de sangliers, ils préservent aussi la végétation et, avec elle, la biodiversité tout entière.\nKanha est l’un des plus anciens sanctuaires d’Inde, protégé depuis 1879, devenu parc national en 1955, puis réserve du projet « Tiger » dès 1973. Ce programme pionnier a permis de freiner le déclin dramatique de l’espèce. Mais les menaces persistent : fragmentation de l’habitat, braconnage, conflits humains.\nProtéger le tigre, c’est protéger la forêt. Et, avec elle, le souffle même du vivant.",
-  "location": [],
-  "region": null,
+  "location": [
+   "汉堡",
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "Axel Gomille",
   "gallery": "Nature Picture Library",
   "copyrightlink": null,
@@ -8170,7 +8728,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド",
+   "汉堡",
+   "hamburg",
+   "漢堡"
+  ],
   "content_tags": [
    "老虎",
    "孟加拉虎",
@@ -8432,8 +8997,11 @@
   "imageKey": "CaliforniaTidepool",
   "title": "Bassins de marée à La Jolla, Californie, États-Unis",
   "desc": "Aux États-Unis, sur les rivages sculptés de La Jolla, en Californie, l’océan creuse des cuvettes naturelles dans le grès. À marée basse, ces bassins de marée dévoilent un monde miniature, vibrant et coloré : crabes, étoiles de mer, anémones, algues, limaces de mer… un véritable aquarium sauvage façonné par les vagues.\nCes poches d’eau rappellent les mares rocheuses de Bretagne ou de Belle-Île, où la vie s’adapte aux cycles implacables de la mer. Deux fois par jour, l’eau s’en va, laissant les espèces affronter le soleil, le vent et la sécheresse.\nL’hiver est la saison idéale pour explorer ces écosystèmes : les grandes marées coïncident avec la lumière du jour, révélant les secrets de la côte. Ces zones sont protégées : on y apprend à observer sans toucher, à écouter sans déranger. Ici, la nature enseigne l’humilité. Car la mer, plus qu’un paysage, est un monde à part entière qui est fragile, fascinant et infiniment vivant.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Andrew Shoemaker",
   "gallery": "DanitaDelimont.com",
   "copyrightlink": null,
@@ -8441,7 +9009,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "潮池",
    "礁石",
@@ -8505,8 +9084,12 @@
   "imageKey": "GasparillaLight",
   "title": "Phare de Gasparilla Island, Boca Grande, Floride, États-Unis",
   "desc": "Avant l’arrivée du GPS, les phares guidaient les marins grâce à leur clignotement unique, reconnaissable même dans l’obscurité la plus dense.\nC’est le cas du phare arrière de Gasparilla Island, à Boca Grande, en Floride, aux États-Unis. Construit à l’origine dans le Delaware, il fut installé à son emplacement actuel en 1927. Désactivé en 2014, il a été restauré avec soin en 2017, puis rallumé en 2018. Depuis, il clignote en blanc toutes les six secondes, fidèle à sa vocation de sentinelle du littoral.\nComme les phares de Bretagne, du Cotentin ou de la côte basque, il fait partie de ces monuments maritimes devenus symboles de mémoire et d’identité locale. À chaque rayon de lumière, c’est un fragment d’histoire côtière qui ressurgit, invitation à redécouvrir le rôle crucial des phares dans notre propre patrimoine.",
-  "location": [],
-  "region": null,
+  "location": [
+   "佛罗里达",
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Wiltser",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8514,7 +9097,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states"
+  ],
   "content_tags": [
    "灯塔",
    "建筑",
@@ -8536,8 +9132,11 @@
   "imageKey": "IguazuArgentina",
   "title": "Chutes des Trois Mousquetaires, Iguazú, Argentine",
   "desc": "Imaginez un grondement si puissant qu’aucune voix ne saurait l’étouffer, une énergie brute sculptant sans relâche la roche et la forêt subtropicale. Voici les chutes des Trois Mousquetaires, joyau naturel au sein des mythiques chutes d’Iguazú, en Argentine. Ce trio impressionnant de cascades plonge côte à côte dans la rivière Iguazú, offrant un spectacle fascinant d’eau vive et de brume irisée.\nBien qu'appartenant à l'Argentine, ces chutes révèlent leur splendeur depuis le Brésil voisin. Classé au patrimoine mondial par l’UNESCO, le parc national d’Iguazú protège une biodiversité exceptionnelle où jaguars, toucans et singes évoluent librement.\nComme face aux majestueuses chutes du Carbet, situées en Guadeloupe à Capesterre-Belle-Eau, réputées pour leurs trois cascades spectaculaires plongeant au cœur d'une végétation luxuriante, ce décor grandiose invite à préserver la beauté fragile de la nature. Savourez l’instant, et ne laissez derrière vous que l’écho de votre émerveillement.",
-  "location": [],
-  "region": null,
+  "location": [
+   "阿根廷",
+   "巴西"
+  ],
+  "region": "巴西",
   "photographer": "Mark Meredith",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8545,7 +9144,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿根廷",
+   "argentina",
+   "巴西",
+   "brazil"
+  ],
   "content_tags": [
    "伊瓜苏瀑布",
    "瀑布",
@@ -8802,8 +9406,10 @@
   "imageKey": "SpottedEagleRay",
   "title": "Raies léopards, île San Cristóbal, archipel des Galápagos, Équateur",
   "desc": "Elles ne rampent pas sur le sable comme les pastenagues. Les raies léopards semblent voler. Leurs larges nageoires ondulent avec grâce. Leur dos tacheté, unique à chaque individu, scintille sous la lumière turquoise.\nPhotographiées ici près de l’île San Cristóbal, dans l’archipel des Galápagos, ces voyageuses peuvent atteindre trois mètres d’envergure. Solitaires la plupart du temps, elles se rassemblent parfois en ballets synchronisés, évoquant une chorégraphie d’oiseaux sous-marins. Certaines jaillissent même hors de l’eau dans un saut surprenant, comme pour rappeler que l’élégance n’a pas besoin d’ailes.\nMais derrière cette beauté fluide se cache une espèce en danger. Victimes de la pêche accidentelle et de la dégradation de leur habitat, les raies léopards glissent lentement vers la disparition. Les observer, c’est s’émerveiller, un privilège rare, un cadeau venu des profondeurs. Les protéger, c’est préserver un éclat de liberté dans l’océan.",
-  "location": [],
-  "region": null,
+  "location": [
+   "厄瓜多尔"
+  ],
+  "region": "厄瓜多尔",
   "photographer": "Tui De Roy",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -8811,7 +9417,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "厄瓜多尔",
+   "ecuador"
+  ],
   "content_tags": [
    "斑点鹰鳐",
    "鳐鱼",
@@ -8957,8 +9566,10 @@
   "imageKey": "GipuzcoaSummer",
   "title": "Couches de flysch à Zumaia, Pays basque, Espagne",
   "desc": "Sur la côte de Zumaia, au cœur du Pays basque espagnol, se trouve l'un des paysages géologiques les plus saisissants d'Europe : les flysch. Ces falaises rocheuses dévoilent des couches parfaitement alignées qui racontent, telles les pages d'un livre ouvert, des millions d'années d'histoire de notre planète.\nFormées entre le Crétacé supérieur et l’Éocène, ces strates sont le résultat de dépôts successifs de sédiments marins, principalement des turbidites, qui se sont accumulés au fond d’un ancien océan. En flânant depuis la plage d'Itzurun ou les sentiers du géoparc de la Côte Basque, on contemple ce phénomène naturel exceptionnel, où chaque strate raconte une époque ancienne, dont celle de l’extinction des dinosaures.\nÀ l'image des falaises d'Étretat en Normandie, célèbres pour leur beauté dramatique, Zumaia attire autant les passionnés de géologie que les amateurs de paysages époustouflants. Une escapade idéale pour ressentir la force tranquille de la nature et s'émerveiller devant ses mystères.",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Eloi_Omella",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -8966,7 +9577,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "海岸",
    "礁石",
@@ -9037,8 +9653,14 @@
   "imageKey": "WheatearBird",
   "title": "Traquet motteux au milieu de la bruyère, parc national du Peak District, Angleterre",
   "desc": "Le vent glisse sur les landes de bruyère, portant avec lui le parfum subtil de la terre humide. Au loin, une silhouette se détache sur le tapis violet : le traquet motteux. Élancé, presque fragile, il bondit avec une légèreté surprenante, ses mouvements rapides dessinant des éclats de vie sur le sol nu. Chaque saut semble une note dans la mélodie silencieuse du paysage.\nSon nom anglais, « wheatear », murmure l’histoire d’un croupion blanc qui scintille comme une étincelle lorsqu’il s’envole. Et quel voyageur ! Moins de 30 grammes, mais des milliers de kilomètres à franchir, des falaises battues par les vents du Nord jusqu’aux plaines brûlées de soleil en Afrique. Une prouesse qui défie l’imagination, un fil invisible reliant deux mondes.\nFace à lui, le temps suspend son vol. Dans ce décor sauvage et préservé, chaque battement d’aile raconte une épopée, chaque regard posé sur cet oiseau est une invitation à l’émerveillement.",
-  "location": [],
-  "region": null,
+  "location": [
+   "阿拉斯加",
+   "英国",
+   "美国",
+   "德国",
+   "加拿大"
+  ],
+  "region": "加拿大",
   "photographer": "Ben Hall",
   "gallery": "Nature Picture Library",
   "copyrightlink": null,
@@ -9046,7 +9668,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa"
+  ],
   "content_tags": [
    "穗鵖",
    "鸟",
@@ -9156,8 +9791,13 @@
   "imageKey": "CervusDama",
   "title": "Daim européen, Angleterre",
   "desc": "Dans les vastes parcs boisés d’Europe, ici en Angleterre, des silhouettes fauves glissent entre les chênes et les fougères : ce sont des daims européens. Avec leurs pelages tachetés et leurs regards vifs, ils incarnent l’élégance discrète de la faune sauvage. Introduits par les Romains puis acclimatés par la noblesse anglaise, les daims vivent aujourd’hui en semi-liberté dans des domaines historiques, comme Richmond Park ou le parc de Knole. Leur présence évoque un autre temps, où nature et aristocratie cohabitaient dans un équilibre fragile.\nÀ l’instar des cerfs de Chambord ou des chevreuils de Sologne, les daims fascinent par leur grâce et leur instinct de vigilance. En groupe, ils écoutent le moindre bruissement. Le danger ne crie jamais gare. Le daim nous rappelle qu’une forêt vivante est aussi une forêt habitée. Observer un troupeau au lever du jour, dans la brume d’un matin anglais, c’est renouer avec une forme d’harmonie ancienne, entre le souffle du vent et celui des bêtes.",
-  "location": [],
-  "region": null,
+  "location": [
+   "苏格兰",
+   "罗马",
+   "英国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Enrique Aguirre Aves",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9165,7 +9805,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "罗马",
+   "rome",
+   "roma",
+   "ローマ",
+   "羅馬",
+   "苏格兰"
+  ],
   "content_tags": [
    "梅花鹿",
    "鹿",
@@ -9284,8 +9937,12 @@
   "imageKey": "FaroeLake",
   "title": "Lac Sørvágsvatn, île de Vágar, Îles Féroé",
   "desc": "Au sommet des falaises des Îles Féroé, au Danemark, un lac semble flotter dans le vide. Cet effet d’optique est créé par la topographie des falaises et l’angle du regard. Une illusion ? Oui, mais surtout un chef-d’œuvre de la nature. À peine à 30 mètres au-dessus de la mer, ce miroir d’eau s’écoule en cascade par la Bøsdalafossur, précipitant ses eaux douces dans l’océan.\nLe lac Sørvágsvatn est un refuge pour les oiseaux, un réservoir de vie, un régulateur du climat local. Mais il nous rappelle aussi, en cette Journée mondiale des lacs, combien ces milieux sont vulnérables. Partout, les lacs s’affaiblissent, fragilisés par l’impact de nos modes de vie. Et pourtant, que seraient nos paysages sans ces nappes tranquilles aux reflets changeants ?\nSørvágsvatn nous parle. Il nous dit d’écouter, de protéger, de ne plus détourner le regard. Car un lac, c’est bien plus qu’une étendue d’eau : c’est un souffle, une mémoire, une promesse.",
-  "location": [],
-  "region": null,
+  "location": [
+   "滋贺",
+   "阿尔卑斯",
+   "丹麦"
+  ],
+  "region": "丹麦",
   "photographer": "Anton Petrus",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9293,7 +9950,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "丹麦",
+   "denmark",
+   "danish",
+   "丹麥",
+   "faroe islands",
+   "滋贺",
+   "shiga",
+   "滋賀",
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス"
+  ],
   "content_tags": [
    "法罗群岛",
    "悬崖",
@@ -9434,8 +10104,11 @@
   "imageKey": "ScottsBluff",
   "title": "Monument national de Scotts Bluff, Gering, Nebraska, États-Unis",
   "desc": "À une époque où l’horizon faisait office de boussole, Scotts Bluff, majestueuse formation rocheuse de l'État américain du Nebraska, guidait les milliers de migrants en route vers l’Oregon ou la Californie. Bien avant la naissance de Gering, ce bastion naturel dominait les grandes plaines.\nCe paysage évoque les falaises d’Étretat, ces arches calcaires dressées face au vent normand, qui depuis des siècles servent de repères aux voyageurs. Là-bas, les marins. Ici, les colons. Deux mondes, deux époques, un même besoin de se repérer dans l’immensité.\nAujourd’hui, ce monument de pierre veille toujours. Il ne montre plus la route vers la Californie, mais celle d’un lien retrouvé avec la terre. Sous la lumière dorée, chaque roche, chaque souffle de vent, murmure une histoire que seule la nature sait raconter.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Hawk Buckman",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9443,7 +10116,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "枯草",
    "干草原",
@@ -9466,8 +10150,11 @@
   "imageKey": "MinnesotaWaters",
   "title": "Zone sauvage des Boundary Waters Canoe Area, Minnesota, États-Unis",
   "desc": "Silence... Juste le souffle du vent et le clapotis de la pagaie. Aux confins du nord du Minnesota, aux États-Unis, s’étend la Boundary Waters Canoe Area Wilderness. Ce territoire abrite un dédale de lacs cristallins et de rivières sinueuses, sculptés par les glaciers et protégés depuis 1964.\nComme sur les eaux paisibles du lac d’Annecy au petit matin, ou dans les reflets changeants du lac de Serre-Ponçon, on se laisse porter par le silence et la lumière. Ici, les canots glissent sur 1 900 kilomètres de voies navigables, reliant plus de 2 000 emplacements de camping. Le huard y lance son cri mélancolique et l’élan d’Amérique s’y abreuve à l’aube.\nEt quand le soleil s’effondre lentement sur l’eau, teintant les nuages de rose et d’or, le monde semble suspendu, comme retenu dans un souffle. Ce lieu est une mémoire vivante, un miroir de ce que furent les terres avant l’homme. On ne traverse pas ces eaux : on s’y fond, en respect, en humilité, en émerveillement.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "s.tomas",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -9475,7 +10162,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "湖泊",
    "晚霞",
@@ -9497,7 +10197,9 @@
   "imageKey": "DeadvleiTrees",
   "title": "Acacias à girafe, Deadvlei, parc Namib-Naukluft, Namibie",
   "desc": "Au cœur du parc Namib-Naukluft en Namibie, Deadvlei, ancienne cuvette argileuse aujourd’hui asséchée, paraît irréelle. Des silhouettes sombres d’acacias figés s’y dressent, immobiles depuis près de 900 ans. Autrefois, une rivière nourrissait ces arbres. Puis les dunes ont dérivé, coupant l’accès à l’eau. Le désert ne les a pas détruits : il les a préservés. Le sel, la sécheresse extrême et le soleil implacable ont suspendu leur décomposition. Ainsi, ces géants desséchés sont devenus les gardiens d’un temps figé.\nÀ l’autre bout du monde, les chênes centenaires de la forêt de Tronçais, nichée dans l’Allier au cœur de l’Auvergne, témoignent de l’histoire humaine et naturelle. Là où nos forêts bruissent de vie, le désert de Deadvlei murmure l’absence. Mais dans les deux cas, la nature impose le respect, par sa force tranquille et sa beauté brute.",
-  "location": [],
+  "location": [
+   "死亡谷"
+  ],
   "region": null,
   "photographer": "Inge Johnsson",
   "gallery": "Alamy",
@@ -9506,7 +10208,10 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "死亡谷",
+   "death valley"
+  ],
   "content_tags": [
    "枯树",
    "树",
@@ -9600,8 +10305,12 @@
   "imageKey": "SunsetPier",
   "title": "Pacific Park, plage d'État de Santa Monica, Californie, États-Unis",
   "desc": "À Santa Monica, en Californie, sur la côte ouest des États-Unis, le ciel s’embrase chaque soir d’un dégradé somptueux : mauve, ambre et pourpre au-dessus de l’océan Pacifique. La plage invite aux pas lents, aux lectures au bord de l’eau et aux châteaux de sable éphémères. Sur la jetée centenaire, le bois craque sous le passage des promeneurs. Là, le Pacific Park allume ses lumières et sa grande roue devient phare dans le crépuscule.\nDepuis 1909, la jetée de Santa Monica est le témoin de générations de promeneurs et de rêveurs. Cyclistes et patineurs glissent sur le Marvin Braude Trail, une piste de 35 km longeant la côte. Des débutants s’essaient au surf, tandis que les goélands surveillent les cornets de glace. Santa Monica mêle l’énergie d’un parc d’attractions à la tranquillité d’un rivage ancien, où nature, histoire et modernité coexistent en harmonie.\nOn pense à la côte basque ou à la Dune du Pilat : ces lieux où le sable, la lumière et l’horizon appellent à la contemplation. Mais ici, le Pacifique paraît plus vaste, plus calme… comme une invitation à ralentir, à rêver, à respirer autrement.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "EXTREME-PHOTOGRAPHER",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9609,7 +10318,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa"
+  ],
   "content_tags": [
    "圣莫尼卡码头",
    "摩天轮",
@@ -9675,8 +10397,11 @@
   "imageKey": "BlueGdansk",
   "title": "Ville de Gdańsk, rives de la rivière Motława, Pologne",
   "desc": "À Gdańsk, sur les rives calmes de la rivière Motława, en Pologne, les façades colorées se reflètent dans l’eau comme dans un miroir d’antan. Ancienne forteresse slave du Xe siècle, la ville a connu les couronnes polonaises, les influences germaniques et les élans d’indépendance. Chaque pierre porte la mémoire d’un peuple, d’un passage, d’un espoir.\nLe cœur bat sur la Voie Royale, entre Ulica Długa et Długi Targ, où défilèrent autrefois les rois. Aujourd’hui, les promeneurs croisent Neptune et les maisons patriciennes, l’Hôtel de Ville et la cour d’Artus. Le pavé y résonne doucement, comme à Sarlat ou Colmar, ces lieux où l’histoire se vit au rythme du pas.\nMais ici, l’air sent le sel. Gdańsk, au sein de la Tricité avec Sopot et Gdynia, regarde la mer Baltique. Elle est portuaire, vibrante, tournée vers le large. Une ville d’eau et de lumière, d’ambre et de brise, où la beauté naît de la rencontre entre terre, mémoire et horizon.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "波兰"
+  ],
+  "region": "波兰",
   "photographer": "Oscar Dominguez",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -9684,7 +10409,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "波兰",
+   "poland",
+   "polish",
+   "波蘭"
+  ],
   "content_tags": [
    "格但斯克老城",
    "港口起重机 中世纪建筑",
@@ -9780,8 +10516,11 @@
   "imageKey": "YorkshireHay",
   "title": "Bottes de foin, North Yorkshire, Angleterre",
   "desc": "Dans les collines ondoyantes du North Yorkshire, en Angleterre, les champs prennent une allure graphique. À perte de vue, des bottes de foin ponctuent l’or des chaumes. Sous cette beauté rustique, un savoir-faire ancestral : couper, sécher, rouler, et stocker l’herbe pour nourrir le bétail durant l’hiver\nIci, chaque éclaircie compte. Le foin doit être sec, sinon il pourrit. Alors dès que le soleil s’impose, les machines entrent en scène. Jadis tirées par des chevaux, elles sont aujourd’hui capables d’enrouler et d’éjecter des bottes en quelques minutes. Une course contre la pluie, rythmée par les saisons.\nCette scène fait écho aux prés fauchés du Cantal ou aux pâturages normands, où les bottes ponctuent aussi les paysages vallonnés. Là comme ici, elles racontent un lien profond entre l’humain, la terre et l’animal. Une alliance silencieuse, faite de gestes précis et de météo scrutée.",
-  "location": [],
-  "region": null,
+  "location": [
+   "北海道",
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "Nick Brundle Photography",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9789,7 +10528,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "北海道",
+   "hokkaido",
+   "ほっかいどう",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland"
+  ],
   "content_tags": [
    "干草垛",
    "草捆",
@@ -9813,8 +10565,12 @@
   "imageKey": "ExtremaduraJamon",
   "title": "Rocher Peña Falcón sur le fleuve Tage, parc national de Monfragüe, Espagne",
   "desc": "Au cœur de l’Estrémadure, dans l’ouest de l’Espagne, le Parc national de Monfragüe déploie ses falaises rougeoyantes, sculptées par les eaux du Tage et du Tiétar. Depuis le mirador du Salto del Gitano, le paysage s’embrase chaque soir : des rochers déchiquetés se détachent sur un ciel de feu, offrant l’un des couchers de soleil les plus spectaculaires de la péninsule Ibérique.\nC’est ici que plane la plus grande colonie de vautours fauves d’Europe, accompagnée de l’aigle impérial ibérique et du percnoptère. Au fil des sentiers, entre chênes verts et cistes en fleurs, la biodiversité méditerranéenne s’exprime avec force. Monfragüe est une terre d’altitude, de silence, d’envols puissants et un sanctuaire pour les oiseaux et ceux qui les observent.\nComme dans les gorges du Tarn ou les Cévennes, ici la nature règne en maître. Et quand la nuit tombe, les étoiles prennent le relais. Monfragüe est un monde suspendu entre la roche et l’infini : un appel au calme, à l’émerveillement et à la reconnexion.",
-  "location": [],
-  "region": null,
+  "location": [
+   "奈良",
+   "德国",
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Daniel Viñé Garcia",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9822,7 +10578,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "奈良",
+   "nara",
+   "なら",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "西班牙",
+   "spain",
+   "españa"
+  ],
   "content_tags": [
    "岩石山峰",
    "山峰",
@@ -9848,8 +10617,10 @@
   "imageKey": "SpinnerDolphins",
   "title": "Groupe de dauphins à long bec dans la mer Rouge, Marsa Alam, Égypte",
   "desc": "Au large de Marsa Alam, en Égypte, les eaux turquoise de la mer Rouge s’ouvrent sur un ballet fascinant. Un groupe de dauphins à long bec fend la lumière, glisse en cadence, tournoie dans un silence profond. Dans ces baies calmes où ils se reposent le jour, la mer devient scène, et leurs bonds des chorégraphies d’écume.\nAgiles, sociaux, dotés d’un sifflement propre à chaque individu, ces cétacés sont de véritables virtuoses de l’océan. Leurs bonds acrobatiques, parfois jusqu’à sept rotations d’un seul élan, émerveillent autant qu’ils interrogent. La nuit venue, ils quittent la côte pour chasser au large, guidés par l’écholocation et l’instinct du groupe.\nMais leur grâce attire. Trop. Le tourisme nautique mal régulé fatigue ces animaux sensibles. Certains refuges marins, comme ceux de Marsa Alam, tentent aujourd’hui de limiter les perturbations. Pour qu’ils continuent de tournoyer libres, il nous revient d’apprendre à regarder… sans déranger.",
-  "location": [],
-  "region": null,
+  "location": [
+   "埃及"
+  ],
+  "region": "埃及",
   "photographer": "Franco Banfi",
   "gallery": "Nature Picture Library",
   "copyrightlink": null,
@@ -9857,7 +10628,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "埃及",
+   "egypt",
+   "egyptian",
+   "エジプト"
+  ],
   "content_tags": [
    "海豚",
    "海洋动物",
@@ -9921,8 +10697,10 @@
   "imageKey": "HohWaterfall",
   "title": "Cascade dans le parc national Olympic, État de Washington, États-Unis",
   "desc": "Dans l’État de Washington, au nord-ouest des États-Unis, le Parc national Olympic déploie ses contrastes rares : cimes alpines, côtes sauvages, forêts embrumées. Sur plus de 3 600 km², ce site classé par l’UNESCO accueille une diversité saisissante, entre pics enneigés et plages désertes. Créé en 1938, il est l’héritier d’un monument naturel protégé dès 1909.\nMais c’est sur son flanc ouest que la magie opère avec le plus de force. La forêt pluviale de Hoh, l’une des mieux préservées au monde, reçoit jusqu’à 3,5 mètres de pluie par an. Chaque goutte nourrit un royaume suspendu : mousses fluo, cèdres rouges, épinettes de Sitka et fougères géantes s’y entremêlent. Ici vivent limaces bananes, lynx roux et ours noirs, discrets gardiens de ces sentiers.\nComme dans les forêts pyrénéennes ou les gorges du Verdon un jour de pluie, Olympic nous rappelle que certaines merveilles ne se dévoilent qu’avec lenteur. Sous les gouttes, tout devient plus dense, plus vivant. Ici, la pluie n’efface pas le paysage, elle le révèle.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Chris Moore",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -9930,7 +10708,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "溪流",
    "瀑布",
@@ -9989,8 +10774,14 @@
   "imageKey": "OzoneEarth",
   "title": "Vue nocturne des États américains bordant le golfe du Mexique, depuis 360 kilomètres au-dessus de la Terre",
   "desc": "À 360 kilomètres au-dessus de la Terre, la côte américaine du golfe du Mexique scintille comme une constellation. Mais ce spectacle lumineux n’existerait pas sans une force invisible : la couche d’ozone, un bouclier silencieux qui filtre les rayons ultraviolets du soleil.\nDans les années 1980, ce rempart s’est affaibli. En cause : des gaz utilisés dans les aérosols, la climatisation ou les réfrigérateurs. Face à la menace, un accord inédit voit le jour : le Protocole de Montréal, signé en 1987, engage les pays du monde entier à abandonner les substances destructrices d’ozone. Depuis, le trou au-dessus de l’Antarctique se referme. Les satellites le confirment : la couche se régénère.\nLe 16 septembre, cette journée célèbre la puissance de la coopération internationale et de la science. Elle nous rappelle qu’un simple gaz peut bouleverser le climat, mais aussi qu’une action collective peut tout changer. L’ozone est un exemple rare : celui d’un combat environnemental où l’humanité a réagi à temps.",
-  "location": [],
-  "region": null,
+  "location": [
+   "南极",
+   "南极洲",
+   "加拿大",
+   "日本",
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "Stocktrek Images",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -9998,7 +10789,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ",
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極",
+   "墨西哥",
+   "mexico",
+   "mexican",
+   "日本"
+  ],
   "content_tags": [
    "地球",
    "行星",
@@ -10056,8 +10860,10 @@
   "imageKey": "DunquinIreland",
   "title": "Escalier sinueux de Dunquin Pier, comté de Kerry, Irlande",
   "desc": "Sur la côte ouest de l’Irlande, dans le comté de Kerry, Dunquin Pier semble suspendu entre falaise et océan. Un chemin sinueux en lacets dévale la pente abrupte jusqu’à l’eau. C’est le seul accès au petit port d’embarquement pour les îles Blasket, joyaux sauvages du large.\nTout près, le village de Dún Chaoin veille sur l’horizon. Avec à peine une centaine d’habitants, c’est l’un des lieux habités les plus à l’ouest d’Europe. Langue gaélique, récits de marins, mémoire insulaire : ici, l’identité se transmet par la parole et le paysage. Le Centre des îles Blasket, musée culturel à flanc de falaise, raconte cette vie entre terre et mer, entre attachement et exil.\nÀ Dunquin Pier, la beauté naturelle épouse la force d’un héritage. Ce sentier en zigzag, sculpté dans la falaise, évoque certains chemins côtiers de Bretagne ou les cales abruptes de l’île d’Ouessant. Là aussi, le pas ralentit, le regard s’attarde. On avance entre roche et brume, là où l’histoire et la mer ne font qu’un. Un rivage intime, rude et inoubliable.",
-  "location": [],
-  "region": null,
+  "location": [
+   "爱尔兰"
+  ],
+  "region": "爱尔兰",
   "photographer": "Hugh O'Connor",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -10065,7 +10871,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "爱尔兰",
+   "ireland",
+   "irish",
+   "愛爾蘭"
+  ],
   "content_tags": [
    "邓金码头",
    "码头",
@@ -10285,8 +11096,10 @@
   "imageKey": "BearLodge",
   "title": "Monument national de la tour du Diable, Wyoming, États-Unis",
   "desc": "Au cœur des grandes plaines du Wyoming, aux États-Unis, une tour de pierre s'élève, semblable à une proue dressée vers le ciel : la tour du Diable. Autrefois appelée Bear Lodge (la « loge de l’ours »), ce monolithe impressionnant a reçu son nom actuel en 1875, à la suite d'une traduction erronée du nom autochtone. En 1906, Theodore Roosevelt en fit le tout premier monument national américain.\nÀ chaque détour de la route, une nouvelle perspective se dévoile : dressée au-dessus des forêts de pins, la falaise striée semble défier l’orage et retenir la foudre. Mais au-delà de la géologie, ce lieu est habité par les récits des peuples des Grandes Plaines et des Black Hills. Les Arapahos, les Crows et les Cheyennes y transmettent depuis des siècles des légendes de métamorphoses et de puissances sacrées.\nFace à cette colonne naturelle, on songe à nos propres falaises d'Étretat ou au mont Saint-Michel : quand la nature sculpte, elle élève aussi l'âme. Ici, la pierre et la mémoire se rencontrent, rappelant que le patrimoine n’est pas uniquement créé par l’homme, mais également façonné par la Terre et préservé par les voix des peuples.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Laura Hedien",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -10294,7 +11107,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "魔鬼塔",
    "岩柱",
@@ -10314,8 +11134,10 @@
   "imageKey": "FortChittorgarh",
   "title": "Fort de Chittorgarh, Rajasthan, Inde",
   "desc": "Dressé sur une colline du Rajasthan, en Inde, à plus de 180 mètres au-dessus des plaines, le fort de Chittorgarh s’étend telle une cité de pierre vivante. Sur près de 280 hectares, ses remparts ont vu défiler la bravoure des Rajputs, ces « fils de rois » dont la mémoire vit encore dans les ballades rajasthanies. Selon la légende, c’est Bhim, héros du Mahabharata, qui aurait posé ses premières pierres.\nÀ l’intérieur, soixante-cinq structures historiques se succèdent : palais, temples, réservoirs, tours de la victoire. Gravir la rampe sinueuse, franchir le vieux pont de calcaire sur la Gambhiri, c’est entrer dans un récit tissé de courage, de fierté et de poésie.\nDevant cette forteresse, on songe aux châteaux cathares ou aux remparts de Carcassonne : mêmes cicatrices du temps, mêmes pierres qui résonnent d’épopées. Mais ici, la lumière dorée du Rajasthan et la ferveur des légendes donnent à Chittorgarh une majesté qui transcende les siècles, rappelant que chaque mur conserve la mémoire d’un peuple et de ses rêves.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "chetansoni",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -10323,7 +11145,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "印度教寺庙",
    "石雕",
@@ -10383,8 +11209,10 @@
   "imageKey": "TankLakes",
   "title": "Lacs Tank, Alpine Lakes Wilderness, chaîne des Cascades, Washington, États-Unis",
   "desc": "Aux confins de l’État américain de Washington, dans la zone sauvage des Alpine Lakes, les Lacs Tank miroitent comme des joyaux d’altitude, enchâssés entre granit et forêts de conifères. Leurs eaux reflètent l’azur du ciel et le vert profond des pins, dessinant un paysage où la nature se fait miroir.\nÀ la tombée du soir, le silence s’installe et la nuit déploie son écrin. Ici, loin des lumières des villes, la Voie lactée embrase la voûte céleste, Orion croise Cassiopée, et chaque étoile semble vibrer dans l’air pur de la montagne. Avancer sur les sentiers le jour, puis lever les yeux la nuit, c’est goûter à une même expérience : sentir l’immensité de la Terre et du cosmos.\nCe vertige nous rappelle nos Cévennes ou le Vercors, labellisés réserves de ciel étoilé. Même intensité, même émotion : l’impression d’être minuscule et pourtant relié, par la lumière des astres et la force des montagnes, à une mémoire universelle du vivant.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Austin Trigg",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -10392,7 +11220,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "银河",
    "星空",
@@ -10465,8 +11300,10 @@
   "imageKey": "HoutenHouses",
   "title": "Maisons arc-en-ciel dans la ville de Houten, Pays-Bas",
   "desc": "Au bord du lac Rietplas, dans la ville néerlandaise de Houten, une rangée de maisons surgit, telle une palette de peintre posée sur l’eau. Conçues par l’architecte Hans Been et achevées en 2005, ces façades arc-en-ciel mêlent audace caribéenne et sobriété nordique. Reflets saturés, lignes nettes : un quartier résidentiel devenu, presque malgré lui, un paysage de carte postale.\nPour les habitants, ce ne sont que des maisons où l’on vit, où l’on cuisine et où l’on rit. Mais vues depuis la berge, elles se transforment en mirage coloré, vibrante surprise au détour d’un trajet à vélo, dans cette ville connue comme l’une des plus cyclables des Pays-Bas.\nLeurs silhouettes évoquent, pour nous Français, les façades pastel de Menton ou les alignements du port de La Rochelle : mêmes éclats de vie, mêmes murs qui deviennent paysages. Ici comme là-bas, l’architecture dialogue avec la lumière et nous rappelle qu’une maison peut être bien plus qu’un abri : une touche de couleur dans le grand tableau du monde.",
-  "location": [],
-  "region": null,
+  "location": [
+   "荷兰"
+  ],
+  "region": "荷兰",
   "photographer": "George Pachantouris",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -10474,7 +11311,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "荷兰",
+   "netherlands",
+   "holland",
+   "dutch",
+   "オランダ",
+   "荷蘭"
+  ],
   "content_tags": [
    "彩色的联排房屋",
    "房屋",
@@ -10588,8 +11432,11 @@
   "imageKey": "OxbowBend",
   "title": "Site naturel de Oxbow Bend, parc national du Grand Teton, Wyoming, États-Unis",
   "desc": "Dans le Wyoming, aux États-Unis, se trouve un lieu où le temps semble suspendu : Oxbow Bend, au cœur du parc national du Grand Teton. La Snake River y dessine une large courbe dont les eaux calmes reflètent la silhouette bleutée des montagnes. Le parc doit son nom à des trappeurs francophones du XIXe siècle qui auraient trouvé à la montagne une forme évocatrice.\nCe spot est l'un des plus beaux points d'observation du parc, prisé à l'aube et au crépuscule, lorsque la lumière révèle toute la magie du paysage. On peut y observer des élans, des pygargues à tête blanche, des loutres de rivière, des castors, des hérons, des pélicans, et même parfois des ours.\nFace à ce miroir naturel, le silence invite à la contemplation. On songe aux méandres de la Loire ou aux reflets de la Dordogne, d'autres rivières qui racontent elles aussi une mémoire collective et un patrimoine façonnés par l'eau. Mais à Oxbow Bend, rien ne vient troubler la symphonie sauvage. Le fleuve, tel un poème mouvant, garde vivante l’alliance de la beauté et de la liberté.",
-  "location": [],
-  "region": null,
+  "location": [
+   "阿尔卑斯",
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "DanitaDelimont.com",
   "gallery": "AWL Images/SuperStock",
   "copyrightlink": null,
@@ -10597,7 +11444,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ",
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯"
+  ],
   "content_tags": [
    "大提顿山",
    "雪山",
@@ -10896,8 +11756,11 @@
   "imageKey": "MonurikiFiji",
   "title": "Récif corallien entourant l’île de Monuriki, archipel des Mamanuca, Fidji",
   "desc": "Le 10 octobre, les Fidji célèbrent bien plus qu’une date : c’est le jour où l’histoire coloniale s’est refermée et où le drapeau national s’est hissé pour la première fois, en 1970. Une journée de mémoire et de fête, où les villages vibrent au rythme du meke, les plats traditionnels mijotent sous terre dans le lovo, et les terrains de rugby deviennent des arènes de passion.\nMais loin des foules, l’île de Monuriki, joyau inhabité de l’archipel des Mamanuca, incarne une autre forme de liberté. Entourée d’un récif corallien éclatant, elle semble flotter dans une mer turquoise, protégée par une muraille vivante. Ce récif, refuge pour des centaines d’espèces marines, agit comme un rempart contre les tempêtes et un berceau de biodiversité.\nSous les vagues, la nature célèbre à sa manière : en silence, en couleurs, en vie. Comme les Fidji, ces coraux sont forts, résilients, et profondément liés à leur terre. Une indépendance qui se lit dans chaque battement… de nageoires de poisson !",
-  "location": [],
-  "region": null,
+  "location": [
+   "斐济",
+   "英国"
+  ],
+  "region": "英国",
   "photographer": "David Wall",
   "gallery": "SuperStock",
   "copyrightlink": null,
@@ -10905,7 +11768,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "斐济",
+   "fiji",
+   "fijian",
+   "斐濟",
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス"
+  ],
   "content_tags": [
    "海岛",
    "岛屿",
@@ -11124,8 +12000,12 @@
   "imageKey": "SiberianLynx",
   "title": "Lynx de Sibérie, Sibérie",
   "desc": "Imaginez une ombre qui glisse entre les arbres givrés, sans faire de bruit ni laisser de trace. Le lynx boréal — ce grand félin aux yeux d’ambre et aux oreilles coiffées de pinceaux noirs — règne en silence sur les immensités de Sibérie. Il est le plus imposant des lynx, mais aussi le plus agile. Ses larges pattes, pareilles à des raquettes naturelles, sont si discrètes sur la neige que ses proies ne sauraient sentir son approche.\nComme dans nos forêts du Jura, où son cousin réintroduit habite les crêtes, le lynx vit en solitaire, sculptant son royaume à coups de griffes et d’odeurs.\nDans les années 1970, la soie de sa fourrure a failli le condamner. Des milliers de peaux sont parties vers l’Occident, comme si on arrachait au silence son plus beau secret. Aujourd’hui encore, braconnage et disparition de proies fragilisent cet équilibre. Et pourtant, il est là, tapis dans l’ombre, et son allure pleine d’élégance se fond sur des paysages blancs presque oniriques.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "中国",
+   "俄罗斯"
+  ],
+  "region": "俄罗斯",
   "photographer": "Mario Plechaty Photograph",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -11133,7 +12013,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "俄罗斯",
+   "russia"
+  ],
   "content_tags": [
    "猞猁",
    "猫科动物",
@@ -11280,8 +12173,12 @@
   "imageKey": "HoffmansSloth",
   "title": "Paresseux d’Hoffmann, Équateur",
   "desc": "Accroché aux branches de la forêt équatoriale, le paresseux d'Hoffmann incarne l'art de la lenteur. Son pelage, parfois teinté de vert par les algues qui y poussent, se fond dans la canopée, au milieu du feuillage. Ses mouvements lents, presque chorégraphiques, ne sont pas le fruit de la maladresse, mais une stratégie visant à économiser son énergie et à passer inaperçu aux yeux de ses prédateurs.\nCes mammifères arboricoles, présents de l'Amérique centrale à l'Amérique du Sud, sont les gardiens silencieux des forêts tropicales. Leur mode de vie favorise un équilibre fragile : en transportant graines et micro-organismes, ils contribuent à la richesse de l'écosystème qui abrite également grenouilles, oiseaux et une multitude d'insectes. En descendant rarement au sol, ils nous rappellent l'importance de prendre de la hauteur.\nLa Journée internationale du paresseux nous invite à écouter leur leçon : la nature n'est pas toujours synonyme de vitesse et de conquête. Elle est aussi lenteur, patience et humilité. En protégeant le paresseux, nous préservons la forêt tout entière et nous apprenons à contempler le monde à son rythme.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国",
+   "厄瓜多尔"
+  ],
+  "region": "厄瓜多尔",
   "photographer": "Murray Cooper",
   "gallery": "Minden Pictures",
   "copyrightlink": null,
@@ -11289,7 +12186,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "树懒",
    "野生动物",
@@ -11310,8 +12220,10 @@
   "imageKey": "DiyaDiwali",
   "title": "Une diya au Temple d'Or, Amritsar, Inde",
   "desc": "Sous le ciel d'Amritsar, en Inde, une lueur dorée s'élève au-dessus des eaux sacrées : le Temple d'Or. L’un des lieux les plus remarquables pour admirer les lumières de la saison est le Harmandir Sahib, également connu sous le nom de Temple d’Or. Ce gurdwara, site sacré du sikhisme, accueille des personnes de toutes confessions. À l’époque de Diwali, les sikhs célèbrent Bandi Chhor Divas, qui marque la libération du sixième gourou sikh, Guru Hargobind Sahib Ji, de son emprisonnement. Bien que les traditions soient différentes, les deux célébrations partagent des thèmes d’espoir, de justice et de liberté spirituelle.\nDiwali, la fête des lumières, célèbre dans la tradition hindoue le retour du prince Rama après sa victoire sur les forces du mal, ainsi que la présence bienveillante de la déesse Lakshmi, gardienne de la prospérité et de la vie domestique. D’une maison à l’autre, on nettoie, on embellit et on partage des douceurs, autant de gestes qui rappellent que la joie se cultive ensemble.\nAu bord du bassin sacré, les reflets des flammes dansent comme une promesse : celle que la lumière triomphe toujours de l’obscurité. Diwali invite chacun à retrouver l’espérance et à croire qu’une simple étincelle peut éclairer la nuit.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "EyeEm Mobile GmbH",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11319,7 +12231,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "油灯",
    "手",
@@ -11383,8 +12299,12 @@
   "imageKey": "SnowLeopard",
   "title": "Léopard des neiges avec ses petits, réserve de la biosphère du désert froid, Inde",
   "desc": "Dans la vallée de Spiti, en Inde, la roche ocre se mêle aux neiges éternelles. Dans la réserve de biosphère du désert froid, l'air est rare et les hivers sont impitoyables, et pourtant la vie persiste avec force. Au creux d'une paroi, un léopard des neiges veille sur ses petits dont le pelage tacheté se confond avec la roche. On comprend alors pourquoi on l’appelle le « fantôme des montagnes » : maître de l’invisible, il est essentiel à ces paysages austères.\nChaque 23 octobre, la Journée internationale du léopard des neiges met en lumière ce félin insaisissable qui parcourt les sommets de douze pays d'Asie. Dans ces déserts glacés, sa fourrure épaisse et sa longue queue lui permettent de défier le froid et les falaises. Pourtant, il reste vulnérable : le braconnage, la perte d'habitat et le réchauffement climatique ont réduit sa population à moins de 7 000 individus.\nLe protéger, c’est préserver l’équilibre fragile de ces régions montagneuses. Dans la vallée de Spiti, il régule les troupeaux d'herbivores et contribue à préserver la végétation qui retient la neige fondue, alimentant ainsi les rivières dont dépendent des millions d'êtres humains.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "中国",
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "Oriol Alamany",
   "gallery": "naturepl.com",
   "copyrightlink": null,
@@ -11392,7 +12312,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "印度",
+   "india",
+   "インド",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ"
+  ],
   "content_tags": [
    "雪豹",
    "野生动物",
@@ -11412,8 +12345,12 @@
   "imageKey": "QueenMary",
   "title": "Vue nocturne du paquebot Queen Mary, Long Beach, Californie, États-Unis",
   "desc": "Avec ses airs de Titanic, on pourrait s'y méprendre… Pourtant, son histoire est bien différente. Sous le ciel étoilé de Californie, le Queen Mary est ancré dans les eaux calmes de Long Beach, sur la côte ouest des États-Unis. Ce paquebot britannique légendaire, lancé en 1936, fut autrefois le joyau de l'Atlantique. Avec ses lignes Art déco et sa vitesse record, il transportait des stars, des rois et des diplomates dans un luxe inégalé. Puis la guerre le métamorphosa : peint en gris, vidé de ses dorures, il devint le « Fantôme gris », chargé de soldats et de silence.\nAujourd'hui, ses ponts ne mènent plus à l'océan, mais à des chambres d'hôtel, à des expositions guidées et à des récits qui flottent encore dans l'air. Certains parlent de pas dans les couloirs vides, de rires d'enfants près de la piscine désaffectée. Aucun crime n’a été recensé à bord, mais les légendes persistent, comme si l’âme du navire refusait de sombrer dans l’oubli.\nLe Queen Mary est bien plus qu’un monument maritime : c’est une mémoire flottante, un théâtre d’histoires vraies et fantasmées, éclairé par les étoiles.",
-  "location": [],
-  "region": null,
+  "location": [
+   "加利福尼亚",
+   "美国",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "Kit Leong",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -11421,7 +12358,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加利福尼亚",
+   "california",
+   "加州",
+   "加利福尼亞",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國",
+   "美国",
+   "usa",
+   "united states"
+  ],
   "content_tags": [
    "玛丽皇后号",
    "邮轮",
@@ -11444,8 +12394,12 @@
   "imageKey": "MartimoaapaFinland",
   "title": "Vue aérienne de la tourbière, réserve de Martimoaapa, Finlande",
   "desc": "Vue du ciel, la tourbière de Martimoaapa, en Laponie finlandaise, ressemble à une mosaïque d’or et d’azur. Ces terres humides, façonnées par des millénaires de glace et d'eau, recèlent bien plus qu'un simple paysage ; elles racontent des histoires. Au début du XXe siècle, durant la période de la prohibition en Finlande, des contrebandiers ont bravé la boue et le froid pour transporter de l'alcool suédois à travers ces marécages interdits. Plus loin, un cercle de pierres énigmatique semble veiller, vestige d'un rituel dont le sens échappe encore aux archéologues.\nLa vie palpite malgré le silence : cygnes, grues et chouettes partagent cet horizon sans fin. Au détour d'un sentier, une cabane de bûcherons et son sauna rappellent la présence humaine, un refuge au cœur des forêts boréales.\nCe lieu nous relie à nos propres marais de Sologne, où brumes et cris d'oiseaux composent également une symphonie sauvage. Comme en Finlande, l'humidité et la lenteur de la tourbe nous enseignent la patience et nous invitent à avancer plus lentement dans le monde.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "芬兰",
+   "瑞典"
+  ],
+  "region": "瑞典",
   "photographer": "romikatarina",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -11453,7 +12407,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "瑞典",
+   "sweden",
+   "芬兰",
+   "finland",
+   "finnish",
+   "芬蘭"
+  ],
   "content_tags": [
    "沼泽",
    "湿地",
@@ -11475,8 +12442,12 @@
   "imageKey": "PumpkinFarm",
   "title": "Ferme de citrouilles en Caroline du Nord, États-Unis",
   "desc": "Alors que les journées raccourcissent et que la nuit tombe dès 18 heures, un parfum de cannelle flotte dans l’air humide des campagnes de Caroline du Nord. L’automne s’installe doucement et avec lui revient la saison des citrouilles. Comme dans les champs de la Drôme ou du Perche, leurs formes rebondies illuminent le sol de touches orangées, telles des soleils oubliés.\nOn les cuisine en velouté ou en tarte, ou on les transforme en lanternes, selon une tradition venue d'Irlande. Là-bas, un certain Jack, condamné à errer entre les mondes, éclairait sa route avec une cucurbitacée sculptée. En traversant l’Atlantique, elle est devenue la citrouille : plus grande, plus docile et plus flamboyante. Parmi toutes les variétés, la Connecticut Field règne en maître sur les étals.\nEt tandis que l'on recule les horloges et que le feu crépite dans les cheminées, la nature nous offre un théâtre éphémère : feuilles mordorées, brumes matinales et citrouilles aux mille visages, gardiennes d'une saison à la fois douce et étrange.",
-  "location": [],
-  "region": null,
+  "location": [
+   "北海道",
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Matthew H Irvin",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11484,7 +12455,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "北海道",
+   "hokkaido",
+   "ほっかいどう",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states"
+  ],
   "content_tags": [
    "南瓜",
    "农场",
@@ -11539,8 +12523,10 @@
   "imageKey": "TepliceRocks",
   "title": "Porte gothique, rochers d'Adršpach-Teplice, Tchéquie",
   "desc": "Sous une voûte de pierre, une porte gothique s’élève comme une promesse d’évasion. Dans la région de Hradec Králové, au nord-est de la République tchèque, les rochers d'Adršpach-Teplice forment le plus vaste labyrinthe de grès d'Europe centrale. Pendant des siècles, falaises et passages sont restés enfouis sous la forêt jusqu’à ce qu’un grand incendie dénude le paysage. Des arches, des tours et des couloirs sinueux émergent alors des cendres, révélant une cité minérale façonnée par le feu.\nEn 1839, Ludvik Karel Nádherný fit construire cette arche, un seuil majestueux qui mène à la « Cité des Rochers », aujourd'hui préservée au sein de la réserve protégée de Broumovsko. Des ponts, des escaliers et des sentiers taillés dans la pierre guident les pas des premiers randonneurs et des poètes qui gravaient leurs mots dans le roc.\nEt tandis que l'on recule les horloges et que le feu crépite dans les cheminées, la nature nous offre un théâtre éphémère : feuilles mordorées, brumes matinales et citrouilles aux mille visages, gardiennes d'une saison à la fois douce et étrange.",
-  "location": [],
-  "region": null,
+  "location": [
+   "捷克"
+  ],
+  "region": "捷克",
   "photographer": "Kseniya_Milner",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11548,7 +12534,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "捷克",
+   "czech",
+   "czechia",
+   "czech republic"
+  ],
   "content_tags": [
    "石拱门",
    "建筑",
@@ -11620,8 +12611,10 @@
   "imageKey": "PushkarFair",
   "title": "Chameaux d’Arabie à Jaisalmer, Rajasthan, Inde",
   "desc": "Sous le ciel pourpre du Rajasthan, les dunes de Jaisalmer se parent de reflets dorés tandis que les silhouettes des chameaux avancent lentement dans la lumière du soir. Plus à l'est, la petite ville de Pushkar s'anime chaque automne à l'occasion de l'une des fêtes les plus vibrantes du pays : la foire aux chameaux.\nAutrefois immense marché de bétail, cet événement est devenu une célébration de la vie rurale et de la culture rajasthani. Au milieu des caravanes chamelières, les familles déambulent entre les étals débordant de tissus éclatants, de bijoux étincelants et d'épices parfumées. Les premiers jours sont marqués par une course de chameaux effrénée, suivie de chants, de danses et de spectacles durant lesquels l’animal, roi du désert, se prête à des parades hautes en couleurs.\nQu'il s'agisse d'un concours de moustaches, d'un tournoi de football improvisé ou de l'éclat d'un simple bracelet en verre, tout ici respire la joie partagée. Dans cette mosaïque de sons et de couleurs, la majesté des chameaux rappelle que, depuis des siècles, le désert est une terre d'échanges et de rencontres.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "f9photos",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11629,7 +12622,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "骆驼",
    "沙丘",
@@ -11651,8 +12648,12 @@
   "imageKey": "BranCastle",
   "title": "Entrée du château de Bran, Brașov, Roumanie",
   "desc": "Sous un ciel chargé de nuages en cette soirée d'octobre, les murs du château de Bran, en Roumanie, se dressent comme une silhouette hors du temps. Construit au XIVe siècle, il a résisté aux guerres et aux empires, mais c’est dans le souffle des légendes qu’il puise sa véritable force. Aux confins de la Transylvanie et de la Valachie, jadis marquée par le règne impitoyable de Vlad III, celui qui inspira le Dracula de Bram Stoker, l’ombre du château se confond avec le mythe.\nÀ l’approche d’Halloween, le vent s’engouffre dans ses couloirs, semblant porter les rires lointains d’enfants invisibles et le pas étouffé d’un moine oublié derrière les murs. On dit qu'une dame blanche glisse parfois dans la cour, spectre de douleurs anciennes. Les arbres nus qui bordent la forteresse craquent doucement, rappelant ainsi que la frontière entre l’histoire et le surnaturel reste fragile.\nFace à sa porte sombre, on ressent que le château n'est pas seulement un vestige de pierre, mais un théâtre vivant où mémoire et imaginaire se mêlent, invitant chacun à frissonner et à rêver.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "日本",
+   "罗马尼亚"
+  ],
+  "region": "罗马尼亚",
   "photographer": "blue sky in my pocket",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -11660,7 +12661,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "罗马尼亚",
+   "romania"
+  ],
   "content_tags": [
    "布兰城堡",
    "城堡",
@@ -11767,8 +12781,10 @@
   "imageKey": "MexicoJelly",
   "title": null,
   "desc": "Médusés devant tant de beauté",
-  "location": [],
-  "region": null,
+  "location": [
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -11776,7 +12792,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican"
+  ],
   "content_tags": [
    "水母",
    "海洋生物",
@@ -11795,7 +12815,9 @@
   "imageKey": "TowerBridgeUK",
   "title": null,
   "desc": "Pont-pourri d’histoire et d’ingéniosité",
-  "location": [],
+  "location": [
+   "伦敦"
+  ],
   "region": null,
   "photographer": null,
   "gallery": null,
@@ -11804,7 +12826,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "伦敦",
+   "london",
+   "ロンドン",
+   "倫敦"
+  ],
   "content_tags": [
    "伦敦塔桥",
    "桥",
@@ -11828,8 +12855,10 @@
   "imageKey": "MoncayoAutumn",
   "title": null,
   "desc": "Saragosse en habits d’automne",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -11837,7 +12866,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "山毛榉",
    "树",
@@ -11857,8 +12891,10 @@
   "imageKey": "LanternsThailand",
   "title": null,
   "desc": "Des vœux prêts à s’envoler",
-  "location": [],
-  "region": null,
+  "location": [
+   "泰国"
+  ],
+  "region": "泰国",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -11866,7 +12902,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "泰国",
+   "thailand",
+   "thai",
+   "泰國"
+  ],
   "content_tags": [
    "灯笼",
    "彩灯",
@@ -11926,8 +12967,11 @@
   "imageKey": "BandonBeach",
   "title": "Pitons rocheux de la plage de Bandon, Oregon, États-Unis",
   "desc": "Sur la côte sud de l’Oregon, aux États-Unis, la plage de Bandon offre un paysage à la fois brut et magnifique. Là où la rivière Coquille se jette dans le Pacifique, d'immenses pitons rocheux émergent du sable, à proximité du phare de Bullards Beach. Ces géants de pierre, sculptés par les vagues et le vent depuis des millénaires, portent des noms qui nourrissent l’imagination : Face Rock, le Chapeau du magicien, Elephant Rock…\nSelon une légende amérindienne, Face Rock serait une jeune femme pétrifiée par la mer. Autour d'elle, les sternes et les macareux du refuge national de faune sauvage des îles de l'Oregon nichent dans les replis du rocher, témoins d'une nature libre et tenace.\nSous la lumière du couchant, ce décor évoque les falaises d'Étretat ou la Côte de Granit Rose : le même dialogue entre la pierre et l'océan, le même silence habité. Mais ici, sur la côte Pacifique des États-Unis, la beauté semble plus vaste encore, comme si le monde respirait à travers la mer.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "Grant Ordelheide",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -11935,7 +12979,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "礁石",
    "海蚀柱",
@@ -11992,8 +13049,10 @@
   "imageKey": "PrairieDogTown",
   "title": "Chiens de prairie à queue noire, Parc National des Badlands, Dakota du Sud, États-Unis",
   "desc": "Sous le ciel immense du Dakota du Sud, aux États-Unis, les Badlands s’élèvent comme des cathédrales de roche sculptées par le vent. Dans une prairie battue par les saisons, une ville invisible s’étend sous nos pieds : Roberts Prairie Dog Town. Des centaines de chiens de prairie à queue noire y creusent des galeries, sifflent, s’ébattent et veillent sur leur territoire comme des sentinelles miniatures.\nAutrefois considérés comme nuisibles, ces petits rongeurs sont aujourd'hui les architectes d'un écosystème vibrant. Leur présence favorise la diversité végétale, aère les sols et attire une faune discrète mais essentielle. À l'image des marmottes des Alpes, ils incarnent une vie souterraine qui façonne le paysage.\nLe parc national des Badlands, protégé depuis 1978, est bien plus qu’un simple décor fossilisé. C'est une mémoire vivante où les cris des bisons résonnent encore et où chaque terrier raconte une histoire de survie, d'équilibre et de beauté sauvage.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国"
+  ],
+  "region": "美国",
   "photographer": "Greg Vaughn",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -12001,7 +13060,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "草原犬鼠",
    "土拨鼠",
@@ -12161,8 +13227,13 @@
   "imageKey": "ManateeBaby",
   "title": "Lamantin femelle et son petit, Crystal River, Floride, États-Unis",
   "desc": "Dans les eaux limpides de Crystal River, au nord de la péninsule de Floride, aux États-Unis, une femelle lamantin glisse lentement, son petit blotti contre elle. Leur peau grise se confond avec les reflets émeraude des herbiers aquatiques. Dans cette source d'eau douce à température constante, le temps semble suspendu, comme dans un rêve hivernal.\nLe lamantin de Floride, cousin éloigné du dugong, incarne la douceur et la patience du monde aquatique. Espèce aujourd'hui vulnérable, il subit les effets du trafic nautique, de la pollution et du réchauffement climatique. Autrefois confondu avec une sirène par les marins, il rappelle à quel point l’imaginaire peut influencer notre perception du vivant.\nEn le voyant, on songe aux grands bœufs marins des légendes bretonnes ou aux phoques tranquilles des îles bretonnes : même placidité, même regard empreint de paix. Ici comme là-bas, la nature chuchote un langage d'eau et de silence, une invitation à ralentir, à respirer et à protéger la vie qui nous entoure.",
-  "location": [],
-  "region": null,
+  "location": [
+   "佛罗里达",
+   "美国",
+   "德国",
+   "墨西哥"
+  ],
+  "region": "墨西哥",
   "photographer": "Gregory Sweeney",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -12170,7 +13241,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "佛罗里达",
+   "florida",
+   "佛羅里達",
+   "墨西哥",
+   "mexico",
+   "mexican",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
   "content_tags": [
    "海牛",
    "动物",
@@ -12225,8 +13309,10 @@
   "imageKey": "LyonTraboules",
   "title": "Traboules du Vieux Lyon, Auvergne-Rhône-Alpes",
   "desc": "Dans les ruelles pavées du quartier du Vieux Lyon et de la Croix-Rousse, on ne se contente pas de marcher, on voyage dans le temps. Derrière une porte en bois, un mur fendu ou une arche discrète, se cachent les traboules, ces passages secrets qui serpentent entre cours intérieures et façades Renaissance. Sous leurs voûtes de pierre, le murmure du passé accompagne chacun de nos pas.\nProbablement apparues au IVe siècle, les traboules ont été surtout développées au Moyen Âge et à la Renaissance. Elles furent réinvesties à l’époque des canuts, ces tisserands de soie qui les empruntaient pour transporter leurs étoffes jusqu’à la Saône sans craindre la pluie. Pendant la Seconde Guerre mondiale, elles devinrent les artères silencieuses de la Résistance lyonnaise, refuge et échappatoire mêlés.\nOn y retrouve la même âme que dans les ruelles d'Avignon ou de Carcassonne : un labyrinthe où la pierre parle et où chaque porte semble respirer. Traverser une traboule, c’est effleurer l’invisible, c’est sentir battre le cœur d’une ville qui cache ses secrets pour mieux les offrir à ceux qui osent pousser la porte.",
-  "location": [],
-  "region": null,
+  "location": [
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "TPopova",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -12234,7 +13320,13 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "旋转楼梯",
    "楼梯",
@@ -12260,7 +13352,9 @@
   "imageKey": "AlpesAutumn",
   "title": "Forêt de mélèzes dorés, Alpes",
   "desc": "À l'automne, les montagnes se métamorphosent en cathédrales de lumière. Dans les Alpes du Sud, notamment dans la vallée de la Clarée, le Queyras ou sur le plateau d’Emparis, le mélèze offre un spectacle rare : en été, ses aiguilles sont d’un vert tendre, puis elles virent au jaune éclatant avant de tomber, laissant les branches nues face à l’hiver. Contrairement aux autres conifères, cet arbre se dénude chaque année, comme pour renaître plus fort au printemps. Cette singularité en fait le maître des paysages alpins, où ses ramures dorées embrasent les vallées.\nPrésent entre 1 200 et 2 400 mètres d’altitude, il pousse là où le froid et la neige règnent. Son bois imputrescible a servi à construire chalets et granges depuis des siècles. Ses aiguilles tombées nourrissent la terre, bouclant un cycle millénaire.\nMarcher sous ces forêts dorées, c’est sentir la résine, entendre le vent siffler entre les troncs et voir le soleil jouer dans les branches comme dans un vitrail. Un instant suspendu, où la montagne révèle sa beauté éphémère.",
-  "location": [],
+  "location": [
+   "阿尔卑斯"
+  ],
   "region": null,
   "photographer": "Jose Manuel Perez",
   "gallery": "Getty Images",
@@ -12269,7 +13363,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯"
+  ],
   "content_tags": [
    "雪山",
    "山峰",
@@ -12296,8 +13397,14 @@
   "imageKey": "AutumnMerganser",
   "title": "Harle couronné mâle, Oregon, États-Unis",
   "desc": "Dans les reflets dorés des rivières de l’Oregon, aux États-Unis, le harle couronné apparaît comme un bijou vivant. Le mâle arbore une huppe blanche et circulaire qu’il redresse en éventail, tandis que la femelle, brune et fine, l’accompagne d’un vol léger. Ces canards plongeurs, parmi les plus petits de leur famille, chassent sous l’eau, bondissant comme des éclats d’ombre dans la lumière du matin.\nIls nichent dans les creux des arbres bordant les marais. À peine sortis de l’œuf, les oisillons se laissent tomber vers l’eau, rebondissant sur la mousse avant de suivre leur mère. Espèce commune mais précieuse, le harle couronné est largement présent en Amérique du Nord, où il fréquente les zones humides boisées. Sa population y est stable, et le pays abrite une part importante de la population mondiale nicheuse.\nLeur huppe évoque les coiffes d’apparat d’un bal Renaissance, ou, plus près de nous, la crête du héron cendré observé dans beaucoup de nos étangs. Même élégance, même retenue : une grâce sauvage, née du silence et du vent.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国",
+   "加拿大",
+   "日本",
+   "希腊"
+  ],
+  "region": "希腊",
   "photographer": "Eric Vogt",
   "gallery": "TANDEM Stills + Motion",
   "copyrightlink": null,
@@ -12305,7 +13412,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ",
+   "希腊",
+   "greece",
+   "greek",
+   "希臘",
+   "ギリシャ",
+   "德国",
+   "germany",
+   "deutschland"
+  ],
   "content_tags": [
    "冠秋沙鸭",
    "水鸟",
@@ -12547,8 +13667,10 @@
   "imageKey": "GwailorFort",
   "title": "Fort de Gwalior, Madhya Pradesh, Inde",
   "desc": "Surplombant la plaine indienne du Madhya Pradesh, le fort de Gwalior domine la ville comme une promesse d'éternité. Taillé dans le grès ocre, ce géant du XVIe siècle a vu défiler les rois, les batailles et les empires. Les Mughals l’appelaient la « perle des forteresses de l’Inde » et Babur, son conquérant, le comparait à un joyau posé sur une mer de collines.\nSes murailles abritent des palais, des temples et des secrets. Le Man Mandir, orné de céramiques turquoise et de motifs floraux, témoigne du raffinement du roi Man Singh Tomar, qui régna ici au XVe siècle. Plus loin, les temples jumeaux de Sas-Bahu et le sanctuaire du Teli-ka-Mandir allient les styles hindou et moghul dans une harmonie de pierre.\nAu coucher du soleil, la lumière caresse les remparts et réveille les ombres des souverains disparus. Les voix du spectacle sonore qui anime la nuit semblent encore porter les légendes du lieu, celles d'un fort que l'histoire n'a jamais su réduire au silence.",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": "ImagesofIndia",
   "gallery": "Shutterstock",
   "copyrightlink": null,
@@ -12556,7 +13678,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "瓜廖尔堡",
    "宫殿",
@@ -12818,8 +13944,14 @@
   "imageKey": "AntarcticArch",
   "title": "Arche naturelle sculptée dans un iceberg, Antarctique",
   "desc": "À la lisière du monde, une arche de glace s'élève, sculptée par le vent et la mer, dans les eaux glaciales de la mer de Weddell, en Antarctique. Sous sa voûte bleutée, le temps semble suspendu. Chaque fissure, chaque éclat de lumière raconte l’histoire d’une Terre ancienne et de climats révolus, conservés dans les couches de glace. Dans ce désert blanc qui recouvre près de 10 % des terres émergées de la planète, se cache 60 % de l’eau douce de la Terre, un cœur gelé qui régule nos mers et notre climat.\nLe 1er décembre, la Journée de l’Antarctique rend hommage au traité signé en 1959, un pacte de paix et de science qui a transformé ce continent en sanctuaire pour l’humanité.\nObserver cette arche, c’est écouter la voix du froid, du silence et du temps. Elle nous interpelle : que ferons-nous de cette beauté fragile ? Car dans ce royaume immobile, c’est l’avenir du monde qui se reflète : éphémère, précieux et profondément vivant.",
-  "location": [],
-  "region": null,
+  "location": [
+   "南极",
+   "英国",
+   "南极洲",
+   "澳大利亚",
+   "日本"
+  ],
+  "region": "日本",
   "photographer": "Gabrielle",
   "gallery": "Adobe Stock",
   "copyrightlink": null,
@@ -12827,7 +13959,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "南极",
+   "antarctica",
+   "antarctic",
+   "南極",
+   "日本",
+   "japan",
+   "japanese",
+   "nippon",
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲"
+  ],
   "content_tags": [
    "冰山",
    "冰拱门",
@@ -12974,7 +14119,9 @@
   "imageKey": "CopanRuins",
   "title": "Site maya de Copán, Honduras",
   "desc": "Au cœur d'une vallée verdoyante de l'ouest du Honduras, les ruines de Copán sont recouvertes d'un manteau de mousse et de silence. Entre les arbres de la forêt tropicale, les temples et les escaliers sculptés murmurent encore la grandeur des anciens Mayas. Fondée vers 426 par le roi K’inich Yax K’uk’ Mo’, cette cité fut un foyer d’art, d’astronomie et de pouvoir, où le ciel servait de boussole et de calendrier.\nAu cœur du site, l’escalier hiéroglyphique s’élève en 63 marches couvertes de plus de deux mille glyphes, la plus longue inscription maya connue, retraçant les règnes, les rituels et les alliances. À ses côtés, l’autel Q immortalise seize souverains dont les visages sont gravés dans la pierre, gardiens d’une dynastie qui a défié le temps.\nClassée au patrimoine mondial de l’UNESCO, Copán témoigne d’une intelligence céleste et d’une sensibilité artistique rares. Ici, chaque pierre semble respirer et chaque ombre rappelle qu’avant la jungle, une civilisation lisait le ciel pour comprendre la vie.",
-  "location": [],
+  "location": [
+   "英国"
+  ],
   "region": "英国",
   "photographer": "diegograndi",
   "gallery": "Getty Images",
@@ -12983,7 +14130,18 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "玛雅遗址",
    "古代遗迹",
@@ -13047,8 +14205,11 @@
   "imageKey": "MistyPineForest",
   "title": "Forêt de pins, Alsace, Grand Est",
   "desc": "En décembre, les forêts alsaciennes se drapent de brouillard, comme si la nature retenait son souffle avant l’hiver. Entre pins sylvestres et sapins blancs, le sol couvert de mousse absorbe chaque pas, et le silence devient presque sacré. Ces bois, qui couvrent près de 40 % du territoire, abritent chevreuils, pics noirs et parfois le discret lynx, revenu après des décennies d’absence.\nMais ces forêts ne sont pas seulement des sanctuaires naturels : elles sont peuplées de récits. On raconte qu’au cœur des brumes rôde le Sotré, lutin malicieux des Vosges. Invisible, il range les maisons des fermes isolées… ou sème le désordre si on l’offense. D’autres jurent avoir aperçu les Dames Blanches, esprits vêtus de lumière, errant près des rivières.\nRespirez… Vous êtes dans un monde où la science rencontre la légende, où chaque arbre garde la mémoire des hommes et des mythes. Ici, la forêt n’est pas qu’un décor : elle est vivante, mystérieuse, et vous invite à écouter son silence.",
-  "location": [],
-  "region": null,
+  "location": [
+   "德国",
+   "法国"
+  ],
+  "region": "法国",
   "photographer": "alekseystemmer",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13056,7 +14217,19 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
   "content_tags": [
    "森林",
    "针叶树",
@@ -13077,7 +14250,9 @@
   "imageKey": "ComoChristmas",
   "title": "Illuminations de Noël sur les bâtiments de Domaso, lac de Côme, Italie",
   "desc": "Sur les rives du lac de Côme, en Italie, l'hiver scintille de mille feux. Les façades pastel du petit port de Domaso, qui était autrefois un village de pêcheurs, se parent de guirlandes chatoyantes. En toile de fond, les montagnes enneigées semblent veiller sur ce décor féerique où le silence de la neige contraste avec les rires qui s'échappent des villages voisins, animés par les marchés de Noël.\nLe long du lungolago, les balades hivernales prennent des airs de fête. À quelques kilomètres de là, les chalets en bois débordent de parfums sucrés : panettone tiède, châtaignes grillées et vin chaud fumant entre les doigts. Les cloches des églises rythment les soirées et les crèches artisanales, inspirées des œuvres des maîtres italiens, décorent les places comme autant de tableaux vivants.\nOn retrouve ici une chaleur semblable à celle des villages savoyards, où chaque lumière, chaque note de musique fait naître ce sentiment d'un Noël à la fois intime et partagé. Domaso devient un écrin paisible où l’Italie célèbre la magie de l’hiver avec la grâce d'un conte alpin.",
-  "location": [],
+  "location": [
+   "阿尔卑斯"
+  ],
   "region": null,
   "photographer": "Roberto Moiola",
   "gallery": "Getty Images",
@@ -13086,7 +14261,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "阿尔卑斯",
+   "alps",
+   "alpen",
+   "アルプス",
+   "阿尔卑斯山",
+   "阿爾卑斯"
+  ],
   "content_tags": [
    "洛迦诺小镇",
    "城镇",
@@ -13115,8 +14297,14 @@
   "imageKey": "LlamaDay",
   "title": "Guanaco, Punta Norte, Péninsule Valdés, Argentine",
   "desc": "Sous le vent salé de Punta Norte, à l’extrémité nord de la péninsule Valdés, en Argentine, une silhouette élancée se découpe sur l’horizon d’herbes dorées. Le guanaco, cousin farouche du lama, avance d'un pas souple sur ces terres balayées par les rafales de l'Atlantique Sud. Son pelage fauve, doublé d'une épaisse laine, le protège du froid mordant de la steppe patagonne.\nPrésent du nord du Chili aux hauts plateaux boliviens, en passant par les Andes péruviennes et les plaines australes d’Argentine, le guanaco incarne la liberté à l’état pur. En petits groupes, ils parcourent ces immensités en veillant les uns sur les autres. Au moindre danger, comme un puma qui rôde ou un condor qui plane, un cri d'alerte fend le silence et la troupe s'éparpille comme une onde dans le vent.\nDiscrets herbivores, ils entretiennent la santé des prairies et rappellent, par leur élégance tranquille, que la Patagonie est un royaume où la nature dicte encore sa loi.",
-  "location": [],
-  "region": null,
+  "location": [
+   "巴塔哥尼亚",
+   "阿尔卑斯",
+   "德国",
+   "阿根廷",
+   "玻利维亚"
+  ],
+  "region": "玻利维亚",
   "photographer": "Sylvain Cordier",
   "gallery": "naturepl.com",
   "copyrightlink": null,
@@ -13124,7 +14312,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "巴塔哥尼亚",
+   "patagonia",
+   "巴塔哥尼亞",
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "阿尔卑斯",
+   "alps",
+   "alpen"
+  ],
   "content_tags": [
    "原驼",
    "动物",
@@ -13144,8 +14345,10 @@
   "imageKey": "CordobaCathedral",
   "title": "Intérieur de la Mosquée-Cathédrale de Cordoue, Andalousie, Espagne",
   "desc": "Sous les arches rouges et blanches de la mosquée-cathédrale de Cordoue, en Andalousie, en Espagne, la lumière glisse en silence, caressant les marbres polis et les colonnes venues d'un autre âge. Ici, chaque pierre raconte une métamorphose. D'abord basilique wisigothe, puis mosquée fondée en 785 par l'émir Abd al-Rahman Ier), elle est devenue cathédrale chrétienne en 1236, à la suite de la Reconquista menée par Ferdinand III.\nPlus de 850 colonnes en jaspe, onyx, marbre et granit soutiennent une forêt de piliers qui semble s'étendre à l'infini : un labyrinthe sacré où se mêlent les héritages romains, islamiques et chrétiens. Au XVIe siècle, une nef de style Renaissance s’élève au cœur de la salle de prière, comme une prière vers le ciel au milieu du génie andalou.\nDans ce lieu classé au patrimoine mondial de l’UNESCO depuis 1984, les siècles ne s’opposent pas, ils se répondent. L’œil suit les arcs en fer à cheval et le cœur écoute le murmure des civilisations passées. À Cordoue, la foi, l’art et l’histoire s’entrelacent dans une harmonie rare, celle d’un monde qui sut, un instant, faire dialoguer ses différences.",
-  "location": [],
-  "region": null,
+  "location": [
+   "西班牙"
+  ],
+  "region": "西班牙",
   "photographer": "Elena Zolotova",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13153,7 +14356,12 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "西班牙",
+   "spain",
+   "españa",
+   "スペイン"
+  ],
   "content_tags": [
    "科尔多瓦清真寺大教堂",
    "拱门",
@@ -13836,8 +15044,11 @@
   "imageKey": "SuperiorIceMN",
   "title": "Plaques de glace sur le lac Supérieur, Minnesota, États-Unis",
   "desc": "Quand l’hiver s’empare du lac Supérieur, au nord du Minnesota, aux États-Unis, le rivage se métamorphose en une mosaïque de plaques cristallines. Ces fines feuilles de glace, fragilisées par les variations de température, se fracturent, dérivent et s’empilent sous l’impulsion du vent. Le résultat : un paysage de bleus translucides et d’éclats argentés, où la lumière accroche chaque arête comme sur une sculpture éphémère.\nSous cette surface figée, les vagues continuent leur danse, poussant les plaques qui s’entrechoquent, résonnent et gémissent. Ces sons, portés par le mouvement, transforment la grève en une scène vivante, changeante au gré des rafales et des gelées.\nAvec ses 82 000 km², le lac Supérieur impose sa grandeur. Plus vaste que bien des mers, il offre chaque hiver ce spectacle fugace, où la glace raconte la force et la poésie des eaux libres — un peu comme nos paysages alpins en hiver, où les lacs gelés et les crêtes enneigées deviennent des toiles éphémères pour la lumière.",
-  "location": [],
-  "region": null,
+  "location": [
+   "美国",
+   "德国"
+  ],
+  "region": "德国",
   "photographer": "wanderluster",
   "gallery": "Getty Images",
   "copyrightlink": null,
@@ -13845,7 +15056,20 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "冰块",
    "冰封湖面",

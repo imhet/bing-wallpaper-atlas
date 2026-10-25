@@ -8021,7 +8021,9 @@
   "imageKey": "EuropaMoon",
   "title": "Jupiter's icy moon Europa",
   "desc": "Today, we're blasting off to explore the cosmos. World Space Week is a celebration of all the science and technology that go into exploring and researching our universe, and how it benefits us back on Earth. As well as helping us to understand the universe we live in, space exploration has played an important role in helping scientists develop new medicines, create new power sources and even improve farming techniques. This year's theme is Space and Climate Change; events will be held in 83 countries to celebrate the vital role that space technology plays in understanding and monitoring how Earth's climate is changing.\nSpace exploration has also led to amazing photographs of our solar system, like the one featured here today. Europa is one of Jupiter's 95 known moons. Its surface is mainly made up of frozen water, which has broken up and refrozen, creating the patterns seen on its surface. In fact, although Europa is just a quarter of the size of Earth, it may contain two times the amount of water found in our planet's oceans. Space Week is the perfect time to take a moment to appreciate the wonders of our solar system and beyond!",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "NASA",
   "gallery": "JPL-Caltech/SETI Institute",
@@ -8030,7 +8032,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "木卫二",
    "卫星",
@@ -9157,7 +9166,9 @@
   "imageKey": "GreatOwl",
   "title": "Great horned owl",
   "desc": "The Halloween season is upon us, so let's meet one of the holiday's icons: the great horned owl. With its keen vision, eerie vocalisations and silent flight, this owl has historically been revered and feared. In folklore and mythology, owls were considered symbols of wisdom and omens of death. On Samhain, the Celtic precursor to Halloween, the owl was believed to be the kin of roaming spirits.\nThe owl in today's image is far more than a character in ghostly tales. Often called the 'tiger of the air,' the great horned owl, named for its signature feathers that look like horns, is one of the most fearsome and adaptable predators in the ornithological world. Primarily active at night, the owl has large, powerful talons that exert around 2,100 kilopascals of pressure, which it uses to grab prey like small rodents and skunks. It has incredible night vision, but its eyes are fixed, so it must turn its head a whopping 270 degrees to see everything. So, whether you hear it hooting from treetops or see it flying in the night, this owl proves that not all scary apparitions are supernatural.",
-  "location": [],
+  "location": [
+   "美国"
+  ],
   "region": "美国",
   "photographer": "Mark Newman",
   "gallery": "Getty Images",
@@ -9166,7 +9177,14 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
   "content_tags": [
    "美洲雕鸮",
    "猫头鹰",
@@ -10683,8 +10701,10 @@
   "imageKey": "JaipurFort",
   "title": null,
   "desc": "A pillared legacy",
-  "location": [],
-  "region": null,
+  "location": [
+   "印度"
+  ],
+  "region": "印度",
   "photographer": null,
   "gallery": null,
   "copyrightlink": null,
@@ -10692,7 +10712,11 @@
   "resolutions": {
    "original": true
   },
-  "tags": [],
+  "tags": [
+   "印度",
+   "india",
+   "インド"
+  ],
   "content_tags": [
    "宫殿",
    "建筑",
