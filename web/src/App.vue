@@ -91,12 +91,13 @@ const suggestions = computed(() => {
   return suggestFromDict(filters.value.query, aliasDict.value)
 })
 
-// 筛选状态 ↔ URL：刷新还原、分享直达；replaceState 不产生历史记录
+// 筛选状态 ↔ URL：刷新还原、分享直达；replaceState 不产生历史记录。
+// 只有 updates 入 URL（他人打开才有意义）；favorites 是本机数据，分享出去是空收藏只会困惑
 watch(
   [filters, view],
   ([f, v]) => {
     const params = new URLSearchParams(encodeFilters(f).slice(1))
-    if (v !== 'browse') params.set('view', v)
+    if (v === 'updates') params.set('view', v)
     history.replaceState(null, '', params.toString() ? `?${params}` : location.pathname)
   },
   { deep: true },
@@ -189,7 +190,7 @@ onMounted(async () => {
   if (stored) theme.value = stored
   Object.assign(filters.value, decodeFilters(location.search)) // 分享链接/刷新还原
   const urlView = new URLSearchParams(location.search).get('view')
-  if (urlView === 'updates' || urlView === 'favorites') view.value = urlView
+  if (urlView === 'updates') view.value = urlView
   // 滚动到底部附近就追加下一批卡片（rootMargin 提前预取，滚动无感）。
   // sentinel 只在浏览视图渲染（更新/收藏视图下为 null），用 watch 挂载
   const gridObserver = new IntersectionObserver(
