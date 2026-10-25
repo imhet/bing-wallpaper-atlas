@@ -12465,7 +12465,8 @@
    "korean",
    "hangug",
    "韓国",
-   "韓國"
+   "韓國",
+   "south korea"
   ],
   "content_tags": [
    "枫叶",
@@ -12607,6 +12608,45 @@
    "荒漠植被",
    "秋色",
    "依偎"
+  ]
+ },
+ {
+  "id": "ja-jp-2026-10-25",
+  "market": "ja-jp",
+  "date": "2026-10-25",
+  "urlbase": "/th?id=OHR.SitovoWaterfall_JA-JP3524382726",
+  "imageKey": "SitovoWaterfall",
+  "title": "紅葉の中を流れ落ちる滝",
+  "desc": "シトヴォ滝, ブルガリア (© Nadya85/Getty Images)",
+  "location": [
+   "シトヴォ滝",
+   "ブルガリア"
+  ],
+  "region": null,
+  "photographer": "Nadya85",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Sitovo+waterfall&form=hpcapt&filters=HpDate%3a%2220261025_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261025_SitovoWaterfall%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "瀑布",
+   "溪流",
+   "岩石",
+   "苔藓",
+   "落叶",
+   "石桥",
+   "桥",
+   "森林",
+   "秋色",
+   "树林",
+   "水流",
+   "秋天"
   ]
  }
 ]

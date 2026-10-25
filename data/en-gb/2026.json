@@ -12516,7 +12516,18 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
   "content_tags": [
    "遗迹",
    "城堡",
@@ -12601,7 +12612,10 @@
    "hd": true,
    "thumb": true
   },
-  "tags": [],
+  "tags": [
+   "哥斯达黎加",
+   "costa rica"
+  ],
   "content_tags": [
    "树懒",
    "哺乳动物",
@@ -12686,7 +12700,8 @@
    "korean",
    "hangug",
    "韓国",
-   "韓國"
+   "韓國",
+   "south korea"
   ],
   "content_tags": [
    "枫叶",
@@ -12788,7 +12803,9 @@
    "里约热内卢",
    "rio de janeiro",
    "里約",
-   "里約熱內盧"
+   "里約熱內盧",
+   "巴西",
+   "brazil"
   ],
   "content_tags": [
    "图书馆",
@@ -12835,7 +12852,9 @@
    "english",
    "英國",
    "英格蘭",
-   "イギリス"
+   "イギリス",
+   "scotland",
+   "wales"
   ],
   "content_tags": [
    "切斯特东门钟",
