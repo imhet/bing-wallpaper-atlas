@@ -2,6 +2,7 @@
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { MARKET_LABEL, RES_SUFFIX, imageUrl } from '../api'
 import { favoriteKey } from '../favorites'
+import HeartIcon from './HeartIcon.vue'
 
 const props = defineProps({ record: Object, records: Array, favKeys: Set })
 const emit = defineEmits(['close', 'select-sibling', 'search', 'toggle-fav'])
@@ -93,7 +94,8 @@ onUnmounted(() => {
         :title="isFav ? '取消收藏' : '收藏'"
         @click="emit('toggle-fav', record)"
       >
-        {{ isFav ? '♥ 已收藏' : '♡ 收藏' }}
+        <HeartIcon :class="{ on: isFav }" />
+        {{ isFav ? '已收藏' : '收藏' }}
       </button>
       <img class="hero" :src="viewSrc" :alt="record.title || record.desc" />
       <div class="res-switch" v-if="available.length > 1">

@@ -39,8 +39,12 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .site-header { display: flex; align-items: baseline; gap: 12px; padding: 16px 20px; }
 .site-header h1 { font-size: 20px; margin: 0; }
 .total { color: var(--muted); font-size: 13px; }
-.theme-toggle { margin-left: auto; background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
+.theme-toggle { display: inline-flex; align-items: center; gap: 4px; background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
+/* 只让 h1 后第一个按钮吃掉剩余空间：按钮组成组靠右，而不是被 auto margin 平分推散 */
+.site-header h1 + .theme-toggle { margin-left: auto; }
 .theme-toggle.active { border-color: var(--accent); color: var(--accent); }
+.heart { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; flex: none; }
+.heart.on, .fav.on .heart { fill: currentColor; stroke: none; }
 .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 20px 16px; position: sticky; top: 0; background: var(--bg); z-index: 5; }
 .filter-bar .query { flex: 1 1 260px; }
 .filter-bar input { background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; font-size: 14px; }

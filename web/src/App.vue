@@ -8,6 +8,7 @@ import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
 import { suggestFromDict } from './suggest'
 import { favoriteKey, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
+import HeartIcon from './components/HeartIcon.vue'
 import FilterBar from './components/FilterBar.vue'
 import WallpaperGrid from './components/WallpaperGrid.vue'
 import WallpaperDetail from './components/WallpaperDetail.vue'
@@ -34,15 +35,18 @@ function toggleFav(record) {
 // 视图切换：browse（搜索浏览）/ favorites（本地收藏）/ updates（更新日志）。
 // favorites 是浏览器本地数据不入 URL；updates 入 URL 可分享直达
 const view = ref('browse')
+// 按收藏时间倒序——最后收藏的排最前（无 favAt 的旧数据沉底）
 const favoriteRecords = computed(() => {
   const byKey = new Map(records.value.map((r) => [favoriteKey(r), r]))
   return Object.entries(favorites.value)
     .map(([key, snap]) => byKey.get(key) || snap)
-    .sort((a, b) => b.date.localeCompare(a.date))
+    .sort((a, b) => (b.favAt || 0) - (a.favAt || 0))
 })
 const years = computed(() =>
   [...new Set(Object.values(aggregations.value?.years_by_market || {}).flat())].sort((a, b) => b - a),
 )
+// 站头口径与网格一致：去重后的图片数（记录数含跨市场重复，11236 vs 6762 两个数字打架让人困惑）
+const totalImages = computed(() => dedupeByUrlbase(records.value).length)
 
 const index = computed(() => buildIndex(records.value))
 const keywordResults = computed(() => searchRecords(index.value, records.value, filters.value.query, filters.value))
@@ -247,10 +251,11 @@ onMounted(async () => {
       :class="{ active: view === 'updates' }"
       @click="view = view === 'updates' ? 'browse' : 'updates'"
     >
-      {{ view === 'updates' ? '← 返回浏览' : `${aggregations.total} 张 · 更新日志 →` }}
+      {{ view === 'updates' ? '← 返回浏览' : `${totalImages || aggregations.total} 张图 · 更新日志 →` }}
     </button>
     <button class="theme-toggle" :class="{ active: view === 'favorites' }" @click="view = view === 'favorites' ? 'browse' : 'favorites'">
-      {{ view === 'favorites' ? '← 返回浏览' : `♥ 收藏 ${favKeys.size}` }}
+      <HeartIcon :class="{ on: view === 'favorites' }" />
+      {{ view === 'favorites' ? '返回浏览' : `收藏 ${favKeys.size}` }}
     </button>
     <button class="theme-toggle" @click="toggleTheme">{{ THEME_LABEL[theme] }}</button>
   </header>

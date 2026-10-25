@@ -39,6 +39,11 @@ describe('toggleFavorite', () => {
     expect(snap.resolutions).toEqual({})
   })
 
+  it('records the favoriting time for recency sort', () => {
+    const favs = toggleFavorite({}, rec())
+    expect(favs['/th?id=OHR.SnowMountain'].favAt).toBeGreaterThan(Date.now() - 1000)
+  })
+
   it('removes the entry on a second toggle', () => {
     const favs = toggleFavorite({}, rec())
     expect(Object.keys(toggleFavorite(favs, rec()))).toHaveLength(0)

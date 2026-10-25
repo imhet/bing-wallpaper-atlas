@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import { thumbUrl } from '../api'
 import { favoriteKey } from '../favorites'
 import { highlightParts } from '../search'
+import HeartIcon from './HeartIcon.vue'
 
 defineProps({ records: Array, query: String, aliasData: Object, dataLoading: Boolean, loading: Boolean, favKeys: Set, hideEmpty: Boolean })
 const emit = defineEmits(['select', 'toggle-fav'])
@@ -33,7 +34,7 @@ const failedIds = ref(new Set())
           :aria-label="favKeys.has(favoriteKey(r)) ? '取消收藏' : '收藏'"
           :title="favKeys.has(favoriteKey(r)) ? '取消收藏' : '收藏'"
           @click.stop="emit('toggle-fav', r)"
-          >♥</span
+          ><HeartIcon /></span
         >
       </div>
       <div class="meta">

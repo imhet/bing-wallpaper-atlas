@@ -15,6 +15,7 @@ function snapshot(r) {
     market: r.market,
     urlbase: r.urlbase,
     imageKey: r.imageKey,
+    favAt: Date.now(), // 收藏时间：收藏视图按它倒序（最后收藏的排最前）
     title: r.title || '',
     desc: r.desc || '',
     location: r.location || [],

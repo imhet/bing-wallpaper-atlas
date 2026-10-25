@@ -3,20 +3,26 @@ import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { MARKET_LABEL, thumbUrl } from '../api'
 import { favoriteKey } from '../favorites'
 import { groupByDate } from '../updates'
+import HeartIcon from './HeartIcon.vue'
 
 const props = defineProps({ records: Array, years: Array, loading: Boolean, favKeys: Set })
 const emit = defineEmits(['select', 'toggle-fav'])
 
 const year = ref(props.years[0] ? String(props.years[0]) : '')
-// 一年的分组可能上百天 × 多市场，一次渲染会卡：先出 45 天，滚动到底追加
-const visibleDays = ref(45)
+// 一次渲染多天会让视口附近几十张缩略图同时打 Bing CDN，HTTP/2 并发流被拒 → 图片全空白
+// （首页为此做渐进渲染，这里同理：先出 8 天 ≈ 40 张，滚动到底追加）
+const STEP_DAYS = 8
+const visibleDays = ref(STEP_DAYS)
 const groups = computed(() =>
   groupByDate(year.value ? props.records.filter((r) => r.date.startsWith(year.value)) : props.records),
 )
 watch(year, () => {
-  visibleDays.value = 45
+  visibleDays.value = STEP_DAYS
 })
 const visibleGroups = computed(() => groups.value.slice(0, visibleDays.value))
+// 骨架/淡入按记录 id 记（与 WallpaperGrid 同款，滚动追加不重复加载）
+const loadedIds = ref(new Set())
+const failedIds = ref(new Set())
 const sentinel = ref(null)
 // sentinel 在数据分支内（loading 时不渲染），IntersectionObserver 的挂载时机麻烦，
 // scroll 监听 + 元素位置判断最直接；appending 防止惯性滚动期间连发事件一次性加完
@@ -26,7 +32,7 @@ async function onScroll() {
   const el = sentinel.value
   if (el && visibleDays.value < groups.value.length && el.getBoundingClientRect().top < window.innerHeight + 800) {
     appending = true
-    visibleDays.value += 45
+    visibleDays.value += STEP_DAYS
     await nextTick()
     appending = false
   }
@@ -50,15 +56,24 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
         <h3>{{ g.date }} <span class="day-count">{{ g.items.length }} 张</span></h3>
         <div class="day-cards">
           <button v-for="r in g.items" :key="r.id" class="card" @click="emit('select', r)">
-            <div class="thumb">
-              <img :src="thumbUrl(r)" :alt="r.title || r.desc" loading="lazy" decoding="async" />
+            <div class="thumb" :class="{ loaded: loadedIds.has(r.id), failed: failedIds.has(r.id) }">
+              <span v-if="!loadedIds.has(r.id) && !failedIds.has(r.id)" class="skeleton" aria-hidden="true"></span>
+              <img
+                :src="thumbUrl(r)"
+                :alt="r.title || r.desc"
+                loading="lazy"
+                decoding="async"
+                @load="loadedIds.add(r.id)"
+                @error="failedIds.add(r.id)"
+              />
+              <span v-if="failedIds.has(r.id)" class="thumb-fallback">{{ r.date }}</span>
               <span
                 class="fav"
                 :class="{ on: favKeys.has(favoriteKey(r)) }"
                 role="button"
                 :aria-label="favKeys.has(favoriteKey(r)) ? '取消收藏' : '收藏'"
                 @click.stop="emit('toggle-fav', r)"
-                >♥</span
+                ><HeartIcon /></span
               >
             </div>
             <div class="meta">
