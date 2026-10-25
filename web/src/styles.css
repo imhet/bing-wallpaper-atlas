@@ -40,6 +40,7 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .site-header h1 { font-size: 20px; margin: 0; }
 .total { color: var(--muted); font-size: 13px; }
 .theme-toggle { margin-left: auto; background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
+.theme-toggle.active { border-color: var(--accent); color: var(--accent); }
 .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 20px 16px; position: sticky; top: 0; background: var(--bg); z-index: 5; }
 .filter-bar .query { flex: 1 1 260px; }
 .filter-bar input { background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; font-size: 14px; }
@@ -56,6 +57,18 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 }
 @keyframes thumb-shimmer { from { background-position: 180% 0; } to { background-position: -120% 0; } }
 .card .thumb-fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 12px; }
+/* 收藏角标：桌面 hover 显现；触屏无 hover 常显（用 hover 媒体查询区分） */
+.card .fav {
+  position: absolute; top: 6px; right: 6px; z-index: 1;
+  color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  font-size: 18px; line-height: 1; padding: 4px; cursor: pointer;
+  opacity: 0; transition: opacity 0.15s ease;
+}
+.card .fav.on { opacity: 1; color: #ff6b81; }
+@media (hover: hover) {
+  .card:hover .fav, .card .fav:focus-visible { opacity: 1; }
+}
+@media (hover: none) { .card .fav { opacity: 0.85; } }
 @media (prefers-reduced-motion: reduce) { .card .thumb .skeleton { animation: none; } }
 .card .meta { display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; font-size: 13px; }
 .card .date { color: var(--muted); }
@@ -70,6 +83,8 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .modal { background: var(--modal-bg); border: 1px solid var(--border); border-radius: 12px; max-width: 900px; width: min(92vw, 900px); max-height: 90vh; overflow: auto; padding: 16px; }
 .modal { position: relative; }
 .modal .close { position: absolute; top: 10px; right: 10px; background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+.modal .fav-btn { right: 46px; }
+.modal .fav-btn.on { border-color: #ff6b81; color: #ff6b81; }
 .modal .hero { width: 100%; border-radius: 8px; }
 .res-switch { display: flex; gap: 6px; margin-top: 10px; }
 .res-switch button, .siblings button { background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px; }

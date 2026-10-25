@@ -1,9 +1,12 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { RES_SUFFIX, imageUrl } from '../api'
+import { favoriteKey } from '../favorites'
 
-const props = defineProps({ record: Object, records: Array })
-const emit = defineEmits(['close', 'select-sibling', 'search'])
+const props = defineProps({ record: Object, records: Array, favKeys: Set })
+const emit = defineEmits(['close', 'select-sibling', 'search', 'toggle-fav'])
+
+const isFav = computed(() => props.favKeys.has(favoriteKey(props.record)))
 
 // tags 混着拉丁/假名别名，只展示含汉字的（规范中文名与字形变体），点击即按该地点搜索
 const cjkTags = computed(() => (props.record.tags || []).filter((t) => /[一-鿿]/.test(t)))
@@ -87,6 +90,15 @@ onUnmounted(() => {
       aria-labelledby="detail-title"
     >
       <button ref="closeBtn" class="close" aria-label="关闭" @click="emit('close')">✕</button>
+      <button
+        class="close fav-btn"
+        :class="{ on: isFav }"
+        :aria-label="isFav ? '取消收藏' : '收藏'"
+        :title="isFav ? '取消收藏' : '收藏'"
+        @click="emit('toggle-fav', record)"
+      >
+        {{ isFav ? '♥ 已收藏' : '♡ 收藏' }}
+      </button>
       <img class="hero" :src="viewSrc" :alt="record.title || record.desc" />
       <div class="res-switch" v-if="available.length > 1">
         <button v-for="k in available" :key="k" :class="{ active: k === viewRes }" @click="picked = k">

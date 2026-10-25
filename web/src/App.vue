@@ -7,6 +7,7 @@ import { createSemanticEngine } from './semantic-engine'
 import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
 import { suggestFromDict } from './suggest'
+import { favoriteKey, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
 import FilterBar from './components/FilterBar.vue'
 import WallpaperGrid from './components/WallpaperGrid.vue'
 import WallpaperDetail from './components/WallpaperDetail.vue'
@@ -20,6 +21,24 @@ const filters = ref({ query: '', market: '', year: '', month: '', region: '', ph
 const selected = ref(null)
 const aliasDict = ref(null) // 多语言地名词典（零结果建议 + 高亮桥接共用，懒加载）
 const theme = ref('auto') // auto | light | dark
+
+// 本地收藏：key → 记录快照，localStorage 持久化。按图组归一键存，同图跨市场算同一张。
+const favorites = ref(loadFavorites(localStorage))
+watch(favorites, (f) => saveFavorites(localStorage, f))
+const favKeys = computed(() => new Set(Object.keys(favorites.value)))
+function toggleFav(record) {
+  favorites.value = toggleFavorite(favorites.value, record)
+}
+
+// 收藏视图：优先用内存里的完整记录（数据新、字段全），快照兜底（全量加载完成前也能看）
+const showFavorites = ref(false)
+const favoriteRecords = computed(() => {
+  const byKey = new Map(records.value.map((r) => [favoriteKey(r), r]))
+  return Object.entries(favorites.value)
+    .map(([key, snap]) => byKey.get(key) || snap)
+    .sort((a, b) => b.date.localeCompare(a.date))
+})
+
 const index = computed(() => buildIndex(records.value))
 const keywordResults = computed(() => searchRecords(index.value, records.value, filters.value.query, filters.value))
 // 语义检索：模型与向量在空闲时后台加载，就绪后把关键词结果与语义结果做 RRF 融合；
@@ -46,6 +65,7 @@ const visibleCount = ref(VISIBLE_STEP)
 const visibleResults = computed(() => uniqueResults.value.slice(0, visibleCount.value))
 // 结果计数用去重后的图片数：与网格实际卡片口径一致（站头 total 是记录数）
 const resultCount = computed(() => {
+  if (showFavorites.value) return `共收藏 ${favoriteRecords.value.length} 张`
   const hasFilters = Object.values(filters.value).some(Boolean)
   const base = `${hasFilters ? '找到' : '共'} ${uniqueResults.value.length} 张`
   return dataLoading.value ? `${base}（数据加载中…）` : base
@@ -210,33 +230,44 @@ onMounted(async () => {
   <header class="site-header">
     <h1>Bing 壁纸图集</h1>
     <span v-if="aggregations" class="total">{{ aggregations.total }} 张 · 更新至 {{ aggregations.latest_date }}</span>
+    <button class="theme-toggle" :class="{ active: showFavorites }" @click="showFavorites = !showFavorites">
+      {{ showFavorites ? '← 返回浏览' : `♥ 收藏 ${favKeys.size}` }}
+    </button>
     <button class="theme-toggle" @click="toggleTheme">{{ THEME_LABEL[theme] }}</button>
   </header>
-  <FilterBar :facets="facets" v-model:filters="filters" @random="randomPick" />
+  <FilterBar v-if="!showFavorites" :facets="facets" v-model:filters="filters" @random="randomPick" />
   <p v-if="loading" class="status">加载中…</p>
   <p v-if="error" class="status error">{{ error }}</p>
-  <p v-if="semanticLoading && filters.query && !results.length" class="hint">语义搜索准备中…</p>
-  <p v-if="suggestions.length" class="hint">
+  <p v-if="!showFavorites && semanticLoading && filters.query && !results.length" class="hint">语义搜索准备中…</p>
+  <p v-if="!showFavorites && suggestions.length" class="hint">
     没找到「{{ filters.query }}」，试试它的其他写法：
     <button v-for="s in suggestions" :key="s" @click="pickSuggestion(s)">{{ s }}</button>
   </p>
   <p v-if="!loading && records.length" class="result-count">{{ resultCount }}</p>
+  <p v-if="showFavorites && !favoriteRecords.length" class="empty">
+    还没有收藏。浏览时点卡片右上角的 ♥，喜欢的图就会留在这里（只存这台浏览器里）。
+  </p>
   <WallpaperGrid
-    :records="visibleResults"
-    :query="filters.query"
+    :records="showFavorites ? favoriteRecords : visibleResults"
+    :query="showFavorites ? '' : filters.query"
     :alias-data="aliasDict"
     :data-loading="dataLoading"
     :loading="loading"
+    :fav-keys="favKeys"
+    :hide-empty="showFavorites"
     @select="selected = $event"
+    @toggle-fav="toggleFav"
   />
   <div ref="sentinel" aria-hidden="true"></div>
   <WallpaperDetail
     v-if="selected"
     :record="selected"
     :records="records"
+    :fav-keys="favKeys"
     @close="selected = null"
     @select-sibling="selected = $event"
     @search="searchTag"
+    @toggle-fav="toggleFav"
   />
   <footer class="site-footer">
     图片版权归 Microsoft 及原作者/图库所有，本站仅做元数据索引与链接。

@@ -144,7 +144,7 @@ test('详情：默认 1080p，切换市场版本后标签与档位同步', async
   await stubThumbs(page)
   await page.goto('/')
   await page.fill('input.query', '2024-04-06')
-  await expect(page.locator('.card').first()).toBeVisible()
+  await expect(page.locator('.card').first()).toBeVisible({ timeout: 15000 }) // 全量分片到货后才命中
   await page.locator('.card').first().click()
   const hero = page.locator('.modal .hero')
   // 默认 1080p：此前 available[0] 是 uhd，每开一张详情都拉几 MB 的 4K 原图

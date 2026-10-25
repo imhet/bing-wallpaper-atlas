@@ -1,10 +1,11 @@
 <script setup>
 import { ref } from 'vue'
 import { thumbUrl } from '../api'
+import { favoriteKey } from '../favorites'
 import { highlightParts } from '../search'
 
-defineProps({ records: Array, query: String, aliasData: Object, dataLoading: Boolean, loading: Boolean })
-const emit = defineEmits(['select'])
+defineProps({ records: Array, query: String, aliasData: Object, dataLoading: Boolean, loading: Boolean, favKeys: Set, hideEmpty: Boolean })
+const emit = defineEmits(['select', 'toggle-fav'])
 
 // 缩略图加载状态：骨架占位 → 淡入 / 失败兜底（按记录 id 记，滚动追加不重复加载）
 const loadedIds = ref(new Set())
@@ -25,6 +26,15 @@ const failedIds = ref(new Set())
           @error="failedIds.add(r.id)"
         />
         <span v-if="failedIds.has(r.id)" class="thumb-fallback">{{ r.date }}</span>
+        <span
+          class="fav"
+          :class="{ on: favKeys.has(favoriteKey(r)) }"
+          role="button"
+          :aria-label="favKeys.has(favoriteKey(r)) ? '取消收藏' : '收藏'"
+          :title="favKeys.has(favoriteKey(r)) ? '取消收藏' : '收藏'"
+          @click.stop="emit('toggle-fav', r)"
+          >♥</span
+        >
       </div>
       <div class="meta">
         <span class="date">{{ r.date }}</span>
@@ -38,7 +48,7 @@ const failedIds = ref(new Set())
     </button>
   </div>
   <!-- 首屏加载中由 App 的「加载中…」负责，不能同时说「没有匹配」 -->
-  <p v-if="!records.length && !loading" class="empty">
+  <p v-if="!records.length && !loading && !hideEmpty" class="empty">
     {{ dataLoading ? '数据仍在加载，请稍候…' : '没有匹配的壁纸，试试放宽筛选条件。' }}
   </p>
 </template>
