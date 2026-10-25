@@ -12378,5 +12378,45 @@
    "云",
    "夜景"
   ]
+ },
+ {
+  "id": "de-de-2026-10-25",
+  "market": "de-de",
+  "date": "2026-10-25",
+  "urlbase": "/th?id=OHR.SitovoWaterfall_DE-DE2533514641",
+  "imageKey": "SitovoWaterfall",
+  "title": "Der Klang des Herbstes",
+  "desc": "Wasserfälle bei Sitovo im Herbst, Plowdiw, Bulgarien (© Nadya85/Getty Images)",
+  "location": [
+   "Wasserfälle bei Sitovo im Herbst",
+   "Plowdiw",
+   "Bulgarien"
+  ],
+  "region": null,
+  "photographer": "Nadya85",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Sitowo+Plowdiw+Bulgarien&form=hpcapt&filters=HpDate%3a%2220261025_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261025_SitovoWaterfall%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "瀑布",
+   "溪流",
+   "岩石",
+   "苔藓",
+   "落叶",
+   "石桥",
+   "桥",
+   "森林",
+   "秋色",
+   "树林",
+   "水流",
+   "秋天"
+  ]
  }
 ]
