@@ -304,6 +304,8 @@ test('更新日志：按日期倒序分组，点卡片进详情，URL 可直达'
 test('沉浸模式：弹层进入，键盘切换与到头禁用，Esc 只退沉浸不关弹层', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
+  // 等全量分片到齐再操作：渐进窗口内 records 会重排，沉浸起点会随列表口径漂移（分级加载的已知行为）
+  await expect(page.locator('.result-count')).not.toContainText('加载中', { timeout: 15000 })
   await page.locator('.card').first().click()
   await expect(page.locator('.modal h2')).toBeVisible()
   await page.getByRole('button', { name: '沉浸观赏' }).click()
@@ -366,12 +368,38 @@ test('沉浸模式：双击图片收藏，↑ 收藏 ↓ 取消，心形按钮�
   await expect(favBtn).toBeVisible()
   await page.locator('.viewer-img').dblclick() // 双击收藏
   await expect(favBtn).toHaveClass(/on/)
+  await expect(page.locator('.heart-burst')).toHaveCount(1) // 画面反馈：心形飘起
   await expect(page.locator('.site-header')).toContainText('收藏 1')
   await page.keyboard.press('ArrowDown') // ↓ 取消收藏
   await expect(favBtn).not.toHaveClass(/on/)
   await page.keyboard.press('ArrowUp') // ↑ 再收藏
   await expect(favBtn).toHaveClass(/on/)
   await expect(page.locator('.site-header')).toContainText('收藏 1')
+  await page.waitForTimeout(1200) // 动画结束后移除
+  await expect(page.locator('.heart-burst')).toHaveCount(0)
+})
+
+test('沉浸模式：未预加载的慢图切换显示 spinner，已就绪的图立即切换不闪黑', async ({ page }) => {
+  const pixel = Buffer.from(
+    'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+    'base64',
+  )
+  // 第二张图（下一张预加载目标）延迟 1.5 秒：预加载 promise 还没回来，走 spinner 路径
+  await page.route('**/th?id=*', async (route) => {
+    const url = route.request().url()
+    if (/_1920x1080/.test(url) && !url.includes('OHR.X_zh-cn1_400')) {
+      await new Promise((r) => setTimeout(r, 1500))
+    }
+    await route.fulfill({ status: 200, contentType: 'image/png', body: pixel })
+  })
+  await page.goto('/')
+  await page.locator('.card').first().click()
+  await page.locator('.modal-top .immerse-btn').click()
+  // 首张图在弹层阶段已被浏览器预热（同 URL），spinner 一闪而过测不到；第二张的预加载被延迟 1.5s，
+  // 按 → 时必然未就绪 → 走 spinner 路径
+  await page.keyboard.press('ArrowRight')
+  await expect(page.locator('.viewer-spinner')).toBeVisible()
+  await expect(page.locator('.viewer-spinner')).toHaveCount(0, { timeout: 5000 })
 })
 
 test('沉浸模式：进入时显示操作提示，约 2.5 秒后消失', async ({ page }) => {
