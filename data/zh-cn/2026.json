@@ -13145,7 +13145,7 @@
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261023_PortugueseLibrary%22&FORM=HPQUIZ",
   "resolutions": {
    "uhd": true,
-   "fhd": true,
+   "fhd": false,
    "hd": true,
    "thumb": true
   },
@@ -13260,6 +13260,50 @@
    "树林",
    "水流",
    "秋天"
+  ]
+ },
+ {
+  "id": "zh-cn-2026-10-26",
+  "market": "zh-cn",
+  "date": "2026-10-26",
+  "urlbase": "/th?id=OHR.PondCypress_ZH-CN9472607734",
+  "imageKey": "PondCypress",
+  "title": "大自然的金色明镜",
+  "desc": "秋叶缤纷的池杉林，乔治亚州，美国 (© Chris Moore/Getty Images)",
+  "location": [
+   "秋叶缤纷的池杉林",
+   "乔治亚州",
+   "美国"
+  ],
+  "region": "美国",
+  "photographer": "Chris Moore",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E6%B1%A0%E6%9D%89&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261026_PondCypress%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "落羽杉",
+   "树",
+   "沼泽",
+   "秋色",
+   "倒影",
+   "红叶",
+   "森林",
+   "水面",
+   "湿地"
   ]
  }
 ]
