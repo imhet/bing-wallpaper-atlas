@@ -5,7 +5,7 @@ import { favoriteKey } from '../favorites'
 import HeartIcon from './HeartIcon.vue'
 
 const props = defineProps({ record: Object, records: Array, favKeys: Set })
-const emit = defineEmits(['close', 'select-sibling', 'search', 'toggle-fav'])
+const emit = defineEmits(['close', 'select-sibling', 'search', 'toggle-fav', 'immerse'])
 
 const isFav = computed(() => props.favKeys.has(favoriteKey(props.record)))
 
@@ -125,6 +125,7 @@ onUnmounted(() => {
         <dt v-if="record.gallery">图库</dt><dd v-if="record.gallery">{{ record.gallery }}</dd>
       </dl>
       <div class="actions">
+        <button class="immerse-btn" @click="emit('immerse')">⛶ 沉浸观赏</button>
         <a v-for="k in available" :key="k" :href="imageUrl(record.urlbase, RES_SUFFIX[k] || `_${k}`)"
            target="_blank" rel="noopener">下载 {{ RES_LABEL[k] || k }}</a>
         <a v-if="record.copyrightlink" :href="record.copyrightlink" target="_blank" rel="noopener">背后故事 ↗</a>

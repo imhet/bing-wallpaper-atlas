@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onMounted, ref, shallowRef, watch } from 'vue'
-import { dedupeByUrlbase, loadAggregations, loadAllRecords, loadYearShards } from './api'
+import { dedupeByUrlbase, loadAggregations, loadAllRecords, loadYearShards, recordKey } from './api'
 import { applyFilters, buildIndex, extractGeoTerms, parseDateQuery, searchRecords } from './search'
 import { geoFilterSemScores, rrfFuse } from './semantic'
 import { createSemanticEngine } from './semantic-engine'
@@ -8,11 +8,13 @@ import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
 import { suggestFromDict } from './suggest'
 import { favoriteKey, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
+import { groupByDate } from './updates'
 import HeartIcon from './components/HeartIcon.vue'
 import FilterBar from './components/FilterBar.vue'
 import WallpaperGrid from './components/WallpaperGrid.vue'
 import WallpaperDetail from './components/WallpaperDetail.vue'
 import UpdatesView from './components/UpdatesView.vue'
+import ImmersiveViewer from './components/ImmersiveViewer.vue'
 
 const aggregations = ref(null)
 const records = ref([])
@@ -197,6 +199,30 @@ function searchTag(tag) {
   window.scrollTo({ top: 0 })
 }
 
+// 沉浸观赏：浏览范围跟随当前视图（浏览=搜索结果、收藏=收藏夹、更新日志=日志卡片），
+// 左右切换不会滑出用户所在的上下文
+const immerseIdx = ref(null)
+const immerseList = computed(() =>
+  view.value === 'favorites'
+    ? favoriteRecords.value
+    : view.value === 'updates'
+      ? groupByDate(records.value).flatMap((g) => g.items)
+      : uniqueResults.value,
+)
+function startImmerse() {
+  const sel = selected.value
+  let i = immerseList.value.findIndex((r) => r.id === sel?.id)
+  if (i === -1 && sel)
+    // 弹层里切到了非代表市场版本（同图 sibling 不在去重列表中）：对齐到同图组的位置
+    i = immerseList.value.findIndex((r) => recordKey(r) === recordKey(sel))
+  immerseIdx.value = Math.max(i, 0)
+}
+// 沉浸中切换同步回弹层：退出沉浸时弹层显示的就是最后看的这张
+function onImmerseNav(i) {
+  immerseIdx.value = i
+  selected.value = immerseList.value[i]
+}
+
 onMounted(async () => {
   const stored = localStorage.getItem('theme')
   if (stored) theme.value = stored
@@ -311,6 +337,14 @@ onMounted(async () => {
     @select-sibling="selected = $event"
     @search="searchTag"
     @toggle-fav="toggleFav"
+    @immerse="startImmerse"
+  />
+  <ImmersiveViewer
+    v-if="immerseIdx !== null && immerseList[immerseIdx]"
+    :records="immerseList"
+    :index="immerseIdx"
+    @close="immerseIdx = null"
+    @update:index="onImmerseNav"
   />
   <footer class="site-footer">
     图片版权归 Microsoft 及原作者/图库所有，本站仅做元数据索引与链接。

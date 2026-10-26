@@ -134,3 +134,66 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
   .updates { padding: 0 12px 24px; }
   .day-cards { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
 }
+
+/* 沉浸观赏：纯黑底大图铺满居中；UI 元素空闲 3 秒后连光标一起淡出 */
+.viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none;
+  user-select: none;
+}
+.viewer-img { max-width: 100vw; max-height: 100vh; object-fit: contain; }
+.viewer-close,
+.viewer-count,
+.viewer-nav,
+.viewer-meta {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.4s;
+  color: #fff;
+}
+.viewer-close { top: 16px; right: 16px; }
+.viewer-count { top: 20px; left: 20px; font-size: 14px; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8); }
+.viewer-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  line-height: 1;
+  padding: 16px 20px;
+  background: rgba(0, 0, 0, 0.35);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.viewer-nav.prev { left: 16px; }
+.viewer-nav.next { right: 16px; }
+.viewer-nav:disabled { opacity: 0.25; cursor: default; }
+.viewer-meta {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 24px 18px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+.viewer-meta h2 { margin: 0 0 4px; font-size: 18px; }
+.viewer-meta p { margin: 0; font-size: 13px; color: #cfd3d9; }
+.viewer-idle { cursor: none; }
+.viewer-idle .viewer-close,
+.viewer-idle .viewer-count,
+.viewer-idle .viewer-nav,
+.viewer-idle .viewer-meta { opacity: 0; pointer-events: none; }
+.modal .actions .immerse-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+}

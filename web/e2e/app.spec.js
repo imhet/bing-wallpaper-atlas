@@ -300,3 +300,59 @@ test('更新日志：按日期倒序分组，点卡片进详情，URL 可直达'
   await page.getByRole('button', { name: '← 返回浏览' }).first().click()
   await expect(page.locator('.filter-bar')).toBeVisible()
 })
+
+test('沉浸模式：弹层进入，键盘切换与到头禁用，Esc 只退沉浸不关弹层', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await page.locator('.card').first().click()
+  await expect(page.locator('.modal h2')).toBeVisible()
+  await page.getByRole('button', { name: '沉浸观赏' }).click()
+  const viewer = page.locator('.viewer')
+  await expect(viewer).toBeVisible()
+  await expect(viewer.locator('.viewer-img')).toBeVisible()
+  const count = viewer.locator('.viewer-count')
+  await expect(count).toContainText('1 / ')
+  // → 下一张、← 上一张、到头 ← 无效
+  await page.keyboard.press('ArrowRight')
+  await expect(count).toContainText('2 / ')
+  await page.keyboard.press('ArrowLeft')
+  await expect(count).toContainText('1 / ')
+  await page.keyboard.press('ArrowLeft')
+  await expect(count).toContainText('1 / ')
+  // Esc 只退沉浸，详情弹层还在
+  await page.keyboard.press('Escape')
+  await expect(viewer).toHaveCount(0)
+  await expect(page.locator('.modal h2')).toBeVisible()
+})
+
+test('沉浸模式：鼠标移动显示信息，空闲 3 秒后自动隐藏（含光标）', async ({ page }) => {
+  await page.clock.install()
+  await stubThumbs(page)
+  await page.goto('/')
+  await page.locator('.card').first().click()
+  await page.getByRole('button', { name: '沉浸观赏' }).click()
+  await expect(page.locator('.viewer')).toBeVisible()
+  await page.mouse.move(400, 300) // 移动鼠标 → 信息浮现
+  await expect(page.locator('.viewer .viewer-meta')).toBeVisible()
+  await page.clock.fastForward(3500) // 空闲 → idle 态（信息与光标 opacity 淡出，Playwright 可见性判定不认 opacity，断言 class）
+  await expect(page.locator('.viewer.viewer-idle')).toHaveCount(1)
+})
+
+test('沉浸模式：左右拖拽（触摸滑动）切换上一张/下一张', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await page.locator('.card').first().click()
+  await page.getByRole('button', { name: '沉浸观赏' }).click()
+  const count = page.locator('.viewer-count')
+  await expect(count).toContainText('1 / ')
+  await page.mouse.move(700, 400)
+  await page.mouse.down()
+  await page.mouse.move(200, 400, { steps: 5 }) // 向左拖 = 下一张
+  await page.mouse.up()
+  await expect(count).toContainText('2 / ')
+  await page.mouse.move(200, 400)
+  await page.mouse.down()
+  await page.mouse.move(700, 400, { steps: 5 }) // 向右拖 = 上一张
+  await page.mouse.up()
+  await expect(count).toContainText('1 / ')
+})
