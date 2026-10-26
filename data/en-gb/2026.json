@@ -12872,5 +12872,48 @@
    "蓝天",
    "白云"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-26",
+  "market": "en-gb",
+  "date": "2026-10-26",
+  "urlbase": "/th?id=OHR.SitovoWaterfall_EN-GB5626792550",
+  "imageKey": "SitovoWaterfall",
+  "title": "Nature's autumn soundtrack",
+  "desc": "Autumn waterfalls near Sitovo, Plovdiv Province, Bulgaria (© Nadya85/Getty Images)",
+  "location": [
+   "Autumn waterfalls near Sitovo",
+   "Plovdiv Province",
+   "Bulgaria"
+  ],
+  "region": "保加利亚",
+  "photographer": "Nadya85",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Sitovo+Plovdiv+Bulgaria&form=hpcapt&filters=HpDate%3a%2220261026_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261026_SitovoWaterfall%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "保加利亚",
+   "bulgaria"
+  ],
+  "content_tags": [
+   "瀑布",
+   "溪流",
+   "岩石",
+   "苔藓",
+   "落叶",
+   "石桥",
+   "桥",
+   "森林",
+   "秋色",
+   "树林",
+   "水流",
+   "秋天"
+  ]
  }
 ]

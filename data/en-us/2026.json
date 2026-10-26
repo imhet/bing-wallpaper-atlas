@@ -12857,5 +12857,47 @@
    "水流",
    "秋天"
   ]
+ },
+ {
+  "id": "en-us-2026-10-26",
+  "market": "en-us",
+  "date": "2026-10-26",
+  "urlbase": "/th?id=OHR.HangingBat_EN-US7714746725",
+  "imageKey": "HangingBat",
+  "title": "Hanging in there",
+  "desc": "Gray-headed flying fox, Victoria, Australia (© Doug Gimesy/Nature Picture Library)",
+  "location": [
+   "Gray-headed flying fox",
+   "Victoria",
+   "Australia"
+  ],
+  "region": "澳大利亚",
+  "photographer": "Doug Gimesy",
+  "gallery": "Nature Picture Library",
+  "copyrightlink": "https://www.bing.com/search?q=Bat+Week&form=hpcapt&filters=HpDate%3a%2220261026_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261026_HangingBat%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "澳大利亚",
+   "australia",
+   "aussie",
+   "澳洲",
+   "オーストラリア",
+   "澳大利亞"
+  ],
+  "content_tags": [
+   "蝙蝠",
+   "狐蝠",
+   "倒挂",
+   "树枝",
+   "雨",
+   "黄花",
+   "野生动物"
+  ]
  }
 ]
