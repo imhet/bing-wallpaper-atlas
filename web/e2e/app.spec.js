@@ -356,3 +356,33 @@ test('沉浸模式：左右拖拽（触摸滑动）切换上一张/下一张', a
   await page.mouse.up()
   await expect(count).toContainText('1 / ')
 })
+
+test('沉浸模式：双击图片收藏，↑ 收藏 ↓ 取消，心形按钮实时同步', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await page.locator('.card').first().click()
+  await page.locator('.modal-top .immerse-btn').click()
+  const favBtn = page.locator('.viewer .viewer-fav')
+  await expect(favBtn).toBeVisible()
+  await page.locator('.viewer-img').dblclick() // 双击收藏
+  await expect(favBtn).toHaveClass(/on/)
+  await expect(page.locator('.site-header')).toContainText('收藏 1')
+  await page.keyboard.press('ArrowDown') // ↓ 取消收藏
+  await expect(favBtn).not.toHaveClass(/on/)
+  await page.keyboard.press('ArrowUp') // ↑ 再收藏
+  await expect(favBtn).toHaveClass(/on/)
+  await expect(page.locator('.site-header')).toContainText('收藏 1')
+})
+
+test('沉浸模式：进入时显示操作提示，约 2.5 秒后消失', async ({ page }) => {
+  await page.clock.install()
+  await stubThumbs(page)
+  await page.goto('/')
+  await page.locator('.card').first().click()
+  await page.locator('.modal-top .immerse-btn').click()
+  const hint = page.locator('.viewer-hint')
+  await expect(hint).toBeVisible()
+  await expect(hint).toContainText('Esc 退出')
+  await page.clock.fastForward(3000)
+  await expect(hint).toHaveCount(0)
+})

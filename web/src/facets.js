@@ -19,8 +19,8 @@ const RES_ORDER = ['uhd', 'fhd', 'hd']
 const byName = (a, b) => String(a.name).localeCompare(String(b.name))
 const ORDER = {
   market: byName,
-  year: (a, b) => Number(a.name) - Number(b.name),
-  month: (a, b) => Number(a.name) - Number(b.name),
+  year: (a, b) => Number(b.name) - Number(a.name), // 倒序：最新在最上，与日期倒序心智一致
+  month: (a, b) => Number(b.name) - Number(a.name),
   region: (a, b) => b.count - a.count || byName(a, b), // 计数降序，与旧 most_common 一致
   photographer: (a, b) => b.count - a.count || byName(a, b),
   resolution: (a, b) => RES_ORDER.indexOf(a.name) - RES_ORDER.indexOf(b.name),

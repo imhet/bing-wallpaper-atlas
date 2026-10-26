@@ -89,10 +89,10 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .overlay { position: fixed; inset: 0; background: var(--overlay); display: flex; align-items: center; justify-content: center; z-index: 20; }
 .modal { background: var(--modal-bg); border: 1px solid var(--border); border-radius: 12px; max-width: 900px; width: min(92vw, 900px); max-height: 90vh; overflow: auto; padding: 16px; }
 .modal { position: relative; }
-.modal .close, .modal .fav-btn { position: absolute; top: 10px; background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
-.modal .close { right: 10px; }
-.modal .fav-btn { right: 46px; }
-.modal .fav-btn.on { border-color: #ff6b81; color: #ff6b81; }
+/* 弹层顶部按钮排：收藏/沉浸/关闭同排同高（flex 对齐，图标按钮与文字按钮高度一致） */
+.modal-top { position: absolute; top: 10px; right: 10px; display: flex; gap: 8px; align-items: center; z-index: 1; }
+.modal-top button { height: 30px; display: inline-flex; align-items: center; gap: 4px; background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 0 10px; cursor: pointer; }
+.modal-top .fav-btn.on { border-color: #ff6b81; color: #ff6b81; }
 .modal .hero { width: 100%; border-radius: 8px; }
 .res-switch { display: flex; gap: 6px; margin-top: 10px; }
 .res-switch button, .siblings button { background: var(--panel); color: inherit; border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; cursor: pointer; font-size: 13px; }
@@ -147,18 +147,44 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
   touch-action: none;
   user-select: none;
 }
-.viewer-img { max-width: 100vw; max-height: 100vh; object-fit: contain; }
+.viewer-img { max-width: 100vw; max-height: 100vh; object-fit: contain; transition: opacity 0.3s; }
+.viewer-img.switching { opacity: 0.45; } /* 新图加载中：旧图保持显示但压暗，明示「正在换图」而非卡死 */
 .viewer-close,
+.viewer-fav,
 .viewer-count,
 .viewer-nav,
-.viewer-meta {
+.viewer-meta,
+.viewer-hint {
   position: absolute;
   z-index: 1;
   opacity: 1;
   transition: opacity 0.4s;
   color: #fff;
 }
-.viewer-close { top: 16px; right: 16px; }
+/* 顶排按钮（收藏/关闭）：半透明黑底白字，与整体黑底画面协调 */
+.viewer-top { position: absolute; top: 16px; right: 16px; display: flex; gap: 8px; }
+.viewer-top button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 34px;
+  padding: 0 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.viewer-fav.on { border-color: #ff6b81; color: #ff6b81; }
+.viewer-hint {
+  left: 50%;
+  bottom: 88px;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  font-size: 13px;
+  white-space: nowrap;
+}
 .viewer-count { top: 20px; left: 20px; font-size: 14px; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8); }
 .viewer-nav {
   top: 50%;
@@ -185,15 +211,8 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .viewer-meta h2 { margin: 0 0 4px; font-size: 18px; }
 .viewer-meta p { margin: 0; font-size: 13px; color: #cfd3d9; }
 .viewer-idle { cursor: none; }
-.viewer-idle .viewer-close,
+.viewer-idle .viewer-top,
+.viewer-idle .viewer-hint,
 .viewer-idle .viewer-count,
 .viewer-idle .viewer-nav,
 .viewer-idle .viewer-meta { opacity: 0; pointer-events: none; }
-.modal .actions .immerse-btn {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 4px 12px;
-  cursor: pointer;
-}

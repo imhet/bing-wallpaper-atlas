@@ -26,8 +26,8 @@ describe('computeFacets', () => {
   it('year counts follow the market filter (sum equals that market total)', () => {
     // 涛总的核心诉求：选 zh-cn 后年份计数是 zh-cn 内部分布，加起来正好是 zh-cn 总数
     expect(facetsOf({ market: 'zh-cn' }).year).toEqual([
-      { name: '2023', count: 1 },
       { name: '2024', count: 1 },
+      { name: '2023', count: 1 },
     ])
   })
 
@@ -40,13 +40,13 @@ describe('computeFacets', () => {
 
   it('month counts follow other filters and names drop the leading zero', () => {
     expect(facetsOf({}).month).toEqual([
-      { name: '1', count: 1 },
-      { name: '2', count: 2 },
       { name: '3', count: 1 },
+      { name: '2', count: 2 },
+      { name: '1', count: 1 },
     ])
     expect(facetsOf({ market: 'en-us' }).month).toEqual([
-      { name: '2', count: 1 },
       { name: '3', count: 1 },
+      { name: '2', count: 1 },
     ])
   })
 

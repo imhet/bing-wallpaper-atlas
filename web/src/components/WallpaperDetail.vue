@@ -86,17 +86,20 @@ onUnmounted(() => {
       aria-modal="true"
       aria-labelledby="detail-title"
     >
-      <button ref="closeBtn" class="close" aria-label="关闭" @click="emit('close')">✕</button>
-      <button
-        class="fav-btn"
-        :class="{ on: isFav }"
-        :aria-label="isFav ? '取消收藏' : '收藏'"
-        :title="isFav ? '取消收藏' : '收藏'"
-        @click="emit('toggle-fav', record)"
-      >
-        <HeartIcon :class="{ on: isFav }" />
-        {{ isFav ? '已收藏' : '收藏' }}
-      </button>
+      <div class="modal-top">
+        <button
+          class="fav-btn"
+          :class="{ on: isFav }"
+          :aria-label="isFav ? '取消收藏' : '收藏'"
+          :title="isFav ? '取消收藏' : '收藏'"
+          @click="emit('toggle-fav', record)"
+        >
+          <HeartIcon :class="{ on: isFav }" />
+          {{ isFav ? '已收藏' : '收藏' }}
+        </button>
+        <button class="immerse-btn" @click="emit('immerse')">⛶ 沉浸观赏</button>
+        <button ref="closeBtn" class="close" aria-label="关闭" @click="emit('close')">✕</button>
+      </div>
       <img class="hero" :src="viewSrc" :alt="record.title || record.desc" />
       <!-- 单档（镜像深史原图）也显示档位行，与新图格式一致 -->
       <div class="res-switch" v-if="available.length">
@@ -125,7 +128,6 @@ onUnmounted(() => {
         <dt v-if="record.gallery">图库</dt><dd v-if="record.gallery">{{ record.gallery }}</dd>
       </dl>
       <div class="actions">
-        <button class="immerse-btn" @click="emit('immerse')">⛶ 沉浸观赏</button>
         <a v-for="k in available" :key="k" :href="imageUrl(record.urlbase, RES_SUFFIX[k] || `_${k}`)"
            target="_blank" rel="noopener">下载 {{ RES_LABEL[k] || k }}</a>
         <a v-if="record.copyrightlink" :href="record.copyrightlink" target="_blank" rel="noopener">背后故事 ↗</a>

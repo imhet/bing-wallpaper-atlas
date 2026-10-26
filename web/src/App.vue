@@ -343,8 +343,10 @@ onMounted(async () => {
     v-if="immerseIdx !== null && immerseList[immerseIdx]"
     :records="immerseList"
     :index="immerseIdx"
+    :fav-keys="favKeys"
     @close="immerseIdx = null"
     @update:index="onImmerseNav"
+    @toggle-fav="toggleFav"
   />
   <footer class="site-footer">
     图片版权归 Microsoft 及原作者/图库所有，本站仅做元数据索引与链接。
