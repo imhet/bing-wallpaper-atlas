@@ -12163,5 +12163,42 @@
    "水流",
    "秋天"
   ]
+ },
+ {
+  "id": "fr-fr-2026-10-26",
+  "market": "fr-fr",
+  "date": "2026-10-26",
+  "urlbase": "/th?id=OHR.PondCypress_FR-FR3578297716",
+  "imageKey": "PondCypress",
+  "title": "Le reflet doré de la nature",
+  "desc": "Un bosquet de cyprès des étangs aux couleurs automnales, Géorgie, États-Unis (© Chris Moore/Getty Images)",
+  "location": [
+   "Un bosquet de cyprès des étangs aux couleurs automnales",
+   "Géorgie",
+   "États-Unis"
+  ],
+  "region": null,
+  "photographer": "Chris Moore",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=cypr%C3%A8s+des+%C3%A9tangs&form=hpcapt&filters=HpDate%3a%2220261026_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261026_PondCypress%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "落羽杉",
+   "树",
+   "沼泽",
+   "秋色",
+   "倒影",
+   "红叶",
+   "森林",
+   "水面",
+   "湿地"
+  ]
  }
 ]

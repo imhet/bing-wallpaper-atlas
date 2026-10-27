@@ -12418,5 +12418,49 @@
    "水流",
    "秋天"
   ]
+ },
+ {
+  "id": "de-de-2026-10-26",
+  "market": "de-de",
+  "date": "2026-10-26",
+  "urlbase": "/th?id=OHR.PondCypress_DE-DE2656375905",
+  "imageKey": "PondCypress",
+  "title": "Goldener Spiegel der Natur",
+  "desc": "Teichzypressen in herbstlicher Färbung, Georgia, USA (© Chris Moore/Getty Images)",
+  "location": [
+   "Teichzypressen in herbstlicher Färbung",
+   "Georgia",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "Chris Moore",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Sumpfzypressen&form=hpcapt&filters=HpDate%3a%2220261026_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261026_PondCypress%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "落羽杉",
+   "树",
+   "沼泽",
+   "秋色",
+   "倒影",
+   "红叶",
+   "森林",
+   "水面",
+   "湿地"
+  ]
  }
 ]
