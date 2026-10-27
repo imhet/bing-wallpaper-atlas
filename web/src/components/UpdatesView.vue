@@ -16,6 +16,11 @@ const visibleDays = ref(STEP_DAYS)
 const groups = computed(() =>
   groupByDate(year.value ? props.records.filter((r) => r.date.startsWith(year.value)) : props.records),
 )
+// 返回顶部：下滑超过一屏浮现，长列表翻几屏后一键回顶
+const showTop = ref(false)
+function backTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 watch(year, () => {
   visibleDays.value = STEP_DAYS
 })
@@ -28,6 +33,7 @@ const sentinel = ref(null)
 // scroll 监听 + 元素位置判断最直接；appending 防止惯性滚动期间连发事件一次性加完
 let appending = false
 async function onScroll() {
+  showTop.value = window.scrollY > window.innerHeight
   if (appending) return
   const el = sentinel.value
   if (el && visibleDays.value < groups.value.length && el.getBoundingClientRect().top < window.innerHeight + 800) {
@@ -86,5 +92,8 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
       <p v-if="visibleGroups.length < groups.length" class="hint">下滑加载更早的日期…</p>
       <div ref="sentinel" aria-hidden="true"></div>
     </template>
+    <Transition name="fade">
+      <button v-if="showTop" class="back-top" aria-label="返回顶部" @click="backTop">↑ 顶部</button>
+    </Transition>
   </div>
 </template>

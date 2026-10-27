@@ -414,3 +414,31 @@ test('沉浸模式：进入时显示操作提示，约 2.5 秒后消失', async 
   await page.clock.fastForward(3000)
   await expect(hint).toHaveCount(0)
 })
+
+test('更新日志：下滑后出现返回顶部按钮，点击平滑回顶', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/?view=updates')
+  await expect(page.locator('.day-group').first()).toBeVisible({ timeout: 15000 })
+  const topBtn = page.locator('.back-top')
+  await expect(topBtn).toBeHidden()
+  await page.mouse.wheel(0, 3000)
+  await expect(topBtn).toBeVisible()
+  await topBtn.click()
+  await expect.poll(() => page.evaluate(() => window.scrollY), { timeout: 5000 }).toBe(0)
+  await expect(topBtn).toBeHidden()
+})
+
+test('首页卡片日期严格倒序（同图跨市场去重后按本体日重排）', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await expect(page.locator('.card').first()).toBeVisible({ timeout: 15000 })
+  // 等全量到齐：渐进窗口内 records 重排会造成瞬时逆序假象
+  await expect(page.locator('.result-count')).not.toContainText('加载中', { timeout: 15000 })
+  const dates = await page
+    .locator('.card .date')
+    .evaluateAll((els) => els.map((e) => e.textContent.trim().slice(0, 10)))
+  expect(dates.length).toBeGreaterThan(50)
+  const bad = []
+  for (let i = 1; i < dates.length; i++) if (dates[i] > dates[i - 1]) bad.push(`${dates[i - 1]}→${dates[i]}@${i}`)
+  expect(bad, `日期逆序点: ${bad.slice(0, 5).join(', ')}`).toHaveLength(0)
+})
