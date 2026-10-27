@@ -9,6 +9,12 @@ async function stubThumbs(page) {
 
 const cardImgs = (page) => page.locator('.card img')
 
+// 等全量分片到齐：渐进窗口内 records 重排会让列表起点漂移 1~2 张（分级加载的已知行为），
+// 沉浸类用例的列表位置断言必须在全量口径下进行
+async function waitFullData(page) {
+  await expect(page.locator('.result-count')).not.toContainText('加载中', { timeout: 15000 })
+}
+
 test('首屏渐进渲染 120 张且无重复图（同图多市场去重）', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
@@ -304,8 +310,7 @@ test('更新日志：按日期倒序分组，点卡片进详情，URL 可直达'
 test('沉浸模式：弹层进入，键盘切换与到头禁用，Esc 只退沉浸不关弹层', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
-  // 等全量分片到齐再操作：渐进窗口内 records 会重排，沉浸起点会随列表口径漂移（分级加载的已知行为）
-  await expect(page.locator('.result-count')).not.toContainText('加载中', { timeout: 15000 })
+  await waitFullData(page)
   await page.locator('.card').first().click()
   await expect(page.locator('.modal h2')).toBeVisible()
   await page.getByRole('button', { name: '沉浸观赏' }).click()
@@ -343,6 +348,7 @@ test('沉浸模式：鼠标移动显示信息，空闲 3 秒后自动隐藏（�
 test('沉浸模式：左右拖拽（触摸滑动）切换上一张/下一张', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
+  await waitFullData(page)
   await page.locator('.card').first().click()
   await page.getByRole('button', { name: '沉浸观赏' }).click()
   const count = page.locator('.viewer-count')
@@ -362,6 +368,7 @@ test('沉浸模式：左右拖拽（触摸滑动）切换上一张/下一张', a
 test('沉浸模式：双击图片收藏，↑ 收藏 ↓ 取消，心形按钮实时同步', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
+  await waitFullData(page)
   await page.locator('.card').first().click()
   await page.locator('.modal-top .immerse-btn').click()
   const favBtn = page.locator('.viewer .viewer-fav')
@@ -377,6 +384,10 @@ test('沉浸模式：双击图片收藏，↑ 收藏 ↓ 取消，心形按钮�
   await expect(page.locator('.site-header')).toContainText('收藏 1')
   await page.waitForTimeout(1200) // 动画结束后移除
   await expect(page.locator('.heart-burst')).toHaveCount(0)
+  // 顶排两按钮不得重叠（曾经被残留的 absolute 定位拽出 flex 流叠在一起）
+  const favBox = await page.locator('.viewer-fav').boundingBox()
+  const closeBox = await page.locator('.viewer-close').boundingBox()
+  expect(favBox.x + favBox.width, '收藏按钮右缘应落在关闭按钮左缘之左').toBeLessThanOrEqual(closeBox.x)
 })
 
 test('沉浸模式：未预加载的慢图切换显示 spinner，已就绪的图立即切换不闪黑', async ({ page }) => {
@@ -406,6 +417,7 @@ test('沉浸模式：进入时显示操作提示，约 2.5 秒后消失', async 
   await page.clock.install()
   await stubThumbs(page)
   await page.goto('/')
+  await waitFullData(page)
   await page.locator('.card').first().click()
   await page.locator('.modal-top .immerse-btn').click()
   const hint = page.locator('.viewer-hint')

@@ -173,8 +173,6 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
   25% { transform: scale(1.25); opacity: 1; }
   100% { transform: scale(1.1) translateY(-46px); opacity: 0; }
 }
-.viewer-close,
-.viewer-fav,
 .viewer-count,
 .viewer-nav,
 .viewer-meta,
@@ -185,8 +183,18 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
   transition: opacity 0.4s;
   color: #fff;
 }
-/* 顶排按钮（收藏/关闭）：半透明黑底白字，与整体黑底画面协调 */
-.viewer-top { position: absolute; top: 16px; right: 48px; display: flex; gap: 8px; }
+/* 顶排按钮（收藏/关闭）：半透明黑底白字，与整体黑底画面协调。
+   注意两按钮在 .viewer-top flex 流内，绝不能进上面的 absolute 组——否则脱离排布叠在一起 */
+.viewer-top {
+  position: absolute;
+  top: 16px;
+  right: 48px;
+  display: flex;
+  gap: 8px;
+  z-index: 1;
+  color: #fff;
+  transition: opacity 0.4s;
+}
 .viewer-top button {
   display: inline-flex;
   align-items: center;
