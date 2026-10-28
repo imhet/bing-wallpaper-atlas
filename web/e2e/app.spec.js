@@ -180,6 +180,7 @@ test('缩略图加载中显示骨架占位，加载完成后淡入', async ({ pa
     await new Promise((r) => setTimeout(r, 1200))
     await route.fulfill({ status: 200, contentType: 'image/png', body: pixel })
   })
+  await page.route('https://cdn.jsdelivr.net/**', (route) => route.fulfill({ status: 503, body: '' }))
   await page.goto('/')
   await expect(page.locator('.card .thumb .skeleton').first()).toBeVisible()
   await expect(page.locator('.card .thumb').first()).toHaveClass(/loaded/, { timeout: 6000 })
@@ -188,6 +189,7 @@ test('缩略图加载中显示骨架占位，加载完成后淡入', async ({ pa
 
 test('缩略图加载失败显示兜底占位', async ({ page }) => {
   await page.route('**/th?id=*', (route) => route.fulfill({ status: 404, contentType: 'image/jpeg', body: Buffer.from('') }))
+  await page.route('https://cdn.jsdelivr.net/**', (route) => route.fulfill({ status: 503, body: '' }))
   await page.goto('/')
   await expect(page.locator('.card .thumb-fallback').first()).toBeVisible()
 })

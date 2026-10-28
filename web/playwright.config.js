@@ -10,6 +10,9 @@ export default defineConfig({
     baseURL: 'http://localhost:4173',
     channel: 'chrome', // 系统 Chrome，免下载浏览器
     headless: true,
+    // SW 发起的 fetch 不走 page.route——开着会让所有用例的 mock 失效。
+    // SW 行为只在 sw.spec.js 里用 test.use 单独开启
+    serviceWorkers: 'block',
   },
   webServer: {
     command: 'npm run preview -- --port 4173 --strictPort',
