@@ -1,5 +1,66 @@
 import { describe, expect, it, vi } from 'vitest'
-import { dedupeByUrlbase, imageUrl, loadAllRecords, loadYearShards, mapsUrl, thumbUrl } from './api'
+import { dedupeByUrlbase, fetchJSON, imageUrl, loadAllRecords, loadYearShards, mapsUrl, resetCdnProbe, thumbUrl } from './api'
+
+describe('fetchJSON 的 jsDelivr 分流（国内直连 github.io 只有几十 KB/s）', () => {
+  const CDN = 'https://cdn.jsdelivr.net/gh/imhet/bing-wallpaper-atlas@main/data/zh-cn/2026.json'
+
+  it('HEAD 预检可达时数据请求走 jsDelivr', async () => {
+    resetCdnProbe()
+    const calls = []
+    vi.stubGlobal('fetch', (url, init) => {
+      calls.push([url, init?.method || 'GET'])
+      if (init?.method === 'HEAD') return Promise.resolve({ ok: true })
+      return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: 'via-cdn' }]) })
+    })
+    const out = await fetchJSON('./data/zh-cn/2026.json')
+    expect(calls[0]).toEqual(['https://cdn.jsdelivr.net/gh/imhet/bing-wallpaper-atlas@main/data/aggregations.json', 'HEAD'])
+    expect(calls[1]).toEqual([CDN, 'GET'])
+    expect(out).toEqual([{ id: 'via-cdn' }])
+    vi.unstubAllGlobals()
+  })
+
+  it('HEAD 预检失败走 Pages 相对路径', async () => {
+    resetCdnProbe()
+    const calls = []
+    vi.stubGlobal('fetch', (url) => {
+      calls.push(url)
+      if (url.includes('jsdelivr')) return Promise.reject(new Error('unreachable'))
+      return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: 'local' }]) })
+    })
+    expect(await fetchJSON('./data/zh-cn/2026.json')).toEqual([{ id: 'local' }])
+    expect(calls).toEqual([expect.stringContaining('jsdelivr'), './data/zh-cn/2026.json'])
+    vi.unstubAllGlobals()
+  })
+
+  it('CDN 拉取中途失败降级 Pages，且后续请求不再反复探测', async () => {
+    resetCdnProbe()
+    const calls = []
+    vi.stubGlobal('fetch', (url, init) => {
+      calls.push([url, init?.method || 'GET'])
+      if (calls.length === 1) return Promise.resolve({ ok: true }) // HEAD 可达
+      if (calls.length === 2) return Promise.reject(new Error('cdn json failed'))
+      return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: 'local' }]) })
+    })
+    expect(await fetchJSON('./data/zh-cn/2026.json')).toEqual([{ id: 'local' }])
+    const n = calls.length
+    expect(await fetchJSON('./data/zh-cn/2025.json')).toEqual([{ id: 'local' }])
+    expect(calls.length).toBe(n + 1) // 第二次调用只有一个请求：直接走本地
+    expect(calls[n][0]).toBe('./data/zh-cn/2025.json')
+    vi.unstubAllGlobals()
+  })
+
+  it('非 data 路径不探测 jsDelivr（站点自身资源没有分流需求）', async () => {
+    resetCdnProbe()
+    const calls = []
+    vi.stubGlobal('fetch', (url, init) => {
+      calls.push([url, init?.method || 'GET'])
+      return Promise.resolve({ ok: true, json: () => Promise.resolve({}) })
+    })
+    await fetchJSON('./other.json')
+    expect(calls).toEqual([['./other.json', 'GET']])
+    vi.unstubAllGlobals()
+  })
+})
 
 describe('mapsUrl（详情页地点跳地图）', () => {
   it('joins location parts and encodes them into a Google Maps search URL', () => {
@@ -18,6 +79,7 @@ describe('loadYearShards', () => {
   it('fetches every market that has the year and flattens', async () => {
     const calls = []
     vi.stubGlobal('fetch', (url) => {
+      if (String(url).includes('jsdelivr')) return Promise.resolve({ ok: false }) // CDN 不可达：走 Pages 路径
       calls.push(url)
       return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: url, date: '2024-01-01' }]) })
     })
@@ -31,6 +93,7 @@ describe('loadYearShards', () => {
   it('markets 参数只拉指定市场（首屏分级：主视角市场先出图，其余后台补）', async () => {
     const calls = []
     vi.stubGlobal('fetch', (url) => {
+      if (String(url).includes('jsdelivr')) return Promise.resolve({ ok: false })
       calls.push(url)
       return Promise.resolve({ ok: true, json: () => Promise.resolve([{ id: url, date: '2026-01-01' }]) })
     })
@@ -43,15 +106,17 @@ describe('loadYearShards', () => {
 
   it('returns records newest first（首屏一级直接渲染，分片文件是日期正序，不排序会先显示 1 月）', async () => {
     vi.stubGlobal('fetch', (url) =>
-      Promise.resolve({
-        ok: true,
-        json: () =>
-          Promise.resolve(
-            url.includes('zh-cn')
-              ? [{ id: 'zh-01', date: '2026-01-01' }, { id: 'zh-10', date: '2026-10-14' }]
-              : [{ id: 'us-06', date: '2026-06-01' }],
-          ),
-      }),
+      String(url).includes('jsdelivr')
+        ? Promise.resolve({ ok: false })
+        : Promise.resolve({
+            ok: true,
+            json: () =>
+              Promise.resolve(
+                url.includes('zh-cn')
+                  ? [{ id: 'zh-01', date: '2026-01-01' }, { id: 'zh-10', date: '2026-10-14' }]
+                  : [{ id: 'us-06', date: '2026-06-01' }],
+              ),
+          }),
     )
     const out = await loadYearShards({ years_by_market: { 'zh-cn': [2026], 'en-us': [2026] } }, 2026)
     expect(out.map((r) => r.date)).toEqual(['2026-10-14', '2026-06-01', '2026-01-01'])
@@ -61,6 +126,7 @@ describe('loadYearShards', () => {
   it('fetches nothing for a year no market has', async () => {
     const calls = []
     vi.stubGlobal('fetch', (url) => {
+      if (String(url).includes('jsdelivr')) return Promise.resolve({ ok: false })
       calls.push(url)
       return Promise.resolve({ ok: true, json: () => Promise.resolve([]) })
     })
@@ -73,17 +139,19 @@ describe('loadYearShards', () => {
   it('loadAllRecords sorts newest first (search/首屏默认全部年份时最新壁纸在前)', async () => {
     // 分片按 market 字母序 concat：2024 记录在前也必须重排为 date 倒序
     vi.stubGlobal('fetch', (url) =>
-      Promise.resolve({
-        ok: true,
-        json: () =>
-          Promise.resolve(
-            url.includes('2026')
-              ? [{ id: 'zh-2026', date: '2026-01-01' }]
-              : url.includes('2025')
-                ? [{ id: 'zh-2025', date: '2025-06-01' }]
-                : [{ id: 'us-2024', date: '2024-12-31' }],
-          ),
-      }),
+      String(url).includes('jsdelivr')
+        ? Promise.resolve({ ok: false })
+        : Promise.resolve({
+            ok: true,
+            json: () =>
+              Promise.resolve(
+                url.includes('2026')
+                  ? [{ id: 'zh-2026', date: '2026-01-01' }]
+                  : url.includes('2025')
+                    ? [{ id: 'zh-2025', date: '2025-06-01' }]
+                    : [{ id: 'us-2024', date: '2024-12-31' }],
+              ),
+          }),
     )
     const out = await loadAllRecords({ years_by_market: { 'en-us': [2024], 'zh-cn': [2025, 2026] } })
     expect(out.map((r) => r.id)).toEqual(['zh-2026', 'zh-2025', 'us-2024'])

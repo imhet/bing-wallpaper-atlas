@@ -113,3 +113,9 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
         if: steps.diff.outputs.changed == 'true' || inputs.force_deploy == true
+      # 数据文件走 jsDelivr 分流（api.js fetchJSON），@main 有最长 12h 缓存——部署后主动失效，
+      # 否则国内用户最长半天读到旧分片。purge 失败只是回退到自然过期，不红灯部署
+      - name: 刷新 jsDelivr 缓存
+        if: steps.diff.outputs.changed == 'true' || inputs.force_deploy == true
+        run: python -m crawler.purge_jsdelivr --data-dir data
+        continue-on-error: true

@@ -15,7 +15,34 @@ export const thumbUrl = (r) =>
       ? imageUrl(r.urlbase, '_400x240.jpg')
       : imageUrl(r.urlbase, '_1920x1080.jpg')
 
+// 数据文件走 jsDelivr 分流：国内直连 github.io 吞吐只有几十 KB/s，jsDelivr 有国内节点
+// （模型与 wasm 已走同一 CDN，见 semantic-engine.js）。@main 有最长 12h 缓存，
+// daily.yml 部署后调用 purge API 主动刷新（crawler/purge_jsdelivr.py），新鲜度压到分钟级。
+// HEAD 预检一次（不可达只等几秒就能回退）；拉取失败降级 Pages 并记住结果，不反复探测
+const CDN_DATA = 'https://cdn.jsdelivr.net/gh/imhet/bing-wallpaper-atlas@main/'
+let cdnUsable = null // null = 未探测
+export function resetCdnProbe() {
+  cdnUsable = null
+}
+async function probeCdn() {
+  if (cdnUsable !== null) return cdnUsable
+  try {
+    const resp = await fetch(`${CDN_DATA}data/aggregations.json`, { method: 'HEAD', signal: AbortSignal.timeout(5000) })
+    cdnUsable = resp.ok
+  } catch {
+    cdnUsable = false
+  }
+  return cdnUsable
+}
+
 export async function fetchJSON(url) {
+  if (url.startsWith('./data/') && (await probeCdn())) {
+    try {
+      return await (await fetch(CDN_DATA + url.slice(2))).json()
+    } catch {
+      cdnUsable = false // CDN 拉取失败：降级本地，后续请求不再走 CDN
+    }
+  }
   const resp = await fetch(url)
   if (!resp.ok) throw new Error(`${url}: HTTP ${resp.status}`)
   return resp.json()

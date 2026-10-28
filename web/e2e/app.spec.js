@@ -1,10 +1,12 @@
 import { expect, test } from '@playwright/test'
 
-// 拦截 Bing CDN 缩略图：返回 1px 占位，测试只关注数据与交互层
-async function stubThumbs(page) {
+// 外网隔离：Bing CDN 缩略图返回占位、jsDelivr 数据分流按不可达处理（fetchJSON 自动回退
+// Pages 相对路径）——测试只关注本地数据与交互层，不依赖第三方可用性
+async function stubExternal(page) {
   await page.route('**/th?id=*', (route) =>
     route.fulfill({ status: 200, contentType: 'image/jpeg', body: Buffer.from('') }),
   )
+  await page.route('https://cdn.jsdelivr.net/**', (route) => route.fulfill({ status: 503, body: '' }))
 }
 
 const cardImgs = (page) => page.locator('.card img')
@@ -16,7 +18,7 @@ async function waitFullData(page) {
 }
 
 test('首屏渐进渲染 120 张且无重复图（同图多市场去重）', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await expect(cardImgs(page)).toHaveCount(120)
   const keys = await cardImgs(page).evaluateAll((imgs) =>
@@ -33,7 +35,7 @@ test('首屏渐进渲染 120 张且无重复图（同图多市场去重）', asy
 })
 
 test('首屏分级：主视角市场先渲染，其余市场分片延迟不阻塞首屏', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   // 四市场 2026 分片延迟 3 秒——首屏只等 zh-cn/en-us（慢链路首屏批 3.3MB 是首页慢主因）。
   // 延迟响应给固定空 body：用例只关心首屏出图不等数据内容；route.fetch 在 test 结束后会炸（Test ended）
   for (const m of ['ja-jp', 'de-de', 'fr-fr', 'en-gb'])
@@ -47,7 +49,7 @@ test('首屏分级：主视角市场先渲染，其余市场分片延迟不阻�
 })
 
 test('首屏首张卡即最新日期（一级分片必须倒序渲染，不能等全量到货才纠正）', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   // 非一级分片直接阻断：断言只针对「一级渲染窗口」，避免全量到货后的重渲染竞态
   await page.route('**/data/*/*.json', async (route) => {
     if (/\/(zh-cn|en-us)\/2026\.json$/.test(route.request().url())) await route.continue()
@@ -65,8 +67,26 @@ test('首屏首张卡即最新日期（一级分片必须倒序渲染，不能�
   await page.unrouteAll({ behavior: 'ignoreErrors' })
 })
 
+test('数据请求走 jsDelivr 分流且页面正常渲染（CDN 可达路径）', async ({ page }) => {
+  await page.route('**/th?id=*', (route) =>
+    route.fulfill({ status: 200, contentType: 'image/jpeg', body: Buffer.from('') }),
+  )
+  const cdnCalls = []
+  // 放行 jsDelivr：数据内容仍取本地 server 的同一份文件——断言点是「请求走了 CDN 域名」
+  await page.route('https://cdn.jsdelivr.net/**', async (route) => {
+    const path = new URL(route.request().url()).pathname.replace(/^\/gh\/imhet\/bing-wallpaper-atlas@main/, '')
+    cdnCalls.push(path)
+    await route.fulfill({ response: await page.request.get(path) })
+  })
+  await page.goto('/')
+  await waitFullData(page)
+  await expect(cardImgs(page).first()).toBeVisible()
+  expect(cdnCalls).toContain('/data/aggregations.json')
+  expect(cdnCalls.some((p) => /^\/data\/zh-cn\/\d{4}\.json$/.test(p)), '分片也应走 CDN').toBe(true)
+})
+
 test('详情弹层展示同图的其他市场版本并可切换', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await page.fill('input.query', '2024-04-02')
   await expect(page.locator('.card').first()).toBeVisible({ timeout: 15000 }) // 全量分片到货后才命中
@@ -80,7 +100,7 @@ test('详情弹层展示同图的其他市场版本并可切换', async ({ page 
 })
 
 test('详情弹层展示相似的图并可点击切换（图向量就绪后）', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   // 相似索引在全量数据 + 空闲回调后建（只拉图向量分片），给足就绪时间
   await page.fill('input.query', '2024-04-02')
@@ -119,7 +139,7 @@ test('缩略图加载失败显示兜底占位', async ({ page }) => {
 })
 
 test('全量数据加载中：零结果提示「数据仍在加载」而非「没有匹配」', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   // 非一级分片延迟 8 秒：模拟慢链路全量补齐期间搜索（西藏记录在 zh-cn/2024，尚未到货）
   await page.route('**/data/*/*.json', async (route) => {
     if (!/\/(zh-cn|en-us)\/2026\.json$/.test(route.request().url()))
@@ -151,7 +171,7 @@ test('分享元信息：og 图存在，描述不含过期计数', async ({ page 
 })
 
 test('首屏数据未到时不显示「没有匹配的壁纸」', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.route('**/data/*/*.json', async (route) => {
     await new Promise((r) => setTimeout(r, 2000))
     await route.continue()
@@ -164,7 +184,7 @@ test('首屏数据未到时不显示「没有匹配的壁纸」', async ({ page 
 })
 
 test('详情：默认 1080p，切换市场版本后标签与档位同步', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await page.fill('input.query', '2024-04-06')
   await expect(page.locator('.card').first()).toBeVisible({ timeout: 15000 }) // 全量分片到货后才命中
@@ -190,7 +210,7 @@ test('详情：默认 1080p，切换市场版本后标签与档位同步', async
 })
 
 test('详情弹层：焦点进入并归还，背景滚动锁定', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await expect(page.locator('.card').first()).toBeVisible()
   const card = page.locator('.card').first()
@@ -207,7 +227,7 @@ test('详情弹层：焦点进入并归还，背景滚动锁定', async ({ page 
 })
 
 test('结果计数：无筛选显示总数，搜索后显示命中张数', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   const count = page.locator('.result-count')
   // 等全量数据到货（首屏一级只有最新年，总数需背景补齐）
@@ -218,7 +238,7 @@ test('结果计数：无筛选显示总数，搜索后显示命中张数', async
 })
 
 test('筛选面板：按钮打开底部面板，面板内搜索并选中摄影师', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await expect(page.locator('.card').first()).toBeVisible()
   // 原生下拉全部换成按钮 + 面板（摄影师取值 4000+、最长 147 字符，原生下拉撑爆宽度）
@@ -243,7 +263,7 @@ test('筛选面板：按钮打开底部面板，面板内搜索并选中摄影�
 })
 
 test('URL 直达带摄影师筛选：按钮文案与结果计数正确还原', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/?photographer=Nick+Brundle+Photography')
   const count = page.locator('.result-count')
   await expect(count).toHaveText(/^找到 \d+ 张$/, { timeout: 20000 })
@@ -254,7 +274,7 @@ test('URL 直达带摄影师筛选：按钮文案与结果计数正确还原', a
 })
 
 test('选中值被其他筛选筛空时，面板仍保留该项并显示 0', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   // 分面口径下 UI 选不出 0 结果组合，真实场景是分享链接直达：
   // George Steinmetz 仅出现在 en-us，与 zh-cn 组合为空
   await page.goto('/?photographer=George+Steinmetz&market=zh-cn')
@@ -269,7 +289,7 @@ test('选中值被其他筛选筛空时，面板仍保留该项并显示 0', asy
 })
 
 test('筛选面板：焦点进入面板并在关闭后归还，打开时锁定背景滚动', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   const trigger = page.getByRole('button', { name: /全部摄影师/ })
   await trigger.click()
@@ -286,7 +306,7 @@ test('筛选面板：焦点进入面板并在关闭后归还，打开时锁定�
 })
 
 test('滚动到底部追加下一批卡片', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await expect(cardImgs(page)).toHaveCount(120)
   await page.locator('div[aria-hidden="true"]').scrollIntoViewIfNeeded()
@@ -294,7 +314,7 @@ test('滚动到底部追加下一批卡片', async ({ page }) => {
 })
 
 test('市场筛选联动：选 zh-cn 后所有卡片来自中国市场', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await expect(cardImgs(page).first()).toBeVisible()
   await page.getByRole('button', { name: /全部市场/ }).click()
@@ -307,7 +327,7 @@ test('市场筛选联动：选 zh-cn 后所有卡片来自中国市场', async (
 })
 
 test('更新日志：按日期倒序分组，点卡片进详情，URL 可直达', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/?view=updates')
   await expect(page.locator('.day-group').first()).toBeVisible({ timeout: 15000 })
   const dates = await page.locator('.day-group h3').evaluateAll((els) => els.map((e) => e.textContent.trim().slice(0, 10)))
@@ -325,7 +345,7 @@ test('更新日志：按日期倒序分组，点卡片进详情，URL 可直达'
 })
 
 test('沉浸模式：弹层进入，键盘切换与到头禁用，Esc 只退沉浸不关弹层', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await waitFullData(page)
   await page.locator('.card').first().click()
@@ -351,7 +371,7 @@ test('沉浸模式：弹层进入，键盘切换与到头禁用，Esc 只退沉�
 
 test('沉浸模式：鼠标移动显示信息，空闲 3 秒后自动隐藏（含光标）', async ({ page }) => {
   await page.clock.install()
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await page.locator('.card').first().click()
   await page.getByRole('button', { name: '沉浸观赏' }).click()
@@ -363,7 +383,7 @@ test('沉浸模式：鼠标移动显示信息，空闲 3 秒后自动隐藏（�
 })
 
 test('沉浸模式：左右拖拽（触摸滑动）切换上一张/下一张', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await waitFullData(page)
   await page.locator('.card').first().click()
@@ -383,7 +403,7 @@ test('沉浸模式：左右拖拽（触摸滑动）切换上一张/下一张', a
 })
 
 test('沉浸模式：双击图片收藏，↑ 收藏 ↓ 取消，心形按钮实时同步', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await waitFullData(page)
   await page.locator('.card').first().click()
@@ -432,7 +452,7 @@ test('沉浸模式：未预加载的慢图切换显示 spinner，已就绪的图
 
 test('沉浸模式：进入时显示操作提示，约 2.5 秒后消失', async ({ page }) => {
   await page.clock.install()
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await waitFullData(page)
   await page.locator('.card').first().click()
@@ -445,7 +465,7 @@ test('沉浸模式：进入时显示操作提示，约 2.5 秒后消失', async 
 })
 
 test('更新日志：下滑后出现返回顶部按钮，点击平滑回顶', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/?view=updates')
   await expect(page.locator('.day-group').first()).toBeVisible({ timeout: 15000 })
   const topBtn = page.locator('.back-top')
@@ -458,7 +478,7 @@ test('更新日志：下滑后出现返回顶部按钮，点击平滑回顶', as
 })
 
 test('首页卡片日期严格倒序（同图跨市场去重后按本体日重排）', async ({ page }) => {
-  await stubThumbs(page)
+  await stubExternal(page)
   await page.goto('/')
   await expect(page.locator('.card').first()).toBeVisible({ timeout: 15000 })
   // 等全量到齐：渐进窗口内 records 重排会造成瞬时逆序假象
