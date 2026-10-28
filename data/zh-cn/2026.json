@@ -13305,5 +13305,51 @@
    "水面",
    "湿地"
   ]
+ },
+ {
+  "id": "zh-cn-2026-10-27",
+  "market": "zh-cn",
+  "date": "2026-10-27",
+  "urlbase": "/th?id=OHR.KuneticeCastle_ZH-CN8895858920",
+  "imageKey": "KuneticeCastle",
+  "title": "历史守望之地",
+  "desc": "库涅季采山城堡，波希米亚，捷克 (© Marek Saroch/Alamy)",
+  "location": [
+   "库涅季采山城堡",
+   "波希米亚",
+   "捷克"
+  ],
+  "region": "捷克",
+  "photographer": "Marek Saroch",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%BA%93%E6%B6%85%E5%AD%A3%E9%87%87%E5%B1%B1%E5%9F%8E%E5%A0%A1&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261027_KuneticeCastle%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "捷克",
+   "czech",
+   "czechia",
+   "czech republic"
+  ],
+  "content_tags": [
+   "城堡",
+   "建筑",
+   "日出",
+   "晨雾",
+   "云海",
+   "山丘",
+   "森林",
+   "霞光",
+   "太阳",
+   "岩石",
+   "山谷",
+   "平原",
+   "树木"
+  ]
  }
 ]

@@ -12959,5 +12959,51 @@
    "水面",
    "湿地"
   ]
+ },
+ {
+  "id": "en-gb-2026-10-28",
+  "market": "en-gb",
+  "date": "2026-10-28",
+  "urlbase": "/th?id=OHR.KuneticeCastle_EN-GB5805400783",
+  "imageKey": "KuneticeCastle",
+  "title": "Where history stands watch",
+  "desc": "Kunětická hora Castle, Bohemia, Czechia (© Marek Saroch/Alamy)",
+  "location": [
+   "Kunětická hora Castle",
+   "Bohemia",
+   "Czechia"
+  ],
+  "region": "捷克",
+  "photographer": "Marek Saroch",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=Kuneticka+hora+Castle&form=hpcapt&filters=HpDate%3a%2220261028_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261028_KuneticeCastle%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "捷克",
+   "czech",
+   "czechia",
+   "czech republic"
+  ],
+  "content_tags": [
+   "城堡",
+   "建筑",
+   "日出",
+   "晨雾",
+   "云海",
+   "山丘",
+   "森林",
+   "霞光",
+   "太阳",
+   "岩石",
+   "山谷",
+   "平原",
+   "树木"
+  ]
  }
 ]

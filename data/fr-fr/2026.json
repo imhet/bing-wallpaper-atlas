@@ -12200,5 +12200,46 @@
    "水面",
    "湿地"
   ]
+ },
+ {
+  "id": "fr-fr-2026-10-27",
+  "market": "fr-fr",
+  "date": "2026-10-27",
+  "urlbase": "/th?id=OHR.KuneticeCastle_FR-FR0560907896",
+  "imageKey": "KuneticeCastle",
+  "title": "Gardien de l’histoire",
+  "desc": "Château de Kunětická hora, Bohême, Tchéquie (© Marek Saroch/Alamy)",
+  "location": [
+   "Château de Kunětická hora",
+   "Bohême",
+   "Tchéquie"
+  ],
+  "region": null,
+  "photographer": "Marek Saroch",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=ch%C3%A2teau+de+Kun%C4%9Btick%C3%A1+hora&form=hpcapt&filters=HpDate%3a%2220261027_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261027_KuneticeCastle%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "城堡",
+   "建筑",
+   "日出",
+   "晨雾",
+   "云海",
+   "山丘",
+   "森林",
+   "霞光",
+   "太阳",
+   "岩石",
+   "山谷",
+   "平原",
+   "树木"
+  ]
  }
 ]
