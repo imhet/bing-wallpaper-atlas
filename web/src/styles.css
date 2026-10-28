@@ -110,6 +110,11 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .siblings { margin-top: 14px; }
 .siblings h3 { font-size: 14px; color: var(--muted); }
 .siblings button { display: block; width: 100%; text-align: left; margin-bottom: 6px; }
+/* 相似的图：缩略图小网格，与 siblings 文字列表区分 */
+.similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }
+.similar-grid button { padding: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--panel); cursor: pointer; margin-bottom: 0; }
+.similar-grid img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+.similar-grid button:hover { border-color: var(--accent); }
 
 /* 更新日志：按发布日期分组的浏览视图 */
 .updates { padding: 0 20px 30px; }

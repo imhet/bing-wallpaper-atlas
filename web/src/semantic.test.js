@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { encodeQuery, geoFilterSemScores, packShard, parseShard, pickConcepts, pickQueryVector, rrfFuse, semanticRank } from './semantic'
+import { encodeQuery, geoFilterSemScores, packShard, parseShard, pickConcepts, pickQueryVector, rrfFuse, semanticRank, similarImages } from './semantic'
 import { extractGeoTerms } from './search'
 
 // 构造与 crawler/semantic_index.py 相同的分片格式：BSEM | v1 | dim | count | [klen|key|scale|int8[dim]]
@@ -148,6 +148,31 @@ describe('rrfFuse', () => {
     const records = [rec('a', 'A'), rec('b', 'B')]
     const fused = rrfFuse(records, ['b', 'a'], new Map(), { k: 60 })
     expect(fused.map((r) => r.id)).toEqual(['b', 'a'])
+  })
+})
+
+describe('similarImages（图组间的余弦近邻）', () => {
+  // A 的近邻是 B（几乎同向），C/D 正交更远
+  const rows = [
+    { key: 'A', vec: Int8Array.from([127, 0, 0, 0]), scale: 1 / 127 },
+    { key: 'B', vec: Int8Array.from([126, 12, 0, 0]), scale: 1 / Math.hypot(126, 12) },
+    { key: 'C', vec: Int8Array.from([0, 127, 0, 0]), scale: 1 / 127 },
+    { key: 'D', vec: Int8Array.from([0, 0, 127, 0]), scale: 1 / 127 },
+  ]
+
+  it('按余弦降序返回前 K 个且排除自身', () => {
+    expect(similarImages(rows, 'A', 2).map((x) => x.key)).toEqual(['B', 'C'])
+    expect(similarImages(rows, 'A', 10).map((x) => x.key)).toEqual(['B', 'C', 'D'])
+  })
+
+  it('分数是与自身向量的余弦（乘双 scale）', () => {
+    const out = similarImages(rows, 'B', 1)
+    expect(out[0].key).toBe('A')
+    expect(out[0].score).toBeCloseTo((126 * 127) / (127 * Math.hypot(126, 12)), 5)
+  })
+
+  it('键不存在时返回空数组（该图组未编码向量）', () => {
+    expect(similarImages(rows, 'missing', 5)).toEqual([])
   })
 })
 

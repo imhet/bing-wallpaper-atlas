@@ -4,7 +4,7 @@
 // 任何一步失败都只是让页面退回纯关键词，不影响可用性。
 
 import * as ort from 'onnxruntime-web/wasm'
-import { conceptSims, encodeQuery, parseShard, pickConcepts, pickQueryVector, semanticRank } from './semantic'
+import { conceptSims, encodeQuery, parseShard, pickConcepts, pickQueryVector, semanticRank, similarImages } from './semantic'
 
 ort.env.wasm.numThreads = 1 // 多线程要 SharedArrayBuffer，Pages 没有 COOP/COEP 头
 
@@ -48,6 +48,18 @@ async function loadImageShards(years) {
     }),
   )
   return rows
+}
+
+// 找相似的图只需要图向量，不碰语言模型——单独建索引，语义模型加载失败也不影响它
+export async function createSimilarIndex({ years = [] } = {}) {
+  const images = await loadImageShards(years)
+  if (!images.length) throw new Error('无图向量分片')
+  return {
+    size: images.length,
+    similar(key, topK) {
+      return similarImages(images, key, topK)
+    },
+  }
 }
 
 export async function createSemanticEngine({ years = [], onProgress = () => {} } = {}) {

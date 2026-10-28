@@ -1,10 +1,10 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
-import { MARKET_LABEL, RES_SUFFIX, imageUrl, mapsUrl } from '../api'
+import { MARKET_LABEL, RES_SUFFIX, imageUrl, mapsUrl, thumbUrl } from '../api'
 import { favoriteKey } from '../favorites'
 import HeartIcon from './HeartIcon.vue'
 
-const props = defineProps({ record: Object, records: Array, favKeys: Set })
+const props = defineProps({ record: Object, records: Array, favKeys: Set, similarFor: Function })
 const emit = defineEmits(['close', 'select-sibling', 'search', 'toggle-fav', 'immerse'])
 
 const isFav = computed(() => props.favKeys.has(favoriteKey(props.record)))
@@ -37,6 +37,8 @@ const viewRes = computed(() => {
 const siblings = computed(() =>
   props.records.filter((r) => r.imageKey && r.imageKey === props.record.imageKey && r.id !== props.record.id),
 )
+// 相似的图：图向量余弦近邻（App 传入 similarFor，索引未就绪/无向量时为空，区块整体隐藏）
+const similarRecords = computed(() => (props.similarFor ? props.similarFor(props.record) : []))
 const viewSrc = computed(() => imageUrl(props.record.urlbase, RES_SUFFIX[viewRes.value] || '_1920x1080.jpg'))
 const RES_LABEL = { uhd: '4K UHD (3840×2160)', fhd: '1920×1080', hd: '1366×768', original: '原图' }
 
@@ -137,6 +139,20 @@ onUnmounted(() => {
         <button v-for="s in siblings" :key="s.id" @click="emit('select-sibling', s)">
           {{ MARKET_LABEL[s.market] || s.market }} · {{ s.date }}
         </button>
+      </div>
+      <div v-if="similarRecords.length" class="siblings">
+        <h3>相似的图</h3>
+        <div class="similar-grid">
+          <button
+            v-for="s in similarRecords"
+            :key="s.id"
+            :title="s.title || s.desc"
+            :aria-label="`查看相似的图：${s.title || s.desc}`"
+            @click="emit('select-sibling', s)"
+          >
+            <img :src="thumbUrl(s)" :alt="s.title || s.desc" loading="lazy" decoding="async" />
+          </button>
+        </div>
       </div>
     </div>
   </div>

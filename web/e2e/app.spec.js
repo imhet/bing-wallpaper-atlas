@@ -72,11 +72,28 @@ test('详情弹层展示同图的其他市场版本并可切换', async ({ page 
   await expect(page.locator('.card').first()).toBeVisible({ timeout: 15000 }) // 全量分片到货后才命中
   await page.locator('.card').first().click()
   await expect(page.locator('.modal h2')).toBeVisible()
-  const versions = page.locator('.siblings button')
+  const versions = page.locator('.siblings > button') // 直接子级：排除相似图网格里的按钮
   // JutlandSpring 同图有 en-us/de-de/en-gb/fr-fr 四个市场版本，当前 en-us → 另外 3 个
   await expect(versions).toHaveCount(3)
   await versions.filter({ hasText: 'Deutsch' }).click()
   await expect(page.locator('.modal .facts dd').first()).toContainText('de-de')
+})
+
+test('详情弹层展示相似的图并可点击切换（图向量就绪后）', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  // 相似索引在全量数据 + 空闲回调后建（只拉图向量分片），给足就绪时间
+  await page.fill('input.query', '2024-04-02')
+  await expect(page.locator('.card').first()).toBeVisible({ timeout: 15000 })
+  await page.locator('.card').first().click()
+  await expect(page.locator('.modal h2')).toBeVisible()
+  const grid = page.locator('.similar-grid button')
+  await expect(grid.first()).toBeVisible({ timeout: 20000 })
+  const before = await page.locator('.modal h2').textContent()
+  await grid.first().click()
+  // 相似卡片走 select-sibling 通道：弹层切换到该组代表记录，标题随之变化
+  await expect(page.locator('.modal h2')).not.toHaveText(before)
+  await expect(page.locator('.modal .similar-grid')).toBeVisible()
 })
 
 test('缩略图加载中显示骨架占位，加载完成后淡入', async ({ page }) => {

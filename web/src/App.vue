@@ -3,7 +3,7 @@ import { computed, onMounted, ref, shallowRef, watch } from 'vue'
 import { dedupeByUrlbase, loadAggregations, loadAllRecords, loadYearShards, recordKey } from './api'
 import { applyFilters, buildIndex, extractGeoTerms, parseDateQuery, searchRecords } from './search'
 import { geoFilterSemScores, rrfFuse } from './semantic'
-import { createSemanticEngine } from './semantic-engine'
+import { createSemanticEngine, createSimilarIndex } from './semantic-engine'
 import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
 import { suggestFromDict } from './suggest'
@@ -136,6 +136,25 @@ async function startSemantic() {
 }
 const whenIdle = (fn) => (window.requestIdleCallback ? requestIdleCallback(fn) : setTimeout(fn, 1500))
 
+// 找相似的图：只拉图向量分片（无语言模型），详情弹层按余弦近邻推荐
+const similarIndex = shallowRef(null)
+async function startSimilar() {
+  if (similarIndex.value || !aggregations.value) return
+  try {
+    const years = [...new Set(Object.values(aggregations.value.years_by_market || {}).flat())]
+    similarIndex.value = await createSimilarIndex({ years })
+  } catch (e) {
+    console.warn('[similar] 图向量加载失败，详情页不展示相似推荐：', e)
+  }
+}
+// 相似组映射回去重代表（zh-cn 优先），点击切换选中记录（同 select-sibling 通道）
+function similarFor(record) {
+  const idx = similarIndex.value
+  if (!idx) return []
+  const reps = new Map(dedupeByUrlbase(records.value).map((r) => [recordKey(r), r]))
+  return idx.similar(recordKey(record), 8).map(({ key }) => reps.get(key)).filter(Boolean)
+}
+
 watch(
   [() => filters.value.query, semanticEngine],
   async ([q]) => {
@@ -267,6 +286,7 @@ onMounted(async () => {
         records.value = all
         dataLoading.value = false
         whenIdle(startSemantic)
+        whenIdle(startSimilar)
       })
       .catch(() => {
         dataLoading.value = false
@@ -337,6 +357,7 @@ onMounted(async () => {
     :record="selected"
     :records="records"
     :fav-keys="favKeys"
+    :similar-for="similarFor"
     @close="selected = null"
     @select-sibling="selected = $event"
     @search="searchTag"

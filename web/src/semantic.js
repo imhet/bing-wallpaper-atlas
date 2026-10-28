@@ -123,6 +123,22 @@ export function semanticRank(images, conceptsClip, picked) {
   return scores
 }
 
+// 找相似的图：当前图组向量与全库做余弦（int8 点积 × 双 scale），排除自身取前 K。
+// 只用图向量不碰语言模型，6770 图 × 512 维同步点积毫秒级；键不在库里（该组未编码）返回空数组
+export function similarImages(rows, key, topK) {
+  const self = rows.find((r) => r.key === key)
+  if (!self) return []
+  const scored = rows
+    .filter((r) => r.key !== key)
+    .map((r) => {
+      let dot = 0
+      for (let j = 0; j < self.vec.length; j++) dot += self.vec[j] * r.vec[j]
+      return { key: r.key, score: dot * self.scale * r.scale }
+    })
+  scored.sort((a, b) => b.score - a.score)
+  return scored.slice(0, topK)
+}
+
 // 图组归一键：与 favorites/imgKey 同口径（镜像记录的 urlbase 各市场路径不同，靠 imageKey 归一）
 const groupKey = (r) => r.imageKey || r.urlbase.replace(/_[A-Z]{2}-[A-Z]{2}\d+$/, '')
 
