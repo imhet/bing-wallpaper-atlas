@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test'
+import fs from 'node:fs'
 
 // 外网隔离：Bing CDN 缩略图返回占位、jsDelivr 数据分流按不可达处理（fetchJSON 自动回退
 // Pages 相对路径）——测试只关注本地数据与交互层，不依赖第三方可用性
@@ -97,6 +98,45 @@ test('分享链接 ?pic= 直达详情弹层，关闭后参数移除', async ({ p
   await page.locator('.modal .close').click()
   await expect(page.locator('.modal')).toHaveCount(0)
   expect(new URL(page.url()).searchParams.get('pic')).toBeNull()
+})
+
+test('收藏导入：上传导出格式 JSON 后收藏恢复', async ({ page }) => {
+  await stubExternal(page)
+  const doc = {
+    app: 'bing-wallpaper-atlas',
+    version: 1,
+    favorites: {
+      'test-import-key': {
+        id: 'zh-cn-2026-01-01', date: '2026-01-01', market: 'zh-cn',
+        urlbase: '/th?id=OHR.ImportTest_ZH-CN1', favAt: Date.now(),
+        title: '导入测试图', desc: '', location: [], region: '', photographer: '',
+        gallery: '', copyrightlink: '', tags: [], content_tags: [], resolutions: {},
+      },
+    },
+  }
+  await page.goto('/')
+  await page.click('.site-header button:has-text("收藏")')
+  await page.setInputFiles('input[type=file]', {
+    name: 'favs.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(JSON.stringify(doc)),
+  })
+  await expect(page.locator('.import-msg')).toContainText('已导入 1 张')
+  await expect(page.locator('.card .title', { hasText: '导入测试图' }).first()).toBeVisible()
+})
+
+test('收藏导出：下载的 JSON 是可再导入的 v1 格式', async ({ page }) => {
+  await stubExternal(page)
+  await page.goto('/')
+  await expect(page.locator('.card').first()).toBeVisible()
+  await page.locator('.card .fav').first().dispatchEvent('click') // hover 才显现，dispatchEvent 绕过
+  await page.click('.site-header button:has-text("收藏")')
+  await expect(page.locator('.card').first()).toBeVisible()
+  const [download] = await Promise.all([page.waitForEvent('download'), page.click('button:has-text("导出收藏")')])
+  const doc = JSON.parse(await fs.promises.readFile(await download.path(), 'utf8'))
+  expect(doc.app).toBe('bing-wallpaper-atlas')
+  expect(doc.version).toBe(1)
+  expect(Object.keys(doc.favorites)).toHaveLength(1)
 })
 
 test('详情弹层展示同图的其他市场版本并可切换', async ({ page }) => {

@@ -85,6 +85,10 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .status.error { color: var(--danger); }
 .hint { padding: 0 20px 16px; color: var(--muted); font-size: 13px; }
 .hint button { background: var(--panel); color: var(--accent); border: 1px solid var(--border); border-radius: 6px; padding: 2px 8px; cursor: pointer; font-size: 13px; margin-right: 6px; }
+/* 收藏视图的导出/导入操作行 */
+.fav-actions { display: flex; align-items: center; gap: 8px; padding: 0 20px 12px; }
+.fav-actions button { background: var(--panel); color: var(--accent); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
+.import-msg { color: var(--muted); font-size: 13px; }
 .site-footer { padding: 16px 20px 30px; color: var(--faint); font-size: 12px; }
 .overlay { position: fixed; inset: 0; background: var(--overlay); display: flex; align-items: center; justify-content: center; z-index: 20; }
 .modal { background: var(--modal-bg); border: 1px solid var(--border); border-radius: 12px; max-width: 900px; width: min(92vw, 900px); max-height: 90vh; overflow: auto; padding: 16px; }

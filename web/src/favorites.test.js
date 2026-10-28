@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { favoriteKey, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
+import { exportFavorites, favoriteKey, importFavorites, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
 
 // 测试用 localStorage 替身：同款接口的内存实现
 const memStore = (initial = {}) => {
@@ -53,6 +53,40 @@ describe('toggleFavorite', () => {
     const favs = toggleFavorite({}, rec())
     const jp = rec({ id: 'ja-jp-2026-10-01', market: 'ja-jp', urlbase: '/th?id=OHR.SnowMountain_JA-JP456' })
     expect(toggleFavorite(favs, jp)).toEqual({})
+  })
+})
+
+describe('exportFavorites / importFavorites（换设备/清缓存不丢收藏）', () => {
+  it('导出的 JSON 导入后完整还原', () => {
+    const favs = toggleFavorite({}, rec())
+    const out = importFavorites({}, exportFavorites(favs))
+    expect(out.favorites).toEqual(favs)
+    expect(out.added).toBe(1)
+  })
+
+  it('同 key 冲突保留 favAt 较新的快照', () => {
+    const favs = toggleFavorite({}, rec())
+    const newer = { ...favs, '/th?id=OHR.SnowMountain': { ...favs['/th?id=OHR.SnowMountain'], favAt: Date.now() + 9999 } }
+    const out = importFavorites(favs, exportFavorites(newer))
+    expect(out.favorites['/th?id=OHR.SnowMountain'].favAt).toBe(Date.now() + 9999)
+    // 反向：导入更旧的快照不覆盖现有
+    const back = importFavorites(newer, exportFavorites(favs))
+    expect(back.favorites['/th?id=OHR.SnowMountain'].favAt).toBe(Date.now() + 9999)
+    expect(back.added).toBe(0)
+  })
+
+  it('剔除非法条目（缺 urlbase 的不成其为快照），其余照常导入', () => {
+    const favs = toggleFavorite({}, rec())
+    const doc = JSON.parse(exportFavorites(favs))
+    doc.favorites['bad-key'] = { id: 'x' }
+    const out = importFavorites({}, JSON.stringify(doc))
+    expect(Object.keys(out.favorites)).toEqual(['/th?id=OHR.SnowMountain'])
+  })
+
+  it('JSON 解析失败或结构不对返回 null（UI 提示格式错误）', () => {
+    expect(importFavorites({}, '{oops')).toBeNull()
+    expect(importFavorites({}, '{"a":1}')).toBeNull()
+    expect(importFavorites({}, JSON.stringify({ app: 'other', favorites: [] }))).toBeNull() // favorites 必须是对象
   })
 })
 

@@ -7,7 +7,7 @@ import { createSemanticEngine, createSimilarIndex } from './semantic-engine'
 import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
 import { suggestFromDict } from './suggest'
-import { favoriteKey, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
+import { favoriteKey, exportFavorites, importFavorites, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
 import { groupByDate } from './updates'
 import HeartIcon from './components/HeartIcon.vue'
 import FilterBar from './components/FilterBar.vue'
@@ -32,6 +32,32 @@ watch(favorites, (f) => saveFavorites(localStorage, f))
 const favKeys = computed(() => new Set(Object.keys(favorites.value)))
 function toggleFav(record) {
   favorites.value = toggleFavorite(favorites.value, record)
+}
+
+// 收藏导出/导入：localStorage 只存本机，JSON 文件兜底换设备/清缓存场景
+const fileInput = ref(null)
+const importMsg = ref('')
+function exportFavs() {
+  const blob = new Blob([exportFavorites(favorites.value)], { type: 'application/json' })
+  const a = document.createElement('a')
+  a.href = URL.createObjectURL(blob)
+  a.download = 'bing-wallpaper-favorites.json'
+  a.click()
+  URL.revokeObjectURL(a.href)
+}
+function onImportFile(e) {
+  const file = e.target.files?.[0]
+  e.target.value = '' // 同一文件可重复选：清掉 input 缓存值
+  if (!file) return
+  file.text().then((text) => {
+    const out = importFavorites(favorites.value, text)
+    if (!out) {
+      importMsg.value = '导入失败：不是本站导出的收藏文件'
+      return
+    }
+    favorites.value = out.favorites
+    importMsg.value = `已导入 ${out.added} 张新收藏`
+  })
 }
 
 // 视图切换：browse（搜索浏览）/ favorites（本地收藏）/ updates（更新日志）。
@@ -346,6 +372,12 @@ onMounted(async () => {
     <p v-if="view === 'favorites' && !favoriteRecords.length" class="empty">
       还没有收藏。浏览时点卡片右上角的 ♥，喜欢的图就会留在这里（只存这台浏览器里）。
     </p>
+    <div v-if="view === 'favorites'" class="fav-actions">
+      <button type="button" @click="exportFavs">⬇ 导出收藏</button>
+      <button type="button" @click="fileInput?.click()">⬆ 导入收藏</button>
+      <input ref="fileInput" type="file" accept="application/json,.json" hidden @change="onImportFile" />
+      <span v-if="importMsg" class="import-msg">{{ importMsg }}</span>
+    </div>
     <WallpaperGrid
       :records="view === 'favorites' ? favoriteRecords : visibleResults"
       :query="view === 'favorites' ? '' : filters.query"

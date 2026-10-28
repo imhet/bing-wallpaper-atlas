@@ -39,6 +39,33 @@ export function toggleFavorite(favs, record) {
   return { ...favs, [key]: snapshot(record) }
 }
 
+// 导出/导入：localStorage 只存本机，换设备、清浏览器数据就没了——JSON 文件是兜底。
+// v1 格式 {app, version, favorites}；同 key 冲突保留 favAt 较新（两台设备各自收藏可互导）
+export function exportFavorites(favs) {
+  return JSON.stringify({ app: 'bing-wallpaper-atlas', version: 1, favorites: favs }, null, 2)
+}
+
+export function importFavorites(existing, jsonString) {
+  let doc
+  try {
+    doc = JSON.parse(jsonString)
+  } catch {
+    return null
+  }
+  if (!doc || doc.app !== 'bing-wallpaper-atlas' || doc.version !== 1 || !doc.favorites || typeof doc.favorites !== 'object' || Array.isArray(doc.favorites))
+    return null
+  const merged = { ...existing }
+  let added = 0
+  for (const [key, snap] of Object.entries(doc.favorites)) {
+    if (!snap || typeof snap !== 'object' || !snap.urlbase) continue // 缺 urlbase 不成其为快照
+    if (!merged[key] || (snap.favAt || 0) > (merged[key].favAt || 0)) {
+      if (!merged[key]) added += 1
+      merged[key] = snap
+    }
+  }
+  return { favorites: merged, added }
+}
+
 export function loadFavorites(store) {
   try {
     const raw = store.getItem(STORAGE_KEY)
