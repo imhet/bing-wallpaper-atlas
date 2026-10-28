@@ -55,6 +55,17 @@ test('日期搜索「10-01」命中每一年的今天（MMDD 模式）', async (
   for (const d of dates) expect(d.slice(5), `${d} 应是 10-01`).toBe('10-01')
 })
 
+test('搜索输入防抖：逐键输入停顿后查询才生效（结果与 URL 同步）', async ({ page }) => {
+  await stubThumbs(page)
+  await page.goto('/')
+  await expect(page.locator('.result-count')).not.toContainText('加载中', { timeout: 15000 })
+  // 防抖的负向行为（窗口内不生效）是时序断言不进 E2E；这里锁定正向语义：
+  // 逐键输入后停顿，结果切换为命中口径且 URL 带上完整查询词（而非中间态「雪」）
+  await page.type('input.query', '雪山', { delay: 80 })
+  await expect(page.locator('.result-count')).toContainText('找到', { timeout: 3000 })
+  await expect.poll(() => new URL(page.url()).searchParams.get('q')).toBe('雪山')
+})
+
 test('搜索「优胜美地」与「yosemite」命中数量一致（跨语言桥接）', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')

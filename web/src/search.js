@@ -107,9 +107,15 @@ export function extractGeoTerms(query, regions) {
   return (query || '').trim().split(/[\s,，、;；!！?？的]+/).filter((seg) => set.has(seg))
 }
 
-export function searchRecords(index, records, query, filters) {
-  let result = records
+// 关键词层缓存（单槽）：打分是大头（tokenize + MiniSearch 段间 AND），筛选是廉价的谓词过滤。
+// 分面计数对同一 query 用 6 组不同筛选重查（facets.js computeFacets），不缓存就重复打分 6 次。
+// index/records 引用参与比较——分级加载/全量补齐整体替换 records 后自然失效
+let kwCache = { index: null, records: null, query: null, result: null }
+
+export function keywordStage(index, records, query) {
   const q = (query || '').trim()
+  if (kwCache.index === index && kwCache.records === records && kwCache.query === q) return kwCache.result
+  let result = records
   if (q) {
     const dateMatch = parseDateQuery(q)
     if (dateMatch) {
@@ -131,5 +137,10 @@ export function searchRecords(index, records, query, filters) {
       }
     }
   }
-  return applyFilters(result, filters)
+  kwCache = { index, records, query: q, result }
+  return result
+}
+
+export function searchRecords(index, records, query, filters) {
+  return applyFilters(keywordStage(index, records, query), filters)
 }

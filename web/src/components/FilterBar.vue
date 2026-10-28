@@ -46,8 +46,23 @@ function label(dim, value) {
 function btnText(dim) {
   return props.filters[dim.key] ? label(dim, String(props.filters[dim.key])) : dim.all
 }
+// 搜索防抖：逐键打字不触发全链路重算（fusedResults + 分面 6 维），停顿 200ms 才提交查询。
+// 外部设置（点标签/建议词/URL 还原）绕过防抖立即生效
+const rawQuery = ref(props.filters.query)
+let debounceTimer = null
+watch(
+  () => props.filters.query,
+  (v) => {
+    clearTimeout(debounceTimer)
+    rawQuery.value = v
+  },
+)
+onUnmounted(() => clearTimeout(debounceTimer))
 function set(key, value) {
-  emit('update:filters', { ...props.filters, [key]: value })
+  if (key !== 'query') return emit('update:filters', { ...props.filters, [key]: value })
+  rawQuery.value = value
+  clearTimeout(debounceTimer)
+  debounceTimer = setTimeout(() => emit('update:filters', { ...props.filters, query: value }), 200)
 }
 function openSheet(key, e) {
   lastTrigger.value = e?.currentTarget || document.activeElement
@@ -91,7 +106,7 @@ onUnmounted(() => {
   <div class="filter-bar">
     <input
       class="query"
-      :value="filters.query"
+      :value="rawQuery"
       placeholder="搜索标题、地点、画面内容…（如：中国 西藏 雪山；日期如 10-01）"
       aria-label="搜索"
       @input="set('query', $event.target.value)"

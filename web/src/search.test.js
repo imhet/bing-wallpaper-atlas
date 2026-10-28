@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { buildIndex, highlightParts, parseDateQuery, searchRecords, tokenize } from './search'
+import { buildIndex, highlightParts, keywordStage, parseDateQuery, searchRecords, tokenize } from './search'
 
 const records = [
   { id: 'zh-cn-2023-10-05', market: 'zh-cn', date: '2023-10-05', title: '云海仙境',
@@ -172,5 +172,32 @@ describe('searchRecords 相关度排序', () => {
 
   it('无查询时保持原数组顺序（首屏最新日期靠它）', () => {
     expect(searchRecords(rankIndex, rankDocs, '', {}).map((r) => r.id)).toEqual(['weak', 'strong', 'strong2'])
+  })
+})
+
+describe('keywordStage（关键词层缓存：分面对同一 query 用 6 组筛选重查，打分只该算一次）', () => {
+  it('同 index/records/query 两次调用返回同一引用，且结果与 searchRecords 去掉筛选后一致', () => {
+    const a = keywordStage(index, records, '雪山')
+    const b = keywordStage(index, records, '雪山')
+    expect(b).toBe(a)
+    expect(a.map((r) => r.id)).toEqual(searchRecords(index, records, '雪山', {}).map((r) => r.id))
+  })
+
+  it('query 变化后缓存失效，新查询结果正确', () => {
+    const alps = keywordStage(index, records, 'alps')
+    const sakura = keywordStage(index, records, '東京')
+    expect(alps.map((r) => r.id)).toEqual(['en-us-2024-01-01'])
+    expect(sakura.map((r) => r.id)).toEqual(['ja-jp-2024-03-01'])
+    // 回到旧 query：缓存只有一个槽，重新打分但结果仍正确
+    expect(keywordStage(index, records, 'alps').map((r) => r.id)).toEqual(['en-us-2024-01-01'])
+  })
+
+  it('records 换新数组后缓存失效（分级加载/全量补齐会整体替换 records）', () => {
+    const first = keywordStage(index, records, '雪山')
+    const more = [...records, { id: 'zh-cn-2025-01-01', market: 'zh-cn', date: '2025-01-01', title: '雪山日出', desc: '', location: [], region: '', photographer: '', gallery: null, tags: [], resolutions: {} }]
+    // App 里 index 与 records 由同一 computed 派生，数据换新数组时 index 一并重建
+    const second = keywordStage(buildIndex(more), more, '雪山')
+    expect(second).not.toBe(first)
+    expect(second.map((r) => r.id)).toContain('zh-cn-2025-01-01')
   })
 })
