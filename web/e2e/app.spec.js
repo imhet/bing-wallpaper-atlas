@@ -85,6 +85,20 @@ test('数据请求走 jsDelivr 分流且页面正常渲染（CDN 可达路径）
   expect(cdnCalls.some((p) => /^\/data\/zh-cn\/\d{4}\.json$/.test(p)), '分片也应走 CDN').toBe(true)
 })
 
+test('分享链接 ?pic= 直达详情弹层，关闭后参数移除', async ({ page }) => {
+  await stubExternal(page)
+  const zh = await (await page.request.get('/data/zh-cn/2026.json')).json()
+  const rec = zh.find((r) => r.title || r.desc)
+  await page.goto(`/?pic=${rec.id}`)
+  // 记录在全量分片里：弹层要等数据到货才打得开
+  await expect(page.locator('.modal h2')).toBeVisible({ timeout: 15000 })
+  await expect(page.locator('.modal h2')).toHaveText(rec.title || rec.desc)
+  await expect(page.locator('.modal .facts dd').first()).toContainText(rec.market)
+  await page.locator('.modal .close').click()
+  await expect(page.locator('.modal')).toHaveCount(0)
+  expect(new URL(page.url()).searchParams.get('pic')).toBeNull()
+})
+
 test('详情弹层展示同图的其他市场版本并可切换', async ({ page }) => {
   await stubExternal(page)
   await page.goto('/')

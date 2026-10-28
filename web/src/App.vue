@@ -110,12 +110,13 @@ const suggestions = computed(() => {
 })
 
 // 筛选状态 ↔ URL：刷新还原、分享直达；replaceState 不产生历史记录。
-// 只有 updates 入 URL（他人打开才有意义）；favorites 是本机数据，分享出去是空收藏只会困惑
+// updates/pic 入 URL（他人打开才有意义）；favorites 是本机数据，分享出去是空收藏只会困惑
 watch(
-  [filters, view],
-  ([f, v]) => {
+  [filters, view, selected],
+  ([f, v, sel]) => {
     const params = new URLSearchParams(encodeFilters(f).slice(1))
     if (v === 'updates') params.set('view', v)
+    if (sel) params.set('pic', sel.id)
     history.replaceState(null, '', params.toString() ? `?${params}` : location.pathname)
   },
   { deep: true },
@@ -252,6 +253,7 @@ onMounted(async () => {
   Object.assign(filters.value, decodeFilters(location.search)) // 分享链接/刷新还原
   const urlView = new URLSearchParams(location.search).get('view')
   if (urlView === 'updates') view.value = urlView
+  const picId = new URLSearchParams(location.search).get('pic') // 分享直达：必须在首次 replaceState 前取走
   // 滚动到底部附近就追加下一批卡片（rootMargin 提前预取，滚动无感）。
   // sentinel 只在浏览视图渲染（更新/收藏视图下为 null），用 watch 挂载
   const gridObserver = new IntersectionObserver(
@@ -285,6 +287,11 @@ onMounted(async () => {
         fullLoaded = true
         records.value = all
         dataLoading.value = false
+        // 分享直达：全量口径下找记录（一级窗口可能还没有该分片；记录不存在则静默忽略）
+        if (picId) {
+          const rec = all.find((r) => r.id === picId)
+          if (rec) selected.value = rec
+        }
         whenIdle(startSemantic)
         whenIdle(startSimilar)
       })
