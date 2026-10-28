@@ -1,0 +1,22 @@
+name: link-check
+# 图片直链健康巡检：站点资产是元数据 + 直链，Bing CDN 老图链接无 SLA，
+# 大规模失效必须第一时间红灯。独立于 daily（不阻塞部署），每天错峰跑一次
+on:
+  schedule:
+    - cron: "0 14 * * *" # UTC 14:00 = 北京 22:00，与 daily（UTC 22:00）错开
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: 分层采样探测直链（死链率 >2% 红灯）
+        run: python -m crawler.link_check --data-dir data --sample 200
