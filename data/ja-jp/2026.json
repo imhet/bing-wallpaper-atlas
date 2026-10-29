@@ -12724,5 +12724,42 @@
    "平原",
    "树木"
   ]
+ },
+ {
+  "id": "ja-jp-2026-10-28",
+  "market": "ja-jp",
+  "date": "2026-10-28",
+  "urlbase": "/th?id=OHR.AveburyStones_JA-JP4031336786",
+  "imageKey": "AveburyStones",
+  "title": "草原に立ち並ぶ巨石群",
+  "desc": "エーヴベリー 巨石群, イングランド (© George W Johnson/Getty Images)",
+  "location": [
+   "エーヴベリー 巨石群",
+   "イングランド"
+  ],
+  "region": null,
+  "photographer": "George W Johnson",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%82%A8%E3%83%BC%E3%83%B4%E3%83%99%E3%83%AA%E3%83%BC+%E5%B7%A8%E7%9F%B3%E7%BE%A4&form=hpcapt&filters=HpDate%3a%2220261028_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261028_AveburyStones%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "巨石",
+   "立石（石头）",
+   "石圈遗迹",
+   "埃夫伯里石阵（史前遗迹）",
+   "草地",
+   "晨雾（雾）",
+   "树（乔木）",
+   "日出（晨曦）",
+   "云（云彩）",
+   "田野（乡野）"
+  ]
  }
 ]
