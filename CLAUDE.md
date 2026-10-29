@@ -64,7 +64,7 @@ storage.py                    data/{market}/{year}.json 分片 + aggregations.js
 
 ### 前端（web/）
 
-Vue 3 + MiniSearch，无路由无状态库。`api.js` 用相对路径 `./data/...` 惰性按年加载分片（App.vue 的 `watch(filters.year)` 驱动）。`vite.config.js` 设 `base: './'` 以兼容 Pages 子路径。
+Vue 3 + MiniSearch，无路由无状态库。`api.js` 的 `fetchJSON` 对 `./data/` 走 **jsDelivr 分流**（HEAD 预检可达才走，失败降级 Pages；daily.yml 部署后 `crawler/purge_jsdelivr.py` 主动刷缓存）。`public/sw.js` Service Worker：assets/模型 cache-first、数据 SWR、离线兜底；**E2E 全局 `serviceWorkers: 'block'`**（SW 内 fetch 不走 page.route，开着所有 mock 失效）。详情弹层「相似的图」=`semantic.js similarImages` 图向量余弦近邻（只拉图向量不碰语言模型）。`?pic=<id>` 分享直达详情弹层。收藏有导出/导入（favorites.js，v1 JSON）。分片仍按年惰性加载（App.vue 的 `watch(filters.year)` 驱动）。`vite.config.js` 设 `base: './'` 以兼容 Pages 子路径。
 
 **结果口径的唯一入口**：App.vue `fusedResults(query, filters)`——关键词 + 语义融合的唯一入口，结果列表与分面计数（`facets.js` 的 `computeFacets(search, filters)`，search 由调用方传入）都从这里走；分面计数若不走同一口径，语义扩召的查询（关键词层 2 条、语义 200 张）面板会全是 0/1。
 
@@ -76,9 +76,9 @@ Vue 3 + MiniSearch，无路由无状态库。`api.js` 用相对路径 `./data/..
 **沉浸观赏（components/ImmersiveViewer.vue）**：详情弹层「⛶ 沉浸观赏」进入。黑底大图 `fitScale.js` 等比放大尽量铺满（cover 裁切超 20% 回退 contain，resize 重算）；切换必须等新图加载完成才替换 `shownSrc`（浏览器对改 src 的 img 保留旧像素——直链切换会滞留旧图，快连按看似「没动」），未预加载的慢图显示中央 spinner；收藏三通道（双击图片 / ↑ 收藏 ↓ 取消 / 顶排按钮，心形动画反馈）；UI 空闲 3 秒连光标一起淡出；Esc 在 **capture 阶段接管并 stopPropagation**（弹层的 Esc 关闭收不到，层级靠这个维持）；进入时 `requestFullscreen` 跟随（失败静默降级）。弹层顶排 `.modal-top` 与沉浸顶排 `.viewer-top` 均为 flex 按钮排——新增按钮**绝不能**再挂 `position: absolute`（会被拽出 flex 流叠在一起，E2E 有 boundingBox 不相交断言）。
 
 **语义检索（semantic.js / semantic-engine.js）**：不受关键词命中的限制，按画面内容检索。
-构建期用 Chinese-CLIP 图像塔把每个图组封面编成 512 维 int8 向量（`crawler/semantic_index.py` → `data/sem/{year}.bin`，增量构建：已编码的图组直接复用，CI 每天只编新增的 1~2 张）。浏览器端用 bge-small-zh int8 ONNX（`data/sem/bge/`）把查询映射到概念表（`content_tags` 频次≥5 的词），再用预计算的 CLIP 概念向量给图打分，与关键词结果做 RRF 融合（`rrfFuse`，语义只取前 200 名参与，否则结果数会变成全库大小）。模型 23MB + 向量 7MB 在空闲时后台加载，失败静默退回纯关键词。100 查询评估集：nDCG@10 55.3% → 63.3%，零结果率 14% → 0%。概念分片只在打标词表明显变化时重建：`--concepts --bge-onnx <onnx> --bge-tokenizer <dir>`。**地理约束 `semantic.js geoFilterSemScores`**：CLIP 概念不懂国别，「中国的秋景」关键词层零结果、语义前排会混进日本图——查询段完整等于某 region 值时（`search.js extractGeoTerms`），语义分数 region 匹配 ×3 / 冲突 ×0.05 / null 保持。
+构建期用 Chinese-CLIP 图像塔把每个图组封面编成 512 维 int8 向量（`crawler/semantic_index.py` → `data/sem/{year}.bin`，增量构建：已编码的图组直接复用，CI 每天只编新增的 1~2 张）。浏览器端用 bge-small-zh int8 ONNX（`data/sem/bge/`）把查询映射到概念表（`content_tags` 频次≥5 的词），再用预计算的 CLIP 概念向量给图打分，与关键词结果做 RRF 融合（`rrfFuse`，语义只取前 200 名参与，否则结果数会变成全库大小）。模型 23MB + 向量 7MB 在空闲时后台加载，失败静默退回纯关键词。100 查询评估集：nDCG@10 55.3% → 63.3%，零结果率 14% → 0%。概念分片只在打标词表明显变化时重建：`--concepts --bge-onnx <onnx> --bge-tokenizer <dir>`。**向量可能滞后数据一天**：daily 里 semantic_index 是 continue-on-error，新图当天可能没向量（相似图区块对它隐藏、语义检索召回不到），次日 workflow 重试补编——属预期不是 bug。**地理约束 `semantic.js geoFilterSemScores`**：CLIP 概念不懂国别，「中国的秋景」关键词层零结果、语义前排会混进日本图——查询段完整等于某 region 值时（`search.js extractGeoTerms`），语义分数 region 匹配 ×3 / 冲突 ×0.05 / null 保持。
 
-**搜索（search.js）是本项目最精巧的部分，改动前先读懂**：`tokenize()` 把中文切成「单字 + 相邻二元组」（`中国雪山` → `中/中国/国/国雪/雪/雪山/山`）——单字负责字面召回，二元组让 AND 匹配到连续词语，否则搜「中国」会被「国家公园…框景中」这类字符共现误报。AND 无命中时回退到**词组级** OR（用查询选项 `tokenize: () => orTokens` 覆盖，防止 join 后被重切成单字）。
+**搜索（search.js）是本项目最精巧的部分，改动前先读懂**：`tokenize()` 把中文切成「单字 + 相邻二元组」（`中国雪山` → `中/中国/国/国雪/雪/雪山/山`）——单字负责字面召回，二元组让 AND 匹配到连续词语，否则搜「中国」会被「国家公园…框景中」这类字符共现误报。AND 无命中时回退到**词组级** OR（用查询选项 `tokenize: () => orTokens` 覆盖，防止 join 后被重切成单字）。关键词层有单槽缓存（`keywordStage`，index/records 引用失效）——分面 6 维对同一 query 重查不重复打分；查询输入在 FilterBar 做 200ms 防抖。
 
 ## 领域规则（不读代码会踩的坑）
 
