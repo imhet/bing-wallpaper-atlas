@@ -12965,7 +12965,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": true,
+   "hd": false,
    "thumb": true
   },
   "tags": [
@@ -12988,6 +12988,54 @@
    "山谷",
    "平原",
    "树木"
+  ]
+ },
+ {
+  "id": "en-us-2026-10-29",
+  "market": "en-us",
+  "date": "2026-10-29",
+  "urlbase": "/th?id=OHR.AveburyStones_EN-US9568662876",
+  "imageKey": "AveburyStones",
+  "title": "Where mist meets millennia",
+  "desc": "Standing stones at Avebury in Wiltshire, England (© George W Johnson/Getty Images)",
+  "location": [
+   "Standing stones at Avebury in Wiltshire",
+   "England"
+  ],
+  "region": "英国",
+  "photographer": "George W Johnson",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Avebury+henge+Wiltshire&form=hpcapt&filters=HpDate%3a%2220261029_0700%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261029_AveburyStones%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ],
+  "content_tags": [
+   "巨石",
+   "立石（石头）",
+   "石圈遗迹",
+   "埃夫伯里石阵（史前遗迹）",
+   "草地",
+   "晨雾（雾）",
+   "树（乔木）",
+   "日出（晨曦）",
+   "云（云彩）",
+   "田野（乡野）"
   ]
  }
 ]
