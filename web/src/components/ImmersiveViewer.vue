@@ -51,14 +51,21 @@ function onKey(e) {
 }
 
 // 全屏跟随沉浸（不支持/被拒时静默降级为页面内铺满）
+// 全屏态的第一次 Esc 被浏览器保留（退出全屏，页面收不到 keydown）——用户会停在非全屏的
+// 中间态，得多按一次。监听全屏退出：全屏没了沉浸就失去意义，连带关闭直回详情弹层。
+function onFsChange() {
+  if (!document.fullscreenElement) emit('close')
+}
 onMounted(() => {
   window.addEventListener('keydown', onKey, true)
   window.addEventListener('resize', resize)
+  document.addEventListener('fullscreenchange', onFsChange)
   document.documentElement.requestFullscreen?.().catch(() => {})
 })
 onUnmounted(() => {
   window.removeEventListener('keydown', onKey, true)
   window.removeEventListener('resize', resize)
+  document.removeEventListener('fullscreenchange', onFsChange)
   if (document.fullscreenElement) document.exitFullscreen().catch(() => {})
   clearTimeout(idleTimer)
   window.removeEventListener('mousemove', poke)

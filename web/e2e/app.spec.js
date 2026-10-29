@@ -425,6 +425,22 @@ test('沉浸模式：弹层进入，键盘切换与到头禁用，Esc 只退沉�
   await expect(page.locator('.modal h2')).toBeVisible()
 })
 
+test('沉浸模式：浏览器吞掉 Esc 只退全屏时，跟随退出直回详情弹层', async ({ page }) => {
+  await stubExternal(page)
+  await page.goto('/')
+  await waitFullData(page)
+  await page.locator('.card').first().click()
+  await expect(page.locator('.modal h2')).toBeVisible()
+  await page.getByRole('button', { name: '沉浸观赏' }).click()
+  const viewer = page.locator('.viewer')
+  await expect(viewer).toBeVisible()
+  // 真实浏览器里全屏态的第一次 Esc 被 browser 保留（退出全屏，页面收不到 keydown）：
+  // 用 exitFullscreen 模拟这次退出，沉浸应连带关闭，直接回到详情弹层而不是停在中间态
+  await page.evaluate(() => document.exitFullscreen?.())
+  await expect(viewer).toHaveCount(0)
+  await expect(page.locator('.modal h2')).toBeVisible()
+})
+
 test('沉浸模式：鼠标移动显示信息，空闲 3 秒后自动隐藏（含光标）', async ({ page }) => {
   await page.clock.install()
   await stubExternal(page)
