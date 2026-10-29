@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onMounted, ref, shallowRef, watch } from 'vue'
-import { dedupeByUrlbase, loadAggregations, loadAllRecords, loadYearShards, recordKey } from './api'
+import { dedupeByUrlbase, fetchJSON, loadAggregations, loadAllRecords, loadYearShards, recordKey } from './api'
 import { applyFilters, buildIndex, extractGeoTerms, parseDateQuery, searchRecords } from './search'
 import { geoFilterSemScores, rrfFuse } from './semantic'
 import { createSemanticEngine, createSimilarIndex } from './semantic-engine'
@@ -280,6 +280,17 @@ onMounted(async () => {
   const urlView = new URLSearchParams(location.search).get('view')
   if (urlView === 'updates') view.value = urlView
   const picId = new URLSearchParams(location.search).get('pic') // 分享直达：必须在首次 replaceState 前取走
+  // 快速通道：id 自含市场+年份（zh-cn-2026-10-28），只拉对应年分片就开弹层，不等全量
+  // （慢网下全量十几秒，分享链接看起来像坏的）。失败静默落全量兜底；已手动开过弹层则不抢
+  const picShard = picId?.match(/^(.+)-(\d{4})-\d{2}-\d{2}$/)
+  if (picShard)
+    fetchJSON(`./data/${picShard[1]}/${picShard[2]}.json`)
+      .then((shard) => {
+        if (selected.value) return
+        const rec = shard.find((r) => r.id === picId)
+        if (rec) selected.value = rec
+      })
+      .catch(() => {})
   // 滚动到底部附近就追加下一批卡片（rootMargin 提前预取，滚动无感）。
   // sentinel 只在浏览视图渲染（更新/收藏视图下为 null），用 watch 挂载
   const gridObserver = new IntersectionObserver(
@@ -313,8 +324,9 @@ onMounted(async () => {
         fullLoaded = true
         records.value = all
         dataLoading.value = false
-        // 分享直达：全量口径下找记录（一级窗口可能还没有该分片；记录不存在则静默忽略）
-        if (picId) {
+        // 分享直达兜底：快速通道失败（分片拉取失败/记录不存在）时全量口径下再找一次；
+        // 用户已手动开过弹层则不抢
+        if (picId && !selected.value) {
           const rec = all.find((r) => r.id === picId)
           if (rec) selected.value = rec
         }

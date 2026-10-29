@@ -26,6 +26,8 @@ async function settledCount(page) {
 test('搜「湖南」：层级召回 ≥5 张，网格出现张家界图', async ({ page }) => {
   await stubThumbs(page)
   await page.goto('/')
+  // 与同文件其他用例同款：先等一级窗口就绪再搜（并行 worker 抢 CPU 时首屏可能超 5s）
+  await expect(page.locator('.result-count')).not.toContainText('加载中', { timeout: 15000 })
   await page.fill('input.query', '湖南')
   await page.press('input.query', 'Enter')
   await expect(page.locator('.card').first()).toBeVisible()

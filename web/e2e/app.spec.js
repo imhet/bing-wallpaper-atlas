@@ -91,13 +91,33 @@ test('分享链接 ?pic= 直达详情弹层，关闭后参数移除', async ({ p
   const zh = await (await page.request.get('/data/zh-cn/2026.json')).json()
   const rec = zh.find((r) => r.title || r.desc)
   await page.goto(`/?pic=${rec.id}`)
-  // 记录在全量分片里：弹层要等数据到货才打得开
+  // id 自含市场+年份：单分片快速通道直接开弹层（不等全量；全量兜底仍在）
   await expect(page.locator('.modal h2')).toBeVisible({ timeout: 15000 })
   await expect(page.locator('.modal h2')).toHaveText(rec.title || rec.desc)
   await expect(page.locator('.modal .facts dd').first()).toContainText(rec.market)
   await page.locator('.modal .close').click()
   await expect(page.locator('.modal')).toHaveCount(0)
   expect(new URL(page.url()).searchParams.get('pic')).toBeNull()
+})
+
+test('分享链接 ?pic=：单分片快速开弹层，不等全量', async ({ page }) => {
+  await stubExternal(page)
+  // 只放行启动必需的聚合文件 + 一级窗口两个年分片，其余 data 请求全部掐断：
+  // 全量永远到不了（loadAllRecords 必失败），弹层还能打开才算快速通道生效。
+  // fixtures 用 page.request 预取（API 请求不走 page.route，不会被掐）
+  const fixtures = {}
+  for (const f of ['aggregations.json', 'zh-cn/2026.json', 'en-us/2026.json'])
+    fixtures[f] = await (await page.request.get(`/data/${f}`)).body()
+  await page.route('**/data/**', (route) => route.abort())
+  for (const [f, body] of Object.entries(fixtures))
+    await page.route(`**/data/${f}`, (route) =>
+      route.fulfill({ status: 200, contentType: 'application/json', body }),
+    )
+  const zh = await (await page.request.get('/data/zh-cn/2026.json')).json()
+  const rec = zh[zh.length - 1]
+  await page.goto(`/?pic=${rec.id}`)
+  await expect(page.locator('.modal h2')).toBeVisible({ timeout: 5000 })
+  await expect(page.locator('.modal h2')).toHaveText(rec.title || rec.desc)
 })
 
 test('收藏导入：上传导出格式 JSON 后收藏恢复', async ({ page }) => {
