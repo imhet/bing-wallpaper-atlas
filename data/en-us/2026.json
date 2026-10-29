@@ -12965,7 +12965,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": false,
+   "hd": true,
    "thumb": true
   },
   "tags": [
