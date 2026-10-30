@@ -12020,7 +12020,7 @@
   "resolutions": {
    "uhd": true,
    "fhd": true,
-   "hd": true,
+   "hd": false,
    "thumb": true
   },
   "tags": [],
@@ -12277,6 +12277,57 @@
    "日出（晨曦）",
    "云（云彩）",
    "田野（乡野）"
+  ]
+ },
+ {
+  "id": "fr-fr-2026-10-29",
+  "market": "fr-fr",
+  "date": "2026-10-29",
+  "urlbase": "/th?id=OHR.AutumnCranes_FR-FR2970535620",
+  "imageKey": "AutumnCranes",
+  "title": "L'heure de prendre de la hauteur",
+  "desc": "Grues du Canada, réserve de Bosque del Apache, Nouveau-Mexique, États-Unis (© Terry St.Louis/Getty Images)",
+  "location": [
+   "Grues du Canada",
+   "réserve de Bosque del Apache",
+   "Nouveau-Mexique",
+   "États-Unis"
+  ],
+  "region": "加拿大",
+  "photographer": "Terry St.Louis",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Grue+du+Canada&form=hpcapt&filters=HpDate%3a%2220261029_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261029_AutumnCranes%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ],
+  "content_tags": [
+   "沙丘鹤",
+   "鹤",
+   "鸟",
+   "候鸟",
+   "飞翔",
+   "湿地",
+   "沼泽",
+   "芦苇",
+   "夕阳",
+   "日落",
+   "黄昏",
+   "秋色",
+   "金色草丛",
+   "水面",
+   "倒影",
+   "群鸟",
+   "雁形水鸟"
   ]
  }
 ]
