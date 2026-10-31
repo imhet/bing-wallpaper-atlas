@@ -12815,5 +12815,50 @@
    "群鸟",
    "雁形水鸟"
   ]
+ },
+ {
+  "id": "ja-jp-2026-10-30",
+  "market": "ja-jp",
+  "date": "2026-10-30",
+  "urlbase": "/th?id=OHR.FrankfurtHalloween_JA-JP4785085446",
+  "imageKey": "FrankfurtHalloween",
+  "title": "帝国の面影",
+  "desc": "聖バルトロメウス大聖堂、フランクフルト、ドイツ (© AlxeyPnferov/Getty Images)",
+  "location": [
+   "聖バルトロメウス大聖堂、フランクフルト、ドイツ"
+  ],
+  "region": null,
+  "photographer": "AlxeyPnferov",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%8F%E3%83%AD%E3%82%A6%E3%82%A3%E3%83%B3&form=hpcapt&filters=HpDate%3a%2220261030_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261030_FrankfurtHalloween%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
+  "content_tags": [
+   "大教堂",
+   "教堂",
+   "哥特式建筑",
+   "尖塔",
+   "满月",
+   "月亮",
+   "雾",
+   "枯树",
+   "夜晚",
+   "夜空",
+   "钟楼",
+   "建筑"
+  ]
  }
 ]
