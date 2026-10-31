@@ -12263,7 +12263,7 @@
    "uhd": true,
    "fhd": true,
    "hd": true,
-   "thumb": true
+   "thumb": false
   },
   "tags": [],
   "content_tags": [

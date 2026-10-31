@@ -13490,5 +13490,50 @@
    "钟楼",
    "建筑"
   ]
+ },
+ {
+  "id": "zh-cn-2026-10-31",
+  "market": "zh-cn",
+  "date": "2026-10-31",
+  "urlbase": "/th?id=OHR.SchwarzwaldAutumn_ZH-CN6323627599",
+  "imageKey": "SchwarzwaldAutumn",
+  "title": "林间迷雾",
+  "desc": "黑森林，巴登-符腾堡州，德国 (© Britus/Getty Images)",
+  "location": [
+   "黑森林",
+   "巴登-符腾堡州",
+   "德国"
+  ],
+  "region": "德国",
+  "photographer": "Britus",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%BE%B7%E5%9B%BD%E9%BB%91%E6%A3%AE%E6%9E%97&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261031_SchwarzwaldAutumn%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
+  "content_tags": [
+   "山峦",
+   "森林",
+   "云雾",
+   "秋色",
+   "山谷",
+   "针叶林",
+   "山脊",
+   "晨雾",
+   "丘陵",
+   "林海"
+  ]
  }
 ]
