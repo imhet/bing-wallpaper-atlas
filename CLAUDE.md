@@ -22,7 +22,8 @@ uv venv --clear .venv --python 3.12 && uv pip install -p .venv/bin/python -r req
 # 前端测试 / 构建 + 本地预览
 npm run test --prefix web
 npm run build --prefix web && cp -r data web/dist/data && npm run preview --prefix web
-# 注意：vite build 实测不清空 dist/（残留旧文件），数据用 cp -r data/. web/dist/data/（`/.` 形式防目录嵌套）；
+# 注意：vite build 会清空 dist/（2026-11-01 实测 dist/data 从 126M 掉到只剩 public 副本），
+# 每次 build 后必须 cp -r data/. web/dist/data/（`/.` 形式防目录嵌套），否则 E2E 全挂（fetch 拿回 index.html）；
 # 长时间运行的 preview server 在重建 dist 后会持有旧 inode（所有请求 404 回落 index.html），重kill 再跑 E2E
 
 # 每日增量 / 历史回填
