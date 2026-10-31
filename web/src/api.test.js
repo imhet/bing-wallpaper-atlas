@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { dedupeByUrlbase, fetchJSON, imageUrl, loadAllRecords, loadYearShards, mapsUrl, resetCdnProbe, thumbUrl } from './api'
+import { dedupeByUrlbase, fetchJSON, imageUrl, loadAllRecords, loadYearShards, mapsUrl, marketPriorityFor, resetCdnProbe, thumbUrl } from './api'
 
 describe('fetchJSON 的 jsDelivr 分流（国内直连 github.io 只有几十 KB/s）', () => {
   const CDN = 'https://cdn.jsdelivr.net/gh/imhet/bing-wallpaper-atlas@main/data/zh-cn/2026.json'
@@ -169,6 +169,15 @@ describe('dedupeByUrlbase', () => {
       { id: 'other', market: 'en-us', date: '2026-10-07', urlbase: '/th?id=OHR.Alps_EN-US111' },
     ]
     expect(dedupeByUrlbase(recs).map((r) => r.id)).toEqual(['zh', 'other'])
+  })
+
+  it('英文界面下 en-us 当代表（同一组图显示英文标题）', () => {
+    const recs = [
+      { id: 'zh', market: 'zh-cn', date: '2026-10-08', urlbase: '/th?id=OHR.Fuji_ZH-CN456' },
+      { id: 'us', market: 'en-us', date: '2026-10-08', urlbase: '/th?id=OHR.Fuji_EN-US123' },
+    ]
+    expect(dedupeByUrlbase(recs, marketPriorityFor('en')).map((r) => r.id)).toEqual(['us'])
+    expect(dedupeByUrlbase(recs, marketPriorityFor('zh')).map((r) => r.id)).toEqual(['zh'])
   })
 
   it('falls back to alphabetical market when no priority market in group', () => {

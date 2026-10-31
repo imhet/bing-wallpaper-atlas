@@ -94,7 +94,8 @@ test('分享链接 ?pic= 直达详情弹层，关闭后参数移除', async ({ p
   // id 自含市场+年份：单分片快速通道直接开弹层（不等全量；全量兜底仍在）
   await expect(page.locator('.modal h2')).toBeVisible({ timeout: 15000 })
   await expect(page.locator('.modal h2')).toHaveText(rec.title || rec.desc)
-  await expect(page.locator('.modal .facts dd').first()).toContainText(rec.market)
+  // 日期行显示的是可读市场名（中文界面：中文），不再是 zh-cn 代码
+  await expect(page.locator('.modal .facts dd').first()).toContainText('中文')
   await page.locator('.modal .close').click()
   await expect(page.locator('.modal')).toHaveCount(0)
   expect(new URL(page.url()).searchParams.get('pic')).toBeNull()
@@ -170,7 +171,7 @@ test('详情弹层展示同图的其他市场版本并可切换', async ({ page 
   // JutlandSpring 同图有 en-us/de-de/en-gb/fr-fr 四个市场版本，当前 en-us → 另外 3 个
   await expect(versions).toHaveCount(3)
   await versions.filter({ hasText: 'Deutsch' }).click()
-  await expect(page.locator('.modal .facts dd').first()).toContainText('de-de')
+  await expect(page.locator('.modal .facts dd').first()).toContainText('Deutsch')
 })
 
 test('详情弹层展示相似的图并可点击切换（图向量就绪后）', async ({ page }) => {
@@ -273,7 +274,7 @@ test('详情：默认 1080p，切换市场版本后标签与档位同步', async
   await page.locator('.res-switch button', { hasText: '4K UHD' }).click()
   await expect(hero).toHaveAttribute('src', /_UHD\.jpg/)
   await page.locator('.siblings button', { hasText: 'Français' }).click()
-  await expect(page.locator('.modal .facts dd').first()).toContainText('fr-fr')
+  await expect(page.locator('.modal .facts dd').first()).toContainText('Français')
   // 标签是 setup 时常量时切市场不更新，仍显示 en-us 的 3 个
   await expect(tags).toHaveCount(2) // fr-fr：姬路/姫路
   // 镜像记录只有原图一档；picked 未重置会继续拼 4K 后缀。

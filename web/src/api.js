@@ -73,9 +73,11 @@ export async function loadAllRecords(aggregations) {
 // 同一天 Bing 全球各市场发同一张图（urlbase 仅市场后缀不同）——渲染层按图去重，
 // 避免网格出现多张重复图。数据层不动：各市场版本仍是完整记录，计数保持记录口径。
 export const MARKET_PRIORITY = ['zh-cn', 'en-us', 'zh-tw']
-const marketRank = (m) => {
-  const i = MARKET_PRIORITY.indexOf(m)
-  return i === -1 ? MARKET_PRIORITY.length : i
+// 英文界面下同图组用英文版本当代表：卡片/详情显示的就是英文标题与原描述
+export const marketPriorityFor = (lang) => (lang === 'en' ? ['en-us', 'en-gb', 'zh-cn'] : MARKET_PRIORITY)
+const marketRank = (m, priority) => {
+  const i = priority.indexOf(m)
+  return i === -1 ? priority.length : i
 }
 
 export const MARKET_LABEL = {
@@ -94,14 +96,15 @@ export const mapsUrl = (location) =>
 // （/DE/de/…、/FR/fr/…），只归一化 CDN 市场后缀会把同一张图重复展示
 export const recordKey = (r) => r.imageKey || imgKey(r.urlbase)
 
-export function dedupeByUrlbase(records) {
+export function dedupeByUrlbase(records, priority = MARKET_PRIORITY) {
   // Map 保插入序（= 组首次出现序，date 倒序语义不丢）；代表记录按市场优先序取
   const best = new Map()
   for (const r of records) {
     const key = recordKey(r)
     const cur = best.get(key)
-    if (!cur || marketRank(r.market) < marketRank(cur.market) || (marketRank(r.market) === marketRank(cur.market) && r.market < cur.market))
-      best.set(key, r)
+    const rank = marketRank(r.market, priority)
+    const curRank = cur ? marketRank(cur.market, priority) : 0
+    if (!cur || rank < curRank || (rank === curRank && r.market < cur.market)) best.set(key, r)
   }
   return [...best.values()]
 }

@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { thumbUrl } from '../api'
 import { favoriteKey } from '../favorites'
+import { t } from '../i18n'
 import { highlightParts } from '../search'
 import HeartIcon from './HeartIcon.vue'
 
@@ -31,8 +32,8 @@ const failedIds = ref(new Set())
           class="fav"
           :class="{ on: favKeys.has(favoriteKey(r)) }"
           role="button"
-          :aria-label="favKeys.has(favoriteKey(r)) ? '取消收藏' : '收藏'"
-          :title="favKeys.has(favoriteKey(r)) ? '取消收藏' : '收藏'"
+          :aria-label="favKeys.has(favoriteKey(r)) ? t('unfavorite') : t('favorite')"
+          :title="favKeys.has(favoriteKey(r)) ? t('unfavorite') : t('favorite')"
           @click.stop="emit('toggle-fav', r)"
           ><HeartIcon /></span
         >
@@ -50,6 +51,6 @@ const failedIds = ref(new Set())
   </div>
   <!-- 首屏加载中由 App 的「加载中…」负责，不能同时说「没有匹配」 -->
   <p v-if="!records.length && !loading && !hideEmpty" class="empty">
-    {{ dataLoading ? '数据仍在加载，请稍候…' : '没有匹配的壁纸，试试放宽筛选条件。' }}
+    {{ dataLoading ? t('dataStillLoading') : t('noMatch') }}
   </p>
 </template>

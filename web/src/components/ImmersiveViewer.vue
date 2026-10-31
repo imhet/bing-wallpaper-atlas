@@ -1,8 +1,9 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
-import { MARKET_LABEL, RES_SUFFIX, imageUrl } from '../api'
+import { RES_SUFFIX, imageUrl } from '../api'
 import { favoriteKey } from '../favorites'
 import { fitScale } from '../fitScale'
+import { marketLabel, t } from '../i18n'
 import HeartIcon from './HeartIcon.vue'
 
 // 沉浸观赏：纯黑底大图等比放大尽量铺满（fitScale：裁切超 20% 回退完整显示），
@@ -198,23 +199,23 @@ function onPointerUp(e) {
       <button
         class="viewer-fav"
         :class="{ on: isFav }"
-        :aria-label="isFav ? '取消收藏' : '收藏'"
-        :title="isFav ? '取消收藏' : '收藏'"
+        :aria-label="isFav ? t('unfavorite') : t('favorite')"
+        :title="isFav ? t('unfavorite') : t('favorite')"
         @click="favIf(!isFav)"
       >
         <HeartIcon :class="{ on: isFav }" />
-        {{ isFav ? '已收藏' : '收藏' }}
+        {{ isFav ? t('faved') : t('favorite') }}
       </button>
-      <button class="viewer-close" aria-label="退出沉浸模式" @click="emit('close')">✕</button>
+      <button class="viewer-close" :aria-label="t('exitImmersive')" @click="emit('close')">✕</button>
     </div>
     <span class="viewer-count">{{ countLabel }}</span>
-    <button class="viewer-nav prev" :disabled="atStart" aria-label="上一张" @click="go(-1)">‹</button>
-    <button class="viewer-nav next" :disabled="atEnd" aria-label="下一张" @click="go(1)">›</button>
-    <div v-if="hint" class="viewer-hint">← → 切换 · 双击收藏 · ↑ 收藏 ↓ 取消 · Esc 退出</div>
+    <button class="viewer-nav prev" :disabled="atStart" :aria-label="t('prevImage')" @click="go(-1)">‹</button>
+    <button class="viewer-nav next" :disabled="atEnd" :aria-label="t('nextImage')" @click="go(1)">›</button>
+    <div v-if="hint" class="viewer-hint">{{ t('immersiveHint') }}</div>
     <div class="viewer-meta">
       <h2>{{ cur.title || cur.desc }}</h2>
       <p>
-        {{ [cur.date, MARKET_LABEL[cur.market] || cur.market, ...(cur.location || []), cur.photographer].filter(Boolean).join(' · ') }}
+        {{ [cur.date, marketLabel(cur.market), ...(cur.location || []), cur.photographer].filter(Boolean).join(' · ') }}
       </p>
     </div>
   </div>

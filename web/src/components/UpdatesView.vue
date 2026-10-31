@@ -1,7 +1,8 @@
 <script setup>
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
-import { MARKET_LABEL, thumbUrl } from '../api'
+import { marketPriorityFor, thumbUrl } from '../api'
 import { favoriteKey } from '../favorites'
+import { imageCount, lang, marketLabel, t } from '../i18n'
 import { groupByDate } from '../updates'
 import HeartIcon from './HeartIcon.vue'
 
@@ -14,7 +15,10 @@ const year = ref(props.years[0] ? String(props.years[0]) : '')
 const STEP_DAYS = 8
 const visibleDays = ref(STEP_DAYS)
 const groups = computed(() =>
-  groupByDate(year.value ? props.records.filter((r) => r.date.startsWith(year.value)) : props.records),
+  groupByDate(
+    year.value ? props.records.filter((r) => r.date.startsWith(year.value)) : props.records,
+    marketPriorityFor(lang.value),
+  ),
 )
 // 返回顶部：下滑超过一屏浮现，长列表翻几屏后一键回顶
 const showTop = ref(false)
@@ -50,16 +54,16 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 <template>
   <div class="updates">
     <div class="updates-head">
-      <select v-model="year" aria-label="选择年份">
-        <option v-for="y in years" :key="y" :value="String(y)">{{ y }} 年</option>
+      <select v-model="year" :aria-label="t('chooseYear')">
+        <option v-for="y in years" :key="y" :value="String(y)">{{ t('yearN', { y }) }}</option>
       </select>
-      <span class="updates-summary">{{ groups.length }} 天 · {{ groups.reduce((n, g) => n + g.items.length, 0) }} 张</span>
+      <span class="updates-summary">{{ t('daysImages', { d: groups.length, n: groups.reduce((n, g) => n + g.items.length, 0) }) }}</span>
     </div>
-    <p v-if="loading && !records.length" class="status">数据加载中…</p>
-    <p v-else-if="!groups.length" class="empty">该年份暂无数据。</p>
+    <p v-if="loading && !records.length" class="status">{{ t('loading') }}</p>
+    <p v-else-if="!groups.length" class="empty">{{ t('noDataYear') }}</p>
     <template v-else>
       <section v-for="g in visibleGroups" :key="g.date" class="day-group">
-        <h3>{{ g.date }} <span class="day-count">{{ g.items.length }} 张</span></h3>
+        <h3>{{ g.date }} <span class="day-count">{{ imageCount(lang, g.items.length) }}</span></h3>
         <div class="day-cards">
           <button v-for="r in g.items" :key="r.id" class="card" @click="emit('select', r)">
             <div class="thumb" :class="{ loaded: loadedIds.has(r.id), failed: failedIds.has(r.id) }">
@@ -77,23 +81,23 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
                 class="fav"
                 :class="{ on: favKeys.has(favoriteKey(r)) }"
                 role="button"
-                :aria-label="favKeys.has(favoriteKey(r)) ? '取消收藏' : '收藏'"
+                :aria-label="favKeys.has(favoriteKey(r)) ? t('unfavorite') : t('favorite')"
                 @click.stop="emit('toggle-fav', r)"
                 ><HeartIcon /></span
               >
             </div>
             <div class="meta">
-              <span class="market-badge" :data-market="r.market">{{ MARKET_LABEL[r.market] || r.market }}</span>
+              <span class="market-badge" :data-market="r.market">{{ marketLabel(r.market) }}</span>
               <span class="title">{{ r.title || r.desc }}</span>
             </div>
           </button>
         </div>
       </section>
-      <p v-if="visibleGroups.length < groups.length" class="hint">下滑加载更早的日期…</p>
+      <p v-if="visibleGroups.length < groups.length" class="hint">{{ t('scrollMore') }}</p>
       <div ref="sentinel" aria-hidden="true"></div>
     </template>
     <Transition name="fade">
-      <button v-if="showTop" class="back-top" aria-label="返回顶部" @click="backTop">↑ 顶部</button>
+      <button v-if="showTop" class="back-top" :aria-label="t('backToTop')" @click="backTop">{{ t('toTop') }}</button>
     </Transition>
   </div>
 </template>

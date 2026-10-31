@@ -1,6 +1,6 @@
 <script setup>
 import { computed, onMounted, ref, shallowRef, watch } from 'vue'
-import { dedupeByUrlbase, fetchJSON, loadAggregations, loadAllRecords, loadYearShards, recordKey } from './api'
+import { dedupeByUrlbase, fetchJSON, loadAggregations, loadAllRecords, loadYearShards, marketPriorityFor, recordKey } from './api'
 import { applyFilters, buildIndex, extractGeoTerms, parseDateQuery, searchRecords } from './search'
 import { geoFilterSemScores, rrfFuse } from './semantic'
 import { createSemanticEngine, createSimilarIndex } from './semantic-engine'
@@ -8,6 +8,7 @@ import { computeFacets } from './facets'
 import { encodeFilters, decodeFilters } from './urlState'
 import { suggestFromDict } from './suggest'
 import { favoriteKey, exportFavorites, importFavorites, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
+import { lang, setLang, t } from './i18n'
 import { groupByDate } from './updates'
 import HeartIcon from './components/HeartIcon.vue'
 import FilterBar from './components/FilterBar.vue'
@@ -36,7 +37,10 @@ function toggleFav(record) {
 
 // 收藏导出/导入：localStorage 只存本机，JSON 文件兜底换设备/清缓存场景
 const fileInput = ref(null)
-const importMsg = ref('')
+const importMsg = ref(null) // { key, vars }：存文案键而不是成品字符串，切语言后跟着变
+function showImportMsg(key, vars) {
+  importMsg.value = { key, vars }
+}
 function exportFavs() {
   const blob = new Blob([exportFavorites(favorites.value)], { type: 'application/json' })
   const a = document.createElement('a')
@@ -52,11 +56,11 @@ function onImportFile(e) {
   file.text().then((text) => {
     const out = importFavorites(favorites.value, text)
     if (!out) {
-      importMsg.value = '导入失败：不是本站导出的收藏文件'
+      showImportMsg('importFailed')
       return
     }
     favorites.value = out.favorites
-    importMsg.value = `已导入 ${out.added} 张新收藏`
+    showImportMsg('importedN', { n: out.added })
   })
 }
 
@@ -73,8 +77,10 @@ const favoriteRecords = computed(() => {
 const years = computed(() =>
   [...new Set(Object.values(aggregations.value?.years_by_market || {}).flat())].sort((a, b) => b - a),
 )
+// 同图组的代表由界面语言决定：中文界面 zh-cn 优先，英文界面 en-us 优先（卡片显示英文标题）
+const marketPriority = computed(() => marketPriorityFor(lang.value))
 // 站头口径与网格一致：去重后的图片数（记录数含跨市场重复，11236 vs 6762 两个数字打架让人困惑）
-const totalImages = computed(() => dedupeByUrlbase(records.value).length)
+const totalImages = computed(() => dedupeByUrlbase(records.value, marketPriority.value).length)
 
 const index = computed(() => buildIndex(records.value))
 // 结果口径的唯一入口：关键词 + 语义融合（语义就绪时）。结果列表与分面计数都从这走，
@@ -103,9 +109,9 @@ const regionNames = computed(() => [...new Set(records.value.map((r) => r.region
 // 渐进渲染：一次渲染几千张卡会让视口附近上百缩略图同时打 Bing CDN（HTTP/2 并发流被拒），
 // 只渲染前 N 张，滚动到底自动追加；同图多市场版本先去重（代表 zh-cn 优先），免网格重复
 const uniqueResults = computed(() =>
-  // 去重代表（zh-cn 优先）的日期比组内最晚记录早 1~2 天：按代表日期重排，
+  // 去重代表（跟随界面语言）的日期比组内最晚记录早 1~2 天：按代表日期重排，
   // 卡片显示的日期与位置严格一致（否则旧图插队，324 处逆序）
-  dedupeByUrlbase(results.value).sort((a, b) => b.date.localeCompare(a.date)),
+  dedupeByUrlbase(results.value, marketPriority.value).sort((a, b) => b.date.localeCompare(a.date)),
 )
 const VISIBLE_STEP = 120
 // 一级首屏市场：中文用户主视角 + 深史最全的英文市场，gzip 后 ~90KB 慢链路 1~2 秒可出图
@@ -114,10 +120,10 @@ const visibleCount = ref(VISIBLE_STEP)
 const visibleResults = computed(() => uniqueResults.value.slice(0, visibleCount.value))
 // 结果计数用去重后的图片数：与网格实际卡片口径一致（站头 total 是记录数）
 const resultCount = computed(() => {
-  if (view.value === 'favorites') return `共收藏 ${favoriteRecords.value.length} 张`
+  if (view.value === 'favorites') return t('countFavorites', { n: favoriteRecords.value.length })
   const hasFilters = Object.values(filters.value).some(Boolean)
-  const base = `${hasFilters ? '找到' : '共'} ${uniqueResults.value.length} 张`
-  return dataLoading.value ? `${base}（数据加载中…）` : base
+  const base = t(hasFilters ? 'countFound' : 'countAll', { n: uniqueResults.value.length })
+  return dataLoading.value ? base + t('countLoadingSuffix') : base
 })
 watch(
   filters,
@@ -178,7 +184,7 @@ async function startSimilar() {
 function similarFor(record) {
   const idx = similarIndex.value
   if (!idx) return []
-  const reps = new Map(dedupeByUrlbase(records.value).map((r) => [recordKey(r), r]))
+  const reps = new Map(dedupeByUrlbase(records.value, marketPriority.value).map((r) => [recordKey(r), r]))
   return idx.similar(recordKey(record), 8).map(({ key }) => reps.get(key)).filter(Boolean)
 }
 
@@ -220,7 +226,7 @@ watch(
   },
 )
 
-const THEME_LABEL = { auto: '主题 · 自动', light: '主题 · 浅色', dark: '主题 · 深色' }
+const THEME_KEY = { auto: 'themeAuto', light: 'themeLight', dark: 'themeDark' }
 function toggleTheme() {
   theme.value = theme.value === 'auto' ? 'light' : theme.value === 'light' ? 'dark' : 'auto'
 }
@@ -256,7 +262,7 @@ const immerseList = computed(() =>
   view.value === 'favorites'
     ? favoriteRecords.value
     : view.value === 'updates'
-      ? groupByDate(records.value).flatMap((g) => g.items)
+      ? groupByDate(records.value, marketPriority.value).flatMap((g) => g.items)
       : uniqueResults.value,
 )
 function startImmerse() {
@@ -338,7 +344,7 @@ onMounted(async () => {
         console.warn('[backfill] 背景补齐失败，筛选计数暂为部分口径')
       })
   } catch (e) {
-    error.value = `数据加载失败：${e.message}`
+    error.value = t('loadFailed', { msg: e.message })
   } finally {
     loading.value = false
   }
@@ -347,20 +353,23 @@ onMounted(async () => {
 
 <template>
   <header class="site-header">
-    <h1><button class="home-link" title="回到浏览" @click="view = 'browse'">Bing 壁纸图集</button></h1>
+    <h1><button class="home-link" :title="t('backToBrowse')" @click="view = 'browse'">{{ t('appTitle') }}</button></h1>
     <button
       v-if="aggregations"
       class="theme-toggle total-link"
       :class="{ active: view === 'updates' }"
       @click="view = view === 'updates' ? 'browse' : 'updates'"
     >
-      {{ view === 'updates' ? '← 返回浏览' : `${totalImages || aggregations.total} 张图 · 更新日志 →` }}
+      {{ view === 'updates' ? t('backToBrowseArrow') : t('updatesEntry', { n: totalImages || aggregations.total }) }}
     </button>
     <button class="theme-toggle" :class="{ active: view === 'favorites' }" @click="view = view === 'favorites' ? 'browse' : 'favorites'">
       <HeartIcon :class="{ on: view === 'favorites' }" />
-      {{ view === 'favorites' ? '返回浏览' : `收藏 ${favKeys.size}` }}
+      {{ view === 'favorites' ? t('backToBrowse') : t('favoritesEntry', { n: favKeys.size }) }}
     </button>
-    <button class="theme-toggle" @click="toggleTheme">{{ THEME_LABEL[theme] }}</button>
+    <button class="theme-toggle" @click="toggleTheme">{{ t(THEME_KEY[theme]) }}</button>
+    <button class="theme-toggle lang-toggle" @click="setLang(lang === 'en' ? 'zh' : 'en')">
+      {{ t('langSwitch') }}
+    </button>
   </header>
   <UpdatesView
     v-if="view === 'updates'"
@@ -373,22 +382,20 @@ onMounted(async () => {
   />
   <template v-else>
     <FilterBar v-if="view === 'browse'" :facets="facets" v-model:filters="filters" @random="randomPick" />
-    <p v-if="loading" class="status">加载中…</p>
+    <p v-if="loading" class="status">{{ t('loading') }}</p>
     <p v-if="error" class="status error">{{ error }}</p>
-    <p v-if="view === 'browse' && semanticLoading && filters.query && !results.length" class="hint">语义搜索准备中…</p>
+    <p v-if="view === 'browse' && semanticLoading && filters.query && !results.length" class="hint">{{ t('semanticWarming') }}</p>
     <p v-if="view === 'browse' && suggestions.length" class="hint">
-      没找到「{{ filters.query }}」，试试它的其他写法：
+      {{ t('notFoundHint', { q: filters.query }) }}
       <button v-for="s in suggestions" :key="s" @click="pickSuggestion(s)">{{ s }}</button>
     </p>
     <p v-if="!loading && records.length" class="result-count">{{ resultCount }}</p>
-    <p v-if="view === 'favorites' && !favoriteRecords.length" class="empty">
-      还没有收藏。浏览时点卡片右上角的 ♥，喜欢的图就会留在这里（只存这台浏览器里）。
-    </p>
+    <p v-if="view === 'favorites' && !favoriteRecords.length" class="empty">{{ t('emptyFavorites') }}</p>
     <div v-if="view === 'favorites'" class="fav-actions">
-      <button type="button" @click="exportFavs">⬇ 导出收藏</button>
-      <button type="button" @click="fileInput?.click()">⬆ 导入收藏</button>
+      <button type="button" @click="exportFavs">{{ t('exportFavs') }}</button>
+      <button type="button" @click="fileInput?.click()">{{ t('importFavs') }}</button>
       <input ref="fileInput" type="file" accept="application/json,.json" hidden @change="onImportFile" />
-      <span v-if="importMsg" class="import-msg">{{ importMsg }}</span>
+      <span v-if="importMsg" class="import-msg">{{ t(importMsg.key, importMsg.vars) }}</span>
     </div>
     <WallpaperGrid
       :records="view === 'favorites' ? favoriteRecords : visibleResults"
@@ -425,6 +432,6 @@ onMounted(async () => {
     @toggle-fav="toggleFav"
   />
   <footer class="site-footer">
-    图片版权归 Microsoft 及原作者/图库所有，本站仅做元数据索引与链接。
+    {{ t('footer') }}
   </footer>
 </template>

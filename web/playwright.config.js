@@ -10,6 +10,9 @@ export default defineConfig({
     baseURL: 'http://localhost:4173',
     channel: 'chrome', // 系统 Chrome，免下载浏览器
     headless: true,
+    // 站点按浏览器语言自动选界面语言：E2E 会被机器 locale 影响，默认固定中文，
+    // 英文模式用例自己 test.use({ locale: 'en-US' })
+    locale: 'zh-CN',
     // SW 发起的 fetch 不走 page.route——开着会让所有用例的 mock 失效。
     // SW 行为只在 sw.spec.js 里用 test.use 单独开启
     serviceWorkers: 'block',

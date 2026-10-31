@@ -66,6 +66,8 @@ storage.py                    data/{market}/{year}.json 分片 + aggregations.js
 
 Vue 3 + MiniSearch，无路由无状态库。`api.js` 的 `fetchJSON` 对 `./data/` 走 **jsDelivr 分流**（HEAD 预检可达才走，失败降级 Pages；daily.yml 部署后 `crawler/purge_jsdelivr.py` 主动刷缓存）。`public/sw.js` Service Worker：assets/模型 cache-first、数据 SWR、离线兜底；**E2E 全局 `serviceWorkers: 'block'`**（SW 内 fetch 不走 page.route，开着所有 mock 失效）。详情弹层「相似的图」=`semantic.js similarImages` 图向量余弦近邻（只拉图向量不碰语言模型）。`?pic=<id>` 分享直达详情弹层——**id 自含市场+年份，快速通道只拉对应年分片即开弹层**（不等全量；失败静默落全量兜底）。收藏有导出/导入（favorites.js，v1 JSON）。分片仍按年惰性加载（App.vue 的 `watch(filters.year)` 驱动）。`vite.config.js` 设 `base: './'` 以兼容 Pages 子路径。
 
+**国际化（i18n.js）**：界面文案中英双语 `MESSAGES` 表 + `t(key, vars)`，`pickLang` 判定（localStorage `bwa-lang` 优先；否则 `navigator.language` 以 `zh` 开头中文、其余英文——GitHub Pages 海外访客为主）。**同图组代表市场跟随语言**（`marketPriorityFor(lang)`：中文 zh-cn 优先、英文 en-us 优先），卡片/详情直接显示该市场原生的 title/desc（数据本身就多语言，不需要翻译）。`REGION_EN` 把数据里 77 个中文 region 规范名映射成英文——**只影响展示，筛选值与 URL 仍是中文原值**。`content_tags` 全中文是 VLM 打标产物（英文语义检索要双子概念表，尚未做）。E2E 全局 `locale: 'zh-CN'` 固定中文断言，英文用例自行 `test.use({ locale: 'en-US' })`。
+
 **结果口径的唯一入口**：App.vue `fusedResults(query, filters)`——关键词 + 语义融合的唯一入口，结果列表与分面计数（`facets.js` 的 `computeFacets(search, filters)`，search 由调用方传入）都从这里走；分面计数若不走同一口径，语义扩召的查询（关键词层 2 条、语义 200 张）面板会全是 0/1。
 
 **同图去重的三层口径**（键 = `recordKey`：imageKey 优先，否则 urlbase 剥市场后缀）：
