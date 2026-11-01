@@ -48,7 +48,9 @@ def load_all(data_dir):
     if not root.exists():
         return {}
     for market_dir in sorted(root.iterdir()):
-        if not market_dir.is_dir():
+        if not market_dir.is_dir() or market_dir.name == "sem":
+            # sem/ 是语义资源目录（向量分片、概念英文标签），不是市场——
+            # 2026-11-02 线上事故：它的 json 被当市场记录加载炸了聚合
             continue
         for f in sorted(market_dir.glob("*.json")):
             out[market_dir.name].extend(json.loads(f.read_text(encoding="utf-8")))

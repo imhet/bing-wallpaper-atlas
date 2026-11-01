@@ -52,3 +52,15 @@ def test_load_all_ignores_aggregations_file(tmp_path, make_record):
     upsert_record(tmp_path, make_record())
     write_aggregations(tmp_path)
     assert set(load_all(tmp_path)) == {"zh-cn"}  # aggregations.json 不是市场目录
+
+
+def test_load_all_ignores_sem_resource_dir(tmp_path, make_record):
+    # data/sem 是语义资源目录（向量 .bin + 概念英文标签 concepts_en.json），
+    # 不是市场分片——2026-11-02 线上事故：load_all 把它当市场加载，字符串记录炸了聚合
+    sem = tmp_path / "sem"
+    sem.mkdir()
+    (sem / "concepts_en.json").write_text('["sunset", "glacier"]', encoding="utf-8")
+    (sem / "2026.bin").write_bytes(b"x")
+    upsert_record(tmp_path, make_record())
+    assert set(load_all(tmp_path)) == {"zh-cn"}
+    write_aggregations(tmp_path)  # 不抛 TypeError 即通过
