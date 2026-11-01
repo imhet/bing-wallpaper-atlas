@@ -495,6 +495,59 @@ test('沉浸模式：左右拖拽（触摸滑动）切换上一张/下一张', a
   await expect(count).toContainText('1 / ')
 })
 
+// 屏幕常亮（Screen Wake Lock）无法在测试里触发真实系统锁屏，只能对 API 调用时序打桩：
+// 进入沉浸要锁住屏幕，退出要放开（否则用户离开页面后显示器再也睡不着）
+async function stubWakeLock(page) {
+  await page.addInitScript(() => {
+    window.__wake = { requests: 0, releases: 0 }
+    // navigator.wakeLock 是 Navigator.prototype 上的只读 getter，直接赋值会被静默丢弃
+    Object.defineProperty(navigator, 'wakeLock', {
+      configurable: true,
+      value: {
+        request: async () => {
+          window.__wake.requests++
+          return {
+            release: async () => {
+              window.__wake.releases++
+            },
+          }
+        },
+      },
+    })
+  })
+}
+
+test('沉浸模式：进入时申请屏幕常亮防锁屏，退出时释放', async ({ page }) => {
+  await stubWakeLock(page)
+  await stubExternal(page)
+  await page.goto('/')
+  await waitFullData(page)
+  const wake = () => page.evaluate(() => window.__wake)
+  expect((await wake()).requests, '浏览页不应持有屏幕常亮').toBe(0)
+  await page.locator('.card').first().click()
+  await page.getByRole('button', { name: '沉浸观赏' }).click()
+  await expect(page.locator('.viewer')).toBeVisible()
+  await expect.poll(async () => (await wake()).requests).toBe(1)
+  await page.keyboard.press('Escape')
+  await expect(page.locator('.viewer')).toHaveCount(0)
+  await expect.poll(async () => (await wake()).releases).toBe(1)
+})
+
+test('沉浸模式：Wake Lock 不可用时静默降级，观赏不受影响', async ({ page }) => {
+  // 非安全上下文/旧浏览器的形态：根本没有 navigator.wakeLock
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'wakeLock', { configurable: true, value: undefined })
+  })
+  await stubExternal(page)
+  await page.goto('/')
+  await page.locator('.card').first().click()
+  await page.getByRole('button', { name: '沉浸观赏' }).click()
+  await expect(page.locator('.viewer-count')).toContainText('1 / ')
+  await page.keyboard.press('Escape')
+  await expect(page.locator('.viewer')).toHaveCount(0)
+  await expect(page.locator('.modal h2')).toBeVisible()
+})
+
 test('沉浸模式：双击图片收藏，↑ 收藏 ↓ 取消，心形按钮实时同步', async ({ page }) => {
   await stubExternal(page)
   await page.goto('/')

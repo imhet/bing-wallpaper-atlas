@@ -4,6 +4,7 @@ import { RES_SUFFIX, imageUrl } from '../api'
 import { favoriteKey } from '../favorites'
 import { fitScale } from '../fitScale'
 import { marketLabel, t } from '../i18n'
+import { createWakeLock } from '../wakeLock'
 import HeartIcon from './HeartIcon.vue'
 
 // 沉浸观赏：纯黑底大图等比放大尽量铺满（fitScale：裁切超 20% 回退完整显示），
@@ -57,17 +58,28 @@ function onKey(e) {
 function onFsChange() {
   if (!document.fullscreenElement) emit('close')
 }
+
+// 屏幕常亮：沉浸时只看图不动键鼠，系统闲置计时到点就锁屏（黑屏要密码），观赏被打断。
+// 申请 Screen Wake Lock 挡住熄屏；标签页切走浏览器会自动释放锁，切回来必须重新申请。
+const wake = createWakeLock()
+function onVisibility() {
+  if (document.visibilityState === 'visible') wake.acquire()
+}
 onMounted(() => {
   window.addEventListener('keydown', onKey, true)
   window.addEventListener('resize', resize)
   document.addEventListener('fullscreenchange', onFsChange)
+  document.addEventListener('visibilitychange', onVisibility)
   document.documentElement.requestFullscreen?.().catch(() => {})
+  wake.acquire()
 })
 onUnmounted(() => {
   window.removeEventListener('keydown', onKey, true)
   window.removeEventListener('resize', resize)
   document.removeEventListener('fullscreenchange', onFsChange)
+  document.removeEventListener('visibilitychange', onVisibility)
   if (document.fullscreenElement) document.exitFullscreen().catch(() => {})
+  wake.release()
   clearTimeout(idleTimer)
   window.removeEventListener('mousemove', poke)
   window.removeEventListener('pointerdown', poke)
