@@ -13155,5 +13155,50 @@
    "钟楼",
    "建筑"
   ]
+ },
+ {
+  "id": "en-gb-2026-11-01",
+  "market": "en-gb",
+  "date": "2026-11-01",
+  "urlbase": "/th?id=OHR.SchwarzwaldAutumn_EN-GB3893624438",
+  "imageKey": "SchwarzwaldAutumn",
+  "title": "Mist among the trees",
+  "desc": "Black Forest, Baden-Württemberg, Germany (© Britus/Getty Images)",
+  "location": [
+   "Black Forest",
+   "Baden-Württemberg",
+   "Germany"
+  ],
+  "region": "德国",
+  "photographer": "Britus",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Black+Forest+Germany&form=hpcapt&filters=HpDate%3a%2220261101_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261101_SchwarzwaldAutumn%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
+  "content_tags": [
+   "山峦",
+   "森林",
+   "云雾",
+   "秋色",
+   "山谷",
+   "针叶林",
+   "山脊",
+   "晨雾",
+   "丘陵",
+   "林海"
+  ]
  }
 ]
