@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { MESSAGES, REGION_EN, format, imageCount, pickLang } from './i18n'
+import { MESSAGES, REGION_EN, format, imageCount, metaFor, pickLang } from './i18n'
 
 describe('pickLang', () => {
   it('已保存的语言优先于浏览器语言', () => {
@@ -58,6 +58,19 @@ describe('imageCount', () => {
     expect(imageCount('zh', 2)).toBe('2 张')
     expect(imageCount('en', 1)).toBe('1 image')
     expect(imageCount('en', 2)).toBe('2 images')
+  })
+})
+
+describe('metaFor（SEO 描述跟随语言）', () => {
+  it('中英文各有一份标题与描述', () => {
+    expect(metaFor('zh').title).toBe('Bing 壁纸图集')
+    expect(metaFor('en').title).toBe('Bing Wallpaper Atlas')
+    expect(metaFor('zh').description).toContain('必应')
+    expect(metaFor('en').description).toContain('Bing daily wallpapers')
+  })
+
+  it('未知语言回落到中文', () => {
+    expect(metaFor('fr')).toEqual(metaFor('zh'))
   })
 })
 

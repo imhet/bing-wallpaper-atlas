@@ -17,8 +17,11 @@ import WallpaperDetail from './components/WallpaperDetail.vue'
 import UpdatesView from './components/UpdatesView.vue'
 import ImmersiveViewer from './components/ImmersiveViewer.vue'
 
+// 分享直达参数：setup 阶段就取走——首次 replaceState（URL 同步 watch）会清掉白名单外参数
+const picId = new URLSearchParams(location.search).get('pic')
 const aggregations = ref(null)
-const records = ref([])
+// shallowRef：11k 条记录只整体替换、从不改字段，深度响应式代理纯属开销（实测占堆大头）
+const records = shallowRef([])
 const error = ref('')
 const loading = ref(true)
 const dataLoading = ref(false) // 全量分片后台补齐中：此窗口内搜索只覆盖部分数据，零结果不能报「没找到」
@@ -129,9 +132,11 @@ watch(
   filters,
   () => {
     visibleCount.value = VISIBLE_STEP
+    startFullLoad() // 搜索/筛选要覆盖全历史，用户一动就补齐
   },
   { deep: true },
 )
+watch(view, startFullLoad)
 const sentinel = ref(null)
 // 分面联动计数：与结果列表同口径（fusedResults），各维度轮流清空自身筛选重算分布
 const facets = computed(() => computeFacets((f) => fusedResults(filters.value.query, f), filters.value))
@@ -168,6 +173,31 @@ async function startSemantic() {
   }
 }
 const whenIdle = (fn) => (window.requestIdleCallback ? requestIdleCallback(fn) : setTimeout(fn, 1500))
+
+// 全量分片补齐：首屏只需要一级窗口（最新年主视角市场），全量 3.6MB 延后加载，
+// 用户一交互（搜索/筛选/翻页/更新日志）就提前。只跑一次
+let fullStarted = false
+function startFullLoad() {
+  if (fullStarted || !aggregations.value) return
+  fullStarted = true
+  loadAllRecords(aggregations.value)
+    .then((all) => {
+      records.value = all
+      dataLoading.value = false
+      // 分享直达兜底：快速通道失败（分片拉取失败/记录不存在）时全量口径下再找一次；
+      // 用户已手动开过弹层则不抢
+      if (picId && !selected.value) {
+        const rec = all.find((r) => r.id === picId)
+        if (rec) selected.value = rec
+      }
+      whenIdle(startSemantic)
+      whenIdle(startSimilar)
+    })
+    .catch(() => {
+      dataLoading.value = false
+      console.warn('[backfill] 背景补齐失败，筛选计数暂为部分口径')
+    })
+}
 
 // 找相似的图：只拉图向量分片（无语言模型），详情弹层按余弦近邻推荐
 const similarIndex = shallowRef(null)
@@ -285,7 +315,6 @@ onMounted(async () => {
   Object.assign(filters.value, decodeFilters(location.search)) // 分享链接/刷新还原
   const urlView = new URLSearchParams(location.search).get('view')
   if (urlView === 'updates') view.value = urlView
-  const picId = new URLSearchParams(location.search).get('pic') // 分享直达：必须在首次 replaceState 前取走
   // 快速通道：id 自含市场+年份（zh-cn-2026-10-28），只拉对应年分片就开弹层，不等全量
   // （慢网下全量十几秒，分享链接看起来像坏的）。失败静默落全量兜底；已手动开过弹层则不抢
   const picShard = picId?.match(/^(.+)-(\d{4})-\d{2}-\d{2}$/)
@@ -301,8 +330,10 @@ onMounted(async () => {
   // sentinel 只在浏览视图渲染（更新/收藏视图下为 null），用 watch 挂载
   const gridObserver = new IntersectionObserver(
     (entries) => {
-      if (entries[0].isIntersecting && visibleCount.value < results.value.length)
+      if (entries[0].isIntersecting && visibleCount.value < results.value.length) {
         visibleCount.value += VISIBLE_STEP
+        startFullLoad() // 用户开始翻页，说明要往下看，全量该补了
+      }
     },
     { rootMargin: '800px' },
   )
@@ -310,39 +341,24 @@ onMounted(async () => {
   try {
     aggregations.value = await loadAggregations()
     // 分级加载三级：一级只等主视角市场（zh-cn/en-us）最新年分片先出图，二级补该年其余市场，
-    // 三级后台全量——国内直连 github.io 吞吐只有几十 KB/s，六市场首屏批 3.3MB 会拖垮首屏。
+    // 三级全量延后——国内直连 github.io 吞吐只有几十 KB/s，六市场首屏批 3.3MB 会拖垮首屏。
     // 注意默认不把最新年写进 filters.year：搜索必须覆盖全历史（默认年份会把历史结果挡在墙外）
     const latest = Object.values(aggregations.value.years_by_market || {})
       .flat()
       .reduce((a, b) => Math.max(a, b), 0)
     const first = String(filters.value.year || latest || '')
     records.value = first ? await loadYearShards(aggregations.value, first, FIRST_MARKETS) : []
-    let fullLoaded = false
     dataLoading.value = true
     if (first)
       loadYearShards(aggregations.value, first)
         .then((yearAll) => {
-          if (!fullLoaded) records.value = yearAll // 全量先到则跳过（守卫：单年不得降级覆盖全量）
+          if (!fullStarted) records.value = yearAll // 全量先到则跳过（守卫：单年不得降级覆盖全量）
         })
         .catch(() => {})
-    loadAllRecords(aggregations.value)
-      .then((all) => {
-        fullLoaded = true
-        records.value = all
-        dataLoading.value = false
-        // 分享直达兜底：快速通道失败（分片拉取失败/记录不存在）时全量口径下再找一次；
-        // 用户已手动开过弹层则不抢
-        if (picId && !selected.value) {
-          const rec = all.find((r) => r.id === picId)
-          if (rec) selected.value = rec
-        }
-        whenIdle(startSemantic)
-        whenIdle(startSimilar)
-      })
-      .catch(() => {
-        dataLoading.value = false
-        console.warn('[backfill] 背景补齐失败，筛选计数暂为部分口径')
-      })
+    // 全量数据延后 3 秒再拉：首屏这几秒的带宽全给一级窗口（慢网下能早出图）。
+    // 分享链接带筛选/直达更新日志时等不起，立即补
+    if (Object.values(filters.value).some(Boolean) || view.value === 'updates') startFullLoad()
+    else setTimeout(startFullLoad, 3000)
   } catch (e) {
     error.value = t('loadFailed', { msg: e.message })
   } finally {

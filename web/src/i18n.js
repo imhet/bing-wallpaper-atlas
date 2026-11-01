@@ -78,9 +78,11 @@ export const MESSAGES = {
     backToTop: '返回顶部',
     toTop: '↑ 顶部',
     langSwitch: 'EN', // 按钮显示「切过去的语言」
+    ogLocale: 'zh_CN',
   },
   en: {
     appTitle: 'Bing Wallpaper Atlas',
+    ogLocale: 'en_US',
     loading: 'Loading…',
     semanticWarming: 'Preparing semantic search…',
     backToBrowse: 'Back to browse',
@@ -176,6 +178,22 @@ export const REGION_EN = {
   阿联酋: 'United Arab Emirates', 韩国: 'South Korea', 马来西亚: 'Malaysia', 马达加斯加: 'Madagascar',
 }
 
+// SEO 元信息（index.html 的 title/description/og/JSON-LD 用）。<html lang> 由浏览器
+// 决定：海外用户搜到的是 Google 缓存的静态 HTML，静态层就得备一份英文描述。
+const SEO = {
+  zh: {
+    title: 'Bing 壁纸图集',
+    description: '必应每日壁纸的元数据索引：标题、拍摄地、摄影师与背后故事，支持跨语言搜索，每日自动更新。',
+  },
+  en: {
+    title: 'Bing Wallpaper Atlas',
+    description: 'Metadata index for Bing daily wallpapers — titles, locations, photographers and stories, with cross-language search. Updated daily.',
+  },
+}
+export function metaFor(l) {
+  return SEO[l] || SEO.zh
+}
+
 const LANGS = ['zh', 'en']
 const STORAGE_KEY = 'bwa-lang'
 
@@ -211,8 +229,29 @@ export const marketLabel = (m) =>
   lang.value === 'en' ? MARKET_LABEL_EN[m] || MARKET_LABEL[m] || m : MARKET_LABEL[m] || m
 
 export function applyLang() {
-  document.documentElement.lang = lang.value === 'en' ? 'en' : 'zh-CN'
-  document.title = MESSAGES[lang.value].appTitle
+  const l = lang.value
+  const meta = metaFor(l)
+  document.documentElement.lang = l === 'en' ? 'en' : 'zh-CN'
+  document.title = meta.title
+  const set = (sel, val) => {
+    for (const el of document.querySelectorAll(sel)) el.setAttribute('content', val)
+  }
+  set('meta[name="description"]', meta.description)
+  set('meta[property="og:title"]', meta.title)
+  set('meta[property="og:description"]', meta.description)
+  set('meta[property="og:locale"]', MESSAGES[l].ogLocale)
+  set('meta[name="twitter:title"]', meta.title)
+  set('meta[name="twitter:description"]', meta.description)
+  // JSON-LD 是爬虫读的结构化数据，名字/描述/语言跟着界面走
+  for (const el of document.querySelectorAll('script[type="application/ld+json"]')) {
+    const doc = JSON.parse(el.textContent)
+    el.textContent = JSON.stringify({
+      ...doc,
+      name: meta.title,
+      description: meta.description,
+      inLanguage: l === 'en' ? 'en' : 'zh-CN',
+    })
+  }
 }
 
 export function setLang(l) {
