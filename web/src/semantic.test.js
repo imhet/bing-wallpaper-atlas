@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { encodeQuery, geoFilterSemScores, packShard, parseShard, pickConcepts, pickQueryVector, rrfFuse, semanticRank, similarImages } from './semantic'
+import { encodeQuery, geoFilterSemScores, packShard, parseShard, pickConcepts, pickConceptsEn, pickQueryVector, rrfFuse, semanticRank, similarImages } from './semantic'
 import { extractGeoTerms } from './search'
 
 // 构造与 crawler/semantic_index.py 相同的分片格式：BSEM | v1 | dim | count | [klen|key|scale|int8[dim]]
@@ -43,6 +43,42 @@ describe('parseShard', () => {
   it('round-trips through packShard', () => {
     const rows = [{ key: '灯塔', vec: Int8Array.from([-128, 1, 2]), scale: 0.25 }]
     expect(parseShard(packShard(rows, 3))).toEqual(rows)
+  })
+})
+
+describe('pickConceptsEn', () => {
+  // 与 concepts_en.json 同构：下标即概念向量下标，值为逗号分隔的英文同义标签
+  const EN = ['sunset, evening glow, dusk', 'snowy mountain, snow-covered peak', 'city skyline at night, night view', 'beach, seashore']
+
+  it('按词面重叠选概念，多词命中排在前面', () => {
+    const picked = pickConceptsEn('snowy mountain sunset', EN, 2, 12)
+    expect(picked.map((p) => p.i)).toEqual([1, 0])
+    expect(picked[0].w).toBeGreaterThan(picked[1].w)
+  })
+
+  it('同义写法参与匹配（glow 命中 sunset 的同义词）', () => {
+    const picked = pickConceptsEn('evening glow', EN, 1, 12)
+    expect(picked[0].i).toBe(0)
+  })
+
+  it('介词冠词等虚词不参与匹配', () => {
+    // 去掉虚词后只剩 skyline，命中概念 2 而不是被 'at' 污染
+    const picked = pickConceptsEn('the skyline at night', EN, 1, 12)
+    expect(picked[0].i).toBe(2)
+  })
+
+  it('部分重叠也算命中（一个词对上也排最前）', () => {
+    const picked = pickConceptsEn('mountain lake', EN, 2, 12)
+    expect(picked[0].i).toBe(1) // mountain 对上雪山
+  })
+
+  it('零重叠返回空数组：语义不参与，退回纯关键词', () => {
+    expect(pickConceptsEn('quantum physics', EN, 3, 12)).toEqual([])
+  })
+
+  it('权重和为 1', () => {
+    const picked = pickConceptsEn('snowy mountain sunset', EN, 3, 12)
+    expect(picked.reduce((a, p) => a + p.w, 0)).toBeCloseTo(1)
   })
 })
 

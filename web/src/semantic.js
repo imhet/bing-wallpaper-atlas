@@ -107,6 +107,34 @@ export function pickConcepts(sims, topK, temp) {
   return order.map((i, n) => ({ i, w: exps[n] / sum }))
 }
 
+// 英文查询的概念匹配：bge-small-zh 是中文词表，拉丁查询会被编码成单字母 UNK，
+// 语义全废。改走词面重叠——查询内容词命中概念英文标签（含同义写法）的占比打分，
+// 零重叠返回空数组（退回纯关键词）。enNames 下标与概念向量严格对齐。
+const EN_STOPWORDS = new Set([
+  'a', 'an', 'the', 'in', 'on', 'at', 'of', 'with', 'and', 'or', 'for', 'to', 'by', 'is', 'are', 'from',
+])
+
+export function pickConceptsEn(query, enNames, topK, temp) {
+  const tokens = String(query)
+    .toLowerCase()
+    .split(/[^a-z]+/)
+    .filter((w) => w.length > 1 && !EN_STOPWORDS.has(w))
+  if (!tokens.length) return []
+  const scores = enNames.map((label) => {
+    const words = new Set(String(label).toLowerCase().split(/[^a-z]+/).filter(Boolean))
+    return tokens.filter((w) => words.has(w)).length / tokens.length
+  })
+  const order = scores
+    .map((s, i) => [s, i])
+    .filter(([s]) => s > 0)
+    .sort((a, b) => b[0] - a[0])
+    .slice(0, topK)
+  if (!order.length) return []
+  const exps = order.map(([s]) => Math.exp(s * temp))
+  const sum = exps.reduce((a, b) => a + b, 0)
+  return order.map(([_, i], n) => ({ i, w: exps[n] / sum }))
+}
+
 // 图的语义分数 = 各概念余弦的加权和。
 export function semanticRank(images, conceptsClip, picked) {
   const scores = new Map()

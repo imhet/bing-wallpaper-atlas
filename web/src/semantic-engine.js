@@ -4,7 +4,7 @@
 // 任何一步失败都只是让页面退回纯关键词，不影响可用性。
 
 import * as ort from 'onnxruntime-web/wasm'
-import { conceptSims, encodeQuery, parseShard, pickConcepts, pickQueryVector, semanticRank, similarImages } from './semantic'
+import { conceptSims, encodeQuery, parseShard, pickConcepts, pickConceptsEn, pickQueryVector, semanticRank, similarImages } from './semantic'
 
 ort.env.wasm.numThreads = 1 // 多线程要 SharedArrayBuffer，Pages 没有 COOP/COEP 头
 
@@ -95,11 +95,33 @@ export async function createSemanticEngine({ years = [], onProgress = () => {} }
     return pickQueryVector(out[outputName])
   }
 
+  // 英文查询不走 bge（中文词表，拉丁词退化成单字母 UNK），改走概念英文标签的词面匹配。
+  // 标签文件很小且只有英文查询需要：首次遇到再拉，失败置 null 永久退回 bge 路径
+  let conceptsEnPromise = null
+  function conceptsEn() {
+    if (!conceptsEnPromise)
+      conceptsEnPromise = fetch(`${BASE}/concepts_en.json`)
+        .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
+        .catch((e) => {
+          console.warn('[semantic] 英文概念表加载失败，英文查询退回 bge 路径：', e)
+          return null
+        })
+    return conceptsEnPromise
+  }
+
   return {
     size: images.length,
     async rank(query) {
-      const q = await embed(query)
-      const picked = pickConcepts(conceptSims(q, conceptsBge), TOP_K_CONCEPTS, CONCEPT_TEMP)
+      // 含中文走 bge（混合查询的中文部分仍可桥接）；纯拉丁才需要英文概念表
+      let picked = null
+      if (!/[一-鿿]/.test(query)) {
+        const en = await conceptsEn()
+        if (en) picked = pickConceptsEn(query, en, TOP_K_CONCEPTS, CONCEPT_TEMP)
+      }
+      if (!picked?.length) {
+        const q = await embed(query)
+        picked = pickConcepts(conceptSims(q, conceptsBge), TOP_K_CONCEPTS, CONCEPT_TEMP)
+      }
       return semanticRank(images, conceptsClip, picked)
     },
   }
