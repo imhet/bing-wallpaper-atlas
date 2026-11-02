@@ -115,10 +115,11 @@ jobs:
         if: steps.diff.outputs.changed == 'true' || inputs.force_deploy == true
       # Cloudflare Pages 直传（wrangler direct upload 不占 CF 构建额度，Actions 仍是唯一驱动方）。
       # github.io 国内时通时断，自有域走 CF 海外节点稳定可达；jsDelivr 源仍是 GitHub 仓库，不受影响。
-      # 首次部署前需配 secrets：CLOUDFLARE_API_TOKEN（Pages:Edit 模板）+ CLOUDFLARE_ACCOUNT_ID，
-      # 自定义域 bing.heyitao.com 在 CF 控制台 Pages 项目 → Custom domains 添加
+      # secrets 未配置时整段跳过（wrangler-action 对空 token 必失败，不加守卫 daily cron 每天红灯）；
+      # 配了但失效仍会正常红灯。首次部署前需配 secrets：CLOUDFLARE_API_TOKEN（Pages:Edit 权限）
+      # + CLOUDFLARE_ACCOUNT_ID，自定义域 bing.heyitao.com 在 CF 控制台 Pages 项目 → Custom domains 添加
       - name: 确保 Cloudflare Pages 项目存在（幂等：已存在时报错，不阻塞部署）
-        if: steps.diff.outputs.changed == 'true' || inputs.force_deploy == true
+        if: (steps.diff.outputs.changed == 'true' || inputs.force_deploy == true) && secrets.CLOUDFLARE_API_TOKEN != ''
         continue-on-error: true
         uses: cloudflare/wrangler-action@v3
         with:
@@ -126,7 +127,7 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages project create bing-wallpaper-atlas --production-branch=main
       - name: 部署 Cloudflare Pages
-        if: steps.diff.outputs.changed == 'true' || inputs.force_deploy == true
+        if: (steps.diff.outputs.changed == 'true' || inputs.force_deploy == true) && secrets.CLOUDFLARE_API_TOKEN != ''
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
