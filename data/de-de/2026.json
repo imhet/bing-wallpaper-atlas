@@ -12691,5 +12691,44 @@
    "丘陵",
    "林海"
   ]
+ },
+ {
+  "id": "de-de-2026-11-01",
+  "market": "de-de",
+  "date": "2026-11-01",
+  "urlbase": "/th?id=OHR.HudsonBear_DE-DE3504338986",
+  "imageKey": "HudsonBear",
+  "title": "Eine Zukunft, geprägt vom Eis",
+  "desc": "Eisbär mit Jungen, Hudson Bay, Manitoba, Kanada (© Danita Delimont/Adobe Stock)",
+  "location": [
+   "Eisbär mit Jungen",
+   "Hudson Bay",
+   "Manitoba",
+   "Kanada"
+  ],
+  "region": null,
+  "photographer": "Danita Delimont",
+  "gallery": "Adobe Stock",
+  "copyrightlink": "https://www.bing.com/search?q=Eisb%C3%A4ren&form=hpcapt&filters=HpDate%3a%2220261101_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261101_HudsonBear%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "北极熊",
+   "熊",
+   "幼崽",
+   "哺乳动物",
+   "野生动物",
+   "岩石",
+   "苔原",
+   "灌木",
+   "枯草",
+   "动物母子"
+  ]
  }
 ]

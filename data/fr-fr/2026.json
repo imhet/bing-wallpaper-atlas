@@ -12406,5 +12406,49 @@
    "丘陵",
    "林海"
   ]
+ },
+ {
+  "id": "fr-fr-2026-11-01",
+  "market": "fr-fr",
+  "date": "2026-11-01",
+  "urlbase": "/th?id=OHR.HudsonBear_FR-FR2767726453",
+  "imageKey": "HudsonBear",
+  "title": "Un avenir écrit dans la glace",
+  "desc": "Ours polaire et oursons, baie d'Hudson, Manitoba, Canada (© Danita Delimont/Adobe Stock)",
+  "location": [
+   "Ours polaire et oursons",
+   "baie d'Hudson",
+   "Manitoba",
+   "Canada"
+  ],
+  "region": "加拿大",
+  "photographer": "Danita Delimont",
+  "gallery": "Adobe Stock",
+  "copyrightlink": "https://www.bing.com/search?q=ours+polaire&form=hpcapt&filters=HpDate%3a%2220261101_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261101_HudsonBear%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ],
+  "content_tags": [
+   "北极熊",
+   "熊",
+   "幼崽",
+   "哺乳动物",
+   "野生动物",
+   "岩石",
+   "苔原",
+   "灌木",
+   "枯草",
+   "动物母子"
+  ]
  }
 ]
