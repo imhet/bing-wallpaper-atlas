@@ -517,6 +517,43 @@ async function stubWakeLock(page) {
   })
 }
 
+test('详情弹层键盘：←/→ 沿当前视图切换，↑/↓ 收藏取消（与沉浸同一套心智）', async ({ page }) => {
+  await stubExternal(page)
+  await page.goto('/')
+  await waitFullData(page)
+  await page.locator('.card').first().click()
+  const title = page.locator('.modal h2')
+  const t1 = await title.textContent()
+  await page.keyboard.press('ArrowRight')
+  await expect(title).not.toHaveText(t1)
+  await page.keyboard.press('ArrowLeft')
+  await expect(title).toHaveText(t1)
+  await page.keyboard.press('ArrowLeft') // 已在第一张：不动
+  await expect(title).toHaveText(t1)
+  await page.keyboard.press('ArrowUp')
+  await expect(page.locator('.modal-top .fav-btn')).toHaveClass(/on/)
+  await expect(page.locator('.site-header')).toContainText('收藏 1')
+  await page.keyboard.press('ArrowDown')
+  await expect(page.locator('.modal-top .fav-btn')).not.toHaveClass(/on/)
+  await expect(page.locator('.site-header')).not.toContainText('收藏 1')
+})
+
+test('沉浸模式的 ←/→ 不泄漏给背后的详情弹层（无双重复切换，退出后弹层对齐）', async ({ page }) => {
+  await stubExternal(page)
+  await page.goto('/')
+  await waitFullData(page)
+  await page.locator('.card').first().click()
+  await page.locator('.modal-top .immerse-btn').click()
+  await expect(page.locator('.viewer')).toBeVisible()
+  await page.keyboard.press('ArrowRight')
+  await expect(page.locator('.viewer-count')).toContainText('2 / ')
+  const viewerTitle = await page.locator('.viewer-meta h2').textContent()
+  await page.keyboard.press('Escape')
+  await expect(page.locator('.viewer')).toHaveCount(0)
+  // 弹层必须停在沉浸里最后看的那张：若方向键泄漏到弹层监听，这里会多切一步、标题不匹配
+  await expect(page.locator('.modal h2')).toHaveText(viewerTitle)
+})
+
 test('沉浸模式：进入时申请屏幕常亮防锁屏，退出时释放', async ({ page }) => {
   await stubWakeLock(page)
   await stubExternal(page)

@@ -96,6 +96,15 @@ export const mapsUrl = (location) =>
 // （/DE/de/…、/FR/fr/…），只归一化 CDN 市场后缀会把同一张图重复展示
 export const recordKey = (r) => r.imageKey || imgKey(r.urlbase)
 
+// 记录在视图列表中的位置：id 直接命中，弹层切到非代表市场版本（不在去重列表里）时
+// 按 recordKey 对齐同图组位置。详情弹层 ←/→ 与沉浸进入共用这一套口径
+export function siblingIndex(list, record) {
+  if (!record) return -1
+  let i = list.findIndex((r) => r.id === record.id)
+  if (i === -1) i = list.findIndex((r) => recordKey(r) === recordKey(record))
+  return i
+}
+
 export function dedupeByUrlbase(records, priority = MARKET_PRIORITY) {
   // Map 保插入序（= 组首次出现序，date 倒序语义不丢）；代表记录按市场优先序取
   const best = new Map()

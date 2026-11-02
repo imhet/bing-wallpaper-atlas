@@ -1,6 +1,6 @@
 <script setup>
-import { computed, onMounted, ref, shallowRef, watch } from 'vue'
-import { dedupeByUrlbase, fetchJSON, loadAggregations, loadAllRecords, loadYearShards, marketPriorityFor, recordKey } from './api'
+import { computed, onMounted, onUnmounted, ref, shallowRef, watch } from 'vue'
+import { dedupeByUrlbase, fetchJSON, loadAggregations, loadAllRecords, loadYearShards, marketPriorityFor, recordKey, siblingIndex } from './api'
 import { applyFilters, buildIndex, extractGeoTerms, parseDateQuery, searchRecords } from './search'
 import { geoFilterSemScores, rrfFuse } from './semantic'
 import { createSemanticEngine, createSimilarIndex } from './semantic-engine'
@@ -296,12 +296,8 @@ const immerseList = computed(() =>
       : uniqueResults.value,
 )
 function startImmerse() {
-  const sel = selected.value
-  let i = immerseList.value.findIndex((r) => r.id === sel?.id)
-  if (i === -1 && sel)
-    // 弹层里切到了非代表市场版本（同图 sibling 不在去重列表中）：对齐到同图组的位置
-    i = immerseList.value.findIndex((r) => recordKey(r) === recordKey(sel))
-  immerseIdx.value = Math.max(i, 0)
+  // 弹层里切到了非代表市场版本（同图 sibling 不在去重列表中）：siblingIndex 按 recordKey 对齐
+  immerseIdx.value = Math.max(siblingIndex(immerseList.value, selected.value), 0)
 }
 // 沉浸中切换同步回弹层：退出沉浸时弹层显示的就是最后看的这张
 function onImmerseNav(i) {
@@ -309,7 +305,34 @@ function onImmerseNav(i) {
   selected.value = immerseList.value[i]
 }
 
+// 详情弹层键盘（bubble 阶段）：←/→ 沿当前视图列表切换、↑ 收藏 ↓ 取消，与沉浸同一套心智。
+// 沉浸打开时跳过——它在 capture 阶段接管方向键，这里再响应就是双重复切换；
+// 方向键 preventDefault 掉，焦点在按钮上时不会连带滚动弹层内容
+function navDetail(d) {
+  const list = immerseList.value
+  const i = siblingIndex(list, selected.value)
+  if (i === -1) return
+  const j = i + d
+  if (j >= 0 && j < list.length) selected.value = list[j]
+}
+function onDetailKey(e) {
+  if (!selected.value || immerseIdx.value !== null) return
+  const el = e.target
+  if (el?.tagName === 'INPUT' || el?.tagName === 'TEXTAREA' || el?.isContentEditable) return
+  if (e.key === 'ArrowRight') {
+    e.preventDefault()
+    navDetail(1)
+  } else if (e.key === 'ArrowLeft') {
+    e.preventDefault()
+    navDetail(-1)
+  } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+    e.preventDefault()
+    toggleFav(selected.value)
+  }
+}
+
 onMounted(async () => {
+  window.addEventListener('keydown', onDetailKey)
   const stored = localStorage.getItem('theme')
   if (stored) theme.value = stored
   Object.assign(filters.value, decodeFilters(location.search)) // 分享链接/刷新还原
@@ -365,6 +388,7 @@ onMounted(async () => {
     loading.value = false
   }
 })
+onUnmounted(() => window.removeEventListener('keydown', onDetailKey))
 </script>
 
 <template>

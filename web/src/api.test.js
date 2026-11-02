@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
-import { dedupeByUrlbase, fetchJSON, imageUrl, loadAllRecords, loadYearShards, mapsUrl, marketPriorityFor, resetCdnProbe, thumbUrl } from './api'
+import { dedupeByUrlbase, fetchJSON, imageUrl, loadAllRecords, loadYearShards, mapsUrl, marketPriorityFor, resetCdnProbe, siblingIndex, thumbUrl } from './api'
 
 describe('fetchJSON 的 jsDelivr 分流（国内直连 github.io 只有几十 KB/s）', () => {
   const CDN = 'https://cdn.jsdelivr.net/gh/imhet/bing-wallpaper-atlas@main/data/zh-cn/2026.json'
@@ -229,5 +229,30 @@ describe('imageUrl / thumbUrl 对镜像绝对 URL（npanuhin 深史源）', () =
     expect(imageUrl('/th?id=OHR.X_ZH-CN1', '_400x240.jpg')).toBe('https://www.bing.com/th?id=OHR.X_ZH-CN1_400x240.jpg')
     expect(thumbUrl({ urlbase: '/th?id=OHR.X_ZH-CN1', resolutions: { thumb: true } }))
       .toBe('https://www.bing.com/th?id=OHR.X_ZH-CN1_400x240.jpg')
+  })
+})
+
+describe('siblingIndex（详情弹层 ←/→ 与沉浸进入共用同一套「当前视图列表对齐」）', () => {
+  const list = [
+    { id: 'zh-cn-2026-01-01', urlbase: '/th?id=OHR.A_ZH-CN0', imageKey: 'OHR.A' },
+    { id: 'en-us-2026-01-02', urlbase: '/th?id=OHR.B_EN-US0', imageKey: 'OHR.B' },
+    { id: 'zh-cn-2026-01-02', urlbase: '/th?id=OHR.B_ZH-CN0', imageKey: 'OHR.B' },
+    { id: 'zh-cn-2026-01-03', urlbase: '/th?id=OHR.C_ZH-CN0', imageKey: 'OHR.C' },
+  ]
+
+  it('id 直接命中返回下标', () => {
+    expect(siblingIndex(list, list[3])).toBe(3)
+  })
+
+  it('id 不在列表（弹层切到了非代表市场版本）时按 recordKey 对齐同图组位置', () => {
+    expect(siblingIndex(list, { id: 'de-de-2026-01-02', urlbase: '/th?id=OHR.B_DE-DE0', imageKey: 'OHR.B' })).toBe(1)
+  })
+
+  it('完全不在列表返回 -1', () => {
+    expect(siblingIndex(list, { id: 'x', urlbase: '/th?id=OHR.X', imageKey: 'OHR.X' })).toBe(-1)
+  })
+
+  it('record 为空返回 -1', () => {
+    expect(siblingIndex(list, null)).toBe(-1)
   })
 })
