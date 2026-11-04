@@ -61,7 +61,18 @@ storage.py                    data/{market}/{year}.json 分片 + aggregations.js
 
 存量修复脚本（幂等，数据问题复发时重跑）：`crawler/fix_locations.py`——无版权结构的记录四线挖 location：自身 title+desc → 同图组兄弟市场继承 → content_tags VLM 概念 → region 国家兜底（两趟：先全库后组内桥接）。
 
-纯前端改动上线用 `gh workflow run daily.yml -f force_deploy=true`（数据无变化时也能部署）。
+纯前端改动上线用 `gh workflow run daily.yml -f force_deploy=true`（数据无变化时也能部署），一次同时推 GitHub Pages 与 Cloudflare Pages。
+
+### 双站部署（GitHub Pages + Cloudflare Pages）
+
+`github.io` 国内时通时断（解析污染/连接重置），另有 https://bing.heyitao.com 走 Cloudflare 海外节点，可达性明显更稳（CF 免费版无大陆节点，提升的是「稳定能打开」不是带宽）。两站同一份 `web/dist`：
+
+- daily.yml 在 `deploy-pages` 之后用 `cloudflare/wrangler-action@v3` 直传（direct upload，不占 CF 免费档的 500 次/月构建额度）——GitHub Actions 仍是唯一驱动方，不用 CF 的 Git 集成（那还得在 CF 那边再跑一遍 Python 抓取链路）
+- 所需 secrets：`CLOUDFLARE_API_TOKEN`（`Account → Cloudflare Pages → Edit`）与 `CLOUDFLARE_ACCOUNT_ID`
+- **步骤 `if` 里绝不能出现 `secrets` 上下文**——不是跳过这一步，是整个工作流解析失败（`gh workflow run` 返回 422，每日抓取与 Pages 部署一起挂）。要判断就先在 shell 里读成 `$GITHUB_OUTPUT`，`tests/test_workflows.py` 锁死这条
+- CF 的 Pages 项目与自定义域的 zone 必须在**同一账号**下；多账号用户非交互模式默认取列表第一个账号，所以 `CLOUDFLARE_ACCOUNT_ID` 必须显式传（本地手动跑 wrangler 同理）
+- 自定义域在 CF 控制台「Pages 项目 → Custom domains」添加，需配合一条 `bing` 的 CNAME 指向 `<项目>.pages.dev`（wrangler 的 OAuth 授权不含 DNS 写权限，这一步只能手动）
+- 部署文件数 4112、最大单文件 14.2MB，均在免费档限制内（20,000 文件 / 25MiB）
 
 ### 前端（web/）
 
