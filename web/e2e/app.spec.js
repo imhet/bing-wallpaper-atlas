@@ -577,6 +577,7 @@ test('沉浸模式：Wake Lock 不可用时静默降级，观赏不受影响', a
   })
   await stubExternal(page)
   await page.goto('/')
+  await waitFullData(page) // 分级加载窗口内点卡再进沉浸，全量到货重排会让起点漂移 1~2 张
   await page.locator('.card').first().click()
   await page.getByRole('button', { name: '沉浸观赏' }).click()
   await expect(page.locator('.viewer-count')).toContainText('1 / ')

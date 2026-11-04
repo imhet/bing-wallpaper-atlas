@@ -74,6 +74,8 @@ storage.py                    data/{market}/{year}.json 分片 + aggregations.js
 - 自定义域在 CF 控制台「Pages 项目 → Custom domains」添加，需配合一条 `bing` 的 CNAME 指向 `<项目>.pages.dev`（wrangler 的 OAuth 授权不含 DNS 写权限，这一步只能手动）
 - 部署文件数 4112、最大单文件 14.2MB，均在免费档限制内（20,000 文件 / 25MiB）
 
+**子路径 `heyitao.com/wallpaper`**：Pages 的 Custom domains 不接受路径，只能由 `worker/` 里的 Worker 代理（`heyitao.com/wallpaper*` 路由 → 剥前缀转发到 `<项目>.pages.dev`，`/wallpaper` 补尾斜杠 301，Pages 的路径相对 `Location` 补回前缀）。博客其余路径不受影响。部署：`cd worker && CLOUDFLARE_ACCOUNT_ID=<账号> npx wrangler deploy`。站点本身全相对路径（`vite base './'`、`api.js` 用 `./data/`），**唯一需要感知部署根的是 `public/sw.js`**——它按自身 URL 推 `ROOT` 再拼 `data/`，写死 `/data/` 会让子路径下的数据 SWR 缓存整层失效（`src/sw.test.js` 用最小 SW 环境锁死根/子路径两种部署形态）。
+
 ### 前端（web/）
 
 Vue 3 + MiniSearch，无路由无状态库。`api.js` 的 `fetchJSON` 对 `./data/` 走 **jsDelivr 分流**（HEAD 预检可达才走，失败降级 Pages；daily.yml 部署后 `crawler/purge_jsdelivr.py` 主动刷缓存）。`public/sw.js` Service Worker：assets/模型 cache-first、数据 SWR、离线兜底；**E2E 全局 `serviceWorkers: 'block'`**（SW 内 fetch 不走 page.route，开着所有 mock 失效）。详情弹层「相似的图」=`semantic.js similarImages` 图向量余弦近邻（只拉图向量不碰语言模型）。`?pic=<id>` 分享直达详情弹层——**id 自含市场+年份，快速通道只拉对应年分片即开弹层**（不等全量；失败静默落全量兜底）。收藏有导出/导入（favorites.js，v1 JSON）。分片仍按年惰性加载（App.vue 的 `watch(filters.year)` 驱动）；**全量分片延后 3 秒加载**（搜索/筛选/翻页/更新日志任一交互立即触发），首屏带宽优先给一级窗口；`records` 用 **`shallowRef`**——11k 条记录只整体替换、从不改字段，深度响应式实测白占 55MB 堆（187→131MB），深滚到 1440 卡 315→137MB。`vite.config.js` 设 `base: './'` 以兼容 Pages 子路径。

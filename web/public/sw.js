@@ -11,6 +11,9 @@
 const VERSION = 'v1'
 const SHELL = `shell-${VERSION}`
 const RUNTIME = `runtime-${VERSION}`
+// 部署根：站点可能挂在子路径（heyitao.com/wallpaper/），此时 sw.js 自身 URL 就在该目录下，
+// 由 './' 反推出 '/wallpaper/'；根路径部署则是 '/'。数据分派不能写死 '/data/'
+const ROOT = new URL('./', location.href).pathname
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -41,7 +44,7 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET' || url.origin !== location.origin) return
   if (CACHE_FIRST.some((test) => test(url))) {
     event.respondWith(cacheFirst(event.request))
-  } else if (url.pathname.startsWith('/data/')) {
+  } else if (url.pathname.startsWith(`${ROOT}data/`)) {
     event.respondWith(staleWhileRevalidate(event.request))
   } else if (event.request.mode === 'navigate') {
     event.respondWith(networkFirst(event.request))
