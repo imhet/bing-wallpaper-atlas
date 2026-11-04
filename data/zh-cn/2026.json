@@ -13656,5 +13656,32 @@
    "宣城",
    "xuancheng"
   ]
+ },
+ {
+  "id": "zh-cn-2026-11-04",
+  "market": "zh-cn",
+  "date": "2026-11-04",
+  "urlbase": "/th?id=OHR.StileCrossing_ZH-CN9811465935",
+  "imageKey": "StileCrossing",
+  "title": "向山巅再迈一步",
+  "desc": "石墙边的木制翻越梯，黑岩，湖区，英格兰 (© Alex Treadway/Getty Images)",
+  "location": [
+   "石墙边的木制翻越梯",
+   "黑岩",
+   "湖区",
+   "英格兰"
+  ],
+  "region": "英国",
+  "photographer": "Alex Treadway",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E8%8B%B1%E6%A0%BC%E5%85%B0%E6%B9%96%E5%8C%BA&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261104_StileCrossing%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
  }
 ]
