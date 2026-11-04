@@ -234,14 +234,15 @@ test('分享元信息：og 图存在，描述不含过期计数', async ({ page 
   await page.goto('/')
   const desc = await page.getAttribute('meta[property="og:description"]', 'content')
   expect(desc).not.toMatch(/\d{3,}\+/) // 曾硬编码「3446+ 张」
-  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
-    'content',
-    'https://imhet.github.io/bing-wallpaper-atlas/og.png',
-  )
-  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
-    'href',
-    'https://imhet.github.io/bing-wallpaper-atlas/',
-  )
+  // 三个入口（github.io / bing.heyitao.com / heyitao.com/wallpaper）内容完全相同，
+  // canonical 收口到博客子路径——内链权重攒在自己域名上，其余两个视为镜像
+  const CANON = 'https://heyitao.com/wallpaper/'
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', `${CANON}og.png`)
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', CANON)
+  await expect(page.locator('meta[property="og:url"]')).toHaveAttribute('content', CANON)
+  await expect(page.locator('link[rel="alternate"][hreflang="x-default"]')).toHaveAttribute('href', CANON)
+  const ld = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent())
+  expect(ld.url, 'JSON-LD 的 url 也要跟 canonical 一致').toBe(CANON)
   const resp = await page.request.get('/og.png')
   expect(resp.ok()).toBe(true)
   expect((await resp.body()).length).toBeGreaterThan(10000)
