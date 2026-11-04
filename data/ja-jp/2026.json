@@ -12944,5 +12944,73 @@
    "枯草",
    "动物母子"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-02",
+  "market": "ja-jp",
+  "date": "2026-11-02",
+  "urlbase": "/th?id=OHR.AlpineBraies_JA-JP1334653956",
+  "imageKey": "AlpineBraies",
+  "title": "山々に抱かれた静けさ",
+  "desc": "ブライエス湖、ファネス・セネス・ブラーイエス自然公園、ドロミテ、イタリア (© leonid_tit/Getty Images)",
+  "location": [
+   "ブライエス湖、ファネス・セネス・ブラーイエス自然公園、ドロミテ、イタリア"
+  ],
+  "region": null,
+  "photographer": "leonid_tit",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%96%E3%83%A9%E3%82%A4%E3%82%A8%E3%82%B9%E6%B9%96+%E3%83%89%E3%83%AD%E3%83%9F%E3%83%86&form=hpcapt&filters=HpDate%3a%2220261102_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261102_AlpineBraies%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "多洛米蒂",
+   "dolomites",
+   "dolomiti",
+   "ドロミテ",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
+ },
+ {
+  "id": "ja-jp-2026-11-03",
+  "market": "ja-jp",
+  "date": "2026-11-03",
+  "urlbase": "/th?id=OHR.AutumnChina_JA-JP2275105446",
+  "imageKey": "AutumnChina",
+  "title": "秋色の森を水上散歩",
+  "desc": "色鮮やかなラクウショウの森をボートで進む人々、安徽省宣城市、中国 (© Jackal Pan/Getty Images)",
+  "location": [
+   "色鮮やかなラクウショウの森をボートで進む人々、安徽省宣城市、中国"
+  ],
+  "region": "中国",
+  "photographer": "Jackal Pan",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%A9%E3%82%AF%E3%82%A6%E3%82%B7%E3%83%A7%E3%82%A6&form=hpcapt&filters=HpDate%3a%2220261103_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261103_AutumnChina%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "安徽",
+   "anhui",
+   "宣城",
+   "xuancheng"
+  ]
  }
 ]

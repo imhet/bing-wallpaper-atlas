@@ -13183,5 +13183,122 @@
    "民俗饰品",
    "器皿"
   ]
+ },
+ {
+  "id": "en-us-2026-11-02",
+  "market": "en-us",
+  "date": "2026-11-02",
+  "urlbase": "/th?id=OHR.HudsonBear_EN-US0297833232",
+  "imageKey": "HudsonBear",
+  "title": "A future written in ice",
+  "desc": "Polar bear and cubs by Hudson Bay, Manitoba, Canada (© Danita Delimont/Adobe Stock)",
+  "location": [
+   "Polar bear and cubs by Hudson Bay",
+   "Manitoba",
+   "Canada"
+  ],
+  "region": "加拿大",
+  "photographer": "Danita Delimont",
+  "gallery": "Adobe Stock",
+  "copyrightlink": "https://www.bing.com/search?q=Polar+Bear+Week&form=hpcapt&filters=HpDate%3a%2220261102_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261102_HudsonBear%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ],
+  "content_tags": [
+   "北极熊",
+   "熊",
+   "幼崽",
+   "哺乳动物",
+   "野生动物",
+   "岩石",
+   "苔原",
+   "灌木",
+   "枯草",
+   "动物母子"
+  ]
+ },
+ {
+  "id": "en-us-2026-11-03",
+  "market": "en-us",
+  "date": "2026-11-03",
+  "urlbase": "/th?id=OHR.AlpineBraies_EN-US6636326357",
+  "imageKey": "AlpineBraies",
+  "title": "Peace among the peaks",
+  "desc": "Lake Braies, Fanes‑Sennes‑Braies Nature Park, Dolomites, Italy (© leonid_tit/Getty Images)",
+  "location": [
+   "Lake Braies",
+   "Fanes‑Sennes‑Braies Nature Park",
+   "Dolomites",
+   "Italy"
+  ],
+  "region": "意大利",
+  "photographer": "leonid_tit",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Lake+Braies+Dolomites&form=hpcapt&filters=HpDate%3a%2220261103_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261103_AlpineBraies%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "多洛米蒂",
+   "dolomites",
+   "dolomiti",
+   "ドロミテ",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
+ },
+ {
+  "id": "en-us-2026-11-04",
+  "market": "en-us",
+  "date": "2026-11-04",
+  "urlbase": "/th?id=OHR.AutumnChina_EN-US0467722422",
+  "imageKey": "AutumnChina",
+  "title": "Paddling a painted forest",
+  "desc": "People rowing among colorful bald cypress, Xuancheng, Anhui, China (© Jackal Pan/Getty Images)",
+  "location": [
+   "People rowing among colorful bald cypress",
+   "Xuancheng",
+   "Anhui",
+   "China"
+  ],
+  "region": "中国",
+  "photographer": "Jackal Pan",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=bald+cypress&form=hpcapt&filters=HpDate%3a%2220261104_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261104_AutumnChina%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "安徽",
+   "anhui",
+   "宣城",
+   "xuancheng"
+  ]
  }
 ]

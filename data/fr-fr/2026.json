@@ -12450,5 +12450,69 @@
    "枯草",
    "动物母子"
   ]
+ },
+ {
+  "id": "fr-fr-2026-11-02",
+  "market": "fr-fr",
+  "date": "2026-11-02",
+  "urlbase": "/th?id=OHR.AlpineBraies_FR-FR8651963330",
+  "imageKey": "AlpineBraies",
+  "title": "La paix parmi les sommets",
+  "desc": "Lac de Braies, Parc naturel Fanes‑Sennes‑Braies, Dolomites, Italie (© leonid_tit/Getty Images)",
+  "location": [
+   "Lac de Braies",
+   "Parc naturel Fanes‑Sennes‑Braies",
+   "Dolomites",
+   "Italie"
+  ],
+  "region": null,
+  "photographer": "leonid_tit",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Lac+de+Braies+Dolomites&form=hpcapt&filters=HpDate%3a%2220261102_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261102_AlpineBraies%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "多洛米蒂",
+   "dolomites",
+   "dolomiti",
+   "ドロミテ"
+  ]
+ },
+ {
+  "id": "fr-fr-2026-11-03",
+  "market": "fr-fr",
+  "date": "2026-11-03",
+  "urlbase": "/th?id=OHR.AutumnChina_FR-FR8803814320",
+  "imageKey": "AutumnChina",
+  "title": "Glisser à travers une peinture",
+  "desc": "Kayak dans une forêt de cyprès, Xuancheng, Anhui, Chine (© Jackal Pan/Getty Images)",
+  "location": [
+   "Kayak dans une forêt de cyprès",
+   "Xuancheng",
+   "Anhui",
+   "Chine"
+  ],
+  "region": null,
+  "photographer": "Jackal Pan",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=cypr%C3%A8s+chauve&form=hpcapt&filters=HpDate%3a%2220261103_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261103_AutumnChina%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "安徽",
+   "anhui",
+   "宣城",
+   "xuancheng"
+  ]
  }
 ]

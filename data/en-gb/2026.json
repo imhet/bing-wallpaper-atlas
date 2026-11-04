@@ -13175,7 +13175,7 @@
   "copyrightlink": "https://www.bing.com/search?q=Black+Forest+Germany&form=hpcapt&filters=HpDate%3a%2220261101_0000%22",
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261101_SchwarzwaldAutumn%22&FORM=HPQUIZ",
   "resolutions": {
-   "uhd": true,
+   "uhd": false,
    "fhd": true,
    "hd": true,
    "thumb": true
@@ -13242,6 +13242,80 @@
    "灌木",
    "枯草",
    "动物母子"
+  ]
+ },
+ {
+  "id": "en-gb-2026-11-03",
+  "market": "en-gb",
+  "date": "2026-11-03",
+  "urlbase": "/th?id=OHR.AlpineBraies_EN-GB4055015386",
+  "imageKey": "AlpineBraies",
+  "title": "Peace among the peaks",
+  "desc": "Lake Braies, Fanes‑Sennes‑Braies Nature Park, Dolomites, Italy (© leonid_tit/Getty Images)",
+  "location": [
+   "Lake Braies",
+   "Fanes‑Sennes‑Braies Nature Park",
+   "Dolomites",
+   "Italy"
+  ],
+  "region": "意大利",
+  "photographer": "leonid_tit",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Lake+Braies+Dolomites&form=hpcapt&filters=HpDate%3a%2220261103_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261103_AlpineBraies%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "多洛米蒂",
+   "dolomites",
+   "dolomiti",
+   "ドロミテ",
+   "意大利",
+   "italy",
+   "italia",
+   "義大利",
+   "italian",
+   "イタリア"
+  ]
+ },
+ {
+  "id": "en-gb-2026-11-04",
+  "market": "en-gb",
+  "date": "2026-11-04",
+  "urlbase": "/th?id=OHR.AutumnChina_EN-GB4167994080",
+  "imageKey": "AutumnChina",
+  "title": "Paddling a painted forest",
+  "desc": "People rowing among colourful bald cypress, Xuancheng, Anhui, China (© Jackal Pan/Getty Images)",
+  "location": [
+   "People rowing among colourful bald cypress",
+   "Xuancheng",
+   "Anhui",
+   "China"
+  ],
+  "region": "中国",
+  "photographer": "Jackal Pan",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=bald+cypress&form=hpcapt&filters=HpDate%3a%2220261104_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261104_AutumnChina%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "安徽",
+   "anhui",
+   "宣城",
+   "xuancheng"
   ]
  }
 ]

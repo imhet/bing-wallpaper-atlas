@@ -12730,5 +12730,68 @@
    "枯草",
    "动物母子"
   ]
+ },
+ {
+  "id": "de-de-2026-11-02",
+  "market": "de-de",
+  "date": "2026-11-02",
+  "urlbase": "/th?id=OHR.AlpineBraies_DE-DE4176036164",
+  "imageKey": "AlpineBraies",
+  "title": "Stille Gipfelwelten",
+  "desc": "Pragser Wildsee, Naturpark Fanes‑Sennes‑Prags, Dolomiten, Italien (© leonid_tit/Getty Images)",
+  "location": [
+   "Pragser Wildsee",
+   "Naturpark Fanes‑Sennes‑Prags",
+   "Dolomiten",
+   "Italien"
+  ],
+  "region": null,
+  "photographer": "leonid_tit",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Pragser+Wildsee+Dolomiten&form=hpcapt&filters=HpDate%3a%2220261102_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261102_AlpineBraies%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": []
+ },
+ {
+  "id": "de-de-2026-11-03",
+  "market": "de-de",
+  "date": "2026-11-03",
+  "urlbase": "/th?id=OHR.AutumnChina_DE-DE5410503674",
+  "imageKey": "AutumnChina",
+  "title": "Paddeln durch ein Gemälde",
+  "desc": "Paddler zwischen farbenprächtigen Sumpfzypressen, Xuancheng, Anhui, China (© Jackal Pan/Getty Images)",
+  "location": [
+   "Paddler zwischen farbenprächtigen Sumpfzypressen",
+   "Xuancheng",
+   "Anhui",
+   "China"
+  ],
+  "region": "中国",
+  "photographer": "Jackal Pan",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Sumpfzypressen&form=hpcapt&filters=HpDate%3a%2220261103_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261103_AutumnChina%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "安徽",
+   "anhui",
+   "宣城",
+   "xuancheng"
+  ]
  }
 ]
