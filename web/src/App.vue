@@ -9,6 +9,7 @@ import { encodeFilters, decodeFilters } from './urlState'
 import { suggestFromDict } from './suggest'
 import { favoriteKey, exportFavorites, importFavorites, loadFavorites, saveFavorites, toggleFavorite } from './favorites'
 import { lang, setLang, t } from './i18n'
+import { needsRefresh, shouldProbe } from './refresh'
 import { groupByDate } from './updates'
 import HeartIcon from './components/HeartIcon.vue'
 import FilterBar from './components/FilterBar.vue'
@@ -174,6 +175,33 @@ async function startSemantic() {
 }
 const whenIdle = (fn) => (window.requestIdleCallback ? requestIdleCallback(fn) : setTimeout(fn, 1500))
 
+// 标签页长期开着时数据停在打开那天（应用只在打开时拉一次）。
+// 重新可见且距上次加载满 6 小时才探一次 aggregations.json（474B，含 latest_date），
+// 日期真的变了才重拉全量——无脑重拉是每次 3.6MB
+let lastLoadedAt = 0
+let latestDate = null
+let probeInFlight = false
+async function refreshIfStale() {
+  if (document.visibilityState !== 'visible' || probeInFlight || !aggregations.value) return
+  if (!shouldProbe(lastLoadedAt, Date.now())) return
+  probeInFlight = true
+  try {
+    const agg = await fetchJSON('./data/aggregations.json')
+    if (!needsRefresh(latestDate, agg?.latest_date)) {
+      lastLoadedAt = Date.now() // 探过就是有效的检查，压住后续 6 小时
+      return
+    }
+    records.value = await loadAllRecords(agg)
+    aggregations.value = agg
+    latestDate = agg.latest_date
+    lastLoadedAt = Date.now()
+  } catch {
+    /* 探针失败保持现状：旧数据总好过空白 */
+  } finally {
+    probeInFlight = false
+  }
+}
+
 // 全量分片补齐：首屏只需要一级窗口（最新年主视角市场），全量 3.6MB 延后加载，
 // 用户一交互（搜索/筛选/翻页/更新日志）就提前。只跑一次
 let fullStarted = false
@@ -183,6 +211,7 @@ function startFullLoad() {
   loadAllRecords(aggregations.value)
     .then((all) => {
       records.value = all
+      lastLoadedAt = Date.now()
       dataLoading.value = false
       // 分享直达兜底：快速通道失败（分片拉取失败/记录不存在）时全量口径下再找一次；
       // 用户已手动开过弹层则不抢
@@ -333,6 +362,7 @@ function onDetailKey(e) {
 
 onMounted(async () => {
   window.addEventListener('keydown', onDetailKey)
+  document.addEventListener('visibilitychange', refreshIfStale)
   const stored = localStorage.getItem('theme')
   if (stored) theme.value = stored
   Object.assign(filters.value, decodeFilters(location.search)) // 分享链接/刷新还原
@@ -371,6 +401,8 @@ onMounted(async () => {
       .reduce((a, b) => Math.max(a, b), 0)
     const first = String(filters.value.year || latest || '')
     records.value = first ? await loadYearShards(aggregations.value, first, FIRST_MARKETS) : []
+    lastLoadedAt = Date.now()
+    latestDate = aggregations.value.latest_date
     dataLoading.value = true
     if (first)
       loadYearShards(aggregations.value, first)
@@ -388,7 +420,10 @@ onMounted(async () => {
     loading.value = false
   }
 })
-onUnmounted(() => window.removeEventListener('keydown', onDetailKey))
+onUnmounted(() => {
+  window.removeEventListener('keydown', onDetailKey)
+  document.removeEventListener('visibilitychange', refreshIfStale)
+})
 </script>
 
 <template>

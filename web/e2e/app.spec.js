@@ -676,3 +676,50 @@ test('首页卡片日期严格倒序（同图跨市场去重后按本体日重�
   for (let i = 1; i < dates.length; i++) if (dates[i] > dates[i - 1]) bad.push(`${dates[i - 1]}→${dates[i]}@${i}`)
   expect(bad, `日期逆序点: ${bad.slice(0, 5).join(', ')}`).toHaveLength(0)
 })
+
+test('标签页重新可见：6 小时内不探数据，超时且日期变了才重拉', async ({ page }) => {
+  await page.clock.install()
+  await stubExternal(page)
+  const agg = await (await page.request.get('/data/aggregations.json')).json()
+  const shard = await (await page.request.get('/data/zh-cn/2026.json')).json()
+  // 服务端「新数据」：聚合日期前移一位，分片最后一条日期改成 12-31（一改就能在首屏看到）
+  const bumpedShard = shard.map((r, i) => (i === shard.length - 1 ? { ...r, date: '2026-12-31' } : r))
+  let probes = 0
+  let bump = false
+  await page.route('**/data/aggregations.json', (route) => {
+    probes++
+    return route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify(bump ? { ...agg, latest_date: '2026-12-31' } : agg),
+    })
+  })
+  await page.route('**/data/zh-cn/2026.json', (route) =>
+    route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify(bump ? bumpedShard : shard),
+    }),
+  )
+  await page.goto('/')
+  await expect(page.locator('.card').first()).toBeVisible()
+  // 先让延后 3 秒的全量加载跑完：它完成时会把 lastLoadedAt 刷成当前时刻，
+  // 不先落定就跨时间，第二段闸门会被这次刷新顶掉
+  await page.clock.fastForward(3000)
+  await waitFullData(page)
+
+  // 1 小时后切回：闸门未开，不该产生任何探针请求
+  const p0 = probes
+  await page.clock.fastForward(3600_000)
+  await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')))
+  await page.waitForTimeout(300)
+  expect(probes, '6 小时内切来切去不该探').toBe(p0)
+  await expect(page.locator('.card .date').first()).not.toContainText('2026-12-31')
+
+  // 再跨过 6 小时且服务端日期变了：探一次 → 重拉 → 首屏出现新日期
+  await page.clock.fastForward(6 * 3600_000)
+  bump = true
+  await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')))
+  await expect.poll(() => probes, { timeout: 5000 }).toBe(p0 + 1)
+  await expect(page.locator('.card .date').first()).toContainText('2026-12-31', { timeout: 15000 })
+})
