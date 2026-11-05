@@ -12793,5 +12793,43 @@
    "宣城",
    "xuancheng"
   ]
+ },
+ {
+  "id": "de-de-2026-11-04",
+  "market": "de-de",
+  "date": "2026-11-04",
+  "urlbase": "/th?id=OHR.StileCrossing_DE-DE6131632165",
+  "imageKey": "StileCrossing",
+  "title": "Ein Schritt näher am Gipfel",
+  "desc": "Holzsteg an einer Steinmauer, Black Crag, Lake District, England (© Alex Treadway/Getty Images)",
+  "location": [
+   "Holzsteg an einer Steinmauer",
+   "Black Crag",
+   "Lake District",
+   "England"
+  ],
+  "region": "英国",
+  "photographer": "Alex Treadway",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Lake+District+Vereinigtes+K%C3%B6nigreich&form=hpcapt&filters=HpDate%3a%2220261104_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261104_StileCrossing%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "英国",
+   "united kingdom",
+   "britain",
+   "england",
+   "english",
+   "英國",
+   "英格蘭",
+   "イギリス",
+   "scotland",
+   "wales"
+  ]
  }
 ]
