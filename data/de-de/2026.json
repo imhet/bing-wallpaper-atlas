@@ -12756,7 +12756,20 @@
    "hd": true,
    "thumb": true
   },
-  "tags": []
+  "tags": [],
+  "content_tags": [
+   "雪山",
+   "湖泊",
+   "山脉",
+   "湖水",
+   "倒影",
+   "秋色",
+   "森林",
+   "云雾",
+   "针叶林",
+   "山坡",
+   "蓝天"
+  ]
  },
  {
   "id": "de-de-2026-11-03",
@@ -12792,6 +12805,17 @@
    "anhui",
    "宣城",
    "xuancheng"
+  ],
+  "content_tags": [
+   "水杉",
+   "树林",
+   "河流",
+   "秋色",
+   "小船",
+   "船夫",
+   "红叶",
+   "水上森林",
+   "湿地"
   ]
  },
  {
@@ -12830,6 +12854,71 @@
    "イギリス",
    "scotland",
    "wales"
+  ],
+  "content_tags": [
+   "石墙",
+   "木梯",
+   "岩石",
+   "草地",
+   "丘陵",
+   "远山",
+   "晚霞",
+   "云",
+   "黄昏",
+   "树木",
+   "荒原"
+  ]
+ },
+ {
+  "id": "de-de-2026-11-05",
+  "market": "de-de",
+  "date": "2026-11-05",
+  "urlbase": "/th?id=OHR.PipiwaiTrail_DE-DE9691097479",
+  "imageKey": "PipiwaiTrail",
+  "title": "Ein grüner Tunnel durch Maui",
+  "desc": "Bambuswald, Pīpīwai Trail, Haleakalā-Nationalpark, Maui, Hawaii, USA (© MNStudio/Getty Images)",
+  "location": [
+   "Bambuswald",
+   "Pīpīwai Trail",
+   "Haleakalā-Nationalpark",
+   "Maui",
+   "Hawaii",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "MNStudio",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Haleakala-Nationalpark+Hawaii&form=hpcapt&filters=HpDate%3a%2220261105_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261105_PipiwaiTrail%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "ハワイ",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "竹林",
+   "森林",
+   "竹子",
+   "植物",
+   "林间小径",
+   "小路",
+   "阳光",
+   "石头",
+   "岩石",
+   "绿叶"
   ]
  }
 ]

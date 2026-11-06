@@ -13280,6 +13280,19 @@
    "義大利",
    "italian",
    "イタリア"
+  ],
+  "content_tags": [
+   "雪山",
+   "湖泊",
+   "山脉",
+   "湖水",
+   "倒影",
+   "秋色",
+   "森林",
+   "云雾",
+   "针叶林",
+   "山坡",
+   "蓝天"
   ]
  },
  {
@@ -13316,6 +13329,17 @@
    "anhui",
    "宣城",
    "xuancheng"
+  ],
+  "content_tags": [
+   "水杉",
+   "树林",
+   "河流",
+   "秋色",
+   "小船",
+   "船夫",
+   "红叶",
+   "水上森林",
+   "湿地"
   ]
  },
  {
@@ -13346,6 +13370,71 @@
    "london",
    "ロンドン",
    "倫敦"
+  ],
+  "content_tags": [
+   "烟花",
+   "巴特西发电站",
+   "建筑",
+   "烟囱",
+   "发电厂",
+   "夜景",
+   "泰晤士河",
+   "河流",
+   "城市",
+   "倒影",
+   "船"
+  ]
+ },
+ {
+  "id": "en-gb-2026-11-06",
+  "market": "en-gb",
+  "date": "2026-11-06",
+  "urlbase": "/th?id=OHR.PipiwaiTrail_EN-GB4651327269",
+  "imageKey": "PipiwaiTrail",
+  "title": "A green tunnel through Maui",
+  "desc": "Bamboo forest, Pīpīwai Trail, Haleakalā National Park, Maui, Hawaii, USA (© MNStudio/Getty Images)",
+  "location": [
+   "Bamboo forest",
+   "Pīpīwai Trail",
+   "Haleakalā National Park",
+   "Maui",
+   "Hawaii",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "MNStudio",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Haleakala+National+Park&form=hpcapt&filters=HpDate%3a%2220261106_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261106_PipiwaiTrail%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "ハワイ",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "竹林",
+   "森林",
+   "竹子",
+   "植物",
+   "林间小径",
+   "小路",
+   "阳光",
+   "石头",
+   "岩石",
+   "绿叶"
   ]
  }
 ]
