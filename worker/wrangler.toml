@@ -4,5 +4,6 @@ compatibility_date = "2026-11-01"
 
 # 只接管博客域下的 /wallpaper 前缀，其余路径仍由 heyitao.com 的 Pages 项目（Hugo 博客）服务
 routes = [
-  { pattern = "heyitao.com/wallpaper*", zone_name = "heyitao.com" }
+  { pattern = "heyitao.com/wallpaper*", zone_name = "heyitao.com" },
+  { pattern = "www.heyitao.com/wallpaper*", zone_name = "heyitao.com" }
 ]

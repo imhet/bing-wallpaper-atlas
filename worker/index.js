@@ -8,12 +8,17 @@
 
 const PREFIX = '/wallpaper'
 const ORIGIN = 'https://bing-wallpaper-atlas-5n6.pages.dev'
+const CANONICAL_ORIGIN = 'https://heyitao.com'
 
 export default {
   async fetch(request) {
     const url = new URL(request.url)
+    // www 整站被博客兜底（任意路径都回博客首页），/wallpaper 在 www 下根本到不了这里，
+    // 所以先归一裸域。canonical 也只收一个入口。
+    const origin = url.hostname === 'www.heyitao.com' ? CANONICAL_ORIGIN : url.origin
     // 无尾斜杠时补上：页面里的 './assets/…' 要靠尾斜杠才能解析到 /wallpaper/ 下面
-    if (url.pathname === PREFIX) return Response.redirect(`${url.origin}${PREFIX}/${url.search}`, 301)
+    if (url.pathname === PREFIX) return Response.redirect(`${origin}${PREFIX}/${url.search}`, 301)
+    if (origin !== url.origin) return Response.redirect(`${origin}${url.pathname}${url.search}`, 301)
 
     const rest = url.pathname.slice(PREFIX.length) || '/'
     const resp = await fetch(new Request(new URL(rest + url.search, ORIGIN), request))

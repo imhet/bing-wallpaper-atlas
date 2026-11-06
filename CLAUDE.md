@@ -74,7 +74,7 @@ storage.py                    data/{market}/{year}.json 分片 + aggregations.js
 - 自定义域在 CF 控制台「Pages 项目 → Custom domains」添加，需配合一条 `bing` 的 CNAME 指向 `<项目>.pages.dev`（wrangler 的 OAuth 授权不含 DNS 写权限，这一步只能手动）
 - 部署文件数 4112、最大单文件 14.2MB，均在免费档限制内（20,000 文件 / 25MiB）
 
-**子路径 `heyitao.com/wallpaper`**：Pages 的 Custom domains 不接受路径，只能由 `worker/` 里的 Worker 代理（`heyitao.com/wallpaper*` 路由 → 剥前缀转发到 `<项目>.pages.dev`，`/wallpaper` 补尾斜杠 301，Pages 的路径相对 `Location` 补回前缀）。博客其余路径不受影响。部署：`cd worker && CLOUDFLARE_ACCOUNT_ID=<账号> npx wrangler deploy`。站点本身全相对路径（`vite base './'`、`api.js` 用 `./data/`），**唯一需要感知部署根的是 `public/sw.js`**——它按自身 URL 推 `ROOT` 再拼 `data/`，写死 `/data/` 会让子路径下的数据 SWR 缓存整层失效（`src/sw.test.js` 用最小 SW 环境锁死根/子路径两种部署形态）。**三个入口内容相同，`index.html` 的 canonical / `og:url` / `og:image` / hreflang x-default / JSON-LD `url` 统一收口到 `https://heyitao.com/wallpaper/`**（内链权重攒在自有域名，其余两个当镜像；E2E 有断言，改入口域名要同步改这六处）。
+**子路径 `heyitao.com/wallpaper`**：Pages 的 Custom domains 不接受路径，只能由 `worker/` 里的 Worker 代理（`heyitao.com/wallpaper*` 路由 → 剥前缀转发到 `<项目>.pages.dev`，`/wallpaper` 补尾斜杠 301，Pages 的路径相对 `Location` 补回前缀）。博客其余路径不受影响。**`www.heyitao.com` 整站被博客兜底（任意路径都回博客首页），/wallpaper 必须另挂 `www.heyitao.com/wallpaper*` 路由并 301 到裸域**，否则带 www 的链接会显示博客首页；`worker/index.test.js`（`cd worker && node --test`）锁死 www→裸域归一、补尾斜杠、裸域代理三条行为。部署：`cd worker && CLOUDFLARE_ACCOUNT_ID=<账号> npx wrangler deploy`。站点本身全相对路径（`vite base './'`、`api.js` 用 `./data/`），**唯一需要感知部署根的是 `public/sw.js`**——它按自身 URL 推 `ROOT` 再拼 `data/`，写死 `/data/` 会让子路径下的数据 SWR 缓存整层失效（`src/sw.test.js` 用最小 SW 环境锁死根/子路径两种部署形态）。**三个入口内容相同，`index.html` 的 canonical / `og:url` / `og:image` / hreflang x-default / JSON-LD `url` 统一收口到 `https://heyitao.com/wallpaper/`**（内链权重攒在自有域名，其余两个当镜像；E2E 有断言，改入口域名要同步改这六处）。
 
 ### 前端（web/）
 
