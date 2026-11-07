@@ -13420,5 +13420,40 @@
    "岩石",
    "绿叶"
   ]
+ },
+ {
+  "id": "en-us-2026-11-07",
+  "market": "en-us",
+  "date": "2026-11-07",
+  "urlbase": "/th?id=OHR.DakotaBison_EN-US0710175615",
+  "imageKey": "DakotaBison",
+  "title": "The giant that came back",
+  "desc": "A bison in the grasslands of Theodore Roosevelt National Park, North Dakota (© Tandem Stock/Adobe Stock)",
+  "location": [
+   "A bison in the grasslands of Theodore Roosevelt National Park",
+   "North Dakota"
+  ],
+  "region": null,
+  "photographer": "Tandem Stock",
+  "gallery": "Adobe Stock",
+  "copyrightlink": "https://www.bing.com/search?q=National+Bison+Day&form=hpcapt&filters=HpDate%3a%2220261107_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261107_DakotaBison%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "美洲野牛",
+   "牛",
+   "哺乳动物",
+   "草原",
+   "枯草",
+   "野生动物",
+   "秋色",
+   "荒野"
+  ]
  }
 ]
