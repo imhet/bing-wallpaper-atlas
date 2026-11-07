@@ -34,6 +34,20 @@ test.describe('英文浏览器（en-US）直接进入英文界面', () => {
   })
 })
 
+test.describe('站头博客入口', () => {
+  test('有「博客」链接指向博客首页（新标签打开），文案跟随语言', async ({ page }) => {
+    await stubThumbs(page)
+    await page.goto('/')
+    const blog = page.locator('.site-header .blog-link')
+    await expect(blog).toHaveText('博客')
+    await expect(blog).toHaveAttribute('href', 'https://heyitao.com/')
+    await expect(blog).toHaveAttribute('target', '_blank')
+
+    await page.locator('.lang-toggle').click()
+    await expect(blog).toHaveText('Blog')
+  })
+})
+
 test.describe('手动语言切换（默认中文环境）', () => {
   test('点切换按钮变英文，刷新后保持，再点回中文', async ({ page }) => {
     await stubThumbs(page)

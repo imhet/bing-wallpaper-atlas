@@ -78,6 +78,7 @@ export const MESSAGES = {
     backToTop: '返回顶部',
     toTop: '↑ 顶部',
     langSwitch: 'EN', // 按钮显示「切过去的语言」
+    blogEntry: '博客',
     ogLocale: 'zh_CN',
   },
   en: {
@@ -154,6 +155,7 @@ export const MESSAGES = {
     backToTop: 'Back to top',
     toTop: '↑ Top',
     langSwitch: '中文',
+    blogEntry: 'Blog',
   },
 }
 

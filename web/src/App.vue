@@ -445,6 +445,7 @@ onUnmounted(() => {
     <button class="theme-toggle lang-toggle" @click="setLang(lang === 'en' ? 'zh' : 'en')">
       {{ t('langSwitch') }}
     </button>
+    <a class="theme-toggle blog-link" href="https://heyitao.com/" target="_blank" rel="noopener">{{ t('blogEntry') }}</a>
   </header>
   <UpdatesView
     v-if="view === 'updates'"

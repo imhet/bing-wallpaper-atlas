@@ -43,6 +43,7 @@ body { margin: 0; font-family: system-ui, -apple-system, 'PingFang SC', 'Microso
 .home-link:hover { color: var(--accent); }
 .total { color: var(--muted); font-size: 13px; }
 .theme-toggle { display: inline-flex; align-items: center; gap: 4px; background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
+.theme-toggle:is(a) { text-decoration: none; }
 /* 只让 h1 后第一个按钮吃掉剩余空间：按钮组成组靠右，而不是被 auto margin 平分推散 */
 .site-header h1 + .theme-toggle { margin-left: auto; }
 .theme-toggle.active { border-color: var(--accent); color: var(--accent); }
