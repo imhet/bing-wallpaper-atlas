@@ -13375,5 +13375,50 @@
    "树木",
    "荒原"
   ]
+ },
+ {
+  "id": "en-us-2026-11-06",
+  "market": "en-us",
+  "date": "2026-11-06",
+  "urlbase": "/th?id=OHR.PipiwaiTrail_EN-US0631882545",
+  "imageKey": "PipiwaiTrail",
+  "title": "A green tunnel through Maui",
+  "desc": "Bamboo forest, Pīpīwai Trail, Haleakalā National Park, Maui, Hawaii (© MNStudio/Getty Images)",
+  "location": [
+   "Bamboo forest",
+   "Pīpīwai Trail",
+   "Haleakalā National Park",
+   "Maui",
+   "Hawaii"
+  ],
+  "region": null,
+  "photographer": "MNStudio",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Haleakala+National+Park&form=hpcapt&filters=HpDate%3a%2220261106_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261106_PipiwaiTrail%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "ハワイ"
+  ],
+  "content_tags": [
+   "竹林",
+   "森林",
+   "竹子",
+   "植物",
+   "林间小径",
+   "小路",
+   "阳光",
+   "石头",
+   "岩石",
+   "绿叶"
+  ]
  }
 ]

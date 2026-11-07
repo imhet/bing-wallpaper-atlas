@@ -12622,5 +12622,41 @@
    "岩石",
    "绿叶"
   ]
+ },
+ {
+  "id": "fr-fr-2026-11-06",
+  "market": "fr-fr",
+  "date": "2026-11-06",
+  "urlbase": "/th?id=OHR.DakotaBison_FR-FR7465030722",
+  "imageKey": "DakotaBison",
+  "title": "Un géant de retour",
+  "desc": "Bison dans le parc national Theodore Roosevelt, Dakota du Nord, États-Unis (© Tandem Stock/Adobe Stock)",
+  "location": [
+   "Bison dans le parc national Theodore Roosevelt",
+   "Dakota du Nord",
+   "États-Unis"
+  ],
+  "region": null,
+  "photographer": "Tandem Stock",
+  "gallery": "Adobe Stock",
+  "copyrightlink": "https://www.bing.com/search?q=bison+bison&form=hpcapt&filters=HpDate%3a%2220261106_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261106_DakotaBison%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "美洲野牛",
+   "牛",
+   "哺乳动物",
+   "草原",
+   "枯草",
+   "野生动物",
+   "秋色",
+   "荒野"
+  ]
  }
 ]

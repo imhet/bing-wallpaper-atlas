@@ -12920,5 +12920,48 @@
    "岩石",
    "绿叶"
   ]
+ },
+ {
+  "id": "de-de-2026-11-06",
+  "market": "de-de",
+  "date": "2026-11-06",
+  "urlbase": "/th?id=OHR.DakotaBison_DE-DE0154878283",
+  "imageKey": "DakotaBison",
+  "title": "Der zurückgekehrte Riese",
+  "desc": "Ein Bison in der Grassteppe des Theodore-Roosevelt-Nationalparks, Nord-Dakota, USA (© Tandem Stock/Adobe Stock)",
+  "location": [
+   "Ein Bison in der Grassteppe des Theodore-Roosevelt-Nationalparks",
+   "Nord-Dakota",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "Tandem Stock",
+  "gallery": "Adobe Stock",
+  "copyrightlink": "https://www.bing.com/search?q=Bisons&form=hpcapt&filters=HpDate%3a%2220261106_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261106_DakotaBison%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "美洲野牛",
+   "牛",
+   "哺乳动物",
+   "草原",
+   "枯草",
+   "野生动物",
+   "秋色",
+   "荒野"
+  ]
  }
 ]

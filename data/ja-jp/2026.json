@@ -13131,5 +13131,46 @@
    "岩石",
    "绿叶"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-06",
+  "market": "ja-jp",
+  "date": "2026-11-06",
+  "urlbase": "/th?id=OHR.DakotaBison_JA-JP7700625518",
+  "imageKey": "DakotaBison",
+  "title": "よみがえった草原の巨人",
+  "desc": "セオドア・ルーズベルト国立公園の草原にいるバイソン、ノースダコタ州、アメリカ (© Tandem Stock/Adobe Stock)",
+  "location": [
+   "セオドア・ルーズベルト国立公園の草原にいるバイソン、ノースダコタ州、アメリカ"
+  ],
+  "region": null,
+  "photographer": "Tandem Stock",
+  "gallery": "Adobe Stock",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E3%83%90%E3%82%A4%E3%82%BD%E3%83%B3&form=hpcapt&filters=HpDate%3a%2220261106_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261106_DakotaBison%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "美洲野牛",
+   "牛",
+   "哺乳动物",
+   "草原",
+   "枯草",
+   "野生动物",
+   "秋色",
+   "荒野"
+  ]
  }
 ]
