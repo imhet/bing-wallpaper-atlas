@@ -248,6 +248,15 @@ test('分享元信息：og 图存在，描述不含过期计数', async ({ page 
   expect((await resp.body()).length).toBeGreaterThan(10000)
 })
 
+test('访问统计：CF Web Analytics beacon 已挂载（token 形态正确）', async ({ page }) => {
+  await page.goto('/')
+  const beacon = page.locator('script[data-cf-beacon]')
+  await expect(beacon).toHaveCount(1)
+  const cfg = JSON.parse(await beacon.getAttribute('data-cf-beacon'))
+  expect(cfg.token, 'token 必须非空且是 32 位十六进制').toMatch(/^[a-f0-9]{32}$/)
+  expect(await beacon.getAttribute('src')).toContain('cloudflareinsights.com/beacon')
+})
+
 test('首屏数据未到时不显示「没有匹配的壁纸」', async ({ page }) => {
   await stubExternal(page)
   await page.route('**/data/*/*.json', async (route) => {
