@@ -12791,7 +12791,7 @@
   "copyrightlink": "https://www.bing.com/search?q=Sumpfzypressen&form=hpcapt&filters=HpDate%3a%2220261103_2300%22",
   "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261103_AutumnChina%22&FORM=HPQUIZ",
   "resolutions": {
-   "uhd": true,
+   "uhd": false,
    "fhd": true,
    "hd": true,
    "thumb": true
@@ -13003,6 +13003,51 @@
    "春节",
    "灯饰",
    "装饰"
+  ]
+ },
+ {
+  "id": "de-de-2026-11-08",
+  "market": "de-de",
+  "date": "2026-11-08",
+  "urlbase": "/th?id=OHR.MauerBerlin_DE-DE4395338070",
+  "imageKey": "MauerBerlin",
+  "title": "Die Nacht, die Deutschland veränderte",
+  "desc": "Schüler spähen durch einen Spalt in einem noch erhaltenen Abschnitt der Berliner Mauer (© Sean Gallup/Getty Images)",
+  "location": [
+   "Schüler spähen durch einen Spalt in einem noch erhaltenen Abschnitt der Berliner Mauer"
+  ],
+  "region": null,
+  "photographer": "Sean Gallup",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Fall+der+Berliner+Mauer&form=hpcapt&filters=HpDate%3a%2220261108_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261108_MauerBerlin%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "德国",
+   "germany",
+   "deutschland",
+   "german",
+   "ドイツ",
+   "德國"
+  ],
+  "content_tags": [
+   "柏林墙",
+   "围墙",
+   "儿童",
+   "人物",
+   "背包",
+   "双肩包",
+   "玫瑰",
+   "鲜花",
+   "墙缝窥视",
+   "针织帽",
+   "水泥墙",
+   "冬装外套"
   ]
  }
 ]
