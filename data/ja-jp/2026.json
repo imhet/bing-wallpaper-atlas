@@ -13259,5 +13259,47 @@
    "砖石路面",
    "夜幕"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-09",
+  "market": "ja-jp",
+  "date": "2026-11-09",
+  "urlbase": "/th?id=OHR.RoseIsland_JA-JP3257968381",
+  "imageKey": "RoseIsland",
+  "title": "楽園でひと休み",
+  "desc": "ローズ島の空撮、バハマ (© Abstract Aerial Art/Getty Images)",
+  "location": [
+   "ローズ島の空撮、バハマ"
+  ],
+  "region": null,
+  "photographer": "Abstract Aerial Art",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%AD%E3%83%BC%E3%82%BA%E5%B3%B6+%E3%83%90%E3%83%8F%E3%83%9E&form=hpcapt&filters=HpDate%3a%2220261109_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261109_RoseIsland%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "热带岛屿",
+   "岛屿",
+   "白沙滩",
+   "海滩",
+   "海岸线",
+   "海洋",
+   "珊瑚礁",
+   "泻湖",
+   "沙洲",
+   "棕榈树",
+   "树",
+   "丛林",
+   "浅滩",
+   "云",
+   "蓝天",
+   "无人岛"
+  ]
  }
 ]

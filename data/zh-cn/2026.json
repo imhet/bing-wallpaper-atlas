@@ -13912,5 +13912,48 @@
    "砖石路面",
    "夜幕"
   ]
+ },
+ {
+  "id": "zh-cn-2026-11-09",
+  "market": "zh-cn",
+  "date": "2026-11-09",
+  "urlbase": "/th?id=OHR.RoseIsland_ZH-CN6477140814",
+  "imageKey": "RoseIsland",
+  "title": "惬意放松，尽享海岛时光",
+  "desc": "玫瑰岛航拍图，巴哈马 (© Abstract Aerial Art/Getty Images)",
+  "location": [
+   "玫瑰岛航拍图",
+   "巴哈马"
+  ],
+  "region": null,
+  "photographer": "Abstract Aerial Art",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%B7%B4%E5%93%88%E9%A9%AC%E7%8E%AB%E7%91%B0%E5%B2%9B&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261109_RoseIsland%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "热带岛屿",
+   "岛屿",
+   "白沙滩",
+   "海滩",
+   "海岸线",
+   "海洋",
+   "珊瑚礁",
+   "泻湖",
+   "沙洲",
+   "棕榈树",
+   "树",
+   "丛林",
+   "浅滩",
+   "云",
+   "蓝天",
+   "无人岛"
+  ]
  }
 ]
