@@ -13617,5 +13617,45 @@
    "蓝天",
    "无人岛"
   ]
+ },
+ {
+  "id": "en-gb-2026-11-11",
+  "market": "en-gb",
+  "date": "2026-11-11",
+  "urlbase": "/th?id=OHR.PoppiesField_EN-GB3947926925",
+  "imageKey": "PoppiesField",
+  "title": "We will remember them",
+  "desc": "A field of poppies (© lloyd-horgan/Getty Images)",
+  "location": [
+   "A field of poppies"
+  ],
+  "region": null,
+  "photographer": "lloyd-horgan",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Remembrance+Day&form=hpcapt&filters=HpDate%3a%2220261111_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261111_PoppiesField%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "虞美人",
+   "花",
+   "花海",
+   "花田",
+   "日落",
+   "太阳",
+   "阳光",
+   "田野",
+   "草地",
+   "天空",
+   "云彩",
+   "树林",
+   "夏天",
+   "田园"
+  ]
  }
 ]

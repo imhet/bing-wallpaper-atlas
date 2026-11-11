@@ -12784,5 +12784,52 @@
    "蓝天",
    "无人岛"
   ]
+ },
+ {
+  "id": "fr-fr-2026-11-10",
+  "market": "fr-fr",
+  "date": "2026-11-10",
+  "urlbase": "/th?id=OHR.ArmisticeTriomphe_FR-FR3844367700",
+  "imageKey": "ArmisticeTriomphe",
+  "title": "Une flamme rallumée chaque jour",
+  "desc": "Arc de Triomphe, Paris, France (© Beboy_ltd/Getty Images)",
+  "location": [
+   "Arc de Triomphe",
+   "Paris",
+   "France"
+  ],
+  "region": "法国",
+  "photographer": "Beboy_ltd",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Tombe+du+Soldat+Inconnu+Arc+De+Triomphe&form=hpcapt&filters=HpDate%3a%2220261110_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261110_ArmisticeTriomphe%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "巴黎",
+   "paris",
+   "パリ",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
+  "content_tags": [
+   "凯旋门",
+   "建筑",
+   "路灯",
+   "树",
+   "石板路",
+   "道路",
+   "夜空",
+   "广场",
+   "城市夜景",
+   "巴黎"
+  ]
  }
 ]

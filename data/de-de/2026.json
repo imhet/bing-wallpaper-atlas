@@ -13092,5 +13092,42 @@
    "蓝天",
    "无人岛"
   ]
+ },
+ {
+  "id": "de-de-2026-11-10",
+  "market": "de-de",
+  "date": "2026-11-10",
+  "urlbase": "/th?id=OHR.Atlantica_DE-DE2362030432",
+  "imageKey": "Atlantica",
+  "title": "Ein Wald voller Wunder",
+  "desc": "Der Atlantische Regenwald, Brasilien (© FG Trade/Getty Images)",
+  "location": [
+   "Der Atlantische Regenwald",
+   "Brasilien"
+  ],
+  "region": null,
+  "photographer": "FG Trade",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Atlantischer+Regenwald+Brasilien&form=hpcapt&filters=HpDate%3a%2220261110_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261110_Atlantica%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "热带雨林",
+   "蜿蜒河流",
+   "丛林",
+   "森林",
+   "河湾",
+   "河流",
+   "草地",
+   "绿色植被",
+   "航拍视角",
+   "原始森林"
+  ]
  }
 ]

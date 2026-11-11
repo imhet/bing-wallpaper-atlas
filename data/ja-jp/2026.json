@@ -13301,5 +13301,41 @@
    "蓝天",
    "无人岛"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-10",
+  "market": "ja-jp",
+  "date": "2026-11-10",
+  "urlbase": "/th?id=OHR.Atlantica_JA-JP3902829738",
+  "imageKey": "Atlantica",
+  "title": "驚きに満ちた森",
+  "desc": "大西洋岸森林、ブラジル (© FG Trade/Getty Images)",
+  "location": [
+   "大西洋岸森林、ブラジル"
+  ],
+  "region": null,
+  "photographer": "FG Trade",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%B2%B8%E6%A3%AE%E6%9E%97+%E3%83%96%E3%83%A9%E3%82%B8%E3%83%AB&form=hpcapt&filters=HpDate%3a%2220261110_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261110_Atlantica%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "热带雨林",
+   "蜿蜒河流",
+   "丛林",
+   "森林",
+   "河湾",
+   "河流",
+   "草地",
+   "绿色植被",
+   "航拍视角",
+   "原始森林"
+  ]
  }
 ]

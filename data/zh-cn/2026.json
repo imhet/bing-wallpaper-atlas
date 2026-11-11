@@ -13955,5 +13955,45 @@
    "蓝天",
    "无人岛"
   ]
+ },
+ {
+  "id": "zh-cn-2026-11-10",
+  "market": "zh-cn",
+  "date": "2026-11-10",
+  "urlbase": "/th?id=OHR.Atlantica_ZH-CN6593995386",
+  "imageKey": "Atlantica",
+  "title": "奇妙纷呈的森林",
+  "desc": "大西洋森林，巴西 (© FG Trade/Getty Images)",
+  "location": [
+   "大西洋森林",
+   "巴西"
+  ],
+  "region": "巴西",
+  "photographer": "FG Trade",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%B7%B4%E8%A5%BF%E5%A4%A7%E8%A5%BF%E6%B4%8B%E6%A3%AE%E6%9E%97&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261110_Atlantica%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "巴西",
+   "brazil"
+  ],
+  "content_tags": [
+   "热带雨林",
+   "蜿蜒河流",
+   "丛林",
+   "森林",
+   "河湾",
+   "河流",
+   "草地",
+   "绿色植被",
+   "航拍视角",
+   "原始森林"
+  ]
  }
 ]
