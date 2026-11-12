@@ -13657,5 +13657,62 @@
    "夏天",
    "田园"
   ]
+ },
+ {
+  "id": "en-gb-2026-11-12",
+  "market": "en-gb",
+  "date": "2026-11-12",
+  "urlbase": "/th?id=OHR.NorthWindow_EN-GB5518413161",
+  "imageKey": "NorthWindow",
+  "title": "Architecture without an architect",
+  "desc": "North Window, Arches National Park, Moab, Utah, USA (© lightphoto/Getty Images)",
+  "location": [
+   "North Window",
+   "Arches National Park",
+   "Moab",
+   "Utah",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "lightphoto",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Arches+National+Park&form=hpcapt&filters=HpDate%3a%2220261112_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261112_NorthWindow%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "犹他",
+   "utah",
+   "猶他",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ",
+   "拱门国家公园",
+   "arches national park",
+   "拱門國家公園"
+  ],
+  "content_tags": [
+   "天然拱门",
+   "拱门国家公园",
+   "红色砂岩",
+   "岩石",
+   "荒漠",
+   "巨石",
+   "蓝天",
+   "白云",
+   "峡谷",
+   "灌木",
+   "夕照",
+   "砂岩地貌",
+   "荒野",
+   "徒步"
+  ]
  }
 ]

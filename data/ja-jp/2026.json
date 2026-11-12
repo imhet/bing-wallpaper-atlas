@@ -13337,5 +13337,52 @@
    "航拍视角",
    "原始森林"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-11",
+  "market": "ja-jp",
+  "date": "2026-11-11",
+  "urlbase": "/th?id=OHR.NorthWindow_JA-JP8307735119",
+  "imageKey": "NorthWindow",
+  "title": "自然が生んだ建築美",
+  "desc": "ノース・ウィンドウ、アーチーズ国立公園、モアブ、ユタ州、アメリカ (© lightphoto/Getty Images)",
+  "location": [
+   "ノース・ウィンドウ、アーチーズ国立公園、モアブ、ユタ州、アメリカ"
+  ],
+  "region": null,
+  "photographer": "lightphoto",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%82%A2%E3%83%BC%E3%83%81%E3%83%BC%E3%82%BA%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92&form=hpcapt&filters=HpDate%3a%2220261111_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261111_NorthWindow%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "天然拱门",
+   "拱门国家公园",
+   "红色砂岩",
+   "岩石",
+   "荒漠",
+   "巨石",
+   "蓝天",
+   "白云",
+   "峡谷",
+   "灌木",
+   "夕照",
+   "砂岩地貌",
+   "荒野",
+   "徒步"
+  ]
  }
 ]

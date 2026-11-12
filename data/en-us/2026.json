@@ -13594,5 +13594,52 @@
    "蓝天",
    "无人岛"
   ]
+ },
+ {
+  "id": "en-us-2026-11-11",
+  "market": "en-us",
+  "date": "2026-11-11",
+  "urlbase": "/th?id=OHR.SunsetFlags_EN-US1046151448",
+  "imageKey": "SunsetFlags",
+  "title": "A salute in red, white, and blue",
+  "desc": "American flags in a public park in upstate New York (© Matt Champlin/Getty Images)",
+  "location": [
+   "American flags in a public park in upstate New York"
+  ],
+  "region": null,
+  "photographer": "Matt Champlin",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Veterans+Day&form=hpcapt&filters=HpDate%3a%2220261111_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261111_SunsetFlags%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "纽约",
+   "new york",
+   "nyc",
+   "紐約",
+   "ニューヨーク"
+  ],
+  "content_tags": [
+   "美国国旗",
+   "旗帜",
+   "枫树",
+   "树木",
+   "秋色",
+   "夕阳",
+   "逆光",
+   "落叶",
+   "草坪",
+   "金色树叶",
+   "房屋",
+   "建筑",
+   "教堂尖顶",
+   "纪念广场",
+   "树影"
+  ]
  }
 ]
