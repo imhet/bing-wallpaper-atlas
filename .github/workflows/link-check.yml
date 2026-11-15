@@ -18,5 +18,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
+      - name: 数据新鲜度检查（latest_date 落后超过 1 天 = daily 断更，红灯触发失败邮件）
+        run: python -m crawler.freshness_check
       - name: 分层采样探测直链（死链率 >2% 红灯）
         run: python -m crawler.link_check --data-dir data --sample 200
