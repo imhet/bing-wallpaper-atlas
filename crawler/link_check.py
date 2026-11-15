@@ -35,7 +35,9 @@ def sample_records(data_dir: Path, sample: int, random=random) -> list[dict]:
     保底是为了老图——死链风险集中在 2010 年代的镜像深史，纯随机采样对它们覆盖不足。
     """
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
-    for shard in sorted(data_dir.glob("*/*.json")):
+    # 只扫市场分片（zh-cn/2026.json 这类带连字符目录）——sem/thumbs 下也有 json，
+    # concepts_en.json 是 {词: 译名} 字典，混进来迭代出字符串会让 r["market"] TypeError
+    for shard in sorted(data_dir.glob("*-*/*.json")):
         for r in json.loads(shard.read_text(encoding="utf-8")):
             groups[(r["market"], r["date"][:4])].append(r)
     picked, picked_ids = [], set()
