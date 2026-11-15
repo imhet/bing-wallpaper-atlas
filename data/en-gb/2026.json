@@ -13714,5 +13714,129 @@
    "荒野",
    "徒步"
   ]
+ },
+ {
+  "id": "en-gb-2026-11-13",
+  "market": "en-gb",
+  "date": "2026-11-13",
+  "urlbase": "/th?id=OHR.AbrahamCanada_EN-GB1908527515",
+  "imageKey": "AbrahamCanada",
+  "title": "Hidden depths",
+  "desc": "Abraham Lake in Alberta, Canada (© Guang Cao/Getty Images)",
+  "location": [
+   "Abraham Lake in Alberta",
+   "Canada"
+  ],
+  "region": "加拿大",
+  "photographer": "Guang Cao",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Abraham+Lake+Alberta&form=hpcapt&filters=HpDate%3a%2220261113_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261113_AbrahamCanada%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ],
+  "content_tags": [
+   "冰裂",
+   "冰湖",
+   "湖泊",
+   "雪山",
+   "山峰",
+   "落基山脉",
+   "晚霞",
+   "彩云",
+   "云",
+   "雪",
+   "冬季"
+  ]
+ },
+ {
+  "id": "en-gb-2026-11-14",
+  "market": "en-gb",
+  "date": "2026-11-14",
+  "urlbase": "/th?id=OHR.BlueHK_EN-GB3274323919",
+  "imageKey": "BlueHK",
+  "title": "The only way is up",
+  "desc": "Victoria Harbour, Hong Kong, China (© Juan Romero/Cavan Images)",
+  "location": [
+   "Victoria Harbour",
+   "Hong Kong",
+   "China"
+  ],
+  "region": "中国",
+  "photographer": "Juan Romero",
+  "gallery": "Cavan Images",
+  "copyrightlink": "https://www.bing.com/search?q=Victoria+Harbour+Hong+Kong&form=hpcapt&filters=HpDate%3a%2220261114_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261114_BlueHK%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "香港",
+   "hong kong"
+  ],
+  "content_tags": [
+   "摩天大楼",
+   "高楼",
+   "维多利亚港",
+   "港湾",
+   "香港",
+   "城市天际线",
+   "城市夜景",
+   "晚霞",
+   "黄昏",
+   "云层",
+   "城市灯光",
+   "太平山"
+  ]
+ },
+ {
+  "id": "en-gb-2026-11-15",
+  "market": "en-gb",
+  "date": "2026-11-15",
+  "urlbase": "/th?id=OHR.FirstFrost_EN-GB4338987849",
+  "imageKey": "FirstFrost",
+  "title": "Frosty foliage",
+  "desc": "Frozen azalea with red leaves (© avoferten/Shutterstock)",
+  "location": [
+   "Frozen azalea with red leaves"
+  ],
+  "region": null,
+  "photographer": "avoferten",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=azaleas&form=hpcapt&filters=HpDate%3a%2220261115_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261115_FirstFrost%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "霜",
+   "红叶",
+   "树叶",
+   "秋色",
+   "白霜",
+   "灌木",
+   "植物",
+   "特写"
+  ]
  }
 ]

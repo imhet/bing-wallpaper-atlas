@@ -13384,5 +13384,126 @@
    "荒野",
    "徒步"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-12",
+  "market": "ja-jp",
+  "date": "2026-11-12",
+  "urlbase": "/th?id=OHR.AbrahamCanada_JA-JP9609532400",
+  "imageKey": "AbrahamCanada",
+  "title": "氷の下の神秘",
+  "desc": "アブラハム湖、アルバータ州、カナダ (© Guang Cao/Getty Images)",
+  "location": [
+   "アブラハム湖、アルバータ州、カナダ"
+  ],
+  "region": null,
+  "photographer": "Guang Cao",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%82%A2%E3%83%96%E3%83%A9%E3%83%8F%E3%83%A0%E6%B9%96+%E3%82%A2%E3%83%AB%E3%83%90%E3%83%BC%E3%82%BF%E5%B7%9E&form=hpcapt&filters=HpDate%3a%2220261112_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261112_AbrahamCanada%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ],
+  "content_tags": [
+   "冰裂",
+   "冰湖",
+   "湖泊",
+   "雪山",
+   "山峰",
+   "落基山脉",
+   "晚霞",
+   "彩云",
+   "云",
+   "雪",
+   "冬季"
+  ]
+ },
+ {
+  "id": "ja-jp-2026-11-13",
+  "market": "ja-jp",
+  "date": "2026-11-13",
+  "urlbase": "/th?id=OHR.BlueHK_JA-JP0477081186",
+  "imageKey": "BlueHK",
+  "title": "上へ上へと伸びる街",
+  "desc": "ビクトリア・ハーバー、香港、中国 (© Juan Romero/Cavan Images)",
+  "location": [
+   "ビクトリア・ハーバー、香港、中国"
+  ],
+  "region": "中国",
+  "photographer": "Juan Romero",
+  "gallery": "Cavan Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%93%E3%82%AF%E3%83%88%E3%83%AA%E3%82%A2%E3%83%BB%E3%83%8F%E3%83%BC%E3%83%90%E3%83%BC+%E9%A6%99%E6%B8%AF&form=hpcapt&filters=HpDate%3a%2220261113_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261113_BlueHK%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "中国",
+   "china",
+   "chinese",
+   "中國",
+   "香港",
+   "hong kong"
+  ],
+  "content_tags": [
+   "摩天大楼",
+   "高楼",
+   "维多利亚港",
+   "港湾",
+   "香港",
+   "城市天际线",
+   "城市夜景",
+   "晚霞",
+   "黄昏",
+   "云层",
+   "城市灯光",
+   "太平山"
+  ]
+ },
+ {
+  "id": "ja-jp-2026-11-14",
+  "market": "ja-jp",
+  "date": "2026-11-14",
+  "urlbase": "/th?id=OHR.FirstFrost_JA-JP1519167944",
+  "imageKey": "FirstFrost",
+  "title": "霜化粧の葉",
+  "desc": "赤い葉に霜が降りたツツジ (© avoferten/Shutterstock)",
+  "location": [
+   "赤い葉に霜が降りたツツジ"
+  ],
+  "region": null,
+  "photographer": "avoferten",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%84%E3%83%84%E3%82%B8&form=hpcapt&filters=HpDate%3a%2220261114_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261114_FirstFrost%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "霜",
+   "红叶",
+   "树叶",
+   "秋色",
+   "白霜",
+   "灌木",
+   "植物",
+   "特写"
+  ]
  }
 ]

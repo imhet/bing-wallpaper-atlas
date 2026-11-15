@@ -12879,5 +12879,126 @@
    "荒野",
    "徒步"
   ]
+ },
+ {
+  "id": "fr-fr-2026-11-12",
+  "market": "fr-fr",
+  "date": "2026-11-12",
+  "urlbase": "/th?id=OHR.AbrahamCanada_FR-FR1972061533",
+  "imageKey": "AbrahamCanada",
+  "title": "Des profondeurs mystérieuses",
+  "desc": "Lac Abraham, Alberta, Canada (© Guang Cao/Getty Images)",
+  "location": [
+   "Lac Abraham",
+   "Alberta",
+   "Canada"
+  ],
+  "region": "加拿大",
+  "photographer": "Guang Cao",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Lac+Abraham+Alberta&form=hpcapt&filters=HpDate%3a%2220261112_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261112_AbrahamCanada%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "加拿大",
+   "canada",
+   "canadian",
+   "カナダ"
+  ],
+  "content_tags": [
+   "冰裂",
+   "冰湖",
+   "湖泊",
+   "雪山",
+   "山峰",
+   "落基山脉",
+   "晚霞",
+   "彩云",
+   "云",
+   "雪",
+   "冬季"
+  ]
+ },
+ {
+  "id": "fr-fr-2026-11-13",
+  "market": "fr-fr",
+  "date": "2026-11-13",
+  "urlbase": "/th?id=OHR.BlueHK_FR-FR2342913478",
+  "imageKey": "BlueHK",
+  "title": "Les yeux rivés vers le haut",
+  "desc": "Port Victoria, Hong Kong, Chine (© Juan Romero/Cavan Images)",
+  "location": [
+   "Port Victoria",
+   "Hong Kong",
+   "Chine"
+  ],
+  "region": "中国",
+  "photographer": "Juan Romero",
+  "gallery": "Cavan Images",
+  "copyrightlink": "https://www.bing.com/search?q=Port+Victoria+Hong+Kong&form=hpcapt&filters=HpDate%3a%2220261113_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261113_BlueHK%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "香港",
+   "hong kong"
+  ],
+  "content_tags": [
+   "摩天大楼",
+   "高楼",
+   "维多利亚港",
+   "港湾",
+   "香港",
+   "城市天际线",
+   "城市夜景",
+   "晚霞",
+   "黄昏",
+   "云层",
+   "城市灯光",
+   "太平山"
+  ]
+ },
+ {
+  "id": "fr-fr-2026-11-14",
+  "market": "fr-fr",
+  "date": "2026-11-14",
+  "urlbase": "/th?id=OHR.FirstFrost_FR-FR6372552822",
+  "imageKey": "FirstFrost",
+  "title": "Givre sur tons d'automne",
+  "desc": "Azalée gelée aux feuilles rouges (© avoferten/Shutterstock)",
+  "location": [
+   "Azalée gelée aux feuilles rouges"
+  ],
+  "region": null,
+  "photographer": "avoferten",
+  "gallery": "Shutterstock",
+  "copyrightlink": "https://www.bing.com/search?q=azal%C3%A9e&form=hpcapt&filters=HpDate%3a%2220261114_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261114_FirstFrost%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "霜",
+   "红叶",
+   "树叶",
+   "秋色",
+   "白霜",
+   "灌木",
+   "植物",
+   "特写"
+  ]
  }
 ]
