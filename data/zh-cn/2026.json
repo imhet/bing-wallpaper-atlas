@@ -14175,5 +14175,50 @@
    "植物",
    "特写"
   ]
+ },
+ {
+  "id": "zh-cn-2026-11-15",
+  "market": "zh-cn",
+  "date": "2026-11-15",
+  "urlbase": "/th?id=OHR.GilaCliff_ZH-CN2393001519",
+  "imageKey": "GilaCliff",
+  "title": "历经岁月，屹立不倒",
+  "desc": "美国新墨西哥州吉拉悬崖民居国家纪念地 (© Chiara Salvadori/Getty Images)",
+  "location": [
+   "美国新墨西哥州吉拉悬崖民居国家纪念地"
+  ],
+  "region": "墨西哥",
+  "photographer": "Chiara Salvadori",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%90%89%E6%8B%89%E6%82%AC%E5%B4%96%E6%B0%91%E5%B1%85%E5%9B%BD%E5%AE%B6%E7%BA%AA%E5%BF%B5%E5%9C%B0&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261115_GilaCliff%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "崖居遗址",
+   "石屋",
+   "古建筑",
+   "悬崖",
+   "岩壁",
+   "峡谷",
+   "石阶",
+   "松树",
+   "针叶林",
+   "山地",
+   "蓝天",
+   "史前遗迹"
+  ]
  }
 ]

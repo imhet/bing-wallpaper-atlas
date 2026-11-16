@@ -13300,5 +13300,55 @@
    "植物",
    "特写"
   ]
+ },
+ {
+  "id": "de-de-2026-11-15",
+  "market": "de-de",
+  "date": "2026-11-15",
+  "urlbase": "/th?id=OHR.GilaCliff_DE-DE8866174254",
+  "imageKey": "GilaCliff",
+  "title": "Für die Ewigkeit gebaut",
+  "desc": "Gila Cliff Dwellings National Monument, New Mexico, USA (© Chiara Salvadori/Getty Images)",
+  "location": [
+   "Gila Cliff Dwellings National Monument",
+   "New Mexico",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "Chiara Salvadori",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Gila+Cliff+Dwellings+National+Monument&form=hpcapt&filters=HpDate%3a%2220261115_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261115_GilaCliff%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "墨西哥",
+   "mexico",
+   "mexican",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "崖居遗址",
+   "石屋",
+   "古建筑",
+   "悬崖",
+   "岩壁",
+   "峡谷",
+   "石阶",
+   "松树",
+   "针叶林",
+   "山地",
+   "蓝天",
+   "史前遗迹"
+  ]
  }
 ]
