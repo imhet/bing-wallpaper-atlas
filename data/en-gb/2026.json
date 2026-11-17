@@ -13888,5 +13888,55 @@
    "蓝天",
    "史前遗迹"
   ]
+ },
+ {
+  "id": "en-gb-2026-11-17",
+  "market": "en-gb",
+  "date": "2026-11-17",
+  "urlbase": "/th?id=OHR.TrailCedars_EN-GB2504891943",
+  "imageKey": "TrailCedars",
+  "title": "Step into the great outdoors",
+  "desc": "Trail of the Cedars, Glacier National Park, Montana, USA (© DBushue Photography/Getty Images)",
+  "location": [
+   "Trail of the Cedars",
+   "Glacier National Park",
+   "Montana",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "DBushue Photography",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Trail+of+the+Cedars+Glacier+National+Park+Montana&form=hpcapt&filters=HpDate%3a%2220261117_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261117_TrailCedars%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "木栈道",
+   "步道",
+   "森林",
+   "红杉",
+   "树木",
+   "原始森林",
+   "倒木",
+   "枯木",
+   "蕨类植物",
+   "植物",
+   "苔藓",
+   "树干",
+   "灌木",
+   "林间小径"
+  ]
  }
 ]

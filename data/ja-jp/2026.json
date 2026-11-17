@@ -13550,5 +13550,52 @@
    "蓝天",
    "史前遗迹"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-16",
+  "market": "ja-jp",
+  "date": "2026-11-16",
+  "urlbase": "/th?id=OHR.TrailCedars_JA-JP3850490248",
+  "imageKey": "TrailCedars",
+  "title": "さあ、大自然の中へ",
+  "desc": "トレイル・オブ・ザ・シーダーズ、グレイシャー国立公園、モンタナ州、アメリカ (© DBushue Photography/Getty Images)",
+  "location": [
+   "トレイル・オブ・ザ・シーダーズ、グレイシャー国立公園、モンタナ州、アメリカ"
+  ],
+  "region": null,
+  "photographer": "DBushue Photography",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%82%B0%E3%83%AC%E3%82%A4%E3%82%B7%E3%83%A3%E3%83%BC%E5%9B%BD%E7%AB%8B%E5%85%AC%E5%9C%92&form=hpcapt&filters=HpDate%3a%2220261116_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261116_TrailCedars%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "木栈道",
+   "步道",
+   "森林",
+   "红杉",
+   "树木",
+   "原始森林",
+   "倒木",
+   "枯木",
+   "蕨类植物",
+   "植物",
+   "苔藓",
+   "树干",
+   "灌木",
+   "林间小径"
+  ]
  }
 ]
