@@ -14270,5 +14270,40 @@
    "灌木",
    "林间小径"
   ]
+ },
+ {
+  "id": "zh-cn-2026-11-17",
+  "market": "zh-cn",
+  "date": "2026-11-17",
+  "urlbase": "/th?id=OHR.BarnOwlsUnite_ZH-CN2930153291",
+  "imageKey": "BarnOwlsUnite",
+  "title": "从黄昏狩猎到黎明",
+  "desc": "一对仓鸮 (© Zahoor Salmi/Getty Images)",
+  "location": [
+   "一对仓鸮"
+  ],
+  "region": null,
+  "photographer": "Zahoor Salmi",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E4%BB%93%E9%B8%AE&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261117_BarnOwlsUnite%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "仓鸮",
+   "猫头鹰",
+   "鸟",
+   "岩石",
+   "夕阳",
+   "逆光",
+   "金色光线",
+   "暮色",
+   "对视"
+  ]
  }
 ]

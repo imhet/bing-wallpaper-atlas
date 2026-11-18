@@ -13597,5 +13597,40 @@
    "灌木",
    "林间小径"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-17",
+  "market": "ja-jp",
+  "date": "2026-11-17",
+  "urlbase": "/th?id=OHR.BarnOwlsUnite_JA-JP5990292316",
+  "imageKey": "BarnOwlsUnite",
+  "title": "夕暮れから始まる狩り",
+  "desc": "メンフクロウのつがい (© Zahoor Salmi/Getty Images)",
+  "location": [
+   "メンフクロウのつがい"
+  ],
+  "region": null,
+  "photographer": "Zahoor Salmi",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%A1%E3%83%B3%E3%83%95%E3%82%AF%E3%83%AD%E3%82%A6&form=hpcapt&filters=HpDate%3a%2220261117_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261117_BarnOwlsUnite%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "仓鸮",
+   "猫头鹰",
+   "鸟",
+   "岩石",
+   "夕阳",
+   "逆光",
+   "金色光线",
+   "暮色",
+   "对视"
+  ]
  }
 ]

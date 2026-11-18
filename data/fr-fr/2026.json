@@ -13083,5 +13083,40 @@
    "灌木",
    "林间小径"
   ]
+ },
+ {
+  "id": "fr-fr-2026-11-17",
+  "market": "fr-fr",
+  "date": "2026-11-17",
+  "urlbase": "/th?id=OHR.BarnOwlsUnite_FR-FR0018372456",
+  "imageKey": "BarnOwlsUnite",
+  "title": "Chasser du crépuscule à l’aube",
+  "desc": "Couple de chouettes effraies  (© Zahoor Salmi/Getty Images)",
+  "location": [
+   "Couple de chouettes effraies"
+  ],
+  "region": null,
+  "photographer": "Zahoor Salmi",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=chouette+effraie&form=hpcapt&filters=HpDate%3a%2220261117_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261117_BarnOwlsUnite%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "仓鸮",
+   "猫头鹰",
+   "鸟",
+   "岩石",
+   "夕阳",
+   "逆光",
+   "金色光线",
+   "暮色",
+   "对视"
+  ]
  }
 ]
