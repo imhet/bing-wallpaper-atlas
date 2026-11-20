@@ -13473,5 +13473,43 @@
    "晴天",
    "字符"
   ]
+ },
+ {
+  "id": "de-de-2026-11-19",
+  "market": "de-de",
+  "date": "2026-11-19",
+  "urlbase": "/th?id=OHR.Megaptera_DE-DE6966438629",
+  "imageKey": "Megaptera",
+  "title": "Festmahl in den Fjorden",
+  "desc": "Tauchender Buckelwal (Megaptera novaeangliae) Kvaloya, Troms, Norwegen (© Espen Bergersen/Minden Pictures)",
+  "location": [
+   "Tauchender Buckelwal (Megaptera novaeangliae) Kvaloya",
+   "Troms",
+   "Norwegen"
+  ],
+  "region": null,
+  "photographer": "Espen Bergersen",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=Buckelwal&form=hpcapt&filters=HpDate%3a%2220261119_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261119_Megaptera%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "座头鲸",
+   "鲸尾",
+   "鲸鱼",
+   "海洋",
+   "海面",
+   "满月",
+   "月亮",
+   "晚霞",
+   "黄昏",
+   "海浪"
+  ]
  }
 ]
