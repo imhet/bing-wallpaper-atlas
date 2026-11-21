@@ -13981,5 +13981,50 @@
    "晴天",
    "字符"
   ]
+ },
+ {
+  "id": "en-us-2026-11-20",
+  "market": "en-us",
+  "date": "2026-11-20",
+  "urlbase": "/th?id=OHR.Megaptera_EN-US1728719939",
+  "imageKey": "Megaptera",
+  "title": "Feasting in the fjords",
+  "desc": "Diving humpback whale, Kvaloya, Troms, Northern Norway (© Espen Bergersen/Minden Pictures)",
+  "location": [
+   "Diving humpback whale",
+   "Kvaloya",
+   "Troms",
+   "Northern Norway"
+  ],
+  "region": "挪威",
+  "photographer": "Espen Bergersen",
+  "gallery": "Minden Pictures",
+  "copyrightlink": "https://www.bing.com/search?q=humpback+whales&form=hpcapt&filters=HpDate%3a%2220261120_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261120_Megaptera%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "挪威",
+   "norway",
+   "norsk",
+   "norwegian",
+   "ノルウェー"
+  ],
+  "content_tags": [
+   "座头鲸",
+   "鲸尾",
+   "鲸鱼",
+   "海洋",
+   "海面",
+   "满月",
+   "月亮",
+   "晚霞",
+   "黄昏",
+   "海浪"
+  ]
  }
 ]
