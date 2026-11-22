@@ -13558,5 +13558,44 @@
    "山丘",
    "老城区"
   ]
+ },
+ {
+  "id": "de-de-2026-11-21",
+  "market": "de-de",
+  "date": "2026-11-21",
+  "urlbase": "/th?id=OHR.JustaHermitage_DE-DE4182731523",
+  "imageKey": "JustaHermitage",
+  "title": "Kapelle im Fels",
+  "desc": "Die Kapelle und Einsiedelei von Santa Justa in Kantabrien, Spanien (© Tramont_ana/Getty Images)",
+  "location": [
+   "Die Kapelle und Einsiedelei von Santa Justa in Kantabrien",
+   "Spanien"
+  ],
+  "region": null,
+  "photographer": "Tramont_ana",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Einsiedelei+Santa+Justa+Spanien&form=hpcapt&filters=HpDate%3a%2220261121_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261121_JustaHermitage%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "海浪",
+   "悬崖",
+   "大海",
+   "石塔",
+   "建筑",
+   "海蚀洞",
+   "礁石",
+   "云层",
+   "海岸线",
+   "天空",
+   "黄昏",
+   "废墟"
+  ]
  }
 ]

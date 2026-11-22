@@ -14026,5 +14026,57 @@
    "黄昏",
    "海浪"
   ]
+ },
+ {
+  "id": "en-us-2026-11-21",
+  "market": "en-us",
+  "date": "2026-11-21",
+  "urlbase": "/th?id=OHR.RedNice_EN-US9978351403",
+  "imageKey": "RedNice",
+  "title": "Terracotta dreams",
+  "desc": "Nice, Provence-Alpes-Côte d'Azur, France (© Siripong Kaewla-iad/Getty Images)",
+  "location": [
+   "Nice",
+   "Provence-Alpes-Côte d'Azur",
+   "France"
+  ],
+  "region": "法国",
+  "photographer": "Siripong Kaewla-iad",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Nice+France&form=hpcapt&filters=HpDate%3a%2220261121_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261121_RedNice%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "普罗旺斯",
+   "provence",
+   "普羅旺斯",
+   "法国",
+   "france",
+   "français",
+   "フランス",
+   "法國"
+  ],
+  "content_tags": [
+   "尼斯老城",
+   "红瓦屋顶",
+   "地中海",
+   "海湾",
+   "教堂穹顶",
+   "教堂",
+   "钟楼",
+   "建筑",
+   "城市",
+   "天际线",
+   "海岸线",
+   "黄昏",
+   "晚霞",
+   "山丘",
+   "老城区"
+  ]
  }
 ]
