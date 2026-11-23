@@ -13597,5 +13597,39 @@
    "黄昏",
    "废墟"
   ]
+ },
+ {
+  "id": "de-de-2026-11-22",
+  "market": "de-de",
+  "date": "2026-11-22",
+  "urlbase": "/th?id=OHR.FibonacciFern_DE-DE6300100112",
+  "imageKey": "FibonacciFern",
+  "title": "Geometrie in der Natur",
+  "desc": "Farnspitzen (© Reza Saputra/Getty Images)",
+  "location": [
+   "Farnspitzen"
+  ],
+  "region": null,
+  "photographer": "Reza Saputra",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Fibonacci-Tag&form=hpcapt&filters=HpDate%3a%2220261122_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261122_FibonacciFern%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [],
+  "content_tags": [
+   "蕨芽",
+   "蕨类植物",
+   "嫩芽",
+   "植物",
+   "螺旋",
+   "新绿",
+   "春天",
+   "微距摄影"
+  ]
  }
 ]
