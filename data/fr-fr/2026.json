@@ -13368,5 +13368,49 @@
    "森林",
    "逆光"
   ]
+ },
+ {
+  "id": "fr-fr-2026-11-24",
+  "market": "fr-fr",
+  "date": "2026-11-24",
+  "urlbase": "/th?id=OHR.SunsetPoint_FR-FR4616557781",
+  "imageKey": "SunsetPoint",
+  "title": "Cheminées de fées enneigées",
+  "desc": "Sunset Point, parc national de Bryce Canyon, Utah, États-Unis (© Colin D. Young/Alamy)",
+  "location": [
+   "Sunset Point",
+   "parc national de Bryce Canyon",
+   "Utah",
+   "États-Unis"
+  ],
+  "region": null,
+  "photographer": "Colin D. Young",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=Parc+national+de+Bryce+Canyon&form=hpcapt&filters=HpDate%3a%2220261124_2300%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261124_SunsetPoint%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "犹他",
+   "utah",
+   "猶他"
+  ],
+  "content_tags": [
+   "布莱斯峡谷",
+   "岩柱",
+   "峡谷",
+   "雪",
+   "云雾",
+   "红岩",
+   "岩石",
+   "冬季",
+   "松树",
+   "树",
+   "山地"
+  ]
  }
 ]

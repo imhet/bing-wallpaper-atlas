@@ -14577,5 +14577,54 @@
    "森林",
    "逆光"
   ]
+ },
+ {
+  "id": "zh-cn-2026-11-24",
+  "market": "zh-cn",
+  "date": "2026-11-24",
+  "urlbase": "/th?id=OHR.SunsetPoint_ZH-CN5737034685",
+  "imageKey": "SunsetPoint",
+  "title": "美国西南部的一场雪",
+  "desc": "日落观景点，布莱斯峡谷国家公园，犹他州 (© Colin D. Young/Alamy)",
+  "location": [
+   "日落观景点",
+   "布莱斯峡谷国家公园",
+   "犹他州"
+  ],
+  "region": null,
+  "photographer": "Colin D. Young",
+  "gallery": "Alamy",
+  "copyrightlink": "https://www.bing.com/search?q=%E5%B8%83%E8%8E%B1%E6%96%AF%E5%B3%A1%E8%B0%B7%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261124_SunsetPoint%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "犹他",
+   "utah",
+   "猶他",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "布莱斯峡谷",
+   "岩柱",
+   "峡谷",
+   "雪",
+   "云雾",
+   "红岩",
+   "岩石",
+   "冬季",
+   "松树",
+   "树",
+   "山地"
+  ]
  }
 ]
