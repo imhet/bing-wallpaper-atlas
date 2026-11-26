@@ -14295,5 +14295,57 @@
    "树",
    "山地"
   ]
+ },
+ {
+  "id": "en-gb-2026-11-26",
+  "market": "en-gb",
+  "date": "2026-11-26",
+  "urlbase": "/th?id=OHR.RFHilo_EN-GB7287228600",
+  "imageKey": "RFHilo",
+  "title": "Where rainbows fall",
+  "desc": "Rainbow Falls on the Wailuku River, Hilo, Hawaii, USA (© Peter Unger/Getty Images)",
+  "location": [
+   "Rainbow Falls on the Wailuku River",
+   "Hilo",
+   "Hawaii",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "Peter Unger",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Rainbow+Falls+Wailuku+River+Hawaii&form=hpcapt&filters=HpDate%3a%2220261126_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261126_RFHilo%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "ハワイ",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "瀑布",
+   "彩虹瀑布",
+   "热带雨林",
+   "丛林",
+   "水潭",
+   "岩壁",
+   "岩洞",
+   "阔叶植物",
+   "树木",
+   "苔藓",
+   "岩石",
+   "溪流"
+  ]
  }
 ]

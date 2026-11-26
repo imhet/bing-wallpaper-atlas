@@ -13929,5 +13929,54 @@
    "树",
    "山地"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-25",
+  "market": "ja-jp",
+  "date": "2026-11-25",
+  "urlbase": "/th?id=OHR.RFHilo_JA-JP7653681991",
+  "imageKey": "RFHilo",
+  "title": "虹が舞い降りる滝",
+  "desc": "ワイルク川のレインボー・フォールズ、ヒロ、ハワイ州、アメリカ (© Peter Unger/Getty Images)",
+  "location": [
+   "ワイルク川のレインボー・フォールズ、ヒロ、ハワイ州、アメリカ"
+  ],
+  "region": null,
+  "photographer": "Peter Unger",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%AC%E3%82%A4%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%BB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%AB%E3%82%BA+%E3%83%AF%E3%82%A4%E3%83%AB%E3%82%AF%E5%B7%9D+%E3%83%8F%E3%83%AF%E3%82%A4&form=hpcapt&filters=HpDate%3a%2220261125_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261125_RFHilo%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "夏威夷",
+   "hawaii",
+   "hawaiian",
+   "ハワイ",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "瀑布",
+   "彩虹瀑布",
+   "热带雨林",
+   "丛林",
+   "水潭",
+   "岩壁",
+   "岩洞",
+   "阔叶植物",
+   "树木",
+   "苔藓",
+   "岩石",
+   "溪流"
+  ]
  }
 ]
