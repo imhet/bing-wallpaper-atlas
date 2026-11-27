@@ -14250,5 +14250,46 @@
    "树",
    "山地"
   ]
+ },
+ {
+  "id": "en-us-2026-11-26",
+  "market": "en-us",
+  "date": "2026-11-26",
+  "urlbase": "/th?id=OHR.WildTom_EN-US1069249609",
+  "imageKey": "WildTom",
+  "title": "Turkey twins",
+  "desc": "Two wild tom turkeys (© davidsdodd/Getty Images)",
+  "location": [
+   "Two wild tom turkeys"
+  ],
+  "region": null,
+  "photographer": "davidsdodd",
+  "gallery": "Getty Images",
+  "copyrightlink": "https://www.bing.com/search?q=Thanksgiving&form=hpcapt&filters=HpDate%3a%2220261126_0800%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261126_WildTom%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "土耳其",
+   "turkey",
+   "türkiye",
+   "turkish",
+   "トルコ"
+  ],
+  "content_tags": [
+   "火鸡",
+   "鸟",
+   "尾羽",
+   "树干",
+   "大树",
+   "草地",
+   "林地",
+   "秋色",
+   "求偶展示"
+  ]
  }
 ]

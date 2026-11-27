@@ -13978,5 +13978,48 @@
    "岩石",
    "溪流"
   ]
+ },
+ {
+  "id": "ja-jp-2026-11-26",
+  "market": "ja-jp",
+  "date": "2026-11-26",
+  "urlbase": "/th?id=OHR.FaceCanyon_JA-JP4501981808",
+  "imageKey": "FaceCanyon",
+  "title": "灰色と黄金色が織りなす風景",
+  "desc": "夕暮れの岩山、フェイス・キャニオン、パウエル湖、ユタ州、アメリカ (© Jeff Foott/Minden)",
+  "location": [
+   "夕暮れの岩山、フェイス・キャニオン、パウエル湖、ユタ州、アメリカ"
+  ],
+  "region": null,
+  "photographer": "Jeff Foott",
+  "gallery": "Minden",
+  "copyrightlink": "https://www.bing.com/search?q=%E3%83%91%E3%82%A6%E3%82%A8%E3%83%AB%E6%B9%96&form=hpcapt&filters=HpDate%3a%2220261126_1500%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261126_FaceCanyon%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "鲍威尔湖",
+   "湖泊",
+   "晚霞",
+   "火烧云",
+   "云",
+   "红岩",
+   "岩石山丘",
+   "荒漠",
+   "倒影",
+   "峡谷"
+  ]
  }
 ]

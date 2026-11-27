@@ -14347,5 +14347,55 @@
    "岩石",
    "溪流"
   ]
+ },
+ {
+  "id": "en-gb-2026-11-27",
+  "market": "en-gb",
+  "date": "2026-11-27",
+  "urlbase": "/th?id=OHR.FaceCanyon_EN-GB5580459617",
+  "imageKey": "FaceCanyon",
+  "title": "Ribbons of grey and gold",
+  "desc": "Butte at sunset, Face Canyon, Lake Powell, Utah, USA (© Jeff Foott/Minden)",
+  "location": [
+   "Butte at sunset",
+   "Face Canyon",
+   "Lake Powell",
+   "Utah",
+   "USA"
+  ],
+  "region": "美国",
+  "photographer": "Jeff Foott",
+  "gallery": "Minden",
+  "copyrightlink": "https://www.bing.com/search?q=Lake+Powell&form=hpcapt&filters=HpDate%3a%2220261127_0000%22",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261127_FaceCanyon%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "犹他",
+   "utah",
+   "猶他",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "鲍威尔湖",
+   "湖泊",
+   "晚霞",
+   "火烧云",
+   "云",
+   "红岩",
+   "岩石山丘",
+   "荒漠",
+   "倒影",
+   "峡谷"
+  ]
  }
 ]

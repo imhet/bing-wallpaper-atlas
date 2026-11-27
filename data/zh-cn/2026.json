@@ -14678,5 +14678,54 @@
    "岩石",
    "溪流"
   ]
+ },
+ {
+  "id": "zh-cn-2026-11-26",
+  "market": "zh-cn",
+  "date": "2026-11-26",
+  "urlbase": "/th?id=OHR.FaceCanyon_ZH-CN9505064248",
+  "imageKey": "FaceCanyon",
+  "title": "灰金交织的峡谷",
+  "desc": "夕阳下的孤峰，鲍威尔湖脸峡谷，犹他州，美国 (© Jeff Foott/Minden)",
+  "location": [
+   "夕阳下的孤峰",
+   "鲍威尔湖脸峡谷",
+   "犹他州",
+   "美国"
+  ],
+  "region": "美国",
+  "photographer": "Jeff Foott",
+  "gallery": "Minden",
+  "copyrightlink": "https://www.bing.com/search?q=%E9%B2%8D%E5%A8%81%E5%B0%94%E6%B9%96&form=hpcapt&mkt=zh-cn",
+  "quiz": "/search?q=Bing+homepage+quiz&filters=WQOskey:%22HPQuiz_20261126_FaceCanyon%22&FORM=HPQUIZ",
+  "resolutions": {
+   "uhd": true,
+   "fhd": true,
+   "hd": true,
+   "thumb": true
+  },
+  "tags": [
+   "犹他",
+   "utah",
+   "猶他",
+   "美国",
+   "usa",
+   "united states",
+   "america",
+   "美國",
+   "アメリカ"
+  ],
+  "content_tags": [
+   "鲍威尔湖",
+   "湖泊",
+   "晚霞",
+   "火烧云",
+   "云",
+   "红岩",
+   "岩石山丘",
+   "荒漠",
+   "倒影",
+   "峡谷"
+  ]
  }
 ]
